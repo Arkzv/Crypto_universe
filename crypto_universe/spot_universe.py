@@ -155,6 +155,63 @@ def build_combined_payload(exchange_payloads: list[dict[str, Any]]) -> dict[str,
     }
 
 
+def _parse_float(value: Any) -> float:
+    if value is None:
+        return 0.0
+    try:
+        return float(value)
+    except (ValueError, TypeError):
+        return 0.0
+
+
+def build_usdt_rates(payload: dict[str, Any]) -> dict[str, float]:
+    rates: dict[str, float] = {"USDT": 1.0}
+    for pair in payload["pairs"]:
+        if pair["quote_asset"] != "USDT":
+            continue
+        base = pair["base_asset"]
+        if base in rates:
+            continue
+        best_price = 0.0
+        best_qv = -1.0
+        for ex_data in pair["by_exchange"].values():
+            vol = ex_data.get("volume_24h")
+            if not vol:
+                continue
+            qv = _parse_float(vol.get("quote_volume"))
+            lp = _parse_float(vol.get("last_price"))
+            if lp > 0 and qv > best_qv:
+                best_qv = qv
+                best_price = lp
+        if best_price > 0:
+            rates[base] = best_price
+    return rates
+
+
+def enrich_with_usdt_volume(payload: dict[str, Any], rates: dict[str, float]) -> None:
+    payload["usdt_rates"] = {k: rates[k] for k in sorted(rates)}
+    for pair in payload["pairs"]:
+        quote = pair["quote_asset"]
+        rate = rates.get(quote)
+        if rate is None:
+            pair["total_usdt_volume"] = None
+            for ex_data in pair["by_exchange"].values():
+                vol = ex_data.get("volume_24h")
+                if vol:
+                    vol["usdt_volume"] = None
+            continue
+        total_usdt = 0.0
+        for ex_data in pair["by_exchange"].values():
+            vol = ex_data.get("volume_24h")
+            if not vol:
+                continue
+            qv = _parse_float(vol.get("quote_volume"))
+            uv = qv * rate
+            vol["usdt_volume"] = uv
+            total_usdt += uv
+        pair["total_usdt_volume"] = total_usdt
+
+
 def _fmt_volume(value: float) -> str:
     if value >= 1_000_000_000:
         return f"{value / 1_000_000_000:.1f}B"
@@ -179,8 +236,8 @@ def build_volume_report(payload: dict[str, Any]) -> str:
     lines.append(f"- **Total pairs**: {summary['pair_count_total']}")
     lines.append(f"- **Present on all venues**: {summary['pair_count_present_on_all_requested_venues']}")
     lines.append("")
-    lines.append("| # | Pair | Venues | Volume Distribution (sorted by share) |")
-    lines.append("|--:|------|-------:|----------------------------------------|")
+    lines.append("| # | Pair | Venues | USDT Vol | Volume Distribution (sorted by share) |")
+    lines.append("|--:|------|-------:|---------:|----------------------------------------|")
 
     for idx, pair in enumerate(payload["pairs"], 1):
         pair_name = pair["pair"]
@@ -206,8 +263,10 @@ def build_volume_report(payload: dict[str, Any]) -> str:
             pct = (vol / total * 100) if total > 0 else 0.0
             parts.append(f"{ex_name} {_fmt_volume(vol)} {quote} {pct:.0f}%")
 
+        total_usdt = pair.get("total_usdt_volume")
+        usdt_cell = _fmt_volume(total_usdt) if total_usdt is not None else "—"
         dist_cell = " · ".join(parts) if parts else "—"
-        lines.append(f"| {idx} | {pair_name} | {venue_count} | {dist_cell} |")
+        lines.append(f"| {idx} | {pair_name} | {venue_count} | {usdt_cell} | {dist_cell} |")
 
     lines.append("")
     return "\n".join(lines)
@@ -217,43 +276,47 @@ def build_latest_json(payload: dict[str, Any]) -> dict[str, Any]:
     pairs_out: list[dict[str, Any]] = []
     for pair in payload["pairs"]:
         quote = pair["quote_asset"]
-        exchange_volumes: list[tuple[str, float]] = []
+        exchange_volumes: list[tuple[str, float, Any]] = []
         for ex_name, ex_data in pair["by_exchange"].items():
             vol = ex_data.get("volume_24h")
             qv = 0.0
-            if vol and vol.get("quote_volume"):
-                try:
-                    qv = float(vol["quote_volume"])
-                except (ValueError, TypeError):
-                    pass
-            exchange_volumes.append((ex_name, qv))
+            uv = None
+            if vol:
+                qv = _parse_float(vol.get("quote_volume"))
+                uv = vol.get("usdt_volume")
+            exchange_volumes.append((ex_name, qv, uv))
 
-        total = sum(v for _, v in exchange_volumes)
+        total = sum(v for _, v, _ in exchange_volumes)
         exchange_volumes.sort(key=lambda x: x[1], reverse=True)
 
         venues: list[dict[str, Any]] = []
-        for ex_name, vol in exchange_volumes:
+        for ex_name, vol, uv in exchange_volumes:
             pct = round(vol / total * 100, 2) if total > 0 else 0.0
-            venues.append({
+            venue_entry: dict[str, Any] = {
                 "exchange": ex_name,
                 "quote_volume": vol,
                 "quote_currency": quote,
                 "volume_pct": pct,
-            })
+                "usdt_volume": round(uv, 2) if uv is not None else None,
+            }
+            venues.append(venue_entry)
 
+        total_usdt = pair.get("total_usdt_volume")
         pairs_out.append({
             "pair": pair["pair"],
             "base_asset": pair["base_asset"],
             "quote_asset": pair["quote_asset"],
             "venue_count": pair["venue_count"],
             "total_quote_volume": total,
+            "total_usdt_volume": round(total_usdt, 2) if total_usdt is not None else None,
             "venues": venues,
         })
 
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": payload["generated_at"],
         "exchanges": sorted(payload["requested_exchanges"]),
+        "usdt_rates": payload.get("usdt_rates", {}),
         "summary": payload["summary"],
         "pairs": pairs_out,
     }
@@ -307,6 +370,9 @@ async def async_main() -> int:
         write_json(payload, exchange_path, args.indent)
 
     combined = build_combined_payload(exchange_payloads)
+    usdt_rates = build_usdt_rates(combined)
+    enrich_with_usdt_volume(combined, usdt_rates)
+    print(f"USDT rates derived for {len(usdt_rates)} quote currencies")
     output_target = write_json(combined, args.output, args.indent)
     report_path = write_volume_report(combined, out_dir)
     print_summary(combined, output_target)

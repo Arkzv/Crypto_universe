@@ -38,6 +38,7 @@ th .arrow{font-size:10px;margin-left:3px}
 td:nth-child(1){color:#888;text-align:right;width:50px}
 td:nth-child(4){text-align:right}
 td:nth-child(5){text-align:right}
+td:nth-child(6){text-align:right}
 .venue{display:inline-block;margin:0 2px}
 .venue .nm{color:#5b9cf5}
 .venue .vol{color:#999}
@@ -71,6 +72,7 @@ td:nth-child(5){text-align:right}
   <th data-col="base">Base</th>
   <th data-col="venues">Venues</th>
   <th data-col="volume">Total Volume</th>
+  <th data-col="usdt">USDT Volume</th>
   <th data-col="dist">Volume Distribution</th>
 </tr></thead>
 <tbody id="tbody"></tbody>
@@ -109,7 +111,8 @@ function renderBatch(){
   let html='';
   for(let i=rendered;i<end;i++){
     const r=filtered[i];
-    html+='<tr><td>'+r._idx+'</td><td>'+r.pair+'</td><td>'+r.base_asset+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(r.total_quote_volume)+' '+r.quote_asset+'</td><td>'+r._distHTML+'</td></tr>';
+    const uv=r.total_usdt_volume!=null?fmtVol(r.total_usdt_volume):'—';
+    html+='<tr><td>'+r._idx+'</td><td>'+r.pair+'</td><td>'+r.base_asset+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(r.total_quote_volume)+' '+r.quote_asset+'</td><td>'+uv+'</td><td>'+r._distHTML+'</td></tr>';
   }
   tbody.insertAdjacentHTML('beforeend',html);
   rendered=end;
@@ -160,6 +163,7 @@ function doSort(){
     if(col==='pair'||col==='base')va=a[col==='base'?'base_asset':'pair'],vb=b[col==='base'?'base_asset':'pair'];
     else if(col==='venues')va=a.venue_count,vb=b.venue_count;
     else if(col==='volume')va=a.total_quote_volume,vb=b.total_quote_volume;
+    else if(col==='usdt')va=a.total_usdt_volume??-1,vb=b.total_usdt_volume??-1;
     else va=0,vb=0;
     if(typeof va==='string')return va<vb?-asc:va>vb?asc:0;
     return (va-vb)*asc;
