@@ -2,20 +2,43 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import shutil
+import subprocess
 from collections import Counter
+from pathlib import Path
 from typing import Any, Awaitable, Callable
 
-from .common import clean_output_dir, generated_at_utc, today_output_dir, validate_common_args, write_json
+from .common import OUTPUT_DIR, clean_output_dir, generated_at_utc, today_output_dir, validate_common_args, write_json
+
+LATEST_MD_EXTERNAL = Path(__file__).resolve().parent.parent.parent / "output" / "Latest.md"
 from .spot_universe_binance import fetch_exchange_universe as fetch_binance_universe
+from .spot_universe_bitmart import fetch_exchange_universe as fetch_bitmart_universe
 from .spot_universe_bybit import fetch_exchange_universe as fetch_bybit_universe
+from .spot_universe_coinbase import fetch_exchange_universe as fetch_coinbase_universe
+from .spot_universe_coinw import fetch_exchange_universe as fetch_coinw_universe
+from .spot_universe_cryptocom import fetch_exchange_universe as fetch_cryptocom_universe
+from .spot_universe_gate import fetch_exchange_universe as fetch_gate_universe
+from .spot_universe_htx import fetch_exchange_universe as fetch_htx_universe
+from .spot_universe_kucoin import fetch_exchange_universe as fetch_kucoin_universe
 from .spot_universe_mexc import fetch_exchange_universe as fetch_mexc_universe
+from .spot_universe_okx import fetch_exchange_universe as fetch_okx_universe
+from .spot_universe_upbit import fetch_exchange_universe as fetch_upbit_universe
 
 ExchangeFetcher = Callable[[float], Awaitable[dict[str, Any]]]
 
 EXCHANGE_FETCHERS: dict[str, ExchangeFetcher] = {
     "binance": fetch_binance_universe,
+    "bitmart": fetch_bitmart_universe,
     "bybit": fetch_bybit_universe,
+    "coinbase": fetch_coinbase_universe,
+    "coinw": fetch_coinw_universe,
+    "cryptocom": fetch_cryptocom_universe,
+    "gate": fetch_gate_universe,
+    "htx": fetch_htx_universe,
+    "kucoin": fetch_kucoin_universe,
     "mexc": fetch_mexc_universe,
+    "okx": fetch_okx_universe,
+    "upbit": fetch_upbit_universe,
 }
 
 
@@ -26,8 +49,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--exchanges",
         nargs="+",
-        default=["mexc", "binance", "bybit"],
-        help="Exchange ids to query asynchronously (default: mexc binance bybit)",
+        default=["mexc", "binance", "bitmart", "bybit", "okx", "htx", "gate", "coinbase", "coinw", "kucoin", "upbit", "cryptocom"],
+        help="Exchange ids to query asynchronously",
     )
     default_out = str(today_output_dir() / "spot_universe_combined.json")
     parser.add_argument(
@@ -128,6 +151,80 @@ def build_combined_payload(exchange_payloads: list[dict[str, Any]]) -> dict[str,
     }
 
 
+def _fmt_volume(value: float) -> str:
+    if value >= 1_000_000_000:
+        return f"{value / 1_000_000_000:.1f}B"
+    if value >= 1_000_000:
+        return f"{value / 1_000_000:.1f}M"
+    if value >= 1_000:
+        return f"{value / 1_000:.1f}K"
+    return f"{value:.0f}"
+
+
+def build_volume_report(payload: dict[str, Any]) -> str:
+    lines: list[str] = []
+    generated = payload["generated_at"]
+    exchanges = payload["requested_exchanges"]
+
+    lines.append(f"# Spot Universe — Volume Distribution")
+    lines.append("")
+    lines.append(f"Generated: {generated}")
+    lines.append("")
+    summary = payload["summary"]
+    lines.append(f"- **Exchanges**: {', '.join(exchanges)}")
+    lines.append(f"- **Total pairs**: {summary['pair_count_total']}")
+    lines.append(f"- **Present on all venues**: {summary['pair_count_present_on_all_requested_venues']}")
+    lines.append("")
+    lines.append("| # | Pair | Venues | Volume Distribution (sorted by share) |")
+    lines.append("|--:|------|-------:|----------------------------------------|")
+
+    for idx, pair in enumerate(payload["pairs"], 1):
+        pair_name = pair["pair"]
+        quote = pair["quote_asset"]
+        venue_count = pair["venue_count"]
+
+        exchange_volumes: list[tuple[str, float]] = []
+        for ex_name, ex_data in pair["by_exchange"].items():
+            vol = ex_data.get("volume_24h")
+            qv = 0.0
+            if vol and vol.get("quote_volume"):
+                try:
+                    qv = float(vol["quote_volume"])
+                except (ValueError, TypeError):
+                    pass
+            exchange_volumes.append((ex_name, qv))
+
+        total = sum(v for _, v in exchange_volumes)
+        exchange_volumes.sort(key=lambda x: x[1], reverse=True)
+
+        parts: list[str] = []
+        for ex_name, vol in exchange_volumes:
+            pct = (vol / total * 100) if total > 0 else 0.0
+            parts.append(f"{ex_name} {_fmt_volume(vol)} {quote} {pct:.0f}%")
+
+        dist_cell = " · ".join(parts) if parts else "—"
+        lines.append(f"| {idx} | {pair_name} | {venue_count} | {dist_cell} |")
+
+    lines.append("")
+    return "\n".join(lines)
+
+
+def write_volume_report(payload: dict[str, Any], out_dir: Path) -> str:
+    report = build_volume_report(payload)
+    path = out_dir / "README.md"
+    path.write_text(report + "\n", encoding="utf-8")
+
+    # Copy to repo output/Latest.md
+    latest_repo = OUTPUT_DIR / "Latest.md"
+    shutil.copy2(path, latest_repo)
+
+    # Copy to external output/Latest.md
+    LATEST_MD_EXTERNAL.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(path, LATEST_MD_EXTERNAL)
+
+    return str(path)
+
+
 def print_summary(payload: dict[str, Any], output_target: str) -> None:
     print("Spot universe combined")
     print(f"Generated at: {payload['generated_at']}")
@@ -157,8 +254,34 @@ async def async_main() -> int:
 
     combined = build_combined_payload(exchange_payloads)
     output_target = write_json(combined, args.output, args.indent)
+    report_path = write_volume_report(combined, out_dir)
     print_summary(combined, output_target)
+    print(f"Volume report: {report_path}")
+    auto_commit(combined["generated_at"])
     return 0
+
+
+def auto_commit(generated_at: str) -> None:
+    repo_root = Path(__file__).resolve().parent.parent
+    try:
+        subprocess.run(["git", "add", "output/"], cwd=repo_root, check=True, capture_output=True)
+        result = subprocess.run(
+            ["git", "diff", "--cached", "--quiet"],
+            cwd=repo_root, capture_output=True,
+        )
+        if result.returncode == 0:
+            print("Git: nothing new to commit")
+            return
+        date_str = generated_at[:10]
+        subprocess.run(
+            ["git", "commit", "-m", f"spot universe {date_str}"],
+            cwd=repo_root, check=True, capture_output=True,
+        )
+        print(f"Git: committed spot universe {date_str}")
+    except FileNotFoundError:
+        print("Git: git not found, skipping auto-commit")
+    except subprocess.CalledProcessError as exc:
+        print(f"Git: auto-commit failed: {exc.stderr.decode().strip()}")
 
 
 def main() -> int:
