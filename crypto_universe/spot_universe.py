@@ -219,7 +219,11 @@ def _fmt_volume(value: float) -> str:
         return f"{value / 1_000_000:.1f}M"
     if value >= 1_000:
         return f"{value / 1_000:.1f}K"
-    return f"{value:.0f}"
+    if value >= 1:
+        return f"{value:.2f}"
+    if value > 0:
+        return f"{value:.4f}"
+    return "0"
 
 
 def build_volume_report(payload: dict[str, Any]) -> str:
