@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crypto Universe — Explorer</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;padding:16px;background:#181a20;color:#e8e8e8;font-size:14px}
+a{color:#5b9cf5}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.bar input,.bar select{background:#23262f;color:#e8e8e8;border:1px solid #333;border-radius:4px;padding:6px 10px;font-size:14px}
+.bar input{width:220px}
+.bar select{width:160px}
+.bar label{color:#888;font-size:13px;display:flex;align-items:center;gap:4px}
+.bar label input[type=checkbox]{accent-color:#5b9cf5}
+.stats{color:#888;font-size:13px;margin-bottom:10px}
+.stats b{color:#c8c8c8}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:700px}
+th,td{text-align:left;padding:5px 10px;border-bottom:1px solid #23262f;white-space:nowrap}
+th{position:sticky;top:0;background:#1e2028;cursor:pointer;user-select:none;color:#aaa;font-weight:600;font-size:13px}
+th:hover{color:#e8e8e8}
+th .arrow{font-size:10px;margin-left:3px}
+td:nth-child(1){color:#888;text-align:right;width:50px}
+td:nth-child(4){text-align:right}
+td:nth-child(5){text-align:right}
+.venue{display:inline-block;margin:0 2px}
+.venue .nm{color:#5b9cf5}
+.venue .vol{color:#999}
+.venue .pct{color:#e8c84a;font-weight:600}
+.venue .sep{color:#444;margin:0 2px}
+#loading{text-align:center;padding:60px;color:#888;font-size:16px}
+.home{margin-bottom:12px;display:inline-block;font-size:13px}
+</style>
+</head>
+<body>
+<a class="home" href="index.html">&larr; Home</a>
+<div class="bar">
+  <input type="text" id="search" placeholder="Filter pairs (e.g. BTC, ETH/USDT)">
+  <select id="exchangeFilter"><option value="">All exchanges</option></select>
+  <select id="quoteFilter"><option value="">All quotes</option></select>
+  <select id="venueCount"><option value="">Any venue count</option></select>
+  <label><input type="checkbox" id="multiOnly"> Multi-venue only</label>
+</div>
+<div class="stats" id="stats"></div>
+<div id="loading">Loading data&hellip;</div>
+<div class="wrap" id="tableWrap" style="display:none">
+<table>
+<thead><tr>
+  <th data-col="idx">#</th>
+  <th data-col="pair">Pair</th>
+  <th data-col="base">Base</th>
+  <th data-col="venues">Venues</th>
+  <th data-col="volume">Total Volume</th>
+  <th data-col="dist">Volume Distribution</th>
+</tr></thead>
+<tbody id="tbody"></tbody>
+</table>
+</div>
+<script>
+const BATCH=500;
+let allRows=[];
+let filtered=[];
+let sortCol='idx';
+let sortAsc=true;
+let rendered=0;
+
+function fmtVol(v){
+  if(v>=1e9)return (v/1e9).toFixed(1)+'B';
+  if(v>=1e6)return (v/1e6).toFixed(1)+'M';
+  if(v>=1e3)return (v/1e3).toFixed(1)+'K';
+  return v.toFixed(0);
+}
+
+function buildDistHTML(venues){
+  let h='';
+  for(let i=0;i<venues.length;i++){
+    const v=venues[i];
+    if(i>0)h+='<span class="sep">&middot;</span>';
+    h+='<span class="venue"><span class="nm">'+v.exchange+'</span> <span class="vol">'+fmtVol(v.quote_volume)+' '+v.quote_currency+'</span> <span class="pct">'+Math.round(v.volume_pct)+'%</span></span>';
+  }
+  return h;
+}
+
+function renderBatch(){
+  const tbody=document.getElementById('tbody');
+  const end=Math.min(rendered+BATCH,filtered.length);
+  let html='';
+  for(let i=rendered;i<end;i++){
+    const r=filtered[i];
+    html+='<tr><td>'+r._idx+'</td><td>'+r.pair+'</td><td>'+r.base_asset+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(r.total_quote_volume)+' '+r.quote_asset+'</td><td>'+r._distHTML+'</td></tr>';
+  }
+  tbody.insertAdjacentHTML('beforeend',html);
+  rendered=end;
+  if(rendered<filtered.length)requestAnimationFrame(renderBatch);
+}
+
+function renderTable(){
+  const tbody=document.getElementById('tbody');
+  tbody.innerHTML='';
+  rendered=0;
+  filtered.forEach((r,i)=>r._idx=i+1);
+  document.getElementById('stats').innerHTML='Showing <b>'+filtered.length+'</b> of <b>'+allRows.length+'</b> pairs';
+  renderBatch();
+}
+
+function applyFilters(){
+  const q=document.getElementById('search').value.toUpperCase();
+  const ex=document.getElementById('exchangeFilter').value;
+  const qt=document.getElementById('quoteFilter').value;
+  const vc=document.getElementById('venueCount').value;
+  const multi=document.getElementById('multiOnly').checked;
+
+  filtered=allRows.filter(r=>{
+    if(q&&r.pair.indexOf(q)<0)return false;
+    if(ex&&!r._exchanges.has(ex))return false;
+    if(qt&&r.quote_asset!==qt)return false;
+    if(vc&&r.venue_count!==+vc)return false;
+    if(multi&&r.venue_count<2)return false;
+    return true;
+  });
+  doSort();
+}
+
+function doSort(){
+  const col=sortCol;
+  const asc=sortAsc?1:-1;
+  filtered.sort((a,b)=>{
+    let va,vb;
+    if(col==='pair'||col==='base')va=a[col==='base'?'base_asset':'pair'],vb=b[col==='base'?'base_asset':'pair'];
+    else if(col==='venues')va=a.venue_count,vb=b.venue_count;
+    else if(col==='volume')va=a.total_quote_volume,vb=b.total_quote_volume;
+    else va=0,vb=0;
+    if(typeof va==='string')return va<vb?-asc:va>vb?asc:0;
+    return (va-vb)*asc;
+  });
+  renderTable();
+}
+
+document.querySelectorAll('th').forEach(th=>{
+  th.addEventListener('click',()=>{
+    const col=th.dataset.col;
+    if(col==='idx'||col==='dist')return;
+    if(sortCol===col)sortAsc=!sortAsc;else{sortCol=col;sortAsc=true;}
+    document.querySelectorAll('th .arrow').forEach(a=>a.textContent='');
+    th.querySelector('.arrow').textContent=sortAsc?' \u25b2':' \u25bc';
+    doSort();
+  });
+  th.insertAdjacentHTML('beforeend','<span class="arrow"></span>');
+});
+
+['search','exchangeFilter','quoteFilter','venueCount'].forEach(id=>
+  document.getElementById(id).addEventListener(id==='search'?'input':'change',applyFilters));
+document.getElementById('multiOnly').addEventListener('change',applyFilters);
+
+fetch('output/Latest.json').then(r=>r.json()).then(data=>{
+  const exchanges=new Set();
+  const quotes=new Set();
+  const venueCounts=new Set();
+
+  allRows=data.pairs;
+  allRows.forEach(r=>{
+    r._distHTML=buildDistHTML(r.venues);
+    r._exchanges=new Set(r.venues.map(v=>v.exchange));
+    r._exchanges.forEach(e=>exchanges.add(e));
+    quotes.add(r.quote_asset);
+    venueCounts.add(r.venue_count);
+  });
+
+  const exSel=document.getElementById('exchangeFilter');
+  [...exchanges].sort().forEach(e=>{const o=document.createElement('option');o.value=e;o.textContent=e;exSel.appendChild(o);});
+  const qtSel=document.getElementById('quoteFilter');
+  [...quotes].sort().forEach(q=>{const o=document.createElement('option');o.value=q;o.textContent=q;qtSel.appendChild(o);});
+  const vcSel=document.getElementById('venueCount');
+  [...venueCounts].sort((a,b)=>a-b).forEach(n=>{const o=document.createElement('option');o.value=n;o.textContent=n+' venue'+(n>1?'s':'');vcSel.appendChild(o);});
+
+  document.getElementById('loading').style.display='none';
+  document.getElementById('tableWrap').style.display='block';
+  document.getElementById('stats').innerHTML='Generated: <b>'+data.generated_at+'</b> &mdash; <b>'+data.exchanges.length+'</b> exchanges, <b>'+allRows.length+'</b> pairs';
+  filtered=allRows.slice();
+  renderTable();
+});
+</script>
+</body>
+</html>
