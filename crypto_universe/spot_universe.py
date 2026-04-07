@@ -8,9 +8,11 @@ from collections import Counter
 from pathlib import Path
 from typing import Any, Awaitable, Callable
 
+import json
+
 from .common import OUTPUT_DIR, clean_output_dir, generated_at_utc, today_output_dir, validate_common_args, write_json
 
-LATEST_MD_EXTERNAL = Path(__file__).resolve().parent.parent.parent / "output" / "Latest.md"
+EXTERNAL_OUTPUT = Path(__file__).resolve().parent.parent.parent / "output"
 from .spot_universe_binance import fetch_exchange_universe as fetch_binance_universe
 from .spot_universe_bitmart import fetch_exchange_universe as fetch_bitmart_universe
 from .spot_universe_bybit import fetch_exchange_universe as fetch_bybit_universe
@@ -49,7 +51,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--exchanges",
         nargs="+",
-        default=["mexc", "binance", "bitmart", "bybit", "okx", "htx", "gate", "coinbase", "coinw", "kucoin", "upbit", "cryptocom"],
+        default=sorted(EXCHANGE_FETCHERS),
         help="Exchange ids to query asynchronously",
     )
     default_out = str(today_output_dir() / "spot_universe_combined.json")
@@ -118,11 +120,11 @@ def build_combined_payload(exchange_payloads: list[dict[str, Any]]) -> dict[str,
         item["venues"].sort()
         item["venue_count"] = len(item["venues"])
 
-    exchanges = list(payloads_by_exchange)
+    exchanges = sorted(payloads_by_exchange)
     venue_count_distribution = Counter(item["venue_count"] for item in pairs)
     summary_by_exchange = {
-        exchange: payload["summary"]["tradable_spot_pair_count"]
-        for exchange, payload in payloads_by_exchange.items()
+        exchange: payloads_by_exchange[exchange]["summary"]["tradable_spot_pair_count"]
+        for exchange in exchanges
     }
     present_on_all_requested = sum(1 for item in pairs if item["venue_count"] == len(exchanges))
 
@@ -142,10 +144,10 @@ def build_combined_payload(exchange_payloads: list[dict[str, Any]]) -> dict[str,
         },
         "sources": {
             exchange: {
-                "source": payload["source"],
-                "summary": payload["summary"],
+                "source": payloads_by_exchange[exchange]["source"],
+                "summary": payloads_by_exchange[exchange]["summary"],
             }
-            for exchange, payload in payloads_by_exchange.items()
+            for exchange in exchanges
         },
         "pairs": pairs,
     }
@@ -209,18 +211,68 @@ def build_volume_report(payload: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def build_latest_json(payload: dict[str, Any]) -> dict[str, Any]:
+    pairs_out: list[dict[str, Any]] = []
+    for pair in payload["pairs"]:
+        quote = pair["quote_asset"]
+        exchange_volumes: list[tuple[str, float]] = []
+        for ex_name, ex_data in pair["by_exchange"].items():
+            vol = ex_data.get("volume_24h")
+            qv = 0.0
+            if vol and vol.get("quote_volume"):
+                try:
+                    qv = float(vol["quote_volume"])
+                except (ValueError, TypeError):
+                    pass
+            exchange_volumes.append((ex_name, qv))
+
+        total = sum(v for _, v in exchange_volumes)
+        exchange_volumes.sort(key=lambda x: x[1], reverse=True)
+
+        venues: list[dict[str, Any]] = []
+        for ex_name, vol in exchange_volumes:
+            pct = round(vol / total * 100, 2) if total > 0 else 0.0
+            venues.append({
+                "exchange": ex_name,
+                "quote_volume": vol,
+                "quote_currency": quote,
+                "volume_pct": pct,
+            })
+
+        pairs_out.append({
+            "pair": pair["pair"],
+            "base_asset": pair["base_asset"],
+            "quote_asset": pair["quote_asset"],
+            "venue_count": pair["venue_count"],
+            "total_quote_volume": total,
+            "venues": venues,
+        })
+
+    return {
+        "schema_version": 1,
+        "generated_at": payload["generated_at"],
+        "exchanges": sorted(payload["requested_exchanges"]),
+        "summary": payload["summary"],
+        "pairs": pairs_out,
+    }
+
+
 def write_volume_report(payload: dict[str, Any], out_dir: Path) -> str:
     report = build_volume_report(payload)
     path = out_dir / "README.md"
     path.write_text(report + "\n", encoding="utf-8")
 
-    # Copy to repo output/Latest.md
-    latest_repo = OUTPUT_DIR / "Latest.md"
-    shutil.copy2(path, latest_repo)
+    latest_json_data = build_latest_json(payload)
+    latest_json_text = json.dumps(latest_json_data, indent=2, sort_keys=False) + "\n"
 
-    # Copy to external output/Latest.md
-    LATEST_MD_EXTERNAL.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(path, LATEST_MD_EXTERNAL)
+    # Copy to repo output/
+    shutil.copy2(path, OUTPUT_DIR / "Latest.md")
+    (OUTPUT_DIR / "Latest.json").write_text(latest_json_text, encoding="utf-8")
+
+    # Copy to external output/
+    EXTERNAL_OUTPUT.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(path, EXTERNAL_OUTPUT / "Latest.md")
+    (EXTERNAL_OUTPUT / "Latest.json").write_text(latest_json_text, encoding="utf-8")
 
     return str(path)
 
