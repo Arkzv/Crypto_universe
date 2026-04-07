@@ -40,7 +40,8 @@ td:nth-child(4){text-align:right}
 td:nth-child(5){text-align:right}
 td:nth-child(6){text-align:right}
 .venue{display:inline-block;margin:0 2px}
-.venue .nm{color:#5b9cf5}
+.venue .nm{color:#5b9cf5;text-decoration:none}
+.venue .nm:hover{text-decoration:underline}
 .venue .vol{color:#999}
 .venue .pct{color:#e8c84a;font-weight:600}
 .venue .sep{color:#444;margin:0 2px}
@@ -87,6 +88,21 @@ let sortAsc=true;
 let rendered=0;
 let selectedExchanges=new Set();
 let allExchanges=[];
+const EXCHANGE_LABELS={
+  binance:'Binance',
+  bitget:'Bitget',
+  bitmart:'BitMart',
+  bybit:'Bybit',
+  coinbase:'Coinbase',
+  coinw:'CoinW',
+  cryptocom:'Crypto.com',
+  gate:'Gate',
+  htx:'HTX',
+  kucoin:'KuCoin',
+  mexc:'MEXC',
+  okx:'OKX',
+  upbit:'Upbit'
+};
 
 function fmtVol(v){
   if(v>=1e9)return (v/1e9).toFixed(1)+'B';
@@ -97,12 +113,66 @@ function fmtVol(v){
   return '0';
 }
 
-function buildDistHTML(venues){
+function exchangeLabel(exchange){
+  return EXCHANGE_LABELS[exchange]||exchange;
+}
+
+function tradeUrl(exchange, baseAsset, quoteAsset){
+  const base=String(baseAsset||'');
+  const quote=String(quoteAsset||'');
+  const baseEnc=encodeURIComponent(base);
+  const quoteEnc=encodeURIComponent(quote);
+  const pairUnderscore=encodeURIComponent(base+'_'+quote);
+  const pairHyphen=encodeURIComponent(base+'-'+quote);
+  const pairCompact=encodeURIComponent(base+quote);
+  switch(exchange){
+    case 'binance':
+      return 'https://www.binance.com/en/trade/'+baseEnc+'_'+quoteEnc+'?type=spot';
+    case 'bitget':
+      return 'https://www.bitget.com/spot/'+pairCompact;
+    case 'bitmart':
+      return 'https://www.bitmart.com/en-US/trade/'+pairUnderscore;
+    case 'bybit':
+      return 'https://www.bybit.com/en/trade/spot/'+baseEnc+'/'+quoteEnc;
+    case 'coinbase':
+      return 'https://www.coinbase.com/advanced-trade/spot/'+pairHyphen;
+    case 'coinw':
+      return 'https://www.coinw.com/front/trade.html?symbol='+pairCompact;
+    case 'cryptocom':
+      return 'https://crypto.com/exchange/trade/spot/'+pairUnderscore;
+    case 'gate':
+      return 'https://www.gate.com/trade/'+pairUnderscore;
+    case 'htx':
+      return 'https://www.htx.com/trade/'
+        +encodeURIComponent(base.toLowerCase())+'_'
+        +encodeURIComponent(quote.toLowerCase());
+    case 'kucoin':
+      return 'https://www.kucoin.com/trade/'+pairHyphen;
+    case 'mexc':
+      return 'https://www.mexc.com/exchange/'+pairUnderscore;
+    case 'okx':
+      return 'https://www.okx.com/trade-spot/'
+        +encodeURIComponent(base.toLowerCase())+'-'
+        +encodeURIComponent(quote.toLowerCase());
+    case 'upbit':
+      return 'https://upbit.com/exchange?code='
+        +encodeURIComponent('CRIX.UPBIT.'+quote+'-'+base);
+    default:
+      return null;
+  }
+}
+
+function buildDistHTML(row){
   let h='';
-  for(let i=0;i<venues.length;i++){
-    const v=venues[i];
+  for(let i=0;i<row.venues.length;i++){
+    const v=row.venues[i];
+    const label=exchangeLabel(v.exchange);
+    const href=tradeUrl(v.exchange,row.base_asset,row.quote_asset);
+    const nameHTML=href
+      ? '<a class="nm" href="'+href+'" target="_blank" rel="noopener noreferrer">'+label+'</a>'
+      : '<span class="nm">'+label+'</span>';
     if(i>0)h+='<span class="sep">&middot;</span>';
-    h+='<span class="venue"><span class="nm">'+v.exchange+'</span> <span class="vol">'+fmtVol(v.quote_volume)+' '+v.quote_currency+'</span> <span class="pct">'+Math.round(v.volume_pct)+'%</span></span>';
+    h+='<span class="venue">'+nameHTML+' <span class="vol">'+fmtVol(v.quote_volume)+' '+v.quote_currency+'</span> <span class="pct">'+Math.round(v.volume_pct)+'%</span></span>';
   }
   return h;
 }
@@ -135,7 +205,7 @@ function updateExBtn(){
   if(selectedExchanges.size===0||selectedExchanges.size===allExchanges.length)
     btn.textContent='All exchanges';
   else if(selectedExchanges.size<=2)
-    btn.textContent=[...selectedExchanges].sort().join(', ');
+    btn.textContent=[...selectedExchanges].sort((a,b)=>exchangeLabel(a).localeCompare(exchangeLabel(b))).map(exchangeLabel).join(', ');
   else
     btn.textContent=selectedExchanges.size+' exchanges';
 }
@@ -201,7 +271,7 @@ function buildExDropdown(exchanges){
   const drop=document.getElementById('exDrop');
   let html='<div class="ex-actions"><a id="exAll">All</a><a id="exNone">None</a></div>';
   exchanges.forEach(e=>{
-    html+='<label><input type="checkbox" value="'+e+'" checked> '+e+'</label>';
+    html+='<label><input type="checkbox" value="'+e+'" checked> '+exchangeLabel(e)+'</label>';
   });
   drop.innerHTML=html;
   drop.querySelectorAll('input[type=checkbox]').forEach(cb=>{
@@ -230,13 +300,13 @@ fetch('output/Latest.json').then(r=>r.json()).then(data=>{
 
   allRows=data.pairs;
   allRows.forEach(r=>{
-    r._distHTML=buildDistHTML(r.venues);
+    r._distHTML=buildDistHTML(r);
     r._exchanges=new Set(r.venues.map(v=>v.exchange));
     r._exchanges.forEach(e=>exchanges.add(e));
     quotes.add(r.quote_asset);
   });
 
-  buildExDropdown([...exchanges].sort());
+  buildExDropdown([...exchanges].sort((a,b)=>exchangeLabel(a).localeCompare(exchangeLabel(b))));
   const qtSel=document.getElementById('quoteFilter');
   [...quotes].sort().forEach(q=>{const o=document.createElement('option');o.value=q;o.textContent=q;qtSel.appendChild(o);});
 
