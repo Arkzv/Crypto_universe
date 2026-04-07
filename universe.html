@@ -59,8 +59,6 @@ td:nth-child(5){text-align:right}
     <div class="ex-drop" id="exDrop"></div>
   </div>
   <select id="quoteFilter"><option value="">All quotes</option></select>
-  <select id="venueCount"><option value="">Any venue count</option></select>
-  <label><input type="checkbox" id="multiOnly"> Multi-venue only</label>
 </div>
 <div class="stats" id="stats"></div>
 <div id="loading">Loading data&hellip;</div>
@@ -139,8 +137,6 @@ function updateExBtn(){
 function applyFilters(){
   const q=document.getElementById('search').value.toUpperCase();
   const qt=document.getElementById('quoteFilter').value;
-  const vc=document.getElementById('venueCount').value;
-  const multi=document.getElementById('multiOnly').checked;
   const filterEx=selectedExchanges.size>0&&selectedExchanges.size<allExchanges.length;
 
   filtered=allRows.filter(r=>{
@@ -151,8 +147,6 @@ function applyFilters(){
       if(!match)return false;
     }
     if(qt&&r.quote_asset!==qt)return false;
-    if(vc&&r.venue_count!==+vc)return false;
-    if(multi&&r.venue_count<2)return false;
     return true;
   });
   doSort();
@@ -185,9 +179,8 @@ document.querySelectorAll('th').forEach(th=>{
   th.insertAdjacentHTML('beforeend','<span class="arrow"></span>');
 });
 
-['search','quoteFilter','venueCount'].forEach(id=>
+['search','quoteFilter'].forEach(id=>
   document.getElementById(id).addEventListener(id==='search'?'input':'change',applyFilters));
-document.getElementById('multiOnly').addEventListener('change',applyFilters);
 
 // Exchange multiselect dropdown
 document.getElementById('exBtn').addEventListener('click',e=>{
@@ -227,8 +220,6 @@ function buildExDropdown(exchanges){
 fetch('output/Latest.json').then(r=>r.json()).then(data=>{
   const exchanges=new Set();
   const quotes=new Set();
-  const venueCounts=new Set();
-
   document.getElementById('updated').textContent='Last updated: '+data.generated_at;
 
   allRows=data.pairs;
@@ -237,14 +228,11 @@ fetch('output/Latest.json').then(r=>r.json()).then(data=>{
     r._exchanges=new Set(r.venues.map(v=>v.exchange));
     r._exchanges.forEach(e=>exchanges.add(e));
     quotes.add(r.quote_asset);
-    venueCounts.add(r.venue_count);
   });
 
   buildExDropdown([...exchanges].sort());
   const qtSel=document.getElementById('quoteFilter');
   [...quotes].sort().forEach(q=>{const o=document.createElement('option');o.value=q;o.textContent=q;qtSel.appendChild(o);});
-  const vcSel=document.getElementById('venueCount');
-  [...venueCounts].sort((a,b)=>a-b).forEach(n=>{const o=document.createElement('option');o.value=n;o.textContent=n+' venue'+(n>1?'s':'');vcSel.appendChild(o);});
 
   document.getElementById('loading').style.display='none';
   document.getElementById('tableWrap').style.display='block';
