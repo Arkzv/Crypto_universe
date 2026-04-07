@@ -6,4 +6,4 @@ Daily overview of tradable spot crypto pairs and their 24h volume distribution a
 - [Latest Report (Markdown)](output/Latest.md) — Plain text volume distribution report
 - [Latest Data (JSON)](output/Latest.json) — Machine-readable structured data
 
-Exchanges: Binance, BitMart, Bybit, Coinbase, CoinW, Crypto.com, Gate, HTX, KuCoin, MEXC, OKX, Upbit
+Exchanges: Binance, Bitget, BitMart, Bybit, Coinbase, CoinW, Crypto.com, Gate, HTX, KuCoin, MEXC, OKX, Upbit

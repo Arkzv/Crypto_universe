@@ -14,6 +14,7 @@ from .common import OUTPUT_DIR, clean_output_dir, generated_at_utc, today_output
 
 EXTERNAL_OUTPUT = Path(__file__).resolve().parent.parent.parent / "output"
 from .spot_universe_binance import fetch_exchange_universe as fetch_binance_universe
+from .spot_universe_bitget import fetch_exchange_universe as fetch_bitget_universe
 from .spot_universe_bitmart import fetch_exchange_universe as fetch_bitmart_universe
 from .spot_universe_bybit import fetch_exchange_universe as fetch_bybit_universe
 from .spot_universe_coinbase import fetch_exchange_universe as fetch_coinbase_universe
@@ -30,6 +31,7 @@ ExchangeFetcher = Callable[[float], Awaitable[dict[str, Any]]]
 
 EXCHANGE_FETCHERS: dict[str, ExchangeFetcher] = {
     "binance": fetch_binance_universe,
+    "bitget": fetch_bitget_universe,
     "bitmart": fetch_bitmart_universe,
     "bybit": fetch_bybit_universe,
     "coinbase": fetch_coinbase_universe,
