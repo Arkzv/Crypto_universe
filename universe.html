@@ -8,12 +8,24 @@
 *{box-sizing:border-box}
 body{font-family:system-ui,-apple-system,sans-serif;margin:0;padding:16px;background:#181a20;color:#e8e8e8;font-size:14px}
 a{color:#5b9cf5}
-.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.header{margin-bottom:14px}
+.header h1{margin:0 0 4px;font-size:20px}
+.header .date{color:#888;font-size:13px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;margin-bottom:12px}
 .bar input,.bar select{background:#23262f;color:#e8e8e8;border:1px solid #333;border-radius:4px;padding:6px 10px;font-size:14px}
-.bar input{width:220px}
+.bar input[type=text]{width:220px}
 .bar select{width:160px}
 .bar label{color:#888;font-size:13px;display:flex;align-items:center;gap:4px}
 .bar label input[type=checkbox]{accent-color:#5b9cf5}
+.ex-multi{position:relative;display:inline-block}
+.ex-btn{background:#23262f;color:#e8e8e8;border:1px solid #333;border-radius:4px;padding:6px 10px;font-size:14px;cursor:pointer;min-width:160px;text-align:left;user-select:none}
+.ex-btn::after{content:'\25bc';float:right;font-size:10px;margin-top:2px;color:#888}
+.ex-drop{display:none;position:absolute;top:100%;left:0;background:#23262f;border:1px solid #333;border-radius:4px;padding:6px 0;z-index:10;min-width:160px;max-height:280px;overflow-y:auto}
+.ex-drop.open{display:block}
+.ex-drop label{display:flex;align-items:center;gap:6px;padding:4px 12px;cursor:pointer;font-size:13px;color:#ccc}
+.ex-drop label:hover{background:#2a2d35}
+.ex-drop .ex-actions{display:flex;gap:8px;padding:4px 12px 6px;border-bottom:1px solid #333;margin-bottom:4px}
+.ex-drop .ex-actions a{font-size:12px;cursor:pointer;color:#5b9cf5}
 .stats{color:#888;font-size:13px;margin-bottom:10px}
 .stats b{color:#c8c8c8}
 .wrap{overflow-x:auto}
@@ -36,9 +48,16 @@ td:nth-child(5){text-align:right}
 </head>
 <body>
 <a class="home" href="index.html">&larr; Home</a>
+<div class="header">
+  <h1>Spot Universe — Volume Distribution</h1>
+  <div class="date" id="updated"></div>
+</div>
 <div class="bar">
   <input type="text" id="search" placeholder="Filter pairs (e.g. BTC, ETH/USDT)">
-  <select id="exchangeFilter"><option value="">All exchanges</option></select>
+  <div class="ex-multi" id="exMulti">
+    <div class="ex-btn" id="exBtn">All exchanges</div>
+    <div class="ex-drop" id="exDrop"></div>
+  </div>
   <select id="quoteFilter"><option value="">All quotes</option></select>
   <select id="venueCount"><option value="">Any venue count</option></select>
   <label><input type="checkbox" id="multiOnly"> Multi-venue only</label>
@@ -65,6 +84,8 @@ let filtered=[];
 let sortCol='idx';
 let sortAsc=true;
 let rendered=0;
+let selectedExchanges=new Set();
+let allExchanges=[];
 
 function fmtVol(v){
   if(v>=1e9)return (v/1e9).toFixed(1)+'B';
@@ -105,16 +126,30 @@ function renderTable(){
   renderBatch();
 }
 
+function updateExBtn(){
+  const btn=document.getElementById('exBtn');
+  if(selectedExchanges.size===0||selectedExchanges.size===allExchanges.length)
+    btn.textContent='All exchanges';
+  else if(selectedExchanges.size<=2)
+    btn.textContent=[...selectedExchanges].sort().join(', ');
+  else
+    btn.textContent=selectedExchanges.size+' exchanges';
+}
+
 function applyFilters(){
   const q=document.getElementById('search').value.toUpperCase();
-  const ex=document.getElementById('exchangeFilter').value;
   const qt=document.getElementById('quoteFilter').value;
   const vc=document.getElementById('venueCount').value;
   const multi=document.getElementById('multiOnly').checked;
+  const filterEx=selectedExchanges.size>0&&selectedExchanges.size<allExchanges.length;
 
   filtered=allRows.filter(r=>{
     if(q&&r.pair.indexOf(q)<0)return false;
-    if(ex&&!r._exchanges.has(ex))return false;
+    if(filterEx){
+      let match=false;
+      for(const e of selectedExchanges){if(r._exchanges.has(e)){match=true;break;}}
+      if(!match)return false;
+    }
     if(qt&&r.quote_asset!==qt)return false;
     if(vc&&r.venue_count!==+vc)return false;
     if(multi&&r.venue_count<2)return false;
@@ -150,14 +185,51 @@ document.querySelectorAll('th').forEach(th=>{
   th.insertAdjacentHTML('beforeend','<span class="arrow"></span>');
 });
 
-['search','exchangeFilter','quoteFilter','venueCount'].forEach(id=>
+['search','quoteFilter','venueCount'].forEach(id=>
   document.getElementById(id).addEventListener(id==='search'?'input':'change',applyFilters));
 document.getElementById('multiOnly').addEventListener('change',applyFilters);
+
+// Exchange multiselect dropdown
+document.getElementById('exBtn').addEventListener('click',e=>{
+  e.stopPropagation();
+  document.getElementById('exDrop').classList.toggle('open');
+});
+document.addEventListener('click',()=>document.getElementById('exDrop').classList.remove('open'));
+document.getElementById('exDrop').addEventListener('click',e=>e.stopPropagation());
+
+function buildExDropdown(exchanges){
+  allExchanges=exchanges;
+  const drop=document.getElementById('exDrop');
+  let html='<div class="ex-actions"><a id="exAll">All</a><a id="exNone">None</a></div>';
+  exchanges.forEach(e=>{
+    html+='<label><input type="checkbox" value="'+e+'" checked> '+e+'</label>';
+  });
+  drop.innerHTML=html;
+  drop.querySelectorAll('input[type=checkbox]').forEach(cb=>{
+    cb.addEventListener('change',()=>{
+      if(cb.checked)selectedExchanges.add(cb.value);else selectedExchanges.delete(cb.value);
+      updateExBtn();applyFilters();
+    });
+  });
+  document.getElementById('exAll').addEventListener('click',()=>{
+    selectedExchanges=new Set(allExchanges);
+    drop.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.checked=true);
+    updateExBtn();applyFilters();
+  });
+  document.getElementById('exNone').addEventListener('click',()=>{
+    selectedExchanges.clear();
+    drop.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.checked=false);
+    updateExBtn();applyFilters();
+  });
+  selectedExchanges=new Set(allExchanges);
+}
 
 fetch('output/Latest.json').then(r=>r.json()).then(data=>{
   const exchanges=new Set();
   const quotes=new Set();
   const venueCounts=new Set();
+
+  document.getElementById('updated').textContent='Last updated: '+data.generated_at;
 
   allRows=data.pairs;
   allRows.forEach(r=>{
@@ -168,8 +240,7 @@ fetch('output/Latest.json').then(r=>r.json()).then(data=>{
     venueCounts.add(r.venue_count);
   });
 
-  const exSel=document.getElementById('exchangeFilter');
-  [...exchanges].sort().forEach(e=>{const o=document.createElement('option');o.value=e;o.textContent=e;exSel.appendChild(o);});
+  buildExDropdown([...exchanges].sort());
   const qtSel=document.getElementById('quoteFilter');
   [...quotes].sort().forEach(q=>{const o=document.createElement('option');o.value=q;o.textContent=q;qtSel.appendChild(o);});
   const vcSel=document.getElementById('venueCount');
@@ -177,7 +248,7 @@ fetch('output/Latest.json').then(r=>r.json()).then(data=>{
 
   document.getElementById('loading').style.display='none';
   document.getElementById('tableWrap').style.display='block';
-  document.getElementById('stats').innerHTML='Generated: <b>'+data.generated_at+'</b> &mdash; <b>'+data.exchanges.length+'</b> exchanges, <b>'+allRows.length+'</b> pairs';
+  document.getElementById('stats').innerHTML='Showing <b>'+allRows.length+'</b> of <b>'+allRows.length+'</b> pairs';
   filtered=allRows.slice();
   renderTable();
 });
