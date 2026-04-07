@@ -143,9 +143,8 @@ function applyFilters(){
   filtered=allRows.filter(r=>{
     if(q&&r.pair.indexOf(q)<0)return false;
     if(filterEx){
-      let match=false;
-      for(const e of selectedExchanges){if(r._exchanges.has(e)){match=true;break;}}
-      if(!match)return false;
+      if(r._exchanges.size!==selectedExchanges.size)return false;
+      for(const e of selectedExchanges){if(!r._exchanges.has(e))return false;}
     }
     if(qt&&r.quote_asset!==qt)return false;
     return true;
