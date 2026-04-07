@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-universe"
+version = "0.1.0"
+description = "Independent crypto spot-universe comparison toolkit"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = []
+
+[project.scripts]
+crypto-universe = "crypto_universe.spot_universe:main"
+crypto-universe-binance = "crypto_universe.spot_universe_binance:main"
+crypto-universe-mexc = "crypto_universe.spot_universe_mexc:main"
+crypto-universe-bybit = "crypto_universe.spot_universe_bybit:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
