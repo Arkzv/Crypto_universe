@@ -119,6 +119,7 @@ def build_cryptocom_volume_by_symbol(payload: Any, spot_symbols: set[str]) -> di
             "last_price": string_or_none(row.get("a")),
             "base_volume": string_or_none(row.get("v")),
             "quote_volume": string_or_none(row.get("vv")),
+            "quote_volume_currency": "USD",
             "open_time_ms": None,
             "close_time_ms": None,
             "trade_count": None,

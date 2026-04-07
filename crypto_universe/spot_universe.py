@@ -164,8 +164,29 @@ def _parse_float(value: Any) -> float:
         return 0.0
 
 
+def _volume_currency(pair_quote: str, vol: dict[str, Any] | None) -> str:
+    if not vol:
+        return pair_quote
+    currency = str(vol.get("quote_volume_currency") or pair_quote).strip().upper()
+    return currency or pair_quote
+
+
+def _display_volume_info(
+    pair_quote: str,
+    vol: dict[str, Any] | None,
+) -> tuple[float, str]:
+    if not vol:
+        return 0.0, pair_quote
+    usdt_volume = vol.get("usdt_volume")
+    if usdt_volume is not None:
+        return _parse_float(usdt_volume), "USDT"
+    return _parse_float(vol.get("quote_volume")), _volume_currency(pair_quote, vol)
+
+
 def build_usdt_rates(payload: dict[str, Any]) -> dict[str, float]:
     rates: dict[str, float] = {"USDT": 1.0}
+
+    # Direct rates from BASE/USDT pairs: 1 BASE = last_price USDT.
     for pair in payload["pairs"]:
         if pair["quote_asset"] != "USDT":
             continue
@@ -185,31 +206,54 @@ def build_usdt_rates(payload: dict[str, Any]) -> dict[str, float]:
                 best_price = lp
         if best_price > 0:
             rates[base] = best_price
+
+    # Reverse rates from USDT/QUOTE pairs: 1 QUOTE = 1 / last_price USDT.
+    for pair in payload["pairs"]:
+        if pair["base_asset"] != "USDT":
+            continue
+        quote = pair["quote_asset"]
+        if quote in rates:
+            continue
+        best_price = 0.0
+        best_qv = -1.0
+        for ex_data in pair["by_exchange"].values():
+            vol = ex_data.get("volume_24h")
+            if not vol:
+                continue
+            qv = _parse_float(vol.get("quote_volume"))
+            lp = _parse_float(vol.get("last_price"))
+            if lp > 0 and qv > best_qv:
+                best_qv = qv
+                best_price = lp
+        if best_price > 0:
+            rates[quote] = 1.0 / best_price
+
     return rates
 
 
 def enrich_with_usdt_volume(payload: dict[str, Any], rates: dict[str, float]) -> None:
     payload["usdt_rates"] = {k: rates[k] for k in sorted(rates)}
     for pair in payload["pairs"]:
-        quote = pair["quote_asset"]
-        rate = rates.get(quote)
-        if rate is None:
-            pair["total_usdt_volume"] = None
-            for ex_data in pair["by_exchange"].values():
-                vol = ex_data.get("volume_24h")
-                if vol:
-                    vol["usdt_volume"] = None
-            continue
         total_usdt = 0.0
+        any_missing = False
         for ex_data in pair["by_exchange"].values():
             vol = ex_data.get("volume_24h")
-            if not vol:
+            if vol is None:
                 continue
             qv = _parse_float(vol.get("quote_volume"))
+            volume_currency = _volume_currency(pair["quote_asset"], vol)
+            if volume_currency in {"USD", "USDT"}:
+                rate = 1.0
+            else:
+                rate = rates.get(volume_currency)
+            if rate is None:
+                vol["usdt_volume"] = None
+                any_missing = True
+                continue
             uv = qv * rate
             vol["usdt_volume"] = uv
             total_usdt += uv
-        pair["total_usdt_volume"] = total_usdt
+        pair["total_usdt_volume"] = None if any_missing and total_usdt == 0.0 else total_usdt
 
 
 def _fmt_volume(value: float) -> str:
@@ -245,27 +289,21 @@ def build_volume_report(payload: dict[str, Any]) -> str:
 
     for idx, pair in enumerate(payload["pairs"], 1):
         pair_name = pair["pair"]
-        quote = pair["quote_asset"]
         venue_count = pair["venue_count"]
 
-        exchange_volumes: list[tuple[str, float]] = []
+        exchange_volumes: list[tuple[str, float, str]] = []
         for ex_name, ex_data in pair["by_exchange"].items():
             vol = ex_data.get("volume_24h")
-            qv = 0.0
-            if vol and vol.get("quote_volume"):
-                try:
-                    qv = float(vol["quote_volume"])
-                except (ValueError, TypeError):
-                    pass
-            exchange_volumes.append((ex_name, qv))
+            display_volume, display_currency = _display_volume_info(pair["quote_asset"], vol)
+            exchange_volumes.append((ex_name, display_volume, display_currency))
 
-        total = sum(v for _, v in exchange_volumes)
+        total = sum(v for _, v, _ in exchange_volumes)
         exchange_volumes.sort(key=lambda x: x[1], reverse=True)
 
         parts: list[str] = []
-        for ex_name, vol in exchange_volumes:
+        for ex_name, vol, currency in exchange_volumes:
             pct = (vol / total * 100) if total > 0 else 0.0
-            parts.append(f"{ex_name} {_fmt_volume(vol)} {quote} {pct:.0f}%")
+            parts.append(f"{ex_name} {_fmt_volume(vol)} {currency} {pct:.0f}%")
 
         total_usdt = pair.get("total_usdt_volume")
         usdt_cell = _fmt_volume(total_usdt) if total_usdt is not None else "—"
@@ -279,30 +317,39 @@ def build_volume_report(payload: dict[str, Any]) -> str:
 def build_latest_json(payload: dict[str, Any]) -> dict[str, Any]:
     pairs_out: list[dict[str, Any]] = []
     for pair in payload["pairs"]:
-        quote = pair["quote_asset"]
-        exchange_volumes: list[tuple[str, float, Any]] = []
+        exchange_volumes: list[tuple[str, float, str, Any, float, str]] = []
         for ex_name, ex_data in pair["by_exchange"].items():
             vol = ex_data.get("volume_24h")
-            qv = 0.0
+            raw_qv = 0.0
             uv = None
+            raw_currency = pair["quote_asset"]
             if vol:
-                qv = _parse_float(vol.get("quote_volume"))
+                raw_qv = _parse_float(vol.get("quote_volume"))
                 uv = vol.get("usdt_volume")
-            exchange_volumes.append((ex_name, qv, uv))
+                raw_currency = _volume_currency(pair["quote_asset"], vol)
+            display_qv, display_currency = _display_volume_info(pair["quote_asset"], vol)
+            exchange_volumes.append((ex_name, display_qv, display_currency, uv, raw_qv, raw_currency))
 
-        total = sum(v for _, v, _ in exchange_volumes)
+        total = sum(v for _, v, _, _, _, _ in exchange_volumes)
+        raw_total = sum(v for _, _, _, _, v, _ in exchange_volumes)
         exchange_volumes.sort(key=lambda x: x[1], reverse=True)
+        display_currencies = {
+            currency for _, vol, currency, _, _, _ in exchange_volumes if currency and vol > 0
+        }
 
         venues: list[dict[str, Any]] = []
-        for ex_name, vol, uv in exchange_volumes:
+        for ex_name, vol, display_currency, uv, raw_qv, raw_currency in exchange_volumes:
             pct = round(vol / total * 100, 2) if total > 0 else 0.0
             venue_entry: dict[str, Any] = {
                 "exchange": ex_name,
                 "quote_volume": vol,
-                "quote_currency": quote,
+                "quote_currency": display_currency,
                 "volume_pct": pct,
                 "usdt_volume": round(uv, 2) if uv is not None else None,
             }
+            if raw_currency != display_currency or raw_qv != vol:
+                venue_entry["raw_quote_volume"] = raw_qv
+                venue_entry["raw_quote_currency"] = raw_currency
             venues.append(venue_entry)
 
         total_usdt = pair.get("total_usdt_volume")
@@ -311,7 +358,13 @@ def build_latest_json(payload: dict[str, Any]) -> dict[str, Any]:
             "base_asset": pair["base_asset"],
             "quote_asset": pair["quote_asset"],
             "venue_count": pair["venue_count"],
-            "total_quote_volume": total,
+            "total_quote_volume": raw_total,
+            "display_total_volume": total,
+            "display_currency": (
+                display_currencies.pop()
+                if len(display_currencies) == 1
+                else ("MIXED" if display_currencies else pair["quote_asset"])
+            ),
             "total_usdt_volume": round(total_usdt, 2) if total_usdt is not None else None,
             "venues": venues,
         })
@@ -402,6 +455,11 @@ def auto_commit(generated_at: str) -> None:
             cwd=repo_root, check=True, capture_output=True,
         )
         print(f"Git: committed spot universe {date_str}")
+        subprocess.run(
+            ["git", "push"],
+            cwd=repo_root, check=True, capture_output=True,
+        )
+        print("Git: pushed to upstream")
     except FileNotFoundError:
         print("Git: git not found, skipping auto-commit")
     except subprocess.CalledProcessError as exc:

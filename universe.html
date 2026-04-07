@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Crypto Universe — Explorer</title>
 <style>
 *{box-sizing:border-box}
@@ -184,7 +187,9 @@ function renderBatch(){
   for(let i=rendered;i<end;i++){
     const r=filtered[i];
     const uv=r.total_usdt_volume!=null?fmtVol(r.total_usdt_volume):'—';
-    html+='<tr><td>'+r._idx+'</td><td>'+r.pair+'</td><td>'+r.base_asset+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(r.total_quote_volume)+' '+r.quote_asset+'</td><td>'+uv+'</td><td>'+r._distHTML+'</td></tr>';
+    const tv=r.display_total_volume!=null?r.display_total_volume:r.total_quote_volume;
+    const tc=r.display_currency||r.quote_asset;
+    html+='<tr><td>'+r._idx+'</td><td>'+r.pair+'</td><td>'+r.base_asset+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(tv)+' '+tc+'</td><td>'+uv+'</td><td>'+r._distHTML+'</td></tr>';
   }
   tbody.insertAdjacentHTML('beforeend',html);
   rendered=end;
@@ -293,7 +298,13 @@ function buildExDropdown(exchanges){
   selectedExchanges=new Set(allExchanges);
 }
 
-fetch('output/Latest.json').then(r=>r.json()).then(data=>{
+function latestJsonUrl(){
+  const url=new URL('output/Latest.json',window.location.href);
+  url.searchParams.set('ts',String(Date.now()));
+  return url.toString();
+}
+
+fetch(latestJsonUrl(),{cache:'no-store'}).then(r=>r.json()).then(data=>{
   const exchanges=new Set();
   const quotes=new Set();
   document.getElementById('updated').textContent='Last updated: '+data.generated_at;
