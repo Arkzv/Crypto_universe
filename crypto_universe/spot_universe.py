@@ -28,6 +28,8 @@ from .spot_universe_kucoin import fetch_exchange_universe as fetch_kucoin_univer
 from .withdrawal_fee_kucoin import fetch_withdrawal_fees as fetch_kucoin_withdrawal_fees
 from .withdrawal_fee_kucoin import print_summary as print_kucoin_fee_summary
 from .spot_universe_mexc import fetch_exchange_universe as fetch_mexc_universe
+from .withdrawal_fee_mexc import fetch_withdrawal_fees as fetch_mexc_withdrawal_fees
+from .withdrawal_fee_mexc import print_summary as print_mexc_fee_summary
 from .spot_universe_okx import fetch_exchange_universe as fetch_okx_universe
 from .spot_universe_upbit import fetch_exchange_universe as fetch_upbit_universe
 
@@ -429,6 +431,8 @@ async def async_main() -> int:
         fee_tasks["kucoin"] = fetch_kucoin_withdrawal_fees(args.timeout_seconds)
     if "bybit" in requested:
         fee_tasks["bybit"] = fetch_bybit_withdrawal_fees(args.timeout_seconds)
+    if "mexc" in requested:
+        fee_tasks["mexc"] = fetch_mexc_withdrawal_fees(args.timeout_seconds)
 
     all_tasks: list[Any] = [fetch_requested_exchanges(args.exchanges, args.timeout_seconds)]
     fee_keys = list(fee_tasks.keys())
@@ -437,15 +441,18 @@ async def async_main() -> int:
     exchange_payloads = results[0]
     fee_payloads = dict(zip(fee_keys, results[1:]))
 
+    fee_writers = {
+        "kucoin": print_kucoin_fee_summary,
+        "bybit": print_bybit_fee_summary,
+        "mexc": print_mexc_fee_summary,
+    }
     out_dir = today_output_dir()
-    if fee_payloads.get("kucoin") is not None:
-        fee_path = str(out_dir / "crypto_withdrawal_fee_kucoin.json")
-        fee_output = write_json(fee_payloads["kucoin"], fee_path, args.indent)
-        print_kucoin_fee_summary(fee_payloads["kucoin"], fee_output)
-    if fee_payloads.get("bybit") is not None:
-        fee_path = str(out_dir / "crypto_withdrawal_fee_bybit.json")
-        fee_output = write_json(fee_payloads["bybit"], fee_path, args.indent)
-        print_bybit_fee_summary(fee_payloads["bybit"], fee_output)
+    for exchange, summary_fn in fee_writers.items():
+        fee_data = fee_payloads.get(exchange)
+        if fee_data is not None:
+            fee_path = str(out_dir / f"crypto_withdrawal_fee_{exchange}.json")
+            fee_output = write_json(fee_data, fee_path, args.indent)
+            summary_fn(fee_data, fee_output)
 
     for payload in exchange_payloads:
         exchange_path = str(out_dir / f"spot_universe_{payload['exchange']}.json")

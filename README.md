@@ -12,4 +12,6 @@ Daily overview of tradable spot crypto pairs and their 24h volume distribution a
 Exchanges: Binance, Bitget, BitMart, Bybit, Coinbase, CoinW, Crypto.com, Gate, HTX, KuCoin, MEXC, OKX, Upbit
 
 ### Features
-- Best effort conversion of traded volumes to USDT
+- Spot crypto pairs
+    - Conversion of traded volumes to USDT
+- Crypto withdrawal fees
