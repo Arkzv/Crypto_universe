@@ -1,6 +1,7 @@
 # Crypto Universe
 
 Daily overview of tradable spot crypto pairs and their 24h volume distribution across major exchanges.
+- Best effort conversion of traded volumes to USDT
 
 - [Volume Distribution Explorer](https://arkzv.github.io/Crypto_universe/universe.html) — Interactive table with sorting and filtering
 - [Latest Report (Markdown)](output/Latest.md) — Plain text volume distribution report
