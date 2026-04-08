@@ -17,12 +17,16 @@ from .spot_universe_binance import fetch_exchange_universe as fetch_binance_univ
 from .spot_universe_bitget import fetch_exchange_universe as fetch_bitget_universe
 from .spot_universe_bitmart import fetch_exchange_universe as fetch_bitmart_universe
 from .spot_universe_bybit import fetch_exchange_universe as fetch_bybit_universe
+from .withdrawal_fee_bybit import fetch_withdrawal_fees as fetch_bybit_withdrawal_fees
+from .withdrawal_fee_bybit import print_summary as print_bybit_fee_summary
 from .spot_universe_coinbase import fetch_exchange_universe as fetch_coinbase_universe
 from .spot_universe_coinw import fetch_exchange_universe as fetch_coinw_universe
 from .spot_universe_cryptocom import fetch_exchange_universe as fetch_cryptocom_universe
 from .spot_universe_gate import fetch_exchange_universe as fetch_gate_universe
 from .spot_universe_htx import fetch_exchange_universe as fetch_htx_universe
 from .spot_universe_kucoin import fetch_exchange_universe as fetch_kucoin_universe
+from .withdrawal_fee_kucoin import fetch_withdrawal_fees as fetch_kucoin_withdrawal_fees
+from .withdrawal_fee_kucoin import print_summary as print_kucoin_fee_summary
 from .spot_universe_mexc import fetch_exchange_universe as fetch_mexc_universe
 from .spot_universe_okx import fetch_exchange_universe as fetch_okx_universe
 from .spot_universe_upbit import fetch_exchange_universe as fetch_upbit_universe
@@ -419,9 +423,30 @@ async def async_main() -> int:
     args = parse_args()
     validate_common_args(args)
     clean_output_dir()
-    exchange_payloads = await fetch_requested_exchanges(args.exchanges, args.timeout_seconds)
+    requested = [e.strip().lower() for e in args.exchanges]
+    fee_tasks: dict[str, Any] = {}
+    if "kucoin" in requested:
+        fee_tasks["kucoin"] = fetch_kucoin_withdrawal_fees(args.timeout_seconds)
+    if "bybit" in requested:
+        fee_tasks["bybit"] = fetch_bybit_withdrawal_fees(args.timeout_seconds)
+
+    all_tasks: list[Any] = [fetch_requested_exchanges(args.exchanges, args.timeout_seconds)]
+    fee_keys = list(fee_tasks.keys())
+    all_tasks.extend(fee_tasks.values())
+    results = await asyncio.gather(*all_tasks)
+    exchange_payloads = results[0]
+    fee_payloads = dict(zip(fee_keys, results[1:]))
 
     out_dir = today_output_dir()
+    if fee_payloads.get("kucoin") is not None:
+        fee_path = str(out_dir / "crypto_withdrawal_fee_kucoin.json")
+        fee_output = write_json(fee_payloads["kucoin"], fee_path, args.indent)
+        print_kucoin_fee_summary(fee_payloads["kucoin"], fee_output)
+    if fee_payloads.get("bybit") is not None:
+        fee_path = str(out_dir / "crypto_withdrawal_fee_bybit.json")
+        fee_output = write_json(fee_payloads["bybit"], fee_path, args.indent)
+        print_bybit_fee_summary(fee_payloads["bybit"], fee_output)
+
     for payload in exchange_payloads:
         exchange_path = str(out_dir / f"spot_universe_{payload['exchange']}.json")
         write_json(payload, exchange_path, args.indent)

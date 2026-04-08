@@ -44,27 +44,32 @@ def default_output_path(prefix: str) -> str:
 
 
 def clean_output_dir() -> None:
-    if OUTPUT_DIR.exists():
-        shutil.rmtree(OUTPUT_DIR)
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    """Remove only today's dated subdirectory, preserving previous days."""
+    today_dir = today_output_dir()
+    if today_dir.exists():
+        shutil.rmtree(today_dir)
+    today_dir.mkdir(parents=True, exist_ok=True)
+
+
+clean_today_output_dir = clean_output_dir
 
 
 def generated_at_utc() -> str:
     return datetime.now(tz=UTC).replace(microsecond=0).isoformat()
 
 
-async def fetch_json(url: str, timeout_seconds: float) -> Any:
-    return await asyncio.to_thread(fetch_json_sync, url, timeout_seconds)
+async def fetch_json(url: str, timeout_seconds: float, *, extra_headers: dict[str, str] | None = None) -> Any:
+    return await asyncio.to_thread(fetch_json_sync, url, timeout_seconds, extra_headers=extra_headers)
 
 
-def fetch_json_sync(url: str, timeout_seconds: float) -> Any:
-    request = urllib.request.Request(
-        url,
-        headers={
-            "Accept": "application/json",
-            "User-Agent": "crypto-universe/0.1.0",
-        },
-    )
+def fetch_json_sync(url: str, timeout_seconds: float, *, extra_headers: dict[str, str] | None = None) -> Any:
+    headers = {
+        "Accept": "application/json",
+        "User-Agent": "crypto-universe/0.1.0",
+    }
+    if extra_headers:
+        headers.update(extra_headers)
+    request = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(request, timeout=timeout_seconds) as response:
         return json.load(response)
 

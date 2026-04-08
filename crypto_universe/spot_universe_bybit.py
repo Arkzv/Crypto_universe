@@ -13,9 +13,11 @@ from .common import (
     normalize_text,
     pair_key,
     string_or_none,
+    today_output_dir,
     validate_common_args,
     write_json,
 )
+from .withdrawal_fee_bybit import fetch_withdrawal_fees, print_summary as print_fee_summary
 
 EXCHANGE = "bybit"
 INSTRUMENTS_URL = "https://api.bybit.com/v5/market/instruments-info?category=spot"
@@ -161,9 +163,16 @@ async def async_main() -> int:
     args = parser.parse_args()
     validate_common_args(args)
     clean_output_dir()
-    payload = await fetch_exchange_universe(args.timeout_seconds)
+    payload, fee_payload = await asyncio.gather(
+        fetch_exchange_universe(args.timeout_seconds),
+        fetch_withdrawal_fees(args.timeout_seconds),
+    )
     output_target = write_json(payload, args.output, args.indent)
     print_summary(payload, output_target)
+    if fee_payload is not None:
+        fee_path = str(today_output_dir() / "crypto_withdrawal_fee_bybit.json")
+        fee_output = write_json(fee_payload, fee_path, args.indent)
+        print_fee_summary(fee_payload, fee_output)
     return 0
 
 
