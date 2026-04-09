@@ -10,7 +10,15 @@ from typing import Any, Awaitable, Callable
 
 import json
 
-from .common import OUTPUT_DIR, clean_output_dir, generated_at_utc, today_output_dir, validate_common_args, write_json
+from .common import (
+    OUTPUT_DIR,
+    clean_output_dir,
+    generated_at_utc,
+    normalize_text,
+    today_output_dir,
+    validate_common_args,
+    write_json,
+)
 
 EXTERNAL_OUTPUT = Path(__file__).resolve().parent.parent.parent / "output"
 from .spot_universe_binance import fetch_exchange_universe as fetch_binance_universe
@@ -320,7 +328,76 @@ def build_volume_report(payload: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
-def build_latest_json(payload: dict[str, Any]) -> dict[str, Any]:
+def _summarize_transfer_flag(
+    chains: list[dict[str, Any]],
+    key: str,
+) -> dict[str, Any] | None:
+    flags: list[bool] = []
+    for chain in chains:
+        value = chain.get(key)
+        if value is None:
+            continue
+        flags.append(bool(value))
+
+    if not flags:
+        return None
+
+    enabled_count = sum(1 for flag in flags if flag)
+    if enabled_count == len(flags):
+        status = "enabled"
+    elif enabled_count == 0:
+        status = "disabled"
+    else:
+        status = "partial"
+
+    return {
+        "status": status,
+        "enabled_chains": enabled_count,
+        "total_chains": len(flags),
+    }
+
+
+def build_transfer_status_index(
+    fee_payloads: dict[str, dict[str, Any] | None],
+) -> dict[str, dict[str, dict[str, Any]]]:
+    index: dict[str, dict[str, dict[str, Any]]] = {}
+
+    for exchange, payload in fee_payloads.items():
+        if not payload:
+            continue
+        entries = payload.get("currencies")
+        if not isinstance(entries, list):
+            continue
+
+        exchange_index: dict[str, dict[str, Any]] = {}
+        for entry in entries:
+            if not isinstance(entry, dict):
+                continue
+            currency = normalize_text(entry.get("currency"))
+            chains = entry.get("chains")
+            if not currency or not isinstance(chains, list) or not chains:
+                continue
+
+            deposit = _summarize_transfer_flag(chains, "is_deposit_enabled")
+            withdraw = _summarize_transfer_flag(chains, "is_withdraw_enabled")
+            if not deposit and not withdraw:
+                continue
+
+            exchange_index[currency] = {
+                "deposit": deposit,
+                "withdraw": withdraw,
+            }
+
+        if exchange_index:
+            index[exchange] = exchange_index
+
+    return index
+
+
+def build_latest_json(
+    payload: dict[str, Any],
+    transfer_status_index: dict[str, dict[str, dict[str, Any]]] | None = None,
+) -> dict[str, Any]:
     pairs_out: list[dict[str, Any]] = []
     for pair in payload["pairs"]:
         exchange_volumes: list[tuple[str, float, str, Any, float, str]] = []
@@ -353,6 +430,15 @@ def build_latest_json(payload: dict[str, Any]) -> dict[str, Any]:
                 "volume_pct": pct,
                 "usdt_volume": round(uv, 2) if uv is not None else None,
             }
+            base_asset_transfer = None
+            if transfer_status_index:
+                base_asset_transfer = transfer_status_index.get(ex_name, {}).get(pair["base_asset"])
+            if base_asset_transfer is not None:
+                venue_entry["base_asset_transfer"] = {
+                    "asset": pair["base_asset"],
+                    "deposit": dict(base_asset_transfer["deposit"]) if base_asset_transfer.get("deposit") else None,
+                    "withdraw": dict(base_asset_transfer["withdraw"]) if base_asset_transfer.get("withdraw") else None,
+                }
             if raw_currency != display_currency or raw_qv != vol:
                 venue_entry["raw_quote_volume"] = raw_qv
                 venue_entry["raw_quote_currency"] = raw_currency
@@ -376,7 +462,7 @@ def build_latest_json(payload: dict[str, Any]) -> dict[str, Any]:
         })
 
     return {
-        "schema_version": 2,
+        "schema_version": 3,
         "generated_at": payload["generated_at"],
         "exchanges": sorted(payload["requested_exchanges"]),
         "usdt_rates": payload.get("usdt_rates", {}),
@@ -385,12 +471,16 @@ def build_latest_json(payload: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def write_volume_report(payload: dict[str, Any], out_dir: Path) -> str:
+def write_volume_report(
+    payload: dict[str, Any],
+    out_dir: Path,
+    transfer_status_index: dict[str, dict[str, dict[str, Any]]] | None = None,
+) -> str:
     report = build_volume_report(payload)
     path = out_dir / "README.md"
     path.write_text(report + "\n", encoding="utf-8")
 
-    latest_json_data = build_latest_json(payload)
+    latest_json_data = build_latest_json(payload, transfer_status_index)
     latest_json_text = json.dumps(latest_json_data, indent=2, sort_keys=False) + "\n"
 
     # Copy to repo output/
@@ -461,9 +551,10 @@ async def async_main() -> int:
     combined = build_combined_payload(exchange_payloads)
     usdt_rates = build_usdt_rates(combined)
     enrich_with_usdt_volume(combined, usdt_rates)
+    transfer_status_index = build_transfer_status_index(fee_payloads)
     print(f"USDT rates derived for {len(usdt_rates)} quote currencies")
     output_target = write_json(combined, args.output, args.indent)
-    report_path = write_volume_report(combined, out_dir)
+    report_path = write_volume_report(combined, out_dir, transfer_status_index)
     print_summary(combined, output_target)
     print(f"Volume report: {report_path}")
     auto_commit(combined["generated_at"])

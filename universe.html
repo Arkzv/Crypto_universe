@@ -31,6 +31,7 @@ a{color:#5b9cf5}
 .ex-drop .ex-actions a{font-size:12px;cursor:pointer;color:#5b9cf5}
 .stats{color:#888;font-size:13px;margin-bottom:10px}
 .stats b{color:#c8c8c8}
+.legend{color:#8d93a1;font-size:12px;margin:-2px 0 10px}
 .wrap{overflow-x:auto}
 table{border-collapse:collapse;width:100%}
 th,td{text-align:left;padding:5px 10px;border-bottom:1px solid #23262f;white-space:nowrap}
@@ -45,6 +46,10 @@ td:nth-child(6){text-align:right}
 .venue{display:inline-block;margin:0 2px}
 .venue .nm{color:#5b9cf5;text-decoration:none}
 .venue .nm:hover{text-decoration:underline}
+.transfer-badge{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;margin-left:4px;border-radius:999px;border:1px solid transparent;font-size:10px;font-weight:700;line-height:1;vertical-align:middle}
+.transfer-badge.deposit{background:#48351b;color:#ffd37a;border-color:#7c5b28}
+.transfer-badge.withdraw{background:#4a2228;color:#ffb0b6;border-color:#80363f}
+.transfer-badge.partial{opacity:.72}
 .venue .vol{color:#999}
 .venue .pct{color:#e8c84a;font-weight:600}
 .venue .sep{color:#444;margin:0 2px}
@@ -67,6 +72,7 @@ td:nth-child(6){text-align:right}
   <select id="quoteFilter"><option value="">All quotes</option></select>
 </div>
 <div class="stats" id="stats"></div>
+<div class="legend"><span class="transfer-badge deposit">D</span> deposit restricted <span class="transfer-badge withdraw">W</span> withdrawal restricted for the pair's base asset</div>
 <div id="loading">Loading data&hellip;</div>
 <div class="wrap" id="tableWrap" style="display:none">
 <table>
@@ -91,6 +97,7 @@ let sortAsc=true;
 let rendered=0;
 let selectedExchanges=new Set();
 let allExchanges=[];
+const HTML_ESCAPES={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
 const EXCHANGE_LABELS={
   binance:'Binance',
   bitget:'Bitget',
@@ -118,6 +125,10 @@ function fmtVol(v){
 
 function exchangeLabel(exchange){
   return EXCHANGE_LABELS[exchange]||exchange;
+}
+
+function escapeHtml(value){
+  return String(value??'').replace(/[&<>"']/g,ch=>HTML_ESCAPES[ch]);
 }
 
 function tradeUrl(exchange, baseAsset, quoteAsset){
@@ -165,17 +176,39 @@ function tradeUrl(exchange, baseAsset, quoteAsset){
   }
 }
 
+function restrictionTitle(kind, info, exchange, asset){
+  const label=kind==='deposit'?'Deposit':'Withdrawal';
+  const prefix=label+' for '+asset+' on '+exchangeLabel(exchange);
+  if(info.status==='disabled')return prefix+' is unavailable';
+  if(info.status==='partial')return prefix+' is partially available ('+info.enabled_chains+'/'+info.total_chains+' chains enabled)';
+  return prefix+' is available';
+}
+
+function buildRestrictionBadges(venue, baseAsset){
+  const transfer=venue.base_asset_transfer;
+  if(!transfer)return '';
+  let html='';
+  [['deposit','D','deposit'],['withdraw','W','withdraw']].forEach(([key,label,cls])=>{
+    const info=transfer[key];
+    if(!info||info.status==='enabled')return;
+    const extra=info.status==='partial'?' partial':'';
+    html+='<span class="transfer-badge '+cls+extra+'" title="'+escapeHtml(restrictionTitle(key,info,venue.exchange,baseAsset))+'">'+label+'</span>';
+  });
+  return html;
+}
+
 function buildDistHTML(row){
   let h='';
   for(let i=0;i<row.venues.length;i++){
     const v=row.venues[i];
     const label=exchangeLabel(v.exchange);
     const href=tradeUrl(v.exchange,row.base_asset,row.quote_asset);
+    const restrictionHTML=buildRestrictionBadges(v,row.base_asset);
     const nameHTML=href
       ? '<a class="nm" href="'+href+'" target="_blank" rel="noopener noreferrer">'+label+'</a>'
       : '<span class="nm">'+label+'</span>';
     if(i>0)h+='<span class="sep">&middot;</span>';
-    h+='<span class="venue">'+nameHTML+' <span class="vol">'+fmtVol(v.quote_volume)+' '+v.quote_currency+'</span> <span class="pct">'+Math.round(v.volume_pct)+'%</span></span>';
+    h+='<span class="venue">'+nameHTML+restrictionHTML+' <span class="vol">'+fmtVol(v.quote_volume)+' '+v.quote_currency+'</span> <span class="pct">'+Math.round(v.volume_pct)+'%</span></span>';
   }
   return h;
 }
