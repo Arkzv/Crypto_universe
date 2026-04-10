@@ -1,0 +1,6775 @@
+{
+  "schema_version": 1,
+  "data_type": "futures_funding_rates",
+  "exchange": "mexc",
+  "generated_at": "2026-04-10T19:54:08+00:00",
+  "source": {
+    "contract_detail_url": "https://api.mexc.com/api/v1/contract/detail",
+    "ticker_url": "https://api.mexc.com/api/v1/contract/ticker",
+    "funding_rate_source": "ticker.fundingRate",
+    "tradable_filter": "state == 0 and apiAllowed == true and type == 1"
+  },
+  "summary": {
+    "contract_detail_rows": 847,
+    "ticker_rows": 854,
+    "futures_pair_count": 847,
+    "tradable_futures_pair_count": 750,
+    "pairs_with_funding_rate_count": 750,
+    "pairs_missing_funding_rate_count": 0,
+    "positive_funding_rate_count": 568,
+    "negative_funding_rate_count": 170,
+    "zero_funding_rate_count": 12
+  },
+  "pairs": [
+    {
+      "symbol": "0G_USDT",
+      "pair": "0G/USDT",
+      "base_asset": "0G",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-4.3e-05",
+      "funding_timestamp_ms": 1775850845731
+    },
+    {
+      "symbol": "1000000BABYDOGE_USDT",
+      "pair": "1000000BABYDOGE/USDT",
+      "base_asset": "1000000BABYDOGE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845673
+    },
+    {
+      "symbol": "1000000MOG_USDT",
+      "pair": "1000000MOG/USDT",
+      "base_asset": "1000000MOG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845625
+    },
+    {
+      "symbol": "1000BONK_USDC",
+      "pair": "1000BONK/USDC",
+      "base_asset": "1000BONK",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "3.6e-05",
+      "funding_timestamp_ms": 1775850846019
+    },
+    {
+      "symbol": "1000BONK_USDT",
+      "pair": "1000BONK/USDT",
+      "base_asset": "1000BONK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845133
+    },
+    {
+      "symbol": "1000BTT_USDT",
+      "pair": "1000BTT/USDT",
+      "base_asset": "1000BTT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000187",
+      "funding_timestamp_ms": 1775850845688
+    },
+    {
+      "symbol": "1000RATS_USDT",
+      "pair": "1000RATS/USDT",
+      "base_asset": "1000RATS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845582
+    },
+    {
+      "symbol": "1INCH_USDT",
+      "pair": "1INCH/USDT",
+      "base_asset": "1INCH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845425
+    },
+    {
+      "symbol": "2Z_USDT",
+      "pair": "2Z/USDT",
+      "base_asset": "2Z",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845516
+    },
+    {
+      "symbol": "4_USDT",
+      "pair": "4/USDT",
+      "base_asset": "4",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844909
+    },
+    {
+      "symbol": "AAPLSTOCK_USDT",
+      "pair": "AAPLSTOCK/USDT",
+      "base_asset": "AAPLSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845355
+    },
+    {
+      "symbol": "AAVE_USDC",
+      "pair": "AAVE/USDC",
+      "base_asset": "AAVE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-5.1e-05",
+      "funding_timestamp_ms": 1775850845887
+    },
+    {
+      "symbol": "AAVE_USDT",
+      "pair": "AAVE/USDT",
+      "base_asset": "AAVE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844861
+    },
+    {
+      "symbol": "ACE_USDT",
+      "pair": "ACE/USDT",
+      "base_asset": "ACE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000165",
+      "funding_timestamp_ms": 1775850845523
+    },
+    {
+      "symbol": "ACH_USDT",
+      "pair": "ACH/USDT",
+      "base_asset": "ACH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845358
+    },
+    {
+      "symbol": "ACS_USDT",
+      "pair": "ACS/USDT",
+      "base_asset": "ACS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000124",
+      "funding_timestamp_ms": 1775850845966
+    },
+    {
+      "symbol": "ACT_USDT",
+      "pair": "ACT/USDT",
+      "base_asset": "ACT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "8e-05",
+      "funding_timestamp_ms": 1775850845360
+    },
+    {
+      "symbol": "ACU_USDT",
+      "pair": "ACU/USDT",
+      "base_asset": "ACU",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845440
+    },
+    {
+      "symbol": "ACX_USDT",
+      "pair": "ACX/USDT",
+      "base_asset": "ACX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845238
+    },
+    {
+      "symbol": "ADA_USD",
+      "pair": "ADA/USD",
+      "base_asset": "ADA",
+      "quote_asset": "USD",
+      "settle_asset": "ADA",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844996
+    },
+    {
+      "symbol": "ADA_USDC",
+      "pair": "ADA/USDC",
+      "base_asset": "ADA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-1.4e-05",
+      "funding_timestamp_ms": 1775850845826
+    },
+    {
+      "symbol": "ADA_USDT",
+      "pair": "ADA/USDT",
+      "base_asset": "ADA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844856
+    },
+    {
+      "symbol": "ADI_USDT",
+      "pair": "ADI/USDT",
+      "base_asset": "ADI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000113",
+      "funding_timestamp_ms": 1775850845434
+    },
+    {
+      "symbol": "AERGO_USDT",
+      "pair": "AERGO/USDT",
+      "base_asset": "AERGO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846007
+    },
+    {
+      "symbol": "AERO_USDT",
+      "pair": "AERO/USDT",
+      "base_asset": "AERO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845106
+    },
+    {
+      "symbol": "AEVO_USDC",
+      "pair": "AEVO/USDC",
+      "base_asset": "AEVO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850846047
+    },
+    {
+      "symbol": "AEVO_USDT",
+      "pair": "AEVO/USDT",
+      "base_asset": "AEVO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845524
+    },
+    {
+      "symbol": "AGI_USDT",
+      "pair": "AGI/USDT",
+      "base_asset": "AGI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845725
+    },
+    {
+      "symbol": "AGLD_USDT",
+      "pair": "AGLD/USDT",
+      "base_asset": "AGLD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "7.7e-05",
+      "funding_timestamp_ms": 1775850845564
+    },
+    {
+      "symbol": "AGT_USDT",
+      "pair": "AGT/USDT",
+      "base_asset": "AGT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000259",
+      "funding_timestamp_ms": 1775850844839
+    },
+    {
+      "symbol": "AIA_USDT",
+      "pair": "AIA/USDT",
+      "base_asset": "AIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844980
+    },
+    {
+      "symbol": "AIN_USDT",
+      "pair": "AIN/USDT",
+      "base_asset": "AIN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000174",
+      "funding_timestamp_ms": 1775850845217
+    },
+    {
+      "symbol": "AIOT_USDT",
+      "pair": "AIOT/USDT",
+      "base_asset": "AIOT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844929
+    },
+    {
+      "symbol": "AIOZ_USDT",
+      "pair": "AIOZ/USDT",
+      "base_asset": "AIOZ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845725
+    },
+    {
+      "symbol": "AIO_USDT",
+      "pair": "AIO/USDT",
+      "base_asset": "AIO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000583",
+      "funding_timestamp_ms": 1775850845481
+    },
+    {
+      "symbol": "AIXBT_USDT",
+      "pair": "AIXBT/USDT",
+      "base_asset": "AIXBT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3.1e-05",
+      "funding_timestamp_ms": 1775850845110
+    },
+    {
+      "symbol": "AI_USDT",
+      "pair": "AI/USDT",
+      "base_asset": "AI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845748
+    },
+    {
+      "symbol": "AKE_USDT",
+      "pair": "AKE/USDT",
+      "base_asset": "AKE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000148",
+      "funding_timestamp_ms": 1775850844835
+    },
+    {
+      "symbol": "AKT_USDT",
+      "pair": "AKT/USDT",
+      "base_asset": "AKT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845265
+    },
+    {
+      "symbol": "ALCH_USDT",
+      "pair": "ALCH/USDT",
+      "base_asset": "ALCH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845753
+    },
+    {
+      "symbol": "ALEO_USDT",
+      "pair": "ALEO/USDT",
+      "base_asset": "ALEO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000123",
+      "funding_timestamp_ms": 1775850845812
+    },
+    {
+      "symbol": "ALGO_USDT",
+      "pair": "ALGO/USDT",
+      "base_asset": "ALGO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844900
+    },
+    {
+      "symbol": "ALICE_USDT",
+      "pair": "ALICE/USDT",
+      "base_asset": "ALICE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845487
+    },
+    {
+      "symbol": "ALLO_USDT",
+      "pair": "ALLO/USDT",
+      "base_asset": "ALLO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845312
+    },
+    {
+      "symbol": "ALL_USDT",
+      "pair": "ALL/USDT",
+      "base_asset": "ALL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.001216",
+      "funding_timestamp_ms": 1775850845927
+    },
+    {
+      "symbol": "ALPINE_USDT",
+      "pair": "ALPINE/USDT",
+      "base_asset": "ALPINE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845935
+    },
+    {
+      "symbol": "ALT_USDT",
+      "pair": "ALT/USDT",
+      "base_asset": "ALT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-6e-06",
+      "funding_timestamp_ms": 1775850845638
+    },
+    {
+      "symbol": "AMP_USDT",
+      "pair": "AMP/USDT",
+      "base_asset": "AMP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845649
+    },
+    {
+      "symbol": "AMZNSTOCK_USDT",
+      "pair": "AMZNSTOCK/USDT",
+      "base_asset": "AMZNSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3e-06",
+      "funding_timestamp_ms": 1775850845185
+    },
+    {
+      "symbol": "ANIME_USDT",
+      "pair": "ANIME/USDT",
+      "base_asset": "ANIME",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845224
+    },
+    {
+      "symbol": "ANKR_USDT",
+      "pair": "ANKR/USDT",
+      "base_asset": "ANKR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.7e-05",
+      "funding_timestamp_ms": 1775850845636
+    },
+    {
+      "symbol": "APEX_USDT",
+      "pair": "APEX/USDT",
+      "base_asset": "APEX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845619
+    },
+    {
+      "symbol": "APE_USDT",
+      "pair": "APE/USDT",
+      "base_asset": "APE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000106",
+      "funding_timestamp_ms": 1775850845149
+    },
+    {
+      "symbol": "API3_USDT",
+      "pair": "API3/USDT",
+      "base_asset": "API3",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845719
+    },
+    {
+      "symbol": "APR_USDT",
+      "pair": "APR/USDT",
+      "base_asset": "APR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000139",
+      "funding_timestamp_ms": 1775850845257
+    },
+    {
+      "symbol": "APT_USDC",
+      "pair": "APT/USDC",
+      "base_asset": "APT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "1.4e-05",
+      "funding_timestamp_ms": 1775850845980
+    },
+    {
+      "symbol": "APT_USDT",
+      "pair": "APT/USDT",
+      "base_asset": "APT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3.4e-05",
+      "funding_timestamp_ms": 1775850844902
+    },
+    {
+      "symbol": "ARB_USDC",
+      "pair": "ARB/USDC",
+      "base_asset": "ARB",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000106",
+      "funding_timestamp_ms": 1775850845838
+    },
+    {
+      "symbol": "ARB_USDT",
+      "pair": "ARB/USDT",
+      "base_asset": "ARB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844873
+    },
+    {
+      "symbol": "ARCSOL_USDT",
+      "pair": "ARCSOL/USDT",
+      "base_asset": "ARCSOL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844927
+    },
+    {
+      "symbol": "ARIA_USDT",
+      "pair": "ARIA/USDT",
+      "base_asset": "ARIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.001229",
+      "funding_timestamp_ms": 1775850844827
+    },
+    {
+      "symbol": "ARKM_USDT",
+      "pair": "ARKM/USDT",
+      "base_asset": "ARKM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845297
+    },
+    {
+      "symbol": "ARK_USDT",
+      "pair": "ARK/USDT",
+      "base_asset": "ARK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845949
+    },
+    {
+      "symbol": "ARPA_USDT",
+      "pair": "ARPA/USDT",
+      "base_asset": "ARPA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845411
+    },
+    {
+      "symbol": "AR_USDT",
+      "pair": "AR/USDT",
+      "base_asset": "AR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "7.7e-05",
+      "funding_timestamp_ms": 1775850845335
+    },
+    {
+      "symbol": "ASP_USDT",
+      "pair": "ASP/USDT",
+      "base_asset": "ASP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000437",
+      "funding_timestamp_ms": 1775850845138
+    },
+    {
+      "symbol": "ASR_USDT",
+      "pair": "ASR/USDT",
+      "base_asset": "ASR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845950
+    },
+    {
+      "symbol": "ASTER_USDT",
+      "pair": "ASTER/USDT",
+      "base_asset": "ASTER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3.5e-05",
+      "funding_timestamp_ms": 1775850844893
+    },
+    {
+      "symbol": "ASTR_USDT",
+      "pair": "ASTR/USDT",
+      "base_asset": "ASTR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845426
+    },
+    {
+      "symbol": "ATA_USDT",
+      "pair": "ATA/USDT",
+      "base_asset": "ATA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000665",
+      "funding_timestamp_ms": 1775850845561
+    },
+    {
+      "symbol": "ATH_USDT",
+      "pair": "ATH/USDT",
+      "base_asset": "ATH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.00016",
+      "funding_timestamp_ms": 1775850845243
+    },
+    {
+      "symbol": "ATOM_USDT",
+      "pair": "ATOM/USDT",
+      "base_asset": "ATOM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845059
+    },
+    {
+      "symbol": "AT_USDT",
+      "pair": "AT/USDT",
+      "base_asset": "AT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845567
+    },
+    {
+      "symbol": "AUCTION_USDT",
+      "pair": "AUCTION/USDT",
+      "base_asset": "AUCTION",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845764
+    },
+    {
+      "symbol": "AUDIO_USDT",
+      "pair": "AUDIO/USDT",
+      "base_asset": "AUDIO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000146",
+      "funding_timestamp_ms": 1775850845661
+    },
+    {
+      "symbol": "AUD_USDT",
+      "pair": "AUD/USDT",
+      "base_asset": "AUD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-5.2e-05",
+      "funding_timestamp_ms": 1775850845884
+    },
+    {
+      "symbol": "AVAAI_USDT",
+      "pair": "AVAAI/USDT",
+      "base_asset": "AVAAI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845404
+    },
+    {
+      "symbol": "AVAX_USD",
+      "pair": "AVAX/USD",
+      "base_asset": "AVAX",
+      "quote_asset": "USD",
+      "settle_asset": "AVAX",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844998
+    },
+    {
+      "symbol": "AVAX_USDC",
+      "pair": "AVAX/USDC",
+      "base_asset": "AVAX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5.1e-05",
+      "funding_timestamp_ms": 1775850845914
+    },
+    {
+      "symbol": "AVAX_USDT",
+      "pair": "AVAX/USDT",
+      "base_asset": "AVAX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844864
+    },
+    {
+      "symbol": "AVA_USDT",
+      "pair": "AVA/USDT",
+      "base_asset": "AVA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845776
+    },
+    {
+      "symbol": "AVICI_USDT",
+      "pair": "AVICI/USDT",
+      "base_asset": "AVICI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845732
+    },
+    {
+      "symbol": "AVNT_USDT",
+      "pair": "AVNT/USDT",
+      "base_asset": "AVNT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-7e-05",
+      "funding_timestamp_ms": 1775850845277
+    },
+    {
+      "symbol": "AWE_USDT",
+      "pair": "AWE/USDT",
+      "base_asset": "AWE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845674
+    },
+    {
+      "symbol": "AXL_USDT",
+      "pair": "AXL/USDT",
+      "base_asset": "AXL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-4.2e-05",
+      "funding_timestamp_ms": 1775850845811
+    },
+    {
+      "symbol": "AXS_USDT",
+      "pair": "AXS/USDT",
+      "base_asset": "AXS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-9.5e-05",
+      "funding_timestamp_ms": 1775850845113
+    },
+    {
+      "symbol": "AZTEC_USDT",
+      "pair": "AZTEC/USDT",
+      "base_asset": "AZTEC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845332
+    },
+    {
+      "symbol": "A_USDT",
+      "pair": "A/USDT",
+      "base_asset": "A",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-4e-06",
+      "funding_timestamp_ms": 1775850845255
+    },
+    {
+      "symbol": "B2_USDT",
+      "pair": "B2/USDT",
+      "base_asset": "B2",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845713
+    },
+    {
+      "symbol": "B3_USDT",
+      "pair": "B3/USDT",
+      "base_asset": "B3",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845310
+    },
+    {
+      "symbol": "BABY_USDT",
+      "pair": "BABY/USDT",
+      "base_asset": "BABY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845488
+    },
+    {
+      "symbol": "BANANAS31_USDT",
+      "pair": "BANANAS31/USDT",
+      "base_asset": "BANANAS31",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "7.4e-05",
+      "funding_timestamp_ms": 1775850845309
+    },
+    {
+      "symbol": "BANANA_USDT",
+      "pair": "BANANA/USDT",
+      "base_asset": "BANANA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-6.2e-05",
+      "funding_timestamp_ms": 1775850845330
+    },
+    {
+      "symbol": "BAND_USDT",
+      "pair": "BAND/USDT",
+      "base_asset": "BAND",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845838
+    },
+    {
+      "symbol": "BANK_USDT",
+      "pair": "BANK/USDT",
+      "base_asset": "BANK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845250
+    },
+    {
+      "symbol": "BAN_USDT",
+      "pair": "BAN/USDT",
+      "base_asset": "BAN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845512
+    },
+    {
+      "symbol": "BARD_USDT",
+      "pair": "BARD/USDT",
+      "base_asset": "BARD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000358",
+      "funding_timestamp_ms": 1775850845208
+    },
+    {
+      "symbol": "BAR_USDT",
+      "pair": "BAR/USDT",
+      "base_asset": "BAR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000114",
+      "funding_timestamp_ms": 1775850845541
+    },
+    {
+      "symbol": "BASED_USDT",
+      "pair": "BASED/USDT",
+      "base_asset": "BASED",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "1.4e-05",
+      "funding_timestamp_ms": 1775850845100
+    },
+    {
+      "symbol": "BAS_USDT",
+      "pair": "BAS/USDT",
+      "base_asset": "BAS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000133",
+      "funding_timestamp_ms": 1775850844859
+    },
+    {
+      "symbol": "BAT_USDT",
+      "pair": "BAT/USDT",
+      "base_asset": "BAT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845535
+    },
+    {
+      "symbol": "BB_USDT",
+      "pair": "BB/USDT",
+      "base_asset": "BB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845451
+    },
+    {
+      "symbol": "BCH_USDC",
+      "pair": "BCH/USDC",
+      "base_asset": "BCH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-1.8e-05",
+      "funding_timestamp_ms": 1775850845938
+    },
+    {
+      "symbol": "BCH_USDT",
+      "pair": "BCH/USDT",
+      "base_asset": "BCH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "7.9e-05",
+      "funding_timestamp_ms": 1775850844897
+    },
+    {
+      "symbol": "BDX_USDT",
+      "pair": "BDX/USDT",
+      "base_asset": "BDX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000133",
+      "funding_timestamp_ms": 1775850845932
+    },
+    {
+      "symbol": "BEAMX_USDT",
+      "pair": "BEAMX/USDT",
+      "base_asset": "BEAMX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845701
+    },
+    {
+      "symbol": "BEAT_USDT",
+      "pair": "BEAT/USDT",
+      "base_asset": "BEAT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000623",
+      "funding_timestamp_ms": 1775850844882
+    },
+    {
+      "symbol": "BEL_USDT",
+      "pair": "BEL/USDT",
+      "base_asset": "BEL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845719
+    },
+    {
+      "symbol": "BERA_USDT",
+      "pair": "BERA/USDT",
+      "base_asset": "BERA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000172",
+      "funding_timestamp_ms": 1775850845322
+    },
+    {
+      "symbol": "BIANRENSHENG_USDT",
+      "pair": "BIANRENSHENG/USDT",
+      "base_asset": "BIANRENSHENG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000157",
+      "funding_timestamp_ms": 1775850844886
+    },
+    {
+      "symbol": "BICO_USDT",
+      "pair": "BICO/USDT",
+      "base_asset": "BICO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845624
+    },
+    {
+      "symbol": "BIGTIME_USDT",
+      "pair": "BIGTIME/USDT",
+      "base_asset": "BIGTIME",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845600
+    },
+    {
+      "symbol": "BIO_USDC",
+      "pair": "BIO/USDC",
+      "base_asset": "BIO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846067
+    },
+    {
+      "symbol": "BIO_USDT",
+      "pair": "BIO/USDT",
+      "base_asset": "BIO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.4e-05",
+      "funding_timestamp_ms": 1775850845694
+    },
+    {
+      "symbol": "BIRB_USDT",
+      "pair": "BIRB/USDT",
+      "base_asset": "BIRB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845715
+    },
+    {
+      "symbol": "BLAST_USDT",
+      "pair": "BLAST/USDT",
+      "base_asset": "BLAST",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.001964",
+      "funding_timestamp_ms": 1775850845508
+    },
+    {
+      "symbol": "BLESS_USDT",
+      "pair": "BLESS/USDT",
+      "base_asset": "BLESS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845099
+    },
+    {
+      "symbol": "BLOCK_USDT",
+      "pair": "BLOCK/USDT",
+      "base_asset": "BLOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000128",
+      "funding_timestamp_ms": 1775850846002
+    },
+    {
+      "symbol": "BLUAI_USDT",
+      "pair": "BLUAI/USDT",
+      "base_asset": "BLUAI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000409",
+      "funding_timestamp_ms": 1775850845148
+    },
+    {
+      "symbol": "BLUR_USDT",
+      "pair": "BLUR/USDT",
+      "base_asset": "BLUR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000101",
+      "funding_timestamp_ms": 1775850844925
+    },
+    {
+      "symbol": "BMT_USDT",
+      "pair": "BMT/USDT",
+      "base_asset": "BMT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845731
+    },
+    {
+      "symbol": "BNB_USDC",
+      "pair": "BNB/USDC",
+      "base_asset": "BNB",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845815
+    },
+    {
+      "symbol": "BNB_USDT",
+      "pair": "BNB/USDT",
+      "base_asset": "BNB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "9.6e-05",
+      "funding_timestamp_ms": 1775850844862
+    },
+    {
+      "symbol": "BNT_USDT",
+      "pair": "BNT/USDT",
+      "base_asset": "BNT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845920
+    },
+    {
+      "symbol": "BOBA_USDT",
+      "pair": "BOBA/USDT",
+      "base_asset": "BOBA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845645
+    },
+    {
+      "symbol": "BOME_USDC",
+      "pair": "BOME/USDC",
+      "base_asset": "BOME",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846058
+    },
+    {
+      "symbol": "BOME_USDT",
+      "pair": "BOME/USDT",
+      "base_asset": "BOME",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845292
+    },
+    {
+      "symbol": "BP_USDT",
+      "pair": "BP/USDT",
+      "base_asset": "BP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845680
+    },
+    {
+      "symbol": "BRETT_USDT",
+      "pair": "BRETT/USDT",
+      "base_asset": "BRETT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845188
+    },
+    {
+      "symbol": "BREV_USDT",
+      "pair": "BREV/USDT",
+      "base_asset": "BREV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845312
+    },
+    {
+      "symbol": "BRL_USDT",
+      "pair": "BRL/USDT",
+      "base_asset": "BRL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-7.3e-05",
+      "funding_timestamp_ms": 1775850845407
+    },
+    {
+      "symbol": "BROCCOLIF3B_USDT",
+      "pair": "BROCCOLIF3B/USDT",
+      "base_asset": "BROCCOLIF3B",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.001198",
+      "funding_timestamp_ms": 1775850845658
+    },
+    {
+      "symbol": "BROCCOLI_USDT",
+      "pair": "BROCCOLI/USDT",
+      "base_asset": "BROCCOLI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845650
+    },
+    {
+      "symbol": "BR_USDT",
+      "pair": "BR/USDT",
+      "base_asset": "BR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844992
+    },
+    {
+      "symbol": "BSB_USDT",
+      "pair": "BSB/USDT",
+      "base_asset": "BSB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844980
+    },
+    {
+      "symbol": "BSU_USDT",
+      "pair": "BSU/USDT",
+      "base_asset": "BSU",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845326
+    },
+    {
+      "symbol": "BSV_USDT",
+      "pair": "BSV/USDT",
+      "base_asset": "BSV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845499
+    },
+    {
+      "symbol": "BTC_USD",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "funding_rate": "-0.000148",
+      "funding_timestamp_ms": 1775850844986
+    },
+    {
+      "symbol": "BTC_USD1",
+      "pair": "BTC/USD1",
+      "base_asset": "BTC",
+      "quote_asset": "USD1",
+      "settle_asset": "USD1",
+      "funding_rate": "0.000118",
+      "funding_timestamp_ms": 1775850845711
+    },
+    {
+      "symbol": "BTC_USDC",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-9.8e-05",
+      "funding_timestamp_ms": 1775850844903
+    },
+    {
+      "symbol": "BTC_USDT",
+      "pair": "BTC/USDT",
+      "base_asset": "BTC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-7.8e-05",
+      "funding_timestamp_ms": 1775850844806
+    },
+    {
+      "symbol": "BTR_USDT",
+      "pair": "BTR/USDT",
+      "base_asset": "BTR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000659",
+      "funding_timestamp_ms": 1775850845572
+    },
+    {
+      "symbol": "BTW_USDT",
+      "pair": "BTW/USDT",
+      "base_asset": "BTW",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000149",
+      "funding_timestamp_ms": 1775850845715
+    },
+    {
+      "symbol": "BTX_USDT",
+      "pair": "BTX/USDT",
+      "base_asset": "BTX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000147",
+      "funding_timestamp_ms": 1775850845818
+    },
+    {
+      "symbol": "BUILDONBOB_USDT",
+      "pair": "BUILDONBOB/USDT",
+      "base_asset": "BUILDONBOB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000376",
+      "funding_timestamp_ms": 1775850845299
+    },
+    {
+      "symbol": "BULLA_USDT",
+      "pair": "BULLA/USDT",
+      "base_asset": "BULLA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.016333",
+      "funding_timestamp_ms": 1775850844839
+    },
+    {
+      "symbol": "B_USDT",
+      "pair": "B/USDT",
+      "base_asset": "B",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845606
+    },
+    {
+      "symbol": "C98_USDT",
+      "pair": "C98/USDT",
+      "base_asset": "C98",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845375
+    },
+    {
+      "symbol": "CAD_USDT",
+      "pair": "CAD/USDT",
+      "base_asset": "CAD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "6.8e-05",
+      "funding_timestamp_ms": 1775850846044
+    },
+    {
+      "symbol": "CAKE_USDT",
+      "pair": "CAKE/USDT",
+      "base_asset": "CAKE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.7e-05",
+      "funding_timestamp_ms": 1775850845266
+    },
+    {
+      "symbol": "CAMP_USDT",
+      "pair": "CAMP/USDT",
+      "base_asset": "CAMP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.001888",
+      "funding_timestamp_ms": 1775850845652
+    },
+    {
+      "symbol": "CARV_USDT",
+      "pair": "CARV/USDT",
+      "base_asset": "CARV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845286
+    },
+    {
+      "symbol": "CATI_USDT",
+      "pair": "CATI/USDT",
+      "base_asset": "CATI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845584
+    },
+    {
+      "symbol": "CAT_USDT",
+      "pair": "CAT/USDT",
+      "base_asset": "CAT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845584
+    },
+    {
+      "symbol": "CC_USDT",
+      "pair": "CC/USDT",
+      "base_asset": "CC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "2.7e-05",
+      "funding_timestamp_ms": 1775850845145
+    },
+    {
+      "symbol": "CELO_USDT",
+      "pair": "CELO/USDT",
+      "base_asset": "CELO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-7e-06",
+      "funding_timestamp_ms": 1775850845796
+    },
+    {
+      "symbol": "CELR_USDT",
+      "pair": "CELR/USDT",
+      "base_asset": "CELR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845251
+    },
+    {
+      "symbol": "CETUS_USDT",
+      "pair": "CETUS/USDT",
+      "base_asset": "CETUS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845445
+    },
+    {
+      "symbol": "CFG_USDT",
+      "pair": "CFG/USDT",
+      "base_asset": "CFG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000255",
+      "funding_timestamp_ms": 1775850844886
+    },
+    {
+      "symbol": "CFX_USDT",
+      "pair": "CFX/USDT",
+      "base_asset": "CFX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-1.6e-05",
+      "funding_timestamp_ms": 1775850845126
+    },
+    {
+      "symbol": "CGPT_USDT",
+      "pair": "CGPT/USDT",
+      "base_asset": "CGPT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845402
+    },
+    {
+      "symbol": "CHEEMS_USDT",
+      "pair": "CHEEMS/USDT",
+      "base_asset": "CHEEMS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845484
+    },
+    {
+      "symbol": "CHF_USDT",
+      "pair": "CHF/USDT",
+      "base_asset": "CHF",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-2.8e-05",
+      "funding_timestamp_ms": 1775850846028
+    },
+    {
+      "symbol": "CHILLGUY_USDT",
+      "pair": "CHILLGUY/USDT",
+      "base_asset": "CHILLGUY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3.5e-05",
+      "funding_timestamp_ms": 1775850844873
+    },
+    {
+      "symbol": "CHR_USDT",
+      "pair": "CHR/USDT",
+      "base_asset": "CHR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000208",
+      "funding_timestamp_ms": 1775850845391
+    },
+    {
+      "symbol": "CHZ_USDT",
+      "pair": "CHZ/USDT",
+      "base_asset": "CHZ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845075
+    },
+    {
+      "symbol": "CKB_USDT",
+      "pair": "CKB/USDT",
+      "base_asset": "CKB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845712
+    },
+    {
+      "symbol": "CLANKER_USDT",
+      "pair": "CLANKER/USDT",
+      "base_asset": "CLANKER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845448
+    },
+    {
+      "symbol": "CLOUD_USDT",
+      "pair": "CLOUD/USDT",
+      "base_asset": "CLOUD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000486",
+      "funding_timestamp_ms": 1775850845232
+    },
+    {
+      "symbol": "CLO_USDT",
+      "pair": "CLO/USDT",
+      "base_asset": "CLO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845061
+    },
+    {
+      "symbol": "COAI_USDT",
+      "pair": "COAI/USDT",
+      "base_asset": "COAI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845207
+    },
+    {
+      "symbol": "COINBASE_USDT",
+      "pair": "COINBASE/USDT",
+      "base_asset": "COINBASE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845405
+    },
+    {
+      "symbol": "COLLECT_USDT",
+      "pair": "COLLECT/USDT",
+      "base_asset": "COLLECT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845338
+    },
+    {
+      "symbol": "COMP_USDT",
+      "pair": "COMP/USDT",
+      "base_asset": "COMP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.002173",
+      "funding_timestamp_ms": 1775850844901
+    },
+    {
+      "symbol": "COOKIE_USDT",
+      "pair": "COOKIE/USDT",
+      "base_asset": "COOKIE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845240
+    },
+    {
+      "symbol": "COPPER_USDT",
+      "pair": "COPPER/USDT",
+      "base_asset": "COPPER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000228",
+      "funding_timestamp_ms": 1775850845026
+    },
+    {
+      "symbol": "CORE_USDT",
+      "pair": "CORE/USDT",
+      "base_asset": "CORE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000151",
+      "funding_timestamp_ms": 1775850845072
+    },
+    {
+      "symbol": "COS_USDT",
+      "pair": "COS/USDT",
+      "base_asset": "COS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-2.6e-05",
+      "funding_timestamp_ms": 1775850845712
+    },
+    {
+      "symbol": "COTI_USDT",
+      "pair": "COTI/USDT",
+      "base_asset": "COTI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845315
+    },
+    {
+      "symbol": "COW_USDT",
+      "pair": "COW/USDT",
+      "base_asset": "COW",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845541
+    },
+    {
+      "symbol": "CRCLSTOCK_USDT",
+      "pair": "CRCLSTOCK/USDT",
+      "base_asset": "CRCLSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000391",
+      "funding_timestamp_ms": 1775850844974
+    },
+    {
+      "symbol": "CROSS_USDT",
+      "pair": "CROSS/USDT",
+      "base_asset": "CROSS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845704
+    },
+    {
+      "symbol": "CRO_USDT",
+      "pair": "CRO/USDT",
+      "base_asset": "CRO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-2e-05",
+      "funding_timestamp_ms": 1775850845178
+    },
+    {
+      "symbol": "CRTR_USDT",
+      "pair": "CRTR/USDT",
+      "base_asset": "CRTR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.0002",
+      "funding_timestamp_ms": 1775850845080
+    },
+    {
+      "symbol": "CRV_USDC",
+      "pair": "CRV/USDC",
+      "base_asset": "CRV",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000346",
+      "funding_timestamp_ms": 1775850846042
+    },
+    {
+      "symbol": "CRV_USDT",
+      "pair": "CRV/USDT",
+      "base_asset": "CRV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000359",
+      "funding_timestamp_ms": 1775850845101
+    },
+    {
+      "symbol": "CSPR_USDT",
+      "pair": "CSPR/USDT",
+      "base_asset": "CSPR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000116",
+      "funding_timestamp_ms": 1775850845520
+    },
+    {
+      "symbol": "CTC_USDT",
+      "pair": "CTC/USDT",
+      "base_asset": "CTC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846017
+    },
+    {
+      "symbol": "CTK_USDT",
+      "pair": "CTK/USDT",
+      "base_asset": "CTK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845535
+    },
+    {
+      "symbol": "CTSI_USDT",
+      "pair": "CTSI/USDT",
+      "base_asset": "CTSI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845423
+    },
+    {
+      "symbol": "CVC_USDT",
+      "pair": "CVC/USDT",
+      "base_asset": "CVC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845990
+    },
+    {
+      "symbol": "CVX_USDT",
+      "pair": "CVX/USDT",
+      "base_asset": "CVX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845548
+    },
+    {
+      "symbol": "CYBER_USDT",
+      "pair": "CYBER/USDT",
+      "base_asset": "CYBER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845662
+    },
+    {
+      "symbol": "CYPR_USDT",
+      "pair": "CYPR/USDT",
+      "base_asset": "CYPR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845906
+    },
+    {
+      "symbol": "CYS_USDT",
+      "pair": "CYS/USDT",
+      "base_asset": "CYS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.00021",
+      "funding_timestamp_ms": 1775850844918
+    },
+    {
+      "symbol": "C_USDT",
+      "pair": "C/USDT",
+      "base_asset": "C",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000512",
+      "funding_timestamp_ms": 1775850845188
+    },
+    {
+      "symbol": "DAM_USDT",
+      "pair": "DAM/USDT",
+      "base_asset": "DAM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845082
+    },
+    {
+      "symbol": "DASH_USDT",
+      "pair": "DASH/USDT",
+      "base_asset": "DASH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.002117",
+      "funding_timestamp_ms": 1775850844834
+    },
+    {
+      "symbol": "DBR_USDT",
+      "pair": "DBR/USDT",
+      "base_asset": "DBR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845912
+    },
+    {
+      "symbol": "DEEP_USDT",
+      "pair": "DEEP/USDT",
+      "base_asset": "DEEP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845447
+    },
+    {
+      "symbol": "DEGEN_USDT",
+      "pair": "DEGEN/USDT",
+      "base_asset": "DEGEN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845457
+    },
+    {
+      "symbol": "DEGO_USDT",
+      "pair": "DEGO/USDT",
+      "base_asset": "DEGO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845284
+    },
+    {
+      "symbol": "DENT_USDT",
+      "pair": "DENT/USDT",
+      "base_asset": "DENT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845608
+    },
+    {
+      "symbol": "DIA_USDT",
+      "pair": "DIA/USDT",
+      "base_asset": "DIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845730
+    },
+    {
+      "symbol": "DODO_USDT",
+      "pair": "DODO/USDT",
+      "base_asset": "DODO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845936
+    },
+    {
+      "symbol": "DOGE_USD",
+      "pair": "DOGE/USD",
+      "base_asset": "DOGE",
+      "quote_asset": "USD",
+      "settle_asset": "DOGE",
+      "funding_rate": "-8.2e-05",
+      "funding_timestamp_ms": 1775850845002
+    },
+    {
+      "symbol": "DOGE_USD1",
+      "pair": "DOGE/USD1",
+      "base_asset": "DOGE",
+      "quote_asset": "USD1",
+      "settle_asset": "USD1",
+      "funding_rate": "0.000119",
+      "funding_timestamp_ms": 1775850846040
+    },
+    {
+      "symbol": "DOGE_USDC",
+      "pair": "DOGE/USDC",
+      "base_asset": "DOGE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "6.9e-05",
+      "funding_timestamp_ms": 1775850845814
+    },
+    {
+      "symbol": "DOGE_USDT",
+      "pair": "DOGE/USDT",
+      "base_asset": "DOGE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844851
+    },
+    {
+      "symbol": "DOGS_USDT",
+      "pair": "DOGS/USDT",
+      "base_asset": "DOGS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845478
+    },
+    {
+      "symbol": "DOG_USDT",
+      "pair": "DOG/USDT",
+      "base_asset": "DOG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845237
+    },
+    {
+      "symbol": "DOLO_USDT",
+      "pair": "DOLO/USDT",
+      "base_asset": "DOLO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845251
+    },
+    {
+      "symbol": "DOOD_USDT",
+      "pair": "DOOD/USDT",
+      "base_asset": "DOOD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845817
+    },
+    {
+      "symbol": "DOT_USDC",
+      "pair": "DOT/USDC",
+      "base_asset": "DOT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-3.2e-05",
+      "funding_timestamp_ms": 1775850846005
+    },
+    {
+      "symbol": "DOT_USDT",
+      "pair": "DOT/USDT",
+      "base_asset": "DOT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3e-05",
+      "funding_timestamp_ms": 1775850844889
+    },
+    {
+      "symbol": "DRIFT_USDT",
+      "pair": "DRIFT/USDT",
+      "base_asset": "DRIFT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000162",
+      "funding_timestamp_ms": 1775850844926
+    },
+    {
+      "symbol": "DSYNC_USDT",
+      "pair": "DSYNC/USDT",
+      "base_asset": "DSYNC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845343
+    },
+    {
+      "symbol": "DUSK_USDT",
+      "pair": "DUSK/USDT",
+      "base_asset": "DUSK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "8e-06",
+      "funding_timestamp_ms": 1775850844996
+    },
+    {
+      "symbol": "DYDX_USDT",
+      "pair": "DYDX/USDT",
+      "base_asset": "DYDX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-8.6e-05",
+      "funding_timestamp_ms": 1775850845153
+    },
+    {
+      "symbol": "DYM_USDT",
+      "pair": "DYM/USDT",
+      "base_asset": "DYM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.00015",
+      "funding_timestamp_ms": 1775850845042
+    },
+    {
+      "symbol": "D_USDT",
+      "pair": "D/USDT",
+      "base_asset": "D",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4e-05",
+      "funding_timestamp_ms": 1775850845124
+    },
+    {
+      "symbol": "EDEN_USDT",
+      "pair": "EDEN/USDT",
+      "base_asset": "EDEN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844948
+    },
+    {
+      "symbol": "EDGE_USDT",
+      "pair": "EDGE/USDT",
+      "base_asset": "EDGE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844938
+    },
+    {
+      "symbol": "EDU_USDT",
+      "pair": "EDU/USDT",
+      "base_asset": "EDU",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000165",
+      "funding_timestamp_ms": 1775850845051
+    },
+    {
+      "symbol": "EGLD_USDT",
+      "pair": "EGLD/USDT",
+      "base_asset": "EGLD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845249
+    },
+    {
+      "symbol": "EIGEN_USDC",
+      "pair": "EIGEN/USDC",
+      "base_asset": "EIGEN",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000341",
+      "funding_timestamp_ms": 1775850846062
+    },
+    {
+      "symbol": "EIGEN_USDT",
+      "pair": "EIGEN/USDT",
+      "base_asset": "EIGEN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-9.4e-05",
+      "funding_timestamp_ms": 1775850845179
+    },
+    {
+      "symbol": "ELIZAOS_USDT",
+      "pair": "ELIZAOS/USDT",
+      "base_asset": "ELIZAOS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845059
+    },
+    {
+      "symbol": "ELSA_USDT",
+      "pair": "ELSA/USDT",
+      "base_asset": "ELSA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845496
+    },
+    {
+      "symbol": "ENA_USDC",
+      "pair": "ENA/USDC",
+      "base_asset": "ENA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000202",
+      "funding_timestamp_ms": 1775850845894
+    },
+    {
+      "symbol": "ENA_USDT",
+      "pair": "ENA/USDT",
+      "base_asset": "ENA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "8e-06",
+      "funding_timestamp_ms": 1775850844855
+    },
+    {
+      "symbol": "ENJ_USDT",
+      "pair": "ENJ/USDT",
+      "base_asset": "ENJ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-8e-05",
+      "funding_timestamp_ms": 1775850844885
+    },
+    {
+      "symbol": "ENSO_USDT",
+      "pair": "ENSO/USDT",
+      "base_asset": "ENSO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845294
+    },
+    {
+      "symbol": "ENS_USDT",
+      "pair": "ENS/USDT",
+      "base_asset": "ENS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-1e-05",
+      "funding_timestamp_ms": 1775850845430
+    },
+    {
+      "symbol": "EPIC_USDT",
+      "pair": "EPIC/USDT",
+      "base_asset": "EPIC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "6e-06",
+      "funding_timestamp_ms": 1775850845434
+    },
+    {
+      "symbol": "ERA_USDT",
+      "pair": "ERA/USDT",
+      "base_asset": "ERA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845979
+    },
+    {
+      "symbol": "ESPORTS_USDT",
+      "pair": "ESPORTS/USDT",
+      "base_asset": "ESPORTS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845566
+    },
+    {
+      "symbol": "ESP_USDT",
+      "pair": "ESP/USDT",
+      "base_asset": "ESP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-9.6e-05",
+      "funding_timestamp_ms": 1775850845266
+    },
+    {
+      "symbol": "ES_USDT",
+      "pair": "ES/USDT",
+      "base_asset": "ES",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845953
+    },
+    {
+      "symbol": "ETC_USDC",
+      "pair": "ETC/USDC",
+      "base_asset": "ETC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850846044
+    },
+    {
+      "symbol": "ETC_USDT",
+      "pair": "ETC/USDT",
+      "base_asset": "ETC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "2e-06",
+      "funding_timestamp_ms": 1775850845014
+    },
+    {
+      "symbol": "ETHFI_USDC",
+      "pair": "ETHFI/USDC",
+      "base_asset": "ETHFI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "1.6e-05",
+      "funding_timestamp_ms": 1775850846054
+    },
+    {
+      "symbol": "ETHFI_USDT",
+      "pair": "ETHFI/USDT",
+      "base_asset": "ETHFI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845048
+    },
+    {
+      "symbol": "ETHW_USDT",
+      "pair": "ETHW/USDT",
+      "base_asset": "ETHW",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845687
+    },
+    {
+      "symbol": "ETH_USD",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "funding_rate": "-0.000201",
+      "funding_timestamp_ms": 1775850844989
+    },
+    {
+      "symbol": "ETH_USD1",
+      "pair": "ETH/USD1",
+      "base_asset": "ETH",
+      "quote_asset": "USD1",
+      "settle_asset": "USD1",
+      "funding_rate": "0.000117",
+      "funding_timestamp_ms": 1775850845919
+    },
+    {
+      "symbol": "ETH_USDC",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000169",
+      "funding_timestamp_ms": 1775850845117
+    },
+    {
+      "symbol": "ETH_USDT",
+      "pair": "ETH/USDT",
+      "base_asset": "ETH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-7.6e-05",
+      "funding_timestamp_ms": 1775850844807
+    },
+    {
+      "symbol": "EUL_USDT",
+      "pair": "EUL/USDT",
+      "base_asset": "EUL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845095
+    },
+    {
+      "symbol": "EUR_USDT",
+      "pair": "EUR/USDT",
+      "base_asset": "EUR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "6.4e-05",
+      "funding_timestamp_ms": 1775850845167
+    },
+    {
+      "symbol": "EVAA_USDT",
+      "pair": "EVAA/USDT",
+      "base_asset": "EVAA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000341",
+      "funding_timestamp_ms": 1775850845012
+    },
+    {
+      "symbol": "EWJ_USDT",
+      "pair": "EWJ/USDT",
+      "base_asset": "EWJ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845843
+    },
+    {
+      "symbol": "EWY_USDT",
+      "pair": "EWY/USDT",
+      "base_asset": "EWY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000444",
+      "funding_timestamp_ms": 1775850845947
+    },
+    {
+      "symbol": "FARM_USDT",
+      "pair": "FARM/USDT",
+      "base_asset": "FARM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845974
+    },
+    {
+      "symbol": "FARTCOIN_USDC",
+      "pair": "FARTCOIN/USDC",
+      "base_asset": "FARTCOIN",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845385
+    },
+    {
+      "symbol": "FARTCOIN_USDT",
+      "pair": "FARTCOIN/USDT",
+      "base_asset": "FARTCOIN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844861
+    },
+    {
+      "symbol": "FET_USDT",
+      "pair": "FET/USDT",
+      "base_asset": "FET",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000708",
+      "funding_timestamp_ms": 1775850844874
+    },
+    {
+      "symbol": "FF_USDT",
+      "pair": "FF/USDT",
+      "base_asset": "FF",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.01648",
+      "funding_timestamp_ms": 1775850844833
+    },
+    {
+      "symbol": "FHE_USDT",
+      "pair": "FHE/USDT",
+      "base_asset": "FHE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000223",
+      "funding_timestamp_ms": 1775850844914
+    },
+    {
+      "symbol": "FIDA_USDT",
+      "pair": "FIDA/USDT",
+      "base_asset": "FIDA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845234
+    },
+    {
+      "symbol": "FIGHT_USDT",
+      "pair": "FIGHT/USDT",
+      "base_asset": "FIGHT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845315
+    },
+    {
+      "symbol": "FILECOIN_USDT",
+      "pair": "FILECOIN/USDT",
+      "base_asset": "FILECOIN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-8e-05",
+      "funding_timestamp_ms": 1775850845043
+    },
+    {
+      "symbol": "FIL_USDC",
+      "pair": "FIL/USDC",
+      "base_asset": "FIL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000165",
+      "funding_timestamp_ms": 1775850846019
+    },
+    {
+      "symbol": "FIO_USDT",
+      "pair": "FIO/USDT",
+      "base_asset": "FIO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000699",
+      "funding_timestamp_ms": 1775850845147
+    },
+    {
+      "symbol": "FLOCK_USDT",
+      "pair": "FLOCK/USDT",
+      "base_asset": "FLOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845851
+    },
+    {
+      "symbol": "FLOKI_USDT",
+      "pair": "FLOKI/USDT",
+      "base_asset": "FLOKI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844934
+    },
+    {
+      "symbol": "FLOW_USDT",
+      "pair": "FLOW/USDT",
+      "base_asset": "FLOW",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845261
+    },
+    {
+      "symbol": "FLR_USDT",
+      "pair": "FLR/USDT",
+      "base_asset": "FLR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "2.1e-05",
+      "funding_timestamp_ms": 1775850845595
+    },
+    {
+      "symbol": "FLUID_USDT",
+      "pair": "FLUID/USDT",
+      "base_asset": "FLUID",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845776
+    },
+    {
+      "symbol": "FLUX_USDT",
+      "pair": "FLUX/USDT",
+      "base_asset": "FLUX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845473
+    },
+    {
+      "symbol": "FOGO_USDT",
+      "pair": "FOGO/USDT",
+      "base_asset": "FOGO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845577
+    },
+    {
+      "symbol": "FOLKS_USDT",
+      "pair": "FOLKS/USDT",
+      "base_asset": "FOLKS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845244
+    },
+    {
+      "symbol": "FORM_USDT",
+      "pair": "FORM/USDT",
+      "base_asset": "FORM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845438
+    },
+    {
+      "symbol": "FRAX_USDT",
+      "pair": "FRAX/USDT",
+      "base_asset": "FRAX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845526
+    },
+    {
+      "symbol": "FTT_USDT",
+      "pair": "FTT/USDT",
+      "base_asset": "FTT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000131",
+      "funding_timestamp_ms": 1775850845683
+    },
+    {
+      "symbol": "FUN_USDT",
+      "pair": "FUN/USDT",
+      "base_asset": "FUN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845044
+    },
+    {
+      "symbol": "F_USDT",
+      "pair": "F/USDT",
+      "base_asset": "F",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-5.1e-05",
+      "funding_timestamp_ms": 1775850845615
+    },
+    {
+      "symbol": "GAIB_USDT",
+      "pair": "GAIB/USDT",
+      "base_asset": "GAIB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-6.7e-05",
+      "funding_timestamp_ms": 1775850845597
+    },
+    {
+      "symbol": "GALA_USDT",
+      "pair": "GALA/USDT",
+      "base_asset": "GALA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "6.3e-05",
+      "funding_timestamp_ms": 1775850845143
+    },
+    {
+      "symbol": "GAS_USDT",
+      "pair": "GAS/USDT",
+      "base_asset": "GAS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.6e-05",
+      "funding_timestamp_ms": 1775850845477
+    },
+    {
+      "symbol": "GBP_USDT",
+      "pair": "GBP/USDT",
+      "base_asset": "GBP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-8.7e-05",
+      "funding_timestamp_ms": 1775850845741
+    },
+    {
+      "symbol": "GIGA_USDT",
+      "pair": "GIGA/USDT",
+      "base_asset": "GIGA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845463
+    },
+    {
+      "symbol": "GIGGLE_USDT",
+      "pair": "GIGGLE/USDT",
+      "base_asset": "GIGGLE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000133",
+      "funding_timestamp_ms": 1775850845043
+    },
+    {
+      "symbol": "GLM_USDT",
+      "pair": "GLM/USDT",
+      "base_asset": "GLM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845994
+    },
+    {
+      "symbol": "GMT_USDT",
+      "pair": "GMT/USDT",
+      "base_asset": "GMT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845662
+    },
+    {
+      "symbol": "GMX_USDT",
+      "pair": "GMX/USDT",
+      "base_asset": "GMX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.00021",
+      "funding_timestamp_ms": 1775850845474
+    },
+    {
+      "symbol": "GNO_USDT",
+      "pair": "GNO/USDT",
+      "base_asset": "GNO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.003243",
+      "funding_timestamp_ms": 1775850845750
+    },
+    {
+      "symbol": "GOAT_USDT",
+      "pair": "GOAT/USDT",
+      "base_asset": "GOAT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845176
+    },
+    {
+      "symbol": "GODS_USDT",
+      "pair": "GODS/USDT",
+      "base_asset": "GODS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845991
+    },
+    {
+      "symbol": "GOOGLSTOCK_USDT",
+      "pair": "GOOGLSTOCK/USDT",
+      "base_asset": "GOOGLSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.00017",
+      "funding_timestamp_ms": 1775850845304
+    },
+    {
+      "symbol": "GPS_USDT",
+      "pair": "GPS/USDT",
+      "base_asset": "GPS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845754
+    },
+    {
+      "symbol": "GRASS_USDT",
+      "pair": "GRASS/USDT",
+      "base_asset": "GRASS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844913
+    },
+    {
+      "symbol": "GRIFFAIN_USDT",
+      "pair": "GRIFFAIN/USDT",
+      "base_asset": "GRIFFAIN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845136
+    },
+    {
+      "symbol": "GRT_USDT",
+      "pair": "GRT/USDT",
+      "base_asset": "GRT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845273
+    },
+    {
+      "symbol": "GUA_USDT",
+      "pair": "GUA/USDT",
+      "base_asset": "GUA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.001621",
+      "funding_timestamp_ms": 1775850845168
+    },
+    {
+      "symbol": "GUN_USDT",
+      "pair": "GUN/USDT",
+      "base_asset": "GUN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-6.6e-05",
+      "funding_timestamp_ms": 1775850845272
+    },
+    {
+      "symbol": "GWEI_USDT",
+      "pair": "GWEI/USDT",
+      "base_asset": "GWEI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845247
+    },
+    {
+      "symbol": "G_USDT",
+      "pair": "G/USDT",
+      "base_asset": "G",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.7e-05",
+      "funding_timestamp_ms": 1775850845222
+    },
+    {
+      "symbol": "HAEDAL_USDT",
+      "pair": "HAEDAL/USDT",
+      "base_asset": "HAEDAL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "1.8e-05",
+      "funding_timestamp_ms": 1775850845557
+    },
+    {
+      "symbol": "HANA_USDT",
+      "pair": "HANA/USDT",
+      "base_asset": "HANA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845573
+    },
+    {
+      "symbol": "HARRY_USDT",
+      "pair": "HARRY/USDT",
+      "base_asset": "HARRY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845996
+    },
+    {
+      "symbol": "HBAR_USDC",
+      "pair": "HBAR/USDC",
+      "base_asset": "HBAR",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-7.9e-05",
+      "funding_timestamp_ms": 1775850845977
+    },
+    {
+      "symbol": "HBAR_USDT",
+      "pair": "HBAR/USDT",
+      "base_asset": "HBAR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844898
+    },
+    {
+      "symbol": "HEI_USDT",
+      "pair": "HEI/USDT",
+      "base_asset": "HEI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845800
+    },
+    {
+      "symbol": "HEMI_USDT",
+      "pair": "HEMI/USDT",
+      "base_asset": "HEMI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845083
+    },
+    {
+      "symbol": "HFT_USDT",
+      "pair": "HFT/USDT",
+      "base_asset": "HFT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845408
+    },
+    {
+      "symbol": "HIGH_USDT",
+      "pair": "HIGH/USDT",
+      "base_asset": "HIGH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845549
+    },
+    {
+      "symbol": "HIPPO_USDT",
+      "pair": "HIPPO/USDT",
+      "base_asset": "HIPPO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845123
+    },
+    {
+      "symbol": "HIVE_USDT",
+      "pair": "HIVE/USDT",
+      "base_asset": "HIVE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3e-06",
+      "funding_timestamp_ms": 1775850845845
+    },
+    {
+      "symbol": "HMSTR_USDT",
+      "pair": "HMSTR/USDT",
+      "base_asset": "HMSTR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844972
+    },
+    {
+      "symbol": "HNT_USDT",
+      "pair": "HNT/USDT",
+      "base_asset": "HNT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845547
+    },
+    {
+      "symbol": "HOLO_USDT",
+      "pair": "HOLO/USDT",
+      "base_asset": "HOLO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.8e-05",
+      "funding_timestamp_ms": 1775850845501
+    },
+    {
+      "symbol": "HOME_USDT",
+      "pair": "HOME/USDT",
+      "base_asset": "HOME",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-2e-06",
+      "funding_timestamp_ms": 1775850845663
+    },
+    {
+      "symbol": "HOT_USDT",
+      "pair": "HOT/USDT",
+      "base_asset": "HOT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845762
+    },
+    {
+      "symbol": "HUMA_USDT",
+      "pair": "HUMA/USDT",
+      "base_asset": "HUMA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845066
+    },
+    {
+      "symbol": "HYPER_USDT",
+      "pair": "HYPER/USDT",
+      "base_asset": "HYPER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845587
+    },
+    {
+      "symbol": "HYPE_USDC",
+      "pair": "HYPE/USDC",
+      "base_asset": "HYPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845526
+    },
+    {
+      "symbol": "HYPE_USDT",
+      "pair": "HYPE/USDT",
+      "base_asset": "HYPE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "1.7e-05",
+      "funding_timestamp_ms": 1775850844839
+    },
+    {
+      "symbol": "H_USDC",
+      "pair": "H/USDC",
+      "base_asset": "H",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846032
+    },
+    {
+      "symbol": "H_USDT",
+      "pair": "H/USDT",
+      "base_asset": "H",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844960
+    },
+    {
+      "symbol": "ICNT_USDC",
+      "pair": "ICNT/USDC",
+      "base_asset": "ICNT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846047
+    },
+    {
+      "symbol": "ICNT_USDT",
+      "pair": "ICNT/USDT",
+      "base_asset": "ICNT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845387
+    },
+    {
+      "symbol": "ICP_USDC",
+      "pair": "ICP/USDC",
+      "base_asset": "ICP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845832
+    },
+    {
+      "symbol": "ICP_USDT",
+      "pair": "ICP/USDT",
+      "base_asset": "ICP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000218",
+      "funding_timestamp_ms": 1775850844945
+    },
+    {
+      "symbol": "ICX_USDT",
+      "pair": "ICX/USDT",
+      "base_asset": "ICX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845811
+    },
+    {
+      "symbol": "IDOL_USDT",
+      "pair": "IDOL/USDT",
+      "base_asset": "IDOL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845620
+    },
+    {
+      "symbol": "ID_USDT",
+      "pair": "ID/USDT",
+      "base_asset": "ID",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845548
+    },
+    {
+      "symbol": "IKA_USDT",
+      "pair": "IKA/USDT",
+      "base_asset": "IKA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000149",
+      "funding_timestamp_ms": 1775850845674
+    },
+    {
+      "symbol": "ILV_USDT",
+      "pair": "ILV/USDT",
+      "base_asset": "ILV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.004219",
+      "funding_timestamp_ms": 1775850844838
+    },
+    {
+      "symbol": "IMX_USDT",
+      "pair": "IMX/USDT",
+      "base_asset": "IMX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-3.7e-05",
+      "funding_timestamp_ms": 1775850845280
+    },
+    {
+      "symbol": "INIT_USDT",
+      "pair": "INIT/USDT",
+      "base_asset": "INIT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845596
+    },
+    {
+      "symbol": "INJ_USDC",
+      "pair": "INJ/USDC",
+      "base_asset": "INJ",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000235",
+      "funding_timestamp_ms": 1775850846030
+    },
+    {
+      "symbol": "INJ_USDT",
+      "pair": "INJ/USDT",
+      "base_asset": "INJ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-7.1e-05",
+      "funding_timestamp_ms": 1775850844971
+    },
+    {
+      "symbol": "INTCSTOCK_USDT",
+      "pair": "INTCSTOCK/USDT",
+      "base_asset": "INTCSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5.9e-05",
+      "funding_timestamp_ms": 1775850845099
+    },
+    {
+      "symbol": "INX_USDT",
+      "pair": "INX/USDT",
+      "base_asset": "INX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845160
+    },
+    {
+      "symbol": "IN_USDT",
+      "pair": "IN/USDT",
+      "base_asset": "IN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845535
+    },
+    {
+      "symbol": "IOST_USDT",
+      "pair": "IOST/USDT",
+      "base_asset": "IOST",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845667
+    },
+    {
+      "symbol": "IOTA_USDT",
+      "pair": "IOTA/USDT",
+      "base_asset": "IOTA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845416
+    },
+    {
+      "symbol": "IOTX_USDT",
+      "pair": "IOTX/USDT",
+      "base_asset": "IOTX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845568
+    },
+    {
+      "symbol": "IO_USDT",
+      "pair": "IO/USDT",
+      "base_asset": "IO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845391
+    },
+    {
+      "symbol": "IP_USDC",
+      "pair": "IP/USDC",
+      "base_asset": "IP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-7e-05",
+      "funding_timestamp_ms": 1775850846043
+    },
+    {
+      "symbol": "IP_USDT",
+      "pair": "IP/USDT",
+      "base_asset": "IP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-7.8e-05",
+      "funding_timestamp_ms": 1775850845230
+    },
+    {
+      "symbol": "IQ_USDT",
+      "pair": "IQ/USDT",
+      "base_asset": "IQ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.0002",
+      "funding_timestamp_ms": 1775850845625
+    },
+    {
+      "symbol": "IRYS_USDT",
+      "pair": "IRYS/USDT",
+      "base_asset": "IRYS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845029
+    },
+    {
+      "symbol": "IR_USDT",
+      "pair": "IR/USDT",
+      "base_asset": "IR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845277
+    },
+    {
+      "symbol": "JASMY_USDT",
+      "pair": "JASMY/USDT",
+      "base_asset": "JASMY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845157
+    },
+    {
+      "symbol": "JCT_USDT",
+      "pair": "JCT/USDT",
+      "base_asset": "JCT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845262
+    },
+    {
+      "symbol": "JELLYJELLY_USDT",
+      "pair": "JELLYJELLY/USDT",
+      "base_asset": "JELLYJELLY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845128
+    },
+    {
+      "symbol": "JOE_USDT",
+      "pair": "JOE/USDT",
+      "base_asset": "JOE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844933
+    },
+    {
+      "symbol": "JPY_USDT",
+      "pair": "JPY/USDT",
+      "base_asset": "JPY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5.6e-05",
+      "funding_timestamp_ms": 1775850845898
+    },
+    {
+      "symbol": "JST_USDT",
+      "pair": "JST/USDT",
+      "base_asset": "JST",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845174
+    },
+    {
+      "symbol": "JTO_USDT",
+      "pair": "JTO/USDT",
+      "base_asset": "JTO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000158",
+      "funding_timestamp_ms": 1775850845131
+    },
+    {
+      "symbol": "JUP_USDT",
+      "pair": "JUP/USDT",
+      "base_asset": "JUP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-2.6e-05",
+      "funding_timestamp_ms": 1775850845073
+    },
+    {
+      "symbol": "KAIA_USDT",
+      "pair": "KAIA/USDT",
+      "base_asset": "KAIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845812
+    },
+    {
+      "symbol": "KAITO_USDC",
+      "pair": "KAITO/USDC",
+      "base_asset": "KAITO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846020
+    },
+    {
+      "symbol": "KAITO_USDT",
+      "pair": "KAITO/USDT",
+      "base_asset": "KAITO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "6e-06",
+      "funding_timestamp_ms": 1775850845096
+    },
+    {
+      "symbol": "KAS_USDT",
+      "pair": "KAS/USDT",
+      "base_asset": "KAS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844929
+    },
+    {
+      "symbol": "KAT_USDT",
+      "pair": "KAT/USDT",
+      "base_asset": "KAT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845408
+    },
+    {
+      "symbol": "KAVA_USDT",
+      "pair": "KAVA/USDT",
+      "base_asset": "KAVA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845499
+    },
+    {
+      "symbol": "KERNEL_USDT",
+      "pair": "KERNEL/USDT",
+      "base_asset": "KERNEL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000647",
+      "funding_timestamp_ms": 1775850845158
+    },
+    {
+      "symbol": "KGEN_USDT",
+      "pair": "KGEN/USDT",
+      "base_asset": "KGEN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845381
+    },
+    {
+      "symbol": "KITE_USDT",
+      "pair": "KITE/USDT",
+      "base_asset": "KITE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845024
+    },
+    {
+      "symbol": "KMNO_USDT",
+      "pair": "KMNO/USDT",
+      "base_asset": "KMNO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845537
+    },
+    {
+      "symbol": "KNC_USDT",
+      "pair": "KNC/USDT",
+      "base_asset": "KNC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845365
+    },
+    {
+      "symbol": "KOMA_USDT",
+      "pair": "KOMA/USDT",
+      "base_asset": "KOMA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845229
+    },
+    {
+      "symbol": "KSM_USDT",
+      "pair": "KSM/USDT",
+      "base_asset": "KSM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845560
+    },
+    {
+      "symbol": "LAB_USDT",
+      "pair": "LAB/USDT",
+      "base_asset": "LAB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844841
+    },
+    {
+      "symbol": "LAYER_USDT",
+      "pair": "LAYER/USDT",
+      "base_asset": "LAYER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845937
+    },
+    {
+      "symbol": "LA_USDT",
+      "pair": "LA/USDT",
+      "base_asset": "LA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845615
+    },
+    {
+      "symbol": "LDO_USDT",
+      "pair": "LDO/USDT",
+      "base_asset": "LDO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.3e-05",
+      "funding_timestamp_ms": 1775850845006
+    },
+    {
+      "symbol": "LIGHT_USDT",
+      "pair": "LIGHT/USDT",
+      "base_asset": "LIGHT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845178
+    },
+    {
+      "symbol": "LINEA_USDT",
+      "pair": "LINEA/USDT",
+      "base_asset": "LINEA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4e-05",
+      "funding_timestamp_ms": 1775850845304
+    },
+    {
+      "symbol": "LINK_USD",
+      "pair": "LINK/USD",
+      "base_asset": "LINK",
+      "quote_asset": "USD",
+      "settle_asset": "LINK",
+      "funding_rate": "2.4e-05",
+      "funding_timestamp_ms": 1775850844997
+    },
+    {
+      "symbol": "LINK_USDC",
+      "pair": "LINK/USDC",
+      "base_asset": "LINK",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-1.8e-05",
+      "funding_timestamp_ms": 1775850845767
+    },
+    {
+      "symbol": "LINK_USDT",
+      "pair": "LINK/USDT",
+      "base_asset": "LINK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5.2e-05",
+      "funding_timestamp_ms": 1775850844847
+    },
+    {
+      "symbol": "LISTA_USDT",
+      "pair": "LISTA/USDT",
+      "base_asset": "LISTA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845341
+    },
+    {
+      "symbol": "LIT_USDT",
+      "pair": "LIT/USDT",
+      "base_asset": "LIT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "7e-06",
+      "funding_timestamp_ms": 1775850845055
+    },
+    {
+      "symbol": "LMWR_USDT",
+      "pair": "LMWR/USDT",
+      "base_asset": "LMWR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-7e-06",
+      "funding_timestamp_ms": 1775850845812
+    },
+    {
+      "symbol": "LONGXIA_USDT",
+      "pair": "LONGXIA/USDT",
+      "base_asset": "LONGXIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "8.9e-05",
+      "funding_timestamp_ms": 1775850845322
+    },
+    {
+      "symbol": "LPT_USDT",
+      "pair": "LPT/USDT",
+      "base_asset": "LPT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.001157",
+      "funding_timestamp_ms": 1775850844881
+    },
+    {
+      "symbol": "LQTY_USDT",
+      "pair": "LQTY/USDT",
+      "base_asset": "LQTY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845748
+    },
+    {
+      "symbol": "LRC_USDT",
+      "pair": "LRC/USDT",
+      "base_asset": "LRC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845661
+    },
+    {
+      "symbol": "LSK_USDT",
+      "pair": "LSK/USDT",
+      "base_asset": "LSK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845992
+    },
+    {
+      "symbol": "LTC_USD",
+      "pair": "LTC/USD",
+      "base_asset": "LTC",
+      "quote_asset": "USD",
+      "settle_asset": "LTC",
+      "funding_rate": "-1e-05",
+      "funding_timestamp_ms": 1775850844994
+    },
+    {
+      "symbol": "LTC_USDC",
+      "pair": "LTC/USDC",
+      "base_asset": "LTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "4e-06",
+      "funding_timestamp_ms": 1775850845978
+    },
+    {
+      "symbol": "LTC_USDT",
+      "pair": "LTC/USDT",
+      "base_asset": "LTC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844890
+    },
+    {
+      "symbol": "LUMIA_USDT",
+      "pair": "LUMIA/USDT",
+      "base_asset": "LUMIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845730
+    },
+    {
+      "symbol": "LUNANEW_USDT",
+      "pair": "LUNANEW/USDT",
+      "base_asset": "LUNANEW",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-3.1e-05",
+      "funding_timestamp_ms": 1775850845237
+    },
+    {
+      "symbol": "LUNC_USDT",
+      "pair": "LUNC/USDT",
+      "base_asset": "LUNC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845010
+    },
+    {
+      "symbol": "LYN_USDT",
+      "pair": "LYN/USDT",
+      "base_asset": "LYN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000368",
+      "funding_timestamp_ms": 1775850845030
+    },
+    {
+      "symbol": "MAGIC_USDT",
+      "pair": "MAGIC/USDT",
+      "base_asset": "MAGIC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000116",
+      "funding_timestamp_ms": 1775850845219
+    },
+    {
+      "symbol": "MAGMA_USDT",
+      "pair": "MAGMA/USDT",
+      "base_asset": "MAGMA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000427",
+      "funding_timestamp_ms": 1775850844841
+    },
+    {
+      "symbol": "MAMO_USDT",
+      "pair": "MAMO/USDT",
+      "base_asset": "MAMO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000134",
+      "funding_timestamp_ms": 1775850845925
+    },
+    {
+      "symbol": "MANA_USDT",
+      "pair": "MANA/USDT",
+      "base_asset": "MANA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "8.8e-05",
+      "funding_timestamp_ms": 1775850845131
+    },
+    {
+      "symbol": "MANTA_USDT",
+      "pair": "MANTA/USDT",
+      "base_asset": "MANTA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845513
+    },
+    {
+      "symbol": "MANTRA_USDT",
+      "pair": "MANTRA/USDT",
+      "base_asset": "MANTRA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845471
+    },
+    {
+      "symbol": "MANYU_USDT",
+      "pair": "MANYU/USDT",
+      "base_asset": "MANYU",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845465
+    },
+    {
+      "symbol": "MASK_USDT",
+      "pair": "MASK/USDT",
+      "base_asset": "MASK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845376
+    },
+    {
+      "symbol": "MAVIA_USDT",
+      "pair": "MAVIA/USDT",
+      "base_asset": "MAVIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "7.5e-05",
+      "funding_timestamp_ms": 1775850845064
+    },
+    {
+      "symbol": "MAV_USDT",
+      "pair": "MAV/USDT",
+      "base_asset": "MAV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-4.6e-05",
+      "funding_timestamp_ms": 1775850845437
+    },
+    {
+      "symbol": "MBOX_USDT",
+      "pair": "MBOX/USDT",
+      "base_asset": "MBOX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845436
+    },
+    {
+      "symbol": "MEGA_USDT",
+      "pair": "MEGA/USDT",
+      "base_asset": "MEGA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-5e-05",
+      "funding_timestamp_ms": 1775850845742
+    },
+    {
+      "symbol": "MELANIA_USDT",
+      "pair": "MELANIA/USDT",
+      "base_asset": "MELANIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845415
+    },
+    {
+      "symbol": "MEME_USDT",
+      "pair": "MEME/USDT",
+      "base_asset": "MEME",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845491
+    },
+    {
+      "symbol": "MERL_USDT",
+      "pair": "MERL/USDT",
+      "base_asset": "MERL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844905
+    },
+    {
+      "symbol": "METASTOCK_USDT",
+      "pair": "METASTOCK/USDT",
+      "base_asset": "METASTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "1.4e-05",
+      "funding_timestamp_ms": 1775850845408
+    },
+    {
+      "symbol": "METIS_USDT",
+      "pair": "METIS/USDT",
+      "base_asset": "METIS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845410
+    },
+    {
+      "symbol": "MET_USDT",
+      "pair": "MET/USDT",
+      "base_asset": "MET",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845803
+    },
+    {
+      "symbol": "MEW_USDT",
+      "pair": "MEW/USDT",
+      "base_asset": "MEW",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845553
+    },
+    {
+      "symbol": "MEZO_USDT",
+      "pair": "MEZO/USDT",
+      "base_asset": "MEZO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.0002",
+      "funding_timestamp_ms": 1775850845292
+    },
+    {
+      "symbol": "ME_USDT",
+      "pair": "ME/USDT",
+      "base_asset": "ME",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4e-05",
+      "funding_timestamp_ms": 1775850845458
+    },
+    {
+      "symbol": "MINA_USDT",
+      "pair": "MINA/USDT",
+      "base_asset": "MINA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.001579",
+      "funding_timestamp_ms": 1775850845010
+    },
+    {
+      "symbol": "MIRA_USDT",
+      "pair": "MIRA/USDT",
+      "base_asset": "MIRA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000119",
+      "funding_timestamp_ms": 1775850845789
+    },
+    {
+      "symbol": "MITO_USDT",
+      "pair": "MITO/USDT",
+      "base_asset": "MITO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845742
+    },
+    {
+      "symbol": "MLN_USDT",
+      "pair": "MLN/USDT",
+      "base_asset": "MLN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845849
+    },
+    {
+      "symbol": "MMT_USDT",
+      "pair": "MMT/USDT",
+      "base_asset": "MMT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3.7e-05",
+      "funding_timestamp_ms": 1775850845362
+    },
+    {
+      "symbol": "MNT_USDC",
+      "pair": "MNT/USDC",
+      "base_asset": "MNT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850846030
+    },
+    {
+      "symbol": "MNT_USDT",
+      "pair": "MNT/USDT",
+      "base_asset": "MNT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845274
+    },
+    {
+      "symbol": "MOCA_USDT",
+      "pair": "MOCA/USDT",
+      "base_asset": "MOCA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845349
+    },
+    {
+      "symbol": "MOLT_USDT",
+      "pair": "MOLT/USDT",
+      "base_asset": "MOLT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845277
+    },
+    {
+      "symbol": "MONAD_USDT",
+      "pair": "MONAD/USDT",
+      "base_asset": "MONAD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844875
+    },
+    {
+      "symbol": "MOODENG_USDC",
+      "pair": "MOODENG/USDC",
+      "base_asset": "MOODENG",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845980
+    },
+    {
+      "symbol": "MOODENG_USDT",
+      "pair": "MOODENG/USDT",
+      "base_asset": "MOODENG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845298
+    },
+    {
+      "symbol": "MORI_USDT",
+      "pair": "MORI/USDT",
+      "base_asset": "MORI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000136",
+      "funding_timestamp_ms": 1775850845058
+    },
+    {
+      "symbol": "MORPHO_USDT",
+      "pair": "MORPHO/USDT",
+      "base_asset": "MORPHO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-9.2e-05",
+      "funding_timestamp_ms": 1775850845049
+    },
+    {
+      "symbol": "MOVE_USDT",
+      "pair": "MOVE/USDT",
+      "base_asset": "MOVE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-4e-06",
+      "funding_timestamp_ms": 1775850845650
+    },
+    {
+      "symbol": "MOVR_USDT",
+      "pair": "MOVR/USDT",
+      "base_asset": "MOVR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845602
+    },
+    {
+      "symbol": "MSTRSTOCK_USDT",
+      "pair": "MSTRSTOCK/USDT",
+      "base_asset": "MSTRSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000331",
+      "funding_timestamp_ms": 1775850845369
+    },
+    {
+      "symbol": "MTL_USDT",
+      "pair": "MTL/USDT",
+      "base_asset": "MTL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845733
+    },
+    {
+      "symbol": "MUBARAK_USDT",
+      "pair": "MUBARAK/USDT",
+      "base_asset": "MUBARAK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845380
+    },
+    {
+      "symbol": "MUSTOCK_USDT",
+      "pair": "MUSTOCK/USDT",
+      "base_asset": "MUSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845371
+    },
+    {
+      "symbol": "MYX_USDT",
+      "pair": "MYX/USDT",
+      "base_asset": "MYX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845011
+    },
+    {
+      "symbol": "M_USDT",
+      "pair": "M/USDT",
+      "base_asset": "M",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000512",
+      "funding_timestamp_ms": 1775850845016
+    },
+    {
+      "symbol": "NAORIS_USDT",
+      "pair": "NAORIS/USDT",
+      "base_asset": "NAORIS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844917
+    },
+    {
+      "symbol": "NEAR_USDC",
+      "pair": "NEAR/USDC",
+      "base_asset": "NEAR",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-9e-05",
+      "funding_timestamp_ms": 1775850846020
+    },
+    {
+      "symbol": "NEAR_USDT",
+      "pair": "NEAR/USDT",
+      "base_asset": "NEAR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000149",
+      "funding_timestamp_ms": 1775850844885
+    },
+    {
+      "symbol": "NEIROCTO_USDC",
+      "pair": "NEIROCTO/USDC",
+      "base_asset": "NEIROCTO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845956
+    },
+    {
+      "symbol": "NEIROCTO_USDT",
+      "pair": "NEIROCTO/USDT",
+      "base_asset": "NEIROCTO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845418
+    },
+    {
+      "symbol": "NEO_USDC",
+      "pair": "NEO/USDC",
+      "base_asset": "NEO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000553",
+      "funding_timestamp_ms": 1775850846061
+    },
+    {
+      "symbol": "NEO_USDT",
+      "pair": "NEO/USDT",
+      "base_asset": "NEO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000616",
+      "funding_timestamp_ms": 1775850845112
+    },
+    {
+      "symbol": "NEWT_USDT",
+      "pair": "NEWT/USDT",
+      "base_asset": "NEWT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845904
+    },
+    {
+      "symbol": "NFP_USDT",
+      "pair": "NFP/USDT",
+      "base_asset": "NFP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845765
+    },
+    {
+      "symbol": "NIGHT_USDT",
+      "pair": "NIGHT/USDT",
+      "base_asset": "NIGHT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000229",
+      "funding_timestamp_ms": 1775850845183
+    },
+    {
+      "symbol": "NIL_USDT",
+      "pair": "NIL/USDT",
+      "base_asset": "NIL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845525
+    },
+    {
+      "symbol": "NMR_USDT",
+      "pair": "NMR/USDT",
+      "base_asset": "NMR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "2.1e-05",
+      "funding_timestamp_ms": 1775850845263
+    },
+    {
+      "symbol": "NOM_USDT",
+      "pair": "NOM/USDT",
+      "base_asset": "NOM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000529",
+      "funding_timestamp_ms": 1775850844853
+    },
+    {
+      "symbol": "NOT_USDC",
+      "pair": "NOT/USDC",
+      "base_asset": "NOT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846056
+    },
+    {
+      "symbol": "NOT_USDT",
+      "pair": "NOT/USDT",
+      "base_asset": "NOT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845082
+    },
+    {
+      "symbol": "NPC_USDT",
+      "pair": "NPC/USDT",
+      "base_asset": "NPC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000125",
+      "funding_timestamp_ms": 1775850845491
+    },
+    {
+      "symbol": "NTRN_USDT",
+      "pair": "NTRN/USDT",
+      "base_asset": "NTRN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.0002",
+      "funding_timestamp_ms": 1775850845193
+    },
+    {
+      "symbol": "NVIDIA_USDT",
+      "pair": "NVIDIA/USDT",
+      "base_asset": "NVIDIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845077
+    },
+    {
+      "symbol": "NXPC_USDT",
+      "pair": "NXPC/USDT",
+      "base_asset": "NXPC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845901
+    },
+    {
+      "symbol": "OFC_USDT",
+      "pair": "OFC/USDT",
+      "base_asset": "OFC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844867
+    },
+    {
+      "symbol": "OGN_USDT",
+      "pair": "OGN/USDT",
+      "base_asset": "OGN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845371
+    },
+    {
+      "symbol": "OG_USDT",
+      "pair": "OG/USDT",
+      "base_asset": "OG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845671
+    },
+    {
+      "symbol": "OKB_USDT",
+      "pair": "OKB/USDT",
+      "base_asset": "OKB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3.2e-05",
+      "funding_timestamp_ms": 1775850845667
+    },
+    {
+      "symbol": "OL_USDT",
+      "pair": "OL/USDT",
+      "base_asset": "OL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000723",
+      "funding_timestamp_ms": 1775850845587
+    },
+    {
+      "symbol": "ONDO_USDC",
+      "pair": "ONDO/USDC",
+      "base_asset": "ONDO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850846003
+    },
+    {
+      "symbol": "ONDO_USDT",
+      "pair": "ONDO/USDT",
+      "base_asset": "ONDO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.1e-05",
+      "funding_timestamp_ms": 1775850844904
+    },
+    {
+      "symbol": "ONE_USDT",
+      "pair": "ONE/USDT",
+      "base_asset": "ONE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845762
+    },
+    {
+      "symbol": "ONG_USDT",
+      "pair": "ONG/USDT",
+      "base_asset": "ONG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000796",
+      "funding_timestamp_ms": 1775850844917
+    },
+    {
+      "symbol": "ONT_USDT",
+      "pair": "ONT/USDT",
+      "base_asset": "ONT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000205",
+      "funding_timestamp_ms": 1775850845070
+    },
+    {
+      "symbol": "ON_USDT",
+      "pair": "ON/USDT",
+      "base_asset": "ON",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000315",
+      "funding_timestamp_ms": 1775850845213
+    },
+    {
+      "symbol": "OPENLEDGER_USDT",
+      "pair": "OPENLEDGER/USDT",
+      "base_asset": "OPENLEDGER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845423
+    },
+    {
+      "symbol": "OPN_USDT",
+      "pair": "OPN/USDT",
+      "base_asset": "OPN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3.5e-05",
+      "funding_timestamp_ms": 1775850845189
+    },
+    {
+      "symbol": "OP_USDC",
+      "pair": "OP/USDC",
+      "base_asset": "OP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850846030
+    },
+    {
+      "symbol": "OP_USDT",
+      "pair": "OP/USDT",
+      "base_asset": "OP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844960
+    },
+    {
+      "symbol": "ORBS_USDT",
+      "pair": "ORBS/USDT",
+      "base_asset": "ORBS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845912
+    },
+    {
+      "symbol": "ORCA_USDT",
+      "pair": "ORCA/USDT",
+      "base_asset": "ORCA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-9.2e-05",
+      "funding_timestamp_ms": 1775850845693
+    },
+    {
+      "symbol": "ORDER_USDT",
+      "pair": "ORDER/USDT",
+      "base_asset": "ORDER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000307",
+      "funding_timestamp_ms": 1775850844925
+    },
+    {
+      "symbol": "ORDI_USDC",
+      "pair": "ORDI/USDC",
+      "base_asset": "ORDI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846040
+    },
+    {
+      "symbol": "ORDI_USDT",
+      "pair": "ORDI/USDT",
+      "base_asset": "ORDI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845262
+    },
+    {
+      "symbol": "OXT_USDT",
+      "pair": "OXT/USDT",
+      "base_asset": "OXT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.003101",
+      "funding_timestamp_ms": 1775850845070
+    },
+    {
+      "symbol": "PARTI_USDT",
+      "pair": "PARTI/USDT",
+      "base_asset": "PARTI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.002754",
+      "funding_timestamp_ms": 1775850844845
+    },
+    {
+      "symbol": "PAXG_USDC",
+      "pair": "PAXG/USDC",
+      "base_asset": "PAXG",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-1.2e-05",
+      "funding_timestamp_ms": 1775850845981
+    },
+    {
+      "symbol": "PAXG_USDT",
+      "pair": "PAXG/USDT",
+      "base_asset": "PAXG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-1.2e-05",
+      "funding_timestamp_ms": 1775850844939
+    },
+    {
+      "symbol": "PAYPSTOCK_USDT",
+      "pair": "PAYPSTOCK/USDT",
+      "base_asset": "PAYPSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-06",
+      "funding_timestamp_ms": 1775850845794
+    },
+    {
+      "symbol": "PEAQ_USDT",
+      "pair": "PEAQ/USDT",
+      "base_asset": "PEAQ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845437
+    },
+    {
+      "symbol": "PENDLE_USDC",
+      "pair": "PENDLE/USDC",
+      "base_asset": "PENDLE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846072
+    },
+    {
+      "symbol": "PENDLE_USDT",
+      "pair": "PENDLE/USDT",
+      "base_asset": "PENDLE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "7.1e-05",
+      "funding_timestamp_ms": 1775850845158
+    },
+    {
+      "symbol": "PENGUIN_USDT",
+      "pair": "PENGUIN/USDT",
+      "base_asset": "PENGUIN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845072
+    },
+    {
+      "symbol": "PENGU_USDC",
+      "pair": "PENGU/USDC",
+      "base_asset": "PENGU",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000167",
+      "funding_timestamp_ms": 1775850845941
+    },
+    {
+      "symbol": "PENGU_USDT",
+      "pair": "PENGU/USDT",
+      "base_asset": "PENGU",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "1.2e-05",
+      "funding_timestamp_ms": 1775850844903
+    },
+    {
+      "symbol": "PEOPLE_USDT",
+      "pair": "PEOPLE/USDT",
+      "base_asset": "PEOPLE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845153
+    },
+    {
+      "symbol": "PEPE_USDC",
+      "pair": "PEPE/USDC",
+      "base_asset": "PEPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845699
+    },
+    {
+      "symbol": "PEPE_USDT",
+      "pair": "PEPE/USDT",
+      "base_asset": "PEPE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844850
+    },
+    {
+      "symbol": "PHA_USDT",
+      "pair": "PHA/USDT",
+      "base_asset": "PHA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845054
+    },
+    {
+      "symbol": "PHB_USDT",
+      "pair": "PHB/USDT",
+      "base_asset": "PHB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845267
+    },
+    {
+      "symbol": "PIEVERSE_USDT",
+      "pair": "PIEVERSE/USDT",
+      "base_asset": "PIEVERSE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845458
+    },
+    {
+      "symbol": "PIPPIN_USDT",
+      "pair": "PIPPIN/USDT",
+      "base_asset": "PIPPIN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.00021",
+      "funding_timestamp_ms": 1775850844851
+    },
+    {
+      "symbol": "PIXEL_USDT",
+      "pair": "PIXEL/USDT",
+      "base_asset": "PIXEL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-2.9e-05",
+      "funding_timestamp_ms": 1775850844983
+    },
+    {
+      "symbol": "PI_USDT",
+      "pair": "PI/USDT",
+      "base_asset": "PI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844982
+    },
+    {
+      "symbol": "PLAY_USDT",
+      "pair": "PLAY/USDT",
+      "base_asset": "PLAY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844899
+    },
+    {
+      "symbol": "PLTRSTOCK_USDT",
+      "pair": "PLTRSTOCK/USDT",
+      "base_asset": "PLTRSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845131
+    },
+    {
+      "symbol": "PLUME_USDT",
+      "pair": "PLUME/USDT",
+      "base_asset": "PLUME",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845438
+    },
+    {
+      "symbol": "PNUT_USDC",
+      "pair": "PNUT/USDC",
+      "base_asset": "PNUT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "2.7e-05",
+      "funding_timestamp_ms": 1775850846061
+    },
+    {
+      "symbol": "PNUT_USDT",
+      "pair": "PNUT/USDT",
+      "base_asset": "PNUT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845397
+    },
+    {
+      "symbol": "POLYX_USDT",
+      "pair": "POLYX/USDT",
+      "base_asset": "POLYX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000125",
+      "funding_timestamp_ms": 1775850845617
+    },
+    {
+      "symbol": "POL_USDC",
+      "pair": "POL/USDC",
+      "base_asset": "POL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-3.1e-05",
+      "funding_timestamp_ms": 1775850845903
+    },
+    {
+      "symbol": "POL_USDT",
+      "pair": "POL/USDT",
+      "base_asset": "POL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000304",
+      "funding_timestamp_ms": 1775850844943
+    },
+    {
+      "symbol": "POND_USDT",
+      "pair": "POND/USDT",
+      "base_asset": "POND",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000123",
+      "funding_timestamp_ms": 1775850845850
+    },
+    {
+      "symbol": "POPCAT_USDC",
+      "pair": "POPCAT/USDC",
+      "base_asset": "POPCAT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850846071
+    },
+    {
+      "symbol": "POPCAT_USDT",
+      "pair": "POPCAT/USDT",
+      "base_asset": "POPCAT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845136
+    },
+    {
+      "symbol": "PORTAL_USDT",
+      "pair": "PORTAL/USDT",
+      "base_asset": "PORTAL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845383
+    },
+    {
+      "symbol": "POWER_USDT",
+      "pair": "POWER/USDT",
+      "base_asset": "POWER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000461",
+      "funding_timestamp_ms": 1775850844806
+    },
+    {
+      "symbol": "POWR_USDT",
+      "pair": "POWR/USDT",
+      "base_asset": "POWR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845787
+    },
+    {
+      "symbol": "PRL_USDT",
+      "pair": "PRL/USDT",
+      "base_asset": "PRL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000165",
+      "funding_timestamp_ms": 1775850845094
+    },
+    {
+      "symbol": "PROMPT_USDT",
+      "pair": "PROMPT/USDT",
+      "base_asset": "PROMPT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845788
+    },
+    {
+      "symbol": "PROM_USDT",
+      "pair": "PROM/USDT",
+      "base_asset": "PROM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845461
+    },
+    {
+      "symbol": "PROVE_USDT",
+      "pair": "PROVE/USDT",
+      "base_asset": "PROVE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845768
+    },
+    {
+      "symbol": "PTB_USDT",
+      "pair": "PTB/USDT",
+      "base_asset": "PTB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845025
+    },
+    {
+      "symbol": "PUFFER_USDT",
+      "pair": "PUFFER/USDT",
+      "base_asset": "PUFFER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845453
+    },
+    {
+      "symbol": "PUMPBTC_USDT",
+      "pair": "PUMPBTC/USDT",
+      "base_asset": "PUMPBTC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845591
+    },
+    {
+      "symbol": "PUMPCADE_USDT",
+      "pair": "PUMPCADE/USDT",
+      "base_asset": "PUMPCADE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000127",
+      "funding_timestamp_ms": 1775850845018
+    },
+    {
+      "symbol": "PUMPFUN_USDC",
+      "pair": "PUMPFUN/USDC",
+      "base_asset": "PUMPFUN",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846058
+    },
+    {
+      "symbol": "PUMPFUN_USDT",
+      "pair": "PUMPFUN/USDT",
+      "base_asset": "PUMPFUN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844938
+    },
+    {
+      "symbol": "PUNCH_USDT",
+      "pair": "PUNCH/USDT",
+      "base_asset": "PUNCH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000118",
+      "funding_timestamp_ms": 1775850845162
+    },
+    {
+      "symbol": "PUNDIX_USDT",
+      "pair": "PUNDIX/USDT",
+      "base_asset": "PUNDIX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845935
+    },
+    {
+      "symbol": "PYR_USDT",
+      "pair": "PYR/USDT",
+      "base_asset": "PYR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845212
+    },
+    {
+      "symbol": "PYTH_USDT",
+      "pair": "PYTH/USDT",
+      "base_asset": "PYTH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844985
+    },
+    {
+      "symbol": "QNT_USDT",
+      "pair": "QNT/USDT",
+      "base_asset": "QNT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-4.6e-05",
+      "funding_timestamp_ms": 1775850845144
+    },
+    {
+      "symbol": "QQQSTOCK_USDT",
+      "pair": "QQQSTOCK/USDT",
+      "base_asset": "QQQSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-2e-05",
+      "funding_timestamp_ms": 1775850845621
+    },
+    {
+      "symbol": "QTUM_USDT",
+      "pair": "QTUM/USDT",
+      "base_asset": "QTUM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3e-05",
+      "funding_timestamp_ms": 1775850845717
+    },
+    {
+      "symbol": "QUBIC_USDT",
+      "pair": "QUBIC/USDT",
+      "base_asset": "QUBIC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845225
+    },
+    {
+      "symbol": "Q_USDT",
+      "pair": "Q/USDT",
+      "base_asset": "Q",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845426
+    },
+    {
+      "symbol": "R2_USDT",
+      "pair": "R2/USDT",
+      "base_asset": "R2",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845318
+    },
+    {
+      "symbol": "RARE_USDT",
+      "pair": "RARE/USDT",
+      "base_asset": "RARE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845396
+    },
+    {
+      "symbol": "RAVE_USDT",
+      "pair": "RAVE/USDT",
+      "base_asset": "RAVE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000126",
+      "funding_timestamp_ms": 1775850844807
+    },
+    {
+      "symbol": "RAY_USDT",
+      "pair": "RAY/USDT",
+      "base_asset": "RAY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000252",
+      "funding_timestamp_ms": 1775850845200
+    },
+    {
+      "symbol": "RDNT_USDT",
+      "pair": "RDNT/USDT",
+      "base_asset": "RDNT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.002593",
+      "funding_timestamp_ms": 1775850845441
+    },
+    {
+      "symbol": "RECALL_USDT",
+      "pair": "RECALL/USDT",
+      "base_asset": "RECALL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845576
+    },
+    {
+      "symbol": "RED_USDT",
+      "pair": "RED/USDT",
+      "base_asset": "RED",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000568",
+      "funding_timestamp_ms": 1775850844949
+    },
+    {
+      "symbol": "RENDER_USDT",
+      "pair": "RENDER/USDT",
+      "base_asset": "RENDER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000137",
+      "funding_timestamp_ms": 1775850844920
+    },
+    {
+      "symbol": "REQ_USDT",
+      "pair": "REQ/USDT",
+      "base_asset": "REQ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.002093",
+      "funding_timestamp_ms": 1775850845358
+    },
+    {
+      "symbol": "RESOLV_USDC",
+      "pair": "RESOLV/USDC",
+      "base_asset": "RESOLV",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846031
+    },
+    {
+      "symbol": "RESOLV_USDT",
+      "pair": "RESOLV/USDT",
+      "base_asset": "RESOLV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845086
+    },
+    {
+      "symbol": "REZ_USDT",
+      "pair": "REZ/USDT",
+      "base_asset": "REZ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000153",
+      "funding_timestamp_ms": 1775850845374
+    },
+    {
+      "symbol": "RIF_USDT",
+      "pair": "RIF/USDT",
+      "base_asset": "RIF",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845490
+    },
+    {
+      "symbol": "RIVER_USDT",
+      "pair": "RIVER/USDT",
+      "base_asset": "RIVER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.00012",
+      "funding_timestamp_ms": 1775850844827
+    },
+    {
+      "symbol": "RLC_USDT",
+      "pair": "RLC/USDT",
+      "base_asset": "RLC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.9e-05",
+      "funding_timestamp_ms": 1775850845570
+    },
+    {
+      "symbol": "RLS_USDT",
+      "pair": "RLS/USDT",
+      "base_asset": "RLS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845203
+    },
+    {
+      "symbol": "RNBW_USDT",
+      "pair": "RNBW/USDT",
+      "base_asset": "RNBW",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000148",
+      "funding_timestamp_ms": 1775850845786
+    },
+    {
+      "symbol": "ROAM_USDT",
+      "pair": "ROAM/USDT",
+      "base_asset": "ROAM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-1e-05",
+      "funding_timestamp_ms": 1775850845673
+    },
+    {
+      "symbol": "ROBINHOOD_USDT",
+      "pair": "ROBINHOOD/USDT",
+      "base_asset": "ROBINHOOD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845595
+    },
+    {
+      "symbol": "ROBO_USDT",
+      "pair": "ROBO/USDT",
+      "base_asset": "ROBO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845362
+    },
+    {
+      "symbol": "ROLL_USDT",
+      "pair": "ROLL/USDT",
+      "base_asset": "ROLL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000125",
+      "funding_timestamp_ms": 1775850845461
+    },
+    {
+      "symbol": "RON_USDT",
+      "pair": "RON/USDT",
+      "base_asset": "RON",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845776
+    },
+    {
+      "symbol": "ROSE_USDT",
+      "pair": "ROSE/USDT",
+      "base_asset": "ROSE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845062
+    },
+    {
+      "symbol": "RPL_USDT",
+      "pair": "RPL/USDT",
+      "base_asset": "RPL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-2.6e-05",
+      "funding_timestamp_ms": 1775850845656
+    },
+    {
+      "symbol": "RSR_USDT",
+      "pair": "RSR/USDT",
+      "base_asset": "RSR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845332
+    },
+    {
+      "symbol": "RUNE_USDT",
+      "pair": "RUNE/USDT",
+      "base_asset": "RUNE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000175",
+      "funding_timestamp_ms": 1775850845379
+    },
+    {
+      "symbol": "RVN_USDT",
+      "pair": "RVN/USDT",
+      "base_asset": "RVN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845737
+    },
+    {
+      "symbol": "SAFE_USDT",
+      "pair": "SAFE/USDT",
+      "base_asset": "SAFE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845514
+    },
+    {
+      "symbol": "SAGA_USDT",
+      "pair": "SAGA/USDT",
+      "base_asset": "SAGA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "1.1e-05",
+      "funding_timestamp_ms": 1775850845413
+    },
+    {
+      "symbol": "SAHARA_USDC",
+      "pair": "SAHARA/USDC",
+      "base_asset": "SAHARA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846072
+    },
+    {
+      "symbol": "SAHARA_USDT",
+      "pair": "SAHARA/USDT",
+      "base_asset": "SAHARA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845352
+    },
+    {
+      "symbol": "SAND_USDT",
+      "pair": "SAND/USDT",
+      "base_asset": "SAND",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "7e-06",
+      "funding_timestamp_ms": 1775850845145
+    },
+    {
+      "symbol": "SANTOS_USDT",
+      "pair": "SANTOS/USDT",
+      "base_asset": "SANTOS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845776
+    },
+    {
+      "symbol": "SAPIEN_USDT",
+      "pair": "SAPIEN/USDT",
+      "base_asset": "SAPIEN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845170
+    },
+    {
+      "symbol": "SATS_USDT",
+      "pair": "SATS/USDT",
+      "base_asset": "SATS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845611
+    },
+    {
+      "symbol": "SCRT_USDT",
+      "pair": "SCRT/USDT",
+      "base_asset": "SCRT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845122
+    },
+    {
+      "symbol": "SCR_USDT",
+      "pair": "SCR/USDT",
+      "base_asset": "SCR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845737
+    },
+    {
+      "symbol": "SC_USDT",
+      "pair": "SC/USDT",
+      "base_asset": "SC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845965
+    },
+    {
+      "symbol": "SEI_USDC",
+      "pair": "SEI/USDC",
+      "base_asset": "SEI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000297",
+      "funding_timestamp_ms": 1775850846010
+    },
+    {
+      "symbol": "SEI_USDT",
+      "pair": "SEI/USDT",
+      "base_asset": "SEI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "7.9e-05",
+      "funding_timestamp_ms": 1775850844942
+    },
+    {
+      "symbol": "SENT_USDT",
+      "pair": "SENT/USDT",
+      "base_asset": "SENT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845502
+    },
+    {
+      "symbol": "SFP_USDT",
+      "pair": "SFP/USDT",
+      "base_asset": "SFP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845468
+    },
+    {
+      "symbol": "SHELL_USDT",
+      "pair": "SHELL/USDT",
+      "base_asset": "SHELL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845219
+    },
+    {
+      "symbol": "SHIB_USDC",
+      "pair": "SHIB/USDC",
+      "base_asset": "SHIB",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "8e-05",
+      "funding_timestamp_ms": 1775850845997
+    },
+    {
+      "symbol": "SHIB_USDT",
+      "pair": "SHIB/USDT",
+      "base_asset": "SHIB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844959
+    },
+    {
+      "symbol": "SIGN_USDT",
+      "pair": "SIGN/USDT",
+      "base_asset": "SIGN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845204
+    },
+    {
+      "symbol": "SILVER_USDC",
+      "pair": "SILVER/USDC",
+      "base_asset": "SILVER",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "8.5e-05",
+      "funding_timestamp_ms": 1775850845632
+    },
+    {
+      "symbol": "SILVER_USDT",
+      "pair": "SILVER/USDT",
+      "base_asset": "SILVER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "8.5e-05",
+      "funding_timestamp_ms": 1775850844806
+    },
+    {
+      "symbol": "SIREN_USDT",
+      "pair": "SIREN/USDT",
+      "base_asset": "SIREN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.005264",
+      "funding_timestamp_ms": 1775850844827
+    },
+    {
+      "symbol": "SKL_USDT",
+      "pair": "SKL/USDT",
+      "base_asset": "SKL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845345
+    },
+    {
+      "symbol": "SKR_USDT",
+      "pair": "SKR/USDT",
+      "base_asset": "SKR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845290
+    },
+    {
+      "symbol": "SKYAI_USDT",
+      "pair": "SKYAI/USDT",
+      "base_asset": "SKYAI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000118",
+      "funding_timestamp_ms": 1775850845215
+    },
+    {
+      "symbol": "SKY_USDT",
+      "pair": "SKY/USDT",
+      "base_asset": "SKY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "1e-05",
+      "funding_timestamp_ms": 1775850845423
+    },
+    {
+      "symbol": "SLP_USDT",
+      "pair": "SLP/USDT",
+      "base_asset": "SLP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845686
+    },
+    {
+      "symbol": "SN3_USDT",
+      "pair": "SN3/USDT",
+      "base_asset": "SN3",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845172
+    },
+    {
+      "symbol": "SNT_USDT",
+      "pair": "SNT/USDT",
+      "base_asset": "SNT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846018
+    },
+    {
+      "symbol": "SNX_USDT",
+      "pair": "SNX/USDT",
+      "base_asset": "SNX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5.6e-05",
+      "funding_timestamp_ms": 1775850845531
+    },
+    {
+      "symbol": "SOLV_USDT",
+      "pair": "SOLV/USDT",
+      "base_asset": "SOLV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000204",
+      "funding_timestamp_ms": 1775850845047
+    },
+    {
+      "symbol": "SOL_USD",
+      "pair": "SOL/USD",
+      "base_asset": "SOL",
+      "quote_asset": "USD",
+      "settle_asset": "SOL",
+      "funding_rate": "-9.8e-05",
+      "funding_timestamp_ms": 1775850844999
+    },
+    {
+      "symbol": "SOL_USD1",
+      "pair": "SOL/USD1",
+      "base_asset": "SOL",
+      "quote_asset": "USD1",
+      "settle_asset": "USD1",
+      "funding_rate": "-4.6e-05",
+      "funding_timestamp_ms": 1775850846032
+    },
+    {
+      "symbol": "SOL_USDC",
+      "pair": "SOL/USDC",
+      "base_asset": "SOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "7e-06",
+      "funding_timestamp_ms": 1775850845164
+    },
+    {
+      "symbol": "SOL_USDT",
+      "pair": "SOL/USDT",
+      "base_asset": "SOL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5.8e-05",
+      "funding_timestamp_ms": 1775850844806
+    },
+    {
+      "symbol": "SOMI_USDT",
+      "pair": "SOMI/USDT",
+      "base_asset": "SOMI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845543
+    },
+    {
+      "symbol": "SONIC_USDT",
+      "pair": "SONIC/USDT",
+      "base_asset": "SONIC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845798
+    },
+    {
+      "symbol": "SOONNETWORK_USDT",
+      "pair": "SOONNETWORK/USDT",
+      "base_asset": "SOONNETWORK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-3.1e-05",
+      "funding_timestamp_ms": 1775850845097
+    },
+    {
+      "symbol": "SOPH_USDT",
+      "pair": "SOPH/USDT",
+      "base_asset": "SOPH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000138",
+      "funding_timestamp_ms": 1775850845901
+    },
+    {
+      "symbol": "SPACE_USDT",
+      "pair": "SPACE/USDT",
+      "base_asset": "SPACE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845156
+    },
+    {
+      "symbol": "SPELL_USDT",
+      "pair": "SPELL/USDT",
+      "base_asset": "SPELL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845717
+    },
+    {
+      "symbol": "SPK_USDT",
+      "pair": "SPK/USDT",
+      "base_asset": "SPK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-2.8e-05",
+      "funding_timestamp_ms": 1775850845888
+    },
+    {
+      "symbol": "SPORTFUN_USDT",
+      "pair": "SPORTFUN/USDT",
+      "base_asset": "SPORTFUN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000184",
+      "funding_timestamp_ms": 1775850845089
+    },
+    {
+      "symbol": "SPX_USDC",
+      "pair": "SPX/USDC",
+      "base_asset": "SPX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845889
+    },
+    {
+      "symbol": "SPX_USDT",
+      "pair": "SPX/USDT",
+      "base_asset": "SPX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845088
+    },
+    {
+      "symbol": "SQD_USDT",
+      "pair": "SQD/USDT",
+      "base_asset": "SQD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845524
+    },
+    {
+      "symbol": "SSV_USDT",
+      "pair": "SSV/USDT",
+      "base_asset": "SSV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845824
+    },
+    {
+      "symbol": "STABLE_USDT",
+      "pair": "STABLE/USDT",
+      "base_asset": "STABLE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845319
+    },
+    {
+      "symbol": "STBL_USDT",
+      "pair": "STBL/USDT",
+      "base_asset": "STBL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845057
+    },
+    {
+      "symbol": "STEEM_USDT",
+      "pair": "STEEM/USDT",
+      "base_asset": "STEEM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "9e-06",
+      "funding_timestamp_ms": 1775850845967
+    },
+    {
+      "symbol": "STG_USDT",
+      "pair": "STG/USDT",
+      "base_asset": "STG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845272
+    },
+    {
+      "symbol": "STORJ_USDT",
+      "pair": "STORJ/USDT",
+      "base_asset": "STORJ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845680
+    },
+    {
+      "symbol": "STO_USDT",
+      "pair": "STO/USDT",
+      "base_asset": "STO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000258",
+      "funding_timestamp_ms": 1775850844877
+    },
+    {
+      "symbol": "STRAX_USDT",
+      "pair": "STRAX/USDT",
+      "base_asset": "STRAX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.0002",
+      "funding_timestamp_ms": 1775850846017
+    },
+    {
+      "symbol": "STRK_USDC",
+      "pair": "STRK/USDC",
+      "base_asset": "STRK",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "7.9e-05",
+      "funding_timestamp_ms": 1775850846009
+    },
+    {
+      "symbol": "STRK_USDT",
+      "pair": "STRK/USDT",
+      "base_asset": "STRK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844985
+    },
+    {
+      "symbol": "STX_USDT",
+      "pair": "STX/USDT",
+      "base_asset": "STX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "8.6e-05",
+      "funding_timestamp_ms": 1775850845206
+    },
+    {
+      "symbol": "SUI_USD",
+      "pair": "SUI/USD",
+      "base_asset": "SUI",
+      "quote_asset": "USD",
+      "settle_asset": "SUI",
+      "funding_rate": "8.2e-05",
+      "funding_timestamp_ms": 1775850845005
+    },
+    {
+      "symbol": "SUI_USD1",
+      "pair": "SUI/USD1",
+      "base_asset": "SUI",
+      "quote_asset": "USD1",
+      "settle_asset": "USD1",
+      "funding_rate": "0.000112",
+      "funding_timestamp_ms": 1775850846067
+    },
+    {
+      "symbol": "SUI_USDC",
+      "pair": "SUI/USDC",
+      "base_asset": "SUI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "4e-05",
+      "funding_timestamp_ms": 1775850845571
+    },
+    {
+      "symbol": "SUI_USDT",
+      "pair": "SUI/USDT",
+      "base_asset": "SUI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.9e-05",
+      "funding_timestamp_ms": 1775850844838
+    },
+    {
+      "symbol": "SUN_USDT",
+      "pair": "SUN/USDT",
+      "base_asset": "SUN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845279
+    },
+    {
+      "symbol": "SUPER_USDT",
+      "pair": "SUPER/USDT",
+      "base_asset": "SUPER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-5.2e-05",
+      "funding_timestamp_ms": 1775850845346
+    },
+    {
+      "symbol": "SUPRA_USDT",
+      "pair": "SUPRA/USDT",
+      "base_asset": "SUPRA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845136
+    },
+    {
+      "symbol": "SUSHI_USDT",
+      "pair": "SUSHI/USDT",
+      "base_asset": "SUSHI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845284
+    },
+    {
+      "symbol": "SWARMS_USDT",
+      "pair": "SWARMS/USDT",
+      "base_asset": "SWARMS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845025
+    },
+    {
+      "symbol": "SXT_USDT",
+      "pair": "SXT/USDT",
+      "base_asset": "SXT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000287",
+      "funding_timestamp_ms": 1775850845224
+    },
+    {
+      "symbol": "SYN_USDT",
+      "pair": "SYN/USDT",
+      "base_asset": "SYN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845687
+    },
+    {
+      "symbol": "SYRUP_USDT",
+      "pair": "SYRUP/USDT",
+      "base_asset": "SYRUP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845399
+    },
+    {
+      "symbol": "SYS_USDT",
+      "pair": "SYS/USDT",
+      "base_asset": "SYS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845612
+    },
+    {
+      "symbol": "S_USDT",
+      "pair": "S/USDT",
+      "base_asset": "S",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845286
+    },
+    {
+      "symbol": "TAC_USDT",
+      "pair": "TAC/USDT",
+      "base_asset": "TAC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000277",
+      "funding_timestamp_ms": 1775850845699
+    },
+    {
+      "symbol": "TAG_USDT",
+      "pair": "TAG/USDT",
+      "base_asset": "TAG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845531
+    },
+    {
+      "symbol": "TAIKO_USDT",
+      "pair": "TAIKO/USDT",
+      "base_asset": "TAIKO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845765
+    },
+    {
+      "symbol": "TAKE_USDT",
+      "pair": "TAKE/USDT",
+      "base_asset": "TAKE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845193
+    },
+    {
+      "symbol": "TAO_USD1",
+      "pair": "TAO/USD1",
+      "base_asset": "TAO",
+      "quote_asset": "USD1",
+      "settle_asset": "USD1",
+      "funding_rate": "0.000118",
+      "funding_timestamp_ms": 1775850846034
+    },
+    {
+      "symbol": "TAO_USDC",
+      "pair": "TAO/USDC",
+      "base_asset": "TAO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.00029",
+      "funding_timestamp_ms": 1775850845203
+    },
+    {
+      "symbol": "TAO_USDT",
+      "pair": "TAO/USDT",
+      "base_asset": "TAO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000685",
+      "funding_timestamp_ms": 1775850844806
+    },
+    {
+      "symbol": "TA_USDT",
+      "pair": "TA/USDT",
+      "base_asset": "TA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845468
+    },
+    {
+      "symbol": "TEL_USDT",
+      "pair": "TEL/USDT",
+      "base_asset": "TEL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.0002",
+      "funding_timestamp_ms": 1775850846053
+    },
+    {
+      "symbol": "TESLA_USDT",
+      "pair": "TESLA/USDT",
+      "base_asset": "TESLA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845108
+    },
+    {
+      "symbol": "TFUEL_USDT",
+      "pair": "TFUEL/USDT",
+      "base_asset": "TFUEL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000172",
+      "funding_timestamp_ms": 1775850845950
+    },
+    {
+      "symbol": "THETA_USDT",
+      "pair": "THETA/USDT",
+      "base_asset": "THETA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000151",
+      "funding_timestamp_ms": 1775850845110
+    },
+    {
+      "symbol": "THE_USDT",
+      "pair": "THE/USDT",
+      "base_asset": "THE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845557
+    },
+    {
+      "symbol": "THQ_USDT",
+      "pair": "THQ/USDT",
+      "base_asset": "THQ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000131",
+      "funding_timestamp_ms": 1775850845892
+    },
+    {
+      "symbol": "TIA_USDC",
+      "pair": "TIA/USDC",
+      "base_asset": "TIA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "2.3e-05",
+      "funding_timestamp_ms": 1775850846055
+    },
+    {
+      "symbol": "TIA_USDT",
+      "pair": "TIA/USDT",
+      "base_asset": "TIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845039
+    },
+    {
+      "symbol": "TLM_USDT",
+      "pair": "TLM/USDT",
+      "base_asset": "TLM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845671
+    },
+    {
+      "symbol": "TNSR_USDT",
+      "pair": "TNSR/USDT",
+      "base_asset": "TNSR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844863
+    },
+    {
+      "symbol": "TOKEN_USDT",
+      "pair": "TOKEN/USDT",
+      "base_asset": "TOKEN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000148",
+      "funding_timestamp_ms": 1775850845846
+    },
+    {
+      "symbol": "TONCOIN_USDT",
+      "pair": "TONCOIN/USDT",
+      "base_asset": "TONCOIN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "2.6e-05",
+      "funding_timestamp_ms": 1775850844915
+    },
+    {
+      "symbol": "TON_USDC",
+      "pair": "TON/USDC",
+      "base_asset": "TON",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000317",
+      "funding_timestamp_ms": 1775850846029
+    },
+    {
+      "symbol": "TOSHI_USDT",
+      "pair": "TOSHI/USDT",
+      "base_asset": "TOSHI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845603
+    },
+    {
+      "symbol": "TOWNS_USDT",
+      "pair": "TOWNS/USDT",
+      "base_asset": "TOWNS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845332
+    },
+    {
+      "symbol": "TRAC_USDT",
+      "pair": "TRAC/USDT",
+      "base_asset": "TRAC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000143",
+      "funding_timestamp_ms": 1775850845641
+    },
+    {
+      "symbol": "TRADOOR_USDT",
+      "pair": "TRADOOR/USDT",
+      "base_asset": "TRADOOR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844848
+    },
+    {
+      "symbol": "TRB_USDT",
+      "pair": "TRB/USDT",
+      "base_asset": "TRB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845047
+    },
+    {
+      "symbol": "TREE_USDT",
+      "pair": "TREE/USDT",
+      "base_asset": "TREE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-3.7e-05",
+      "funding_timestamp_ms": 1775850845639
+    },
+    {
+      "symbol": "TRIA_USDT",
+      "pair": "TRIA/USDT",
+      "base_asset": "TRIA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000134",
+      "funding_timestamp_ms": 1775850845114
+    },
+    {
+      "symbol": "TRUMPOFFICIAL_USDT",
+      "pair": "TRUMPOFFICIAL/USDT",
+      "base_asset": "TRUMPOFFICIAL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.001033",
+      "funding_timestamp_ms": 1775850844923
+    },
+    {
+      "symbol": "TRUMP_USDC",
+      "pair": "TRUMP/USDC",
+      "base_asset": "TRUMP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000931",
+      "funding_timestamp_ms": 1775850846008
+    },
+    {
+      "symbol": "TRUST_USDT",
+      "pair": "TRUST/USDT",
+      "base_asset": "TRUST",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845827
+    },
+    {
+      "symbol": "TRUTH_USDT",
+      "pair": "TRUTH/USDT",
+      "base_asset": "TRUTH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845205
+    },
+    {
+      "symbol": "TRU_USDT",
+      "pair": "TRU/USDT",
+      "base_asset": "TRU",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844937
+    },
+    {
+      "symbol": "TRX_USDC",
+      "pair": "TRX/USDC",
+      "base_asset": "TRX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000153",
+      "funding_timestamp_ms": 1775850845951
+    },
+    {
+      "symbol": "TRX_USDT",
+      "pair": "TRX/USDT",
+      "base_asset": "TRX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000188",
+      "funding_timestamp_ms": 1775850844960
+    },
+    {
+      "symbol": "TRY_USDT",
+      "pair": "TRY/USDT",
+      "base_asset": "TRY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.0002",
+      "funding_timestamp_ms": 1775850845827
+    },
+    {
+      "symbol": "TSMSTOCK_USDT",
+      "pair": "TSMSTOCK/USDT",
+      "base_asset": "TSMSTOCK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845607
+    },
+    {
+      "symbol": "TST_USDT",
+      "pair": "TST/USDT",
+      "base_asset": "TST",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845755
+    },
+    {
+      "symbol": "TURBO_USDT",
+      "pair": "TURBO/USDT",
+      "base_asset": "TURBO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-4.7e-05",
+      "funding_timestamp_ms": 1775850845028
+    },
+    {
+      "symbol": "TURTLE_USDT",
+      "pair": "TURTLE/USDT",
+      "base_asset": "TURTLE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845791
+    },
+    {
+      "symbol": "TUT_USDT",
+      "pair": "TUT/USDT",
+      "base_asset": "TUT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845449
+    },
+    {
+      "symbol": "TWT_USDT",
+      "pair": "TWT/USDT",
+      "base_asset": "TWT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845395
+    },
+    {
+      "symbol": "T_USDT",
+      "pair": "T/USDT",
+      "base_asset": "T",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850846007
+    },
+    {
+      "symbol": "UAI_USDT",
+      "pair": "UAI/USDT",
+      "base_asset": "UAI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845140
+    },
+    {
+      "symbol": "UB_USDT",
+      "pair": "UB/USDT",
+      "base_asset": "UB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000398",
+      "funding_timestamp_ms": 1775850845232
+    },
+    {
+      "symbol": "ULTIMA_USDT",
+      "pair": "ULTIMA/USDT",
+      "base_asset": "ULTIMA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.00013",
+      "funding_timestamp_ms": 1775850845299
+    },
+    {
+      "symbol": "UMA_USDT",
+      "pair": "UMA/USDT",
+      "base_asset": "UMA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845537
+    },
+    {
+      "symbol": "UNI_USDC",
+      "pair": "UNI/USDC",
+      "base_asset": "UNI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-9.3e-05",
+      "funding_timestamp_ms": 1775850846005
+    },
+    {
+      "symbol": "UNI_USDT",
+      "pair": "UNI/USDT",
+      "base_asset": "UNI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3.5e-05",
+      "funding_timestamp_ms": 1775850844879
+    },
+    {
+      "symbol": "UP_USDT",
+      "pair": "UP/USDT",
+      "base_asset": "UP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.002089",
+      "funding_timestamp_ms": 1775850844861
+    },
+    {
+      "symbol": "USDC_USDT",
+      "pair": "USDC/USDT",
+      "base_asset": "USDC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "8.1e-05",
+      "funding_timestamp_ms": 1775850845571
+    },
+    {
+      "symbol": "USELESS_USDT",
+      "pair": "USELESS/USDT",
+      "base_asset": "USELESS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844972
+    },
+    {
+      "symbol": "USTC_USDT",
+      "pair": "USTC/USDT",
+      "base_asset": "USTC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845252
+    },
+    {
+      "symbol": "USUAL_USDT",
+      "pair": "USUAL/USDT",
+      "base_asset": "USUAL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845514
+    },
+    {
+      "symbol": "US_USDT",
+      "pair": "US/USDT",
+      "base_asset": "US",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845503
+    },
+    {
+      "symbol": "VANA_USDT",
+      "pair": "VANA/USDT",
+      "base_asset": "VANA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845701
+    },
+    {
+      "symbol": "VANRY_USDT",
+      "pair": "VANRY/USDT",
+      "base_asset": "VANRY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845456
+    },
+    {
+      "symbol": "VELODROME_USDT",
+      "pair": "VELODROME/USDT",
+      "base_asset": "VELODROME",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845626
+    },
+    {
+      "symbol": "VELO_USDT",
+      "pair": "VELO/USDT",
+      "base_asset": "VELO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845126
+    },
+    {
+      "symbol": "VELVET_USDT",
+      "pair": "VELVET/USDT",
+      "base_asset": "VELVET",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845665
+    },
+    {
+      "symbol": "VET_USDT",
+      "pair": "VET/USDT",
+      "base_asset": "VET",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845098
+    },
+    {
+      "symbol": "VIC_USDT",
+      "pair": "VIC/USDT",
+      "base_asset": "VIC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845725
+    },
+    {
+      "symbol": "VINE_USDT",
+      "pair": "VINE/USDT",
+      "base_asset": "VINE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000142",
+      "funding_timestamp_ms": 1775850845629
+    },
+    {
+      "symbol": "VIRTUAL_USDC",
+      "pair": "VIRTUAL/USDC",
+      "base_asset": "VIRTUAL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845800
+    },
+    {
+      "symbol": "VIRTUAL_USDT",
+      "pair": "VIRTUAL/USDT",
+      "base_asset": "VIRTUAL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845023
+    },
+    {
+      "symbol": "VTHO_USDT",
+      "pair": "VTHO/USDT",
+      "base_asset": "VTHO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845894
+    },
+    {
+      "symbol": "VVV_USDT",
+      "pair": "VVV/USDT",
+      "base_asset": "VVV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844912
+    },
+    {
+      "symbol": "WAL_USDT",
+      "pair": "WAL/USDT",
+      "base_asset": "WAL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.002471",
+      "funding_timestamp_ms": 1775850845113
+    },
+    {
+      "symbol": "WAVES_USDT",
+      "pair": "WAVES/USDT",
+      "base_asset": "WAVES",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845427
+    },
+    {
+      "symbol": "WAXP_USDT",
+      "pair": "WAXP/USDT",
+      "base_asset": "WAXP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845824
+    },
+    {
+      "symbol": "WCT_USDT",
+      "pair": "WCT/USDT",
+      "base_asset": "WCT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845479
+    },
+    {
+      "symbol": "WET_USDT",
+      "pair": "WET/USDT",
+      "base_asset": "WET",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000168",
+      "funding_timestamp_ms": 1775850845312
+    },
+    {
+      "symbol": "WHITEWHALE_USDT",
+      "pair": "WHITEWHALE/USDT",
+      "base_asset": "WHITEWHALE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845387
+    },
+    {
+      "symbol": "WIF_USDC",
+      "pair": "WIF/USDC",
+      "base_asset": "WIF",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "4e-06",
+      "funding_timestamp_ms": 1775850845978
+    },
+    {
+      "symbol": "WIF_USDT",
+      "pair": "WIF/USDT",
+      "base_asset": "WIF",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "2.6e-05",
+      "funding_timestamp_ms": 1775850844891
+    },
+    {
+      "symbol": "WLD_USDC",
+      "pair": "WLD/USDC",
+      "base_asset": "WLD",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000192",
+      "funding_timestamp_ms": 1775850845924
+    },
+    {
+      "symbol": "WLD_USDT",
+      "pair": "WLD/USDT",
+      "base_asset": "WLD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "6.4e-05",
+      "funding_timestamp_ms": 1775850844875
+    },
+    {
+      "symbol": "WLFI_USDC",
+      "pair": "WLFI/USDC",
+      "base_asset": "WLFI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-5.4e-05",
+      "funding_timestamp_ms": 1775850845780
+    },
+    {
+      "symbol": "WLFI_USDT",
+      "pair": "WLFI/USDT",
+      "base_asset": "WLFI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000141",
+      "funding_timestamp_ms": 1775850844867
+    },
+    {
+      "symbol": "WOO_USDT",
+      "pair": "WOO/USDT",
+      "base_asset": "WOO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845595
+    },
+    {
+      "symbol": "WOTAMALAILE_USDT",
+      "pair": "WOTAMALAILE/USDT",
+      "base_asset": "WOTAMALAILE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000391",
+      "funding_timestamp_ms": 1775850845438
+    },
+    {
+      "symbol": "W_USDT",
+      "pair": "W/USDT",
+      "base_asset": "W",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845220
+    },
+    {
+      "symbol": "XAI_USDT",
+      "pair": "XAI/USDT",
+      "base_asset": "XAI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845371
+    },
+    {
+      "symbol": "XAN_USDT",
+      "pair": "XAN/USDT",
+      "base_asset": "XAN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845425
+    },
+    {
+      "symbol": "XAUT_USD1",
+      "pair": "XAUT/USD1",
+      "base_asset": "XAUT",
+      "quote_asset": "USD1",
+      "settle_asset": "USD1",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845964
+    },
+    {
+      "symbol": "XAUT_USDC",
+      "pair": "XAUT/USDC",
+      "base_asset": "XAUT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845355
+    },
+    {
+      "symbol": "XAUT_USDT",
+      "pair": "XAUT/USDT",
+      "base_asset": "XAUT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844806
+    },
+    {
+      "symbol": "XCN_USDT",
+      "pair": "XCN/USDT",
+      "base_asset": "XCN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.00049",
+      "funding_timestamp_ms": 1775850845648
+    },
+    {
+      "symbol": "XDC_USDT",
+      "pair": "XDC/USDT",
+      "base_asset": "XDC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845349
+    },
+    {
+      "symbol": "XEC_USDT",
+      "pair": "XEC/USDT",
+      "base_asset": "XEC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845775
+    },
+    {
+      "symbol": "XION_USDT",
+      "pair": "XION/USDT",
+      "base_asset": "XION",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845337
+    },
+    {
+      "symbol": "XLM_USDC",
+      "pair": "XLM/USDC",
+      "base_asset": "XLM",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "1.5e-05",
+      "funding_timestamp_ms": 1775850846025
+    },
+    {
+      "symbol": "XLM_USDT",
+      "pair": "XLM/USDT",
+      "base_asset": "XLM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000357",
+      "funding_timestamp_ms": 1775850844908
+    },
+    {
+      "symbol": "XMR_USDT",
+      "pair": "XMR/USDT",
+      "base_asset": "XMR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844888
+    },
+    {
+      "symbol": "XNY_USDT",
+      "pair": "XNY/USDT",
+      "base_asset": "XNY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844934
+    },
+    {
+      "symbol": "XPD_USDT",
+      "pair": "XPD/USDT",
+      "base_asset": "XPD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000137",
+      "funding_timestamp_ms": 1775850845388
+    },
+    {
+      "symbol": "XPIN_USDT",
+      "pair": "XPIN/USDT",
+      "base_asset": "XPIN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845141
+    },
+    {
+      "symbol": "XPL_USDT",
+      "pair": "XPL/USDT",
+      "base_asset": "XPL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850844939
+    },
+    {
+      "symbol": "XPT_USDT",
+      "pair": "XPT/USDT",
+      "base_asset": "XPT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1775850845167
+    },
+    {
+      "symbol": "XRP_USD",
+      "pair": "XRP/USD",
+      "base_asset": "XRP",
+      "quote_asset": "USD",
+      "settle_asset": "XRP",
+      "funding_rate": "5.2e-05",
+      "funding_timestamp_ms": 1775850844996
+    },
+    {
+      "symbol": "XRP_USD1",
+      "pair": "XRP/USD1",
+      "base_asset": "XRP",
+      "quote_asset": "USD1",
+      "settle_asset": "USD1",
+      "funding_rate": "0.000118",
+      "funding_timestamp_ms": 1775850846052
+    },
+    {
+      "symbol": "XRP_USDC",
+      "pair": "XRP/USDC",
+      "base_asset": "XRP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-5.6e-05",
+      "funding_timestamp_ms": 1775850845385
+    },
+    {
+      "symbol": "XRP_USDT",
+      "pair": "XRP/USDT",
+      "base_asset": "XRP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "6.4e-05",
+      "funding_timestamp_ms": 1775850844827
+    },
+    {
+      "symbol": "XTZ_USDT",
+      "pair": "XTZ/USDT",
+      "base_asset": "XTZ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845581
+    },
+    {
+      "symbol": "XVG_USDT",
+      "pair": "XVG/USDT",
+      "base_asset": "XVG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850844979
+    },
+    {
+      "symbol": "XVS_USDT",
+      "pair": "XVS/USDT",
+      "base_asset": "XVS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845786
+    },
+    {
+      "symbol": "YB_USDT",
+      "pair": "YB/USDT",
+      "base_asset": "YB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845705
+    },
+    {
+      "symbol": "YFI_USDT",
+      "pair": "YFI/USDT",
+      "base_asset": "YFI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845616
+    },
+    {
+      "symbol": "YGG_USDT",
+      "pair": "YGG/USDT",
+      "base_asset": "YGG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "4.7e-05",
+      "funding_timestamp_ms": 1775850845367
+    },
+    {
+      "symbol": "YZY_USDT",
+      "pair": "YZY/USDT",
+      "base_asset": "YZY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845651
+    },
+    {
+      "symbol": "ZAMA_USDT",
+      "pair": "ZAMA/USDT",
+      "base_asset": "ZAMA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845080
+    },
+    {
+      "symbol": "ZBCN_USDT",
+      "pair": "ZBCN/USDT",
+      "base_asset": "ZBCN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1775850845299
+    },
+    {
+      "symbol": "ZBT_USDT",
+      "pair": "ZBT/USDT",
+      "base_asset": "ZBT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845011
+    },
+    {
+      "symbol": "ZEC_USDC",
+      "pair": "ZEC/USDC",
+      "base_asset": "ZEC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "funding_rate": "-0.000369",
+      "funding_timestamp_ms": 1775850845355
+    },
+    {
+      "symbol": "ZEC_USDT",
+      "pair": "ZEC/USDT",
+      "base_asset": "ZEC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "-0.000365",
+      "funding_timestamp_ms": 1775850844827
+    },
+    {
+      "symbol": "ZEN_USDT",
+      "pair": "ZEN/USDT",
+      "base_asset": "ZEN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "1.1e-05",
+      "funding_timestamp_ms": 1775850844867
+    },
+    {
+      "symbol": "ZEREBRO_USDT",
+      "pair": "ZEREBRO/USDT",
+      "base_asset": "ZEREBRO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.000135",
+      "funding_timestamp_ms": 1775850844948
+    },
+    {
+      "symbol": "ZETA_USDT",
+      "pair": "ZETA/USDT",
+      "base_asset": "ZETA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845692
+    },
+    {
+      "symbol": "ZIG_USDT",
+      "pair": "ZIG/USDT",
+      "base_asset": "ZIG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1775850845968
+    },
+    {
+      "symbol": "ZIL_USDT",
+      "pair": "ZIL/USDT",
+      "base_asset": "ZIL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845530
+    },
+    {
+      "symbol": "ZKC_USDT",
+      "pair": "ZKC/USDT",
+      "base_asset": "ZKC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845780
+    },
+    {
+      "symbol": "ZKJ_USDT",
+      "pair": "ZKJ/USDT",
+      "base_asset": "ZKJ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845554
+    },
+    {
+      "symbol": "ZKP_USDT",
+      "pair": "ZKP/USDT",
+      "base_asset": "ZKP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845823
+    },
+    {
+      "symbol": "ZKSYNC_USDT",
+      "pair": "ZKSYNC/USDT",
+      "base_asset": "ZKSYNC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "1.5e-05",
+      "funding_timestamp_ms": 1775850845201
+    },
+    {
+      "symbol": "ZORA_USDT",
+      "pair": "ZORA/USDT",
+      "base_asset": "ZORA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845312
+    },
+    {
+      "symbol": "ZRO_USDT",
+      "pair": "ZRO/USDT",
+      "base_asset": "ZRO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "3.5e-05",
+      "funding_timestamp_ms": 1775850845059
+    },
+    {
+      "symbol": "ZRX_USDT",
+      "pair": "ZRX/USDT",
+      "base_asset": "ZRX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1775850845560
+    }
+  ]
+}

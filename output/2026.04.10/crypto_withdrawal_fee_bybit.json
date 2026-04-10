@@ -2,14 +2,14 @@
   "schema_version": 1,
   "data_type": "withdrawal_fees",
   "exchange": "bybit",
-  "generated_at": "2026-04-10T06:15:39+00:00",
+  "generated_at": "2026-04-10T19:54:07+00:00",
   "source": {
     "coin_info_url": "https://api.bybit.com/v5/asset/coin/query-info"
   },
   "summary": {
     "total_coin_rows": 779,
     "currencies_with_chains": 779,
-    "total_chains": 1005,
+    "total_chains": 1015,
     "skipped_rows": 0
   },
   "currencies": [
@@ -155,6 +155,15 @@
       "name": "AAPLX",
       "full_name": "AAPLX",
       "chains": [
+        {
+          "chain_name": "MANTLE",
+          "withdrawal_min_fee": "0.005",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.01",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0x9d275685dC284C8eB1C79f6ABA7a63Dc75ec890a"
+        },
         {
           "chain_name": "SOL",
           "withdrawal_min_fee": "0.005",
@@ -625,6 +634,15 @@
       "name": "AMZNX",
       "full_name": "AMZNX",
       "chains": [
+        {
+          "chain_name": "MANTLE",
+          "withdrawal_min_fee": "0.005",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.01",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0x3557Ba345B01EFa20A1bdDC61F573BFD87195081"
+        },
         {
           "chain_name": "SOL",
           "withdrawal_min_fee": "0.005",
@@ -1709,7 +1727,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "561.576052",
+          "withdrawal_min_fee": "558.426907",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "200",
           "is_withdraw_enabled": true,
@@ -1905,7 +1923,7 @@
       "chains": [
         {
           "chain_name": "BTC",
-          "withdrawal_min_fee": "0.000119",
+          "withdrawal_min_fee": "0.000106",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.00027",
           "is_withdraw_enabled": true,
@@ -2447,6 +2465,15 @@
       "full_name": "COINX",
       "chains": [
         {
+          "chain_name": "MANTLE",
+          "withdrawal_min_fee": "0.002",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.004",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0x364f210f430eC2448Fc68A49203040F6124096F0"
+        },
+        {
           "chain_name": "SOL",
           "withdrawal_min_fee": "0.002",
           "withdraw_fee_rate": "0",
@@ -2676,6 +2703,15 @@
       "name": "CRCLX",
       "full_name": "CRCLX",
       "chains": [
+        {
+          "chain_name": "MANTLE",
+          "withdrawal_min_fee": "0.005",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.01",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0xfEbDEd1B0986a8ee107f5AB1a1c5a813491DeCEB"
+        },
         {
           "chain_name": "SOL",
           "withdrawal_min_fee": "0.005",
@@ -4228,7 +4264,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "13.463734",
+          "withdrawal_min_fee": "14",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1.5",
           "is_withdraw_enabled": true,
@@ -4998,6 +5034,15 @@
       "full_name": "GOOGLX",
       "chains": [
         {
+          "chain_name": "MANTLE",
+          "withdrawal_min_fee": "0.005",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.01",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0xe92f673Ca36C5E2Efd2DE7628f815f84807e803F"
+        },
+        {
           "chain_name": "SOL",
           "withdrawal_min_fee": "0.005",
           "withdraw_fee_rate": "0",
@@ -5401,6 +5446,15 @@
       "name": "HOODX",
       "full_name": "HOODX",
       "chains": [
+        {
+          "chain_name": "MANTLE",
+          "withdrawal_min_fee": "0.01",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.02",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0xE1385FDd5ffB10081Cd52C56584F25EFa9084015"
+        },
         {
           "chain_name": "SOL",
           "withdrawal_min_fee": "0.01",
@@ -6982,6 +7036,15 @@
       "full_name": "MCDX",
       "chains": [
         {
+          "chain_name": "MANTLE",
+          "withdrawal_min_fee": "0.003",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.006",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0x80A77a372c1e12AcCdA84299492f404902E2DA67"
+        },
+        {
           "chain_name": "SOL",
           "withdrawal_min_fee": "0.003",
           "withdraw_fee_rate": "0",
@@ -7173,6 +7236,15 @@
       "name": "METAX",
       "full_name": "METAX",
       "chains": [
+        {
+          "chain_name": "MANTLE",
+          "withdrawal_min_fee": "0.0015",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.003",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0x96702be57Cd9777f835117a809C7124fe4ec989A"
+        },
         {
           "chain_name": "SOL",
           "withdrawal_min_fee": "0.0015",
@@ -8235,6 +8307,15 @@
       "full_name": "NVDAX",
       "chains": [
         {
+          "chain_name": "MANTLE",
+          "withdrawal_min_fee": "0.005",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.01",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0xc845b2894dBddd03858fd2D643B4eF725fE0849d"
+        },
+        {
           "chain_name": "SOL",
           "withdrawal_min_fee": "0.005",
           "withdraw_fee_rate": "0",
@@ -9245,7 +9326,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "15.865673",
+          "withdrawal_min_fee": "16.120522",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "3",
           "is_withdraw_enabled": true,
@@ -9827,7 +9908,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "15.003847",
+          "withdrawal_min_fee": "15.972684",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
@@ -11721,7 +11802,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "7.50341277",
+          "withdrawal_min_fee": "8.20251589",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
           "is_withdraw_enabled": true,
@@ -11971,6 +12052,15 @@
       "full_name": "TSLAX",
       "chains": [
         {
+          "chain_name": "MANTLE",
+          "withdrawal_min_fee": "0.003",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.006",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0x8aD3c73F833d3F9A523aB01476625F269aEB7Cf0"
+        },
+        {
           "chain_name": "SOL",
           "withdrawal_min_fee": "0.003",
           "withdraw_fee_rate": "0",
@@ -12201,7 +12291,7 @@
           "withdrawal_min_fee": "0.5",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d"
         },
@@ -12237,7 +12327,7 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "2",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "TPFqcBAaaUMCSVRCqPaQ9QnzKhmuoLR6Rc"
         }
@@ -13904,7 +13994,7 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xF81aC2E1A0373ddE1BcE01E2Fe694a9b7E3bfcB9"
         },
