@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Crypto Universe — Funding Explorer</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;padding:16px;background:#181a20;color:#e8e8e8;font-size:14px}
+a{color:#5b9cf5}
+.header{margin-bottom:14px}
+.header h1{margin:0 0 4px;font-size:20px}
+.header .date{color:#888;font-size:13px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;margin-bottom:12px}
+.bar input,.bar select{background:#23262f;color:#e8e8e8;border:1px solid #333;border-radius:4px;padding:6px 10px;font-size:14px}
+.bar input[type=text]{width:220px}
+.bar select{width:160px}
+.stats{color:#888;font-size:13px;margin-bottom:10px}
+.stats b{color:#c8c8c8}
+.legend{color:#8d93a1;font-size:12px;margin:-2px 0 10px}
+.wrap{overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:720px}
+th,td{text-align:left;padding:5px 10px;border-bottom:1px solid #23262f;white-space:nowrap}
+th{position:sticky;top:0;background:#1e2028;cursor:pointer;user-select:none;color:#aaa;font-weight:600;font-size:13px}
+th:hover{color:#e8e8e8}
+th .arrow{font-size:10px;margin-left:3px}
+td:nth-child(1){color:#888;text-align:right;width:50px}
+td:nth-child(5){text-align:right}
+.rate{text-align:right;font-variant-numeric:tabular-nums}
+.rate.positive{color:#78d18b}
+.rate.negative{color:#f08d95}
+.rate.zero{color:#c8c8c8}
+.rate.missing{color:#666}
+#loading,#error{text-align:center;padding:60px;color:#888;font-size:16px}
+#error{color:#f08d95;display:none}
+.home{margin-bottom:12px;display:inline-block;font-size:13px}
+</style>
+</head>
+<body>
+<a class="home" href="index.html">&larr; Home</a>
+<div class="header">
+  <h1>Futures Funding Rates</h1>
+  <div class="date" id="updated"></div>
+</div>
+<div class="bar">
+  <input type="text" id="search" placeholder="Filter pairs (e.g. BTC, ETH/USDT)">
+  <select id="quoteFilter"><option value="">All quotes</option></select>
+  <select id="presenceFilter">
+    <option value="">All pairs</option>
+    <option value="all">Present on all loaded exchanges</option>
+    <option value="multi">Present on 2+ exchanges</option>
+    <option value="single">Present on 1 exchange</option>
+  </select>
+</div>
+<div class="stats" id="stats"></div>
+<div class="legend">Funding rates are shown as percentages. Data source: <code>output/fut_funding_rates_*.json</code>.</div>
+<div id="loading">Loading data&hellip;</div>
+<div id="error"></div>
+<div class="wrap" id="tableWrap" style="display:none">
+<table>
+  <thead>
+    <tr id="headRow"></tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+</div>
+<script>
+const EXCHANGE_LABELS={
+  binance:'Binance',
+  bitget:'Bitget',
+  bitmart:'BitMart',
+  bybit:'Bybit',
+  coinbase:'Coinbase',
+  coinw:'CoinW',
+  cryptocom:'Crypto.com',
+  gate:'Gate',
+  htx:'HTX',
+  kucoin:'KuCoin',
+  mexc:'MEXC',
+  okx:'OKX',
+  upbit:'Upbit'
+};
+const EXCHANGE_CANDIDATES=[
+  'binance','bitget','bitmart','bybit','coinbase','coinw','cryptocom',
+  'gate','htx','kucoin','mexc','okx','upbit'
+];
+
+let allRows=[];
+let filtered=[];
+let loadedExchanges=[];
+let sortCol='pair';
+let sortAsc=true;
+const HTML_ESCAPES={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
+
+function exchangeLabel(exchange){
+  return EXCHANGE_LABELS[exchange]||exchange;
+}
+
+function escapeHtml(value){
+  return String(value??'').replace(/[&<>"']/g,ch=>HTML_ESCAPES[ch]);
+}
+
+function fundingUrl(exchange){
+  const url=new URL(`output/fut_funding_rates_${exchange}.json`,window.location.href);
+  url.searchParams.set('ts',String(Date.now()));
+  return url.toString();
+}
+
+async function loadFundingPayload(exchange){
+  try{
+    const response=await fetch(fundingUrl(exchange),{cache:'no-store'});
+    if(!response.ok)return null;
+    const payload=await response.json();
+    if(!payload||!Array.isArray(payload.pairs))return null;
+    payload.exchange=payload.exchange||exchange;
+    return payload;
+  }catch(_err){
+    return null;
+  }
+}
+
+function parseRate(value){
+  if(value===null||value===undefined||value==='')return null;
+  const num=Number(value);
+  return Number.isFinite(num)?num:null;
+}
+
+function formatPct(rate){
+  if(rate===null)return '—';
+  const pct=rate*100;
+  const abs=Math.abs(pct);
+  if(abs>=1)return pct.toFixed(2)+'%';
+  if(abs>=0.1)return pct.toFixed(3)+'%';
+  return pct.toFixed(4)+'%';
+}
+
+function rateClass(rate){
+  if(rate===null)return 'missing';
+  if(rate>0)return 'positive';
+  if(rate<0)return 'negative';
+  return 'zero';
+}
+
+function formatTimestamp(timestampMs){
+  if(!timestampMs)return '';
+  const date=new Date(timestampMs);
+  return Number.isNaN(date.getTime())?'':date.toISOString();
+}
+
+function buildRows(payloads){
+  const rowMap=new Map();
+  const quotes=new Set();
+  let latestGenerated='';
+
+  payloads.forEach(payload=>{
+    const exchange=payload.exchange;
+    if(payload.generated_at&&payload.generated_at>latestGenerated)latestGenerated=payload.generated_at;
+    payload.pairs.forEach(pair=>{
+      const key=pair.pair||pair.symbol;
+      if(!key)return;
+      let row=rowMap.get(key);
+      if(!row){
+        row={
+          pair:key,
+          base_asset:pair.base_asset||'',
+          quote_asset:pair.quote_asset||'',
+          settle_asset:pair.settle_asset||'',
+          by_exchange:{},
+          exchange_count:0
+        };
+        rowMap.set(key,row);
+      }
+      const rate=parseRate(pair.funding_rate);
+      row.by_exchange[exchange]={
+        symbol:pair.symbol||'',
+        funding_rate:rate,
+        funding_timestamp_ms:pair.funding_timestamp_ms??null
+      };
+      if(row.base_asset==='')row.base_asset=pair.base_asset||'';
+      if(row.quote_asset==='')row.quote_asset=pair.quote_asset||'';
+      if(row.settle_asset==='')row.settle_asset=pair.settle_asset||'';
+      if(row.quote_asset)quotes.add(row.quote_asset);
+    });
+  });
+
+  allRows=[...rowMap.values()].map(row=>{
+    row.exchange_count=loadedExchanges.reduce((count,exchange)=>count+(row.by_exchange[exchange]?1:0),0);
+    return row;
+  });
+
+  return {
+    latestGenerated,
+    quotes:[...quotes].sort()
+  };
+}
+
+function buildHeader(){
+  const headRow=document.getElementById('headRow');
+  let html='' +
+    '<th data-col="idx">#</th>' +
+    '<th data-col="pair">Pair</th>' +
+    '<th data-col="base">Base</th>' +
+    '<th data-col="quote">Quote</th>' +
+    '<th data-col="count">Exchanges</th>';
+  loadedExchanges.forEach(exchange=>{
+    html+='<th data-col="'+exchange+'">'+exchangeLabel(exchange)+'</th>';
+  });
+  headRow.innerHTML=html;
+
+  headRow.querySelectorAll('th').forEach(th=>{
+    const col=th.dataset.col;
+    th.insertAdjacentHTML('beforeend','<span class="arrow"></span>');
+    th.addEventListener('click',()=>{
+      if(col==='idx')return;
+      if(sortCol===col)sortAsc=!sortAsc;else{sortCol=col;sortAsc=true;}
+      headRow.querySelectorAll('.arrow').forEach(arrow=>arrow.textContent='');
+      th.querySelector('.arrow').textContent=sortAsc?' ▲':' ▼';
+      doSort();
+    });
+  });
+}
+
+function renderTable(){
+  const tbody=document.getElementById('tbody');
+  filtered.forEach((row,index)=>row._idx=index+1);
+  let html='';
+  filtered.forEach(row=>{
+    html+='<tr>';
+    html+='<td>'+row._idx+'</td>';
+    html+='<td>'+escapeHtml(row.pair)+'</td>';
+    html+='<td>'+escapeHtml(row.base_asset)+'</td>';
+    html+='<td>'+escapeHtml(row.quote_asset)+'</td>';
+    html+='<td>'+row.exchange_count+'</td>';
+    loadedExchanges.forEach(exchange=>{
+      const cell=row.by_exchange[exchange];
+      const rate=cell?cell.funding_rate:null;
+      const title=cell
+        ? (cell.symbol+(cell.funding_timestamp_ms?' | '+formatTimestamp(cell.funding_timestamp_ms):''))
+        : '';
+      html+='<td class="rate '+rateClass(rate)+'" title="'+escapeHtml(title)+'">'+formatPct(rate)+'</td>';
+    });
+    html+='</tr>';
+  });
+  tbody.innerHTML=html;
+  document.getElementById('stats').innerHTML=
+    'Loaded exchanges: <b>'+loadedExchanges.length+'</b> · ' +
+    'Showing <b>'+filtered.length+'</b> of <b>'+allRows.length+'</b> futures pairs';
+}
+
+function applyFilters(){
+  const search=document.getElementById('search').value.toUpperCase();
+  const quote=document.getElementById('quoteFilter').value;
+  const presence=document.getElementById('presenceFilter').value;
+
+  filtered=allRows.filter(row=>{
+    if(search&&row.pair.toUpperCase().indexOf(search)<0)return false;
+    if(quote&&row.quote_asset!==quote)return false;
+    if(presence==='all'&&row.exchange_count!==loadedExchanges.length)return false;
+    if(presence==='multi'&&row.exchange_count<2)return false;
+    if(presence==='single'&&row.exchange_count!==1)return false;
+    return true;
+  });
+  doSort();
+}
+
+function doSort(){
+  const asc=sortAsc?1:-1;
+  filtered.sort((a,b)=>{
+    let va;
+    let vb;
+    if(sortCol==='pair')va=a.pair,vb=b.pair;
+    else if(sortCol==='base')va=a.base_asset,vb=b.base_asset;
+    else if(sortCol==='quote')va=a.quote_asset,vb=b.quote_asset;
+    else if(sortCol==='count')va=a.exchange_count,vb=b.exchange_count;
+    else{
+      va=a.by_exchange[sortCol]?a.by_exchange[sortCol].funding_rate:null;
+      vb=b.by_exchange[sortCol]?b.by_exchange[sortCol].funding_rate:null;
+      if(va===null&&vb===null)return a.pair.localeCompare(b.pair)*asc;
+      if(va===null)return 1;
+      if(vb===null)return -1;
+    }
+    if(typeof va==='string')return va<vb?-asc:va>vb?asc:0;
+    return (va-vb)*asc;
+  });
+  renderTable();
+}
+
+['search','quoteFilter','presenceFilter'].forEach(id=>{
+  document.getElementById(id).addEventListener(id==='search'?'input':'change',applyFilters);
+});
+
+Promise.all(EXCHANGE_CANDIDATES.map(loadFundingPayload)).then(payloads=>{
+  const available=payloads.filter(Boolean);
+  if(available.length===0){
+    document.getElementById('loading').style.display='none';
+    const error=document.getElementById('error');
+    error.style.display='block';
+    error.textContent='No funding-rate files found in output/.';
+    return;
+  }
+
+  loadedExchanges=available
+    .map(payload=>payload.exchange)
+    .sort((a,b)=>exchangeLabel(a).localeCompare(exchangeLabel(b)));
+
+  const {latestGenerated,quotes}=buildRows(available);
+  document.getElementById('updated').textContent='Last updated: '+latestGenerated;
+
+  const quoteFilter=document.getElementById('quoteFilter');
+  quotes.forEach(quote=>{
+    const option=document.createElement('option');
+    option.value=quote;
+    option.textContent=quote;
+    quoteFilter.appendChild(option);
+  });
+
+  buildHeader();
+  filtered=allRows.slice();
+  document.getElementById('loading').style.display='none';
+  document.getElementById('tableWrap').style.display='block';
+  doSort();
+});
+</script>
+</body>
+</html>

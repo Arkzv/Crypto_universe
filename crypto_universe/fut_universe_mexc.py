@@ -286,7 +286,7 @@ def build_parser():
         default=str(today_output_dir() / FUNDING_OUTPUT_FILENAME),
         help=(
             "Funding-rate JSON output path, or '-' for stdout "
-            f"(default: output/YYYY.MM.DD/{FUNDING_OUTPUT_FILENAME})"
+            f"(default: output/{FUNDING_OUTPUT_FILENAME})"
         ),
     )
     return parser

@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import json
+import re
 import shutil
 import urllib.request
 from datetime import UTC, datetime
@@ -17,7 +18,7 @@ def build_output_parser(description: str, prefix: str) -> argparse.ArgumentParse
     parser.add_argument(
         "--output",
         default=default_output_path(prefix),
-        help=f"JSON output path, or '-' for stdout (default: output/YYYY.MM.DD/{prefix}.json)",
+        help=f"JSON output path, or '-' for stdout (default: output/{prefix}.json)",
     )
     parser.add_argument(
         "--timeout-seconds",
@@ -35,8 +36,7 @@ def build_output_parser(description: str, prefix: str) -> argparse.ArgumentParse
 
 
 def today_output_dir() -> Path:
-    day = datetime.now(tz=UTC).strftime("%Y.%m.%d")
-    return OUTPUT_DIR / day
+    return OUTPUT_DIR
 
 
 def default_output_path(prefix: str) -> str:
@@ -44,11 +44,14 @@ def default_output_path(prefix: str) -> str:
 
 
 def clean_output_dir() -> None:
-    """Remove only today's dated subdirectory, preserving previous days."""
-    today_dir = today_output_dir()
-    if today_dir.exists():
-        shutil.rmtree(today_dir)
-    today_dir.mkdir(parents=True, exist_ok=True)
+    """Ensure output/ exists and remove legacy dated subdirectories and Latest.* files."""
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    for child in OUTPUT_DIR.iterdir():
+        if child.is_dir() and re.fullmatch(r"\d{4}\.\d{2}\.\d{2}", child.name):
+            shutil.rmtree(child)
+            continue
+        if child.is_file() and child.name in {"Latest.md", "Latest.json"}:
+            child.unlink()
 
 
 clean_today_output_dir = clean_output_dir

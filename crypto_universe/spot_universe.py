@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import asyncio
-import shutil
 import subprocess
 from collections import Counter
 from pathlib import Path
@@ -11,7 +10,6 @@ from typing import Any, Awaitable, Callable
 import json
 
 from .common import (
-    OUTPUT_DIR,
     clean_output_dir,
     generated_at_utc,
     normalize_text,
@@ -19,8 +17,6 @@ from .common import (
     validate_common_args,
     write_json,
 )
-
-EXTERNAL_OUTPUT = Path(__file__).resolve().parent.parent.parent / "output"
 from .spot_universe_binance import fetch_exchange_universe as fetch_binance_universe
 from .spot_universe_bitget import fetch_exchange_universe as fetch_bitget_universe
 from .spot_universe_bitmart import fetch_exchange_universe as fetch_bitmart_universe
@@ -399,7 +395,7 @@ def build_transfer_status_index(
     return index
 
 
-def build_latest_json(
+def build_combined_json_payload(
     payload: dict[str, Any],
     transfer_status_index: dict[str, dict[str, dict[str, Any]]] | None = None,
 ) -> dict[str, Any]:
@@ -479,24 +475,10 @@ def build_latest_json(
 def write_volume_report(
     payload: dict[str, Any],
     out_dir: Path,
-    transfer_status_index: dict[str, dict[str, dict[str, Any]]] | None = None,
 ) -> str:
     report = build_volume_report(payload)
     path = out_dir / "README.md"
     path.write_text(report + "\n", encoding="utf-8")
-
-    latest_json_data = build_latest_json(payload, transfer_status_index)
-    latest_json_text = json.dumps(latest_json_data, indent=2, sort_keys=False) + "\n"
-
-    # Copy to repo output/
-    shutil.copy2(path, OUTPUT_DIR / "Latest.md")
-    (OUTPUT_DIR / "Latest.json").write_text(latest_json_text, encoding="utf-8")
-
-    # Copy to external output/
-    EXTERNAL_OUTPUT.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(path, EXTERNAL_OUTPUT / "Latest.md")
-    (EXTERNAL_OUTPUT / "Latest.json").write_text(latest_json_text, encoding="utf-8")
-
     return str(path)
 
 
@@ -569,9 +551,10 @@ async def async_main() -> int:
     usdt_rates = build_usdt_rates(combined)
     enrich_with_usdt_volume(combined, usdt_rates)
     transfer_status_index = build_transfer_status_index(fee_payloads)
+    combined_output_payload = build_combined_json_payload(combined, transfer_status_index)
     print(f"USDT rates derived for {len(usdt_rates)} quote currencies")
-    output_target = write_json(combined, args.output, args.indent)
-    report_path = write_volume_report(combined, out_dir, transfer_status_index)
+    output_target = write_json(combined_output_payload, args.output, args.indent)
+    report_path = write_volume_report(combined, out_dir)
     print_summary(combined, output_target)
     print(f"Volume report: {report_path}")
     auto_commit(combined["generated_at"])
