@@ -35,6 +35,11 @@ from .spot_universe_htx import fetch_exchange_universe as fetch_htx_universe
 from .spot_universe_kucoin import fetch_exchange_universe as fetch_kucoin_universe
 from .withdrawal_fee_kucoin import fetch_withdrawal_fees as fetch_kucoin_withdrawal_fees
 from .withdrawal_fee_kucoin import print_summary as print_kucoin_fee_summary
+from .fut_universe_mexc import FUNDING_OUTPUT_FILENAME
+from .fut_universe_mexc import build_funding_rates_payload as build_mexc_funding_rates_payload
+from .fut_universe_mexc import fetch_exchange_universe as fetch_mexc_futures_universe
+from .fut_universe_mexc import print_funding_rates_summary as print_mexc_funding_rates_summary
+from .fut_universe_mexc import print_summary as print_mexc_futures_summary
 from .spot_universe_mexc import fetch_exchange_universe as fetch_mexc_universe
 from .withdrawal_fee_mexc import fetch_withdrawal_fees as fetch_mexc_withdrawal_fees
 from .withdrawal_fee_mexc import print_summary as print_mexc_fee_summary
@@ -524,12 +529,16 @@ async def async_main() -> int:
     if "mexc" in requested:
         fee_tasks["mexc"] = fetch_mexc_withdrawal_fees(args.timeout_seconds)
 
-    all_tasks: list[Any] = [fetch_requested_exchanges(args.exchanges, args.timeout_seconds)]
+    all_tasks: list[Any] = [
+        fetch_requested_exchanges(args.exchanges, args.timeout_seconds),
+        fetch_mexc_futures_universe(args.timeout_seconds),
+    ]
     fee_keys = list(fee_tasks.keys())
     all_tasks.extend(fee_tasks.values())
     results = await asyncio.gather(*all_tasks)
     exchange_payloads = results[0]
-    fee_payloads = dict(zip(fee_keys, results[1:]))
+    mexc_futures_payload = results[1]
+    fee_payloads = dict(zip(fee_keys, results[2:]))
 
     fee_writers = {
         "kucoin": print_kucoin_fee_summary,
@@ -547,6 +556,14 @@ async def async_main() -> int:
     for payload in exchange_payloads:
         exchange_path = str(out_dir / f"spot_universe_{payload['exchange']}.json")
         write_json(payload, exchange_path, args.indent)
+
+    futures_path = str(out_dir / "fut_universe_mexc.json")
+    futures_output = write_json(mexc_futures_payload, futures_path, args.indent)
+    print_mexc_futures_summary(mexc_futures_payload, futures_output)
+    futures_funding_payload = build_mexc_funding_rates_payload(mexc_futures_payload)
+    futures_funding_path = str(out_dir / FUNDING_OUTPUT_FILENAME)
+    futures_funding_output = write_json(futures_funding_payload, futures_funding_path, args.indent)
+    print_mexc_funding_rates_summary(futures_funding_payload, futures_funding_output)
 
     combined = build_combined_payload(exchange_payloads)
     usdt_rates = build_usdt_rates(combined)
@@ -574,10 +591,10 @@ def auto_commit(generated_at: str) -> None:
             return
         date_str = generated_at[:10]
         subprocess.run(
-            ["git", "commit", "-m", f"spot universe {date_str}"],
+            ["git", "commit", "-m", f"crypto universe {date_str}"],
             cwd=repo_root, check=True, capture_output=True,
         )
-        print(f"Git: committed spot universe {date_str}")
+        print(f"Git: committed crypto universe {date_str}")
         subprocess.run(
             ["git", "push"],
             cwd=repo_root, check=True, capture_output=True,

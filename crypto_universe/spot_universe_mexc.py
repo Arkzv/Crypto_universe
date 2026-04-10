@@ -19,6 +19,11 @@ from .common import (
     validate_common_args,
     write_json,
 )
+from .fut_universe_mexc import FUNDING_OUTPUT_FILENAME
+from .fut_universe_mexc import build_funding_rates_payload
+from .fut_universe_mexc import fetch_exchange_universe as fetch_futures_universe
+from .fut_universe_mexc import print_funding_rates_summary
+from .fut_universe_mexc import print_summary as print_futures_summary
 from .withdrawal_fee_mexc import fetch_withdrawal_fees, print_summary as print_fee_summary
 
 EXCHANGE = "mexc"
@@ -141,9 +146,10 @@ async def async_main() -> int:
     args = parser.parse_args()
     validate_common_args(args)
     clean_output_dir()
-    payload, fee_payload = await asyncio.gather(
+    payload, fee_payload, futures_payload = await asyncio.gather(
         fetch_exchange_universe(args.timeout_seconds),
         fetch_withdrawal_fees(args.timeout_seconds),
+        fetch_futures_universe(args.timeout_seconds),
     )
     output_target = write_json(payload, args.output, args.indent)
     print_summary(payload, output_target)
@@ -151,6 +157,13 @@ async def async_main() -> int:
         fee_path = str(today_output_dir() / "crypto_withdrawal_fee_mexc.json")
         fee_output = write_json(fee_payload, fee_path, args.indent)
         print_fee_summary(fee_payload, fee_output)
+    futures_path = str(today_output_dir() / "fut_universe_mexc.json")
+    futures_output = write_json(futures_payload, futures_path, args.indent)
+    print_futures_summary(futures_payload, futures_output)
+    funding_payload = build_funding_rates_payload(futures_payload)
+    funding_path = str(today_output_dir() / FUNDING_OUTPUT_FILENAME)
+    funding_output = write_json(funding_payload, funding_path, args.indent)
+    print_funding_rates_summary(funding_payload, funding_output)
     return 0
 
 
