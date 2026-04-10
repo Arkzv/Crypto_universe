@@ -28,12 +28,14 @@ th{position:sticky;top:0;background:#1e2028;cursor:pointer;user-select:none;colo
 th:hover{color:#e8e8e8}
 th .arrow{font-size:10px;margin-left:3px}
 td:nth-child(1){color:#888;text-align:right;width:50px}
-td:nth-child(5){text-align:right}
 .rate{text-align:right;font-variant-numeric:tabular-nums}
 .rate.positive{color:#78d18b}
 .rate.negative{color:#f08d95}
 .rate.zero{color:#c8c8c8}
 .rate.missing{color:#666}
+.rate-link{color:inherit;text-decoration:none}
+.rate-link:hover{text-decoration:underline}
+.spot-gap{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;margin-left:6px;border-radius:999px;background:#4a2228;color:#ffb0b6;border:1px solid #80363f;font-size:9px;font-weight:700;vertical-align:middle}
 #loading,#error{text-align:center;padding:60px;color:#888;font-size:16px}
 #error{color:#f08d95;display:none}
 .home{margin-bottom:12px;display:inline-block;font-size:13px}
@@ -56,7 +58,7 @@ td:nth-child(5){text-align:right}
   </select>
 </div>
 <div class="stats" id="stats"></div>
-<div class="legend">Funding rates are shown as percentages. Data source: <code>output/fut_funding_rates_*.json</code>.</div>
+<div class="legend"><span class="spot-gap">S</span> means the same pair is not available in spot on that exchange.</div>
 <div id="loading">Loading data&hellip;</div>
 <div id="error"></div>
 <div class="wrap" id="tableWrap" style="display:none">
@@ -122,6 +124,34 @@ async function loadFundingPayload(exchange){
   }
 }
 
+function spotUrl(exchange){
+  const url=new URL(`output/spot_universe_${exchange}.json`,window.location.href);
+  url.searchParams.set('ts',String(Date.now()));
+  return url.toString();
+}
+
+function futuresTradeUrl(exchange,symbol){
+  if(!symbol)return null;
+  switch(exchange){
+    case 'mexc':
+      return 'https://www.mexc.com/futures/'+encodeURIComponent(symbol);
+    default:
+      return null;
+  }
+}
+
+async function loadSpotPairs(exchange){
+  try{
+    const response=await fetch(spotUrl(exchange),{cache:'no-store'});
+    if(!response.ok)return null;
+    const payload=await response.json();
+    if(!payload||!Array.isArray(payload.pairs))return null;
+    return new Set(payload.pairs.map(pair=>pair.pair).filter(Boolean));
+  }catch(_err){
+    return null;
+  }
+}
+
 function parseRate(value){
   if(value===null||value===undefined||value==='')return null;
   const num=Number(value);
@@ -150,7 +180,7 @@ function formatTimestamp(timestampMs){
   return Number.isNaN(date.getTime())?'':date.toISOString();
 }
 
-function buildRows(payloads){
+function buildRows(payloads,spotPairsByExchange){
   const rowMap=new Map();
   const quotes=new Set();
   let latestGenerated='';
@@ -177,7 +207,8 @@ function buildRows(payloads){
       row.by_exchange[exchange]={
         symbol:pair.symbol||'',
         funding_rate:rate,
-        funding_timestamp_ms:pair.funding_timestamp_ms??null
+        funding_timestamp_ms:pair.funding_timestamp_ms??null,
+        spot_available:spotPairsByExchange[exchange] ? spotPairsByExchange[exchange].has(key) : null
       };
       if(row.base_asset==='')row.base_asset=pair.base_asset||'';
       if(row.quote_asset==='')row.quote_asset=pair.quote_asset||'';
@@ -201,10 +232,7 @@ function buildHeader(){
   const headRow=document.getElementById('headRow');
   let html='' +
     '<th data-col="idx">#</th>' +
-    '<th data-col="pair">Pair</th>' +
-    '<th data-col="base">Base</th>' +
-    '<th data-col="quote">Quote</th>' +
-    '<th data-col="count">Exchanges</th>';
+    '<th data-col="pair">Pair</th>';
   loadedExchanges.forEach(exchange=>{
     html+='<th data-col="'+exchange+'">'+exchangeLabel(exchange)+'</th>';
   });
@@ -231,16 +259,22 @@ function renderTable(){
     html+='<tr>';
     html+='<td>'+row._idx+'</td>';
     html+='<td>'+escapeHtml(row.pair)+'</td>';
-    html+='<td>'+escapeHtml(row.base_asset)+'</td>';
-    html+='<td>'+escapeHtml(row.quote_asset)+'</td>';
-    html+='<td>'+row.exchange_count+'</td>';
     loadedExchanges.forEach(exchange=>{
       const cell=row.by_exchange[exchange];
       const rate=cell?cell.funding_rate:null;
-      const title=cell
-        ? (cell.symbol+(cell.funding_timestamp_ms?' | '+formatTimestamp(cell.funding_timestamp_ms):''))
+      const href=cell?futuresTradeUrl(exchange,cell.symbol):null;
+      const spotGap=cell && cell.spot_available===false
+        ? '<span class="spot-gap" title="Pair not available on spot for '+escapeHtml(exchangeLabel(exchange))+'">S</span>'
         : '';
-      html+='<td class="rate '+rateClass(rate)+'" title="'+escapeHtml(title)+'">'+formatPct(rate)+'</td>';
+      const title=cell
+        ? (cell.symbol
+          +(cell.funding_timestamp_ms?' | '+formatTimestamp(cell.funding_timestamp_ms):'')
+          +(cell.spot_available===false?' | No spot pair on this exchange':''))
+        : '';
+      const rateHtml=href
+        ? '<a class="rate-link" href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer">'+formatPct(rate)+'</a>'
+        : formatPct(rate);
+      html+='<td class="rate '+rateClass(rate)+'" title="'+escapeHtml(title)+'">'+rateHtml+spotGap+'</td>';
     });
     html+='</tr>';
   });
@@ -272,9 +306,6 @@ function doSort(){
     let va;
     let vb;
     if(sortCol==='pair')va=a.pair,vb=b.pair;
-    else if(sortCol==='base')va=a.base_asset,vb=b.base_asset;
-    else if(sortCol==='quote')va=a.quote_asset,vb=b.quote_asset;
-    else if(sortCol==='count')va=a.exchange_count,vb=b.exchange_count;
     else{
       va=a.by_exchange[sortCol]?a.by_exchange[sortCol].funding_rate:null;
       vb=b.by_exchange[sortCol]?b.by_exchange[sortCol].funding_rate:null;
@@ -305,23 +336,29 @@ Promise.all(EXCHANGE_CANDIDATES.map(loadFundingPayload)).then(payloads=>{
   loadedExchanges=available
     .map(payload=>payload.exchange)
     .sort((a,b)=>exchangeLabel(a).localeCompare(exchangeLabel(b)));
+  return Promise.all(loadedExchanges.map(loadSpotPairs)).then(spotResults=>{
+    const spotPairsByExchange={};
+    loadedExchanges.forEach((exchange,index)=>{
+      spotPairsByExchange[exchange]=spotResults[index];
+    });
 
-  const {latestGenerated,quotes}=buildRows(available);
-  document.getElementById('updated').textContent='Last updated: '+latestGenerated;
+    const {latestGenerated,quotes}=buildRows(available,spotPairsByExchange);
+    document.getElementById('updated').textContent='Last updated: '+latestGenerated;
 
-  const quoteFilter=document.getElementById('quoteFilter');
-  quotes.forEach(quote=>{
-    const option=document.createElement('option');
-    option.value=quote;
-    option.textContent=quote;
-    quoteFilter.appendChild(option);
+    const quoteFilter=document.getElementById('quoteFilter');
+    quotes.forEach(quote=>{
+      const option=document.createElement('option');
+      option.value=quote;
+      option.textContent=quote;
+      quoteFilter.appendChild(option);
+    });
+
+    buildHeader();
+    filtered=allRows.slice();
+    document.getElementById('loading').style.display='none';
+    document.getElementById('tableWrap').style.display='block';
+    doSort();
   });
-
-  buildHeader();
-  filtered=allRows.slice();
-  document.getElementById('loading').style.display='none';
-  document.getElementById('tableWrap').style.display='block';
-  doSort();
 });
 </script>
 </body>
