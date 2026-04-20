@@ -2,7 +2,7 @@
   "schema_version": 1,
   "data_type": "withdrawal_fees",
   "exchange": "bybit",
-  "generated_at": "2026-04-11T09:08:29+00:00",
+  "generated_at": "2026-04-20T07:10:36+00:00",
   "source": {
     "coin_info_url": "https://api.bybit.com/v5/asset/coin/query-info"
   },
@@ -32,7 +32,7 @@
           "withdrawal_min_fee": "0.5",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": null
         }
@@ -77,9 +77,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "3.5",
+          "withdrawal_min_fee": "40",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "4",
+          "withdrawal_min_size": "80",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "J6pQQ3FAcJQeWPPGppWRb4nM8jU3wLyYbRrLh7feMfvd"
@@ -1001,9 +1001,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "120",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "5",
+          "withdrawal_min_size": "240",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "AURYydfxJib1ZkTir1Jn1J9ECYUtjb6rKQVmtYaixWPP"
@@ -1134,7 +1134,7 @@
           "withdrawal_min_fee": "0.005",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.005",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": null
         },
@@ -1143,7 +1143,7 @@
           "withdrawal_min_fee": "6",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "6",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x467719aD09025FcC6cF6F8311755809d45a5E5f3"
         }
@@ -1558,9 +1558,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "20",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "10",
+          "withdrawal_min_size": "40",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
@@ -1727,7 +1727,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "571.179534",
+          "withdrawal_min_fee": "420.509942",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "200",
           "is_withdraw_enabled": true,
@@ -1923,7 +1923,7 @@
       "chains": [
         {
           "chain_name": "BTC",
-          "withdrawal_min_fee": "0.000136",
+          "withdrawal_min_fee": "0.000132",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.00027",
           "is_withdraw_enabled": true,
@@ -2507,20 +2507,20 @@
       "chains": [
         {
           "chain_name": "BASE",
-          "withdrawal_min_fee": "30",
+          "withdrawal_min_fee": "3000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "60",
+          "withdrawal_min_size": "6000",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x4c87da04887a1F9F21F777E3A8dD55C3C9f84701"
         },
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "30",
+          "withdrawal_min_fee": "3000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "60",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "withdrawal_min_size": "6000",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "H1MHqq1dsExxeuYTd8JZzM51z33RvxjuM5sx2oB11WJ"
         }
       ]
@@ -2835,9 +2835,9 @@
         },
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "125",
+          "withdrawal_min_fee": "360",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "20",
+          "withdrawal_min_size": "720",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "CudisfkgWvMKnZ3TWf6iCuHm8pN2ikXhDcWytwz6f6RN"
@@ -2870,7 +2870,7 @@
           "withdrawal_min_fee": "0.6",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.6",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x14778860E937f509e651192a90589dE711Fb88a9"
         },
@@ -2879,7 +2879,7 @@
           "withdrawal_min_fee": "0.1",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.1",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x14778860E937f509e651192a90589dE711Fb88a9"
         }
@@ -3216,9 +3216,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "300",
+          "withdrawal_min_fee": "900",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "400",
+          "withdrawal_min_size": "1800",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV"
@@ -3385,9 +3385,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "30",
+          "withdrawal_min_fee": "130",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "30",
+          "withdrawal_min_size": "260",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "375aiUqZERLrB9sHtsArKr4nuWCgBrtqibUDBMGeLvZC"
@@ -3554,9 +3554,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "800",
+          "withdrawal_min_fee": "4000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "240",
+          "withdrawal_min_size": "8000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DuMbhu7mvQvqQHGcnikDgb4XegXJRyhUBfdU22uELiZA"
@@ -3809,9 +3809,9 @@
         },
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "15",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "8",
+          "withdrawal_min_size": "30",
           "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "BqPqrrQuoQXFGGEAEMnPmDgZ6RWQCajWnY3V6Yp4DZWP"
@@ -4264,7 +4264,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "14",
+          "withdrawal_min_fee": "13.750638",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1.5",
           "is_withdraw_enabled": true,
@@ -4289,9 +4289,9 @@
         },
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "300",
+          "withdrawal_min_fee": "900",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "100",
+          "withdrawal_min_size": "1800",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU"
@@ -4341,7 +4341,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "2",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x714f020c54cc9d104b6f4f6998c63ce2a31d1888"
         },
         {
@@ -4350,7 +4350,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": null
         }
       ]
@@ -4579,9 +4579,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "500",
+          "withdrawal_min_fee": "1500",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "100",
+          "withdrawal_min_size": "3000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "FRAGMEWj2z65qM62zqKhNtwNFskdfKs4ekDUDX3b4VD5"
@@ -4839,9 +4839,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "50",
+          "withdrawal_min_fee": "1000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "7",
+          "withdrawal_min_size": "3000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz"
@@ -5376,16 +5376,16 @@
           "withdrawal_min_fee": "2",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "4",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x1a5D7E4c3A7F940B240b7357a4bFED30D17f9497"
         },
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "60",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "4",
-          "is_withdraw_enabled": true,
+          "withdrawal_min_size": "120",
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "69RX85eQoEsnZvXGmLNjYcWgVkp9r2JjahVm99KbJETU"
         }
@@ -5537,9 +5537,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "40",
+          "withdrawal_min_fee": "150",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "80",
+          "withdrawal_min_size": "300",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "HUMA1821qVDKta3u2ovmfDQeW2fSQouSKE8fkF44wvGw"
@@ -5688,7 +5688,7 @@
           "withdrawal_min_fee": "9",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "9",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x2dfF88A56767223A5529eA5960Da7A3F5f766406"
         }
@@ -7005,9 +7005,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "400",
+          "withdrawal_min_fee": "1200",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "60",
+          "withdrawal_min_size": "2400",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "Fm9rHUTF5v3hwMLbStjZXqNBBoZyGriQaFM6sTFz3K8A"
@@ -7222,9 +7222,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "20",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "4",
+          "withdrawal_min_size": "40",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL"
@@ -7708,7 +7708,7 @@
           "withdrawal_min_fee": "0.01",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.01",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": null
         }
@@ -7890,9 +7890,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "600",
+          "withdrawal_min_fee": "30000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "120",
+          "withdrawal_min_size": "90000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "H53UGEyBrB9easo9ego8yYk7o4Zq1G5cCtkxD3E3hZav"
@@ -8159,7 +8159,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "5",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": null
         }
       ]
@@ -8349,9 +8349,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "500",
+          "withdrawal_min_fee": "2000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "25",
+          "withdrawal_min_size": "4000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "NYANpAp9Cr7YarBNrby7Xx4xU6No6JKTBuohNA3yscP"
@@ -8874,9 +8874,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "100",
+          "withdrawal_min_fee": "900",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "40",
+          "withdrawal_min_size": "1800",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
@@ -9011,9 +9011,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "195",
+          "withdrawal_min_fee": "10000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "150",
+          "withdrawal_min_size": "20000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "HHjoYwUp5aU6pnrvN4s2pwEErwXNZKhxKGYjRJMoBjLw"
@@ -9126,7 +9126,7 @@
           "withdrawal_min_fee": "20",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "40",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x4C1746A800D224393fE2470C70A35717eD4eA5F1"
         },
@@ -9294,9 +9294,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "100",
+          "withdrawal_min_fee": "500",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "10",
+          "withdrawal_min_size": "1000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "PRTLSwfLzpVGSAQiUfXEenJkq1cwTsEcsn1hPL9zwwg"
@@ -9326,7 +9326,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "15.455436",
+          "withdrawal_min_fee": "15.414329",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "3",
           "is_withdraw_enabled": true,
@@ -9495,9 +9495,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "250",
+          "withdrawal_min_fee": "1600",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "500",
+          "withdrawal_min_size": "3200",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn"
@@ -9552,9 +9552,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "1000",
+          "withdrawal_min_fee": "3000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "2000",
+          "withdrawal_min_size": "6000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "D6xWgRCSHoMEB5fqPwk3p6Stxirn5ytm2WwboSTTx4oE"
@@ -9908,7 +9908,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "16.200734",
+          "withdrawal_min_fee": "19.65023",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
@@ -10506,9 +10506,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "100",
+          "withdrawal_min_fee": "3000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "200",
+          "withdrawal_min_size": "6000",
           "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "SHARKSYJjqaNyxVfrpnBN9pjgkhwDhatnMyicWPnr1s"
@@ -10645,9 +10645,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "20",
+          "withdrawal_min_fee": "300",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "40",
+          "withdrawal_min_size": "600",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
@@ -10974,7 +10974,7 @@
           "withdrawal_min_fee": "30",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "60",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0xc20059e0317DE91738d13af027DfC4a50781b066"
         }
@@ -11188,9 +11188,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "22",
+          "withdrawal_min_fee": "300",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "20",
+          "withdrawal_min_size": "600",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "W2bAuFf2Xeb7ZNpJTywFSaCs5jYkaLYtBMR53SzVXUo"
@@ -11802,7 +11802,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "8.08593994",
+          "withdrawal_min_fee": "8.47783526",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
           "is_withdraw_enabled": true,
@@ -11821,7 +11821,7 @@
           "withdrawal_min_fee": "20",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "20",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x4507cEf57C46789eF8d1a19EA45f4216bae2B528"
         },
@@ -12094,9 +12094,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "65",
+          "withdrawal_min_fee": "200",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "40",
+          "withdrawal_min_size": "600",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "TUNAfXDZEdQizTMTh3uEvNvYqJmqFHZbEJt8joP4cyx"
@@ -12534,10 +12534,10 @@
       "chains": [
         {
           "chain_name": "ETH",
-          "withdrawal_min_fee": null,
-          "withdraw_fee_rate": null,
-          "withdrawal_min_size": null,
-          "is_withdraw_enabled": false,
+          "withdrawal_min_fee": "3",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "6",
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x4f8e5de400de08b164e7421b3ee387f461becd1a"
         },
@@ -12546,7 +12546,7 @@
           "withdrawal_min_fee": "2.6",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "2.6",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz"
         }
@@ -13028,7 +13028,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "30",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x46F84DC6564Cdd93922F7BFb88B03D35308D87C9"
         },
         {
@@ -13037,7 +13037,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.1",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": null
         }
       ]
@@ -13122,9 +13122,9 @@
         },
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "0.7",
+          "withdrawal_min_fee": "4",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "1.4",
+          "withdrawal_min_size": "8",
           "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "3iQL8BFS2vE7mww4ehAqQHAsbmRNCrPxizWAT2Zfyr9y"
@@ -13391,10 +13391,10 @@
         },
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "6",
+          "withdrawal_min_fee": "45",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "6",
-          "is_withdraw_enabled": true,
+          "withdrawal_min_size": "90",
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "WCTk5xWdn5SYg56twGj32sUF3W4WFQ48ogezLBuYTBY"
         }
@@ -13496,9 +13496,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "80",
+          "withdrawal_min_fee": "300",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "24",
+          "withdrawal_min_size": "600",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
@@ -13562,9 +13562,9 @@
         },
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "30",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "10",
+          "withdrawal_min_size": "60",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "WLFinEv6ypjkczcS83FZqFpgFZYwQXutRbxGe7oC16g"
@@ -14105,9 +14105,9 @@
         },
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "8",
+          "withdrawal_min_fee": "90",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "16",
+          "withdrawal_min_size": "180",
           "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh"
@@ -14254,7 +14254,7 @@
           "withdrawal_min_fee": "0.5",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": null
         }
@@ -14443,7 +14443,7 @@
           "withdrawal_min_fee": "6",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "12",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xd89B7dD376E671c124352267516BEF1C2cc231a3"
         },
@@ -14452,7 +14452,7 @@
           "withdrawal_min_fee": "18",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "36",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0xe1Be424F442D0687129128C6c38aAce44F8c8Dbc"
         }
