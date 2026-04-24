@@ -2,14 +2,14 @@
   "schema_version": 1,
   "data_type": "withdrawal_fees",
   "exchange": "bybit",
-  "generated_at": "2026-04-24T07:14:08+00:00",
+  "generated_at": "2026-04-24T17:20:41+00:00",
   "source": {
     "coin_info_url": "https://api.bybit.com/v5/asset/coin/query-info"
   },
   "summary": {
     "total_coin_rows": 782,
     "currencies_with_chains": 782,
-    "total_chains": 1019,
+    "total_chains": 1018,
     "skipped_rows": 0
   },
   "currencies": [
@@ -355,7 +355,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x1d4343d35f0E0e14C14115876D01dEAa4792550b"
         }
       ]
@@ -1620,7 +1620,7 @@
           "withdrawal_min_size": null,
           "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
-          "contract_address": null
+          "contract_address": "BWsnyEa1XtsNRdgPaDoA1WVUonF7BBGZTd2zc72NQsWT"
         }
       ]
     },
@@ -1752,7 +1752,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "436.687832",
+          "withdrawal_min_fee": "440.499992",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "200",
           "is_withdraw_enabled": true,
@@ -1948,7 +1948,7 @@
       "chains": [
         {
           "chain_name": "BTC",
-          "withdrawal_min_fee": "0.000151",
+          "withdrawal_min_fee": "0.00012",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.00027",
           "is_withdraw_enabled": true,
@@ -2372,7 +2372,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x6401b29F40a02578Ae44241560625232A01B3F79"
         }
       ]
@@ -4305,7 +4305,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "13.345864",
+          "withdrawal_min_fee": "13.417522",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1.5",
           "is_withdraw_enabled": true,
@@ -5835,7 +5835,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xc727c9C0f2647CB90B0FCA64d8ddB14878716BeD"
         }
       ]
@@ -6027,7 +6027,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x454038003a93cf44766aF352F74bad6B745616D0"
         }
       ]
@@ -9383,7 +9383,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "16.159179",
+          "withdrawal_min_fee": "16.372884",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "3",
           "is_withdraw_enabled": true,
@@ -9444,7 +9444,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xc2661815C69c2B3924D3dd0c2C1358A1E38A3105"
         }
       ]
@@ -9965,7 +9965,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "18.455887",
+          "withdrawal_min_fee": "19.076017",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
@@ -11859,7 +11859,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "8.42714741",
+          "withdrawal_min_fee": "8.51299867",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
           "is_withdraw_enabled": true,
@@ -14469,15 +14469,6 @@
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0xfC385A1dF85660a7e041423DB512f779070FCede"
-        },
-        {
-          "chain_name": "ZKLINKNOVA",
-          "withdrawal_min_fee": "0.5",
-          "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "0.5",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
-          "contract_address": "0xC967dabf591B1f4B86CFc74996EAD065867aF19E"
         }
       ]
     },
