@@ -69,6 +69,7 @@ td:nth-child(6){text-align:right}
     <div class="ex-btn" id="exBtn">All exchanges</div>
     <div class="ex-drop" id="exDrop"></div>
   </div>
+  <label>Primary exchange <select id="primaryExchangeFilter"><option value="">Any</option></select></label>
   <select id="quoteFilter"><option value="">All quotes</option></select>
 </div>
 <div class="stats" id="stats"></div>
@@ -125,6 +126,26 @@ function fmtVol(v){
 
 function exchangeLabel(exchange){
   return EXCHANGE_LABELS[exchange]||exchange;
+}
+
+function venueVolumeValue(venue){
+  const value=venue.quote_volume!=null?venue.quote_volume:venue.usdt_volume;
+  const number=Number(value);
+  return Number.isFinite(number)?number:0;
+}
+
+function findPrimaryExchange(row){
+  if(!row.venues||row.venues.length===0)return '';
+  let best=row.venues[0];
+  let bestVolume=venueVolumeValue(best);
+  for(let i=1;i<row.venues.length;i++){
+    const volume=venueVolumeValue(row.venues[i]);
+    if(volume>bestVolume){
+      best=row.venues[i];
+      bestVolume=volume;
+    }
+  }
+  return best.exchange||'';
 }
 
 function escapeHtml(value){
@@ -250,6 +271,7 @@ function updateExBtn(){
 
 function applyFilters(){
   const q=document.getElementById('search').value.toUpperCase();
+  const primaryEx=document.getElementById('primaryExchangeFilter').value;
   const qt=document.getElementById('quoteFilter').value;
   const filterEx=selectedExchanges.size>0&&selectedExchanges.size<allExchanges.length;
 
@@ -259,6 +281,7 @@ function applyFilters(){
       if(r._exchanges.size!==selectedExchanges.size)return false;
       for(const e of selectedExchanges){if(!r._exchanges.has(e))return false;}
     }
+    if(primaryEx&&r._primaryExchange!==primaryEx)return false;
     if(qt&&r.quote_asset!==qt)return false;
     return true;
   });
@@ -293,7 +316,7 @@ document.querySelectorAll('th').forEach(th=>{
   th.insertAdjacentHTML('beforeend','<span class="arrow"></span>');
 });
 
-['search','quoteFilter'].forEach(id=>
+['search','primaryExchangeFilter','quoteFilter'].forEach(id=>
   document.getElementById(id).addEventListener(id==='search'?'input':'change',applyFilters));
 
 // Exchange multiselect dropdown
@@ -331,6 +354,16 @@ function buildExDropdown(exchanges){
   selectedExchanges=new Set(allExchanges);
 }
 
+function buildPrimaryExchangeFilter(exchanges){
+  const sel=document.getElementById('primaryExchangeFilter');
+  exchanges.forEach(e=>{
+    const option=document.createElement('option');
+    option.value=e;
+    option.textContent=exchangeLabel(e);
+    sel.appendChild(option);
+  });
+}
+
 function combinedJsonUrl(){
   const url=new URL('output/spot_universe_combined.json',window.location.href);
   url.searchParams.set('ts',String(Date.now()));
@@ -346,11 +379,14 @@ fetch(combinedJsonUrl(),{cache:'no-store'}).then(r=>r.json()).then(data=>{
   allRows.forEach(r=>{
     r._distHTML=buildDistHTML(r);
     r._exchanges=new Set(r.venues.map(v=>v.exchange));
+    r._primaryExchange=findPrimaryExchange(r);
     r._exchanges.forEach(e=>exchanges.add(e));
     quotes.add(r.quote_asset);
   });
 
-  buildExDropdown([...exchanges].sort((a,b)=>exchangeLabel(a).localeCompare(exchangeLabel(b))));
+  const sortedExchanges=[...exchanges].sort((a,b)=>exchangeLabel(a).localeCompare(exchangeLabel(b)));
+  buildExDropdown(sortedExchanges);
+  buildPrimaryExchangeFilter(sortedExchanges);
   const qtSel=document.getElementById('quoteFilter');
   [...quotes].sort().forEach(q=>{const o=document.createElement('option');o.value=q;o.textContent=q;qtSel.appendChild(o);});
 
