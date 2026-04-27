@@ -2,7 +2,7 @@
   "schema_version": 1,
   "data_type": "withdrawal_fees",
   "exchange": "kucoin",
-  "generated_at": "2026-04-26T06:38:19+00:00",
+  "generated_at": "2026-04-27T06:01:38+00:00",
   "source": {
     "currencies_url": "https://api.kucoin.com/api/v3/currencies"
   },
@@ -14336,9 +14336,9 @@
       "chains": [
         {
           "chain_name": "ADA",
-          "withdrawal_min_fee": "17",
+          "withdrawal_min_fee": "35",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "34",
+          "withdrawal_min_size": "70",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "5d16cc1a177b5d9ba9cfa9793b07e60f1fb70fea1f8aef064415d114.494147"
@@ -19799,9 +19799,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "50",
+          "withdrawal_min_fee": "60",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "100",
+          "withdrawal_min_size": "120",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "8ZHE4ow1a2jjxuoMfyExuNamQNALv5ekZhsBn5nMDf5e"
@@ -29835,8 +29835,8 @@
           "withdrawal_min_fee": "0.0027",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.0054",
-          "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
           "contract_address": null
         }
       ]
@@ -32292,7 +32292,7 @@
           "withdrawal_min_fee": "0.5",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b"
         },
