@@ -2,14 +2,14 @@
   "schema_version": 1,
   "data_type": "withdrawal_fees",
   "exchange": "kucoin",
-  "generated_at": "2026-04-29T06:09:01+00:00",
+  "generated_at": "2026-04-30T08:00:25+00:00",
   "source": {
     "currencies_url": "https://api.kucoin.com/api/v3/currencies"
   },
   "summary": {
-    "total_currency_rows": 2185,
-    "currencies_with_chains": 2089,
-    "total_chains": 2402,
+    "total_currency_rows": 2189,
+    "currencies_with_chains": 2093,
+    "total_chains": 2407,
     "skipped_rows": 96
   },
   "currencies": [
@@ -871,10 +871,19 @@
       "full_name": "Gensyn",
       "chains": [
         {
-          "chain_name": "Gensyn",
+          "chain_name": "ERC20",
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": true,
+          "contract_address": "0x4d7078ddd6ccfed2f85db5b7d3ff16828d378d48"
+        },
+        {
+          "chain_name": "Gensyn",
+          "withdrawal_min_fee": "8",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "16",
           "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x4e742319f6b0fec4afa504fc8ed3ceab0fb751a2"
@@ -2292,7 +2301,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1000",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "token.sendertge.near"
         }
       ]
@@ -2326,6 +2335,22 @@
           "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "ASRRjA1R4RHVk5H9QKKm1jaQqMkxvv6nh5EypPrvwmxQ"
+        }
+      ]
+    },
+    {
+      "currency": "ASSET",
+      "name": "ASSET",
+      "full_name": "REAL",
+      "chains": [
+        {
+          "chain_name": "ERC20",
+          "withdrawal_min_fee": "0",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": true,
+          "contract_address": "0x99e980265bf36516c442be982df1772a6ccb3233"
         }
       ]
     },
@@ -3017,6 +3042,22 @@
     {
       "currency": "BABYSHARK",
       "name": "BABYSHARK",
+      "full_name": "BabyShark",
+      "chains": [
+        {
+          "chain_name": "BEP20",
+          "withdrawal_min_fee": "0.01",
+          "withdraw_fee_rate": null,
+          "withdrawal_min_size": "0",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
+          "contract_address": "0x777bf78ad4546b61607a17bf4a1977dbbea98c28"
+        }
+      ]
+    },
+    {
+      "currency": "BABYSHARKO",
+      "name": "BABYSHARKO",
       "full_name": "Baby Shark Meme",
       "chains": [
         {
@@ -3876,7 +3917,7 @@
           "withdrawal_min_fee": "4",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "8",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": null
         }
@@ -4594,9 +4635,9 @@
       "chains": [
         {
           "chain_name": "ERC20",
-          "withdrawal_min_fee": "1000",
+          "withdrawal_min_fee": "2000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "2000",
+          "withdrawal_min_size": "4000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x13239c268beddd88ad0cb02050d3ff6a9d00de6d"
@@ -6034,9 +6075,9 @@
       "chains": [
         {
           "chain_name": "ARBITRUM",
-          "withdrawal_min_fee": "3",
+          "withdrawal_min_fee": "6",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "6",
+          "withdrawal_min_size": "12",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e"
@@ -6833,9 +6874,9 @@
       "chains": [
         {
           "chain_name": "BEP20",
-          "withdrawal_min_fee": "200",
+          "withdrawal_min_fee": "400",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "400",
+          "withdrawal_min_size": "800",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xb150e91cb40909f47d45115ee9e90667d807464b"
@@ -6894,7 +6935,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "2000",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x04756126f044634c9a0f0e985e60c88a51acc206"
         }
       ]
@@ -9712,7 +9753,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "800",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x3dc8e2d80b6215a1bccae4d38715c3520581e77c"
         },
         {
@@ -9721,7 +9762,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "800",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x3dc8e2d80b6215a1bccae4d38715c3520581e77c"
         }
       ]
@@ -9914,8 +9955,8 @@
           "withdrawal_min_fee": "405",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "810",
-          "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
           "contract_address": "0x908ddb096bfb3acb19e2280aad858186ea4935c4"
         }
       ]
@@ -10086,7 +10127,7 @@
           "chain_name": "ARBITRUM",
           "withdrawal_min_fee": "0.0002",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "0.00011544",
+          "withdrawal_min_size": "0.0004",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": null
@@ -11767,7 +11808,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1000",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "CKaKtYvz6dKPyMvYq9Rh3UBrnNqYZAyd7iF4hJtjUvks"
         }
       ]
@@ -11833,6 +11874,22 @@
           "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "0x9008064e6cf73e27a3aba4b10e69f855a4f8efcc"
+        }
+      ]
+    },
+    {
+      "currency": "GENIUS",
+      "name": "GENIUS",
+      "full_name": "Genius Terminal",
+      "chains": [
+        {
+          "chain_name": "BEP20",
+          "withdrawal_min_fee": "0",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": true,
+          "contract_address": "0x1f12b85aac097e43aa1555b2881e98a51090e9a6"
         }
       ]
     },
@@ -12286,9 +12343,9 @@
       "chains": [
         {
           "chain_name": "Polygon POS",
-          "withdrawal_min_fee": "0.35",
+          "withdrawal_min_fee": "0.5",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "0.7",
+          "withdrawal_min_size": "1",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xe5417af564e4bfda1c483642db72007871397896"
@@ -13450,7 +13507,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "100",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x4b9278b94a1112cad404048903b8d343a810b07e"
         }
       ]
@@ -15031,8 +15088,8 @@
           "withdrawal_min_fee": "300",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "600",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
           "contract_address": null
         }
       ]
@@ -15092,9 +15149,9 @@
       "chains": [
         {
           "chain_name": "Bera",
-          "withdrawal_min_fee": "10",
+          "withdrawal_min_fee": "20",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "20",
+          "withdrawal_min_size": "40",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xa1b644aec990ad6023811ced36e6a2d6d128c7c9"
@@ -15331,7 +15388,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1200",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x9ad37205d608b8b219e6a2573f922094cec5c200"
         }
       ]
@@ -18779,6 +18836,22 @@
       ]
     },
     {
+      "currency": "MEGA",
+      "name": "MEGA",
+      "full_name": "MegaETH",
+      "chains": [
+        {
+          "chain_name": "megaETH",
+          "withdrawal_min_fee": "0",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": true,
+          "contract_address": "0x28b7e77f82b25b95953825f1e3ea0e36c1c29861"
+        }
+      ]
+    },
+    {
       "currency": "MELANIA",
       "name": "MELANIA",
       "full_name": "Melania Meme",
@@ -18916,8 +18989,8 @@
       ]
     },
     {
-      "currency": "META",
-      "name": "META",
+      "currency": "METAOLD",
+      "name": "METAOLD",
       "full_name": "Metadium",
       "chains": [
         {
@@ -21274,7 +21347,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "320",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": null
         }
       ]
@@ -23121,7 +23194,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "600000000",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x0305f515fa978cf87226cf8a9776d25bcfb2cc0b"
         }
       ]
@@ -23429,7 +23502,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "600",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xd85c31854c2b0fb40aaa9e2fc4da23c21f829d46"
         }
       ]
@@ -23653,7 +23726,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "800",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "PLAYs3GSSadH2q2JLS7djp7yzeT75NK78XgrE5YLrfq"
         }
       ]
@@ -24474,7 +24547,7 @@
           "withdrawal_min_fee": "3",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "6",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": null
         }
@@ -25062,7 +25135,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "31000",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x12bb890508c125661e03b09ec06e404bc9289040"
         }
       ]
@@ -26820,9 +26893,9 @@
       "chains": [
         {
           "chain_name": "ERC20",
-          "withdrawal_min_fee": "8.5",
+          "withdrawal_min_fee": "17",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "17",
+          "withdrawal_min_size": "34",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0x6b66ccd1340c479b07b390d326eadcbb84e726ba"
@@ -27272,9 +27345,9 @@
       "chains": [
         {
           "chain_name": "ERC20",
-          "withdrawal_min_fee": "6500",
+          "withdrawal_min_fee": "7500",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "13000",
+          "withdrawal_min_size": "15000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x549020a9cb845220d66d3e9c6d9f9ef61c981102"
@@ -27566,7 +27639,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "600",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "9999FVbjHioTcoJpoBiSjpxHW6xEn3witVuXKqBh2RFQ"
         }
       ]
@@ -28247,11 +28320,11 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "0",
+          "withdrawal_min_fee": "7",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "0",
+          "withdrawal_min_size": "14",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "2MU93nLHhDsHzgEYBKbVbwLDd2pi71ubGp8SkEv9dZwQ"
         }
       ]
@@ -29489,7 +29562,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "2400",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xb4b9dc1c77bdbb135ea907fd5a08094d98883a35"
         },
         {
@@ -29497,8 +29570,8 @@
           "withdrawal_min_fee": "1400",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "2800",
-          "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
           "contract_address": "token.sweat"
         }
       ]
@@ -29603,7 +29676,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "400",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": null
         }
       ]
@@ -30055,7 +30128,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1000",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xea9bb54fc76bfd5dd2ff2f6da641e78c230bb683"
         }
       ]
@@ -30096,7 +30169,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1200",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x00309d634d11541b857f927be91ad2f0bd78894c"
         }
       ]
@@ -30988,7 +31061,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "340",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x4c19596f5aaff459fa38b0f7ed92f11ae6543784"
         }
       ]
@@ -33172,7 +33245,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "80",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xd0258a3fd00f38aa8090dfee343f10a9d4d30d3f"
         }
       ]
@@ -33967,9 +34040,9 @@
         },
         {
           "chain_name": "BEP20",
-          "withdrawal_min_fee": "3",
+          "withdrawal_min_fee": "6",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "6",
+          "withdrawal_min_size": "12",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x47474747477b199288bf72a1d702f7fe0fb1deea"
@@ -35157,8 +35230,8 @@
           "withdrawal_min_fee": "400",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "800",
-          "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
           "contract_address": "5gs8nf4wojB5EXgDUWNLwXpknzgV2YWDhveAeBZpVLbp"
         }
       ]
@@ -35562,7 +35635,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "400",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xc52c326331e9ce41f04484d3b5e5648158028804"
         }
       ]
