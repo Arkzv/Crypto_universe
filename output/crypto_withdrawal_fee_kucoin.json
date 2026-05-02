@@ -2,7 +2,7 @@
   "schema_version": 1,
   "data_type": "withdrawal_fees",
   "exchange": "kucoin",
-  "generated_at": "2026-05-01T06:15:30+00:00",
+  "generated_at": "2026-05-02T06:18:35+00:00",
   "source": {
     "currencies_url": "https://api.kucoin.com/api/v3/currencies"
   },
@@ -377,7 +377,7 @@
           "withdrawal_min_fee": "40",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "80",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x3e76dd57e649a263a532cc9bcc58b32a065fb2a4"
         }
@@ -2348,7 +2348,7 @@
           "withdrawal_min_fee": "8",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "16",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x99e980265bf36516c442be982df1772a6ccb3233"
         }
@@ -5480,7 +5480,7 @@
           "withdrawal_min_fee": "120",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "240",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": null
         }
@@ -6931,9 +6931,9 @@
       "chains": [
         {
           "chain_name": "BEP20",
-          "withdrawal_min_fee": "1000",
+          "withdrawal_min_fee": "2000",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "2000",
+          "withdrawal_min_size": "4000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0x04756126f044634c9a0f0e985e60c88a51acc206"
@@ -11887,7 +11887,7 @@
           "withdrawal_min_fee": "0.8",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1.6",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x1f12b85aac097e43aa1555b2881e98a51090e9a6"
         }
@@ -13903,9 +13903,9 @@
       "chains": [
         {
           "chain_name": "HMND",
-          "withdrawal_min_fee": "80",
+          "withdrawal_min_fee": "100",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "160",
+          "withdrawal_min_size": "200",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": null
@@ -18845,7 +18845,7 @@
           "withdrawal_min_fee": "2",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "4",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x28b7e77f82b25b95953825f1e3ea0e36c1c29861"
         }
