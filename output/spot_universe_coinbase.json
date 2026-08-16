@@ -2,17 +2,17 @@
   "schema_version": 1,
   "universe_type": "spot",
   "exchange": "coinbase",
-  "generated_at": "2026-06-18T12:44:17+00:00",
+  "generated_at": "2026-08-16T09:53:49+00:00",
   "source": {
     "exchange_info_url": "https://api.exchange.coinbase.com/products",
     "ticker_24hr_url": "https://api.exchange.coinbase.com/products/{product_id}/stats"
   },
   "summary": {
-    "exchange_info_symbol_rows": 826,
-    "ticker_24hr_rows": 256,
-    "tradable_spot_pair_count": 523,
-    "pairs_with_24h_volume_count": 256,
-    "skipped_symbol_rows": 303,
+    "exchange_info_symbol_rows": 832,
+    "ticker_24hr_rows": 312,
+    "tradable_spot_pair_count": 517,
+    "pairs_with_24h_volume_count": 312,
+    "skipped_symbol_rows": 315,
     "duplicate_pair_rows": 0
   },
   "pairs": [
@@ -58,9 +58,9 @@
       },
       "volume_24h": {
         "symbol": "1INCH-GBP",
-        "last_price": "0.056",
-        "base_volume": "18273.78",
-        "quote_volume": "1023.33168",
+        "last_price": "0.061",
+        "base_volume": "9030.9",
+        "quote_volume": "550.8849",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -134,7 +134,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "AAVE-EUR",
+        "last_price": "74.23",
+        "base_volume": "163.225",
+        "quote_volume": "12116.19175",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -148,7 +156,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "AAVE-GBP",
+        "last_price": "63.47",
+        "base_volume": "89.033",
+        "quote_volume": "5650.92451",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -164,9 +180,9 @@
       },
       "volume_24h": {
         "symbol": "AAVE-USD",
-        "last_price": "73.93",
-        "base_volume": "18466.665",
-        "quote_volume": "1365240.5434500002",
+        "last_price": "85.84",
+        "base_volume": "10049.828",
+        "quote_volume": "862677.23552",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -184,15 +200,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ABT-USD",
-        "last_price": "0.205",
-        "base_volume": "225712.4",
-        "quote_volume": "46271.041999999994",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -208,9 +216,9 @@
       },
       "volume_24h": {
         "symbol": "ACH-USD",
-        "last_price": "0.005185",
-        "base_volume": "35362969",
-        "quote_volume": "183356.99426500002",
+        "last_price": "0.004217",
+        "base_volume": "25954404.3",
+        "quote_volume": "109449.72293310001",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -228,25 +236,11 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "ACX/USD",
-      "base_asset": "ACX",
-      "quote_asset": "USD",
-      "symbol": "ACX-USD",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
       "volume_24h": {
-        "symbol": "ACX-USD",
-        "last_price": "0.0409",
-        "base_volume": "151161.3",
-        "quote_volume": "6182.49717",
+        "symbol": "ACS-USD",
+        "last_price": "0.0001279",
+        "base_volume": "44806883",
+        "quote_volume": "5730.8003357",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -264,7 +258,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ADA-BTC",
+        "last_price": "0.00000281",
+        "base_volume": "10172.42",
+        "quote_volume": "0.0285845002",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -292,15 +294,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ADA-EUR",
-        "last_price": "0.1445",
-        "base_volume": "4230067.94",
-        "quote_volume": "611244.81733",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -330,9 +324,9 @@
       },
       "volume_24h": {
         "symbol": "ADA-USD",
-        "last_price": "0.1656",
-        "base_volume": "91739845.91645745",
-        "quote_volume": "15192118.483765353",
+        "last_price": "0.17692",
+        "base_volume": "22718235.03177077",
+        "quote_volume": "4019310.1418208843",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -366,9 +360,9 @@
       },
       "volume_24h": {
         "symbol": "AERGO-USD",
-        "last_price": "0.0318",
-        "base_volume": "16243793.6",
-        "quote_volume": "516552.63648000004",
+        "last_price": "0.0068",
+        "base_volume": "8731205.5",
+        "quote_volume": "59372.1974",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -386,7 +380,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "AERO-USD",
+        "last_price": "0.40131",
+        "base_volume": "1543924.2",
+        "quote_volume": "619592.220702",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -402,9 +404,9 @@
       },
       "volume_24h": {
         "symbol": "AGLD-USD",
-        "last_price": "0.1632",
-        "base_volume": "152321.14",
-        "quote_volume": "24858.810048000003",
+        "last_price": "0.1566",
+        "base_volume": "51814.84",
+        "quote_volume": "8114.203943999999",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -436,7 +438,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "AIOZ-USD",
+        "last_price": "0.0485",
+        "base_volume": "2439787",
+        "quote_volume": "118329.6695",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -450,15 +460,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "AKT-USD",
-        "last_price": "0.734",
-        "base_volume": "3810493.22",
-        "quote_volume": "2796902.02348",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -474,9 +476,9 @@
       },
       "volume_24h": {
         "symbol": "ALCX-USD",
-        "last_price": "3.73",
-        "base_volume": "5107.6921",
-        "quote_volume": "19051.691533",
+        "last_price": "1.98",
+        "base_volume": "6713.9533",
+        "quote_volume": "13293.627534",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -494,7 +496,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ALEO-USD",
+        "last_price": "0.0154",
+        "base_volume": "347900.6",
+        "quote_volume": "5357.66924",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -508,7 +518,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ALEPH-USD",
+        "last_price": "0.00932",
+        "base_volume": "456080.5",
+        "quote_volume": "4250.67026",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -522,15 +540,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ALGO-BTC",
-        "last_price": "0.0000016",
-        "base_volume": "131200",
-        "quote_volume": "0.20992",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -544,15 +554,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ALGO-EUR",
-        "last_price": "0.0897",
-        "base_volume": "8608143",
-        "quote_volume": "772150.4271",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -566,15 +568,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ALGO-GBP",
-        "last_price": "0.0776",
-        "base_volume": "257531",
-        "quote_volume": "19984.405600000002",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -590,9 +584,9 @@
       },
       "volume_24h": {
         "symbol": "ALGO-USD",
-        "last_price": "0.1031",
-        "base_volume": "19047587.8",
-        "quote_volume": "1963806.30218",
+        "last_price": "0.07914",
+        "base_volume": "4410392.8",
+        "quote_volume": "349038.486192",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -612,9 +606,9 @@
       },
       "volume_24h": {
         "symbol": "ALICE-USD",
-        "last_price": "0.105",
-        "base_volume": "364486.148",
-        "quote_volume": "38271.04554",
+        "last_price": "0.134",
+        "base_volume": "1932911.168",
+        "quote_volume": "259010.09651200002",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -646,7 +640,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ALT-USD",
+        "last_price": "0.00608",
+        "base_volume": "584586",
+        "quote_volume": "3554.28288",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -662,9 +664,9 @@
       },
       "volume_24h": {
         "symbol": "AMP-USD",
-        "last_price": "0.00054",
-        "base_volume": "107576848",
-        "quote_volume": "58091.49792",
+        "last_price": "0.0003774",
+        "base_volume": "247533308",
+        "quote_volume": "93419.0704392",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -682,15 +684,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ANKR-EUR",
-        "last_price": "0.00334",
-        "base_volume": "363777",
-        "quote_volume": "1215.01518",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -704,15 +698,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ANKR-USD",
-        "last_price": "0.00382",
-        "base_volume": "12814383",
-        "quote_volume": "48950.94306",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -728,9 +714,9 @@
       },
       "volume_24h": {
         "symbol": "APE-EUR",
-        "last_price": "0.117",
-        "base_volume": "192557.34",
-        "quote_volume": "22529.20878",
+        "last_price": "0.106",
+        "base_volume": "8659.72",
+        "quote_volume": "917.9303199999999",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -748,15 +734,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "APE-USD",
-        "last_price": "0.134",
-        "base_volume": "3184883.5",
-        "quote_volume": "426774.389",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -784,15 +762,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "API3-USD",
-        "last_price": "0.265",
-        "base_volume": "514553.3",
-        "quote_volume": "136356.6245",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -808,9 +778,9 @@
       },
       "volume_24h": {
         "symbol": "APR-USD",
-        "last_price": "0.2055",
-        "base_volume": "1268550.1",
-        "quote_volume": "260687.04555",
+        "last_price": "0.1858",
+        "base_volume": "28080925.8",
+        "quote_volume": "5217436.01364",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -830,9 +800,9 @@
       },
       "volume_24h": {
         "symbol": "APT-USD",
-        "last_price": "0.6538",
-        "base_volume": "980993.889",
-        "quote_volume": "641373.8046282",
+        "last_price": "0.5317",
+        "base_volume": "629170.948",
+        "quote_volume": "334530.19305159996",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -852,9 +822,9 @@
       },
       "volume_24h": {
         "symbol": "ARB-USD",
-        "last_price": "0.085",
-        "base_volume": "9885528.05",
-        "quote_volume": "840269.8842500001",
+        "last_price": "0.07392",
+        "base_volume": "6938180.17",
+        "quote_volume": "512870.2781664",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -874,9 +844,9 @@
       },
       "volume_24h": {
         "symbol": "ARKM-USD",
-        "last_price": "0.131",
-        "base_volume": "225422.13",
-        "quote_volume": "29530.299030000002",
+        "last_price": "0.091",
+        "base_volume": "297035.04",
+        "quote_volume": "27030.188639999997",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -894,7 +864,37 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ARPA-USD",
+        "last_price": "0.0086",
+        "base_volume": "1315405.2",
+        "quote_volume": "11312.48472",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "pair": "ARX/USD",
+      "base_asset": "ARX",
+      "quote_asset": "USD",
+      "symbol": "ARX-USD",
+      "flags": {
+        "status": "ONLINE",
+        "post_only": false,
+        "limit_only": false,
+        "auction_mode": false
+      },
+      "volume_24h": {
+        "symbol": "ARX-USD",
+        "last_price": "0.1064",
+        "base_volume": "1059839.9",
+        "quote_volume": "112766.96535999999",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -908,7 +908,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ASM-USD",
+        "last_price": "0.00433",
+        "base_volume": "2611174",
+        "quote_volume": "11306.383419999998",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -922,7 +930,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "AST-USD",
+        "last_price": "0.004005",
+        "base_volume": "927036.1",
+        "quote_volume": "3712.7795804999996",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -936,7 +952,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ASTER-USD",
+        "last_price": "0.602",
+        "base_volume": "79353.74",
+        "quote_volume": "47770.95148",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -952,9 +976,9 @@
       },
       "volume_24h": {
         "symbol": "ATH-USD",
-        "last_price": "0.00471",
-        "base_volume": "37219673",
-        "quote_volume": "175304.65983",
+        "last_price": "0.00377",
+        "base_volume": "16235602",
+        "quote_volume": "61208.21954",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -986,15 +1010,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ATOM-EUR",
-        "last_price": "1.598",
-        "base_volume": "20398.696",
-        "quote_volume": "32597.116208000003",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -1024,9 +1040,9 @@
       },
       "volume_24h": {
         "symbol": "ATOM-USD",
-        "last_price": "1.83",
-        "base_volume": "632004.37",
-        "quote_volume": "1156567.9971",
+        "last_price": "1.494",
+        "base_volume": "255348.12",
+        "quote_volume": "381490.09128",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1060,9 +1076,9 @@
       },
       "volume_24h": {
         "symbol": "AUCTION-USD",
-        "last_price": "3.77",
-        "base_volume": "6166.879",
-        "quote_volume": "23249.13383",
+        "last_price": "2.82",
+        "base_volume": "453.722",
+        "quote_volume": "1279.4960399999998",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1082,9 +1098,9 @@
       },
       "volume_24h": {
         "symbol": "AUDD-USDC",
-        "last_price": "0.7006",
-        "base_volume": "6301",
-        "quote_volume": "4414.4806",
+        "last_price": "0.7063",
+        "base_volume": "527",
+        "quote_volume": "372.2201",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1102,15 +1118,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "AUDIO-USD",
-        "last_price": "0.015",
-        "base_volume": "1684751.7",
-        "quote_volume": "25271.2755",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -1126,9 +1134,9 @@
       },
       "volume_24h": {
         "symbol": "AURORA-USD",
-        "last_price": "0.0258",
-        "base_volume": "438108.45",
-        "quote_volume": "11303.19801",
+        "last_price": "0.0148",
+        "base_volume": "1531021.59",
+        "quote_volume": "22659.119532",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1146,7 +1154,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "AVAX-BTC",
+        "last_price": "0.00010045",
+        "base_volume": "6224.86",
+        "quote_volume": "0.625287187",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1160,15 +1176,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "AVAX-EUR",
-        "last_price": "5.79",
-        "base_volume": "24497.977",
-        "quote_volume": "141843.28683",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -1182,7 +1190,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "AVAX-USD",
+        "last_price": "6.35",
+        "base_volume": "764138.97635912",
+        "quote_volume": "4852282.499880412",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1196,7 +1212,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "AVAX-USDT",
+        "last_price": "6.35",
+        "base_volume": "5151.99",
+        "quote_volume": "32715.136499999997",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1210,7 +1234,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "AVNT-USD",
+        "last_price": "0.1015",
+        "base_volume": "7867717.8",
+        "quote_volume": "798573.3567",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1224,7 +1256,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "AVT-USD",
+        "last_price": "0.35",
+        "base_volume": "70283.47",
+        "quote_volume": "24599.2145",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1240,9 +1280,9 @@
       },
       "volume_24h": {
         "symbol": "AWE-USD",
-        "last_price": "0.0551",
-        "base_volume": "135247.2",
-        "quote_volume": "7452.120720000001",
+        "last_price": "0.0648",
+        "base_volume": "114700.8",
+        "quote_volume": "7432.61184",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1276,9 +1316,9 @@
       },
       "volume_24h": {
         "symbol": "AXS-USD",
-        "last_price": "0.969",
-        "base_volume": "320188.293",
-        "quote_volume": "310262.455917",
+        "last_price": "0.878",
+        "base_volume": "29854.945",
+        "quote_volume": "26212.64171",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1298,9 +1338,9 @@
       },
       "volume_24h": {
         "symbol": "AZTEC-USD",
-        "last_price": "0.0159",
-        "base_volume": "6876187",
-        "quote_volume": "109331.3733",
+        "last_price": "0.01181",
+        "base_volume": "1873151",
+        "quote_volume": "22121.91331",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1318,7 +1358,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "B3-USD",
+        "last_price": "0.0004128",
+        "base_volume": "59174981",
+        "quote_volume": "24427.4321568",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1334,9 +1382,9 @@
       },
       "volume_24h": {
         "symbol": "BADGER-USD",
-        "last_price": "0.3605",
-        "base_volume": "3391.59",
-        "quote_volume": "1222.668195",
+        "last_price": "0.3399",
+        "base_volume": "13227.982",
+        "quote_volume": "4496.1910818",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1354,7 +1402,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "BAL-USD",
+        "last_price": "0.1056",
+        "base_volume": "86947.451",
+        "quote_volume": "9181.6508256",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1370,9 +1426,9 @@
       },
       "volume_24h": {
         "symbol": "BAND-USD",
-        "last_price": "0.163",
-        "base_volume": "65100.34",
-        "quote_volume": "10611.35542",
+        "last_price": "0.155",
+        "base_volume": "35133.76",
+        "quote_volume": "5445.732800000001",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1404,7 +1460,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "BASED1-USD",
+        "last_price": "0.0841",
+        "base_volume": "13699387.3",
+        "quote_volume": "1152118.47193",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1420,9 +1484,9 @@
       },
       "volume_24h": {
         "symbol": "BAT-BTC",
-        "last_price": "0.0000014",
-        "base_volume": "75.63",
-        "quote_volume": "0.00010588199999999999",
+        "last_price": "0.00000092",
+        "base_volume": "14446.01",
+        "quote_volume": "0.0132903292",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1442,9 +1506,9 @@
       },
       "volume_24h": {
         "symbol": "BAT-ETH",
-        "last_price": "0.00005242",
-        "base_volume": "20878",
-        "quote_volume": "1.09442476",
+        "last_price": "0.00003114",
+        "base_volume": "59",
+        "quote_volume": "0.0018372599999999998",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1464,9 +1528,9 @@
       },
       "volume_24h": {
         "symbol": "BAT-EUR",
-        "last_price": "0.07982",
-        "base_volume": "987353.46",
-        "quote_volume": "78810.5531772",
+        "last_price": "0.05146",
+        "base_volume": "1057553.38",
+        "quote_volume": "54421.69693479999",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1498,7 +1562,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "BCH-BTC",
+        "last_price": "0.003239",
+        "base_volume": "105.86236752",
+        "quote_volume": "0.34288820839728",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1512,15 +1584,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "BCH-EUR",
-        "last_price": "180.07",
-        "base_volume": "1252.42551516",
-        "quote_volume": "225524.26251486118",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -1534,7 +1598,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "BCH-GBP",
+        "last_price": "150.78",
+        "base_volume": "113.15248991",
+        "quote_volume": "17061.1324286298",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1548,7 +1620,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "BCH-USD",
+        "last_price": "204.02",
+        "base_volume": "4811.86104552",
+        "quote_volume": "981715.8905069904",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1564,9 +1644,9 @@
       },
       "volume_24h": {
         "symbol": "BEAM-USD",
-        "last_price": "0.001518",
-        "base_volume": "10109511",
-        "quote_volume": "15346.237698",
+        "last_price": "0.001325",
+        "base_volume": "1191130",
+        "quote_volume": "1578.24725",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1586,9 +1666,9 @@
       },
       "volume_24h": {
         "symbol": "BERA-USD",
-        "last_price": "0.237",
-        "base_volume": "2680358.4",
-        "quote_volume": "635244.9408",
+        "last_price": "0.1461",
+        "base_volume": "2117063.13",
+        "quote_volume": "309302.923293",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1606,7 +1686,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "BICO-USD",
+        "last_price": "0.022991",
+        "base_volume": "69669581.93",
+        "quote_volume": "1601773.3581526303",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1620,15 +1708,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "BIGTIME-USD",
-        "last_price": "0.00866",
-        "base_volume": "1321589",
-        "quote_volume": "11444.960739999999",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -1642,15 +1722,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "BILL-USD",
-        "last_price": "0.0659",
-        "base_volume": "18208050",
-        "quote_volume": "1199910.495",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -1664,15 +1736,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "BIO-USD",
-        "last_price": "0.03528",
-        "base_volume": "23100425.4",
-        "quote_volume": "814983.008112",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -1688,9 +1752,9 @@
       },
       "volume_24h": {
         "symbol": "BIRB-USD",
-        "last_price": "0.0723",
-        "base_volume": "992951.5",
-        "quote_volume": "71790.39345",
+        "last_price": "0.0521",
+        "base_volume": "1001552.5",
+        "quote_volume": "52180.88525",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1722,15 +1786,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "BLEND-USD",
-        "last_price": "0.057",
-        "base_volume": "1262360.9",
-        "quote_volume": "71954.5713",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -1744,7 +1800,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "BLUR-USD",
+        "last_price": "0.0131",
+        "base_volume": "388370.6",
+        "quote_volume": "5087.65486",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1760,9 +1824,9 @@
       },
       "volume_24h": {
         "symbol": "BLZ-USD",
-        "last_price": "0.00814",
-        "base_volume": "951322",
-        "quote_volume": "7743.761079999999",
+        "last_price": "0.00635",
+        "base_volume": "2182808.7",
+        "quote_volume": "13860.835245",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1780,7 +1844,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "BNB-USD",
+        "last_price": "606.96",
+        "base_volume": "1878.63623",
+        "quote_volume": "1140257.0461608001",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1808,7 +1880,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "BNT-USD",
+        "last_price": "0.2658",
+        "base_volume": "13802.852625",
+        "quote_volume": "3668.798227725",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1824,9 +1904,9 @@
       },
       "volume_24h": {
         "symbol": "BOBA-USD",
-        "last_price": "0.0226",
-        "base_volume": "2844357.7",
-        "quote_volume": "64282.48402",
+        "last_price": "0.0173",
+        "base_volume": "248904.6",
+        "quote_volume": "4306.04958",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1860,9 +1940,9 @@
       },
       "volume_24h": {
         "symbol": "BONK-USD",
-        "last_price": "0.00000462",
-        "base_volume": "286067546239",
-        "quote_volume": "1321632.06362418",
+        "last_price": "0.00000234",
+        "base_volume": "157115886285",
+        "quote_volume": "367651.1739069",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1882,9 +1962,9 @@
       },
       "volume_24h": {
         "symbol": "BREV-USD",
-        "last_price": "0.0826",
-        "base_volume": "547060.6",
-        "quote_volume": "45187.20556",
+        "last_price": "0.0671",
+        "base_volume": "48125.4",
+        "quote_volume": "3229.2143400000004",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1904,9 +1984,9 @@
       },
       "volume_24h": {
         "symbol": "BTC-EUR",
-        "last_price": "55982.93",
-        "base_volume": "346.71597205",
-        "quote_volume": "19410175.993157107",
+        "last_price": "54445.51",
+        "base_volume": "48.7323618",
+        "quote_volume": "2653258.291705518",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1926,9 +2006,9 @@
       },
       "volume_24h": {
         "symbol": "BTC-GBP",
-        "last_price": "48484.82",
-        "base_volume": "79.13797593",
-        "quote_volume": "3836990.5181303825",
+        "last_price": "46564.76",
+        "base_volume": "31.59392181",
+        "quote_volume": "1471163.3865414157",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1946,7 +2026,15 @@
         "limit_only": true,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "BTC-INR",
+        "last_price": "6279512",
+        "base_volume": "0.02888686",
+        "quote_volume": "181395.38401232",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -1962,9 +2050,9 @@
       },
       "volume_24h": {
         "symbol": "BTC-USD",
-        "last_price": "64181.78",
-        "base_volume": "7716.43883807",
-        "quote_volume": "495254779.8884644",
+        "last_price": "62945.05",
+        "base_volume": "1149.50212941",
+        "quote_volume": "72355469.01081891",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -1984,9 +2072,9 @@
       },
       "volume_24h": {
         "symbol": "BTC-USDT",
-        "last_price": "64212.65",
-        "base_volume": "161.80917213",
-        "quote_volume": "10390195.736773444",
+        "last_price": "62974.74",
+        "base_volume": "2.63865329",
+        "quote_volume": "166168.5048878946",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2006,9 +2094,9 @@
       },
       "volume_24h": {
         "symbol": "BTRST-USD",
-        "last_price": "0.0622",
-        "base_volume": "223522.83",
-        "quote_volume": "13903.120025999999",
+        "last_price": "0.05728",
+        "base_volume": "183467.67",
+        "quote_volume": "10509.0281376",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2028,9 +2116,9 @@
       },
       "volume_24h": {
         "symbol": "C98-USD",
-        "last_price": "0.0138",
-        "base_volume": "2818473.47",
-        "quote_volume": "38894.933886",
+        "last_price": "0.0144",
+        "base_volume": "6219988.04",
+        "quote_volume": "89567.82777599999",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2050,9 +2138,31 @@
       },
       "volume_24h": {
         "symbol": "CAKE-USD",
-        "last_price": "1.351",
-        "base_volume": "24646.99",
-        "quote_volume": "33298.083490000005",
+        "last_price": "1.447",
+        "base_volume": "24008.13",
+        "quote_volume": "34739.764110000004",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "pair": "CAP/USD",
+      "base_asset": "CAP",
+      "quote_asset": "USD",
+      "symbol": "CAP-USD",
+      "flags": {
+        "status": "ONLINE",
+        "post_only": false,
+        "limit_only": false,
+        "auction_mode": false
+      },
+      "volume_24h": {
+        "symbol": "CAP-USD",
+        "last_price": "0.06734",
+        "base_volume": "25133448",
+        "quote_volume": "1692486.38832",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2070,7 +2180,15 @@
         "limit_only": true,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "CBETH-ETH",
+        "last_price": "1.13723",
+        "base_volume": "18.81845",
+        "quote_volume": "21.4009058935",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2084,15 +2202,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "CBETH-USD",
-        "last_price": "1979.36",
-        "base_volume": "96.54701",
-        "quote_volume": "191101.28971359998",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -2106,7 +2216,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "CELR-USD",
+        "last_price": "0.00208",
+        "base_volume": "75816299",
+        "quote_volume": "157697.90191999997",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2134,7 +2252,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "CGLD-USD",
+        "last_price": "0.0605",
+        "base_volume": "181505.46",
+        "quote_volume": "10981.080329999999",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2176,15 +2302,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "CHZ-EUR",
-        "last_price": "0.0204",
-        "base_volume": "1239187.4",
-        "quote_volume": "25279.42296",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -2198,15 +2316,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "CHZ-GBP",
-        "last_price": "0.0176",
-        "base_volume": "713142.9",
-        "quote_volume": "12551.315040000001",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -2221,28 +2331,6 @@
         "auction_mode": false
       },
       "volume_24h": null
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "CHZ/USDT",
-      "base_asset": "CHZ",
-      "quote_asset": "USDT",
-      "symbol": "CHZ-USDT",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
-      "volume_24h": {
-        "symbol": "CHZ-USDT",
-        "last_price": "0.0234",
-        "base_volume": "697299.4",
-        "quote_volume": "16316.805960000002",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
     },
     {
       "exchange": "coinbase",
@@ -2272,9 +2360,9 @@
       },
       "volume_24h": {
         "symbol": "COMP-BTC",
-        "last_price": "0.00027816",
-        "base_volume": "140.078",
-        "quote_volume": "0.03896409648",
+        "last_price": "0.00025836",
+        "base_volume": "5.816",
+        "quote_volume": "0.00150262176",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2292,7 +2380,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "COMP-USD",
+        "last_price": "16.24",
+        "base_volume": "2522.726",
+        "quote_volume": "40969.07024",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2308,9 +2404,9 @@
       },
       "volume_24h": {
         "symbol": "COOKIE-USD",
-        "last_price": "0.00881",
-        "base_volume": "2475962.2",
-        "quote_volume": "21813.226982",
+        "last_price": "0.011396",
+        "base_volume": "20418311.5",
+        "quote_volume": "232687.077854",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2330,9 +2426,9 @@
       },
       "volume_24h": {
         "symbol": "CORECHAIN-USD",
-        "last_price": "0.0265",
-        "base_volume": "5946550.77",
-        "quote_volume": "157583.59540499997",
+        "last_price": "0.0197",
+        "base_volume": "3468929.95",
+        "quote_volume": "68337.920015",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2350,15 +2446,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "COSMOSDYDX-USD",
-        "last_price": "0.119",
-        "base_volume": "96143.97",
-        "quote_volume": "11441.13243",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -2372,15 +2460,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "COTI-USD",
-        "last_price": "0.0096",
-        "base_volume": "2439074.2",
-        "quote_volume": "23415.11232",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -2396,9 +2476,9 @@
       },
       "volume_24h": {
         "symbol": "COW-USD",
-        "last_price": "0.162",
-        "base_volume": "113130.3",
-        "quote_volume": "18327.1086",
+        "last_price": "0.1228",
+        "base_volume": "34882874.5",
+        "quote_volume": "4283616.9886",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2430,25 +2510,11 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "CRO/USDT",
-      "base_asset": "CRO",
-      "quote_asset": "USDT",
-      "symbol": "CRO-USDT",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
       "volume_24h": {
-        "symbol": "CRO-USDT",
-        "last_price": "0.059",
-        "base_volume": "6981.7",
-        "quote_volume": "411.92029999999994",
+        "symbol": "CRO-USD",
+        "last_price": "0.04769",
+        "base_volume": "3988047.9",
+        "quote_volume": "190190.004351",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2466,7 +2532,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "CRV-BTC",
+        "last_price": "0.00000394",
+        "base_volume": "13492.8",
+        "quote_volume": "0.053161632",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2494,7 +2568,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "CRV-GBP",
+        "last_price": "0.1831",
+        "base_volume": "23821.79",
+        "quote_volume": "4361.769749",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2508,7 +2590,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "CRV-USD",
+        "last_price": "0.2486",
+        "base_volume": "1609543.52",
+        "quote_volume": "400132.519072",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2522,7 +2612,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "CTR-USD",
+        "last_price": "0.00901",
+        "base_volume": "10598558",
+        "quote_volume": "95493.00758",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2536,15 +2634,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "CTSI-USD",
-        "last_price": "0.0238",
-        "base_volume": "632085.9",
-        "quote_volume": "15043.644420000002",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -2558,7 +2648,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "CTX-USD",
+        "last_price": "0.2715",
+        "base_volume": "9035.158",
+        "quote_volume": "2453.045397",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2572,7 +2670,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "CVC-USD",
+        "last_price": "0.0173",
+        "base_volume": "349671.4",
+        "quote_volume": "6049.31522",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2586,7 +2692,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "CVX-USD",
+        "last_price": "1.642",
+        "base_volume": "184492.801",
+        "quote_volume": "302937.179242",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2614,7 +2728,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DASH-USD",
+        "last_price": "29.63",
+        "base_volume": "7071.59299544",
+        "quote_volume": "209531.30045488718",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2628,7 +2750,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DBR-USD",
+        "last_price": "0.015",
+        "base_volume": "545347",
+        "quote_volume": "8180.205",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2642,7 +2772,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DEEP-USD",
+        "last_price": "0.01386",
+        "base_volume": "2108139",
+        "quote_volume": "29218.80654",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2656,7 +2794,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DEGEN-USD",
+        "last_price": "0.001",
+        "base_volume": "17343873",
+        "quote_volume": "17343.873",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2670,7 +2816,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DEXT-USD",
+        "last_price": "0.0934",
+        "base_volume": "1805.1",
+        "quote_volume": "168.59634",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2684,7 +2838,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DIA-USD",
+        "last_price": "0.12648",
+        "base_volume": "875648.67",
+        "quote_volume": "110752.04378160002",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2700,9 +2862,9 @@
       },
       "volume_24h": {
         "symbol": "DIEM-USD",
-        "last_price": "1437.23",
-        "base_volume": "31.24099",
-        "quote_volume": "44900.4880577",
+        "last_price": "1354.84",
+        "base_volume": "7.37479",
+        "quote_volume": "9991.660483599999",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2720,7 +2882,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DIMO-USD",
+        "last_price": "0.00671",
+        "base_volume": "5856580.1",
+        "quote_volume": "39297.652470999994",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2734,7 +2904,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DNT-USD",
+        "last_price": "0.0049",
+        "base_volume": "1108066.9",
+        "quote_volume": "5429.52781",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2762,7 +2940,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DOGE-EUR",
+        "last_price": "0.0603",
+        "base_volume": "449915.1",
+        "quote_volume": "27129.88053",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2776,15 +2962,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "DOGE-GBP",
-        "last_price": "0.0639",
-        "base_volume": "2259617.8",
-        "quote_volume": "144389.57742",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -2798,7 +2976,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DOGE-USD",
+        "last_price": "0.06976",
+        "base_volume": "30848726.8",
+        "quote_volume": "2152007.181568",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2814,9 +3000,9 @@
       },
       "volume_24h": {
         "symbol": "DOGE-USDT",
-        "last_price": "0.0847",
-        "base_volume": "648292.5",
-        "quote_volume": "54910.374749999995",
+        "last_price": "0.0699",
+        "base_volume": "252433.2",
+        "quote_volume": "17645.080680000003",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2834,7 +3020,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DOGINME-USD",
+        "last_price": "0.00007289",
+        "base_volume": "3622679746",
+        "quote_volume": "264057.12668594",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2848,15 +3042,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "DOLO-USD",
-        "last_price": "0.02415",
-        "base_volume": "100472.3",
-        "quote_volume": "2426.406045",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -2872,9 +3058,9 @@
       },
       "volume_24h": {
         "symbol": "DOOD-USD",
-        "last_price": "0.001517",
-        "base_volume": "37609640",
-        "quote_volume": "57053.823879999996",
+        "last_price": "0.001146",
+        "base_volume": "31143301",
+        "quote_volume": "35690.222946",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2892,15 +3078,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "DOT-BTC",
-        "last_price": "0.00001523",
-        "base_volume": "23670.502",
-        "quote_volume": "0.36050174546",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -2916,9 +3094,9 @@
       },
       "volume_24h": {
         "symbol": "DOT-EUR",
-        "last_price": "0.86",
-        "base_volume": "37061.904",
-        "quote_volume": "31873.23744",
+        "last_price": "0.66",
+        "base_volume": "2617.942",
+        "quote_volume": "1727.8417200000001",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2936,7 +3114,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "DOT-GBP",
+        "last_price": "0.56",
+        "base_volume": "2032.888",
+        "quote_volume": "1138.4172800000001",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -2952,9 +3138,9 @@
       },
       "volume_24h": {
         "symbol": "DOT-USD",
-        "last_price": "0.979",
-        "base_volume": "1340025.82500894",
-        "quote_volume": "1311885.2826837522",
+        "last_price": "0.759",
+        "base_volume": "1172135.92196929",
+        "quote_volume": "889651.164774691",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2974,9 +3160,9 @@
       },
       "volume_24h": {
         "symbol": "DOT-USDT",
-        "last_price": "0.98",
-        "base_volume": "7037.363",
-        "quote_volume": "6896.61574",
+        "last_price": "0.76",
+        "base_volume": "7064.397",
+        "quote_volume": "5368.94172",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -2996,9 +3182,9 @@
       },
       "volume_24h": {
         "symbol": "DRIFT-USD",
-        "last_price": "0.01697",
-        "base_volume": "22225572.15",
-        "quote_volume": "377167.95938549994",
+        "last_price": "0.01149",
+        "base_volume": "2178281.92",
+        "quote_volume": "25028.4592608",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3018,9 +3204,9 @@
       },
       "volume_24h": {
         "symbol": "DRV-USD",
-        "last_price": "0.0963",
-        "base_volume": "253919.2",
-        "quote_volume": "24452.41896",
+        "last_price": "0.11036",
+        "base_volume": "8693486",
+        "quote_volume": "959413.11496",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3040,9 +3226,9 @@
       },
       "volume_24h": {
         "symbol": "EDGE-USD",
-        "last_price": "0.06381",
-        "base_volume": "2104905.1",
-        "quote_volume": "134313.99443100003",
+        "last_price": "0.06443",
+        "base_volume": "7235834.4",
+        "quote_volume": "466204.810392",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3060,7 +3246,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "EDGEX-USD",
+        "last_price": "0.2938",
+        "base_volume": "51662.86",
+        "quote_volume": "15178.548268",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3074,7 +3268,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "EGLD-USD",
+        "last_price": "2.61",
+        "base_volume": "2093.389",
+        "quote_volume": "5463.74529",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3118,9 +3320,9 @@
       },
       "volume_24h": {
         "symbol": "ELSA-USD",
-        "last_price": "0.0481",
-        "base_volume": "2435938",
-        "quote_volume": "117168.61779999999",
+        "last_price": "0.04636",
+        "base_volume": "140013.3",
+        "quote_volume": "6491.0165879999995",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3138,7 +3340,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ENA-USD",
+        "last_price": "0.08325",
+        "base_volume": "9674372",
+        "quote_volume": "805391.469",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3168,9 +3378,9 @@
       },
       "volume_24h": {
         "symbol": "ENS-USD",
-        "last_price": "5.34",
-        "base_volume": "17797.059",
-        "quote_volume": "95036.29506",
+        "last_price": "4.02",
+        "base_volume": "1301.131",
+        "quote_volume": "5230.54662",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3188,7 +3398,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ERA-USD",
+        "last_price": "0.0598",
+        "base_volume": "295435.63",
+        "quote_volume": "17667.050674",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3216,15 +3434,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ETC-BTC",
-        "last_price": "0.000112",
-        "base_volume": "567.76822851",
-        "quote_volume": "0.06359004159312",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3238,15 +3448,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ETC-EUR",
-        "last_price": "6.27",
-        "base_volume": "3149.39128068",
-        "quote_volume": "19746.683329863597",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3260,15 +3462,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ETC-GBP",
-        "last_price": "5.4",
-        "base_volume": "700.1686191",
-        "quote_volume": "3780.9105431400003",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3284,9 +3478,9 @@
       },
       "volume_24h": {
         "symbol": "ETC-USD",
-        "last_price": "7.19",
-        "base_volume": "45313.82833536",
-        "quote_volume": "325806.4257312384",
+        "last_price": "6.17",
+        "base_volume": "8811.16127129",
+        "quote_volume": "54364.8650438593",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3320,9 +3514,9 @@
       },
       "volume_24h": {
         "symbol": "ETH-EUR",
-        "last_price": "1524.14",
-        "base_volume": "3805.4195944",
-        "quote_volume": "5799992.2206088165",
+        "last_price": "1625.56",
+        "base_volume": "869.25895445",
+        "quote_volume": "1413032.5859957421",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3340,15 +3534,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ETH-GBP",
-        "last_price": "1320.23",
-        "base_volume": "1685.0419693",
-        "quote_volume": "2224642.959128939",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3378,9 +3564,9 @@
       },
       "volume_24h": {
         "symbol": "ETH-USD",
-        "last_price": "1747.51",
-        "base_volume": "122347.46207825",
-        "quote_volume": "213803413.45636266",
+        "last_price": "1879.13",
+        "base_volume": "11871.01183248",
+        "quote_volume": "22307174.464768145",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3400,9 +3586,9 @@
       },
       "volume_24h": {
         "symbol": "ETH-USDT",
-        "last_price": "1748.89",
-        "base_volume": "1852.83918099",
-        "quote_volume": "3240411.915241601",
+        "last_price": "1880.85",
+        "base_volume": "174.01486813",
+        "quote_volume": "327295.86472231045",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3420,15 +3606,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ETHFI-USD",
-        "last_price": "0.361",
-        "base_volume": "2544275.75",
-        "quote_volume": "918483.5457499999",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3458,9 +3636,9 @@
       },
       "volume_24h": {
         "symbol": "EURC-USDC",
-        "last_price": "1.1469",
-        "base_volume": "5953544",
-        "quote_volume": "6828119.6136",
+        "last_price": "1.1564",
+        "base_volume": "794315",
+        "quote_volume": "918545.866",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3492,15 +3670,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "FARM-USD",
-        "last_price": "6.05",
-        "base_volume": "7644.547",
-        "quote_volume": "46249.50934999999",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3528,7 +3698,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "FET-USD",
+        "last_price": "0.12542",
+        "base_volume": "30061405.2",
+        "quote_volume": "3770301.440184",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3542,15 +3720,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "FET-USDT",
-        "last_price": "0.1996",
-        "base_volume": "389324.4",
-        "quote_volume": "77709.15024",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3564,7 +3734,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "FIDA-USD",
+        "last_price": "0.0174",
+        "base_volume": "861511.63",
+        "quote_volume": "14990.302361999999",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3578,15 +3756,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "FIGHT-USD",
-        "last_price": "0.00412",
-        "base_volume": "36903820",
-        "quote_volume": "152043.7384",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3600,7 +3770,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "FIL-BTC",
+        "last_price": "0.00001076",
+        "base_volume": "6300.556",
+        "quote_volume": "0.06779398256",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3614,7 +3792,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "FIL-EUR",
+        "last_price": "0.59",
+        "base_volume": "5758.998",
+        "quote_volume": "3397.8088199999997",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3628,7 +3814,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "FIL-GBP",
+        "last_price": "0.5",
+        "base_volume": "5849.614",
+        "quote_volume": "2924.807",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3644,31 +3838,9 @@
       },
       "volume_24h": {
         "symbol": "FIL-USD",
-        "last_price": "0.79",
-        "base_volume": "1280558.204",
-        "quote_volume": "1011640.98116",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "FIS/USD",
-      "base_asset": "FIS",
-      "quote_asset": "USD",
-      "symbol": "FIS-USD",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
-      "volume_24h": {
-        "symbol": "FIS-USD",
-        "last_price": "0.0104",
-        "base_volume": "1503483.8",
-        "quote_volume": "15636.23152",
+        "last_price": "0.681",
+        "base_volume": "580472.205",
+        "quote_volume": "395301.571605",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3686,15 +3858,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "FLOCK-USD",
-        "last_price": "0.0391",
-        "base_volume": "578247.6",
-        "quote_volume": "22609.48116",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3710,9 +3874,9 @@
       },
       "volume_24h": {
         "symbol": "FLOKI-USD",
-        "last_price": "0.0000261",
-        "base_volume": "4123140177",
-        "quote_volume": "107613.9586197",
+        "last_price": "0.0000203",
+        "base_volume": "1812844653",
+        "quote_volume": "36800.7464559",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3730,15 +3894,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "FLOW-USD",
-        "last_price": "0.03037",
-        "base_volume": "4279172.631",
-        "quote_volume": "129958.47280347001",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3754,9 +3910,9 @@
       },
       "volume_24h": {
         "symbol": "FLR-USD",
-        "last_price": "0.00742",
-        "base_volume": "73323112",
-        "quote_volume": "544057.49104",
+        "last_price": "0.00594",
+        "base_volume": "21825708",
+        "quote_volume": "129644.70552",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3774,15 +3930,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "FLUID-USD",
-        "last_price": "1.085",
-        "base_volume": "15774.24",
-        "quote_volume": "17115.0504",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3796,7 +3944,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "FORT-USD",
+        "last_price": "0.0119",
+        "base_volume": "2383008.8",
+        "quote_volume": "28357.80472",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3812,9 +3968,9 @@
       },
       "volume_24h": {
         "symbol": "FORTH-USD",
-        "last_price": "0.286",
-        "base_volume": "1219968.087",
-        "quote_volume": "348910.872882",
+        "last_price": "0.1755",
+        "base_volume": "159025.274",
+        "quote_volume": "27908.935587",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3834,9 +3990,9 @@
       },
       "volume_24h": {
         "symbol": "FOX-USD",
-        "last_price": "0.0045",
-        "base_volume": "1256412.7",
-        "quote_volume": "5653.857149999999",
+        "last_price": "0.00395",
+        "base_volume": "282113",
+        "quote_volume": "1114.34635",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3854,7 +4010,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "FUN1-USD",
+        "last_price": "0.02563",
+        "base_volume": "32164261.8",
+        "quote_volume": "824370.029934",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3870,13 +4034,27 @@
       },
       "volume_24h": {
         "symbol": "G-USD",
-        "last_price": "0.00266",
-        "base_volume": "7146015",
-        "quote_volume": "19008.3999",
+        "last_price": "0.00374",
+        "base_volume": "2411628",
+        "quote_volume": "9019.48872",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
       }
+    },
+    {
+      "exchange": "coinbase",
+      "pair": "GEOD/USD",
+      "base_asset": "GEOD",
+      "quote_asset": "USD",
+      "symbol": "GEOD-USD",
+      "flags": {
+        "status": "ONLINE",
+        "post_only": false,
+        "limit_only": false,
+        "auction_mode": false
+      },
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -3934,9 +4112,9 @@
       },
       "volume_24h": {
         "symbol": "GLM-USD",
-        "last_price": "0.1095",
-        "base_volume": "93116.7",
-        "quote_volume": "10196.27865",
+        "last_price": "0.0882",
+        "base_volume": "239753.5",
+        "quote_volume": "21146.2587",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3954,7 +4132,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "GMT-USD",
+        "last_price": "0.0063",
+        "base_volume": "12934398.96",
+        "quote_volume": "81486.71344800001",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -3970,9 +4156,9 @@
       },
       "volume_24h": {
         "symbol": "GNO-USD",
-        "last_price": "105.21",
-        "base_volume": "66.001",
-        "quote_volume": "6943.96521",
+        "last_price": "103.09",
+        "base_volume": "21.1163",
+        "quote_volume": "2176.879367",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -3984,6 +4170,20 @@
       "base_asset": "GODS",
       "quote_asset": "USD",
       "symbol": "GODS-USD",
+      "flags": {
+        "status": "ONLINE",
+        "post_only": false,
+        "limit_only": false,
+        "auction_mode": false
+      },
+      "volume_24h": null
+    },
+    {
+      "exchange": "coinbase",
+      "pair": "GROVE/USD",
+      "base_asset": "GROVE",
+      "quote_asset": "USD",
+      "symbol": "GROVE-USD",
       "flags": {
         "status": "ONLINE",
         "post_only": false,
@@ -4006,9 +4206,9 @@
       },
       "volume_24h": {
         "symbol": "GRT-BTC",
-        "last_price": "0.0000003",
-        "base_volume": "243071.56",
-        "quote_volume": "0.07292146799999999",
+        "last_price": "0.00000022",
+        "base_volume": "6421.34",
+        "quote_volume": "0.0014126948000000002",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4026,25 +4226,11 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "GRT/GBP",
-      "base_asset": "GRT",
-      "quote_asset": "GBP",
-      "symbol": "GRT-GBP",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
       "volume_24h": {
-        "symbol": "GRT-GBP",
-        "last_price": "0.0146",
-        "base_volume": "358962.78",
-        "quote_volume": "5240.856588000001",
+        "symbol": "GRT-EUR",
+        "last_price": "0.0117",
+        "base_volume": "319800.03",
+        "quote_volume": "3741.6603510000004",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4056,6 +4242,28 @@
       "base_asset": "GRT",
       "quote_asset": "USD",
       "symbol": "GRT-USD",
+      "flags": {
+        "status": "ONLINE",
+        "post_only": false,
+        "limit_only": false,
+        "auction_mode": false
+      },
+      "volume_24h": {
+        "symbol": "GRT-USD",
+        "last_price": "0.0135",
+        "base_volume": "7585413.25",
+        "quote_volume": "102403.07887499999",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "pair": "GRVT/USD",
+      "base_asset": "GRVT",
+      "quote_asset": "USD",
+      "symbol": "GRVT-USD",
       "flags": {
         "status": "ONLINE",
         "post_only": false,
@@ -4076,7 +4284,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "GST-USD",
+        "last_price": "0.000947",
+        "base_volume": "10657138.87",
+        "quote_volume": "10092.31050989",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4090,7 +4306,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "GTC-USD",
+        "last_price": "0.0859",
+        "base_volume": "121274.88",
+        "quote_volume": "10417.512192",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4106,9 +4330,9 @@
       },
       "volume_24h": {
         "symbol": "GWEI-USD",
-        "last_price": "0.110847",
-        "base_volume": "2764615",
-        "quote_volume": "306449.278905",
+        "last_price": "0.023484",
+        "base_volume": "16711889",
+        "quote_volume": "392462.001276",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4126,7 +4350,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "HBAR-USD",
+        "last_price": "0.06509",
+        "base_volume": "21639088.4",
+        "quote_volume": "1408488.2639559999",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4140,7 +4372,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "HBAR-USDT",
+        "last_price": "0.0651",
+        "base_volume": "345089",
+        "quote_volume": "22465.2939",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4154,7 +4394,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "HFT-USD",
+        "last_price": "0.0066",
+        "base_volume": "63333646.19",
+        "quote_volume": "418002.064854",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4170,9 +4418,9 @@
       },
       "volume_24h": {
         "symbol": "HIGH-USD",
-        "last_price": "0.046",
-        "base_volume": "14329042.23",
-        "quote_volume": "659135.94258",
+        "last_price": "0.02134",
+        "base_volume": "13175547.39",
+        "quote_volume": "281166.1813026",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4204,7 +4452,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "HOME-USD",
+        "last_price": "0.00795",
+        "base_volume": "78178536",
+        "quote_volume": "621519.3612",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4218,15 +4474,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "HONEY-USD",
-        "last_price": "0.00154",
-        "base_volume": "14299426.2",
-        "quote_volume": "22021.116347999996",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -4240,7 +4488,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "HOPR-USD",
+        "last_price": "0.0111",
+        "base_volume": "492238",
+        "quote_volume": "5463.8418",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4256,9 +4512,9 @@
       },
       "volume_24h": {
         "symbol": "HYPE-USD",
-        "last_price": "71.56",
-        "base_volume": "1939275.859",
-        "quote_volume": "138774580.47004",
+        "last_price": "57.38",
+        "base_volume": "171523.172",
+        "quote_volume": "9841999.60936",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4276,7 +4532,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "HYPER-USD",
+        "last_price": "0.0631",
+        "base_volume": "57504.5",
+        "quote_volume": "3628.53395",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4292,9 +4556,9 @@
       },
       "volume_24h": {
         "symbol": "ICNT-USD",
-        "last_price": "0.1893",
-        "base_volume": "378730.5",
-        "quote_volume": "71693.68364999999",
+        "last_price": "0.1287",
+        "base_volume": "441162.1",
+        "quote_volume": "56777.56227",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4312,7 +4576,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ICP-BTC",
+        "last_price": "0.00003597",
+        "base_volume": "4414.715",
+        "quote_volume": "0.15879729855000002",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4326,7 +4598,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ICP-EUR",
+        "last_price": "1.97",
+        "base_volume": "3431.5686",
+        "quote_volume": "6760.190142",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4334,20 +4614,6 @@
       "base_asset": "ICP",
       "quote_asset": "USD",
       "symbol": "ICP-USD",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
-      "volume_24h": null
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "IDEX/USD",
-      "base_asset": "IDEX",
-      "quote_asset": "USD",
-      "symbol": "IDEX-USD",
       "flags": {
         "status": "ONLINE",
         "post_only": false,
@@ -4382,7 +4648,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "IMU-USD",
+        "last_price": "0.00262",
+        "base_volume": "175203489",
+        "quote_volume": "459033.14118",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4398,9 +4672,9 @@
       },
       "volume_24h": {
         "symbol": "IMX-USD",
-        "last_price": "0.1428",
-        "base_volume": "1575675.1",
-        "quote_volume": "225006.40428000002",
+        "last_price": "0.1081",
+        "base_volume": "260732.36",
+        "quote_volume": "28185.168116",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4418,7 +4692,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "IMX-USDT",
+        "last_price": "0.1083",
+        "base_volume": "12635.07",
+        "quote_volume": "1368.3780809999998",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4432,7 +4714,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "INDEX-USD",
+        "last_price": "0.23",
+        "base_volume": "7983.502",
+        "quote_volume": "1836.2054600000001",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4448,9 +4738,9 @@
       },
       "volume_24h": {
         "symbol": "INJ-USD",
-        "last_price": "5.252",
-        "base_volume": "477566.5",
-        "quote_volume": "2508179.258",
+        "last_price": "4.105",
+        "base_volume": "170585.04",
+        "quote_volume": "700251.5892000002",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4468,15 +4758,7 @@
         "limit_only": true,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "INV-USD",
-        "last_price": "10.48",
-        "base_volume": "3335.3947",
-        "quote_volume": "34954.936456",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -4490,15 +4772,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "INX-USD",
-        "last_price": "0.008078",
-        "base_volume": "4249805",
-        "quote_volume": "34329.92479",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -4512,7 +4786,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "IO-USD",
+        "last_price": "0.111",
+        "base_volume": "245521.15",
+        "quote_volume": "27252.84765",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4542,9 +4824,9 @@
       },
       "volume_24h": {
         "symbol": "IP-USD",
-        "last_price": "0.306",
-        "base_volume": "4046581.36",
-        "quote_volume": "1238253.89616",
+        "last_price": "0.18841",
+        "base_volume": "907300.39",
+        "quote_volume": "170944.4664799",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4562,15 +4844,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "IRYS-USD",
-        "last_price": "0.01828",
-        "base_volume": "6918129",
-        "quote_volume": "126463.39812000001",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -4598,7 +4872,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "JASMY-USDT",
+        "last_price": "0.00391",
+        "base_volume": "161296",
+        "quote_volume": "630.66736",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4614,9 +4896,9 @@
       },
       "volume_24h": {
         "symbol": "JITOSOL-USD",
-        "last_price": "91.24",
-        "base_volume": "288.3615",
-        "quote_volume": "26310.103259999996",
+        "last_price": "97.64",
+        "base_volume": "329.6358",
+        "quote_volume": "32185.639512",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4650,9 +4932,9 @@
       },
       "volume_24h": {
         "symbol": "JUPITER-USD",
-        "last_price": "0.1883",
-        "base_volume": "1558904.2",
-        "quote_volume": "293541.66086",
+        "last_price": "0.168",
+        "base_volume": "545291.5",
+        "quote_volume": "91608.97200000001",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4670,7 +4952,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "KAIO-USD",
+        "last_price": "0.01745",
+        "base_volume": "1073532",
+        "quote_volume": "18733.1334",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4698,15 +4988,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "KARRAT-USD",
-        "last_price": "0.0035",
-        "base_volume": "11012143.51",
-        "quote_volume": "38542.502285",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -4722,9 +5004,9 @@
       },
       "volume_24h": {
         "symbol": "KAT-USD",
-        "last_price": "0.00574",
-        "base_volume": "53695160",
-        "quote_volume": "308210.2184",
+        "last_price": "0.004344",
+        "base_volume": "1238892",
+        "quote_volume": "5381.746848",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4742,15 +5024,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "KAVA-USD",
-        "last_price": "0.0467",
-        "base_volume": "448312.91",
-        "quote_volume": "20936.212896999998",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -4780,9 +5054,9 @@
       },
       "volume_24h": {
         "symbol": "KEYCAT-USD",
-        "last_price": "0.000414",
-        "base_volume": "45817287",
-        "quote_volume": "18968.356818",
+        "last_price": "0.000378",
+        "base_volume": "79407785",
+        "quote_volume": "30016.142730000003",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4797,7 +5071,7 @@
       "flags": {
         "status": "ONLINE",
         "post_only": false,
-        "limit_only": false,
+        "limit_only": true,
         "auction_mode": false
       },
       "volume_24h": null
@@ -4816,9 +5090,9 @@
       },
       "volume_24h": {
         "symbol": "KMNO-USD",
-        "last_price": "0.01743",
-        "base_volume": "14180959.5",
-        "quote_volume": "247174.12408500002",
+        "last_price": "0.01797",
+        "base_volume": "707556.8",
+        "quote_volume": "12714.795696000001",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4838,9 +5112,9 @@
       },
       "volume_24h": {
         "symbol": "KNC-USD",
-        "last_price": "0.1201",
-        "base_volume": "520483.7",
-        "quote_volume": "62510.09237",
+        "last_price": "0.1008",
+        "base_volume": "168104.9",
+        "quote_volume": "16944.97392",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4858,7 +5132,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "KRL-USD",
+        "last_price": "0.1214",
+        "base_volume": "1784.2",
+        "quote_volume": "216.60188",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4874,9 +5156,9 @@
       },
       "volume_24h": {
         "symbol": "KSM-USD",
-        "last_price": "3.66",
-        "base_volume": "7059.9657",
-        "quote_volume": "25839.474462",
+        "last_price": "2.91",
+        "base_volume": "6143.2867",
+        "quote_volume": "17876.964297",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4894,15 +5176,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "KTA-USD",
-        "last_price": "0.1551",
-        "base_volume": "1128051.9",
-        "quote_volume": "174960.84968999997",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -4918,9 +5192,9 @@
       },
       "volume_24h": {
         "symbol": "L3-USD",
-        "last_price": "0.00646",
-        "base_volume": "7725399.6",
-        "quote_volume": "49906.08141599999",
+        "last_price": "0.00404",
+        "base_volume": "1130789.6",
+        "quote_volume": "4568.389984",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -4952,7 +5226,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "LAYER-USD",
+        "last_price": "0.0613",
+        "base_volume": "42032.34",
+        "quote_volume": "2576.582442",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -4994,7 +5276,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "LIGHTER-USD",
+        "last_price": "2.309",
+        "base_volume": "230375.86",
+        "quote_volume": "531937.86074",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5010,9 +5300,9 @@
       },
       "volume_24h": {
         "symbol": "LINEA-USD",
-        "last_price": "0.00251",
-        "base_volume": "31991067",
-        "quote_volume": "80297.57817000001",
+        "last_price": "0.00216",
+        "base_volume": "15109126",
+        "quote_volume": "32635.71216",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5030,15 +5320,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "LINK-BTC",
-        "last_price": "0.00012574",
-        "base_volume": "4724.67",
-        "quote_volume": "0.5940800058",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -5066,15 +5348,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "LINK-EUR",
-        "last_price": "7.03",
-        "base_volume": "19055.54",
-        "quote_volume": "133960.4462",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -5088,7 +5362,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "LINK-GBP",
+        "last_price": "6.98",
+        "base_volume": "14001.21",
+        "quote_volume": "97728.4458",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5102,15 +5384,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "LINK-USD",
-        "last_price": "8.071",
-        "base_volume": "916941.56",
-        "quote_volume": "7400635.33076",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -5126,9 +5400,9 @@
       },
       "volume_24h": {
         "symbol": "LINK-USDT",
-        "last_price": "8.09",
-        "base_volume": "5234.062",
-        "quote_volume": "42343.56158",
+        "last_price": "9.36",
+        "base_volume": "3598.919",
+        "quote_volume": "33685.881839999995",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5148,9 +5422,9 @@
       },
       "volume_24h": {
         "symbol": "LMTS-USD",
-        "last_price": "0.0794",
-        "base_volume": "859022.5",
-        "quote_volume": "68206.3865",
+        "last_price": "0.06188",
+        "base_volume": "11411",
+        "quote_volume": "706.11268",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5168,7 +5442,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "LPT-USD",
+        "last_price": "1.18",
+        "base_volume": "4831.056",
+        "quote_volume": "5700.6460799999995",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5182,25 +5464,11 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "LRC/USD",
-      "base_asset": "LRC",
-      "quote_asset": "USD",
-      "symbol": "LRC-USD",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
       "volume_24h": {
-        "symbol": "LRC-USD",
-        "last_price": "0.0133",
-        "base_volume": "1356774.617816",
-        "quote_volume": "18045.1024169528",
+        "symbol": "LQTY-USD",
+        "last_price": "0.1964",
+        "base_volume": "47917.34",
+        "quote_volume": "9410.965575999999",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5222,28 +5490,6 @@
     },
     {
       "exchange": "coinbase",
-      "pair": "LSETH/ETH",
-      "base_asset": "LSETH",
-      "quote_asset": "ETH",
-      "symbol": "LSETH-ETH",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": true,
-        "auction_mode": false
-      },
-      "volume_24h": {
-        "symbol": "LSETH-ETH",
-        "last_price": "1.09976",
-        "base_volume": "988.9884",
-        "quote_volume": "1087.649882784",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
-    },
-    {
-      "exchange": "coinbase",
       "pair": "LSETH/USD",
       "base_asset": "LSETH",
       "quote_asset": "USD",
@@ -5254,7 +5500,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "LSETH-USD",
+        "last_price": "2091.15",
+        "base_volume": "7.37796",
+        "quote_volume": "15428.421054",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5270,9 +5524,9 @@
       },
       "volume_24h": {
         "symbol": "LTC-BTC",
-        "last_price": "0.000687",
-        "base_volume": "358.04276399",
-        "quote_volume": "0.24597537886113002",
+        "last_price": "0.000704",
+        "base_volume": "801.53029152",
+        "quote_volume": "0.56427732523008",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5292,9 +5546,9 @@
       },
       "volume_24h": {
         "symbol": "LTC-EUR",
-        "last_price": "38.43",
-        "base_volume": "10729.49357647",
-        "quote_volume": "412334.4381437421",
+        "last_price": "38.37",
+        "base_volume": "8803.80867309",
+        "quote_volume": "337802.13878646324",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5328,9 +5582,9 @@
       },
       "volume_24h": {
         "symbol": "LTC-USD",
-        "last_price": "44.08",
-        "base_volume": "115347.20307987",
-        "quote_volume": "5084504.711760669",
+        "last_price": "44.37",
+        "base_volume": "88169.03547398",
+        "quote_volume": "3912060.1039804923",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5350,9 +5604,9 @@
       },
       "volume_24h": {
         "symbol": "MAGIC-USD",
-        "last_price": "0.0459",
-        "base_volume": "1066082.03",
-        "quote_volume": "48933.165177",
+        "last_price": "0.0417",
+        "base_volume": "2081473.14",
+        "quote_volume": "86797.429938",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5372,9 +5626,9 @@
       },
       "volume_24h": {
         "symbol": "MAMO-USD",
-        "last_price": "0.00838",
-        "base_volume": "4058073.5",
-        "quote_volume": "34006.65593",
+        "last_price": "0.00878",
+        "base_volume": "411350.7",
+        "quote_volume": "3611.659146",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5392,15 +5646,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "MANA-EUR",
-        "last_price": "0.059",
-        "base_volume": "106018.83",
-        "quote_volume": "6255.11097",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -5416,9 +5662,9 @@
       },
       "volume_24h": {
         "symbol": "MANA-USD",
-        "last_price": "0.0676",
-        "base_volume": "1142974.7",
-        "quote_volume": "77265.08971999999",
+        "last_price": "0.0636",
+        "base_volume": "128885.63",
+        "quote_volume": "8197.126068000001",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5430,20 +5676,6 @@
       "base_asset": "MANTLE",
       "quote_asset": "USD",
       "symbol": "MANTLE-USD",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
-      "volume_24h": null
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "MASK/GBP",
-      "base_asset": "MASK",
-      "quote_asset": "GBP",
-      "symbol": "MASK-GBP",
       "flags": {
         "status": "ONLINE",
         "post_only": false,
@@ -5466,9 +5698,9 @@
       },
       "volume_24h": {
         "symbol": "MASK-USD",
-        "last_price": "0.37",
-        "base_volume": "86158.77",
-        "quote_volume": "31878.7449",
+        "last_price": "0.35",
+        "base_volume": "12295.18",
+        "quote_volume": "4303.313",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5488,9 +5720,9 @@
       },
       "volume_24h": {
         "symbol": "MATH-USD",
-        "last_price": "0.024",
-        "base_volume": "2717843.5",
-        "quote_volume": "65228.244",
+        "last_price": "0.021",
+        "base_volume": "424124.9",
+        "quote_volume": "8906.6229",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5510,9 +5742,9 @@
       },
       "volume_24h": {
         "symbol": "MDT-USD",
-        "last_price": "0.00285",
-        "base_volume": "56836713",
-        "quote_volume": "161984.63205000001",
+        "last_price": "0.00276",
+        "base_volume": "5143569",
+        "quote_volume": "14196.25044",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5530,15 +5762,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ME-USD",
-        "last_price": "0.0616",
-        "base_volume": "384351.24",
-        "quote_volume": "23676.036384",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -5552,7 +5776,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "MEGA-USD",
+        "last_price": "0.03108",
+        "base_volume": "5684043.8",
+        "quote_volume": "176660.081304",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5566,7 +5798,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "MET-USD",
+        "last_price": "0.163",
+        "base_volume": "222581.99",
+        "quote_volume": "36280.86437",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5582,9 +5822,9 @@
       },
       "volume_24h": {
         "symbol": "META-USD",
-        "last_price": "2.999",
-        "base_volume": "18381.98",
-        "quote_volume": "55127.558020000004",
+        "last_price": "4.768",
+        "base_volume": "2303.33",
+        "quote_volume": "10982.27744",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5604,9 +5844,9 @@
       },
       "volume_24h": {
         "symbol": "METIS-USD",
-        "last_price": "3.14",
-        "base_volume": "49759.413",
-        "quote_volume": "156244.55682",
+        "last_price": "2.38",
+        "base_volume": "2080.285",
+        "quote_volume": "4951.078299999999",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5626,31 +5866,9 @@
       },
       "volume_24h": {
         "symbol": "MEZO-USD",
-        "last_price": "0.015",
-        "base_volume": "3988499.6",
-        "quote_volume": "59827.494",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "MINA/EUR",
-      "base_asset": "MINA",
-      "quote_asset": "EUR",
-      "symbol": "MINA-EUR",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
-      "volume_24h": {
-        "symbol": "MINA-EUR",
-        "last_price": "0.0374",
-        "base_volume": "15228.064",
-        "quote_volume": "569.5295936",
+        "last_price": "0.007365",
+        "base_volume": "797045",
+        "quote_volume": "5870.236425",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5684,9 +5902,9 @@
       },
       "volume_24h": {
         "symbol": "MLN-USD",
-        "last_price": "1.45",
-        "base_volume": "19229.233",
-        "quote_volume": "27882.38785",
+        "last_price": "1.23",
+        "base_volume": "4269.766",
+        "quote_volume": "5251.81218",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5704,15 +5922,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "MNDE-USD",
-        "last_price": "0.01839",
-        "base_volume": "704957.1",
-        "quote_volume": "12964.161069",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -5740,15 +5950,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "MON-USD",
-        "last_price": "0.02137",
-        "base_volume": "87695689",
-        "quote_volume": "1874056.87393",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -5778,9 +5980,9 @@
       },
       "volume_24h": {
         "symbol": "MORPHO-USD",
-        "last_price": "1.9739",
-        "base_volume": "400117.03",
-        "quote_volume": "789791.0055170001",
+        "last_price": "1.9805",
+        "base_volume": "91929.51",
+        "quote_volume": "182066.39455499998",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5798,7 +6000,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "MPLX-USD",
+        "last_price": "0.02469",
+        "base_volume": "480471.7",
+        "quote_volume": "11862.846273000001",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5812,7 +6022,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "MSOL-USD",
+        "last_price": "104.71",
+        "base_volume": "7.516",
+        "quote_volume": "787.00036",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5828,9 +6046,9 @@
       },
       "volume_24h": {
         "symbol": "NCT-USD",
-        "last_price": "0.00607",
-        "base_volume": "5892015",
-        "quote_volume": "35764.53105",
+        "last_price": "0.00417",
+        "base_volume": "2090760",
+        "quote_volume": "8718.4692",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5850,9 +6068,9 @@
       },
       "volume_24h": {
         "symbol": "NEAR-USD",
-        "last_price": "2.258",
-        "base_volume": "7440479.192",
-        "quote_volume": "16800602.015536",
+        "last_price": "1.615",
+        "base_volume": "1234475.007",
+        "quote_volume": "1993677.136305",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5872,9 +6090,9 @@
       },
       "volume_24h": {
         "symbol": "NEAR-USDT",
-        "last_price": "2.253",
-        "base_volume": "215031.507",
-        "quote_volume": "484465.98527100007",
+        "last_price": "1.615",
+        "base_volume": "3960.263",
+        "quote_volume": "6395.824745",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -5892,7 +6110,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "NEON-USD",
+        "last_price": "0.01388",
+        "base_volume": "3776547.58",
+        "quote_volume": "52418.4804104",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5906,7 +6132,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "NEWT-USD",
+        "last_price": "0.0373",
+        "base_volume": "104417.58",
+        "quote_volume": "3894.775734",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5920,15 +6154,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "NEX-USD",
-        "last_price": "0.00000318",
-        "base_volume": "36782106037",
-        "quote_volume": "116967.09719766",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -5956,7 +6182,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "NMR-USD",
+        "last_price": "8.13",
+        "base_volume": "3121.433",
+        "quote_volume": "25377.250290000004",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -5995,7 +6229,7 @@
       "flags": {
         "status": "ONLINE",
         "post_only": false,
-        "limit_only": true,
+        "limit_only": false,
         "auction_mode": false
       },
       "volume_24h": null
@@ -6012,15 +6246,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "OCEAN-USD",
-        "last_price": "0.1054",
-        "base_volume": "161979.4",
-        "quote_volume": "17072.62876",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6028,20 +6254,6 @@
       "base_asset": "OGN",
       "quote_asset": "USD",
       "symbol": "OGN-USD",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
-      "volume_24h": null
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "OMNI/USD",
-      "base_asset": "OMNI",
-      "quote_asset": "USD",
-      "symbol": "OMNI-USD",
       "flags": {
         "status": "ONLINE",
         "post_only": false,
@@ -6062,15 +6274,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ONDO-USD",
-        "last_price": "0.37323",
-        "base_volume": "23094605.44",
-        "quote_volume": "8619599.5883712",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6084,7 +6288,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "OP-USD",
+        "last_price": "0.08501",
+        "base_volume": "4134794.41",
+        "quote_volume": "351498.8727941",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6098,7 +6310,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "OP-USDT",
+        "last_price": "0.08468",
+        "base_volume": "105177.95",
+        "quote_volume": "8906.468806",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6112,15 +6332,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "OPG-USD",
-        "last_price": "0.1496",
-        "base_volume": "8024844.6",
-        "quote_volume": "1200516.75216",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6134,7 +6346,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "OPN-USD",
+        "last_price": "0.0528",
+        "base_volume": "808122",
+        "quote_volume": "42668.8416",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6162,7 +6382,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "OSMO-USD",
+        "last_price": "0.0305",
+        "base_volume": "145647.44",
+        "quote_volume": "4442.24692",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6178,9 +6406,9 @@
       },
       "volume_24h": {
         "symbol": "OXT-USD",
-        "last_price": "0.007",
-        "base_volume": "2160540",
-        "quote_volume": "15123.78",
+        "last_price": "0.0077",
+        "base_volume": "7439315",
+        "quote_volume": "57282.7255",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6212,7 +6440,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "PAXG-USD",
+        "last_price": "4374.35",
+        "base_volume": "132.73973",
+        "quote_volume": "580650.0379255001",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6226,15 +6462,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "PENDLE-USD",
-        "last_price": "1.449",
-        "base_volume": "312088.47",
-        "quote_volume": "452216.19302999997",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6250,9 +6478,9 @@
       },
       "volume_24h": {
         "symbol": "PENGU-USD",
-        "last_price": "0.006782",
-        "base_volume": "239952734",
-        "quote_volume": "1627359.441988",
+        "last_price": "0.006",
+        "base_volume": "158652080",
+        "quote_volume": "951912.48",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6272,9 +6500,9 @@
       },
       "volume_24h": {
         "symbol": "PEPE-USD",
-        "last_price": "0.00000289",
-        "base_volume": "590668176894",
-        "quote_volume": "1707031.0312236599",
+        "last_price": "0.00000261",
+        "base_volume": "96097059550",
+        "quote_volume": "250813.3254255",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6292,25 +6520,11 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
-    },
-    {
-      "exchange": "coinbase",
-      "pair": "PIRATE/USD",
-      "base_asset": "PIRATE",
-      "quote_asset": "USD",
-      "symbol": "PIRATE-USD",
-      "flags": {
-        "status": "ONLINE",
-        "post_only": false,
-        "limit_only": false,
-        "auction_mode": false
-      },
       "volume_24h": {
-        "symbol": "PIRATE-USD",
-        "last_price": "0.0029",
-        "base_volume": "6102465.6",
-        "quote_volume": "17697.15024",
+        "symbol": "PERP-USD",
+        "last_price": "0.0185",
+        "base_volume": "509881.04",
+        "quote_volume": "9432.799239999998",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6330,9 +6544,9 @@
       },
       "volume_24h": {
         "symbol": "PLU-USD",
-        "last_price": "0.11801",
-        "base_volume": "50260.11",
-        "quote_volume": "5931.195581100001",
+        "last_price": "0.12414",
+        "base_volume": "62076.38",
+        "quote_volume": "7706.161813199999",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6350,7 +6564,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "PLUME-USD",
+        "last_price": "0.01315",
+        "base_volume": "46301134",
+        "quote_volume": "608859.9121",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6364,7 +6586,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "PNG-USD",
+        "last_price": "0.01961",
+        "base_volume": "380674",
+        "quote_volume": "7465.01714",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6380,9 +6610,9 @@
       },
       "volume_24h": {
         "symbol": "PNUT-USD",
-        "last_price": "0.0438",
-        "base_volume": "609730",
-        "quote_volume": "26706.174",
+        "last_price": "0.0408",
+        "base_volume": "1100013.56",
+        "quote_volume": "44880.553248000004",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6402,9 +6632,9 @@
       },
       "volume_24h": {
         "symbol": "POL-USD",
-        "last_price": "0.0773",
-        "base_volume": "8366535.25",
-        "quote_volume": "646733.174825",
+        "last_price": "0.07517",
+        "base_volume": "2954270.51",
+        "quote_volume": "222072.5142367",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6422,7 +6652,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "POLS-USD",
+        "last_price": "0.0511",
+        "base_volume": "1007831.62",
+        "quote_volume": "51500.195782",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6436,15 +6674,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "POND-USD",
-        "last_price": "0.00167",
-        "base_volume": "17093007",
-        "quote_volume": "28545.32169",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6458,7 +6688,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "POPCAT-USD",
+        "last_price": "0.0424",
+        "base_volume": "415137",
+        "quote_volume": "17601.8088",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6488,9 +6726,9 @@
       },
       "volume_24h": {
         "symbol": "PRCL-USD",
-        "last_price": "0.0076",
-        "base_volume": "5583730.4",
-        "quote_volume": "42436.35104",
+        "last_price": "0.0045",
+        "base_volume": "2424995.8",
+        "quote_volume": "10912.481099999999",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6522,7 +6760,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "PRL-USD",
+        "last_price": "0.37245",
+        "base_volume": "1280949.8",
+        "quote_volume": "477089.75301000004",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6538,9 +6784,9 @@
       },
       "volume_24h": {
         "symbol": "PRO-USD",
-        "last_price": "0.3472",
-        "base_volume": "552166.01",
-        "quote_volume": "191712.038672",
+        "last_price": "0.3311",
+        "base_volume": "81601.41",
+        "quote_volume": "27018.226851000003",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6558,15 +6804,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "PROMPT-USD",
-        "last_price": "0.02396",
-        "base_volume": "962511.9",
-        "quote_volume": "23061.785123999998",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6580,15 +6818,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "PROS-USD",
-        "last_price": "0.6068",
-        "base_volume": "1058457.54",
-        "quote_volume": "642272.035272",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6616,7 +6846,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "PUMP-USD",
+        "last_price": "0.00276",
+        "base_volume": "910050989",
+        "quote_volume": "2511740.72964",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6630,15 +6868,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "PUNDIX-USD",
-        "last_price": "0.0985",
-        "base_volume": "76107.44",
-        "quote_volume": "7496.582840000001",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6652,7 +6882,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "PYR-USD",
+        "last_price": "0.045",
+        "base_volume": "1491527.27",
+        "quote_volume": "67118.72714999999",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -6668,9 +6906,9 @@
       },
       "volume_24h": {
         "symbol": "PYTH-USD",
-        "last_price": "0.0377",
-        "base_volume": "11978248.7",
-        "quote_volume": "451579.97598999995",
+        "last_price": "0.0393",
+        "base_volume": "2224965.8",
+        "quote_volume": "87441.15594",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6746,9 +6984,9 @@
       },
       "volume_24h": {
         "symbol": "RARE-USD",
-        "last_price": "0.0129",
-        "base_volume": "2392109.6",
-        "quote_volume": "30858.21384",
+        "last_price": "0.0114",
+        "base_volume": "17246877.2",
+        "quote_volume": "196614.40008",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6768,9 +7006,9 @@
       },
       "volume_24h": {
         "symbol": "RARI-USD",
-        "last_price": "0.1205",
-        "base_volume": "5142096.116",
-        "quote_volume": "619622.581978",
+        "last_price": "0.079",
+        "base_volume": "62579.138",
+        "quote_volume": "4943.751902",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6802,15 +7040,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "RAY-USD",
-        "last_price": "0.6078",
-        "base_volume": "22079.52",
-        "quote_volume": "13419.932256",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6821,7 +7051,7 @@
       "flags": {
         "status": "ONLINE",
         "post_only": false,
-        "limit_only": true,
+        "limit_only": false,
         "auction_mode": false
       },
       "volume_24h": null
@@ -6838,15 +7068,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "RECALL-USD",
-        "last_price": "0.0343",
-        "base_volume": "3729172.63",
-        "quote_volume": "127910.62120899999",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6902,15 +7124,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "REZ-USD",
-        "last_price": "0.00325",
-        "base_volume": "25845130",
-        "quote_volume": "83996.6725",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -6926,9 +7140,9 @@
       },
       "volume_24h": {
         "symbol": "RLC-USD",
-        "last_price": "0.3358",
-        "base_volume": "34155.82",
-        "quote_volume": "11469.524356",
+        "last_price": "0.2825",
+        "base_volume": "86438.86",
+        "quote_volume": "24418.977949999997",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -6946,15 +7160,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "RLS-USD",
-        "last_price": "0.0025986",
-        "base_volume": "43470275",
-        "quote_volume": "112961.856615",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7010,15 +7216,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "RPL-USD",
-        "last_price": "1.38",
-        "base_volume": "7322.212",
-        "quote_volume": "10104.65256",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7048,9 +7246,9 @@
       },
       "volume_24h": {
         "symbol": "RSR-USD",
-        "last_price": "0.001339",
-        "base_volume": "86839725",
-        "quote_volume": "116278.391775",
+        "last_price": "0.001155",
+        "base_volume": "7118899",
+        "quote_volume": "8222.328345",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7070,9 +7268,9 @@
       },
       "volume_24h": {
         "symbol": "S-USD",
-        "last_price": "0.03184",
-        "base_volume": "6107976",
-        "quote_volume": "194477.95584",
+        "last_price": "0.02303",
+        "base_volume": "1402728.8",
+        "quote_volume": "32304.844264",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7106,9 +7304,9 @@
       },
       "volume_24h": {
         "symbol": "SAND-USD",
-        "last_price": "0.0523",
-        "base_volume": "813616.96",
-        "quote_volume": "42552.167008",
+        "last_price": "0.0392",
+        "base_volume": "885141.67",
+        "quote_volume": "34697.553464",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7142,9 +7340,9 @@
       },
       "volume_24h": {
         "symbol": "SD-USD",
-        "last_price": "0.1398",
-        "base_volume": "227519.71",
-        "quote_volume": "31807.255458",
+        "last_price": "0.0969",
+        "base_volume": "122078.08",
+        "quote_volume": "11829.365952",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7164,9 +7362,9 @@
       },
       "volume_24h": {
         "symbol": "SEI-USD",
-        "last_price": "0.05428",
-        "base_volume": "24622670.4",
-        "quote_volume": "1336518.549312",
+        "last_price": "0.03989",
+        "base_volume": "6024746.2",
+        "quote_volume": "240327.125918",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7184,7 +7382,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "SENT-USD",
+        "last_price": "0.01289",
+        "base_volume": "1042039",
+        "quote_volume": "13431.88271",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -7198,15 +7404,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "SHDW-USD",
-        "last_price": "0.02085",
-        "base_volume": "115759.32",
-        "quote_volume": "2413.581822",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7234,15 +7432,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "SHIB-GBP",
-        "last_price": "0.00000366",
-        "base_volume": "12883142969",
-        "quote_volume": "47152.30326654",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7256,15 +7446,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "SHIB-USD",
-        "last_price": "0.00000484",
-        "base_volume": "247757774782",
-        "quote_volume": "1199147.62994488",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7278,7 +7460,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "SHIB-USDT",
+        "last_price": "0.0000045",
+        "base_volume": "152606169",
+        "quote_volume": "686.7277605",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -7292,15 +7482,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "SHPING-USD",
-        "last_price": "0.000753",
-        "base_volume": "8771916",
-        "quote_volume": "6605.252748",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7330,9 +7512,9 @@
       },
       "volume_24h": {
         "symbol": "SKL-USD",
-        "last_price": "0.0042",
-        "base_volume": "24559422.5",
-        "quote_volume": "103149.57449999999",
+        "last_price": "0.003415",
+        "base_volume": "7672077.5",
+        "quote_volume": "26200.1446625",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7352,9 +7534,9 @@
       },
       "volume_24h": {
         "symbol": "SKR-USD",
-        "last_price": "0.00877",
-        "base_volume": "9002451",
-        "quote_volume": "78951.49527",
+        "last_price": "0.00713",
+        "base_volume": "9571615",
+        "quote_volume": "68245.61495",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7374,9 +7556,9 @@
       },
       "volume_24h": {
         "symbol": "SKY-USD",
-        "last_price": "0.05812",
-        "base_volume": "5427746.5",
-        "quote_volume": "315460.62658",
+        "last_price": "0.05169",
+        "base_volume": "1832328.3",
+        "quote_volume": "94713.049827",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7396,9 +7578,9 @@
       },
       "volume_24h": {
         "symbol": "SNX-EUR",
-        "last_price": "0.216",
-        "base_volume": "32447.034",
-        "quote_volume": "7008.559344",
+        "last_price": "0.171",
+        "base_volume": "2129.657",
+        "quote_volume": "364.171347",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7418,9 +7600,9 @@
       },
       "volume_24h": {
         "symbol": "SNX-GBP",
-        "last_price": "0.186",
-        "base_volume": "9767.994",
-        "quote_volume": "1816.846884",
+        "last_price": "0.147",
+        "base_volume": "1256.534",
+        "quote_volume": "184.710498",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7440,9 +7622,9 @@
       },
       "volume_24h": {
         "symbol": "SNX-USD",
-        "last_price": "0.247",
-        "base_volume": "145316.909",
-        "quote_volume": "35893.276523",
+        "last_price": "0.19845",
+        "base_volume": "104118.073",
+        "quote_volume": "20662.23158685",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7460,15 +7642,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "SOL-BTC",
-        "last_price": "0.0011115",
-        "base_volume": "1712.815",
-        "quote_volume": "1.9037938725",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7482,15 +7656,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "SOL-ETH",
-        "last_price": "0.04069",
-        "base_volume": "84.8203",
-        "quote_volume": "3.451338007",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7504,7 +7670,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "SOL-EUR",
+        "last_price": "65.12",
+        "base_volume": "13445.464",
+        "quote_volume": "875568.61568",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -7518,7 +7692,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "SOL-GBP",
+        "last_price": "55.7",
+        "base_volume": "7561.905",
+        "quote_volume": "421198.10850000003",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -7548,9 +7730,9 @@
       },
       "volume_24h": {
         "symbol": "SOL-USD",
-        "last_price": "71.36",
-        "base_volume": "980770.99181318",
-        "quote_volume": "69987817.97578853",
+        "last_price": "75.29",
+        "base_volume": "191793.36935549",
+        "quote_volume": "14440122.778774843",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7568,15 +7750,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "SOL-USDT",
-        "last_price": "71.33",
-        "base_volume": "15986.791",
-        "quote_volume": "1140337.80203",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7592,9 +7766,9 @@
       },
       "volume_24h": {
         "symbol": "SPA-USD",
-        "last_price": "0.0027",
-        "base_volume": "2933175",
-        "quote_volume": "7919.5725",
+        "last_price": "0.001942",
+        "base_volume": "3332385",
+        "quote_volume": "6471.491669999999",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7612,7 +7786,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "SPELL-USD",
+        "last_price": "0.0000782",
+        "base_volume": "263277743",
+        "quote_volume": "20588.3195026",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -7656,9 +7838,9 @@
       },
       "volume_24h": {
         "symbol": "SQD-USD",
-        "last_price": "0.0461",
-        "base_volume": "12583749",
-        "quote_volume": "580110.8289000001",
+        "last_price": "0.044507",
+        "base_volume": "1624487.8",
+        "quote_volume": "72301.0785146",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7676,15 +7858,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "STG-USD",
-        "last_price": "0.238",
-        "base_volume": "7702116.4",
-        "quote_volume": "1833103.7032",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7728,9 +7902,9 @@
       },
       "volume_24h": {
         "symbol": "STX-USD",
-        "last_price": "0.187",
-        "base_volume": "1772696.22",
-        "quote_volume": "331494.19314",
+        "last_price": "0.1223",
+        "base_volume": "1138926.37",
+        "quote_volume": "139290.69505100002",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7750,9 +7924,9 @@
       },
       "volume_24h": {
         "symbol": "STX-USDT",
-        "last_price": "0.1869",
-        "base_volume": "189669.25",
-        "quote_volume": "35449.182825",
+        "last_price": "0.1221",
+        "base_volume": "17915.17",
+        "quote_volume": "2187.4422569999997",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7772,9 +7946,9 @@
       },
       "volume_24h": {
         "symbol": "SUI-USD",
-        "last_price": "0.748",
-        "base_volume": "14926599.6",
-        "quote_volume": "11165096.5008",
+        "last_price": "0.6772",
+        "base_volume": "3575732.1",
+        "quote_volume": "2421485.7781200004",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7806,7 +7980,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "SUP-USD",
+        "last_price": "0.005625",
+        "base_volume": "1265418.4",
+        "quote_volume": "7117.978499999999",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -7820,15 +8002,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "SUPER-USD",
-        "last_price": "0.09438",
-        "base_volume": "831112.39",
-        "quote_volume": "78440.38736820001",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7842,7 +8016,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "SUSHI-USD",
+        "last_price": "0.1604",
+        "base_volume": "624070.07",
+        "quote_volume": "100100.83922799998",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -7856,15 +8038,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "SWELL-USD",
-        "last_price": "0.00083",
-        "base_volume": "89950504",
-        "quote_volume": "74658.91832",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -7878,7 +8052,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "SWFTC-USD",
+        "last_price": "0.002303",
+        "base_volume": "6545095",
+        "quote_volume": "15073.353785",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -7922,9 +8104,9 @@
       },
       "volume_24h": {
         "symbol": "SYRUP-USD",
-        "last_price": "0.1393",
-        "base_volume": "5448130.5",
-        "quote_volume": "758924.57865",
+        "last_price": "0.1596",
+        "base_volume": "3796301.3",
+        "quote_volume": "605889.68748",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -7942,7 +8124,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "T-USD",
+        "last_price": "0.00335",
+        "base_volume": "1938748",
+        "quote_volume": "6494.8058",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -7956,7 +8146,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "TAO-USD",
+        "last_price": "196.13",
+        "base_volume": "6206.9443",
+        "quote_volume": "1217367.985559",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -7970,7 +8168,15 @@
         "limit_only": true,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "TGBP-USDC",
+        "last_price": "1.3518",
+        "base_volume": "732",
+        "quote_volume": "989.5175999999999",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8012,15 +8218,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "TNSR-USD",
-        "last_price": "0.02918",
-        "base_volume": "4077672.61",
-        "quote_volume": "118986.4867598",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8034,7 +8232,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "TON-USD",
+        "last_price": "1.3398",
+        "base_volume": "462579.04",
+        "quote_volume": "619763.397792",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8048,15 +8254,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "TOSHI-USD",
-        "last_price": "0.0001279",
-        "base_volume": "1579117309",
-        "quote_volume": "201969.1038211",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8070,7 +8268,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "TOWNS-USD",
+        "last_price": "0.0022956",
+        "base_volume": "143836327.4",
+        "quote_volume": "330190.67317944",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8114,9 +8320,9 @@
       },
       "volume_24h": {
         "symbol": "TREE-USD",
-        "last_price": "0.0452",
-        "base_volume": "3517692.44",
-        "quote_volume": "158999.69828799999",
+        "last_price": "0.0344",
+        "base_volume": "953918.82",
+        "quote_volume": "32814.807408",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8134,7 +8340,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "TRIA-USD",
+        "last_price": "0.008547",
+        "base_volume": "4911984",
+        "quote_volume": "41982.727248",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8148,7 +8362,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "TROLL-USD",
+        "last_price": "0.03812",
+        "base_volume": "3833495.9",
+        "quote_volume": "146132.863708",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8176,7 +8398,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "TRUST-USD",
+        "last_price": "0.05009",
+        "base_volume": "1179757.6",
+        "quote_volume": "59094.05818400001",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8190,7 +8420,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "TURBO-USD",
+        "last_price": "0.000796",
+        "base_volume": "13816465",
+        "quote_volume": "10997.906140000001",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8206,9 +8444,9 @@
       },
       "volume_24h": {
         "symbol": "UMA-USD",
-        "last_price": "0.411",
-        "base_volume": "136794.482",
-        "quote_volume": "56222.53210199999",
+        "last_price": "0.324",
+        "base_volume": "26634.581",
+        "quote_volume": "8629.604244",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8226,15 +8464,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "UNI-BTC",
-        "last_price": "0.0000489",
-        "base_volume": "3741.121636",
-        "quote_volume": "0.1829408480004",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8262,7 +8492,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "UNI-GBP",
+        "last_price": "2.43",
+        "base_volume": "1181.45",
+        "quote_volume": "2870.9235000000003",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8278,9 +8516,9 @@
       },
       "volume_24h": {
         "symbol": "UNI-USD",
-        "last_price": "3.127",
-        "base_volume": "3464064.608271",
-        "quote_volume": "10832130.030063417",
+        "last_price": "3.2816",
+        "base_volume": "573361.712435",
+        "quote_volume": "1881543.7955266961",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8298,7 +8536,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "UP-USD",
+        "last_price": "0.05325",
+        "base_volume": "396316.3",
+        "quote_volume": "21103.842975",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8314,9 +8560,9 @@
       },
       "volume_24h": {
         "symbol": "USD1-USD",
-        "last_price": "1",
-        "base_volume": "11731083.22",
-        "quote_volume": "11731083.22",
+        "last_price": "0.9991",
+        "base_volume": "1674452.38",
+        "quote_volume": "1672945.3728579998",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8336,9 +8582,31 @@
       },
       "volume_24h": {
         "symbol": "USDC-AUD",
-        "last_price": "1.4244",
-        "base_volume": "17347.89",
-        "quote_volume": "24710.334516000003",
+        "last_price": "1.4155",
+        "base_volume": "9266.55",
+        "quote_volume": "13116.801524999999",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "pair": "USDC/BRL",
+      "base_asset": "USDC",
+      "quote_asset": "BRL",
+      "symbol": "USDC-BRL",
+      "flags": {
+        "status": "ONLINE",
+        "post_only": false,
+        "limit_only": false,
+        "auction_mode": true
+      },
+      "volume_24h": {
+        "symbol": "USDC-BRL",
+        "last_price": "0",
+        "base_volume": "0",
+        "quote_volume": "0.0",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8356,7 +8624,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "USDC-CAD",
+        "last_price": "1.3824",
+        "base_volume": "41997.35",
+        "quote_volume": "58057.136640000004",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8370,7 +8646,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "USDC-EUR",
+        "last_price": "0.8649",
+        "base_volume": "4710296.25",
+        "quote_volume": "4073935.226625",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8386,9 +8670,9 @@
       },
       "volume_24h": {
         "symbol": "USDC-GBP",
-        "last_price": "0.7553",
-        "base_volume": "4841862.89",
-        "quote_volume": "3657059.0408169995",
+        "last_price": "0.7396",
+        "base_volume": "1153229.16",
+        "quote_volume": "852928.286736",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8408,9 +8692,9 @@
       },
       "volume_24h": {
         "symbol": "USDC-INR",
-        "last_price": "99.975",
-        "base_volume": "13044.04",
-        "quote_volume": "1304077.899",
+        "last_price": "98.833",
+        "base_volume": "27024.57",
+        "quote_volume": "2670919.32681",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8428,15 +8712,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "USDC-SGD",
-        "last_price": "1.2904",
-        "base_volume": "664215.46",
-        "quote_volume": "857103.629584",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8466,9 +8742,9 @@
       },
       "volume_24h": {
         "symbol": "USDT-EUR",
-        "last_price": "0.87106",
-        "base_volume": "11979152.89",
-        "quote_volume": "10434560.9163634",
+        "last_price": "0.86396",
+        "base_volume": "457467.04",
+        "quote_volume": "395233.22387839993",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8486,15 +8762,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "USDT-GBP",
-        "last_price": "0.7547",
-        "base_volume": "2007050.82",
-        "quote_volume": "1514721.253854",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8508,7 +8776,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "USDT-USD",
+        "last_price": "0.99875",
+        "base_volume": "9885295.46",
+        "quote_volume": "9872938.840675002",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8524,9 +8800,9 @@
       },
       "volume_24h": {
         "symbol": "USDT-USDC",
-        "last_price": "0.9992",
-        "base_volume": "6518696.82",
-        "quote_volume": "6513481.862544",
+        "last_price": "0.9989",
+        "base_volume": "2602819.14",
+        "quote_volume": "2599956.038946",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8544,15 +8820,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "USELESS-USD",
-        "last_price": "0.0773",
-        "base_volume": "33039900.5",
-        "quote_volume": "2553984.30865",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8566,7 +8834,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "VARA-USD",
+        "last_price": "0.0003768",
+        "base_volume": "32898990",
+        "quote_volume": "12396.339432",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8580,7 +8856,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "VELO-USD",
+        "last_price": "0.0167",
+        "base_volume": "2573340.4",
+        "quote_volume": "42974.78468",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8594,15 +8878,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "VET-USD",
-        "last_price": "0.00498",
-        "base_volume": "39519873",
-        "quote_volume": "196808.96754",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8616,7 +8892,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "VIRTUAL-USD",
+        "last_price": "0.5557",
+        "base_volume": "172736.62",
+        "quote_volume": "95989.73973399999",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8630,15 +8914,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "VOXEL-USD",
-        "last_price": "0.0047",
-        "base_volume": "109808522.29",
-        "quote_volume": "516100.05476300005",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8652,15 +8928,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "VTHO-USD",
-        "last_price": "0.000396",
-        "base_volume": "73337184",
-        "quote_volume": "29041.524864",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8676,9 +8944,9 @@
       },
       "volume_24h": {
         "symbol": "VVV-USD",
-        "last_price": "15.118",
-        "base_volume": "511307.509",
-        "quote_volume": "7729946.921062",
+        "last_price": "11.8758",
+        "base_volume": "91255.599",
+        "quote_volume": "1083733.2426042",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8710,7 +8978,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "WAL-USD",
+        "last_price": "0.02232",
+        "base_volume": "22904333.3",
+        "quote_volume": "511224.719256",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8738,15 +9014,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "WCT-USD",
-        "last_price": "0.0473",
-        "base_volume": "1743027.9",
-        "quote_volume": "82445.21967",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8760,7 +9028,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "WELL-USD",
+        "last_price": "0.002852",
+        "base_volume": "4494009",
+        "quote_volume": "12816.913668",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8774,7 +9050,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "WET-USD",
+        "last_price": "0.0708",
+        "base_volume": "748332.8",
+        "quote_volume": "52981.96224000001",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8788,7 +9072,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "WIF-USD",
+        "last_price": "0.137",
+        "base_volume": "341661.5",
+        "quote_volume": "46807.6255",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8804,9 +9096,9 @@
       },
       "volume_24h": {
         "symbol": "WLD-USD",
-        "last_price": "0.6324",
-        "base_volume": "11724635.51",
-        "quote_volume": "7414659.496524",
+        "last_price": "0.3479",
+        "base_volume": "3528405.74",
+        "quote_volume": "1227532.3569460001",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8826,9 +9118,9 @@
       },
       "volume_24h": {
         "symbol": "WLFI-USD",
-        "last_price": "0.06081",
-        "base_volume": "19255827.8",
-        "quote_volume": "1170946.888518",
+        "last_price": "0.05837",
+        "base_volume": "12894349.2",
+        "quote_volume": "752643.162804",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8860,7 +9152,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "WRON-USD",
+        "last_price": "0.05224",
+        "base_volume": "407778.79",
+        "quote_volume": "21302.3639896",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8874,7 +9174,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "XAN-USD",
+        "last_price": "0.01053",
+        "base_volume": "16980751.3",
+        "quote_volume": "178807.311189",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8902,7 +9210,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "XLM-BTC",
+        "last_price": "0.00000249",
+        "base_volume": "71423",
+        "quote_volume": "0.17784327",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8916,7 +9232,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "XLM-EUR",
+        "last_price": "0.135773",
+        "base_volume": "320194",
+        "quote_volume": "43473.699962",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -8930,15 +9254,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "XLM-USD",
-        "last_price": "0.245068",
-        "base_volume": "204620182.3646064",
-        "quote_volume": "50145858.85172936",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -8968,9 +9284,9 @@
       },
       "volume_24h": {
         "symbol": "XPL-USD",
-        "last_price": "0.1041",
-        "base_volume": "57776633.5",
-        "quote_volume": "6014547.54735",
+        "last_price": "0.07822",
+        "base_volume": "9071380.1",
+        "quote_volume": "709563.351422",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -8990,9 +9306,9 @@
       },
       "volume_24h": {
         "symbol": "XRP-EUR",
-        "last_price": "1.0181",
-        "base_volume": "1604379.058301",
-        "quote_volume": "1633418.319256248",
+        "last_price": "0.8648",
+        "base_volume": "514728.278505",
+        "quote_volume": "445137.015251124",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -9010,7 +9326,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "XRP-USD",
+        "last_price": "0.9999",
+        "base_volume": "15276005.064079",
+        "quote_volume": "15274477.463572592",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -9024,7 +9348,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "XRP-USDT",
+        "last_price": "1.001",
+        "base_volume": "1107.643953",
+        "quote_volume": "1108.751596953",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -9038,7 +9370,15 @@
         "limit_only": true,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "XSGD-USDC",
+        "last_price": "0.7811",
+        "base_volume": "10253",
+        "quote_volume": "8008.6183",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -9080,7 +9420,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "XTZ-GBP",
+        "last_price": "0.1459",
+        "base_volume": "6455.47",
+        "quote_volume": "941.853073",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -9094,7 +9442,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "XTZ-USD",
+        "last_price": "0.197",
+        "base_volume": "289483.94",
+        "quote_volume": "57028.336180000006",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -9110,9 +9466,9 @@
       },
       "volume_24h": {
         "symbol": "XYO-USD",
-        "last_price": "0.00351",
-        "base_volume": "21216181.2",
-        "quote_volume": "74468.796012",
+        "last_price": "0.00297",
+        "base_volume": "20308262.5",
+        "quote_volume": "60315.539625",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -9132,9 +9488,9 @@
       },
       "volume_24h": {
         "symbol": "YB-USD",
-        "last_price": "0.082",
-        "base_volume": "233813.23",
-        "quote_volume": "19172.68486",
+        "last_price": "0.0812",
+        "base_volume": "454600.52",
+        "quote_volume": "36913.562224",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -9152,7 +9508,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "YFI-BTC",
+        "last_price": "0.0309881",
+        "base_volume": "0.458902",
+        "quote_volume": "0.0142205010662",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -9166,15 +9530,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "YFI-USD",
-        "last_price": "1906.62",
-        "base_volume": "48.86092",
-        "quote_volume": "93159.2072904",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -9188,15 +9544,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ZAMA-USD",
-        "last_price": "0.03385",
-        "base_volume": "6832006",
-        "quote_volume": "231263.4031",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -9212,9 +9560,9 @@
       },
       "volume_24h": {
         "symbol": "ZEC-USD",
-        "last_price": "473.28",
-        "base_volume": "129270.05221118",
-        "quote_volume": "61180930.31050727",
+        "last_price": "486.91",
+        "base_volume": "9701.93940018",
+        "quote_volume": "4723971.313341644",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -9234,9 +9582,9 @@
       },
       "volume_24h": {
         "symbol": "ZEN-USD",
-        "last_price": "4.48",
-        "base_volume": "10391.435",
-        "quote_volume": "46553.6288",
+        "last_price": "3.982",
+        "base_volume": "3283.965",
+        "quote_volume": "13076.748630000002",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -9268,15 +9616,7 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": {
-        "symbol": "ZETACHAIN-USD",
-        "last_price": "0.0372",
-        "base_volume": "93245.83",
-        "quote_volume": "3468.7448759999997",
-        "open_time_ms": null,
-        "close_time_ms": null,
-        "trade_count": null
-      }
+      "volume_24h": null
     },
     {
       "exchange": "coinbase",
@@ -9292,9 +9632,9 @@
       },
       "volume_24h": {
         "symbol": "ZK-USD",
-        "last_price": "0.01171",
-        "base_volume": "20236106.5",
-        "quote_volume": "236964.807115",
+        "last_price": "0.00755",
+        "base_volume": "6413133.1",
+        "quote_volume": "48419.154904999996",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -9312,7 +9652,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ZKC-USD",
+        "last_price": "0.0377",
+        "base_volume": "477925.05",
+        "quote_volume": "18017.774384999997",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -9326,7 +9674,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ZKP-USD",
+        "last_price": "0.0406",
+        "base_volume": "157634.6",
+        "quote_volume": "6399.96476",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -9342,9 +9698,9 @@
       },
       "volume_24h": {
         "symbol": "ZORA-USD",
-        "last_price": "0.00809",
-        "base_volume": "28490381",
-        "quote_volume": "230487.18229",
+        "last_price": "0.004863",
+        "base_volume": "31825347",
+        "quote_volume": "154766.662461",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
@@ -9362,7 +9718,15 @@
         "limit_only": false,
         "auction_mode": false
       },
-      "volume_24h": null
+      "volume_24h": {
+        "symbol": "ZRO-USD",
+        "last_price": "0.773",
+        "base_volume": "197169.19",
+        "quote_volume": "152411.78387",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
     },
     {
       "exchange": "coinbase",
@@ -9378,9 +9742,9 @@
       },
       "volume_24h": {
         "symbol": "ZRX-USD",
-        "last_price": "0.087482",
-        "base_volume": "1164993.68756",
-        "quote_volume": "101915.97777512393",
+        "last_price": "0.076264",
+        "base_volume": "255927.71146",
+        "quote_volume": "19518.07098678544",
         "open_time_ms": null,
         "close_time_ms": null,
         "trade_count": null
