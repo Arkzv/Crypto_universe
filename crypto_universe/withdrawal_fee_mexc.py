@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import hashlib
 import hmac
+import json
 import os
 import time
 from typing import Any
+from urllib.error import HTTPError
 
 from .common import (
     fetch_json,
@@ -15,6 +17,7 @@ from .common import (
 EXCHANGE = "mexc"
 COIN_CONFIG_URL = "https://api.mexc.com/api/v3/capital/config/getall"
 ENV_VAR = "CRYPTO_UNIVERSE_MEXC_RO"
+INVALID_ACCESS_KEY_CODE = 10072
 
 
 def _get_api_key() -> tuple[str, str] | None:
@@ -58,7 +61,23 @@ async def fetch_withdrawal_fees(timeout_seconds: float = 20.0) -> dict[str, Any]
 
     api_key, api_secret = creds
     url, headers = _mexc_signed_url(api_key, api_secret)
-    raw = await fetch_json(url, timeout_seconds, extra_headers=headers)
+    try:
+        raw = await fetch_json(url, timeout_seconds, extra_headers=headers)
+    except HTTPError as exc:
+        try:
+            error_payload = json.loads(exc.read())
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            raise
+
+        if (
+            isinstance(error_payload, dict)
+            and error_payload.get("code") == INVALID_ACCESS_KEY_CODE
+        ):
+            raise RuntimeError(
+                "MEXC API key is invalid or expired. Create a new key with "
+                f"SPOT_WITHDRAW_READ permission and update {ENV_VAR}."
+            ) from exc
+        raise
 
     rows = extract_coin_rows(raw)
 
