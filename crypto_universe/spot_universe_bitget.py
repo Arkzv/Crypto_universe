@@ -8,6 +8,7 @@ from .common import (
     clean_output_dir,
     fetch_json,
     generated_at_utc,
+    int_or_none,
     normalize_symbol,
     normalize_text,
     pair_key,
@@ -17,8 +18,8 @@ from .common import (
 )
 
 EXCHANGE = "bitget"
-SYMBOLS_URL = "https://api.bitget.com/api/v2/spot/public/symbols"
-TICKERS_URL = "https://api.bitget.com/api/v2/spot/market/tickers"
+SYMBOLS_URL = "https://api.bitget.com/api/v3/market/instruments?category=SPOT"
+TICKERS_URL = "https://api.bitget.com/api/v3/market/tickers?category=SPOT"
 
 
 async def fetch_exchange_universe(timeout_seconds: float = 20.0) -> dict[str, Any]:
@@ -28,7 +29,12 @@ async def fetch_exchange_universe(timeout_seconds: float = 20.0) -> dict[str, An
     )
 
     rows = extract_data_list(symbols_raw)
-    volume_by_symbol = build_bitget_volume_by_symbol(tickers_raw)
+    reality_symbols = {
+        normalize_symbol(row.get("symbol"))
+        for row in rows
+        if normalize_text(row.get("isReality")) == "YES"
+    }
+    volume_by_symbol = build_bitget_volume_by_symbol(tickers_raw, reality_symbols)
 
     pairs: list[dict[str, Any]] = []
     seen_pairs: set[str] = set()
@@ -88,6 +94,8 @@ def normalize_bitget_pair(row: dict[str, Any]) -> dict[str, Any] | None:
         "symbol": symbol,
         "flags": {
             "status": status,
+            "isReality": normalize_text(row.get("isReality")),
+            "symbolType": normalize_text(row.get("symbolType")),
         },
     }
 
@@ -105,20 +113,33 @@ def extract_data_list(payload: Any) -> list[dict[str, Any]]:
     return [row for row in data if isinstance(row, dict)]
 
 
-def build_bitget_volume_by_symbol(payload: Any) -> dict[str, dict[str, Any]]:
+def build_bitget_volume_by_symbol(
+    payload: Any,
+    reality_symbols: set[str],
+) -> dict[str, dict[str, Any]]:
     rows = extract_data_list(payload)
     volume_by_symbol: dict[str, dict[str, Any]] = {}
     for row in rows:
         symbol = normalize_symbol(row.get("symbol"))
         if not symbol:
             continue
+        # Reality turnover24h/volume24h describe the stock market, not Bitget
+        # fills. V3 provides the exchange's quote turnover separately:
+        # https://www.bitget.com/docs/catalog/market/market-data
+        is_reality = symbol in reality_symbols
+        quote_volume_source = "platformTurnover24h" if is_reality else "turnover24h"
+        quote_volume = string_or_none(row.get(quote_volume_source))
+        if is_reality and quote_volume is None:
+            raise RuntimeError(f"Bitget Reality ticker {symbol} is missing platformTurnover24h")
         volume_by_symbol[symbol] = {
             "symbol": symbol,
-            "last_price": string_or_none(row.get("lastPr")),
-            "base_volume": string_or_none(row.get("baseVolume")),
-            "quote_volume": string_or_none(row.get("quoteVolume")),
+            "last_price": string_or_none(row.get("lastPrice")),
+            # No platform base volume is supplied for Reality tokens.
+            "base_volume": None if is_reality else string_or_none(row.get("volume24h")),
+            "quote_volume": quote_volume,
+            "quote_volume_source": quote_volume_source,
             "open_time_ms": None,
-            "close_time_ms": None,
+            "close_time_ms": int_or_none(row.get("ts")),
             "trade_count": None,
         }
     return volume_by_symbol

@@ -12,6 +12,15 @@ Daily overview of tradable spot crypto pairs and their 24h volume distribution a
 
 Exchanges: Binance, Bitget, BitMart, Bybit, Coinbase, CoinW, Crypto.com, Gate, HTX, KuCoin, MEXC, OKX, Upbit
 
+Bitget uses the V3 spot API. For Reality stock tokens (`isReality=yes`, such as
+`rILMN`), the displayed volume comes from `platformTurnover24h`, which measures
+trading on Bitget. The general stock-market turnover can be billions even when
+Bitget's platform volume is zero. Other Bitget spot pairs use `turnover24h`.
+The collector preserves zero platform volume and rejects missing platform
+turnover instead of substituting stock-market volume. Platform base volume is
+unavailable for Reality tokens and is stored as `null`.
+See [Bitget's volume field definitions](https://www.bitget.com/docs/catalog/market/market-data).
+
 ### Features
 - Spot crypto pairs
     - Conversion of traded volumes to USDT
