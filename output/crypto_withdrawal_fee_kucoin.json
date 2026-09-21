@@ -2,7 +2,7 @@
   "schema_version": 1,
   "data_type": "withdrawal_fees",
   "exchange": "kucoin",
-  "generated_at": "2026-09-20T16:45:35+00:00",
+  "generated_at": "2026-09-21T07:28:04+00:00",
   "source": {
     "currencies_url": "https://api.kucoin.com/api/v3/currencies"
   },
@@ -2928,7 +2928,7 @@
           "withdrawal_min_fee": "0.05",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.1",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": null
         },
@@ -3036,6 +3036,22 @@
           "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": null
+        }
+      ]
+    },
+    {
+      "currency": "AXL",
+      "name": "AXL",
+      "full_name": "Axelar",
+      "chains": [
+        {
+          "chain_name": "ERC20",
+          "withdrawal_min_fee": "11",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "22",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
+          "contract_address": "0x467719ad09025fcc6cf6f8311755809d45a5e5f3"
         }
       ]
     },
@@ -3711,22 +3727,6 @@
           "withdrawal_min_fee": "0.001000",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.002000",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
-          "contract_address": null
-        }
-      ]
-    },
-    {
-      "currency": "BCHSV",
-      "name": "BSV",
-      "full_name": "BCHSV",
-      "chains": [
-        {
-          "chain_name": "BCHSV",
-          "withdrawal_min_fee": "0.02",
-          "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "0.04",
           "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": null
@@ -5141,6 +5141,22 @@
           "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "0x1aecab957bad4c6e36dd29c3d3bb470c4c29768a"
+        }
+      ]
+    },
+    {
+      "currency": "BSV",
+      "name": "BSV",
+      "full_name": "BCHSV",
+      "chains": [
+        {
+          "chain_name": "BCHSV",
+          "withdrawal_min_fee": "0.02",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0.04",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
+          "contract_address": null
         }
       ]
     },
@@ -15710,7 +15726,7 @@
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "16",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": false,
+          "is_deposit_enabled": true,
           "contract_address": "0x2::iota::IOTA"
         }
       ]
@@ -17430,9 +17446,9 @@
       "chains": [
         {
           "chain_name": "Base",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "5",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "4",
+          "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xb095274743941e953c746f9c228da9c18bb6ec29"
@@ -24712,8 +24728,8 @@
       ]
     },
     {
-      "currency": "PNT",
-      "name": "PNT",
+      "currency": "PNTOLD",
+      "name": "PNTOLD",
       "full_name": "pNetwork Token",
       "chains": [
         {
@@ -33589,7 +33605,7 @@
           "withdrawal_min_fee": "0.4",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "5",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb"
         },
@@ -34699,22 +34715,6 @@
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0x2a79324c19ef2b89ea98b23bc669b7e7c9f8a517"
-        }
-      ]
-    },
-    {
-      "currency": "WAXL",
-      "name": "wAXL",
-      "full_name": "Axelar",
-      "chains": [
-        {
-          "chain_name": "ERC20",
-          "withdrawal_min_fee": "11",
-          "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "22",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
-          "contract_address": "0x467719ad09025fcc6cf6f8311755809d45a5e5f3"
         }
       ]
     },
