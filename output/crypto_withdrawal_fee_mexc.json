@@ -2,14 +2,14 @@
   "schema_version": 1,
   "data_type": "withdrawal_fees",
   "exchange": "mexc",
-  "generated_at": "2026-09-21T07:28:05+00:00",
+  "generated_at": "2026-09-25T13:07:23+00:00",
   "source": {
     "coin_config_url": "https://api.mexc.com/api/v3/capital/config/getall"
   },
   "summary": {
-    "total_coin_rows": 9561,
-    "currencies_with_chains": 9561,
-    "total_chains": 10092,
+    "total_coin_rows": 9569,
+    "currencies_with_chains": 9569,
+    "total_chains": 10097,
     "skipped_rows": 0
   },
   "currencies": [
@@ -225,7 +225,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "8",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "19.2",
           "is_withdraw_enabled": true,
@@ -558,9 +558,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "30",
+          "withdrawal_min_fee": "27",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "59",
+          "withdrawal_min_size": "54",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "J6pQQ3FAcJQeWPPGppWRb4nM8jU3wLyYbRrLh7feMfvd"
@@ -932,9 +932,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "952",
+          "withdrawal_min_fee": "150",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1904",
+          "withdrawal_min_size": "300",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump"
@@ -1000,9 +1000,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "33",
+          "withdrawal_min_fee": "26",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "66",
+          "withdrawal_min_size": "52",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "HmMubgKx91Tpq3jmfcKQwsv5HrErqnCTTRJMB6afFR2u"
@@ -1136,11 +1136,11 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "37",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "342",
+          "withdrawal_min_size": "192",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x3E5A19c91266aD8cE2477B91585d1856B84062dF"
         }
       ]
@@ -1384,9 +1384,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.004463",
+          "withdrawal_min_fee": "0.004447",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.008925",
+          "withdrawal_min_size": "0.008894",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp"
@@ -1452,7 +1452,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.01",
+          "withdrawal_min_fee": "0.013315",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.05364",
           "is_withdraw_enabled": true,
@@ -1928,9 +1928,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "288",
+          "withdrawal_min_fee": "573",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "345.6",
+          "withdrawal_min_size": "1119.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xed04915c23f00a313a544955524eb7dbd823143d"
@@ -2030,9 +2030,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "60",
+          "withdrawal_min_fee": "362",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "256.8",
+          "withdrawal_min_size": "484.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x3e76dd57E649A263a532cC9bcC58b32A065fB2a4"
@@ -2166,9 +2166,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "11501",
+          "withdrawal_min_fee": "1500",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "23001",
+          "withdrawal_min_size": "3000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "5MAYDfq5yxtudAhtfyuMBuHZjgAbaS9tbEyEQYAhDS5y"
@@ -2217,9 +2217,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "143",
+          "withdrawal_min_fee": "137",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "286",
+          "withdrawal_min_size": "273",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump"
@@ -3525,9 +3525,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "2509",
+          "withdrawal_min_fee": "5879",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "5018",
+          "withdrawal_min_size": "11757",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "CaWZeUM4FvX9dPkjGc2xHS6tSN3qJfTWyvaG77aM5o7h"
@@ -3729,7 +3729,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "3",
+          "withdrawal_min_fee": "10",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "26.4",
           "is_withdraw_enabled": true,
@@ -5816,9 +5816,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "6",
+          "withdrawal_min_fee": "7",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "11",
+          "withdrawal_min_size": "13",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "AiXxRGmRc5oDiFXbEeRX9obPpr3Zir7rks1ef2NjddiF"
@@ -5884,9 +5884,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "20325",
+          "withdrawal_min_fee": "25099",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "40650",
+          "withdrawal_min_size": "50198",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DRoPH9pb1eXQ3VvhwWuP1k5P5R9hkxVmniZCouihxH6w"
@@ -5918,9 +5918,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "46069",
+          "withdrawal_min_fee": "28470",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "92138",
+          "withdrawal_min_size": "56939",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "AiX5GQb4YdYTHPbnnJLiRmBYwvAquPV7PiPKPzRvg4Hu"
@@ -6020,7 +6020,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "20",
+          "withdrawal_min_fee": "18",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "93.6",
           "is_withdraw_enabled": true,
@@ -6190,9 +6190,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "37",
+          "withdrawal_min_fee": "28",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "73",
+          "withdrawal_min_size": "56",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
@@ -6285,9 +6285,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "24",
+          "withdrawal_min_fee": "738",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "105.6",
+          "withdrawal_min_size": "885.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x27702a26126e0b3702af63ee09ac4d1a084ef628"
@@ -6404,7 +6404,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1586",
+          "withdrawal_min_fee": "400",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1903.2",
           "is_withdraw_enabled": true,
@@ -6516,9 +6516,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "38",
+          "withdrawal_min_fee": "449",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "93.6",
+          "withdrawal_min_size": "595.2",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x50614CC8e44F7814549c223aA31db9296e58057c"
@@ -6611,9 +6611,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "72",
+          "withdrawal_min_fee": "220",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "144",
+          "withdrawal_min_size": "439",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8"
@@ -6628,7 +6628,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "3",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "12",
           "is_withdraw_enabled": true,
@@ -7521,9 +7521,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.005866",
+          "withdrawal_min_fee": "0.00599",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.011731",
+          "withdrawal_min_size": "0.01198",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Xs3eBt7uRfJX8QUs4suhyU8p2M6DoUDrJyWBa8LLZsg"
@@ -7718,9 +7718,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "114142",
+          "withdrawal_min_fee": "408163",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "456427.2",
+          "withdrawal_min_size": "489795.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x68BbEd6A47194EFf1CF514B50Ea91895597fc91E"
@@ -7898,9 +7898,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "124",
+          "withdrawal_min_fee": "62",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "200",
+          "withdrawal_min_size": "258",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4"
@@ -8173,11 +8173,11 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "19",
+          "withdrawal_min_fee": "116",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "38",
+          "withdrawal_min_size": "232",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt"
         }
       ]
@@ -8406,7 +8406,7 @@
           "network": "Ethereum(ERC20)",
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "4",
+          "withdrawal_min_size": "3",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xFeAc2Eae96899709a43E252B6B92971D32F9C0F9"
@@ -8727,7 +8727,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2.5",
+          "withdrawal_min_fee": "3",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "7.2",
           "is_withdraw_enabled": true,
@@ -8863,9 +8863,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "15",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "9.6",
+          "withdrawal_min_size": "19.2",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x52A8845DF664D76C69d2EEa607CD793565aF42B8"
@@ -9213,11 +9213,11 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "15159",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "121813.2",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x594DaaD7D77592a2b97b725A7AD59D7E188b5bFa"
         }
       ]
@@ -9648,7 +9648,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "400",
+          "withdrawal_min_fee": "2584",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "3166.8",
           "is_withdraw_enabled": true,
@@ -9784,9 +9784,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "21",
+          "withdrawal_min_fee": "22",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "41",
+          "withdrawal_min_size": "43",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
@@ -10151,7 +10151,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "10",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "21.6",
           "is_withdraw_enabled": true,
@@ -10270,7 +10270,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "31",
+          "withdrawal_min_fee": "204",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "303.6",
           "is_withdraw_enabled": true,
@@ -10712,9 +10712,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "8",
+          "withdrawal_min_fee": "6",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "16",
+          "withdrawal_min_size": "12",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "ARXwZkNAtzPfdcoqQiduJn8EPv9fKiDfGn2KyggyDrFs"
@@ -10807,9 +10807,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "186",
+          "withdrawal_min_fee": "867",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "806.4",
+          "withdrawal_min_size": "2060.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x041Ff0E49F6F774E7DC7bD10Ee4A14c00B1D80B2"
@@ -11157,9 +11157,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "10",
+          "withdrawal_min_fee": "29",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "27.6",
+          "withdrawal_min_size": "33.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x99E980265Bf36516C442be982df1772a6cCb3233"
@@ -11259,9 +11259,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "43469",
+          "withdrawal_min_fee": "163877",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "53202",
+          "withdrawal_min_size": "189837.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xf280B16EF293D8e534e370794ef26bF312694126"
@@ -11276,7 +11276,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "528",
+          "withdrawal_min_fee": "316",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "951.6",
           "is_withdraw_enabled": true,
@@ -11789,9 +11789,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "10536",
+          "withdrawal_min_fee": "9934",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "21072",
+          "withdrawal_min_size": "19868",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx"
@@ -12044,9 +12044,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "2163",
+          "withdrawal_min_fee": "1932",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "4326",
+          "withdrawal_min_size": "3863",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "ATRLuHph8dxnPny4WSNW7fxkhbeivBrtWbY6BfB4xpLj"
@@ -12197,11 +12197,11 @@
         {
           "chain_name": "ROBINHOOD",
           "network": "ROBINHOOD",
-          "withdrawal_min_fee": "100",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "300",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xd4aAe326dDd1a2537A92C00E6576E4605e5D1e18"
         }
       ]
@@ -12333,9 +12333,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "132",
+          "withdrawal_min_fee": "147",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "264",
+          "withdrawal_min_size": "293",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2"
@@ -12384,7 +12384,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "22",
+          "withdrawal_min_fee": "19",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "40.8",
           "is_withdraw_enabled": true,
@@ -12520,7 +12520,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "25",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "28.8",
           "is_withdraw_enabled": true,
@@ -12537,9 +12537,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "137",
+          "withdrawal_min_fee": "154",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "274",
+          "withdrawal_min_size": "307",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump"
@@ -12989,9 +12989,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "171",
+          "withdrawal_min_fee": "177",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "342",
+          "withdrawal_min_size": "354",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "FG4HFf9tc3GbqqQ5fPjJkTwsiJCanuonFrSv4rhvvSsQ"
@@ -13502,7 +13502,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "13",
+          "withdrawal_min_fee": "32",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "124.8",
           "is_withdraw_enabled": true,
@@ -13519,9 +13519,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "182",
+          "withdrawal_min_fee": "6017",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1134",
+          "withdrawal_min_size": "7239.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x9E6be44cC1236eEf7e1f197418592D363BedCd5A"
@@ -13583,7 +13583,7 @@
           "withdrawal_min_fee": "4",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "12",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x203240C141Dd80DCEfc43F782A1321BBdF8Dc89F"
         }
@@ -13937,7 +13937,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "93336709",
+          "withdrawal_min_fee": "90374363",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "200000000",
           "is_withdraw_enabled": true,
@@ -14772,7 +14772,7 @@
           "network": "Ethereum(ERC20)",
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "6",
+          "withdrawal_min_size": "1",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0xba100000625a3754423978a60c9317c58a424e3d"
@@ -14908,7 +14908,7 @@
           "network": "Solana(SOL)",
           "withdrawal_min_fee": "23",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "46",
+          "withdrawal_min_size": "45",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
@@ -15097,7 +15097,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "20",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": false,
+          "is_deposit_enabled": true,
           "contract_address": "0x3AeE7602b612de36088F3ffEd8c8f10E86EbF2bF"
         }
       ]
@@ -15742,9 +15742,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "569",
+          "withdrawal_min_fee": "851",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1137",
+          "withdrawal_min_size": "1702",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump"
@@ -16332,7 +16332,7 @@
           "network": "Bitcoin Cash(BCH)",
           "withdrawal_min_fee": "0.001",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.02",
+          "withdrawal_min_size": "0.002",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": null
@@ -16928,9 +16928,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "370",
+          "withdrawal_min_fee": "2585",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "508.8",
+          "withdrawal_min_size": "3102",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x62D0A8458eD7719FDAF978fe5929C6D342B0bFcE"
@@ -17373,9 +17373,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "1183",
+          "withdrawal_min_fee": "1000",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "2366",
+          "withdrawal_min_size": "2000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "BLVxek8YMXUQhcKmMvrFTrzh5FXg8ec88Crp6otEaCMf"
@@ -17441,7 +17441,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "26",
+          "withdrawal_min_fee": "28",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "50",
           "is_withdraw_enabled": true,
@@ -17662,9 +17662,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "89",
+          "withdrawal_min_fee": "93",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "177",
+          "withdrawal_min_size": "185",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "HgBRWfYxEfvPhtqkaeymCQtHCrKE46qQ43pKe8HCpump"
@@ -18083,7 +18083,7 @@
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "0xD88e4a97B9dEfbF2C8491eA0E48fcc7e043C775a"
         }
@@ -18101,7 +18101,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x54D2252757e1672EEaD234D27B1270728fF90581"
         }
       ]
@@ -18471,7 +18471,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "8.5",
+          "withdrawal_min_fee": "37",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "81.6",
           "is_withdraw_enabled": true,
@@ -18981,9 +18981,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "16",
+          "withdrawal_min_fee": "104",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "80.4",
+          "withdrawal_min_size": "124.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xcb1592591996765Ec0eFc1f92599A19767ee5ffA"
@@ -19068,7 +19068,7 @@
           "network": "Solana(SOL)",
           "withdrawal_min_fee": "23",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "46",
+          "withdrawal_min_size": "45",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
@@ -19170,7 +19170,7 @@
           "network": "Solana(SOL)",
           "withdrawal_min_fee": "600000",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1000000",
+          "withdrawal_min_size": "700000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "HjXw86avdGtCRR5JXUPKdxCVUpSo77fvfNdmXWQQHZW8"
@@ -19851,9 +19851,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "164",
+          "withdrawal_min_fee": "154",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "328",
+          "withdrawal_min_size": "307",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "A1t2UviBYwyfYZDJyKY2W6Td8ritgsCriUDuNaAQN49S"
@@ -20554,7 +20554,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "24",
+          "withdrawal_min_fee": "39",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "79.2",
           "is_withdraw_enabled": true,
@@ -20717,9 +20717,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "76",
+          "withdrawal_min_fee": "75",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "151",
+          "withdrawal_min_size": "150",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "FQgtfugBdpFN7PZ6NdPrZpVLDBrPGxXesi4gVu3vErhY"
@@ -20853,11 +20853,11 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "50",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "163.2",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x3EFBfFf95576e1d23cF6Ead0AcD2E73F4d6A7777"
         }
       ]
@@ -21383,9 +21383,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "250",
+          "withdrawal_min_fee": "247",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "499",
+          "withdrawal_min_size": "493",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "4nV5gNwwP68zUDat26ySChREqVaQaLudfJBkSgEzpump"
@@ -21668,9 +21668,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "1508",
+          "withdrawal_min_fee": "1433",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "3016",
+          "withdrawal_min_size": "2866",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82"
@@ -21872,7 +21872,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "9",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "37.2",
           "is_withdraw_enabled": true,
@@ -21950,9 +21950,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "490684",
+          "withdrawal_min_fee": "404213",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "981368",
+          "withdrawal_min_size": "808426",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
@@ -22480,9 +22480,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "177",
+          "withdrawal_min_fee": "37",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "208.8",
+          "withdrawal_min_size": "52.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xC477D038d5420C6A9e0b031712f61c5120090de9"
@@ -22762,9 +22762,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "1.11",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "4",
+          "withdrawal_min_size": "2.22",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy"
@@ -23479,7 +23479,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "65170125",
+          "withdrawal_min_fee": "14000000",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "79785067.2",
           "is_withdraw_enabled": true,
@@ -25256,7 +25256,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "52",
+          "withdrawal_min_fee": "64",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "92.4",
           "is_withdraw_enabled": true,
@@ -25464,7 +25464,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.01",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "sgoaR28U2uFjURPsCa29LoLcLv2Zmq28ij"
         }
       ]
@@ -25579,11 +25579,11 @@
         {
           "chain_name": "ROBINHOOD",
           "network": "ROBINHOOD",
-          "withdrawal_min_fee": "15",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "50",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x07EBB29a38Fbcb41563817e5E19f2ceC619C90D2"
         }
       ]
@@ -25847,9 +25847,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "600",
+          "withdrawal_min_fee": "1211",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1200",
+          "withdrawal_min_size": "2422",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "2pouN3by7twkiZGy5aEKYUpf78ALDpKRTNu2WsQkpkqt"
@@ -27774,9 +27774,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "16",
+          "withdrawal_min_fee": "15",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "32",
+          "withdrawal_min_size": "29",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump"
@@ -27861,7 +27861,7 @@
           "network": "Toncoin(TON)",
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "700",
+          "withdrawal_min_size": "500",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "EQDG8hrMmjWD7iP7Op2XkZ6jGhFtBUqzBrwpj4g50_VRPgYp"
@@ -28209,7 +28209,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "10000000",
+          "withdrawal_min_fee": "18738314",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "20000000",
           "is_withdraw_enabled": true,
@@ -29021,7 +29021,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "80",
+          "withdrawal_min_fee": "193",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "237.6",
           "is_withdraw_enabled": true,
@@ -29242,9 +29242,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "8",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "6",
+          "withdrawal_min_size": "8.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xcccCCCcCCC33D538DBC2EE4fEab0a7A1FF4e8A94"
@@ -29296,7 +29296,7 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0x734BF3a059eE840A910E02e477049EF9C1a644aB"
         }
@@ -30027,7 +30027,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "15",
+          "withdrawal_min_fee": "26",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "50",
           "is_withdraw_enabled": true,
@@ -30146,9 +30146,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "110",
+          "withdrawal_min_fee": "109",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "220",
+          "withdrawal_min_size": "218",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump"
@@ -30403,7 +30403,7 @@
           "network": "Ethereum(ERC20)",
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "500",
+          "withdrawal_min_size": "1",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0xBBa39Fd2935d5769116ce38d46a71bde9cf03099"
@@ -30520,9 +30520,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "150",
+          "withdrawal_min_fee": "13",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "174",
+          "withdrawal_min_size": "26",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x8A2279d4A90B6fe1C4B30fa660cC9f926797bAA2"
@@ -30676,7 +30676,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "132",
+          "withdrawal_min_fee": "31",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "159.6",
           "is_withdraw_enabled": true,
@@ -30714,7 +30714,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.0025",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": false,
+          "is_deposit_enabled": true,
           "contract_address": "0x1ffAc2Df9696868D06F9fe8d72fEE9e1452eeF76"
         }
       ]
@@ -31628,7 +31628,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "392",
+          "withdrawal_min_fee": "1480",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1894.8",
           "is_withdraw_enabled": true,
@@ -32770,9 +32770,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.007677",
+          "withdrawal_min_fee": "0.007559",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.015353",
+          "withdrawal_min_size": "0.015118",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Xs7ZdzSHLU9ftNJsii5fCeJhoRWSC32SQGzGQtePxNu"
@@ -33052,9 +33052,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.0281",
+          "withdrawal_min_fee": "0.0151",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.07272",
+          "withdrawal_min_size": "0.10956",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xc00e94cb662c3520282e6f5717214004a7f26888"
@@ -33711,21 +33711,21 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "662",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "686.4",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x96Dd399F9c3AFda1F194182F71600F1B65946501"
         },
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "521",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "3184.8",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x589891a198195061Cb8ad1a75357A3b7DbaDD7Bc"
         }
       ]
@@ -33823,7 +33823,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "8124",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "9345.6",
           "is_withdraw_enabled": true,
@@ -34217,7 +34217,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "19",
+          "withdrawal_min_fee": "42",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "100.8",
           "is_withdraw_enabled": true,
@@ -34601,7 +34601,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.0136",
+          "withdrawal_min_fee": "0.00625",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.01548",
           "is_withdraw_enabled": true,
@@ -34618,9 +34618,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.0163",
+          "withdrawal_min_fee": "0.0162",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.0325",
+          "withdrawal_min_size": "0.0323",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1"
@@ -35416,7 +35416,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "3",
+          "withdrawal_min_fee": "9",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "16.8",
           "is_withdraw_enabled": true,
@@ -36011,9 +36011,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "7920",
+          "withdrawal_min_fee": "12772",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "15839",
+          "withdrawal_min_size": "25544",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "8K5X85PAJHAAVSvYaAzgVPPAPsqqHmvx16ZyBiscYF8L"
@@ -36813,7 +36813,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1.06",
+          "withdrawal_min_fee": "2",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "3.6",
           "is_withdraw_enabled": true,
@@ -37193,9 +37193,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "151",
+          "withdrawal_min_fee": "158",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "301",
+          "withdrawal_min_size": "315",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "4Cnk9EPnW5ixfLZatCPJjDB1PUtcRpVVgTQukm9epump"
@@ -37502,7 +37502,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "18",
+          "withdrawal_min_fee": "11",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "32.4",
           "is_withdraw_enabled": true,
@@ -38008,9 +38008,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "94",
+          "withdrawal_min_fee": "64",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "188",
+          "withdrawal_min_size": "127",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DBRiDgJAMsM95moTzJs7M9LnkGErpbv9v6CUR1DXnUu5"
@@ -38800,7 +38800,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "62",
+          "withdrawal_min_fee": "57",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "73.2",
           "is_withdraw_enabled": true,
@@ -40124,7 +40124,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "1",
+          "withdrawal_min_fee": "0.8",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
           "is_withdraw_enabled": true,
@@ -40226,9 +40226,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "15",
+          "withdrawal_min_fee": "177",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "60",
+          "withdrawal_min_size": "182.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x4bdFa27cE379d7601dA1d15bD637a1Cf895fF8fB"
@@ -40967,9 +40967,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "349",
+          "withdrawal_min_fee": "298",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "698",
+          "withdrawal_min_size": "596",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DQnkBM4eYYMnVE8Qy2K3BB7uts1fh2EwBVktEz6jpump"
@@ -41256,11 +41256,11 @@
         {
           "chain_name": "SUI",
           "network": "Sui",
-          "withdrawal_min_fee": "100",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "200",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x4c981f3ff786cdb9e514da897ab8a953647dae2ace9679e8358eec1e3e8871ac::dmc::DMC"
         }
       ]
@@ -41443,11 +41443,11 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "1",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "7.2",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x9B6a1d4fa5d90E5f2D34130053978D14Cd301d58"
         }
       ]
@@ -41708,7 +41708,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "140",
+          "withdrawal_min_fee": "21",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "168",
           "is_withdraw_enabled": true,
@@ -43122,9 +43122,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "835",
+          "withdrawal_min_fee": "801",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1669",
+          "withdrawal_min_size": "1601",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV"
@@ -44220,9 +44220,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "89",
+          "withdrawal_min_fee": "80",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "178",
+          "withdrawal_min_size": "159",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DriFtupJYLTosbwoN8koMbEYSx54aFAVLddWsbksjwg7"
@@ -44611,9 +44611,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "74",
+          "withdrawal_min_fee": "914",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "712.8",
+          "withdrawal_min_size": "1101.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xf94e7d0710709388bCe3161C32B4eEA56d3f91CC"
@@ -44700,7 +44700,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xd87aF7B418d64FF2cdE48d890285bA64fc6E115F"
         }
       ]
@@ -45205,6 +45205,23 @@
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x940a2dB1B7008B6C776d4faaCa729d6d4A4AA551"
+        }
+      ]
+    },
+    {
+      "currency": "DUST",
+      "name": "Dustswap",
+      "full_name": "Dustswap",
+      "chains": [
+        {
+          "chain_name": "BASE",
+          "network": "BASE",
+          "withdrawal_min_fee": "100",
+          "withdraw_fee_rate": null,
+          "withdrawal_min_size": "200",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": true,
+          "contract_address": "0x0921a25547FEB0744b1DB7a3c2d9834B66591a39"
         }
       ]
     },
@@ -46792,9 +46809,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "529",
+          "withdrawal_min_fee": "522",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1058",
+          "withdrawal_min_size": "1043",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "EFFECT1A1R3Dz8Hg4q5SXKjkiPc6KDRUWQ7Czjvy4H7E"
@@ -47288,7 +47305,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "3",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "22.8",
           "is_withdraw_enabled": true,
@@ -47665,9 +47682,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "9268",
+          "withdrawal_min_fee": "9238",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "18536",
+          "withdrawal_min_size": "18476",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "DuMbhu7mvQvqQHGcnikDgb4XegXJRyhUBfdU22uELiZA"
@@ -47750,7 +47767,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "24189514",
+          "withdrawal_min_fee": "17000000",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "50163890.4",
           "is_withdraw_enabled": true,
@@ -48175,9 +48192,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "131",
+          "withdrawal_min_fee": "105",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "262",
+          "withdrawal_min_size": "209",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6"
@@ -48192,9 +48209,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "340",
+          "withdrawal_min_fee": "378",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "679",
+          "withdrawal_min_size": "756",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "6HHzBVkxtoz86Bjy2duaUw77hVfJzQkuoLizWeEMBLEM"
@@ -48474,7 +48491,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "7",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "24",
           "is_withdraw_enabled": true,
@@ -48892,9 +48909,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1.06",
+          "withdrawal_min_fee": "10",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "6",
+          "withdrawal_min_size": "10.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x94314a14Df63779c99C0764a30e0CD22fA78fC0E"
@@ -49381,7 +49398,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2.5",
+          "withdrawal_min_fee": "3",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "12",
           "is_withdraw_enabled": true,
@@ -49625,7 +49642,7 @@
           "withdrawal_min_fee": "0.01",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.02",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": null
         },
@@ -49692,7 +49709,7 @@
         {
           "chain_name": "LINEA",
           "network": "Linea",
-          "withdrawal_min_fee": "0.00001893",
+          "withdrawal_min_fee": "0.00001829",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.0008",
           "is_withdraw_enabled": true,
@@ -49986,7 +50003,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "9.6",
           "is_withdraw_enabled": true,
@@ -50241,7 +50258,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.22",
+          "withdrawal_min_fee": "0.27",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.44",
           "is_withdraw_enabled": true,
@@ -50971,9 +50988,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "14482",
+          "withdrawal_min_fee": "14841",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "28964",
+          "withdrawal_min_size": "29682",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "RmtMAYVTTFv2iK9muMrXEoAnSSsZPPgRPbqZCKwNDYk"
@@ -51661,9 +51678,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "97",
+          "withdrawal_min_fee": "90",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "194",
+          "withdrawal_min_size": "179",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "y1AZt42vceCmStjW4zetK3VoNarC1VxJ5iDjpiupump"
@@ -51695,9 +51712,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "9",
+          "withdrawal_min_fee": "8",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "18",
+          "withdrawal_min_size": "16",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
@@ -52945,9 +52962,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "71",
+          "withdrawal_min_fee": "69",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "142",
+          "withdrawal_min_size": "138",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp"
@@ -52989,9 +53006,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "414",
+          "withdrawal_min_fee": "390",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "827",
+          "withdrawal_min_size": "780",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU"
@@ -54240,9 +54257,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "67",
+          "withdrawal_min_fee": "779",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "278.4",
+          "withdrawal_min_size": "934.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x236501327e701692a281934230AF0b6BE8Df3353"
@@ -55004,7 +55021,7 @@
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "0xE172e9B6cfBeeB5593bDcE3f077356FDb33af904"
         }
@@ -55181,9 +55198,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "310",
+          "withdrawal_min_fee": "344",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "619",
+          "withdrawal_min_size": "687",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump"
@@ -56673,9 +56690,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "2.4",
+          "withdrawal_min_size": "3.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9"
@@ -56904,11 +56921,11 @@
         {
           "chain_name": "BASE",
           "network": "BASE",
-          "withdrawal_min_fee": "10",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "40",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x16EE7ecAc70d1028E7712751E2Ee6BA808a7dd92"
         }
       ]
@@ -57129,7 +57146,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "86143388bd056a8f0bab669f78f14873fac8e2dd8d57898cdb725a2d5e2e4f8f"
         }
       ]
@@ -57142,11 +57159,11 @@
         {
           "chain_name": "FUSE",
           "network": "FUSE",
-          "withdrawal_min_fee": "0",
+          "withdrawal_min_fee": "5",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "3272382.07",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
+          "withdrawal_min_size": "40",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
           "contract_address": null
         },
         {
@@ -57349,9 +57366,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "359",
+          "withdrawal_min_fee": "232",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "718",
+          "withdrawal_min_size": "464",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "A8C3xuqscfmyLrte3VmTqrAq8kgMASius9AFNANwpump"
@@ -57587,7 +57604,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "124",
+          "withdrawal_min_fee": "146",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "634.8",
           "is_withdraw_enabled": true,
@@ -57940,7 +57957,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "153",
+          "withdrawal_min_fee": "289",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "859.2",
           "is_withdraw_enabled": true,
@@ -59517,10 +59534,10 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "7",
+          "withdrawal_min_fee": "6",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "13",
-          "is_withdraw_enabled": false,
+          "withdrawal_min_size": "12",
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "7JA5eZdCzztSfQbJvS8aVVxMFfd81Rs9VvwnocV1mKHu"
         }
@@ -60370,9 +60387,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "704",
+          "withdrawal_min_fee": "614",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1408",
+          "withdrawal_min_size": "1228",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
@@ -61053,9 +61070,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "2779",
+          "withdrawal_min_fee": "2699",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "5558",
+          "withdrawal_min_size": "5397",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "8wXtPeU6557ETkp9WHFY1n1EcU6NxDvbAggHGsMYiHsB"
@@ -61209,7 +61226,7 @@
           "withdrawal_min_fee": "20",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "40",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": null
         }
@@ -61634,9 +61651,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "86",
+          "withdrawal_min_fee": "78",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "171",
+          "withdrawal_min_size": "156",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump"
@@ -61848,9 +61865,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "7",
+          "withdrawal_min_fee": "28",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "22.8",
+          "withdrawal_min_size": "28.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xccc8cb5229b0ac8069c51fd58367fd1e622afd97"
@@ -62028,9 +62045,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.0203",
+          "withdrawal_min_fee": "0.0194",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.0405",
+          "withdrawal_min_size": "0.0387",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "2Wu1g2ft7qZHfTpfzP3wLdfPeV1is4EwQ3CXBfRYAciD"
@@ -62113,7 +62130,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.00005",
+          "withdrawal_min_fee": "0.00007693",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.000093456",
           "is_withdraw_enabled": true,
@@ -62293,7 +62310,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "5",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
@@ -62412,9 +62429,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.004256",
+          "withdrawal_min_fee": "0.004355",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.008512",
+          "withdrawal_min_size": "0.008709",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN"
@@ -62746,18 +62763,18 @@
     },
     {
       "currency": "GP",
-      "name": "Graphite",
-      "full_name": "Graphite",
+      "name": "RuneScape Gold",
+      "full_name": "RuneScape Gold",
       "chains": [
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "73",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "10",
+          "withdrawal_min_size": "146",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": false,
-          "contract_address": "31k88G5Mq7ptbRDf3AM13HAq6wRQHXHikR8hik7wPygk"
+          "is_deposit_enabled": true,
+          "contract_address": "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ"
         }
       ]
     },
@@ -62826,6 +62843,23 @@
           "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "0x38ec27c6f05a169e7ed03132bca7d0cfee93c2c5"
+        }
+      ]
+    },
+    {
+      "currency": "GPOLD2",
+      "name": "Graphite",
+      "full_name": "Graphite",
+      "chains": [
+        {
+          "chain_name": "SOL",
+          "network": "Solana(SOL)",
+          "withdrawal_min_fee": "4",
+          "withdraw_fee_rate": null,
+          "withdrawal_min_size": "10",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
+          "contract_address": "31k88G5Mq7ptbRDf3AM13HAq6wRQHXHikR8hik7wPygk"
         }
       ]
     },
@@ -63272,9 +63306,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "4",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "9",
+          "withdrawal_min_size": "7",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs"
@@ -63476,9 +63510,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "103",
+          "withdrawal_min_fee": "95",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "206",
+          "withdrawal_min_size": "190",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP"
@@ -63646,9 +63680,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1220",
+          "withdrawal_min_fee": "2527",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1264.8",
+          "withdrawal_min_size": "3012",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x8390a1DA07E376ef7aDd4Be859BA74Fb83aA02D5"
@@ -64074,7 +64108,7 @@
           "withdrawal_min_fee": "6.4",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "10",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xc944e90c64b2c07662a292be6244bdf05cda44a7"
         },
@@ -64145,14 +64179,14 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x46F2564E0FA8248d15125E7e54173cfbdEf91Be7"
         },
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1.25",
+          "withdrawal_min_fee": "4",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "4.8",
           "is_withdraw_enabled": true,
@@ -65236,9 +65270,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "3",
+          "withdrawal_min_fee": "24",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "9.6",
+          "withdrawal_min_size": "28.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xE76c5b78f93909d34404E9eb4C1f19e7582a5dE1"
@@ -66419,7 +66453,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "16",
+          "withdrawal_min_fee": "15",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "30",
           "is_withdraw_enabled": true,
@@ -66973,9 +67007,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "45",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "20",
+          "withdrawal_min_size": "54",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x71Ab77b7dbB4fa7e017BC15090b2163221420282"
@@ -67459,9 +67493,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "3",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "7",
+          "withdrawal_min_size": "6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux"
@@ -68142,9 +68176,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.012356",
+          "withdrawal_min_fee": "0.012276",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.024712",
+          "withdrawal_min_size": "0.024552",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "XsvNBAYkrDRNhA7wPHQfX3ZUXZyZLdnCQDfHZ56bzpg"
@@ -69083,9 +69117,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "66",
+          "withdrawal_min_fee": "53",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "132",
+          "withdrawal_min_size": "106",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "HUMA1821qVDKta3u2ovmfDQeW2fSQouSKE8fkF44wvGw"
@@ -69263,9 +69297,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "27408",
+          "withdrawal_min_fee": "27446",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "54815",
+          "withdrawal_min_size": "54892",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Gdck9KXSSiMMhNyjUjo4sVT1GDzeZnZP2yse9jhax3GR"
@@ -69503,7 +69537,7 @@
           "network": "HYPEREVM",
           "withdrawal_min_fee": "0.0005",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.0002",
+          "withdrawal_min_size": "0.001",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": null
@@ -71886,9 +71920,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "11",
+          "withdrawal_min_fee": "10",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "21",
+          "withdrawal_min_size": "19",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K"
@@ -72307,7 +72341,7 @@
           "withdrawal_min_fee": "10",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "35",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": null
         }
@@ -73078,7 +73112,7 @@
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.004",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0x070D79021dD7e841123cB0CF554993bF683c511D"
         }
@@ -73483,7 +73517,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "60",
+          "withdrawal_min_fee": "300",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "493.2",
           "is_withdraw_enabled": true,
@@ -73612,6 +73646,23 @@
       ]
     },
     {
+      "currency": "JEANPHIL",
+      "name": "Jean Phil",
+      "full_name": "Jean Phil",
+      "chains": [
+        {
+          "chain_name": "SOL",
+          "network": "Solana(SOL)",
+          "withdrawal_min_fee": "173",
+          "withdraw_fee_rate": null,
+          "withdrawal_min_size": "345",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump"
+        }
+      ]
+    },
+    {
       "currency": "JEETS",
       "name": "I m a Jeet",
       "full_name": "I m a Jeet",
@@ -73687,9 +73738,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "28",
+          "withdrawal_min_fee": "27",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "55",
+          "withdrawal_min_size": "53",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
@@ -74037,9 +74088,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "328",
+          "withdrawal_min_fee": "262",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "655",
+          "withdrawal_min_size": "523",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Ge87EtsjwRQbHaqQmKRno69RFTwh9bfSsm99XNxTpump"
@@ -74853,9 +74904,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "3",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "7",
+          "withdrawal_min_size": "6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL"
@@ -75468,9 +75519,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.017",
+          "withdrawal_min_fee": "0.1618",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.0558",
+          "withdrawal_min_size": "0.19632",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x56Ba8B58B7d1f6d384A1C4dD553F39ebc8741B8e"
@@ -75536,9 +75587,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "6",
+          "withdrawal_min_fee": "429",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "46.8",
+          "withdrawal_min_size": "516",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x00BAC91fd8f5b4a0dc03C8021139B76F6549Ee7E"
@@ -75719,7 +75770,7 @@
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "KANGO"
         }
@@ -75913,7 +75964,7 @@
         {
           "chain_name": "KASPA",
           "network": "Kaspa(KAS)",
-          "withdrawal_min_fee": "1.33",
+          "withdrawal_min_fee": "1.21",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "25",
           "is_withdraw_enabled": true,
@@ -75933,8 +75984,8 @@
           "withdrawal_min_fee": "10000",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "20000",
-          "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
           "contract_address": "KASPY"
         }
       ]
@@ -75981,7 +76032,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "22033",
+          "withdrawal_min_fee": "11290",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "30798",
           "is_withdraw_enabled": true,
@@ -76443,9 +76494,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "65",
+          "withdrawal_min_fee": "521",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "397.2",
+          "withdrawal_min_size": "630",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x26E550AC11B26f78A04489d5F20f24E3559f7Dd9"
@@ -76579,7 +76630,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "29",
+          "withdrawal_min_fee": "9",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "33.6",
           "is_withdraw_enabled": true,
@@ -77449,7 +77500,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "8731327265",
+          "withdrawal_min_fee": "5000000000",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "20242418583.6",
           "is_withdraw_enabled": true,
@@ -77799,11 +77850,11 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "13",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "42",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x5A6117EE2EA174D5875e3c1880ecd7bc8dA651B6"
         }
       ]
@@ -77969,9 +78020,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "45",
+          "withdrawal_min_fee": "36",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "89",
+          "withdrawal_min_size": "72",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS"
@@ -78156,9 +78207,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "64",
+          "withdrawal_min_fee": "116",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "127",
+          "withdrawal_min_size": "232",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "8RVBk8vxLiUHueLUW1f4izFVqN3nWippLhkohKg6EGkS"
@@ -78791,6 +78842,23 @@
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0xea36Af87Df952fd4c9A05Cd792d370909Bbda8DB"
+        }
+      ]
+    },
+    {
+      "currency": "KRAFT",
+      "name": "DAOKraft",
+      "full_name": "DAOKraft",
+      "chains": [
+        {
+          "chain_name": "BSC",
+          "network": "BNB Smart Chain(BEP20)",
+          "withdrawal_min_fee": "0.1",
+          "withdraw_fee_rate": null,
+          "withdrawal_min_size": "1",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0xF6C7eC8EC046cEcc1fB5B105fDf8C70C65Cc7348"
         }
       ]
     },
@@ -79696,9 +79764,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "42729689",
+          "withdrawal_min_fee": "1159162434",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "109599430.8",
+          "withdrawal_min_size": "1373953503.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x12970E6868f88f6557B76120662c1B3E50A646bf"
@@ -79738,8 +79806,8 @@
           "contract_address": "0xb236fD98048b594345d0EC9a3de18dD0083F45CE"
         },
         {
-          "chain_name": "ETH",
-          "network": "Ethereum(ERC20)",
+          "chain_name": "NONE",
+          "network": "NONE",
           "withdrawal_min_fee": "2000",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "12030",
@@ -80279,7 +80347,7 @@
           "network": "Solana(SOL)",
           "withdrawal_min_fee": "20",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "40",
+          "withdrawal_min_size": "39",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "LAYER4xPpTCb3QL8S9u41EAhAX7mhBn8Q6xMTwY2Yzc"
@@ -80379,9 +80447,9 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "109239",
+          "withdrawal_min_fee": "472549",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "200000",
+          "withdrawal_min_size": "567058.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x8613d52D74a48883A51bAdF8b25ab066714087Da"
@@ -80610,11 +80678,11 @@
         {
           "chain_name": "BASE",
           "network": "BASE",
-          "withdrawal_min_fee": "0.1",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.5",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x4dA9A0f397dB1397902070f93a4D6ddBC0E0E6e8"
         }
       ]
@@ -80818,7 +80886,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "21.6",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xf6AD4965F7779C6b8ae4d25BF2a2E009A47C3dAe"
         }
       ]
@@ -82041,7 +82109,7 @@
         {
           "chain_name": "BASE",
           "network": "BASE",
-          "withdrawal_min_fee": "1",
+          "withdrawal_min_fee": "5",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
@@ -82857,11 +82925,11 @@
         {
           "chain_name": "BASE",
           "network": "BASE",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x9EadbE35F3Ee3bF3e28180070C429298a1b02F93"
         }
       ]
@@ -82891,9 +82959,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "17",
+          "withdrawal_min_fee": "324",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "90",
+          "withdrawal_min_size": "386.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x628A3b2E302C7e896AcC432D2d0dD22B6cb9bc88"
@@ -83962,9 +84030,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.49",
+          "withdrawal_min_fee": "2.43",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1.152",
+          "withdrawal_min_size": "3.528",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x58b6A8A3302369DAEc383334672404Ee733aB239"
@@ -86583,9 +86651,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "40000000",
+          "withdrawal_min_fee": "803819818",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "312744934.8",
+          "withdrawal_min_size": "977227873.2",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x95AF4aF910c28E8EcE4512BFE46F1F33687424ce"
@@ -87829,6 +87897,23 @@
       ]
     },
     {
+      "currency": "MBK",
+      "name": "MEMEBOOK",
+      "full_name": "MEMEBOOK",
+      "chains": [
+        {
+          "chain_name": "BSC",
+          "network": "BNB Smart Chain(BEP20)",
+          "withdrawal_min_fee": "0.2",
+          "withdraw_fee_rate": null,
+          "withdrawal_min_size": "0.5",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": true,
+          "contract_address": "0x02618593FcF4D31f116214432409FAD88c30f985"
+        }
+      ]
+    },
+    {
       "currency": "MBL",
       "name": "Moviebloc",
       "full_name": "Moviebloc",
@@ -88193,9 +88278,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.005896",
+          "withdrawal_min_fee": "0.006182",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.011791",
+          "withdrawal_min_size": "0.012364",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2"
@@ -88475,11 +88560,11 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "10",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "30",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x60322971a672B81BccE5947706D22c19dAeCf6Fb"
         }
       ]
@@ -88665,9 +88750,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "22",
+          "withdrawal_min_fee": "20",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "44",
+          "withdrawal_min_size": "39",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "MEFNBXixkEbait3xn9bkm8WsJzXtVsaJEn4c8Sam21u"
@@ -89175,9 +89260,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "15",
+          "withdrawal_min_fee": "14",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "30",
+          "withdrawal_min_size": "28",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
@@ -90348,9 +90433,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "6",
+          "withdrawal_min_fee": "5",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "12",
+          "withdrawal_min_size": "9",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL"
@@ -90596,9 +90681,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.0022",
+          "withdrawal_min_fee": "0.001937",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.004399",
+          "withdrawal_min_size": "0.003874",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu"
@@ -90650,7 +90735,7 @@
           "withdrawal_min_fee": "0.17",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x9E32b13ce7f2E80A01932B42553652E053D6ed8e"
         },
@@ -90786,9 +90871,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "3488",
+          "withdrawal_min_fee": "2959",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "6975",
+          "withdrawal_min_size": "5917",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5"
@@ -92033,10 +92118,10 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "500",
+          "withdrawal_min_fee": "0.05",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1000",
-          "is_withdraw_enabled": false,
+          "withdrawal_min_size": "1",
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x15d7a535267752856DB7b5cB3aA5C03DDdEE0258"
         }
@@ -92648,9 +92733,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "10",
+          "withdrawal_min_fee": "55",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "20",
+          "withdrawal_min_size": "66",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0x059956483753947536204e89bfaD909E1a434Cc6"
@@ -93314,9 +93399,9 @@
         {
           "chain_name": "TONCOIN",
           "network": "Toncoin(TON)",
-          "withdrawal_min_fee": "500000",
+          "withdrawal_min_fee": "50000",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1000000",
+          "withdrawal_min_size": "100000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "EQBkCw8lcwcgk1nSlMko6SV2cf2ZyxnLR8w3t7923ErnzSBX"
@@ -93433,9 +93518,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "198",
+          "withdrawal_min_fee": "192",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "396",
+          "withdrawal_min_size": "383",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "1xdtu7y3LkkrVCAbm5KGKfYzq1qgKhxxk5AaJBqpump"
@@ -93521,9 +93606,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "14",
+          "withdrawal_min_fee": "110",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "32.4",
+          "withdrawal_min_size": "129.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x5C697fee285B513711A816018DBb34DC0cFC4875"
@@ -94306,6 +94391,23 @@
       ]
     },
     {
+      "currency": "MONITOR",
+      "name": "The Situation",
+      "full_name": "The Situation",
+      "chains": [
+        {
+          "chain_name": "ROBINHOOD",
+          "network": "ROBINHOOD",
+          "withdrawal_min_fee": "50",
+          "withdraw_fee_rate": null,
+          "withdrawal_min_size": "100",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0x1a911bb954dAA9CB38513423075bE74450351e18"
+        }
+      ]
+    },
+    {
       "currency": "MONKE",
       "name": "Monke",
       "full_name": "Monke",
@@ -94517,9 +94619,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "34",
+          "withdrawal_min_fee": "31",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "67",
+          "withdrawal_min_size": "62",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
@@ -94959,11 +95061,11 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "41387",
+          "withdrawal_min_fee": "55556",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "82773",
+          "withdrawal_min_size": "111112",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "GUmbtfjSZkybSFgPibBcvwExEBdXwewJHR5PkTjzpump"
         }
       ]
@@ -95163,9 +95265,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "32",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "91.2",
+          "withdrawal_min_size": "2000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x3073f7aAA4DB83f95e9FFf17424F71D4751a3073"
@@ -95173,7 +95275,7 @@
         {
           "chain_name": "MOVEMENT",
           "network": "MOVEMENT",
-          "withdrawal_min_fee": "0",
+          "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
           "is_withdraw_enabled": true,
@@ -96189,7 +96291,7 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "7",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "MTR"
         }
@@ -96206,7 +96308,7 @@
           "withdrawal_min_fee": "2",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "10",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "MTRG"
         }
@@ -97263,9 +97365,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.012405",
+          "withdrawal_min_fee": "0.01157",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.024809",
+          "withdrawal_min_size": "0.023139",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "7cBuurYDdaqxnem7KyMTci6SWhjJKroZ6NUjqH2ewEPB"
@@ -97416,9 +97518,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "679",
+          "withdrawal_min_fee": "658",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1357",
+          "withdrawal_min_size": "1315",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Bm3dgkZrjH7eaz1GBH1R2ZHkp7nZUoPNJhjekoxepump"
@@ -98075,9 +98177,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "11531",
+          "withdrawal_min_fee": "9828",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "23061",
+          "withdrawal_min_size": "19655",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "FRySi8LPkuByB7VPSCCggxpewFUeeJiwEGRKKuhwpKcX"
@@ -98765,9 +98867,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "109",
+          "withdrawal_min_fee": "178",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "218",
+          "withdrawal_min_size": "356",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr"
@@ -98918,9 +99020,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2400",
+          "withdrawal_min_fee": "15517",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "12007.2",
+          "withdrawal_min_size": "21654",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x812Ba41e071C7b7fA4EBcFB62dF5F45f6fA853Ee"
@@ -99326,7 +99428,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "3",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
@@ -99839,9 +99941,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "100",
+          "withdrawal_min_fee": "2616",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "770.4",
+          "withdrawal_min_size": "3150",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xe831F96A7a1DcE1aa2EB760b1e296c6A74CaA9d5"
@@ -100644,7 +100746,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "10",
+          "withdrawal_min_fee": "32",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "37.2",
           "is_withdraw_enabled": true,
@@ -100763,11 +100865,11 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "90",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "150",
+          "withdrawal_min_size": "14",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x3065930e06307eeCF872304299cE9be2a2F6bCe0"
         }
       ]
@@ -101198,7 +101300,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "40",
+          "withdrawal_min_fee": "169",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "213.6",
           "is_withdraw_enabled": true,
@@ -101253,7 +101355,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1000",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xBD4372e44c5eE654dd838304006E1f0f69983154"
         }
       ]
@@ -101334,9 +101436,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "319",
+          "withdrawal_min_fee": "820",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "600",
+          "withdrawal_min_size": "964.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x6e6F6d696e61decd6605bD4a57836c5DB6923340"
@@ -101548,9 +101650,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "4",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "10",
+          "withdrawal_min_size": "8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "nosXBVoaCTtYdLvKY6Csb4AC8JCdQKKAaWYtx2ZMoo7"
@@ -102181,7 +102283,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x5145494a5f5100e645e4b0aa950fa6b68f614e8c59e17bc5ded3495123a79178::ns::NS"
         }
       ]
@@ -102816,9 +102918,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.006706",
+          "withdrawal_min_fee": "0.006635",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.013411",
+          "withdrawal_min_size": "0.01327",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh"
@@ -103108,9 +103210,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1022",
+          "withdrawal_min_fee": "7284",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1058.4",
+          "withdrawal_min_size": "8014.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x644192291cc835A93d6330b24EA5f5FEdD0eEF9e"
@@ -104742,9 +104844,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "8",
+          "withdrawal_min_fee": "11",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "20",
+          "withdrawal_min_size": "37.2",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x0001A500A6B18995B03f44bb040A5fFc28E45CB0"
@@ -104901,7 +105003,7 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "10",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": null
         }
@@ -104983,7 +105085,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2000",
+          "withdrawal_min_fee": "2220",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "9990",
           "is_withdraw_enabled": true,
@@ -105316,7 +105418,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1",
+          "withdrawal_min_fee": "4",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "6",
           "is_withdraw_enabled": true,
@@ -105365,14 +105467,14 @@
       "full_name": "Harmony",
       "chains": [
         {
-          "chain_name": "ONE",
-          "network": "ONE",
-          "withdrawal_min_fee": "1",
+          "chain_name": "ETH",
+          "network": "Ethereum(ERC20)",
+          "withdrawal_min_fee": "250",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "10",
+          "withdrawal_min_size": "500",
           "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
-          "contract_address": null
+          "is_deposit_enabled": true,
+          "contract_address": "0xff74317e948695297acb79cb2de06111f5cc16b3"
         }
       ]
     },
@@ -106223,7 +106325,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "251",
+          "withdrawal_min_fee": "80",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "568.8",
           "is_withdraw_enabled": true,
@@ -106583,9 +106685,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "1.03",
+          "withdrawal_min_fee": "0.92",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "2.06",
+          "withdrawal_min_size": "1.84",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE"
@@ -107008,7 +107110,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "7",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "13.2",
           "is_withdraw_enabled": true,
@@ -107212,9 +107314,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "238",
+          "withdrawal_min_fee": "157",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "475",
+          "withdrawal_min_size": "314",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump"
@@ -107229,9 +107331,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "6661",
+          "withdrawal_min_fee": "5485",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "13322",
+          "withdrawal_min_size": "10970",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "octo82drBEdm8CSDaEKBymVn86TBtgmPnDdmE64PTqJ"
@@ -107252,6 +107354,23 @@
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "EQB9XTAlKWuT8ZqDAjJFlskOwLIHWE9D_mSfunvtOTSjkQ7D"
+        }
+      ]
+    },
+    {
+      "currency": "OURA(PRE)",
+      "name": "OURA(PRE)",
+      "full_name": "OURA(PRE)",
+      "chains": [
+        {
+          "chain_name": "NONE",
+          "network": "NONE",
+          "withdrawal_min_fee": "1",
+          "withdraw_fee_rate": null,
+          "withdrawal_min_size": "2",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
+          "contract_address": null
         }
       ]
     },
@@ -107297,11 +107416,11 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "14",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "21.6",
+          "withdrawal_min_size": "5",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x1F34c87ded863Fe3A3Cd76FAc8adA9608137C8c3"
         }
       ]
@@ -107739,9 +107858,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "47",
+          "withdrawal_min_fee": "287",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "336",
+          "withdrawal_min_size": "612",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16"
@@ -107943,9 +108062,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "97",
+          "withdrawal_min_fee": "150",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "193",
+          "withdrawal_min_size": "300",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump"
@@ -108130,9 +108249,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "10",
+          "withdrawal_min_fee": "152",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "73.2",
+          "withdrawal_min_size": "171.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xf1df7305E4BAB3885caB5B1e4dFC338452a67891"
@@ -108864,9 +108983,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "239",
+          "withdrawal_min_fee": "138",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "478",
+          "withdrawal_min_size": "275",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "PAYmo6moDF3Ro3X6bU2jwe2UdBnBhv8YjLgL1j4DxGu"
@@ -109690,7 +109809,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "151500618",
+          "withdrawal_min_fee": "248091982",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "946748814",
           "is_withdraw_enabled": true,
@@ -109843,9 +109962,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "187",
+          "withdrawal_min_fee": "151",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "373",
+          "withdrawal_min_size": "301",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv"
@@ -109860,11 +109979,11 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "1756",
+          "withdrawal_min_fee": "2007",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "3512",
+          "withdrawal_min_size": "4014",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
         }
       ]
@@ -110030,7 +110149,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "177685",
+          "withdrawal_min_fee": "552851",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "649221.6",
           "is_withdraw_enabled": true,
@@ -111247,7 +111366,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "22",
+          "withdrawal_min_fee": "11",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "39.6",
           "is_withdraw_enabled": true,
@@ -111954,7 +112073,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "30",
+          "withdrawal_min_fee": "14",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "104.4",
           "is_withdraw_enabled": true,
@@ -112209,9 +112328,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "84",
+          "withdrawal_min_fee": "80",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "167",
+          "withdrawal_min_size": "159",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
@@ -112366,7 +112485,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": false,
+          "is_deposit_enabled": true,
           "contract_address": null
         }
       ]
@@ -113432,7 +113551,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "80",
+          "withdrawal_min_fee": "187",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "614.4",
           "is_withdraw_enabled": true,
@@ -113891,9 +114010,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "29",
+          "withdrawal_min_fee": "27",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "57",
+          "withdrawal_min_size": "54",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "2qEHjDLDLbuBgRYvsxhc5D6uDWAivNFZGan56P1tpump"
@@ -113993,11 +114112,11 @@
         {
           "chain_name": "BASE",
           "network": "BASE",
-          "withdrawal_min_fee": "1",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xeD664536023d8E4b1640C394777D34aBAFF1dF8F"
         }
       ]
@@ -114285,7 +114404,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "5",
+          "withdrawal_min_fee": "11",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "37.2",
           "is_withdraw_enabled": true,
@@ -114482,9 +114601,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "789",
+          "withdrawal_min_fee": "1112",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "925.2",
+          "withdrawal_min_size": "1196.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x57b946008913b82e4df85f501cbaed910e58d26c"
@@ -114516,9 +114635,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "67",
+          "withdrawal_min_fee": "59",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "133",
+          "withdrawal_min_size": "118",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC"
@@ -114703,9 +114822,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "30",
+          "withdrawal_min_fee": "26",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "59",
+          "withdrawal_min_size": "52",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr"
@@ -114907,7 +115026,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "36",
+          "withdrawal_min_fee": "20",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "84",
           "is_withdraw_enabled": true,
@@ -114941,7 +115060,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "2144",
+          "withdrawal_min_fee": "1951",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "3902",
           "is_withdraw_enabled": true,
@@ -115087,7 +115206,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "5",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "13.2",
           "is_withdraw_enabled": true,
@@ -115495,9 +115614,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "255",
+          "withdrawal_min_fee": "242",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "510",
+          "withdrawal_min_size": "484",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "4LLbsb5ReP3yEtYzmXewyGjcir5uXtKFURtaEUVC2AHs"
@@ -115841,7 +115960,7 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x30c7235866872213F68cb1F08c37Cb9eCCB93452"
         }
@@ -115872,7 +115991,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "20",
+          "withdrawal_min_fee": "5",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "42",
           "is_withdraw_enabled": true,
@@ -116870,7 +116989,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "22",
+          "withdrawal_min_fee": "38",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "117.6",
           "is_withdraw_enabled": true,
@@ -116989,9 +117108,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "343",
+          "withdrawal_min_fee": "360",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "685",
+          "withdrawal_min_size": "719",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn"
@@ -117458,9 +117577,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "15951",
+          "withdrawal_min_fee": "13288",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "31902",
+          "withdrawal_min_size": "26576",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "8UKuetxWnpC9Po9Mpf3ptT2wEvkqg9GxZWnnx4VPhpeD"
@@ -117594,9 +117713,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "2829",
+          "withdrawal_min_fee": "2671",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "5658",
+          "withdrawal_min_size": "5342",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "D6xWgRCSHoMEB5fqPwk3p6Stxirn5ytm2WwboSTTx4oE"
@@ -117764,9 +117883,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "25",
+          "withdrawal_min_fee": "21",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "49",
+          "withdrawal_min_size": "42",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3"
@@ -118294,7 +118413,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.0326",
+          "withdrawal_min_fee": "0.035",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.16548",
           "is_withdraw_enabled": true,
@@ -118365,7 +118484,7 @@
           "withdrawal_min_fee": "35",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "70",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": null
         }
@@ -118396,7 +118515,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "819",
+          "withdrawal_min_fee": "287",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1134",
           "is_withdraw_enabled": true,
@@ -119072,7 +119191,7 @@
         {
           "chain_name": "ROBINHOOD",
           "network": "ROBINHOOD",
-          "withdrawal_min_fee": "25",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "100",
           "is_withdraw_enabled": true,
@@ -119327,7 +119446,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.3",
+          "withdrawal_min_fee": "0.52",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1",
           "is_withdraw_enabled": true,
@@ -119463,11 +119582,11 @@
         {
           "chain_name": "ROBINHOOD",
           "network": "ROBINHOOD",
-          "withdrawal_min_fee": "3",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "6",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x5173D45A1191eE33cBB7D8c7e65f21B04eD54802"
         }
       ]
@@ -119711,9 +119830,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.92",
+          "withdrawal_min_fee": "0.71",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1.83",
+          "withdrawal_min_size": "1.42",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
@@ -120458,9 +120577,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "454",
+          "withdrawal_min_fee": "520",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "908",
+          "withdrawal_min_size": "1039",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "HKJHsYJHMVK5VRyHHk5GhvzY9tBAAtPvDkZfDH6RLDTd"
@@ -120723,7 +120842,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "8",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "26.4",
           "is_withdraw_enabled": true,
@@ -121175,9 +121294,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.87",
+          "withdrawal_min_fee": "0.77",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1.73",
+          "withdrawal_min_size": "1.54",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof"
@@ -121855,9 +121974,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "394",
+          "withdrawal_min_fee": "531",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "787",
+          "withdrawal_min_size": "1061",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "A3rk5gtQ2S24Fhz8Ctfhjj2bDgK1SZF7fXvbH1Jty5Bp"
@@ -122227,16 +122346,6 @@
       "full_name": "Realio",
       "chains": [
         {
-          "chain_name": "NONE",
-          "network": "NONE",
-          "withdrawal_min_fee": "1",
-          "withdraw_fee_rate": null,
-          "withdrawal_min_size": "6",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
-          "contract_address": "2751733"
-        },
-        {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
           "withdrawal_min_fee": "100",
@@ -122308,12 +122417,12 @@
       "full_name": "RIO",
       "chains": [
         {
-          "chain_name": "ALGO",
-          "network": "Algorand(ALGO)",
+          "chain_name": "NONE",
+          "network": "NONE",
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "100",
-          "is_withdraw_enabled": true,
+          "withdrawal_min_size": "50292170",
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "2751733"
         }
@@ -122449,9 +122558,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.12",
+          "withdrawal_min_fee": "0.64",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.4",
+          "withdrawal_min_size": "0.804",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xdA7AD9dea9397cffdDAE2F8a052B82f1484252B3"
@@ -122738,9 +122847,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "87",
+          "withdrawal_min_fee": "1272",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "627.6",
+          "withdrawal_min_size": "1383.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xB5F7b021a78f470d31D762C1DDA05ea549904fbd"
@@ -123037,9 +123146,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "117",
+          "withdrawal_min_fee": "118",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "233",
+          "withdrawal_min_size": "236",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "RoamA1USA8xjvpTJZ6RvvxyDRzNh6GCA1zVGKSiMVkn"
@@ -123135,7 +123244,7 @@
           "withdrawal_min_fee": "6",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "20",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x475cbf5919608e0c6Af00e7bf87FaB83bF3Ef6e2"
         },
@@ -123162,7 +123271,7 @@
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0xB3886B3aAA6087B3d185dAeb89AC113D195b5Eb9"
         }
@@ -123278,7 +123387,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "6",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "13.2",
           "is_withdraw_enabled": true,
@@ -123927,9 +124036,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "166",
+          "withdrawal_min_fee": "868",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "332",
+          "withdrawal_min_size": "1041.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x320623b8e4ff03373931769a31fc52a4e78b5d70"
@@ -124505,7 +124614,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "39",
+          "withdrawal_min_fee": "14",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "79.2",
           "is_withdraw_enabled": true,
@@ -124576,8 +124685,8 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
           "contract_address": null
         }
       ]
@@ -124590,11 +124699,11 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "175",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "350",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x80563Fc2dd549bf36f82d3bF3b970Bb5b08dBDdb"
         }
       ]
@@ -125926,11 +126035,11 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "5814",
+          "withdrawal_min_fee": "6793",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "11627",
+          "withdrawal_min_size": "7500",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "SarosY6Vscao718M4A778z4CGtvcwcGef5M9MEH1LGL"
         }
       ]
@@ -126769,6 +126878,23 @@
       ]
     },
     {
+      "currency": "SCHIFFY",
+      "name": "SCHIFFY",
+      "full_name": "SCHIFFY",
+      "chains": [
+        {
+          "chain_name": "ROBINHOOD",
+          "network": "ROBINHOOD",
+          "withdrawal_min_fee": "65",
+          "withdraw_fee_rate": null,
+          "withdrawal_min_size": "130",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
+          "contract_address": "0x42aFA2124ca5a2B83898E46B2dA9a190995b1E18"
+        }
+      ]
+    },
+    {
       "currency": "SCHIZO",
       "name": "Schizo",
       "full_name": "Schizo",
@@ -127116,7 +127242,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "3",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "16.8",
           "is_withdraw_enabled": true,
@@ -128190,7 +128316,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "67",
+          "withdrawal_min_fee": "92",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "416.4",
           "is_withdraw_enabled": true,
@@ -128415,7 +128541,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.001",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x0D94e59332732D18CF3a3D457A8886A2AE29eA1B"
         }
       ]
@@ -128447,7 +128573,7 @@
           "network": "Solana(SOL)",
           "withdrawal_min_fee": "160000",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "250000",
+          "withdrawal_min_size": "200000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "ELPrcU7qRV3DUz8AP6siTE7GkR3gkkBvGmgBRiLnC19Y"
@@ -129192,9 +129318,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "50228",
+          "withdrawal_min_fee": "318087",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "244473.6",
+          "withdrawal_min_size": "843248.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce"
@@ -130779,7 +130905,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "27",
+          "withdrawal_min_fee": "24",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "80",
           "is_withdraw_enabled": true,
@@ -131040,7 +131166,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "87",
+          "withdrawal_min_fee": "147",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "356.4",
           "is_withdraw_enabled": true,
@@ -131142,9 +131268,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "82",
+          "withdrawal_min_fee": "75",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "164",
+          "withdrawal_min_size": "149",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
@@ -131227,7 +131353,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "24",
+          "withdrawal_min_fee": "33",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "60",
           "is_withdraw_enabled": true,
@@ -131859,7 +131985,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.011",
+          "withdrawal_min_fee": "0.01",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.06324",
           "is_withdraw_enabled": true,
@@ -131876,9 +132002,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "24",
+          "withdrawal_min_fee": "22",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "47",
+          "withdrawal_min_size": "43",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "SLXdx4BUt2v9uJQNzWqSfzTJ9UKLUDsvxHFMEEdrfgq"
@@ -132318,9 +132444,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "34",
+          "withdrawal_min_fee": "115",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "98.4",
+          "withdrawal_min_size": "135.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xB17548c7B510427baAc4e267BEa62e800b247173"
@@ -132447,9 +132573,9 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "72",
+          "withdrawal_min_fee": "241",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "106.8",
+          "withdrawal_min_size": "338.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0xf758cfB1467a227516d73d87DA7D36e7Cb6F71f1"
@@ -132974,9 +133100,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "5",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "6",
+          "withdrawal_min_size": "7.2",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f"
@@ -133110,7 +133236,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "20",
+          "withdrawal_min_fee": "29",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "40",
           "is_withdraw_enabled": true,
@@ -133562,7 +133688,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "6234",
+          "withdrawal_min_fee": "5739",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "29901.6",
           "is_withdraw_enabled": true,
@@ -133936,9 +134062,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.05",
+          "withdrawal_min_fee": "3000",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.1",
+          "withdrawal_min_size": "10000",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x7941B14Da72c44614b73FD3fD7476cD492FDe818"
@@ -134065,9 +134191,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "62",
+          "withdrawal_min_fee": "56",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "123",
+          "withdrawal_min_size": "111",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "SonicxvLud67EceaEzCLRnMTBqzYUUYNr93DBkBdDES"
@@ -134186,7 +134312,7 @@
           "network": "Solana(SOL)",
           "withdrawal_min_fee": "8",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "16",
+          "withdrawal_min_size": "15",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "4eDf52YYzL6i6gbZ6FXqrLUPXbtP61f1gPSFM66M4XHe"
@@ -134292,7 +134418,7 @@
           "withdrawal_min_fee": "5",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "20.4",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x31DbA3c96481FDe3CD81C2aaF51F2D8bf618C742"
         }
@@ -134707,9 +134833,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.0025",
+          "withdrawal_min_fee": "0.006942",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.005",
+          "withdrawal_min_size": "0.0072816",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xd318bBBE6B6E83F74e7aCAEb5e94C08ddbDb44c0"
@@ -135220,9 +135346,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.00974",
+          "withdrawal_min_fee": "0.010049",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.019479",
+          "withdrawal_min_size": "0.020097",
           "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "wzAyQTorWyoVXuJKj2x8EqKEGJpS13z6EWE9z5Aondo"
@@ -135257,9 +135383,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.00974",
+          "withdrawal_min_fee": "0.010039",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.01948",
+          "withdrawal_min_size": "0.020077",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8"
@@ -135359,7 +135485,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2830",
+          "withdrawal_min_fee": "1762",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "4810.8",
           "is_withdraw_enabled": true,
@@ -136246,9 +136372,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1",
+          "withdrawal_min_fee": "17",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "4",
+          "withdrawal_min_size": "19.2",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xE0f63A424a4439cBE457D80E4f4b51aD25b2c56C"
@@ -136314,9 +136440,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.001948",
+          "withdrawal_min_fee": "0.001938",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.003896",
+          "withdrawal_min_size": "0.003876",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W"
@@ -137184,10 +137310,10 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "398",
+          "withdrawal_min_fee": "4233",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "796",
-          "is_withdraw_enabled": false,
+          "withdrawal_min_size": "8465",
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "EKtmPPLaCbEEKiwoHHtV7TsRsmPXs5CMGtQtZFSiinsc"
         }
@@ -137758,8 +137884,8 @@
           "withdrawal_min_fee": "0.5",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "30",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
           "contract_address": null
         }
       ]
@@ -137789,9 +137915,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "187",
+          "withdrawal_min_fee": "169",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "374",
+          "withdrawal_min_size": "338",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx"
@@ -137802,7 +137928,7 @@
           "withdrawal_min_fee": "8",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "21.6",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x3019BF2a2eF8040C242C9a4c5c4BD4C81678b2A1"
         }
@@ -137916,23 +138042,23 @@
       "full_name": "Stargate Finance",
       "chains": [
         {
-          "chain_name": "BSC",
-          "network": "BNB Smart Chain(BEP20)",
+          "chain_name": "NONE",
+          "network": "NONE",
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "2.4",
-          "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "withdrawal_min_size": "540948.32",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
           "contract_address": "0xB0D502E938ed5f4df2E681fE6E419ff29631d62b"
         },
         {
-          "chain_name": "ETH",
+          "chain_name": "NONE",
           "network": "Ethereum(ERC20)",
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "20",
-          "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "withdrawal_min_size": "100000000000000.01",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
           "contract_address": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
         }
       ]
@@ -138229,7 +138355,7 @@
           "network": "Solana(SOL)",
           "withdrawal_min_fee": "5",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "9",
+          "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx"
@@ -138380,9 +138506,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "913",
+          "withdrawal_min_fee": "766",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1826",
+          "withdrawal_min_size": "1532",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "W2bAuFf2Xeb7ZNpJTywFSaCs5jYkaLYtBMR53SzVXUo"
@@ -138441,7 +138567,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "8",
+          "withdrawal_min_fee": "19",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "58.8",
           "is_withdraw_enabled": true,
@@ -138628,9 +138754,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "186",
+          "withdrawal_min_fee": "173",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "372",
+          "withdrawal_min_size": "345",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "STREAMribRwybYpMmSYoCsQUdr6MZNXEqHgm7p1gu9M"
@@ -140358,9 +140484,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "194",
+          "withdrawal_min_fee": "178",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "388",
+          "withdrawal_min_size": "356",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump"
@@ -140538,9 +140664,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "26",
+          "withdrawal_min_fee": "262",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "66",
+          "withdrawal_min_size": "314.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xc8bf8bC34874E07f6A0d4aBc8be22ba9E372631b"
@@ -141191,8 +141317,8 @@
     },
     {
       "currency": "SYS",
-      "name": "Syscoin Rollux",
-      "full_name": "Syscoin Rollux",
+      "name": "Syscoin",
+      "full_name": "Syscoin",
       "chains": [
         {
           "chain_name": "SYS",
@@ -141202,16 +141328,6 @@
           "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
-          "contract_address": null
-        },
-        {
-          "chain_name": "SYSROLLUX",
-          "network": "SYSROLLUX",
-          "withdrawal_min_fee": "1",
-          "withdraw_fee_rate": null,
-          "withdrawal_min_size": "2",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
           "contract_address": null
         }
       ]
@@ -141292,7 +141408,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "50",
+          "withdrawal_min_fee": "96",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "235.2",
           "is_withdraw_enabled": true,
@@ -141523,9 +141639,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "390",
+          "withdrawal_min_fee": "323",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "779",
+          "withdrawal_min_size": "646",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Hax9LTgsQkze1YFychnBLtFH8gYbQKtKfWKKg2SP6gdD"
@@ -142250,7 +142366,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1.17",
+          "withdrawal_min_fee": "1.3",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2.4",
           "is_withdraw_enabled": true,
@@ -142984,7 +143100,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "199",
+          "withdrawal_min_fee": "853",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "1966.8",
           "is_withdraw_enabled": true,
@@ -143409,7 +143525,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "3",
+          "withdrawal_min_fee": "2",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "9.6",
           "is_withdraw_enabled": true,
@@ -143725,7 +143841,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2.4",
           "is_withdraw_enabled": true,
@@ -144133,9 +144249,9 @@
         {
           "chain_name": "NONE",
           "network": "NONE",
-          "withdrawal_min_fee": "0.5",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "2",
+          "withdrawal_min_size": "125715100",
           "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": null
@@ -144143,11 +144259,11 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "500",
+          "withdrawal_min_fee": "50",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1000",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
+          "withdrawal_min_size": "100",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
           "contract_address": "0x551ecFDBa071cB6541f642cB90a073c8c158Df05"
         }
       ]
@@ -144432,9 +144548,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "373",
+          "withdrawal_min_fee": "572",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "746",
+          "withdrawal_min_size": "1143",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "BJUP7hZoN8GFunH3ucrdBjuphyz2Ryg1R8pt3D4tm6wZ"
@@ -144874,7 +144990,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "611",
+          "withdrawal_min_fee": "759",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2864.4",
           "is_withdraw_enabled": true,
@@ -144985,7 +145101,7 @@
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.08",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "0x992651BFeB9A0DCC4457610E284ba66D86489d4d"
         }
@@ -145349,9 +145465,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "42",
+          "withdrawal_min_fee": "39",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "83",
+          "withdrawal_min_size": "78",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "TNSRxcUxoT9xBG3de7PiJyTDYu7kskLqcpddxnEJAS6"
@@ -145383,9 +145499,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "921",
+          "withdrawal_min_fee": "658",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1841",
+          "withdrawal_min_size": "1316",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump"
@@ -146535,7 +146651,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "3",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "12",
           "is_withdraw_enabled": true,
@@ -146858,9 +146974,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1",
+          "withdrawal_min_fee": "4",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "5",
+          "withdrawal_min_size": "9.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x31EEA0EDeb85B0cB65c1400bd2F4e487fD61B537"
@@ -147055,9 +147171,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "70",
+          "withdrawal_min_fee": "379",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "288",
+          "withdrawal_min_size": "454.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x228bEC415adE4b61D7CaF0adf8C91EAc587BA369"
@@ -147507,9 +147623,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "30",
+          "withdrawal_min_fee": "29",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "59",
+          "withdrawal_min_size": "57",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
@@ -148289,9 +148405,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "0.00408",
+          "withdrawal_min_fee": "0.003932",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "0.008159",
+          "withdrawal_min_size": "0.007864",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB"
@@ -148775,7 +148891,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "477",
+          "withdrawal_min_fee": "1021",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "3118.8",
           "is_withdraw_enabled": true,
@@ -150756,8 +150872,8 @@
     },
     {
       "currency": "UNP",
-      "name": "Unipoly Coin",
-      "full_name": "Unipoly Coin",
+      "name": "UNP-UNIPOLY",
+      "full_name": "UNP-UNIPOLY",
       "chains": [
         {
           "chain_name": "UNIPOLY",
@@ -150768,16 +150884,6 @@
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": null
-        },
-        {
-          "chain_name": "NONE",
-          "network": "NONE",
-          "withdrawal_min_fee": "226",
-          "withdraw_fee_rate": null,
-          "withdrawal_min_size": "274.8",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
-          "contract_address": "0x23d7Ff057c696fEE679c60cEf61Fee6614218f04"
         }
       ]
     },
@@ -150789,9 +150895,9 @@
         {
           "chain_name": "NONE",
           "network": "NONE",
-          "withdrawal_min_fee": "100",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "200",
+          "withdrawal_min_size": "933821.9",
           "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": null
@@ -150993,7 +151099,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "2",
+          "withdrawal_min_fee": "4",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "6",
           "is_withdraw_enabled": true,
@@ -151693,7 +151799,7 @@
           "withdrawal_min_fee": "0.05",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1"
         },
@@ -151720,7 +151826,7 @@
         {
           "chain_name": "MOVEMENT",
           "network": "MOVEMENT",
-          "withdrawal_min_fee": "0",
+          "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
           "is_withdraw_enabled": false,
@@ -152051,11 +152157,11 @@
         {
           "chain_name": "OP",
           "network": "Optimism(OP)",
-          "withdrawal_min_fee": "0",
+          "withdrawal_min_fee": "0.0078",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "27282.522674",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
+          "withdrawal_min_size": "3",
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
           "contract_address": "0x01bFF41798a0BcF287b996046Ca68b395DbC1071"
         },
         {
@@ -152263,9 +152369,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "7",
+          "withdrawal_min_fee": "5",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "13",
+          "withdrawal_min_size": "10",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
@@ -153268,7 +153374,7 @@
           "withdrawal_min_fee": "35",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "100",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0xf486ad071f3bEE968384D2E39e2D8aF0fCf6fd46"
         }
@@ -153472,8 +153578,8 @@
           "withdrawal_min_fee": "0.03",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.1",
-          "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": false,
           "contract_address": null
         }
       ]
@@ -153931,9 +154037,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "193",
+          "withdrawal_min_fee": "185",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "386",
+          "withdrawal_min_size": "370",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump"
@@ -154084,9 +154190,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1",
+          "withdrawal_min_fee": "2",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1.2",
+          "withdrawal_min_size": "2.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xC9bCa88B04581699fAb5aa276CCafF7Df957cbbf"
@@ -154947,9 +155053,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "419",
+          "withdrawal_min_fee": "4774",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "450",
+          "withdrawal_min_size": "5661.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x7d5121505149065b562C789A0145eD750e6E8cdD"
@@ -154998,9 +155104,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "30000",
+          "withdrawal_min_fee": "240650",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "50000",
+          "withdrawal_min_size": "277966.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xf411903cbc70a74d22900a5de66a2dda66507255"
@@ -155705,9 +155811,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "126",
+          "withdrawal_min_fee": "125",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "252",
+          "withdrawal_min_size": "250",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ"
@@ -157163,9 +157269,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "185012",
+          "withdrawal_min_fee": "190373",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "370024",
+          "withdrawal_min_size": "380746",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "WENWENvqqNya429ubCdR81ZmD69brwQaaBYY6p3LCpk"
@@ -157231,9 +157337,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "24",
+          "withdrawal_min_fee": "22",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "47",
+          "withdrawal_min_size": "44",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U"
@@ -157301,7 +157407,7 @@
           "network": "Ethereum(ERC20)",
           "withdrawal_min_fee": "12",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "24",
+          "withdrawal_min_size": "62.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xf31698DDAd0d11160Fe85c500397A470CD3d492E"
@@ -157588,9 +157694,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "1903",
+          "withdrawal_min_fee": "1872",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "3806",
+          "withdrawal_min_size": "3743",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
@@ -157690,9 +157796,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "8",
+          "withdrawal_min_fee": "7",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "15",
+          "withdrawal_min_size": "13",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm"
@@ -157826,9 +157932,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "44",
+          "withdrawal_min_fee": "394",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "135.6",
+          "withdrawal_min_size": "554.4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x2a3bff78b79a009976eea096a51a948a3dc00e34"
@@ -158203,7 +158309,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "4.8",
           "is_withdraw_enabled": true,
@@ -158237,7 +158343,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "17",
+          "withdrawal_min_fee": "40",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "61.2",
           "is_withdraw_enabled": true,
@@ -158410,10 +158516,10 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "8",
+          "withdrawal_min_fee": "20",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "36",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "0xDBB5Cf12408a3Ac17d668037Ce289f9eA75439D7"
         }
@@ -158716,9 +158822,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "5380000",
+          "withdrawal_min_fee": "92081063",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "27312681.6",
+          "withdrawal_min_size": "147860154",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x8De39B057CC6522230AB19C0205080a8663331Ef"
@@ -159263,9 +159369,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "26",
+          "withdrawal_min_fee": "253",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "237.6",
+          "withdrawal_min_size": "288",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x8143182a775C54578c8B7b3Ef77982498866945D"
@@ -160272,7 +160378,7 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "2",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x7427bd9542e64d1Ac207a540CfCE194B7390a07f"
         },
@@ -160986,9 +161092,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "41488693",
+          "withdrawal_min_fee": "694521087",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "329777896.8",
+          "withdrawal_min_size": "974973843.6",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0x06450dEe7FD2Fb8E39061434BAbCFC05599a6Fb8"
@@ -161353,7 +161459,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "1266",
+          "withdrawal_min_fee": "2591",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "5934",
           "is_withdraw_enabled": true,
@@ -162997,7 +163103,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "0.04",
+          "withdrawal_min_fee": "0.02",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.1",
           "is_withdraw_enabled": true,
@@ -163320,11 +163426,11 @@
         {
           "chain_name": "ARB",
           "network": "Arbitrum One(ARB)",
-          "withdrawal_min_fee": "10",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "20",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0xdE70AeD3d14d39b4955147EfcF272334bdB75AB5"
         }
       ]
@@ -164777,7 +164883,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "25",
+          "withdrawal_min_fee": "31",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "93.6",
           "is_withdraw_enabled": true,
@@ -164798,7 +164904,7 @@
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "0.15",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": null
         }
       ]
@@ -164896,9 +165002,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "750",
+          "withdrawal_min_fee": "684",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1500",
+          "withdrawal_min_size": "1368",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU"
@@ -164967,9 +165073,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "14",
+          "withdrawal_min_fee": "21",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "27",
+          "withdrawal_min_size": "42",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR"
@@ -165020,7 +165126,7 @@
           "network": "Ethereum(ERC20)",
           "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "1407.6",
+          "withdrawal_min_size": "1",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": "0xc52c326331e9ce41f04484d3b5e5648158028804"
@@ -165310,7 +165416,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "565",
+          "withdrawal_min_fee": "244",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "620.4",
           "is_withdraw_enabled": true,
@@ -165378,9 +165484,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "47",
+          "withdrawal_min_fee": "46",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "94",
+          "withdrawal_min_size": "91",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn"
@@ -165497,7 +165603,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "4",
+          "withdrawal_min_fee": "22",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "33.6",
           "is_withdraw_enabled": true,
@@ -165671,8 +165777,8 @@
     },
     {
       "currency": "ZIG",
-      "name": "ZIGCOIN",
-      "full_name": "ZIGCOIN",
+      "name": "ZIG Finance",
+      "full_name": "ZIG Finance",
       "chains": [
         {
           "chain_name": "ZIGCHAIN",
@@ -165697,9 +165803,9 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "6",
+          "withdrawal_min_fee": "56",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "52.8",
+          "withdrawal_min_size": "64.8",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "0xb2617246d0c6c0087f18703d576831899ca94f01"
@@ -166638,7 +166744,7 @@
         {
           "chain_name": "ETH",
           "network": "Ethereum(ERC20)",
-          "withdrawal_min_fee": "0.8",
+          "withdrawal_min_fee": "1.89",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "6",
           "is_withdraw_enabled": true,
@@ -166974,9 +167080,9 @@
         {
           "chain_name": "SOL",
           "network": "Solana(SOL)",
-          "withdrawal_min_fee": "52",
+          "withdrawal_min_fee": "58",
           "withdraw_fee_rate": null,
-          "withdrawal_min_size": "103",
+          "withdrawal_min_size": "115",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "HnGCbLLonRzNRAFHqv5AbvZ4FixMkUQztE2egh4sAmqZ"
@@ -167562,11 +167668,11 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "1000",
+          "withdrawal_min_fee": "0",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "3000",
           "is_withdraw_enabled": true,
-          "is_deposit_enabled": true,
+          "is_deposit_enabled": false,
           "contract_address": "0x55e73A66948d49883514E70a4a594b7CC4a87777"
         }
       ]
@@ -167579,7 +167685,7 @@
         {
           "chain_name": "BSC",
           "network": "BNB Smart Chain(BEP20)",
-          "withdrawal_min_fee": "30",
+          "withdrawal_min_fee": "46",
           "withdraw_fee_rate": null,
           "withdrawal_min_size": "60",
           "is_withdraw_enabled": true,
