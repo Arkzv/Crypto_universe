@@ -31,11 +31,8 @@ from .spot_universe_htx import fetch_exchange_universe as fetch_htx_universe
 from .spot_universe_kucoin import fetch_exchange_universe as fetch_kucoin_universe
 from .withdrawal_fee_kucoin import fetch_withdrawal_fees as fetch_kucoin_withdrawal_fees
 from .withdrawal_fee_kucoin import print_summary as print_kucoin_fee_summary
-from .fut_universe_mexc import FUNDING_OUTPUT_FILENAME
-from .fut_universe_mexc import build_funding_rates_payload as build_mexc_funding_rates_payload
-from .fut_universe_mexc import fetch_exchange_universe as fetch_mexc_futures_universe
-from .fut_universe_mexc import print_funding_rates_summary as print_mexc_funding_rates_summary
-from .fut_universe_mexc import print_summary as print_mexc_futures_summary
+from .fut_universe import fetch_requested_exchanges as fetch_futures_universes
+from .fut_universe import write_universes as write_futures_universes
 from .spot_universe_mexc import fetch_exchange_universe as fetch_mexc_universe
 from .withdrawal_fee_mexc import fetch_withdrawal_fees as fetch_mexc_withdrawal_fees
 from .withdrawal_fee_mexc import print_summary as print_mexc_fee_summary
@@ -88,6 +85,10 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=2,
         help="JSON indentation",
+    )
+    parser.add_argument(
+        "--no-push", action="store_true",
+        help="Write snapshots locally without the automatic git commit and push",
     )
     return parser.parse_args()
 
@@ -513,13 +514,15 @@ async def async_main() -> int:
 
     all_tasks: list[Any] = [
         fetch_requested_exchanges(args.exchanges, args.timeout_seconds),
-        fetch_mexc_futures_universe(args.timeout_seconds),
+        fetch_futures_universes(args.exchanges, args.timeout_seconds),
     ]
     fee_keys = list(fee_tasks.keys())
     all_tasks.extend(fee_tasks.values())
-    results = await asyncio.gather(*all_tasks)
+    results = await asyncio.gather(*all_tasks, return_exceptions=True)
     exchange_payloads = results[0]
-    mexc_futures_payload = results[1]
+    futures_payloads = results[1]
+    if isinstance(futures_payloads, BaseException):
+        raise futures_payloads
     fee_payloads = dict(zip(fee_keys, results[2:]))
 
     fee_writers = {
@@ -528,24 +531,27 @@ async def async_main() -> int:
         "mexc": print_mexc_fee_summary,
     }
     out_dir = today_output_dir()
+    write_futures_universes(futures_payloads, out_dir, args.indent)
     for exchange, summary_fn in fee_writers.items():
         fee_data = fee_payloads.get(exchange)
+        if isinstance(fee_data, BaseException):
+            print(f"{exchange} withdrawal fee collection failed: {fee_data}")
+            fee_payloads[exchange] = None
+            continue
         if fee_data is not None:
             fee_path = str(out_dir / f"crypto_withdrawal_fee_{exchange}.json")
             fee_output = write_json(fee_data, fee_path, args.indent)
             summary_fn(fee_data, fee_output)
 
+    if isinstance(exchange_payloads, BaseException):
+        print(f"Spot collection failed; existing spot snapshots retained: {exchange_payloads}")
+        if not args.no_push:
+            auto_commit(generated_at_utc())
+        return 1
+
     for payload in exchange_payloads:
         exchange_path = str(out_dir / f"spot_universe_{payload['exchange']}.json")
         write_json(payload, exchange_path, args.indent)
-
-    futures_path = str(out_dir / "fut_universe_mexc.json")
-    futures_output = write_json(mexc_futures_payload, futures_path, args.indent)
-    print_mexc_futures_summary(mexc_futures_payload, futures_output)
-    futures_funding_payload = build_mexc_funding_rates_payload(mexc_futures_payload)
-    futures_funding_path = str(out_dir / FUNDING_OUTPUT_FILENAME)
-    futures_funding_output = write_json(futures_funding_payload, futures_funding_path, args.indent)
-    print_mexc_funding_rates_summary(futures_funding_payload, futures_funding_output)
 
     combined = build_combined_payload(exchange_payloads)
     usdt_rates = build_usdt_rates(combined)
@@ -557,16 +563,17 @@ async def async_main() -> int:
     report_path = write_volume_report(combined, out_dir)
     print_summary(combined, output_target)
     print(f"Volume report: {report_path}")
-    auto_commit(combined["generated_at"])
-    return 0
+    if not args.no_push:
+        auto_commit(combined["generated_at"])
+    return int(any(p["collection_status"] in {"partial", "error"} for p in futures_payloads))
 
 
 def auto_commit(generated_at: str) -> None:
     repo_root = Path(__file__).resolve().parent.parent
     try:
-        subprocess.run(["git", "add", "output/"], cwd=repo_root, check=True, capture_output=True)
+        subprocess.run(["git", "add", "--", "output/"], cwd=repo_root, check=True, capture_output=True)
         result = subprocess.run(
-            ["git", "diff", "--cached", "--quiet"],
+            ["git", "diff", "--cached", "--quiet", "--", "output/"],
             cwd=repo_root, capture_output=True,
         )
         if result.returncode == 0:
@@ -574,7 +581,7 @@ def auto_commit(generated_at: str) -> None:
             return
         date_str = generated_at[:10]
         subprocess.run(
-            ["git", "commit", "-m", f"crypto universe {date_str}"],
+            ["git", "commit", "-m", f"crypto universe {date_str}", "--", "output/"],
             cwd=repo_root, check=True, capture_output=True,
         )
         print(f"Git: committed crypto universe {date_str}")

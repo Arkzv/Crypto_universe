@@ -82,6 +82,7 @@ async def fetch_exchange_universe(timeout_seconds: float = 20.0) -> dict[str, An
             "contract_detail_rows": len(contract_rows),
             "ticker_rows": len(ticker_rows),
             "futures_pair_count": len(pairs),
+            "active_futures_pair_count": sum(1 for pair in pairs if pair["flags"]["is_active"]),
             "tradable_futures_pair_count": sum(1 for pair in pairs if pair["flags"]["is_tradable"]),
             "api_allowed_enabled_pair_count": sum(
                 1 for pair in pairs if pair["flags"]["state"] == 0 and pair["flags"]["apiAllowed"]
@@ -101,6 +102,8 @@ async def fetch_exchange_universe(timeout_seconds: float = 20.0) -> dict[str, An
 def extract_data_rows(payload: Any, endpoint_name: str) -> list[dict[str, Any]]:
     if not isinstance(payload, dict):
         raise TypeError(f"unexpected MEXC {endpoint_name} payload type: {type(payload)!r}")
+    if payload.get("success") is not True or str(payload.get("code")) != "0":
+        raise ValueError(f"unsuccessful MEXC {endpoint_name} response")
     data = payload.get("data")
     if isinstance(data, list):
         return [row for row in data if isinstance(row, dict)]
@@ -133,6 +136,7 @@ def normalize_mexc_futures_pair(
     pair_type = int_or_none(row.get("type"))
     api_allowed = coerce_bool(row.get("apiAllowed"), default=False)
     is_tradable = state == 0 and api_allowed and pair_type == 1
+    is_active = state == 0 and pair_type == 1 and not coerce_bool(row.get("preMarket"), default=False)
 
     return {
         "exchange": EXCHANGE,
@@ -163,6 +167,7 @@ def normalize_mexc_futures_pair(
             "type": pair_type,
             "type_label": PAIR_TYPE_LABELS.get(pair_type, "unknown"),
             "is_tradable": is_tradable,
+            "is_active": is_active,
             "futureType": int_or_none(row.get("futureType")),
             "positionOpenType": int_or_none(row.get("positionOpenType")),
             "isNew": coerce_bool(row.get("isNew"), default=False),

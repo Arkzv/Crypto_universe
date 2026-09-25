@@ -32,10 +32,16 @@ a{color:#5b9cf5}
 .stats{color:#888;font-size:13px;margin-bottom:10px}
 .stats b{color:#c8c8c8}
 .legend{color:#8d93a1;font-size:12px;margin:-2px 0 10px}
+.coverage{color:#8d93a1;font-size:12px;margin-bottom:10px}
+.coverage.incomplete{color:#ffd37a}
 .wrap{overflow-x:auto}
 table{border-collapse:collapse;width:100%}
 th,td{text-align:left;padding:5px 10px;border-bottom:1px solid #23262f;white-space:nowrap}
 td:last-child{white-space:normal}
+td.exchange-list{white-space:normal;min-width:170px;max-width:260px;line-height:1.6}
+.exchange-list a{text-decoration:none}
+.exchange-list a:hover{text-decoration:underline}
+.unknown{color:#ffd37a}
 th{position:sticky;top:0;background:#1e2028;cursor:pointer;user-select:none;color:#aaa;font-weight:600;font-size:13px}
 th:hover{color:#e8e8e8}
 th .arrow{font-size:10px;margin-left:3px}
@@ -74,6 +80,8 @@ td:nth-child(6){text-align:right}
 </div>
 <div class="stats" id="stats"></div>
 <div class="legend"><span class="transfer-badge deposit">D</span> deposit restricted <span class="transfer-badge withdraw">W</span> withdrawal restricted for the pair's base asset</div>
+<div class="legend">Exchange lists show active markets at the snapshot time, including zero-volume pairs. Futures include perpetual and dated contracts for the same base/quote pair.</div>
+<div class="coverage" id="futuresCoverage" role="status">Loading futures availability&hellip;</div>
 <div id="loading">Loading data&hellip;</div>
 <div class="wrap" id="tableWrap" style="display:none">
 <table>
@@ -84,6 +92,8 @@ td:nth-child(6){text-align:right}
   <th data-col="venues">Venues</th>
   <th data-col="volume">Total Volume</th>
   <th data-col="usdt">USDT Volume</th>
+  <th data-col="spot">Spot exchanges</th>
+  <th data-col="futures">Futures exchanges</th>
   <th data-col="dist">Volume Distribution</th>
 </tr></thead>
 <tbody id="tbody"></tbody>
@@ -98,6 +108,7 @@ let sortAsc=true;
 let rendered=0;
 let selectedExchanges=new Set();
 let allExchanges=[];
+let futuresIncomplete=false;
 const HTML_ESCAPES={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
 const EXCHANGE_LABELS={
   binance:'Binance',
@@ -234,6 +245,47 @@ function buildDistHTML(row){
   return h;
 }
 
+function pairKey(base,quote){
+  return String(base||'').trim().toUpperCase()+'/'+String(quote||'').trim().toUpperCase();
+}
+
+function activeFuturesIndex(payloads){
+  const index=new Map();
+  for(const payload of payloads){
+    if(!payload||!['ok','partial'].includes(payload.collection_status||'ok'))continue;
+    for(const pair of payload.pairs){
+      const flags=pair.flags||{};
+      // Older MEXC snapshots only expose the API-tradable flag.
+      const active=flags.is_active===undefined?flags.is_tradable===true:flags.is_active===true;
+      if(!active||!pair.base_asset||!pair.quote_asset)continue;
+      const key=pairKey(pair.base_asset,pair.quote_asset);
+      if(!index.has(key))index.set(key,new Set());
+      index.get(key).add(payload.exchange);
+    }
+  }
+  return index;
+}
+
+function sortedExchangeIds(exchanges){
+  return [...new Set(exchanges)].sort((a,b)=>exchangeLabel(a).localeCompare(exchangeLabel(b)));
+}
+
+function spotExchangesHTML(row){
+  return row._spotExchanges.map(exchange=>{
+    const name=escapeHtml(exchangeLabel(exchange));
+    const href=tradeUrl(exchange,row.base_asset,row.quote_asset);
+    return href?'<a href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer">'+name+'</a>':name;
+  }).join(', ')||'—';
+}
+
+function futuresExchangesHTML(row){
+  const names=row._futuresExchanges.map(exchange=>escapeHtml(exchangeLabel(exchange))).join(', ');
+  if(!futuresIncomplete)return names||'—';
+  const unknown='<span class="unknown" title="Futures coverage is incomplete; see the status above the table.">'
+    +(names?' + ?':'Unknown')+'</span>';
+  return names+unknown;
+}
+
 function renderBatch(){
   const tbody=document.getElementById('tbody');
   const end=Math.min(rendered+BATCH,filtered.length);
@@ -243,7 +295,7 @@ function renderBatch(){
     const uv=r.total_usdt_volume!=null?fmtVol(r.total_usdt_volume):'—';
     const tv=r.display_total_volume!=null?r.display_total_volume:r.total_quote_volume;
     const tc=r.display_currency||r.quote_asset;
-    html+='<tr><td>'+r._idx+'</td><td>'+r.pair+'</td><td>'+r.base_asset+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(tv)+' '+tc+'</td><td>'+uv+'</td><td>'+r._distHTML+'</td></tr>';
+    html+='<tr><td>'+r._idx+'</td><td>'+escapeHtml(r.pair)+'</td><td>'+escapeHtml(r.base_asset)+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(tv)+' '+escapeHtml(tc)+'</td><td>'+uv+'</td><td class="exchange-list">'+r._spotHTML+'</td><td class="exchange-list">'+r._futuresHTML+'</td><td>'+r._distHTML+'</td></tr>';
   }
   tbody.insertAdjacentHTML('beforeend',html);
   rendered=end;
@@ -297,6 +349,8 @@ function doSort(){
     else if(col==='venues')va=a.venue_count,vb=b.venue_count;
     else if(col==='volume')va=a.total_quote_volume,vb=b.total_quote_volume;
     else if(col==='usdt')va=a.total_usdt_volume??-1,vb=b.total_usdt_volume??-1;
+    else if(col==='spot')va=a._spotExchanges.join(', '),vb=b._spotExchanges.join(', ');
+    else if(col==='futures')va=a._futuresExchanges.length,vb=b._futuresExchanges.length;
     else va=0,vb=0;
     if(typeof va==='string')return va<vb?-asc:va>vb?asc:0;
     return (va-vb)*asc;
@@ -364,14 +418,61 @@ function buildPrimaryExchangeFilter(exchanges){
   });
 }
 
-function combinedJsonUrl(){
-  const url=new URL('output/spot_universe_combined.json',window.location.href);
+function outputJsonUrl(filename){
+  const url=new URL('output/'+filename,window.location.href);
   url.searchParams.set('ts',String(Date.now()));
   return url.toString();
 }
 
-fetch(combinedJsonUrl(),{cache:'no-store'}).then(r=>r.json()).then(data=>{
-  const exchanges=new Set();
+async function loadFuturesPayload(exchange){
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),15000);
+  try{
+    const response=await fetch(outputJsonUrl('fut_universe_'+exchange+'.json'),{cache:'no-store',signal:controller.signal});
+    if(!response.ok)throw new Error('HTTP '+response.status);
+    const payload=await response.json();
+    if(payload.exchange!==exchange||payload.universe_type!=='futures'||!Array.isArray(payload.pairs)){
+      throw new Error('Invalid futures inventory');
+    }
+    if(payload.pairs.some(pair=>!pair||typeof pair.base_asset!=='string'||typeof pair.quote_asset!=='string'
+      ||!pair.flags||typeof pair.flags!=='object')){
+      throw new Error('Invalid futures contract');
+    }
+    if(!['ok','partial','error','unsupported'].includes(payload.collection_status||'ok')){
+      throw new Error('Unknown collection status');
+    }
+    return payload;
+  }catch(error){
+    return {exchange,collection_status:'error',pairs:[]};
+  }finally{
+    clearTimeout(timer);
+  }
+}
+
+function showFuturesCoverage(payloads){
+  const loaded=payloads.filter(p=>['ok','partial'].includes(p.collection_status||'ok'));
+  const missing=payloads.filter(p=>['partial','error'].includes(p.collection_status));
+  const unsupported=payloads.filter(p=>p.collection_status==='unsupported');
+  futuresIncomplete=missing.length>0;
+  const dates=loaded.map(p=>p.generated_at).filter(Boolean).sort();
+  let text='Futures coverage: '+loaded.length+' exchanges';
+  if(dates.length)text+=' · Snapshots: '+dates[0]+(dates[0]!==dates[dates.length-1]?' to '+dates[dates.length-1]:'');
+  if(missing.length)text+=' · Incomplete: '+missing.map(p=>exchangeLabel(p.exchange)).join(', ');
+  if(unsupported.length)text+=' · Futures unavailable: '+unsupported.map(p=>exchangeLabel(p.exchange)).join(', ');
+  const status=document.getElementById('futuresCoverage');
+  status.textContent=text;
+  status.classList.toggle('incomplete',futuresIncomplete);
+}
+
+async function loadUniverse(){
+  const response=await fetch(outputJsonUrl('spot_universe_combined.json'),{cache:'no-store'});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  const data=await response.json();
+  const exchanges=new Set(data.exchanges||data.pairs.flatMap(r=>r.venues.map(v=>v.exchange)));
+  const sortedExchanges=sortedExchangeIds(exchanges);
+  const futuresPayloads=await Promise.all(sortedExchanges.map(loadFuturesPayload));
+  showFuturesCoverage(futuresPayloads);
+  const futuresIndex=activeFuturesIndex(futuresPayloads);
   const quotes=new Set();
   document.getElementById('updated').textContent='Last updated: '+data.generated_at;
 
@@ -379,12 +480,14 @@ fetch(combinedJsonUrl(),{cache:'no-store'}).then(r=>r.json()).then(data=>{
   allRows.forEach(r=>{
     r._distHTML=buildDistHTML(r);
     r._exchanges=new Set(r.venues.map(v=>v.exchange));
+    r._spotExchanges=sortedExchangeIds(r._exchanges);
+    r._futuresExchanges=sortedExchangeIds(futuresIndex.get(pairKey(r.base_asset,r.quote_asset))||[]);
+    r._spotHTML=spotExchangesHTML(r);
+    r._futuresHTML=futuresExchangesHTML(r);
     r._primaryExchange=findPrimaryExchange(r);
-    r._exchanges.forEach(e=>exchanges.add(e));
     quotes.add(r.quote_asset);
   });
 
-  const sortedExchanges=[...exchanges].sort((a,b)=>exchangeLabel(a).localeCompare(exchangeLabel(b)));
   buildExDropdown(sortedExchanges);
   buildPrimaryExchangeFilter(sortedExchanges);
   const qtSel=document.getElementById('quoteFilter');
@@ -395,6 +498,11 @@ fetch(combinedJsonUrl(),{cache:'no-store'}).then(r=>r.json()).then(data=>{
   document.getElementById('stats').innerHTML='Showing <b>'+allRows.length+'</b> of <b>'+allRows.length+'</b> pairs';
   filtered=allRows.slice();
   renderTable();
+}
+
+loadUniverse().catch(error=>{
+  document.getElementById('loading').textContent='Unable to load universe data: '+error.message;
+  document.getElementById('futuresCoverage').textContent='';
 });
 </script>
 </body>

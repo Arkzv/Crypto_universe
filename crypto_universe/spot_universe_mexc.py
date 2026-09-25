@@ -29,19 +29,6 @@ from .withdrawal_fee_mexc import fetch_withdrawal_fees, print_summary as print_f
 EXCHANGE = "mexc"
 EXCHANGE_INFO_URL = "https://api.mexc.com/api/v3/exchangeInfo"
 TICKER_24HR_URL = "https://api.mexc.com/api/v3/ticker/24hr"
-NON_TRADABLE_STATUSES = {
-    "0",
-    "2",
-    "3",
-    "BREAK",
-    "DISABLED",
-    "HALT",
-    "OFFLINE",
-    "PAUSE",
-    "PAUSED",
-    "STOP",
-    "SUSPENDED",
-}
 
 
 async def fetch_exchange_universe(timeout_seconds: float = 20.0) -> dict[str, Any]:
@@ -103,7 +90,7 @@ def normalize_mexc_pair(row: dict[str, Any]) -> dict[str, Any] | None:
         return None
 
     status = normalize_text(row.get("status"))
-    if status in NON_TRADABLE_STATUSES:
+    if status not in {"1", "TRADING"}:
         return None
 
     symbol = normalize_symbol(row.get("symbol"))
