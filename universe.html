@@ -113,7 +113,6 @@ const HTML_ESCAPES={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
 const EXCHANGE_LABELS={
   binance:'Binance',
   bitget:'Bitget',
-  bitmart:'BitMart',
   bybit:'Bybit',
   coinbase:'Coinbase',
   coinw:'CoinW',
@@ -176,8 +175,6 @@ function tradeUrl(exchange, baseAsset, quoteAsset){
       return 'https://www.binance.com/en/trade/'+baseEnc+'_'+quoteEnc+'?type=spot';
     case 'bitget':
       return 'https://www.bitget.com/spot/'+pairCompact;
-    case 'bitmart':
-      return 'https://www.bitmart.com/en-US/trade/'+pairUnderscore;
     case 'bybit':
       return 'https://www.bybit.com/en/trade/spot/'+baseEnc+'/'+quoteEnc;
     case 'coinbase':

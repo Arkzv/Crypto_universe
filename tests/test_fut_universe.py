@@ -18,7 +18,6 @@ class ContractStatusTests(unittest.TestCase):
             ("binance", "linear", {"symbol": "BTCUSDT", "baseAsset": "BTC", "quoteAsset": "USDT"}, "status", "TRADING", "PENDING_TRADING"),
             ("binance", "inverse", {"symbol": "BTCUSD_PERP", "baseAsset": "BTC", "quoteAsset": "USD"}, "contractStatus", "TRADING", "DELIVERED"),
             ("bitget", "USDT-FUTURES", {"symbol": "BTCUSDT", "baseCoin": "BTC", "quoteCoin": "USDT"}, "symbolStatus", "normal", "limit_open"),
-            ("bitmart", "futures", {"symbol": "BTCUSDT", "base_currency": "BTC", "quote_currency": "USDT"}, "status", "Trading", "Delisted"),
             ("bybit", "linear", {"symbol": "BTCUSDT", "baseCoin": "BTC", "quoteCoin": "USDT"}, "status", "Trading", "PreLaunch"),
             ("coinbase", "international", {"symbol": "BTC-PERP", "type": "PERP", "base_asset_name": "BTC", "quote_asset_name": "USDC"}, "trading_state", "TRADING", "HALT"),
             ("coinw", "perpetual", {"name": "BTC", "base": "btc", "quote": "usdt"}, "status", "online", "preOffline"),
@@ -100,7 +99,7 @@ class ContractStatusTests(unittest.TestCase):
         self.assertIsNotNone(normalize_mexc_pair({**row, "status": "1"}))
 
     def test_api_error_envelopes_cannot_become_empty_successes(self):
-        for endpoint in [futures.ENDPOINTS[ex][0] for ex in ("bybit", "bitget", "kucoin", "okx", "htx", "bitmart")]:
+        for endpoint in [futures.ENDPOINTS[ex][0] for ex in ("bybit", "bitget", "kucoin", "okx", "htx")]:
             with self.subTest(endpoint=endpoint):
                 with self.assertRaises(ValueError):
                     futures.extract_rows({endpoint.code_field: "FAIL", "data": [], "result": {"list": []}}, endpoint)
@@ -145,9 +144,9 @@ class FuturesCollectionTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_failure_is_distinct_from_successful_empty_and_unsupported(self):
         with patch.object(futures, "fetch_endpoint", AsyncMock(side_effect=TimeoutError("offline"))):
-            failed = await futures.fetch_exchange_universe("bitmart", 1)
+            failed = await futures.fetch_exchange_universe("kucoin", 1)
         with patch.object(futures, "fetch_endpoint", AsyncMock(return_value=[])):
-            empty = await futures.fetch_exchange_universe("bitmart", 1)
+            empty = await futures.fetch_exchange_universe("kucoin", 1)
         unsupported = await futures.fetch_exchange_universe("upbit", 1)
         self.assertEqual([p["collection_status"] for p in (failed, empty, unsupported)], ["error", "ok", "unsupported"])
 

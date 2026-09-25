@@ -21,7 +21,6 @@ the public market, not account-specific or regional eligibility.
 | --- | --- | --- | --- |
 | Binance | USD-M and coin-M | `status` or `contractStatus` = `TRADING` | [Exchange information](https://developers.binance.com/docs/derivatives/usds-margined-futures/market-data/rest-api/Exchange-Information) |
 | Bitget | USDT, USDC, coin futures | `symbolStatus` = `normal` or `restrictedAPI` | [Contract config](https://www.bitget.com/docs/catalog/classic-contract-market/classic-contract-market) |
-| BitMart | Contract inventory | `status` = `Trading` | [Contract details](https://developer-pro.bitmart.com/en/futuresv2/#get-contract-details) |
 | Bybit | Linear and inverse, all cursor pages | `status` = `Trading`, not pre-listing | [Instruments info](https://bybit-exchange.github.io/docs/v5/market/instrument) |
 | Coinbase | International perpetuals | `type` = `PERP`, `trading_state` = `TRADING` | [Instruments](https://docs.cdp.coinbase.com/api-reference/international-exchange-api/rest-api/instruments/list-instruments) |
 | CoinW | Perpetual inventory | `status` = `online` | [Instrument info](https://www.coinw.com/api-doc/en/futures-trading/market/get-instrument-information) |

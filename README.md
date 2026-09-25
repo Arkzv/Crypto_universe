@@ -11,7 +11,7 @@ Daily overview of tradable spot crypto pairs and their 24h volume distribution a
 
 
 
-Exchanges: Binance, Bitget, BitMart, Bybit, Coinbase, CoinW, Crypto.com, Gate, HTX, KuCoin, MEXC, OKX, Upbit
+Exchanges: Binance, Bitget, Bybit, Coinbase, CoinW, Crypto.com, Gate, HTX, KuCoin, MEXC, OKX, Upbit
 
 Bitget uses the V3 spot API. For Reality stock tokens (`isReality=yes`, such as
 `rILMN`), the displayed volume comes from `platformTurnover24h`, which measures

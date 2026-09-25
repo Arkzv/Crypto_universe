@@ -49,10 +49,6 @@ ENDPOINTS: dict[str, tuple[Endpoint, ...]] = {
                  ("data",), "code", "00000")
         for product in ("USDT-FUTURES", "USDC-FUTURES", "COIN-FUTURES")
     ),
-    "bitmart": (
-        Endpoint("futures", "https://api-cloud-v2.bitmart.com/contract/public/details",
-                 ("data", "symbols"), "code", "1000"),
-    ),
     "bybit": tuple(
         Endpoint(category, f"https://api.bybit.com/v5/market/instruments-info?category={category}&limit=1000",
                  ("result", "list"), "retCode", pagination="cursor")
@@ -168,12 +164,6 @@ def normalize_contract(exchange: str, market: str, row: dict[str, Any]) -> dict[
         contract_type, status = row.get("symbolType"), row.get("symbolStatus")
         active = normalize_text(status) in {"NORMAL", "RESTRICTEDAPI"}
         api_tradable = normalize_text(status) == "NORMAL"
-    elif exchange == "bitmart":
-        base, quote = row.get("base_currency"), row.get("quote_currency")
-        settle = quote
-        contract_type = {1: "PERPETUAL", 2: "FUTURES"}.get(int_or_none(row.get("product_type")))
-        status = row.get("status")
-        active = normalize_text(status) == "TRADING"
     elif exchange == "bybit":
         base, quote, settle = row.get("baseCoin"), row.get("quoteCoin"), row.get("settleCoin")
         contract_type, status = row.get("contractType"), row.get("status")

@@ -19,7 +19,6 @@ from .common import (
 )
 from .spot_universe_binance import fetch_exchange_universe as fetch_binance_universe
 from .spot_universe_bitget import fetch_exchange_universe as fetch_bitget_universe
-from .spot_universe_bitmart import fetch_exchange_universe as fetch_bitmart_universe
 from .spot_universe_bybit import fetch_exchange_universe as fetch_bybit_universe
 from .withdrawal_fee_bybit import fetch_withdrawal_fees as fetch_bybit_withdrawal_fees
 from .withdrawal_fee_bybit import print_summary as print_bybit_fee_summary
@@ -44,7 +43,6 @@ ExchangeFetcher = Callable[[float], Awaitable[dict[str, Any]]]
 EXCHANGE_FETCHERS: dict[str, ExchangeFetcher] = {
     "binance": fetch_binance_universe,
     "bitget": fetch_bitget_universe,
-    "bitmart": fetch_bitmart_universe,
     "bybit": fetch_bybit_universe,
     "coinbase": fetch_coinbase_universe,
     "coinw": fetch_coinw_universe,
