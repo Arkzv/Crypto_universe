@@ -1,0 +1,3982 @@
+{
+  "schema_version": 1,
+  "universe_type": "spot",
+  "exchange": "bitfinex",
+  "generated_at": "2026-09-26T17:50:44+00:00",
+  "source": {
+    "exchange_info_url": "https://api-pub.bitfinex.com/v2/conf/pub:list:pair:exchange,pub:map:currency:sym",
+    "ticker_24hr_url": "https://api-pub.bitfinex.com/v2/tickers?symbols=ALL",
+    "platform_status_url": "https://api-pub.bitfinex.com/v2/platform/status",
+    "platform_status": 1
+  },
+  "summary": {
+    "exchange_info_symbol_rows": 194,
+    "ticker_24hr_rows": 331,
+    "tradable_spot_pair_count": 180,
+    "pairs_with_24h_volume_count": 180,
+    "skipped_symbol_rows": 14,
+    "duplicate_pair_rows": 0
+  },
+  "pairs": [
+    {
+      "exchange": "bitfinex",
+      "pair": "AAVE/USD",
+      "base_asset": "AAVE",
+      "quote_asset": "USD",
+      "symbol": "tAAVE:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tAAVE:USD",
+        "last_price": "155.48",
+        "base_volume": "242.09062517",
+        "quote_volume": "37640.2504014316",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "AAVE/USDT",
+      "base_asset": "AAVE",
+      "quote_asset": "USDT",
+      "symbol": "tAAVE:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tAAVE:UST",
+        "last_price": "155.36",
+        "base_volume": "315.76436955",
+        "quote_volume": "49057.1524532880",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ADA/BTC",
+      "base_asset": "ADA",
+      "quote_asset": "BTC",
+      "symbol": "tADABTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tADABTC",
+        "last_price": "0.00000306",
+        "base_volume": "57527.97740761",
+        "quote_volume": "0.1760356108672866",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ADA/USD",
+      "base_asset": "ADA",
+      "quote_asset": "USD",
+      "symbol": "tADAUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tADAUSD",
+        "last_price": "0.2562",
+        "base_volume": "844128.58271667",
+        "quote_volume": "216265.742892010854",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ADA/USDT",
+      "base_asset": "ADA",
+      "quote_asset": "USDT",
+      "symbol": "tADAUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tADAUST",
+        "last_price": "0.25625",
+        "base_volume": "968859.74163654",
+        "quote_volume": "248270.3087943633750",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ALGO/USD",
+      "base_asset": "ALGO",
+      "quote_asset": "USD",
+      "symbol": "tALGUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tALGUSD",
+        "last_price": "0.11948",
+        "base_volume": "537479.56889378",
+        "quote_volume": "64218.0588914288344",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ALKN/USD",
+      "base_asset": "ALKN",
+      "quote_asset": "USD",
+      "symbol": "tALKN:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tALKN:USD",
+        "last_price": "1",
+        "base_volume": "0.000001",
+        "quote_volume": "0.000001",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ALT2612/USD",
+      "base_asset": "ALT2612",
+      "quote_asset": "USD",
+      "symbol": "tALT2612:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tALT2612:USD",
+        "last_price": "102.5",
+        "base_volume": "1",
+        "quote_volume": "102.5",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ALT2612/USDT",
+      "base_asset": "ALT2612",
+      "quote_asset": "USDT",
+      "symbol": "tALT2612:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tALT2612:UST",
+        "last_price": "104.7",
+        "base_volume": "1",
+        "quote_volume": "104.7",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "APT/USD",
+      "base_asset": "APT",
+      "quote_asset": "USD",
+      "symbol": "tAPTUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tAPTUSD",
+        "last_price": "0.86156",
+        "base_volume": "10942.75350715",
+        "quote_volume": "9427.8387116201540",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ARB/USD",
+      "base_asset": "ARB",
+      "quote_asset": "USD",
+      "symbol": "tARBUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tARBUSD",
+        "last_price": "0.22344",
+        "base_volume": "821421.48696327",
+        "quote_volume": "183538.4170470730488",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ARB/USDT",
+      "base_asset": "ARB",
+      "quote_asset": "USDT",
+      "symbol": "tARBUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tARBUST",
+        "last_price": "0.22354",
+        "base_volume": "513783.93076108",
+        "quote_volume": "114851.2598823318232",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "AVAX/BTC",
+      "base_asset": "AVAX",
+      "quote_asset": "BTC",
+      "symbol": "tAVAX:BTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tAVAX:BTC",
+        "last_price": "0.00013077",
+        "base_volume": "101.5963853",
+        "quote_volume": "0.013285759305681",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "AVAX/USD",
+      "base_asset": "AVAX",
+      "quote_asset": "USD",
+      "symbol": "tAVAX:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tAVAX:USD",
+        "last_price": "10.887",
+        "base_volume": "22641.37510801",
+        "quote_volume": "246496.65080090487",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "AVAX/USDT",
+      "base_asset": "AVAX",
+      "quote_asset": "USDT",
+      "symbol": "tAVAX:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tAVAX:UST",
+        "last_price": "10.888",
+        "base_volume": "3369.25045399",
+        "quote_volume": "36684.39894304312",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "BCHN/USD",
+      "base_asset": "BCHN",
+      "quote_asset": "USD",
+      "symbol": "tBCHN:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tBCHN:USD",
+        "last_price": "337.59",
+        "base_volume": "43.13825004",
+        "quote_volume": "14563.0418310036",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "BMN2/BTC",
+      "base_asset": "BMN2",
+      "quote_asset": "BTC",
+      "symbol": "tBMN2:BTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tBMN2:BTC",
+        "last_price": "0.5",
+        "base_volume": "0.25",
+        "quote_volume": "0.125",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "BMN2/USD",
+      "base_asset": "BMN2",
+      "quote_asset": "USD",
+      "symbol": "tBMN2:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tBMN2:USD",
+        "last_price": "40000",
+        "base_volume": "0.001",
+        "quote_volume": "40.000",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "BTC/EUR",
+      "base_asset": "BTC",
+      "quote_asset": "EUR",
+      "symbol": "tBTCEUR",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tBTCEUR",
+        "last_price": "73833",
+        "base_volume": "1.01344858",
+        "quote_volume": "74825.94900714",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "BTC/GBP",
+      "base_asset": "BTC",
+      "quote_asset": "GBP",
+      "symbol": "tBTCGBP",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tBTCGBP",
+        "last_price": "63661",
+        "base_volume": "0.002291",
+        "quote_volume": "145.847351",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "symbol": "tBTCUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tBTCUSD",
+        "last_price": "84080",
+        "base_volume": "313.38396162",
+        "quote_volume": "26349323.49300960",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "BTC/USDT",
+      "base_asset": "BTC",
+      "quote_asset": "USDT",
+      "symbol": "tBTCUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tBTCUST",
+        "last_price": "84113",
+        "base_volume": "246.22732426",
+        "quote_volume": "20710918.92548138",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "BTC/XAUT",
+      "base_asset": "BTC",
+      "quote_asset": "XAUT",
+      "symbol": "tBTC:XAUT",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tBTC:XAUT",
+        "last_price": "19.639",
+        "base_volume": "0.88784585",
+        "quote_volume": "17.43640464815",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CALCPB/BTC",
+      "base_asset": "CALCPB",
+      "quote_asset": "BTC",
+      "symbol": "tCALCPB:BTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCALCPB:BTC",
+        "last_price": "0.00075",
+        "base_volume": "26.07840871",
+        "quote_volume": "0.0195588065325",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CALCPB/USD",
+      "base_asset": "CALCPB",
+      "quote_asset": "USD",
+      "symbol": "tCALCPB:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCALCPB:USD",
+        "last_price": "68.064",
+        "base_volume": "1.5",
+        "quote_volume": "102.0960",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CALCPB/USDT",
+      "base_asset": "CALCPB",
+      "quote_asset": "USDT",
+      "symbol": "tCALCPB:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCALCPB:UST",
+        "last_price": "65.006",
+        "base_volume": "0.000001",
+        "quote_volume": "0.000065006",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CELO/USD",
+      "base_asset": "CELO",
+      "quote_asset": "USD",
+      "symbol": "tCELO:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCELO:USD",
+        "last_price": "0.097244",
+        "base_volume": "1502.18177036",
+        "quote_volume": "146.07816407688784",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CELO/USDT",
+      "base_asset": "CELO",
+      "quote_asset": "USDT",
+      "symbol": "tCELO:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCELO:UST",
+        "last_price": "0.097422",
+        "base_volume": "198.38017784",
+        "quote_volume": "19.32659368552848",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CH100/BTC",
+      "base_asset": "CH100",
+      "quote_asset": "BTC",
+      "symbol": "tCH100:BTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCH100:BTC",
+        "last_price": "0.00013063357282821686",
+        "base_volume": "0.000001",
+        "quote_volume": "1.3063357282821686E-10",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CH100/USD",
+      "base_asset": "CH100",
+      "quote_asset": "USD",
+      "symbol": "tCH100:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCH100:USD",
+        "last_price": "10",
+        "base_volume": "0.000001",
+        "quote_volume": "0.000010",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CH100/USDT",
+      "base_asset": "CH100",
+      "quote_asset": "USDT",
+      "symbol": "tCH100:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCH100:UST",
+        "last_price": "10",
+        "base_volume": "0.000001",
+        "quote_volume": "0.000010",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CHZ/USD",
+      "base_asset": "CHZ",
+      "quote_asset": "USD",
+      "symbol": "tCHZUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCHZUSD",
+        "last_price": "0.017",
+        "base_volume": "138716.79021249",
+        "quote_volume": "2358.18543361233",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CHZ/USDT",
+      "base_asset": "CHZ",
+      "quote_asset": "USDT",
+      "symbol": "tCHZUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCHZUST",
+        "last_price": "0.017013",
+        "base_volume": "1864.2134927",
+        "quote_volume": "31.7158641513051",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CMSTR/BTC",
+      "base_asset": "CMSTR",
+      "quote_asset": "BTC",
+      "symbol": "tCMSTR:BTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCMSTR:BTC",
+        "last_price": "0.19257",
+        "base_volume": "0.000001",
+        "quote_volume": "1.9257E-7",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CMSTR/USD",
+      "base_asset": "CMSTR",
+      "quote_asset": "USD",
+      "symbol": "tCMSTR:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCMSTR:USD",
+        "last_price": "13451",
+        "base_volume": "0.01",
+        "quote_volume": "134.51",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CMSTR/USDT",
+      "base_asset": "CMSTR",
+      "quote_asset": "USDT",
+      "symbol": "tCMSTR:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCMSTR:UST",
+        "last_price": "16208",
+        "base_volume": "0.000001",
+        "quote_volume": "0.016208",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CMTPL/BTC",
+      "base_asset": "CMTPL",
+      "quote_asset": "BTC",
+      "symbol": "tCMTPL:BTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCMTPL:BTC",
+        "last_price": "0.002304",
+        "base_volume": "0.000001",
+        "quote_volume": "2.304E-9",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CMTPL/USD",
+      "base_asset": "CMTPL",
+      "quote_asset": "USD",
+      "symbol": "tCMTPL:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCMTPL:USD",
+        "last_price": "163.72",
+        "base_volume": "0.8",
+        "quote_volume": "130.976",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CMTPL/USDT",
+      "base_asset": "CMTPL",
+      "quote_asset": "USDT",
+      "symbol": "tCMTPL:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCMTPL:UST",
+        "last_price": "161.87",
+        "base_volume": "9.57",
+        "quote_volume": "1549.0959",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CRV/USD",
+      "base_asset": "CRV",
+      "quote_asset": "USD",
+      "symbol": "tCRVUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCRVUSD",
+        "last_price": "0.35324",
+        "base_volume": "13957.93652464",
+        "quote_volume": "4930.5014979638336",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "CRV/USDT",
+      "base_asset": "CRV",
+      "quote_asset": "USDT",
+      "symbol": "tCRVUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tCRVUST",
+        "last_price": "0.35371",
+        "base_volume": "437.15885432",
+        "quote_volume": "154.6274583615272",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "DASH/USD",
+      "base_asset": "DASH",
+      "quote_asset": "USD",
+      "symbol": "tDSHUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tDSHUSD",
+        "last_price": "72.31",
+        "base_volume": "3415.62185822",
+        "quote_volume": "246983.6165678882",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "DOGE/BTC",
+      "base_asset": "DOGE",
+      "quote_asset": "BTC",
+      "symbol": "tDOGE:BTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tDOGE:BTC",
+        "last_price": "0.00000117",
+        "base_volume": "316504.03461467",
+        "quote_volume": "0.3703097204991639",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "DOGE/USD",
+      "base_asset": "DOGE",
+      "quote_asset": "USD",
+      "symbol": "tDOGE:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tDOGE:USD",
+        "last_price": "0.097724",
+        "base_volume": "4217747.85851485",
+        "quote_volume": "412175.19172550520140",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "DOGE/USDT",
+      "base_asset": "DOGE",
+      "quote_asset": "USDT",
+      "symbol": "tDOGE:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tDOGE:UST",
+        "last_price": "0.097749",
+        "base_volume": "775787.84284165",
+        "quote_volume": "75832.48584992844585",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "DOT/USD",
+      "base_asset": "DOT",
+      "quote_asset": "USD",
+      "symbol": "tDOTUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tDOTUSD",
+        "last_price": "1.2672",
+        "base_volume": "359661.0945677",
+        "quote_volume": "455762.53903618944",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "DOT/USDT",
+      "base_asset": "DOT",
+      "quote_asset": "USDT",
+      "symbol": "tDOTUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tDOTUST",
+        "last_price": "1.2685",
+        "base_volume": "179359.74938266",
+        "quote_volume": "227517.842091904210",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ENA/USD",
+      "base_asset": "ENA",
+      "quote_asset": "USD",
+      "symbol": "tENAUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tENAUSD",
+        "last_price": "0.26956",
+        "base_volume": "38064.4756202",
+        "quote_volume": "10260.660048181112",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ENA/USDT",
+      "base_asset": "ENA",
+      "quote_asset": "USDT",
+      "symbol": "tENAUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tENAUST",
+        "last_price": "0.27807",
+        "base_volume": "1311.29050432",
+        "quote_volume": "364.6305505362624",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETC/BTC",
+      "base_asset": "ETC",
+      "quote_asset": "BTC",
+      "symbol": "tETCBTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETCBTC",
+        "last_price": "0.00011344",
+        "base_volume": "1015.61260038",
+        "quote_volume": "0.1152110933871072",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETC/USD",
+      "base_asset": "ETC",
+      "quote_asset": "USD",
+      "symbol": "tETCUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETCUSD",
+        "last_price": "9.5405",
+        "base_volume": "42296.63772731",
+        "quote_volume": "403531.072237401055",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETC/USDT",
+      "base_asset": "ETC",
+      "quote_asset": "USDT",
+      "symbol": "tETCUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETCUST",
+        "last_price": "9.5569",
+        "base_volume": "5909.3715593",
+        "quote_volume": "56475.27305507417",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETH/BTC",
+      "base_asset": "ETH",
+      "quote_asset": "BTC",
+      "symbol": "tETHBTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETHBTC",
+        "last_price": "0.031979",
+        "base_volume": "517.21440703",
+        "quote_volume": "16.53999952241237",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETH/EUR",
+      "base_asset": "ETH",
+      "quote_asset": "EUR",
+      "symbol": "tETHEUR",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETHEUR",
+        "last_price": "2360.8",
+        "base_volume": "9.13077329",
+        "quote_volume": "21555.929583032",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETH/GBP",
+      "base_asset": "ETH",
+      "quote_asset": "GBP",
+      "symbol": "tETHGBP",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETHGBP",
+        "last_price": "2045.7",
+        "base_volume": "0.002",
+        "quote_volume": "4.0914",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "symbol": "tETHUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETHUSD",
+        "last_price": "2688.1",
+        "base_volume": "3116.11116563",
+        "quote_volume": "8376418.424330003",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETH/USDT",
+      "base_asset": "ETH",
+      "quote_asset": "USDT",
+      "symbol": "tETHUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETHUST",
+        "last_price": "2689.1",
+        "base_volume": "1638.38099037",
+        "quote_volume": "4405770.321203967",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETH/XAUT",
+      "base_asset": "ETH",
+      "quote_asset": "XAUT",
+      "symbol": "tETH:XAUT",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETH:XAUT",
+        "last_price": "0.62822",
+        "base_volume": "0.7667205",
+        "quote_volume": "0.481669152510",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETH2/ETH",
+      "base_asset": "ETH2",
+      "quote_asset": "ETH",
+      "symbol": "tETH2X:ETH",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETH2X:ETH",
+        "last_price": "0.98419",
+        "base_volume": "0.014928",
+        "quote_volume": "0.01469198832",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETH2/USD",
+      "base_asset": "ETH2",
+      "quote_asset": "USD",
+      "symbol": "tETH2X:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETH2X:USD",
+        "last_price": "2328",
+        "base_volume": "0.03827517",
+        "quote_volume": "89.10459576",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ETH2/USDT",
+      "base_asset": "ETH2",
+      "quote_asset": "USDT",
+      "symbol": "tETH2X:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tETH2X:UST",
+        "last_price": "2000",
+        "base_volume": "0.0029",
+        "quote_volume": "5.8000",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "EUR/USDT",
+      "base_asset": "EUR",
+      "quote_asset": "USDT",
+      "symbol": "tEURUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tEURUST",
+        "last_price": "1.1395",
+        "base_volume": "136962.69242027",
+        "quote_volume": "156068.988012897665",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "EURQ/EUR",
+      "base_asset": "EURQ",
+      "quote_asset": "EUR",
+      "symbol": "tEURQ:EUR",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tEURQ:EUR",
+        "last_price": "0.9989",
+        "base_volume": "3.02404449",
+        "quote_volume": "3.020718041061",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "EURQ/USD",
+      "base_asset": "EURQ",
+      "quote_asset": "USD",
+      "symbol": "tEURQ:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tEURQ:USD",
+        "last_price": "1.05",
+        "base_volume": "2.63892448",
+        "quote_volume": "2.7708707040",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "EURQ/USDT",
+      "base_asset": "EURQ",
+      "quote_asset": "USDT",
+      "symbol": "tEURQ:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tEURQ:UST",
+        "last_price": "1.12",
+        "base_volume": "62.05323035",
+        "quote_volume": "69.4996179920",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "EURR/EUR",
+      "base_asset": "EURR",
+      "quote_asset": "EUR",
+      "symbol": "tEURR:EUR",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tEURR:EUR",
+        "last_price": "0.85",
+        "base_volume": "2.90980938",
+        "quote_volume": "2.4733379730",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "EURR/USD",
+      "base_asset": "EURR",
+      "quote_asset": "USD",
+      "symbol": "tEURR:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tEURR:USD",
+        "last_price": "0.72",
+        "base_volume": "1",
+        "quote_volume": "0.72",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "EURR/USDT",
+      "base_asset": "EURR",
+      "quote_asset": "USDT",
+      "symbol": "tEURR:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tEURR:UST",
+        "last_price": "1.028",
+        "base_volume": "58.22666435",
+        "quote_volume": "59.85701095180",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "FIL/USD",
+      "base_asset": "FIL",
+      "quote_asset": "USD",
+      "symbol": "tFILUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tFILUSD",
+        "last_price": "1.1691",
+        "base_volume": "254310.91372882",
+        "quote_volume": "297314.889240363462",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "FIL/USDT",
+      "base_asset": "FIL",
+      "quote_asset": "USDT",
+      "symbol": "tFILUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tFILUST",
+        "last_price": "1.1831",
+        "base_volume": "61675.61701733",
+        "quote_volume": "72968.422493203123",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "GBP/USDT",
+      "base_asset": "GBP",
+      "quote_asset": "USDT",
+      "symbol": "tGBPUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tGBPUST",
+        "last_price": "1.3194",
+        "base_volume": "26658.68474114",
+        "quote_volume": "35173.468647460116",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "GOMINING/USD",
+      "base_asset": "GOMINING",
+      "quote_asset": "USD",
+      "symbol": "tGOMINING:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tGOMINING:USD",
+        "last_price": "0.37237",
+        "base_volume": "9879.67331022",
+        "quote_volume": "3678.8939505266214",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "GOMINING/USDT",
+      "base_asset": "GOMINING",
+      "quote_asset": "USDT",
+      "symbol": "tGOMINING:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tGOMINING:UST",
+        "last_price": "0.37364",
+        "base_volume": "10109.13027969",
+        "quote_volume": "3777.1754377033716",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "GRAM/USD",
+      "base_asset": "GRAM",
+      "quote_asset": "USD",
+      "symbol": "tTONUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTONUSD",
+        "last_price": "1.5393",
+        "base_volume": "3235.52140121",
+        "quote_volume": "4980.438092882553",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "GRAM/USDT",
+      "base_asset": "GRAM",
+      "quote_asset": "USDT",
+      "symbol": "tTONUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTONUST",
+        "last_price": "1.5392",
+        "base_volume": "11055.86723167",
+        "quote_volume": "17017.190842986464",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "GUN/USD",
+      "base_asset": "GUN",
+      "quote_asset": "USD",
+      "symbol": "tGUNUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tGUNUSD",
+        "last_price": "0.00323",
+        "base_volume": "37081.1585656",
+        "quote_volume": "119.772142166888",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "GUN/USDT",
+      "base_asset": "GUN",
+      "quote_asset": "USDT",
+      "symbol": "tGUNUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tGUNUST",
+        "last_price": "0.003336",
+        "base_volume": "11938.64759751",
+        "quote_volume": "39.82732838529336",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "HYPE/USD",
+      "base_asset": "HYPE",
+      "quote_asset": "USD",
+      "symbol": "tHYPE:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tHYPE:USD",
+        "last_price": "92.298",
+        "base_volume": "109.60364936",
+        "quote_volume": "10116.19762862928",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "HYPE/USDT",
+      "base_asset": "HYPE",
+      "quote_asset": "USDT",
+      "symbol": "tHYPE:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tHYPE:UST",
+        "last_price": "91.796",
+        "base_volume": "78.86184833",
+        "quote_volume": "7239.20222930068",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "IOTA/USD",
+      "base_asset": "IOTA",
+      "quote_asset": "USD",
+      "symbol": "tIOTUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tIOTUSD",
+        "last_price": "0.05141",
+        "base_volume": "3978729.97118673",
+        "quote_volume": "204546.5078187097893",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "KAIA/USD",
+      "base_asset": "KAIA",
+      "quote_asset": "USD",
+      "symbol": "tKAIA:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tKAIA:USD",
+        "last_price": "0.03492",
+        "base_volume": "808.57590917",
+        "quote_volume": "28.2354707482164",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "KAIA/USDT",
+      "base_asset": "KAIA",
+      "quote_asset": "USDT",
+      "symbol": "tKAIA:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tKAIA:UST",
+        "last_price": "0.03484",
+        "base_volume": "461.90188482",
+        "quote_volume": "16.0926616671288",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "LEO/BTC",
+      "base_asset": "LEO",
+      "quote_asset": "BTC",
+      "symbol": "tLEOBTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tLEOBTC",
+        "last_price": "0.00010701",
+        "base_volume": "7.54827727",
+        "quote_volume": "0.0008077411506627",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "LEO/USD",
+      "base_asset": "LEO",
+      "quote_asset": "USD",
+      "symbol": "tLEOUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tLEOUSD",
+        "last_price": "8.966",
+        "base_volume": "8843.27638067",
+        "quote_volume": "79288.81602908722",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "LEO/USDT",
+      "base_asset": "LEO",
+      "quote_asset": "USDT",
+      "symbol": "tLEOUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tLEOUST",
+        "last_price": "8.9701",
+        "base_volume": "3975.89801483",
+        "quote_volume": "35664.202782826583",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "LIF3/USD",
+      "base_asset": "LIF3",
+      "quote_asset": "USD",
+      "symbol": "tLIFIII:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tLIFIII:USD",
+        "last_price": "0.00036001",
+        "base_volume": "1636404.28938089",
+        "quote_volume": "589.1219082200142089",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "LIF3/USDT",
+      "base_asset": "LIF3",
+      "quote_asset": "USDT",
+      "symbol": "tLIFIII:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tLIFIII:UST",
+        "last_price": "0.0003788",
+        "base_volume": "2457020.53404693",
+        "quote_volume": "930.719378296977084",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "LINK/USD",
+      "base_asset": "LINK",
+      "quote_asset": "USD",
+      "symbol": "tLINK:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tLINK:USD",
+        "last_price": "14.26",
+        "base_volume": "7397.41313828",
+        "quote_volume": "105487.1113518728",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "LINK/USDT",
+      "base_asset": "LINK",
+      "quote_asset": "USDT",
+      "symbol": "tLINK:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tLINK:UST",
+        "last_price": "14.293",
+        "base_volume": "5762.70728338",
+        "quote_volume": "82366.37520135034",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "LTC/BTC",
+      "base_asset": "LTC",
+      "quote_asset": "BTC",
+      "symbol": "tLTCBTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tLTCBTC",
+        "last_price": "0.0008589",
+        "base_volume": "14228.76156563",
+        "quote_volume": "12.221083308719607",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "LTC/USD",
+      "base_asset": "LTC",
+      "quote_asset": "USD",
+      "symbol": "tLTCUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tLTCUSD",
+        "last_price": "72.096",
+        "base_volume": "16370.84901389",
+        "quote_volume": "1180272.73050541344",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "LTC/USDT",
+      "base_asset": "LTC",
+      "quote_asset": "USDT",
+      "symbol": "tLTCUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tLTCUST",
+        "last_price": "72.12",
+        "base_volume": "18680.72451188",
+        "quote_volume": "1347253.8517967856",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "MNT/USD",
+      "base_asset": "MNT",
+      "quote_asset": "USD",
+      "symbol": "tMNTUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tMNTUSD",
+        "last_price": "0.7013",
+        "base_volume": "1226.85618415",
+        "quote_volume": "860.394241944395",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "MNT/USDT",
+      "base_asset": "MNT",
+      "quote_asset": "USDT",
+      "symbol": "tMNTUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tMNTUST",
+        "last_price": "0.70323",
+        "base_volume": "482.73364805",
+        "quote_volume": "339.4727833182015",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "MXNT/USD",
+      "base_asset": "MXNT",
+      "quote_asset": "USD",
+      "symbol": "tMXNT:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tMXNT:USD",
+        "last_price": "0.02013",
+        "base_volume": "34",
+        "quote_volume": "0.68442",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "NEAR/USD",
+      "base_asset": "NEAR",
+      "quote_asset": "USD",
+      "symbol": "tNEAR:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tNEAR:USD",
+        "last_price": "4.8288",
+        "base_volume": "22945.57010555",
+        "quote_volume": "110799.568925679840",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "NEAR/USDT",
+      "base_asset": "NEAR",
+      "quote_asset": "USDT",
+      "symbol": "tNEAR:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tNEAR:UST",
+        "last_price": "4.8215",
+        "base_volume": "29922.12361627",
+        "quote_volume": "144269.519015845805",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "NYM/USD",
+      "base_asset": "NYM",
+      "quote_asset": "USD",
+      "symbol": "tNYMUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tNYMUSD",
+        "last_price": "0.031109",
+        "base_volume": "205537.62743497",
+        "quote_volume": "6394.07005187448173",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "NYM/USDT",
+      "base_asset": "NYM",
+      "quote_asset": "USDT",
+      "symbol": "tNYMUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tNYMUST",
+        "last_price": "0.03098",
+        "base_volume": "239077.4528373",
+        "quote_volume": "7406.619488899554",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "OP/USD",
+      "base_asset": "OP",
+      "quote_asset": "USD",
+      "symbol": "tOPXUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tOPXUSD",
+        "last_price": "0.14897",
+        "base_volume": "10086.89422393",
+        "quote_volume": "1502.6446325388521",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "OP/USDT",
+      "base_asset": "OP",
+      "quote_asset": "USDT",
+      "symbol": "tOPXUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tOPXUST",
+        "last_price": "0.14885",
+        "base_volume": "10127.58605503",
+        "quote_volume": "1507.4911842912155",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "PEPE/USD",
+      "base_asset": "PEPE",
+      "quote_asset": "USD",
+      "symbol": "tPEPE:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tPEPE:USD",
+        "last_price": "0.00000443",
+        "base_volume": "1875767658.262754",
+        "quote_volume": "8309.65072610400022",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "PEPE/USDT",
+      "base_asset": "PEPE",
+      "quote_asset": "USDT",
+      "symbol": "tPEPE:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tPEPE:UST",
+        "last_price": "0.00000443",
+        "base_volume": "962210776.4051644",
+        "quote_volume": "4262.593739474878292",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "PNK/USD",
+      "base_asset": "PNK",
+      "quote_asset": "USD",
+      "symbol": "tPNKUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tPNKUSD",
+        "last_price": "0.0083066",
+        "base_volume": "3000",
+        "quote_volume": "24.9198000",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "POL/USD",
+      "base_asset": "POL",
+      "quote_asset": "USD",
+      "symbol": "tPOLUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tPOLUSD",
+        "last_price": "0.11698",
+        "base_volume": "90737.21842171",
+        "quote_volume": "10614.4398109716358",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "POL/USDT",
+      "base_asset": "POL",
+      "quote_asset": "USDT",
+      "symbol": "tPOLUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tPOLUST",
+        "last_price": "0.11704",
+        "base_volume": "237643.48972052",
+        "quote_volume": "27813.7940368896608",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "RLS/USD",
+      "base_asset": "RLS",
+      "quote_asset": "USD",
+      "symbol": "tRLSUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tRLSUSD",
+        "last_price": "0.0026",
+        "base_volume": "263161.57685799",
+        "quote_volume": "684.220099830774",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "RLS/USDT",
+      "base_asset": "RLS",
+      "quote_asset": "USDT",
+      "symbol": "tRLSUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tRLSUST",
+        "last_price": "0.00261",
+        "base_volume": "2039093.12648955",
+        "quote_volume": "5322.0330601377255",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "RRT/USD",
+      "base_asset": "RRT",
+      "quote_asset": "USD",
+      "symbol": "tRRTUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tRRTUSD",
+        "last_price": "0.74",
+        "base_volume": "10",
+        "quote_volume": "7.40",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SEI/USD",
+      "base_asset": "SEI",
+      "quote_asset": "USD",
+      "symbol": "tSEIUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSEIUSD",
+        "last_price": "0.073269",
+        "base_volume": "229539.59404875",
+        "quote_volume": "16818.13651635786375",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SEI/USDT",
+      "base_asset": "SEI",
+      "quote_asset": "USDT",
+      "symbol": "tSEIUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSEIUST",
+        "last_price": "0.073879",
+        "base_volume": "89405.97122696",
+        "quote_volume": "6605.22374827657784",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SHIB/USD",
+      "base_asset": "SHIB",
+      "quote_asset": "USD",
+      "symbol": "tSHIB:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSHIB:USD",
+        "last_price": "0.00000598",
+        "base_volume": "1296042364.1068795",
+        "quote_volume": "7750.333337359139410",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SHIB/USDT",
+      "base_asset": "SHIB",
+      "quote_asset": "USDT",
+      "symbol": "tSHIB:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSHIB:UST",
+        "last_price": "0.00000598",
+        "base_volume": "2014089378.7027864",
+        "quote_volume": "12044.254484642662672",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SKY/USD",
+      "base_asset": "SKY",
+      "quote_asset": "USD",
+      "symbol": "tSKYUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSKYUSD",
+        "last_price": "0.07831",
+        "base_volume": "2881.55395587",
+        "quote_volume": "225.6544902841797",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SKY/USDT",
+      "base_asset": "SKY",
+      "quote_asset": "USDT",
+      "symbol": "tSKYUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSKYUST",
+        "last_price": "0.076866",
+        "base_volume": "2530.00663986",
+        "quote_volume": "194.47149037947876",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SOL/BTC",
+      "base_asset": "SOL",
+      "quote_asset": "BTC",
+      "symbol": "tSOLBTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSOLBTC",
+        "last_price": "0.0014437",
+        "base_volume": "4567.45808831",
+        "quote_volume": "6.594039242093147",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SOL/USD",
+      "base_asset": "SOL",
+      "quote_asset": "USD",
+      "symbol": "tSOLUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSOLUSD",
+        "last_price": "121.29",
+        "base_volume": "31867.22724358",
+        "quote_volume": "3865175.9923738182",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SOL/USDT",
+      "base_asset": "SOL",
+      "quote_asset": "USDT",
+      "symbol": "tSOLUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSOLUST",
+        "last_price": "121.34",
+        "base_volume": "35072.46296505",
+        "quote_volume": "4255692.6561791670",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "STABLE/USD",
+      "base_asset": "STABLE",
+      "quote_asset": "USD",
+      "symbol": "tSTABLE:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSTABLE:USD",
+        "last_price": "0.027035",
+        "base_volume": "94431.34393435",
+        "quote_volume": "2552.95138326515225",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "STABLE/USDT",
+      "base_asset": "STABLE",
+      "quote_asset": "USDT",
+      "symbol": "tSTABLE:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSTABLE:UST",
+        "last_price": "0.027067",
+        "base_volume": "173565.78984954",
+        "quote_volume": "4697.90523385749918",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "STG/USD",
+      "base_asset": "STG",
+      "quote_asset": "USD",
+      "symbol": "tSTGUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSTGUSD",
+        "last_price": "0.146",
+        "base_volume": "280.69872701",
+        "quote_volume": "40.98201414346",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "STG/USDT",
+      "base_asset": "STG",
+      "quote_asset": "USDT",
+      "symbol": "tSTGUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSTGUST",
+        "last_price": "0.14139",
+        "base_volume": "1356.19092396",
+        "quote_volume": "191.7518347387044",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "STRCST/BTC",
+      "base_asset": "STRCST",
+      "quote_asset": "BTC",
+      "symbol": "tSTRCST:BTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSTRCST:BTC",
+        "last_price": "0.0011887655127367734",
+        "base_volume": "0.000001",
+        "quote_volume": "1.1887655127367734E-9",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "STRCST/USD",
+      "base_asset": "STRCST",
+      "quote_asset": "USD",
+      "symbol": "tSTRCST:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSTRCST:USD",
+        "last_price": "98.7",
+        "base_volume": "2.1",
+        "quote_volume": "207.27",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "STRCST/USDT",
+      "base_asset": "STRCST",
+      "quote_asset": "USDT",
+      "symbol": "tSTRCST:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSTRCST:UST",
+        "last_price": "98.75",
+        "base_volume": "6.95105985",
+        "quote_volume": "686.4171601875",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "STX/USD",
+      "base_asset": "STX",
+      "quote_asset": "USD",
+      "symbol": "tSTXUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSTXUSD",
+        "last_price": "0.34689",
+        "base_volume": "407.21240333",
+        "quote_volume": "141.2579105911437",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "STX/USDT",
+      "base_asset": "STX",
+      "quote_asset": "USDT",
+      "symbol": "tSTXUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSTXUST",
+        "last_price": "0.34615",
+        "base_volume": "914.84573928",
+        "quote_volume": "316.6738526517720",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SUI/USD",
+      "base_asset": "SUI",
+      "quote_asset": "USD",
+      "symbol": "tSUIUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSUIUSD",
+        "last_price": "1.1778",
+        "base_volume": "285003.56405259",
+        "quote_volume": "335677.197741140502",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SUI/USDT",
+      "base_asset": "SUI",
+      "quote_asset": "USDT",
+      "symbol": "tSUIUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSUIUST",
+        "last_price": "1.1778",
+        "base_volume": "222344.02915385",
+        "quote_volume": "261876.797537404530",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SUN/USD",
+      "base_asset": "SUN",
+      "quote_asset": "USD",
+      "symbol": "tSUNUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSUNUSD",
+        "last_price": "0.017379",
+        "base_volume": "2025.04710709",
+        "quote_volume": "35.19329367411711",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "SUN/USDT",
+      "base_asset": "SUN",
+      "quote_asset": "USDT",
+      "symbol": "tSUNUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tSUNUST",
+        "last_price": "0.017287",
+        "base_volume": "1009.34784899",
+        "quote_volume": "17.44859626549013",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "TITAN1/GBP",
+      "base_asset": "TITAN1",
+      "quote_asset": "GBP",
+      "symbol": "tTITAN1:GBP",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTITAN1:GBP",
+        "last_price": "1.0167",
+        "base_volume": "100",
+        "quote_volume": "101.6700",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "TITAN1/USD",
+      "base_asset": "TITAN1",
+      "quote_asset": "USD",
+      "symbol": "tTITAN1:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTITAN1:USD",
+        "last_price": "1.6",
+        "base_volume": "65",
+        "quote_volume": "104.0",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "TITAN2/GBP",
+      "base_asset": "TITAN2",
+      "quote_asset": "GBP",
+      "symbol": "tTITAN2:GBP",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTITAN2:GBP",
+        "last_price": "1.53",
+        "base_volume": "50",
+        "quote_volume": "76.50",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "TITAN2/USD",
+      "base_asset": "TITAN2",
+      "quote_asset": "USD",
+      "symbol": "tTITAN2:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTITAN2:USD",
+        "last_price": "2.5",
+        "base_volume": "50",
+        "quote_volume": "125.0",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "TITAN4/GBP",
+      "base_asset": "TITAN4",
+      "quote_asset": "GBP",
+      "symbol": "tTITAN4:GBP",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTITAN4:GBP",
+        "last_price": "1.36",
+        "base_volume": "50",
+        "quote_volume": "68.00",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "TITAN4/USD",
+      "base_asset": "TITAN4",
+      "quote_asset": "USD",
+      "symbol": "tTITAN4:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTITAN4:USD",
+        "last_price": "1.8505",
+        "base_volume": "1000000",
+        "quote_volume": "1850500.0000",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "TRX/BTC",
+      "base_asset": "TRX",
+      "quote_asset": "BTC",
+      "symbol": "tTRXBTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTRXBTC",
+        "last_price": "0.00000399",
+        "base_volume": "75364.3229133",
+        "quote_volume": "0.300703648424067",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "TRX/EUR",
+      "base_asset": "TRX",
+      "quote_asset": "EUR",
+      "symbol": "tTRXEUR",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTRXEUR",
+        "last_price": "0.2969",
+        "base_volume": "1000",
+        "quote_volume": "296.9000",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "TRX/USD",
+      "base_asset": "TRX",
+      "quote_asset": "USD",
+      "symbol": "tTRXUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTRXUSD",
+        "last_price": "0.33609",
+        "base_volume": "66853.87557542",
+        "quote_volume": "22468.9190421429078",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "TRX/USDT",
+      "base_asset": "TRX",
+      "quote_asset": "USDT",
+      "symbol": "tTRXUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tTRXUST",
+        "last_price": "0.33628",
+        "base_volume": "188617.37731096",
+        "quote_volume": "63428.2516421296288",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "UNI/USD",
+      "base_asset": "UNI",
+      "quote_asset": "USD",
+      "symbol": "tUNIUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUNIUSD",
+        "last_price": "9.5835",
+        "base_volume": "63439.2053081",
+        "quote_volume": "607969.62407017635",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "UNI/USDT",
+      "base_asset": "UNI",
+      "quote_asset": "USDT",
+      "symbol": "tUNIUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUNIUST",
+        "last_price": "9.6109",
+        "base_volume": "5672.10092337",
+        "quote_volume": "54513.994764416733",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USAT/USD",
+      "base_asset": "USAT",
+      "quote_asset": "USD",
+      "symbol": "tUSAT:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSAT:USD",
+        "last_price": "0.99948",
+        "base_volume": "287.35522198",
+        "quote_volume": "287.2057972645704",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USAT/USDT",
+      "base_asset": "USAT",
+      "quote_asset": "USDT",
+      "symbol": "tUSAT:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSAT:UST",
+        "last_price": "0.99968",
+        "base_volume": "271.81306415",
+        "quote_volume": "271.7260839694720",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USDC/USD",
+      "base_asset": "USDC",
+      "quote_asset": "USD",
+      "symbol": "tUDCUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUDCUSD",
+        "last_price": "0.99971",
+        "base_volume": "1101039.70168168",
+        "quote_volume": "1100720.4001681923128",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USDC/USDT",
+      "base_asset": "USDC",
+      "quote_asset": "USDT",
+      "symbol": "tUDCUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUDCUST",
+        "last_price": "1.0001",
+        "base_volume": "2121965.13256852",
+        "quote_volume": "2122177.329081776852",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USDF/USD",
+      "base_asset": "USDF",
+      "quote_asset": "USD",
+      "symbol": "tUSDF:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSDF:USD",
+        "last_price": "0.9808",
+        "base_volume": "1.86399711",
+        "quote_volume": "1.828208365488",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USDF/USDT",
+      "base_asset": "USDF",
+      "quote_asset": "USDT",
+      "symbol": "tUSDF:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSDF:UST",
+        "last_price": "0.16733",
+        "base_volume": "5.36726953",
+        "quote_volume": "0.8981052104549",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USDQ/USD",
+      "base_asset": "USDQ",
+      "quote_asset": "USD",
+      "symbol": "tUSDQ:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSDQ:USD",
+        "last_price": "0.9914",
+        "base_volume": "5.13135568",
+        "quote_volume": "5.087226021152",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USDQ/USDT",
+      "base_asset": "USDQ",
+      "quote_asset": "USDT",
+      "symbol": "tUSDQ:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSDQ:UST",
+        "last_price": "1.0008",
+        "base_volume": "16.14418793",
+        "quote_volume": "16.157103280344",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USDR/USD",
+      "base_asset": "USDR",
+      "quote_asset": "USD",
+      "symbol": "tUSDR:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSDR:USD",
+        "last_price": "0.499",
+        "base_volume": "0.01",
+        "quote_volume": "0.00499",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USDR/USDT",
+      "base_asset": "USDR",
+      "quote_asset": "USDT",
+      "symbol": "tUSDR:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSDR:UST",
+        "last_price": "0.45",
+        "base_volume": "5.723034",
+        "quote_volume": "2.57536530",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USDT/USD",
+      "base_asset": "USDT",
+      "quote_asset": "USD",
+      "symbol": "tUSTUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSTUSD",
+        "last_price": "0.99964",
+        "base_volume": "14281346.58293314",
+        "quote_volume": "14276205.2981632840696",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USTBL/USD",
+      "base_asset": "USTBL",
+      "quote_asset": "USD",
+      "symbol": "tUSTBL:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSTBL:USD",
+        "last_price": "1.05",
+        "base_volume": "26.48124186",
+        "quote_volume": "27.8053039530",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "USTBL/USDT",
+      "base_asset": "USTBL",
+      "quote_asset": "USDT",
+      "symbol": "tUSTBL:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tUSTBL:UST",
+        "last_price": "1.01",
+        "base_volume": "275",
+        "quote_volume": "277.75",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "WBT/USD",
+      "base_asset": "WBT",
+      "quote_asset": "USD",
+      "symbol": "tWHBT:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tWHBT:USD",
+        "last_price": "83.685",
+        "base_volume": "22.2635",
+        "quote_volume": "1863.1209975",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "WBT/USDT",
+      "base_asset": "WBT",
+      "quote_asset": "USDT",
+      "symbol": "tWHBT:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tWHBT:UST",
+        "last_price": "83.678",
+        "base_volume": "44.3635953",
+        "quote_volume": "3712.2569275134",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "WBTC/BTC",
+      "base_asset": "WBTC",
+      "quote_asset": "BTC",
+      "symbol": "tWBTBTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tWBTBTC",
+        "last_price": "1.001",
+        "base_volume": "0.00019675",
+        "quote_volume": "0.00019694675",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "WBTC/USD",
+      "base_asset": "WBTC",
+      "quote_asset": "USD",
+      "symbol": "tWBTUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tWBTUSD",
+        "last_price": "79965",
+        "base_volume": "0.00034784",
+        "quote_volume": "27.81502560",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XAUT/BTC",
+      "base_asset": "XAUT",
+      "quote_asset": "BTC",
+      "symbol": "tXAUT:BTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXAUT:BTC",
+        "last_price": "0.050943",
+        "base_volume": "6.97051975",
+        "quote_volume": "0.35509918762425",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XAUT/USD",
+      "base_asset": "XAUT",
+      "quote_asset": "USD",
+      "symbol": "tXAUT:USD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXAUT:USD",
+        "last_price": "4277",
+        "base_volume": "46.6296914",
+        "quote_volume": "199435.1901178",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XAUT/USDT",
+      "base_asset": "XAUT",
+      "quote_asset": "USDT",
+      "symbol": "tXAUT:UST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXAUT:UST",
+        "last_price": "4279.2",
+        "base_volume": "227.07632871",
+        "quote_volume": "971705.025815832",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XDC/USD",
+      "base_asset": "XDC",
+      "quote_asset": "USD",
+      "symbol": "tXDCUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXDCUSD",
+        "last_price": "0.030521",
+        "base_volume": "553687.34151244",
+        "quote_volume": "16899.09135030118124",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XDC/USDT",
+      "base_asset": "XDC",
+      "quote_asset": "USDT",
+      "symbol": "tXDCUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXDCUST",
+        "last_price": "0.030527",
+        "base_volume": "2671998.94218452",
+        "quote_volume": "81568.11170806684204",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XLM/USD",
+      "base_asset": "XLM",
+      "quote_asset": "USD",
+      "symbol": "tXLMUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXLMUSD",
+        "last_price": "0.21855",
+        "base_volume": "1413205.57173891",
+        "quote_volume": "308856.0777035387805",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XLM/USDT",
+      "base_asset": "XLM",
+      "quote_asset": "USDT",
+      "symbol": "tXLMUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXLMUST",
+        "last_price": "0.2184",
+        "base_volume": "575000.7386344",
+        "quote_volume": "125580.16131775296",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XMR/BTC",
+      "base_asset": "XMR",
+      "quote_asset": "BTC",
+      "symbol": "tXMRBTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXMRBTC",
+        "last_price": "0.006615",
+        "base_volume": "840.14841539",
+        "quote_volume": "5.55758176780485",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XMR/USD",
+      "base_asset": "XMR",
+      "quote_asset": "USD",
+      "symbol": "tXMRUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXMRUSD",
+        "last_price": "556.01",
+        "base_volume": "2443.22518738",
+        "quote_volume": "1358457.6364351538",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XMR/USDT",
+      "base_asset": "XMR",
+      "quote_asset": "USDT",
+      "symbol": "tXMRUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXMRUST",
+        "last_price": "556.31",
+        "base_volume": "3989.31845059",
+        "quote_volume": "2219297.7472477229",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XPL/USD",
+      "base_asset": "XPL",
+      "quote_asset": "USD",
+      "symbol": "tXPLUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXPLUSD",
+        "last_price": "0.11755",
+        "base_volume": "10649.4538613",
+        "quote_volume": "1251.843301395815",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XPL/USDT",
+      "base_asset": "XPL",
+      "quote_asset": "USDT",
+      "symbol": "tXPLUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXPLUST",
+        "last_price": "0.11686",
+        "base_volume": "15538.80097588",
+        "quote_volume": "1815.8642820413368",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XRP/BTC",
+      "base_asset": "XRP",
+      "quote_asset": "BTC",
+      "symbol": "tXRPBTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXRPBTC",
+        "last_price": "0.00001826",
+        "base_volume": "277090.18895693",
+        "quote_volume": "5.0596668503535418",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XRP/USD",
+      "base_asset": "XRP",
+      "quote_asset": "USD",
+      "symbol": "tXRPUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXRPUSD",
+        "last_price": "1.5337",
+        "base_volume": "3027558.09231655",
+        "quote_volume": "4643365.846185892735",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "XRP/USDT",
+      "base_asset": "XRP",
+      "quote_asset": "USDT",
+      "symbol": "tXRPUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tXRPUST",
+        "last_price": "1.5352",
+        "base_volume": "2056816.30484806",
+        "quote_volume": "3157624.391202741712",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ZEC/BTC",
+      "base_asset": "ZEC",
+      "quote_asset": "BTC",
+      "symbol": "tZECBTC",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tZECBTC",
+        "last_price": "0.018557",
+        "base_volume": "1.77086539",
+        "quote_volume": "0.03286194904223",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ZEC/USD",
+      "base_asset": "ZEC",
+      "quote_asset": "USD",
+      "symbol": "tZECUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tZECUSD",
+        "last_price": "1559.1",
+        "base_volume": "655.71192994",
+        "quote_volume": "1022320.469969454",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ZEC/USDT",
+      "base_asset": "ZEC",
+      "quote_asset": "USDT",
+      "symbol": "tZECUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tZECUST",
+        "last_price": "1551.1",
+        "base_volume": "21.75871012",
+        "quote_volume": "33749.935267132",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ZRO/USD",
+      "base_asset": "ZRO",
+      "quote_asset": "USD",
+      "symbol": "tZROUSD",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tZROUSD",
+        "last_price": "1.6439",
+        "base_volume": "16527.92950842",
+        "quote_volume": "27170.263318891638",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "pair": "ZRO/USDT",
+      "base_asset": "ZRO",
+      "quote_asset": "USDT",
+      "symbol": "tZROUST",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      },
+      "volume_24h": {
+        "symbol": "tZROUST",
+        "last_price": "1.6444",
+        "base_volume": "2552.21218828",
+        "quote_volume": "4196.857722407632",
+        "quote_volume_method": "base_volume_times_last_price",
+        "open_time_ms": null,
+        "close_time_ms": null,
+        "trade_count": null
+      }
+    }
+  ]
+}

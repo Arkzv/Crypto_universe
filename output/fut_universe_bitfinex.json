@@ -1,0 +1,1208 @@
+{
+  "schema_version": 1,
+  "universe_type": "futures",
+  "exchange": "bitfinex",
+  "generated_at": "2026-09-26T17:50:45+00:00",
+  "collection_status": "ok",
+  "source": {
+    "instrument_urls": [
+      "https://api-pub.bitfinex.com/v2/conf/pub:list:pair:futures,pub:map:currency:sym,pub:map:currency:undl",
+      "https://api-pub.bitfinex.com/v2/platform/status"
+    ]
+  },
+  "errors": [],
+  "summary": {
+    "futures_pair_count": 79,
+    "active_futures_pair_count": 79,
+    "tradable_futures_pair_count": 79,
+    "skipped_instrument_rows": 14,
+    "duplicate_symbol_rows": 0
+  },
+  "pairs": [
+    {
+      "exchange": "bitfinex",
+      "symbol": "tAAVEF0:USTF0",
+      "pair": "AAVE/USDT",
+      "base_asset": "AAVE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tADAF0:USTF0",
+      "pair": "ADA/USDT",
+      "base_asset": "ADA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tALGF0:USTF0",
+      "pair": "ALGO/USDT",
+      "base_asset": "ALGO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tALLOF0:USTF0",
+      "pair": "ALLO/USDT",
+      "base_asset": "ALLO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tAPEF0:USTF0",
+      "pair": "APE/USDT",
+      "base_asset": "APE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tAPTF0:USTF0",
+      "pair": "APT/USDT",
+      "base_asset": "APT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tARBF0:USTF0",
+      "pair": "ARB/USDT",
+      "base_asset": "ARB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tATOF0:USTF0",
+      "pair": "ATOM/USDT",
+      "base_asset": "ATOM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tAUSTRALIA200IXF0:USTF0",
+      "pair": "AUSTRALIA200IX/USDT",
+      "base_asset": "AUSTRALIA200IX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tAVAXF0:USTF0",
+      "pair": "AVAX/USDT",
+      "base_asset": "AVAX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tAXSF0:USTF0",
+      "pair": "AXS/USDT",
+      "base_asset": "AXS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tBNBF0:USTF0",
+      "pair": "BNB/USDT",
+      "base_asset": "BNB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tBTCF0:USTF0",
+      "pair": "BTC/USDT",
+      "base_asset": "BTC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tBVIVF0:USTF0",
+      "pair": "BVIV/USDT",
+      "base_asset": "BVIV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tCHZF0:USTF0",
+      "pair": "CHZ/USDT",
+      "base_asset": "CHZ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tCOMPF0:USTF0",
+      "pair": "COMP/USDT",
+      "base_asset": "COMP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tCRVF0:USTF0",
+      "pair": "CRV/USDT",
+      "base_asset": "CRV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tDEXEF0:USTF0",
+      "pair": "DEXE/USDT",
+      "base_asset": "DEXE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tDOGEF0:USTF0",
+      "pair": "DOGE/USDT",
+      "base_asset": "DOGE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tDOTF0:USTF0",
+      "pair": "DOT/USDT",
+      "base_asset": "DOT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tEGLDF0:USTF0",
+      "pair": "EGLD/USDT",
+      "base_asset": "EGLD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tENAF0:USTF0",
+      "pair": "ENA/USDT",
+      "base_asset": "ENA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tETCF0:USTF0",
+      "pair": "ETC/USDT",
+      "base_asset": "ETC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tETHF0:BTCF0",
+      "pair": "ETH/BTC",
+      "base_asset": "ETH",
+      "quote_asset": "BTC",
+      "settle_asset": "BTC",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tETHF0:USTF0",
+      "pair": "ETH/USDT",
+      "base_asset": "ETH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tEURF0:USTF0",
+      "pair": "EUR/USDT",
+      "base_asset": "EUR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tEUROPE50IXF0:USTF0",
+      "pair": "EUROPE50IX/USDT",
+      "base_asset": "EUROPE50IX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tEVIVF0:USTF0",
+      "pair": "EVIV/USDT",
+      "base_asset": "EVIV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tFETF0:USTF0",
+      "pair": "FET/USDT",
+      "base_asset": "FET",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tFILF0:USTF0",
+      "pair": "FIL/USDT",
+      "base_asset": "FIL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tFRANCE40IXF0:USTF0",
+      "pair": "FRANCE40IX/USDT",
+      "base_asset": "FRANCE40IX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tGALAF0:USTF0",
+      "pair": "GALA/USDT",
+      "base_asset": "GALA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tGBPF0:USTF0",
+      "pair": "GBP/USDT",
+      "base_asset": "GBP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tGERMANY40IXF0:USTF0",
+      "pair": "GERMANY40IX/USDT",
+      "base_asset": "GERMANY40IX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tTONF0:USTF0",
+      "pair": "GRAM/USDT",
+      "base_asset": "GRAM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tHBARF0:USTF0",
+      "pair": "HBAR/USDT",
+      "base_asset": "HBAR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tHONGKONG50IXF0:USTF0",
+      "pair": "HONGKONG50IX/USDT",
+      "base_asset": "HONGKONG50IX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tHYPEF0:USTF0",
+      "pair": "HYPE/USDT",
+      "base_asset": "HYPE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tICPF0:USTF0",
+      "pair": "ICP/USDT",
+      "base_asset": "ICP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tINJF0:USTF0",
+      "pair": "INJ/USDT",
+      "base_asset": "INJ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tIOTF0:USTF0",
+      "pair": "IOTA/USDT",
+      "base_asset": "IOTA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tJAPAN225IXF0:USTF0",
+      "pair": "JAPAN225IX/USDT",
+      "base_asset": "JAPAN225IX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tJASMYF0:USTF0",
+      "pair": "JASMY/USDT",
+      "base_asset": "JASMY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tJTOF0:USTF0",
+      "pair": "JTO/USDT",
+      "base_asset": "JTO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tKAITOF0:USTF0",
+      "pair": "KAITO/USDT",
+      "base_asset": "KAITO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tLDOF0:USTF0",
+      "pair": "LDO/USDT",
+      "base_asset": "LDO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tLINKF0:USTF0",
+      "pair": "LINK/USDT",
+      "base_asset": "LINK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tLTCF0:BTCF0",
+      "pair": "LTC/BTC",
+      "base_asset": "LTC",
+      "quote_asset": "BTC",
+      "settle_asset": "BTC",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tLTCF0:USTF0",
+      "pair": "LTC/USDT",
+      "base_asset": "LTC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tNEARF0:USTF0",
+      "pair": "NEAR/USDT",
+      "base_asset": "NEAR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tNEOF0:USTF0",
+      "pair": "NEO/USDT",
+      "base_asset": "NEO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tONDOF0:USTF0",
+      "pair": "ONDO/USDT",
+      "base_asset": "ONDO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tPEPEF0:USTF0",
+      "pair": "PEPE/USDT",
+      "base_asset": "PEPE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tPOLF0:USTF0",
+      "pair": "POL/USDT",
+      "base_asset": "POL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tSANDF0:USTF0",
+      "pair": "SAND/USDT",
+      "base_asset": "SAND",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tSEIF0:USTF0",
+      "pair": "SEI/USDT",
+      "base_asset": "SEI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tSHIBF0:USTF0",
+      "pair": "SHIB/USDT",
+      "base_asset": "SHIB",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tSOLF0:USTF0",
+      "pair": "SOL/USDT",
+      "base_asset": "SOL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tSPAIN35IXF0:USTF0",
+      "pair": "SPAIN35IX/USDT",
+      "base_asset": "SPAIN35IX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tSUIF0:USTF0",
+      "pair": "SUI/USDT",
+      "base_asset": "SUI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tSUSHIF0:USTF0",
+      "pair": "SUSHI/USDT",
+      "base_asset": "SUSHI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tTAOF0:USTF0",
+      "pair": "TAO/USDT",
+      "base_asset": "TAO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tTRXF0:USTF0",
+      "pair": "TRX/USDT",
+      "base_asset": "TRX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tUK100IXF0:USTF0",
+      "pair": "UK100IX/USDT",
+      "base_asset": "UK100IX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tUKOILF0:USTF0",
+      "pair": "UKOIL/USDT",
+      "base_asset": "UKOIL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tUNIF0:USTF0",
+      "pair": "UNI/USDT",
+      "base_asset": "UNI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXAGF0:USTF0",
+      "pair": "XAG/USDT",
+      "base_asset": "XAG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXAUTF0:BTCF0",
+      "pair": "XAUT/BTC",
+      "base_asset": "XAUT",
+      "quote_asset": "BTC",
+      "settle_asset": "BTC",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXAUTF0:USTF0",
+      "pair": "XAUT/USDT",
+      "base_asset": "XAUT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXDCF0:USTF0",
+      "pair": "XDC/USDT",
+      "base_asset": "XDC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXLMF0:USTF0",
+      "pair": "XLM/USDT",
+      "base_asset": "XLM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXPDF0:USTF0",
+      "pair": "XPD/USDT",
+      "base_asset": "XPD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXPLF0:USTF0",
+      "pair": "XPL/USDT",
+      "base_asset": "XPL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXPTF0:USTF0",
+      "pair": "XPT/USDT",
+      "base_asset": "XPT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXRPF0:BTCF0",
+      "pair": "XRP/BTC",
+      "base_asset": "XRP",
+      "quote_asset": "BTC",
+      "settle_asset": "BTC",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXRPF0:USTF0",
+      "pair": "XRP/USDT",
+      "base_asset": "XRP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tXTZF0:USTF0",
+      "pair": "XTZ/USDT",
+      "base_asset": "XTZ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tZECF0:USTF0",
+      "pair": "ZEC/USDT",
+      "base_asset": "ZEC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tZROF0:USTF0",
+      "pair": "ZRO/USDT",
+      "base_asset": "ZRO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    }
+  ]
+}
