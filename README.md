@@ -44,15 +44,25 @@ See [Bitget's volume field definitions](https://www.bitget.com/docs/catalog/mark
     - Conversion of traded volumes to USDT
     - Spot venues in the volume distribution and a futures exchange list for each pair, including zero-volume markets
     - Spot exchange filters: include pairs listed on any or all selected exchanges, and exclude pairs listed on any excluded exchange
+    - Futures exchange filter: exclude spot pairs with active futures on any selected exchange
 - Crypto withdrawal fees
 - Historical exchange and trading pair specific traded volume
 
-In `universe.html`, select exchanges under **Include** and choose **any** or
-**all**. Pairs may also be listed on other exchanges. Use **Exclude** to hide
+In `universe.html`, select exchanges under **Include spot** and choose **any** or
+**all**. Pairs may also be listed on other exchanges. Use **Exclude spot** to hide
 pairs listed on any of those exchanges; for example, include Bitget and exclude
-Binance. An empty Include selection allows all pairs, so exclusion-only searches
-also work. Selecting an exchange in one group clears it from the other.
-**Reset exchange filters** clears both groups and restores **any**, while keeping
+Binance. An empty Include spot selection allows all pairs, so exclusion-only
+searches also work. Selecting an exchange in one spot group clears it from the other.
+
+Use **Exclude futures** to hide spot pairs with active futures on any selected
+exchange; selecting Binance and KuCoin excludes pairs with futures on either.
+This selection is independent of the spot groups, so you can include an exchange's
+spot pairs while excluding its futures. Futures match the same base and quote
+currency, including perpetual and dated contracts. Only known active listings
+are excluded; unknown availability remains visible with the existing incomplete
+coverage indicator.
+
+**Reset exchange filters** clears all three groups and restores **any**, while keeping
 the pair search, quote, and primary exchange filters.
 
 Run `python -m crypto_universe` to refresh spot data, futures inventories, and

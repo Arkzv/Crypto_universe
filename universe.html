@@ -89,11 +89,11 @@ td.empty-state{text-align:center;color:#aaa;padding:24px;white-space:normal}
 </div>
 <section class="exchange-filters" aria-labelledby="exchangeFilterTitle">
   <div class="exchange-filter-heading">
-    <h2 id="exchangeFilterTitle">Spot exchange filters</h2>
+    <h2 id="exchangeFilterTitle">Exchange filters</h2>
     <button type="button" id="resetExchangeFilters">Reset exchange filters</button>
   </div>
   <fieldset class="exchange-filter-group">
-    <legend>Include</legend>
+    <legend>Include spot</legend>
     <div class="exchange-match">
       <label><input type="radio" name="exchangeMatchMode" id="exchangeMatchAny" value="any" checked> Listed on any selected exchange</label>
       <label><input type="radio" name="exchangeMatchMode" id="exchangeMatchAll" value="all"> Listed on all selected exchanges</label>
@@ -101,9 +101,14 @@ td.empty-state{text-align:center;color:#aaa;padding:24px;white-space:normal}
     <div class="exchange-choices" id="includeExchanges"></div>
   </fieldset>
   <fieldset class="exchange-filter-group exclude">
-    <legend>Exclude</legend>
+    <legend>Exclude spot</legend>
     <p class="exchange-hint">Hide pairs listed on any of these exchanges.</p>
     <div class="exchange-choices" id="excludeExchanges"></div>
+  </fieldset>
+  <fieldset class="exchange-filter-group exclude">
+    <legend>Exclude futures</legend>
+    <p class="exchange-hint">Hide spot pairs with known active futures on any of these exchanges.</p>
+    <div class="exchange-choices" id="excludeFuturesExchanges"></div>
   </fieldset>
   <div class="exchange-summary" id="exchangeFilterSummary" role="status">All spot pairs · No exclusions</div>
 </section>
@@ -136,6 +141,7 @@ let sortAsc=true;
 let rendered=0;
 const includedExchanges=new Set();
 const excludedExchanges=new Set();
+const excludedFuturesExchanges=new Set();
 let exchangeMatchMode='any';
 let futuresIncomplete=false;
 const HTML_ESCAPES={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
@@ -346,6 +352,7 @@ function applyFilters(){
   const qt=document.getElementById('quoteFilter').value;
   const include=[...includedExchanges];
   const exclude=[...excludedExchanges];
+  const excludeFutures=[...excludedFuturesExchanges];
 
   filtered=allRows.filter(r=>{
     if(q&&r.pair.indexOf(q)<0)return false;
@@ -353,6 +360,7 @@ function applyFilters(){
       ?include.every(e=>r._exchanges.has(e))
       :include.some(e=>r._exchanges.has(e))))return false;
     if(exclude.some(e=>r._exchanges.has(e)))return false;
+    if(excludeFutures.some(e=>r._futuresExchanges.includes(e)))return false;
     if(primaryEx&&r._primaryExchange!==primaryEx)return false;
     if(qt&&r.quote_asset!==qt)return false;
     return true;
@@ -393,7 +401,8 @@ document.querySelectorAll('th').forEach(th=>{
   document.getElementById(id).addEventListener(id==='search'?'input':'change',applyFilters));
 
 function updateExchangeFilters(){
-  [['includeExchanges',includedExchanges],['excludeExchanges',excludedExchanges]].forEach(([id,selection])=>{
+  [['includeExchanges',includedExchanges],['excludeExchanges',excludedExchanges],
+   ['excludeFuturesExchanges',excludedFuturesExchanges]].forEach(([id,selection])=>{
     document.getElementById(id).querySelectorAll('input[type=checkbox]').forEach(input=>{
       input.checked=selection.has(input.value);
     });
@@ -402,13 +411,17 @@ function updateExchangeFilters(){
   document.getElementById('exchangeMatchAll').checked=exchangeMatchMode==='all';
   const include=sortedExchangeIds(includedExchanges).map(exchangeLabel).join(', ');
   const exclude=sortedExchangeIds(excludedExchanges).map(exchangeLabel).join(', ');
+  const excludeFutures=sortedExchangeIds(excludedFuturesExchanges).map(exchangeLabel).join(', ');
+  const exclusions=[];
+  if(exclude)exclusions.push('Not listed on: '+exclude);
+  if(excludeFutures)exclusions.push('Exclude futures on: '+excludeFutures);
   document.getElementById('exchangeFilterSummary').textContent=
     (include?'Listed on '+exchangeMatchMode+' of: '+include:'All spot pairs')
-    +' · '+(exclude?'Not listed on: '+exclude:'No exclusions');
+    +' · '+(exclusions.length?exclusions.join(' · '):'No exclusions');
 }
 
 function buildExchangeFilters(exchanges){
-  ['includeExchanges','excludeExchanges'].forEach(id=>{
+  ['includeExchanges','excludeExchanges','excludeFuturesExchanges'].forEach(id=>{
     document.getElementById(id).innerHTML=exchanges.map(exchange=>
       '<label class="exchange-chip"><input type="checkbox" value="'+escapeHtml(exchange)+'"><span>'
       +escapeHtml(exchangeLabel(exchange))+'</span></label>').join('');
@@ -417,14 +430,15 @@ function buildExchangeFilters(exchanges){
 }
 
 [['includeExchanges',includedExchanges,excludedExchanges],
- ['excludeExchanges',excludedExchanges,includedExchanges]].forEach(([id,selection,opposite])=>{
+ ['excludeExchanges',excludedExchanges,includedExchanges],
+ ['excludeFuturesExchanges',excludedFuturesExchanges]].forEach(([id,selection,opposite])=>{
   document.getElementById(id).addEventListener('change',event=>{
     const input=event.target;
     if(input.type!=='checkbox')return;
     if(input.checked){
       selection.add(input.value);
-      // An exchange can only be included or excluded, never both.
-      opposite.delete(input.value);
+      // Spot inclusion and exclusion are mutually exclusive; futures exclusions are independent.
+      if(opposite)opposite.delete(input.value);
     }else{
       selection.delete(input.value);
     }
@@ -445,6 +459,7 @@ function buildExchangeFilters(exchanges){
 document.getElementById('resetExchangeFilters').addEventListener('click',()=>{
   includedExchanges.clear();
   excludedExchanges.clear();
+  excludedFuturesExchanges.clear();
   exchangeMatchMode='any';
   updateExchangeFilters();
   applyFilters();

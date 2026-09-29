@@ -269,6 +269,82 @@ test('moving an exchange between include and exclude clears the opposite selecti
   assert.deepEqual(shownPairs(result),['BTC/USDT','ETH/USDT','SOL/USDT','BTC/USD']);
 });
 
+test('Binance and KuCoin futures exclusions hide any active exact-pair match, independently of spot venues',async()=>{
+  const data={exchanges:['binance','bitget','kucoin'],pairs:[
+    spot('BTC','USDT',[venue('bitget'),venue('binance')]),
+    spot('ETH','USDT',[venue('bitget')]),
+    spot('SOL','USDT',[venue('bitget')]),
+    spot('BTC','USD',[venue('bitget')]),
+    spot('PEPE','USDT',[venue('bitget')]),
+    spot('ADA','USDT',[venue('bitget')]),
+  ]};
+  const result=await page(data,{
+    'fut_universe_binance.json':futures('binance',[
+      contract('BTC','USDT'),contract('SOL','USDT'),contract('1000PEPE','USDT'),
+    ]),
+    'fut_universe_kucoin.json':futures('kucoin',[
+      contract('BTC','USDT'),contract('ETH','USDT'),
+      contract('PEPE','USDT',{is_active:false,is_tradable:true}),
+    ]),
+    'fut_universe_bitget.json':futures('bitget',[contract('ADA','USDT')]),
+  });
+  assert.match(html,/<legend>Exclude futures<\/legend>/);
+  assert.match(result.nodes.get('excludeFuturesExchanges').innerHTML,/Binance/);
+  assert.match(result.nodes.get('excludeFuturesExchanges').innerHTML,/KuCoin/);
+  assert.equal(shownPairs(result).length,6);
+  selectExchange(result,'excludeFutures','binance');
+  assert.deepEqual(shownPairs(result),['ETH/USDT','BTC/USD','PEPE/USDT','ADA/USDT']);
+  selectExchange(result,'excludeFutures','kucoin');
+  assert.deepEqual(shownPairs(result),['BTC/USD','PEPE/USDT','ADA/USDT']);
+  assert.equal(result.nodes.get('exchangeFilterSummary').textContent,
+    'All spot pairs · Exclude futures on: Binance, KuCoin');
+  assert.match(result.nodes.get('stats').innerHTML,/Showing <b>3<\/b> of <b>6<\/b> pairs/);
+  selectExchange(result,'excludeFutures','binance',false);
+  assert.deepEqual(shownPairs(result),['SOL/USDT','BTC/USD','PEPE/USDT','ADA/USDT']);
+  selectExchange(result,'excludeFutures','kucoin',false);
+  assert.equal(shownPairs(result).length,6);
+  assert.equal(result.nodes.get('exchangeFilterSummary').textContent,'All spot pairs · No exclusions');
+});
+
+test('futures exclusion allows the same exchange in either spot group without clearing selections',async()=>{
+  const result=await exchangeFilterPage();
+  selectExchange(result,'include','binance');
+  selectExchange(result,'excludeFutures','binance');
+  assert.deepEqual(shownPairs(result),['BTC/USDT','BNB/USDT','ETH/USD']);
+  selectExchange(result,'include','bitget');
+  assert.deepEqual(shownPairs(result),['BTC/USDT','ETH/USDT','BNB/USDT','BTC/USD','ETH/USD']);
+  matchMode(result,'all');
+  assert.deepEqual(shownPairs(result),['BTC/USDT']);
+  selectExchange(result,'exclude','binance');
+  assert.deepEqual(shownPairs(result),['ETH/USDT','BTC/USD']);
+  assert.equal(result.nodes.get('exchangeFilterSummary').textContent,
+    'Listed on all of: Bitget · Not listed on: Binance · Exclude futures on: Binance');
+  selectExchange(result,'include','binance');
+  assert.deepEqual(shownPairs(result),['BTC/USDT']);
+  matchMode(result,'any');
+  assert.deepEqual(shownPairs(result),['BTC/USDT','ETH/USDT','BNB/USDT','BTC/USD','ETH/USD']);
+  selectExchange(result,'excludeFutures','binance',false);
+  assert.deepEqual(shownPairs(result),['BTC/USDT','ETH/USDT','SOL/USDT','BNB/USDT','BTC/USD','ETH/USD']);
+});
+
+test('futures exclusion uses known partial listings and keeps unknown availability visible',async()=>{
+  const result=await page({exchanges:['binance','bitget','bybit','kucoin','upbit'],pairs:[
+    spot('BTC','USDT',[venue('bitget')]),spot('ETH','USDT',[venue('bitget')]),
+  ]},{
+    'fut_universe_binance.json':futures('binance',[contract('BTC','USDT')],'partial'),
+    'fut_universe_bitget.json':futures('bitget',[]),
+    'fut_universe_kucoin.json':futures('kucoin',[contract('ETH','USDT')],'error'),
+    'fut_universe_upbit.json':futures('upbit',[],'unsupported'),
+  });
+  for(const exchange of ['bybit','kucoin','upbit'])selectExchange(result,'excludeFutures',exchange);
+  assert.deepEqual(shownPairs(result),['BTC/USDT','ETH/USDT']);
+  selectExchange(result,'excludeFutures','binance');
+  assert.deepEqual(shownPairs(result),['ETH/USDT']);
+  assert.match(result.nodes.get('tbody').innerHTML,/Unknown/);
+  assert.match(result.nodes.get('futuresCoverage').textContent,/Incomplete: Binance, Bybit, KuCoin/);
+  assert.match(result.nodes.get('futuresCoverage').textContent,/Futures unavailable: Upbit/);
+});
+
 test('exchange filters compose with search, quote, primary exchange, and sorting; reset preserves other filters',async()=>{
   const result=await exchangeFilterPage();
   selectExchange(result,'include','bitget');
@@ -278,6 +354,8 @@ test('exchange filters compose with search, quote, primary exchange, and sorting
   assert.deepEqual(shownPairs(result),['ETH/USDT','SOL/USDT']);
   result.evaluate("sortCol='pair';sortAsc=false;doSort()");
   assert.deepEqual(shownPairs(result),['SOL/USDT','ETH/USDT']);
+  selectExchange(result,'excludeFutures','binance');
+  assert.deepEqual(shownPairs(result),['ETH/USDT']);
   result.nodes.get('search').value='eth';
   result.nodes.get('search').dispatchEvent({type:'input'});
   result.nodes.get('primaryExchangeFilter').value='bybit';
@@ -286,7 +364,7 @@ test('exchange filters compose with search, quote, primary exchange, and sorting
   matchMode(result,'all');
   result.nodes.get('resetExchangeFilters').dispatchEvent({type:'click'});
   assert.deepEqual(shownPairs(result),['ETH/USDT']);
-  assert.equal(result.evaluate('includedExchanges.size+excludedExchanges.size'),0);
+  assert.equal(result.evaluate('includedExchanges.size+excludedExchanges.size+excludedFuturesExchanges.size'),0);
   assert.equal(result.nodes.get('exchangeMatchAny').checked,true);
   assert.equal(result.nodes.get('exchangeMatchAll').checked,false);
   assert.equal(result.nodes.get('search').value,'eth');
