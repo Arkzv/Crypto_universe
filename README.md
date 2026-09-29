@@ -11,7 +11,24 @@ Daily overview of tradable spot crypto pairs and their 24h volume distribution a
 
 
 
-Exchanges: Binance, Bitget, Bybit, Coinbase, CoinW, Crypto.com, Gate, HTX, KuCoin, MEXC, OKX, Upbit
+Exchanges: Binance, Bitfinex, Bitget, Bybit, Coinbase, CoinW, Crypto.com, Gate, HTX, KuCoin, MEXC, OKX, Upbit
+
+Bitfinex spot and perpetual inventories use its public V2 API, including its
+currency mappings (`UST` → `USDT`, `UDC` → `USDC`, `DSH` → `DASH`). Paper-trading
+pairs are excluded before mapping currencies. Pairs must be in the current
+exchange/derivatives configuration and the platform must be operative to count
+as active. Native symbols are retained for trading links. Bitfinex reports 24h
+base volume; quote volume is estimated as base volume × last price and marked
+with `quote_volume_method` in the spot snapshot. Zero-volume markets remain in
+the universe. See [Bitfinex configurations](https://docs.bitfinex.com/reference/rest-public-conf),
+[platform status](https://docs.bitfinex.com/reference/rest-public-platform-status),
+and [tickers](https://docs.bitfinex.com/reference/rest-public-tickers).
+
+Run `python -m crypto_universe --exchanges bitfinex --no-push` to collect Bitfinex
+spot and futures snapshots locally, or `python -m crypto_universe.spot_universe_bitfinex`
+for spot only (`crypto-universe-bitfinex` after installation). The default full
+run includes Bitfinex and publishes its snapshots through the existing output
+commit/push flow.
 
 Bitget uses the V3 spot API. For Reality stock tokens (`isReality=yes`, such as
 `rILMN`), the displayed volume comes from `platformTurnover24h`, which measures
@@ -25,9 +42,18 @@ See [Bitget's volume field definitions](https://www.bitget.com/docs/catalog/mark
 ### Features
 - Spot crypto pairs
     - Conversion of traded volumes to USDT
-    - Explicit spot and futures exchange lists for each pair, including zero-volume markets
+    - Spot venues in the volume distribution and a futures exchange list for each pair, including zero-volume markets
+    - Spot exchange filters: include pairs listed on any or all selected exchanges, and exclude pairs listed on any excluded exchange
 - Crypto withdrawal fees
 - Historical exchange and trading pair specific traded volume
+
+In `universe.html`, select exchanges under **Include** and choose **any** or
+**all**. Pairs may also be listed on other exchanges. Use **Exclude** to hide
+pairs listed on any of those exchanges; for example, include Bitget and exclude
+Binance. An empty Include selection allows all pairs, so exclusion-only searches
+also work. Selecting an exchange in one group clears it from the other.
+**Reset exchange filters** clears both groups and restores **any**, while keeping
+the pair search, quote, and primary exchange filters.
 
 Run `python -m crypto_universe` to refresh spot data, futures inventories, and
 withdrawal fees. The collector saves `output/fut_universe_<exchange>.json` for

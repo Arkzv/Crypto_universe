@@ -12,6 +12,12 @@ distinct; multiplier contracts such as `1000PEPE/USDT` are not treated as
 contract symbols remain unchanged. Futures availability is independent of
 whether the same exchange lists that pair on spot.
 
+Bitfinex's perpetual assets are mapped to their underlying currencies and API
+aliases (e.g. `tBTCF0:USTF0` → `BTC/USDT`), preserving native contract symbols.
+Paper-trading assets (`TEST*`) are excluded before applying the alias mappings.
+The `F0` suffix is removed when a new contract is not yet in the
+underlying map. Fiat USD and Tether USDT remain distinct.
+
 The inventories contain perpetual and dated futures where exposed by the
 public APIs below; spot instruments and options are excluded. Coinbase coverage
 is the International Exchange perpetual inventory. Exchange status describes
@@ -20,6 +26,7 @@ the public market, not account-specific or regional eligibility.
 | Exchange | Markets queried | Active status | API reference |
 | --- | --- | --- | --- |
 | Binance | USD-M and coin-M | `status` or `contractStatus` = `TRADING` | [Exchange information](https://developers.binance.com/docs/derivatives/usds-margined-futures/market-data/rest-api/Exchange-Information) |
+| Bitfinex | Public perpetual inventory | Listed in `pub:list:pair:futures`, excluding paper trading; platform status = 1 | [Configurations](https://docs.bitfinex.com/reference/rest-public-conf), [Platform status](https://docs.bitfinex.com/reference/rest-public-platform-status) |
 | Bitget | USDT, USDC, coin futures | `symbolStatus` = `normal` or `restrictedAPI` | [Contract config](https://www.bitget.com/docs/catalog/classic-contract-market/classic-contract-market) |
 | Bybit | Linear and inverse, all cursor pages | `status` = `Trading`, not pre-listing | [Instruments info](https://bybit-exchange.github.io/docs/v5/market/instrument) |
 | Coinbase | International perpetuals | `type` = `PERP`, `trading_state` = `TRADING` | [Instruments](https://docs.cdp.coinbase.com/api-reference/international-exchange-api/rest-api/instruments/list-instruments) |

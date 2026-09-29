@@ -18,6 +18,7 @@ from .common import (
     write_json,
 )
 from .spot_universe_binance import fetch_exchange_universe as fetch_binance_universe
+from .spot_universe_bitfinex import fetch_exchange_universe as fetch_bitfinex_universe
 from .spot_universe_bitget import fetch_exchange_universe as fetch_bitget_universe
 from .spot_universe_bybit import fetch_exchange_universe as fetch_bybit_universe
 from .withdrawal_fee_bybit import fetch_withdrawal_fees as fetch_bybit_withdrawal_fees
@@ -42,6 +43,7 @@ ExchangeFetcher = Callable[[float], Awaitable[dict[str, Any]]]
 
 EXCHANGE_FETCHERS: dict[str, ExchangeFetcher] = {
     "binance": fetch_binance_universe,
+    "bitfinex": fetch_bitfinex_universe,
     "bitget": fetch_bitget_universe,
     "bybit": fetch_bybit_universe,
     "coinbase": fetch_coinbase_universe,
@@ -425,6 +427,7 @@ def build_combined_json_payload(
             pct = round(vol / total * 100, 2) if total > 0 else 0.0
             venue_entry: dict[str, Any] = {
                 "exchange": ex_name,
+                "symbol": pair["by_exchange"][ex_name]["symbol"],
                 "quote_volume": vol,
                 "quote_currency": display_currency,
                 "volume_pct": pct,

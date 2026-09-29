@@ -20,15 +20,29 @@ a{color:#5b9cf5}
 .bar select{width:160px}
 .bar label{color:#888;font-size:13px;display:flex;align-items:center;gap:4px}
 .bar label input[type=checkbox]{accent-color:#5b9cf5}
-.ex-multi{position:relative;display:inline-block}
-.ex-btn{background:#23262f;color:#e8e8e8;border:1px solid #333;border-radius:4px;padding:6px 10px;font-size:14px;cursor:pointer;min-width:160px;text-align:left;user-select:none}
-.ex-btn::after{content:'\25bc';float:right;font-size:10px;margin-top:2px;color:#888}
-.ex-drop{display:none;position:absolute;top:100%;left:0;background:#23262f;border:1px solid #333;border-radius:4px;padding:6px 0;z-index:10;min-width:160px;max-height:280px;overflow-y:auto}
-.ex-drop.open{display:block}
-.ex-drop label{display:flex;align-items:center;gap:6px;padding:4px 12px;cursor:pointer;font-size:13px;color:#ccc}
-.ex-drop label:hover{background:#2a2d35}
-.ex-drop .ex-actions{display:flex;gap:8px;padding:4px 12px 6px;border-bottom:1px solid #333;margin-bottom:4px}
-.ex-drop .ex-actions a{font-size:12px;cursor:pointer;color:#5b9cf5}
+.exchange-filters{background:#1e2028;border:1px solid #333;border-radius:6px;padding:12px;margin-bottom:12px}
+.exchange-filter-heading{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+.exchange-filter-heading h2{margin:0;font-size:14px;font-weight:600}
+.exchange-filter-heading button{background:#23262f;color:#a9caff;border:1px solid #414b60;border-radius:4px;padding:5px 9px;cursor:pointer;font:inherit;font-size:12px}
+.exchange-filter-heading button:hover{background:#2a2d35}
+.exchange-filter-group{border:0;padding:0;margin:0 0 12px;min-width:0}
+.exchange-filter-group legend{padding:0;margin-bottom:6px;font-weight:600;font-size:13px}
+.exchange-match{display:flex;flex-wrap:wrap;gap:8px 16px;margin-bottom:8px}
+.exchange-match label{display:flex;align-items:center;gap:5px;font-size:13px;color:#ccc;cursor:pointer}
+.exchange-match input{margin:0;accent-color:#5b9cf5}
+.exchange-choices{display:flex;flex-wrap:wrap;gap:6px}
+.exchange-chip{display:inline-flex;position:relative;cursor:pointer;font-size:13px}
+.exchange-chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.exchange-chip span{display:inline-flex;align-items:center;gap:5px;border:1px solid #3b4050;border-radius:4px;background:#23262f;color:#bbb;padding:5px 9px}
+.exchange-chip span::before{content:'+';display:inline-block;width:10px;text-align:center;color:#888}
+.exchange-chip:hover span{border-color:#71809a;color:#e8e8e8}
+.exchange-chip input:checked+span{background:#203553;border-color:#5b9cf5;color:#c9dfff}
+.exchange-chip input:checked+span::before{content:'\2713';color:inherit}
+.exclude .exchange-chip input:checked+span{background:#4a2228;border-color:#c5656f;color:#ffb0b6}
+.exclude .exchange-chip input:checked+span::before{content:'\2212'}
+.exchange-chip input:focus-visible+span,.exchange-filter-heading button:focus-visible{outline:2px solid #a9caff;outline-offset:2px}
+.exchange-hint{margin:0 0 8px;color:#9ca3b4;font-size:12px}
+.exchange-summary{border-top:1px solid #333;padding-top:9px;color:#bdc6d8;font-size:12px;line-height:1.6}
 .stats{color:#888;font-size:13px;margin-bottom:10px}
 .stats b{color:#c8c8c8}
 .legend{color:#8d93a1;font-size:12px;margin:-2px 0 10px}
@@ -39,8 +53,6 @@ table{border-collapse:collapse;width:100%}
 th,td{text-align:left;padding:5px 10px;border-bottom:1px solid #23262f;white-space:nowrap}
 td:last-child{white-space:normal}
 td.exchange-list{white-space:normal;min-width:170px;max-width:260px;line-height:1.6}
-.exchange-list a{text-decoration:none}
-.exchange-list a:hover{text-decoration:underline}
 .unknown{color:#ffd37a}
 th{position:sticky;top:0;background:#1e2028;cursor:pointer;user-select:none;color:#aaa;font-weight:600;font-size:13px}
 th:hover{color:#e8e8e8}
@@ -49,6 +61,7 @@ td:nth-child(1){color:#888;text-align:right;width:50px}
 td:nth-child(4){text-align:right}
 td:nth-child(5){text-align:right}
 td:nth-child(6){text-align:right}
+td.empty-state{text-align:center;color:#aaa;padding:24px;white-space:normal}
 .venue{display:inline-block;margin:0 2px}
 .venue .nm{color:#5b9cf5;text-decoration:none}
 .venue .nm:hover{text-decoration:underline}
@@ -71,16 +84,32 @@ td:nth-child(6){text-align:right}
 </div>
 <div class="bar">
   <input type="text" id="search" placeholder="Filter pairs (e.g. BTC, ETH/USDT)">
-  <div class="ex-multi" id="exMulti">
-    <div class="ex-btn" id="exBtn">All exchanges</div>
-    <div class="ex-drop" id="exDrop"></div>
-  </div>
   <label>Primary exchange <select id="primaryExchangeFilter"><option value="">Any</option></select></label>
   <select id="quoteFilter"><option value="">All quotes</option></select>
 </div>
+<section class="exchange-filters" aria-labelledby="exchangeFilterTitle">
+  <div class="exchange-filter-heading">
+    <h2 id="exchangeFilterTitle">Spot exchange filters</h2>
+    <button type="button" id="resetExchangeFilters">Reset exchange filters</button>
+  </div>
+  <fieldset class="exchange-filter-group">
+    <legend>Include</legend>
+    <div class="exchange-match">
+      <label><input type="radio" name="exchangeMatchMode" id="exchangeMatchAny" value="any" checked> Listed on any selected exchange</label>
+      <label><input type="radio" name="exchangeMatchMode" id="exchangeMatchAll" value="all"> Listed on all selected exchanges</label>
+    </div>
+    <div class="exchange-choices" id="includeExchanges"></div>
+  </fieldset>
+  <fieldset class="exchange-filter-group exclude">
+    <legend>Exclude</legend>
+    <p class="exchange-hint">Hide pairs listed on any of these exchanges.</p>
+    <div class="exchange-choices" id="excludeExchanges"></div>
+  </fieldset>
+  <div class="exchange-summary" id="exchangeFilterSummary" role="status">All spot pairs · No exclusions</div>
+</section>
 <div class="stats" id="stats"></div>
 <div class="legend"><span class="transfer-badge deposit">D</span> deposit restricted <span class="transfer-badge withdraw">W</span> withdrawal restricted for the pair's base asset</div>
-<div class="legend">Exchange lists show active markets at the snapshot time, including zero-volume pairs. Futures include perpetual and dated contracts for the same base/quote pair.</div>
+<div class="legend">Exchange filters and availability use active markets at the snapshot time, including zero-volume pairs. Futures include perpetual and dated contracts for the same base/quote pair.</div>
 <div class="coverage" id="futuresCoverage" role="status">Loading futures availability&hellip;</div>
 <div id="loading">Loading data&hellip;</div>
 <div class="wrap" id="tableWrap" style="display:none">
@@ -92,7 +121,6 @@ td:nth-child(6){text-align:right}
   <th data-col="venues">Venues</th>
   <th data-col="volume">Total Volume</th>
   <th data-col="usdt">USDT Volume</th>
-  <th data-col="spot">Spot exchanges</th>
   <th data-col="futures">Futures exchanges</th>
   <th data-col="dist">Volume Distribution</th>
 </tr></thead>
@@ -106,12 +134,14 @@ let filtered=[];
 let sortCol='idx';
 let sortAsc=true;
 let rendered=0;
-let selectedExchanges=new Set();
-let allExchanges=[];
+const includedExchanges=new Set();
+const excludedExchanges=new Set();
+let exchangeMatchMode='any';
 let futuresIncomplete=false;
 const HTML_ESCAPES={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
 const EXCHANGE_LABELS={
   binance:'Binance',
+  bitfinex:'Bitfinex',
   bitget:'Bitget',
   bybit:'Bybit',
   coinbase:'Coinbase',
@@ -162,7 +192,7 @@ function escapeHtml(value){
   return String(value??'').replace(/[&<>"']/g,ch=>HTML_ESCAPES[ch]);
 }
 
-function tradeUrl(exchange, baseAsset, quoteAsset){
+function tradeUrl(exchange, baseAsset, quoteAsset, symbol){
   const base=String(baseAsset||'');
   const quote=String(quoteAsset||'');
   const baseEnc=encodeURIComponent(base);
@@ -173,6 +203,12 @@ function tradeUrl(exchange, baseAsset, quoteAsset){
   switch(exchange){
     case 'binance':
       return 'https://www.binance.com/en/trade/'+baseEnc+'_'+quoteEnc+'?type=spot';
+    case 'bitfinex':{
+      if(!symbol)return null;
+      const native=String(symbol).replace(/^t/,'');
+      const pair=native.includes(':')?native:native.slice(0,3)+':'+native.slice(3);
+      return 'https://trading.bitfinex.com/t/'+encodeURIComponent(pair)+'?type=exchange';
+    }
     case 'bitget':
       return 'https://www.bitget.com/spot/'+pairCompact;
     case 'bybit':
@@ -231,7 +267,7 @@ function buildDistHTML(row){
   for(let i=0;i<row.venues.length;i++){
     const v=row.venues[i];
     const label=exchangeLabel(v.exchange);
-    const href=tradeUrl(v.exchange,row.base_asset,row.quote_asset);
+    const href=tradeUrl(v.exchange,row.base_asset,row.quote_asset,v.symbol);
     const restrictionHTML=buildRestrictionBadges(v,row.base_asset);
     const nameHTML=href
       ? '<a class="nm" href="'+href+'" target="_blank" rel="noopener noreferrer">'+label+'</a>'
@@ -267,14 +303,6 @@ function sortedExchangeIds(exchanges){
   return [...new Set(exchanges)].sort((a,b)=>exchangeLabel(a).localeCompare(exchangeLabel(b)));
 }
 
-function spotExchangesHTML(row){
-  return row._spotExchanges.map(exchange=>{
-    const name=escapeHtml(exchangeLabel(exchange));
-    const href=tradeUrl(exchange,row.base_asset,row.quote_asset);
-    return href?'<a href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer">'+name+'</a>':name;
-  }).join(', ')||'—';
-}
-
 function futuresExchangesHTML(row){
   const names=row._futuresExchanges.map(exchange=>escapeHtml(exchangeLabel(exchange))).join(', ');
   if(!futuresIncomplete)return names||'—';
@@ -292,7 +320,7 @@ function renderBatch(){
     const uv=r.total_usdt_volume!=null?fmtVol(r.total_usdt_volume):'—';
     const tv=r.display_total_volume!=null?r.display_total_volume:r.total_quote_volume;
     const tc=r.display_currency||r.quote_asset;
-    html+='<tr><td>'+r._idx+'</td><td>'+escapeHtml(r.pair)+'</td><td>'+escapeHtml(r.base_asset)+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(tv)+' '+escapeHtml(tc)+'</td><td>'+uv+'</td><td class="exchange-list">'+r._spotHTML+'</td><td class="exchange-list">'+r._futuresHTML+'</td><td>'+r._distHTML+'</td></tr>';
+    html+='<tr><td>'+r._idx+'</td><td>'+escapeHtml(r.pair)+'</td><td>'+escapeHtml(r.base_asset)+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(tv)+' '+escapeHtml(tc)+'</td><td>'+uv+'</td><td class="exchange-list">'+r._futuresHTML+'</td><td>'+r._distHTML+'</td></tr>';
   }
   tbody.insertAdjacentHTML('beforeend',html);
   rendered=end;
@@ -305,31 +333,26 @@ function renderTable(){
   rendered=0;
   filtered.forEach((r,i)=>r._idx=i+1);
   document.getElementById('stats').innerHTML='Showing <b>'+filtered.length+'</b> of <b>'+allRows.length+'</b> pairs';
+  if(!filtered.length){
+    tbody.innerHTML='<tr><td colspan="8" class="empty-state">No pairs match these filters.</td></tr>';
+    return;
+  }
   renderBatch();
-}
-
-function updateExBtn(){
-  const btn=document.getElementById('exBtn');
-  if(selectedExchanges.size===0||selectedExchanges.size===allExchanges.length)
-    btn.textContent='All exchanges';
-  else if(selectedExchanges.size<=2)
-    btn.textContent=[...selectedExchanges].sort((a,b)=>exchangeLabel(a).localeCompare(exchangeLabel(b))).map(exchangeLabel).join(', ');
-  else
-    btn.textContent=selectedExchanges.size+' exchanges';
 }
 
 function applyFilters(){
   const q=document.getElementById('search').value.toUpperCase();
   const primaryEx=document.getElementById('primaryExchangeFilter').value;
   const qt=document.getElementById('quoteFilter').value;
-  const filterEx=selectedExchanges.size>0&&selectedExchanges.size<allExchanges.length;
+  const include=[...includedExchanges];
+  const exclude=[...excludedExchanges];
 
   filtered=allRows.filter(r=>{
     if(q&&r.pair.indexOf(q)<0)return false;
-    if(filterEx){
-      if(r._exchanges.size!==selectedExchanges.size)return false;
-      for(const e of selectedExchanges){if(!r._exchanges.has(e))return false;}
-    }
+    if(include.length&&!(exchangeMatchMode==='all'
+      ?include.every(e=>r._exchanges.has(e))
+      :include.some(e=>r._exchanges.has(e))))return false;
+    if(exclude.some(e=>r._exchanges.has(e)))return false;
     if(primaryEx&&r._primaryExchange!==primaryEx)return false;
     if(qt&&r.quote_asset!==qt)return false;
     return true;
@@ -346,7 +369,6 @@ function doSort(){
     else if(col==='venues')va=a.venue_count,vb=b.venue_count;
     else if(col==='volume')va=a.total_quote_volume,vb=b.total_quote_volume;
     else if(col==='usdt')va=a.total_usdt_volume??-1,vb=b.total_usdt_volume??-1;
-    else if(col==='spot')va=a._spotExchanges.join(', '),vb=b._spotExchanges.join(', ');
     else if(col==='futures')va=a._futuresExchanges.length,vb=b._futuresExchanges.length;
     else va=0,vb=0;
     if(typeof va==='string')return va<vb?-asc:va>vb?asc:0;
@@ -370,40 +392,63 @@ document.querySelectorAll('th').forEach(th=>{
 ['search','primaryExchangeFilter','quoteFilter'].forEach(id=>
   document.getElementById(id).addEventListener(id==='search'?'input':'change',applyFilters));
 
-// Exchange multiselect dropdown
-document.getElementById('exBtn').addEventListener('click',e=>{
-  e.stopPropagation();
-  document.getElementById('exDrop').classList.toggle('open');
-});
-document.addEventListener('click',()=>document.getElementById('exDrop').classList.remove('open'));
-document.getElementById('exDrop').addEventListener('click',e=>e.stopPropagation());
-
-function buildExDropdown(exchanges){
-  allExchanges=exchanges;
-  const drop=document.getElementById('exDrop');
-  let html='<div class="ex-actions"><a id="exAll">All</a><a id="exNone">None</a></div>';
-  exchanges.forEach(e=>{
-    html+='<label><input type="checkbox" value="'+e+'" checked> '+exchangeLabel(e)+'</label>';
-  });
-  drop.innerHTML=html;
-  drop.querySelectorAll('input[type=checkbox]').forEach(cb=>{
-    cb.addEventListener('change',()=>{
-      if(cb.checked)selectedExchanges.add(cb.value);else selectedExchanges.delete(cb.value);
-      updateExBtn();applyFilters();
+function updateExchangeFilters(){
+  [['includeExchanges',includedExchanges],['excludeExchanges',excludedExchanges]].forEach(([id,selection])=>{
+    document.getElementById(id).querySelectorAll('input[type=checkbox]').forEach(input=>{
+      input.checked=selection.has(input.value);
     });
   });
-  document.getElementById('exAll').addEventListener('click',()=>{
-    selectedExchanges=new Set(allExchanges);
-    drop.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.checked=true);
-    updateExBtn();applyFilters();
-  });
-  document.getElementById('exNone').addEventListener('click',()=>{
-    selectedExchanges.clear();
-    drop.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.checked=false);
-    updateExBtn();applyFilters();
-  });
-  selectedExchanges=new Set(allExchanges);
+  document.getElementById('exchangeMatchAny').checked=exchangeMatchMode==='any';
+  document.getElementById('exchangeMatchAll').checked=exchangeMatchMode==='all';
+  const include=sortedExchangeIds(includedExchanges).map(exchangeLabel).join(', ');
+  const exclude=sortedExchangeIds(excludedExchanges).map(exchangeLabel).join(', ');
+  document.getElementById('exchangeFilterSummary').textContent=
+    (include?'Listed on '+exchangeMatchMode+' of: '+include:'All spot pairs')
+    +' · '+(exclude?'Not listed on: '+exclude:'No exclusions');
 }
+
+function buildExchangeFilters(exchanges){
+  ['includeExchanges','excludeExchanges'].forEach(id=>{
+    document.getElementById(id).innerHTML=exchanges.map(exchange=>
+      '<label class="exchange-chip"><input type="checkbox" value="'+escapeHtml(exchange)+'"><span>'
+      +escapeHtml(exchangeLabel(exchange))+'</span></label>').join('');
+  });
+  updateExchangeFilters();
+}
+
+[['includeExchanges',includedExchanges,excludedExchanges],
+ ['excludeExchanges',excludedExchanges,includedExchanges]].forEach(([id,selection,opposite])=>{
+  document.getElementById(id).addEventListener('change',event=>{
+    const input=event.target;
+    if(input.type!=='checkbox')return;
+    if(input.checked){
+      selection.add(input.value);
+      // An exchange can only be included or excluded, never both.
+      opposite.delete(input.value);
+    }else{
+      selection.delete(input.value);
+    }
+    updateExchangeFilters();
+    applyFilters();
+  });
+});
+
+['exchangeMatchAny','exchangeMatchAll'].forEach(id=>{
+  document.getElementById(id).addEventListener('change',event=>{
+    if(!event.target.checked)return;
+    exchangeMatchMode=event.target.value;
+    updateExchangeFilters();
+    applyFilters();
+  });
+});
+
+document.getElementById('resetExchangeFilters').addEventListener('click',()=>{
+  includedExchanges.clear();
+  excludedExchanges.clear();
+  exchangeMatchMode='any';
+  updateExchangeFilters();
+  applyFilters();
+});
 
 function buildPrimaryExchangeFilter(exchanges){
   const sel=document.getElementById('primaryExchangeFilter');
@@ -477,24 +522,20 @@ async function loadUniverse(){
   allRows.forEach(r=>{
     r._distHTML=buildDistHTML(r);
     r._exchanges=new Set(r.venues.map(v=>v.exchange));
-    r._spotExchanges=sortedExchangeIds(r._exchanges);
     r._futuresExchanges=sortedExchangeIds(futuresIndex.get(pairKey(r.base_asset,r.quote_asset))||[]);
-    r._spotHTML=spotExchangesHTML(r);
     r._futuresHTML=futuresExchangesHTML(r);
     r._primaryExchange=findPrimaryExchange(r);
     quotes.add(r.quote_asset);
   });
 
-  buildExDropdown(sortedExchanges);
+  buildExchangeFilters(sortedExchanges);
   buildPrimaryExchangeFilter(sortedExchanges);
   const qtSel=document.getElementById('quoteFilter');
   [...quotes].sort().forEach(q=>{const o=document.createElement('option');o.value=q;o.textContent=q;qtSel.appendChild(o);});
 
   document.getElementById('loading').style.display='none';
   document.getElementById('tableWrap').style.display='block';
-  document.getElementById('stats').innerHTML='Showing <b>'+allRows.length+'</b> of <b>'+allRows.length+'</b> pairs';
-  filtered=allRows.slice();
-  renderTable();
+  applyFilters();
 }
 
 loadUniverse().catch(error=>{

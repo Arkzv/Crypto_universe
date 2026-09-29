@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlencode
 
+from . import bitfinex
 from .common import (
     coerce_bool,
     fetch_json,
@@ -91,7 +92,7 @@ ENDPOINTS: dict[str, tuple[Endpoint, ...]] = {
 UNSUPPORTED_EXCHANGES = {
     "upbit": "Upbit's public market API covers spot; no futures inventory is available.",
 }
-EXCHANGES = tuple(sorted({*ENDPOINTS, "mexc", *UNSUPPORTED_EXCHANGES}))
+EXCHANGES = tuple(sorted({*ENDPOINTS, "bitfinex", "mexc", *UNSUPPORTED_EXCHANGES}))
 
 
 def extract_rows(payload: Any, endpoint: Endpoint) -> list[dict[str, Any]]:
@@ -274,7 +275,68 @@ def build_payload(exchange: str, pairs: list[dict[str, Any]], *, status: str = "
     }
 
 
+def normalize_bitfinex_contract(symbol: Any, aliases: dict[str, str], underlyings: dict[str, str],
+                               *, operative: bool) -> dict[str, Any] | None:
+    base, quote = bitfinex.split_pair(symbol)
+    if any(asset.startswith("TEST") for asset in (base, quote)):
+        return None
+    if not all(asset.endswith("F0") for asset in (base, quote)):
+        return None
+    base_asset, quote_asset = (bitfinex.derivative_asset(asset, aliases, underlyings)
+                              for asset in (base, quote))
+    return {
+        "exchange": "bitfinex",
+        "symbol": bitfinex.native_symbol(base, quote),
+        "pair": pair_key(base_asset, quote_asset),
+        "base_asset": base_asset,
+        "quote_asset": quote_asset,
+        "settle_asset": quote_asset,
+        "contract_type": "PERPETUAL",
+        "market": "perpetual",
+        "flags": {
+            "status": "TRADING" if operative else "MAINTENANCE",
+            "is_active": operative,
+            "is_tradable": operative,
+        },
+    }
+
+
+async def fetch_bitfinex_universe(timeout_seconds: float) -> dict[str, Any]:
+    sources = [bitfinex.FUTURES_CONFIG_URL, bitfinex.PLATFORM_STATUS_URL]
+    try:
+        config_raw, status_raw = await asyncio.gather(*(fetch_json(url, timeout_seconds) for url in sources))
+        rows, aliases_raw, underlyings_raw = bitfinex.extract_config(config_raw, 3)
+        aliases, underlyings = bitfinex.currency_map(aliases_raw), bitfinex.currency_map(underlyings_raw)
+        operative = bitfinex.platform_is_operational(status_raw)
+    except Exception as exc:
+        return build_payload("bitfinex", [], status="error", sources=sources, errors=[{"message": str(exc)}])
+
+    pairs: list[dict[str, Any]] = []
+    errors: list[dict[str, str]] = []
+    seen: set[str] = set()
+    skipped = duplicates = 0
+    for row in rows:
+        try:
+            pair = normalize_bitfinex_contract(row, aliases, underlyings, operative=operative)
+        except ValueError as exc:
+            errors.append({"url": bitfinex.FUTURES_CONFIG_URL, "message": str(exc)})
+            continue
+        if pair is None:
+            skipped += 1
+            continue
+        if pair["symbol"] in seen:
+            duplicates += 1
+            continue
+        seen.add(pair["symbol"])
+        pairs.append(pair)
+    status = ("partial" if pairs else "error") if errors else "ok"
+    return build_payload("bitfinex", pairs, status=status, sources=sources, errors=errors,
+                         skipped=skipped, duplicates=duplicates)
+
+
 async def fetch_exchange_universe(exchange: str, timeout_seconds: float = 20.0) -> dict[str, Any]:
+    if exchange == "bitfinex":
+        return await fetch_bitfinex_universe(timeout_seconds)
     if exchange in UNSUPPORTED_EXCHANGES:
         payload = build_payload(exchange, [], status="unsupported")
         payload["reason"] = UNSUPPORTED_EXCHANGES[exchange]
