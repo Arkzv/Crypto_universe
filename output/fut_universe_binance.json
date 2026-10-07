@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "binance",
-  "generated_at": "2026-09-29T16:26:12+00:00",
+  "generated_at": "2026-10-07T09:28:09+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -12,9 +12,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 949,
-    "active_futures_pair_count": 817,
-    "tradable_futures_pair_count": 817,
+    "futures_pair_count": 954,
+    "active_futures_pair_count": 819,
+    "tradable_futures_pair_count": 819,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -44,9 +44,9 @@
       "contract_type": "PERPETUAL",
       "market": "linear",
       "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
+        "status": "SETTLING",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
@@ -822,6 +822,21 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "AKAMUSDT",
+      "pair": "AKAM/USDT",
+      "base_asset": "AKAM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
       "market": "linear",
       "flags": {
         "status": "TRADING",
@@ -3672,6 +3687,21 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "CTUSDT",
+      "pair": "CT/USDT",
+      "base_asset": "CT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
       "market": "linear",
       "flags": {
         "status": "TRADING",
@@ -7791,6 +7821,21 @@
     },
     {
       "exchange": "binance",
+      "symbol": "MCDUSDT",
+      "pair": "MCD/USDT",
+      "base_asset": "MCD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
       "symbol": "MDBUSDT",
       "pair": "MDB/USDT",
       "base_asset": "MDB",
@@ -9824,9 +9869,9 @@
       "contract_type": "PERPETUAL",
       "market": "linear",
       "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
+        "status": "SETTLING",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
@@ -9899,9 +9944,9 @@
       "contract_type": "PERPETUAL",
       "market": "linear",
       "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
+        "status": "SETTLING",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
@@ -12861,6 +12906,21 @@
     },
     {
       "exchange": "binance",
+      "symbol": "USDEXUSDT",
+      "pair": "USDEX/USDT",
+      "base_asset": "USDEX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
       "symbol": "USELESSUSDT",
       "pair": "USELESS/USDT",
       "base_asset": "USELESS",
@@ -13092,6 +13152,21 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "VKTXUSDT",
+      "pair": "VKTX/USDT",
+      "base_asset": "VKTX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
       "market": "linear",
       "flags": {
         "status": "TRADING",

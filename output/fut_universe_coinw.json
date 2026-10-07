@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "coinw",
-  "generated_at": "2026-09-29T16:26:12+00:00",
+  "generated_at": "2026-10-07T09:28:08+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -11,9 +11,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 387,
-    "active_futures_pair_count": 387,
-    "tradable_futures_pair_count": 387,
+    "futures_pair_count": 389,
+    "active_futures_pair_count": 389,
+    "tradable_futures_pair_count": 389,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -4070,6 +4070,21 @@
     },
     {
       "exchange": "coinw",
+      "symbol": "QNT",
+      "pair": "QNT/USDT",
+      "base_asset": "QNT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "ONLINE",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinw",
       "symbol": "QNTX",
       "pair": "QNTX/USDT",
       "base_asset": "QNTX",
@@ -4373,6 +4388,21 @@
       "symbol": "SHOP",
       "pair": "SHOP/USDT",
       "base_asset": "SHOP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "ONLINE",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinw",
+      "symbol": "SI",
+      "pair": "SI/USDT",
+      "base_asset": "SI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
