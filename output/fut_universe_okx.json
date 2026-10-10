@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "okx",
-  "generated_at": "2026-10-07T09:28:09+00:00",
+  "generated_at": "2026-10-10T18:01:26+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -12,9 +12,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 761,
-    "active_futures_pair_count": 759,
-    "tradable_futures_pair_count": 759,
+    "futures_pair_count": 765,
+    "active_futures_pair_count": 765,
+    "tradable_futures_pair_count": 765,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -1288,6 +1288,21 @@
       "settle_asset": "USDT",
       "contract_type": "SWAP",
       "market": "SWAP",
+      "flags": {
+        "status": "LIVE",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "okx",
+      "symbol": "AXS-USD_UM_XPERP-311010",
+      "pair": "AXS/USD_UM_XPERP",
+      "base_asset": "AXS",
+      "quote_asset": "USD_UM_XPERP",
+      "settle_asset": "USD",
+      "contract_type": "FUTURES",
+      "market": "FUTURES",
       "flags": {
         "status": "LIVE",
         "is_active": true,
@@ -6621,6 +6636,21 @@
     },
     {
       "exchange": "okx",
+      "symbol": "NFLX-USD_UM_XPERP-311010",
+      "pair": "NFLX/USD_UM_XPERP",
+      "base_asset": "NFLX",
+      "quote_asset": "USD_UM_XPERP",
+      "settle_asset": "USD",
+      "contract_type": "FUTURES",
+      "market": "FUTURES",
+      "flags": {
+        "status": "LIVE",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "okx",
       "symbol": "NG-USDT-SWAP",
       "pair": "NG/USDT",
       "base_asset": "NG",
@@ -7289,9 +7319,9 @@
       "contract_type": "FUTURES",
       "market": "FUTURES",
       "flags": {
-        "status": "PREOPEN",
-        "is_active": false,
-        "is_tradable": false
+        "status": "LIVE",
+        "is_active": true,
+        "is_tradable": true
       }
     },
     {
@@ -7334,9 +7364,9 @@
       "contract_type": "FUTURES",
       "market": "FUTURES",
       "flags": {
-        "status": "PREOPEN",
-        "is_active": false,
-        "is_tradable": false
+        "status": "LIVE",
+        "is_active": true,
+        "is_tradable": true
       }
     },
     {
@@ -7378,6 +7408,21 @@
       "settle_asset": "USDT",
       "contract_type": "SWAP",
       "market": "SWAP",
+      "flags": {
+        "status": "LIVE",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "okx",
+      "symbol": "PENG-USD_UM_XPERP-311010",
+      "pair": "PENG/USD_UM_XPERP",
+      "base_asset": "PENG",
+      "quote_asset": "USD_UM_XPERP",
+      "settle_asset": "USD",
+      "contract_type": "FUTURES",
+      "market": "FUTURES",
       "flags": {
         "status": "LIVE",
         "is_active": true,
@@ -10228,6 +10273,21 @@
       "settle_asset": "USDT",
       "contract_type": "SWAP",
       "market": "SWAP",
+      "flags": {
+        "status": "LIVE",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "okx",
+      "symbol": "US100-USD_UM_XPERP-311010",
+      "pair": "US100/USD_UM_XPERP",
+      "base_asset": "US100",
+      "quote_asset": "USD_UM_XPERP",
+      "settle_asset": "USD",
+      "contract_type": "FUTURES",
+      "market": "FUTURES",
       "flags": {
         "status": "LIVE",
         "is_active": true,

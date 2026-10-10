@@ -2,14 +2,14 @@
   "schema_version": 1,
   "data_type": "withdrawal_fees",
   "exchange": "bybit",
-  "generated_at": "2026-10-07T09:28:06+00:00",
+  "generated_at": "2026-10-10T18:01:23+00:00",
   "source": {
     "coin_info_url": "https://api.bybit.com/v5/asset/coin/query-info"
   },
   "summary": {
     "total_coin_rows": 793,
     "currencies_with_chains": 793,
-    "total_chains": 1035,
+    "total_chains": 1034,
     "skipped_rows": 0
   },
   "currencies": [
@@ -1998,7 +1998,7 @@
       "chains": [
         {
           "chain_name": "BTC",
-          "withdrawal_min_fee": "0.00006",
+          "withdrawal_min_fee": "0.000035",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.00027",
           "is_withdraw_enabled": true,
@@ -3643,7 +3643,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "2039.96608253",
+          "withdrawal_min_fee": "1865.12153759",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "8000",
           "is_withdraw_enabled": true,
@@ -5834,7 +5834,7 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0x2dfF88A56767223A5529eA5960Da7A3F5f766406"
         },
@@ -7402,9 +7402,9 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "10",
+          "withdrawal_min_fee": "2",
           "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "40",
+          "withdrawal_min_size": "4",
           "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL"
@@ -9419,7 +9419,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "40.69499289",
+          "withdrawal_min_fee": "40",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "4",
           "is_withdraw_enabled": true,
@@ -9531,7 +9531,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "249.29727",
+          "withdrawal_min_fee": "280",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "3",
           "is_withdraw_enabled": true,
@@ -9801,7 +9801,7 @@
           "withdrawal_min_fee": "1",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.5",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo"
         }
@@ -10428,7 +10428,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "3000",
+          "withdrawal_min_fee": "4096.506194",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "100",
           "is_withdraw_enabled": true,
@@ -10563,15 +10563,6 @@
       "name": "SEI",
       "full_name": "SEI",
       "chains": [
-        {
-          "chain_name": "SEI",
-          "withdrawal_min_fee": "0.2",
-          "withdraw_fee_rate": "0",
-          "withdrawal_min_size": "0.2",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
-          "contract_address": null
-        },
         {
           "chain_name": "SEIEVM",
           "withdrawal_min_fee": "0.5",
@@ -13799,7 +13790,7 @@
       "chains": [
         {
           "chain_name": "SOL",
-          "withdrawal_min_fee": "361.83",
+          "withdrawal_min_fee": "327.36",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "600",
           "is_withdraw_enabled": true,
@@ -14721,7 +14712,7 @@
           "withdrawal_min_fee": "6",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "12",
-          "is_withdraw_enabled": true,
+          "is_withdraw_enabled": false,
           "is_deposit_enabled": true,
           "contract_address": "0xd89B7dD376E671c124352267516BEF1C2cc231a3"
         },

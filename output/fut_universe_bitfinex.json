@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "bitfinex",
-  "generated_at": "2026-10-07T09:28:06+00:00",
+  "generated_at": "2026-10-10T18:01:23+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -12,9 +12,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 79,
-    "active_futures_pair_count": 79,
-    "tradable_futures_pair_count": 79,
+    "futures_pair_count": 80,
+    "active_futures_pair_count": 80,
+    "tradable_futures_pair_count": 80,
     "skipped_instrument_rows": 14,
     "duplicate_symbol_rows": 0
   },
@@ -714,6 +714,21 @@
       "symbol": "tLINKF0:USTF0",
       "pair": "LINK/USDT",
       "base_asset": "LINK",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitfinex",
+      "symbol": "tLITF0:USTF0",
+      "pair": "LIT/USDT",
+      "base_asset": "LIT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",

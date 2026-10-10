@@ -2,7 +2,7 @@
   "schema_version": 1,
   "data_type": "futures_funding_rates",
   "exchange": "mexc",
-  "generated_at": "2026-10-07T09:28:10+00:00",
+  "generated_at": "2026-10-10T18:01:27+00:00",
   "source": {
     "contract_detail_url": "https://api.mexc.com/api/v1/contract/detail",
     "ticker_url": "https://api.mexc.com/api/v1/contract/ticker",
@@ -10,15 +10,15 @@
     "tradable_filter": "state == 0 and apiAllowed == true and type == 1"
   },
   "summary": {
-    "contract_detail_rows": 1184,
-    "ticker_rows": 1192,
-    "futures_pair_count": 1184,
+    "contract_detail_rows": 1197,
+    "ticker_rows": 1205,
+    "futures_pair_count": 1197,
     "tradable_futures_pair_count": 695,
     "pairs_with_funding_rate_count": 695,
     "pairs_missing_funding_rate_count": 0,
-    "positive_funding_rate_count": 538,
-    "negative_funding_rate_count": 154,
-    "zero_funding_rate_count": 3
+    "positive_funding_rate_count": 608,
+    "negative_funding_rate_count": 76,
+    "zero_funding_rate_count": 11
   },
   "pairs": [
     {
@@ -28,7 +28,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286457
+      "funding_timestamp_ms": 1791655282499
     },
     {
       "symbol": "1000000BABYDOGE_USDT",
@@ -37,7 +37,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286486
+      "funding_timestamp_ms": 1791655282786
     },
     {
       "symbol": "1000000MOG_USDT",
@@ -46,7 +46,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286673
+      "funding_timestamp_ms": 1791655283166
     },
     {
       "symbol": "1000BONK_USDC",
@@ -54,8 +54,8 @@
       "base_asset": "1000BONK",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287660
+      "funding_rate": "4.5e-05",
+      "funding_timestamp_ms": 1791655283884
     },
     {
       "symbol": "1000BONK_USDT",
@@ -63,8 +63,8 @@
       "base_asset": "1000BONK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-8.4e-05",
-      "funding_timestamp_ms": 1791365286030
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282302
     },
     {
       "symbol": "1000BTT_USDT",
@@ -72,8 +72,8 @@
       "base_asset": "1000BTT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.003315",
-      "funding_timestamp_ms": 1791365286541
+      "funding_rate": "-0.000414",
+      "funding_timestamp_ms": 1791655282757
     },
     {
       "symbol": "1000RATS_USDT",
@@ -82,7 +82,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286471
+      "funding_timestamp_ms": 1791655282794
     },
     {
       "symbol": "1INCH_USDT",
@@ -90,8 +90,8 @@
       "base_asset": "1INCH",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-7.7e-05",
-      "funding_timestamp_ms": 1791365286283
+      "funding_rate": "3.5e-05",
+      "funding_timestamp_ms": 1791655282656
     },
     {
       "symbol": "2Z_USDT",
@@ -99,8 +99,8 @@
       "base_asset": "2Z",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286126
+      "funding_rate": "-0.000157",
+      "funding_timestamp_ms": 1791655282606
     },
     {
       "symbol": "4STOCK_USDT",
@@ -109,7 +109,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286245
+      "funding_timestamp_ms": 1791655282559
     },
     {
       "symbol": "4_USDT",
@@ -117,8 +117,8 @@
       "base_asset": "4",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286080
+      "funding_rate": "5.8e-05",
+      "funding_timestamp_ms": 1791655282608
     },
     {
       "symbol": "AAVE_USDC",
@@ -126,8 +126,8 @@
       "base_asset": "AAVE",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365287080
+      "funding_rate": "-8e-06",
+      "funding_timestamp_ms": 1791655283424
     },
     {
       "symbol": "AAVE_USDT",
@@ -135,8 +135,8 @@
       "base_asset": "AAVE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "7.5e-05",
-      "funding_timestamp_ms": 1791365285858
+      "funding_rate": "1.2e-05",
+      "funding_timestamp_ms": 1791655282118
     },
     {
       "symbol": "ACE_USDT",
@@ -144,8 +144,8 @@
       "base_asset": "ACE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "3.3e-05",
-      "funding_timestamp_ms": 1791365286009
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282374
     },
     {
       "symbol": "ACH_USDT",
@@ -154,7 +154,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286343
+      "funding_timestamp_ms": 1791655282395
     },
     {
       "symbol": "ACT_USDT",
@@ -163,7 +163,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286698
+      "funding_timestamp_ms": 1791655282311
     },
     {
       "symbol": "ACU_USDT",
@@ -172,7 +172,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286927
+      "funding_timestamp_ms": 1791655282516
     },
     {
       "symbol": "ADA_USD",
@@ -180,8 +180,8 @@
       "base_asset": "ADA",
       "quote_asset": "USD",
       "settle_asset": "ADA",
-      "funding_rate": "-6e-06",
-      "funding_timestamp_ms": 1791365286606
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282825
     },
     {
       "symbol": "ADA_USDC",
@@ -189,8 +189,8 @@
       "base_asset": "ADA",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-3.6e-05",
-      "funding_timestamp_ms": 1791365286773
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283010
     },
     {
       "symbol": "ADA_USDT",
@@ -198,8 +198,8 @@
       "base_asset": "ADA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-6.4e-05",
-      "funding_timestamp_ms": 1791365285833
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282072
     },
     {
       "symbol": "AEON1_USDT",
@@ -208,7 +208,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286048
+      "funding_timestamp_ms": 1791655282589
     },
     {
       "symbol": "AERO_USDT",
@@ -217,7 +217,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286071
+      "funding_timestamp_ms": 1791655282155
     },
     {
       "symbol": "AEVO_USDT",
@@ -226,7 +226,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286603
+      "funding_timestamp_ms": 1791655282574
     },
     {
       "symbol": "AGI_USDT",
@@ -234,8 +234,8 @@
       "base_asset": "AGI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000176",
-      "funding_timestamp_ms": 1791365286644
+      "funding_rate": "0.000764",
+      "funding_timestamp_ms": 1791655282826
     },
     {
       "symbol": "AGLD_USDT",
@@ -243,8 +243,8 @@
       "base_asset": "AGLD",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286688
+      "funding_rate": "8e-05",
+      "funding_timestamp_ms": 1791655282755
     },
     {
       "symbol": "AGT_USDT",
@@ -252,8 +252,8 @@
       "base_asset": "AGT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000191",
-      "funding_timestamp_ms": 1791365286662
+      "funding_rate": "5.3e-05",
+      "funding_timestamp_ms": 1791655282258
     },
     {
       "symbol": "AIA_USDT",
@@ -262,7 +262,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286195
+      "funding_timestamp_ms": 1791655282499
     },
     {
       "symbol": "AIGENSYN_USDT",
@@ -271,7 +271,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286317
+      "funding_timestamp_ms": 1791655282573
     },
     {
       "symbol": "AIN_USDT",
@@ -279,8 +279,8 @@
       "base_asset": "AIN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000758",
-      "funding_timestamp_ms": 1791365285921
+      "funding_rate": "0.00096",
+      "funding_timestamp_ms": 1791655282336
     },
     {
       "symbol": "AIOT_USDT",
@@ -289,7 +289,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286759
+      "funding_timestamp_ms": 1791655282240
     },
     {
       "symbol": "AIOZ_USDT",
@@ -298,7 +298,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286431
+      "funding_timestamp_ms": 1791655282557
     },
     {
       "symbol": "AIO_USDT",
@@ -307,7 +307,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286113
+      "funding_timestamp_ms": 1791655282712
     },
     {
       "symbol": "AIXBT_USDT",
@@ -315,8 +315,8 @@
       "base_asset": "AIXBT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3.4e-05",
-      "funding_timestamp_ms": 1791365286217
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282569
     },
     {
       "symbol": "AKE_USDT",
@@ -325,7 +325,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285923
+      "funding_timestamp_ms": 1791655282218
     },
     {
       "symbol": "AKT_USDT",
@@ -334,7 +334,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286277
+      "funding_timestamp_ms": 1791655282528
     },
     {
       "symbol": "ALCH_USDT",
@@ -343,7 +343,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286860
+      "funding_timestamp_ms": 1791655283081
     },
     {
       "symbol": "ALGO_USDT",
@@ -351,8 +351,8 @@
       "base_asset": "ALGO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-2e-05",
-      "funding_timestamp_ms": 1791365285954
+      "funding_rate": "5.2e-05",
+      "funding_timestamp_ms": 1791655282173
     },
     {
       "symbol": "ALICE_USDT",
@@ -361,7 +361,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286006
+      "funding_timestamp_ms": 1791655282419
     },
     {
       "symbol": "ALLO_USDT",
@@ -370,7 +370,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286322
+      "funding_timestamp_ms": 1791655282759
     },
     {
       "symbol": "ALL_USDT",
@@ -378,8 +378,8 @@
       "base_asset": "ALL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000167",
-      "funding_timestamp_ms": 1791365287661
+      "funding_rate": "-0.001108",
+      "funding_timestamp_ms": 1791655283894
     },
     {
       "symbol": "ALPINE_USDT",
@@ -388,7 +388,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286578
+      "funding_timestamp_ms": 1791655283195
     },
     {
       "symbol": "ALT_USDT",
@@ -396,8 +396,8 @@
       "base_asset": "ALT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286514
+      "funding_rate": "-1.2e-05",
+      "funding_timestamp_ms": 1791655282362
     },
     {
       "symbol": "ANIME_USDT",
@@ -406,7 +406,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286851
+      "funding_timestamp_ms": 1791655283239
     },
     {
       "symbol": "ANKR_USDT",
@@ -415,7 +415,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286677
+      "funding_timestamp_ms": 1791655282627
     },
     {
       "symbol": "ANSEM_USDT",
@@ -423,8 +423,8 @@
       "base_asset": "ANSEM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000104",
-      "funding_timestamp_ms": 1791365286158
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1791655282418
     },
     {
       "symbol": "ANTHROPIC_USDT",
@@ -433,7 +433,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286432
+      "funding_timestamp_ms": 1791655282686
     },
     {
       "symbol": "APEX_USDT",
@@ -442,7 +442,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286645
+      "funding_timestamp_ms": 1791655282959
     },
     {
       "symbol": "APE_USDT",
@@ -450,8 +450,8 @@
       "base_asset": "APE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "9.3e-05",
-      "funding_timestamp_ms": 1791365286037
+      "funding_rate": "5.9e-05",
+      "funding_timestamp_ms": 1791655282231
     },
     {
       "symbol": "API3_USDT",
@@ -459,8 +459,8 @@
       "base_asset": "API3",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.001348",
-      "funding_timestamp_ms": 1791365285877
+      "funding_rate": "-0.000115",
+      "funding_timestamp_ms": 1791655282329
     },
     {
       "symbol": "APR_USDT",
@@ -469,7 +469,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286199
+      "funding_timestamp_ms": 1791655282158
     },
     {
       "symbol": "APT_USDC",
@@ -477,8 +477,8 @@
       "base_asset": "APT",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-3.5e-05",
-      "funding_timestamp_ms": 1791365286983
+      "funding_rate": "7.1e-05",
+      "funding_timestamp_ms": 1791655283170
     },
     {
       "symbol": "APT_USDT",
@@ -486,8 +486,8 @@
       "base_asset": "APT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3.5e-05",
-      "funding_timestamp_ms": 1791365285885
+      "funding_rate": "7.1e-05",
+      "funding_timestamp_ms": 1791655282117
     },
     {
       "symbol": "ARB_USDC",
@@ -495,8 +495,8 @@
       "base_asset": "ARB",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-0.000164",
-      "funding_timestamp_ms": 1791365286951
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1791655283218
     },
     {
       "symbol": "ARB_USDT",
@@ -504,8 +504,8 @@
       "base_asset": "ARB",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000267",
-      "funding_timestamp_ms": 1791365285840
+      "funding_rate": "-2.7e-05",
+      "funding_timestamp_ms": 1791655282104
     },
     {
       "symbol": "ARCSOL_USDT",
@@ -514,7 +514,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286419
+      "funding_timestamp_ms": 1791655282719
     },
     {
       "symbol": "ARIA_USDT",
@@ -523,7 +523,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286289
+      "funding_timestamp_ms": 1791655282632
     },
     {
       "symbol": "ARKM_USDT",
@@ -532,7 +532,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286159
+      "funding_timestamp_ms": 1791655282450
     },
     {
       "symbol": "ARK_USDT",
@@ -540,8 +540,8 @@
       "base_asset": "ARK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000209",
-      "funding_timestamp_ms": 1791365286024
+      "funding_rate": "-6.6e-05",
+      "funding_timestamp_ms": 1791655282538
     },
     {
       "symbol": "ARPA_USDT",
@@ -549,8 +549,8 @@
       "base_asset": "ARPA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286113
+      "funding_rate": "-0.001743",
+      "funding_timestamp_ms": 1791655282133
     },
     {
       "symbol": "ARX_USDT",
@@ -558,8 +558,8 @@
       "base_asset": "ARX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000217",
-      "funding_timestamp_ms": 1791365286257
+      "funding_rate": "0.000362",
+      "funding_timestamp_ms": 1791655282728
     },
     {
       "symbol": "AR_USDT",
@@ -567,8 +567,8 @@
       "base_asset": "AR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-2.7e-05",
-      "funding_timestamp_ms": 1791365286104
+      "funding_rate": "8.3e-05",
+      "funding_timestamp_ms": 1791655282413
     },
     {
       "symbol": "ASR_USDT",
@@ -577,7 +577,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286634
+      "funding_timestamp_ms": 1791655283079
     },
     {
       "symbol": "ASTER_USD1",
@@ -585,8 +585,8 @@
       "base_asset": "ASTER",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "-0.000131",
-      "funding_timestamp_ms": 1791365287838
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1791655284201
     },
     {
       "symbol": "ASTER_USDT",
@@ -594,8 +594,8 @@
       "base_asset": "ASTER",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "2.7e-05",
-      "funding_timestamp_ms": 1791365285876
+      "funding_rate": "3.5e-05",
+      "funding_timestamp_ms": 1791655282145
     },
     {
       "symbol": "ASTR_USDT",
@@ -603,8 +603,8 @@
       "base_asset": "ASTR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-4.6e-05",
-      "funding_timestamp_ms": 1791365286816
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282986
     },
     {
       "symbol": "ATH_USDT",
@@ -613,7 +613,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286149
+      "funding_timestamp_ms": 1791655282464
     },
     {
       "symbol": "ATOM_USDT",
@@ -621,8 +621,8 @@
       "base_asset": "ATOM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000211",
-      "funding_timestamp_ms": 1791365285950
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282104
     },
     {
       "symbol": "AT_USDT",
@@ -631,7 +631,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286567
+      "funding_timestamp_ms": 1791655282835
     },
     {
       "symbol": "AUCTION_USDT",
@@ -639,8 +639,8 @@
       "base_asset": "AUCTION",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3.3e-05",
-      "funding_timestamp_ms": 1791365286552
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282934
     },
     {
       "symbol": "AUDIO_USDT",
@@ -649,7 +649,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365286594
+      "funding_timestamp_ms": 1791655282813
     },
     {
       "symbol": "AUD_USDT",
@@ -657,8 +657,8 @@
       "base_asset": "AUD",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000134",
-      "funding_timestamp_ms": 1791365287102
+      "funding_rate": "0.000114",
+      "funding_timestamp_ms": 1791655283423
     },
     {
       "symbol": "AURORA_USDT",
@@ -666,8 +666,8 @@
       "base_asset": "AURORA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000133",
-      "funding_timestamp_ms": 1791365286689
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1791655282729
     },
     {
       "symbol": "AVAAI_USDT",
@@ -675,8 +675,8 @@
       "base_asset": "AVAAI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286515
+      "funding_rate": "0.000377",
+      "funding_timestamp_ms": 1791655282614
     },
     {
       "symbol": "AVAX_USD",
@@ -685,7 +685,7 @@
       "quote_asset": "USD",
       "settle_asset": "AVAX",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286745
+      "funding_timestamp_ms": 1791655282999
     },
     {
       "symbol": "AVAX_USDC",
@@ -693,8 +693,8 @@
       "base_asset": "AVAX",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "8e-05",
-      "funding_timestamp_ms": 1791365286746
+      "funding_rate": "8.5e-05",
+      "funding_timestamp_ms": 1791655283097
     },
     {
       "symbol": "AVAX_USDT",
@@ -702,8 +702,8 @@
       "base_asset": "AVAX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365285836
+      "funding_rate": "8.2e-05",
+      "funding_timestamp_ms": 1791655282092
     },
     {
       "symbol": "AVA_USDT",
@@ -711,8 +711,8 @@
       "base_asset": "AVA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-5e-06",
-      "funding_timestamp_ms": 1791365286488
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282822
     },
     {
       "symbol": "AVNT_USDT",
@@ -721,7 +721,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286321
+      "funding_timestamp_ms": 1791655282511
     },
     {
       "symbol": "AWE_USDT",
@@ -730,7 +730,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286923
+      "funding_timestamp_ms": 1791655283168
     },
     {
       "symbol": "AXL_USDT",
@@ -739,7 +739,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286734
+      "funding_timestamp_ms": 1791655282886
     },
     {
       "symbol": "AXS_USDT",
@@ -747,8 +747,8 @@
       "base_asset": "AXS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-1.5e-05",
-      "funding_timestamp_ms": 1791365286025
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282212
     },
     {
       "symbol": "AZTEC_USDT",
@@ -757,7 +757,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286749
+      "funding_timestamp_ms": 1791655282597
     },
     {
       "symbol": "A_USDT",
@@ -765,8 +765,8 @@
       "base_asset": "A",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286529
+      "funding_rate": "-1.3e-05",
+      "funding_timestamp_ms": 1791655282582
     },
     {
       "symbol": "B2_USDT",
@@ -775,7 +775,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286724
+      "funding_timestamp_ms": 1791655283044
     },
     {
       "symbol": "B3_USDT",
@@ -783,8 +783,8 @@
       "base_asset": "B3",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.5e-05",
-      "funding_timestamp_ms": 1791365286948
+      "funding_rate": "-0.000499",
+      "funding_timestamp_ms": 1791655283320
     },
     {
       "symbol": "BABY_USDT",
@@ -793,7 +793,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286643
+      "funding_timestamp_ms": 1791655282810
     },
     {
       "symbol": "BANANAS31_USDT",
@@ -801,8 +801,8 @@
       "base_asset": "BANANAS31",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286804
+      "funding_rate": "2.8e-05",
+      "funding_timestamp_ms": 1791655283028
     },
     {
       "symbol": "BANANA_USDT",
@@ -811,7 +811,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286803
+      "funding_timestamp_ms": 1791655283144
     },
     {
       "symbol": "BAND_USDT",
@@ -819,8 +819,8 @@
       "base_asset": "BAND",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "8.9e-05",
-      "funding_timestamp_ms": 1791365286042
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282672
     },
     {
       "symbol": "BANK_USDT",
@@ -828,8 +828,8 @@
       "base_asset": "BANK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-2.5e-05",
-      "funding_timestamp_ms": 1791365286232
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282724
     },
     {
       "symbol": "BAN_USDT",
@@ -837,8 +837,8 @@
       "base_asset": "BAN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286872
+      "funding_rate": "0.000104",
+      "funding_timestamp_ms": 1791655283080
     },
     {
       "symbol": "BARD_USDT",
@@ -846,8 +846,8 @@
       "base_asset": "BARD",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.7e-05",
-      "funding_timestamp_ms": 1791365286725
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283010
     },
     {
       "symbol": "BASECAT_USDT",
@@ -856,7 +856,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365286185
+      "funding_timestamp_ms": 1791655282547
     },
     {
       "symbol": "BASED_USDT",
@@ -865,7 +865,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286159
+      "funding_timestamp_ms": 1791655282701
     },
     {
       "symbol": "BAS_USDT",
@@ -874,7 +874,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286761
+      "funding_timestamp_ms": 1791655283202
     },
     {
       "symbol": "BATON_USDT",
@@ -882,8 +882,8 @@
       "base_asset": "BATON",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000116",
-      "funding_timestamp_ms": 1791365285837
+      "funding_rate": "0.000127",
+      "funding_timestamp_ms": 1791655282090
     },
     {
       "symbol": "BAT_USDT",
@@ -891,8 +891,8 @@
       "base_asset": "BAT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286141
+      "funding_rate": "-0.002216",
+      "funding_timestamp_ms": 1791655282077
     },
     {
       "symbol": "BB_USDT",
@@ -901,7 +901,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286234
+      "funding_timestamp_ms": 1791655282477
     },
     {
       "symbol": "BCH_USD1",
@@ -910,7 +910,7 @@
       "quote_asset": "USD1",
       "settle_asset": "USD1",
       "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365287838
+      "funding_timestamp_ms": 1791655284196
     },
     {
       "symbol": "BCH_USDC",
@@ -918,8 +918,8 @@
       "base_asset": "BCH",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365287403
+      "funding_rate": "-3e-06",
+      "funding_timestamp_ms": 1791655283748
     },
     {
       "symbol": "BCH_USDT",
@@ -927,8 +927,8 @@
       "base_asset": "BCH",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5.7e-05",
-      "funding_timestamp_ms": 1791365285972
+      "funding_rate": "1.7e-05",
+      "funding_timestamp_ms": 1791655282196
     },
     {
       "symbol": "BEAMX_USDT",
@@ -937,7 +937,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286206
+      "funding_timestamp_ms": 1791655282513
     },
     {
       "symbol": "BEAT_USDT",
@@ -945,8 +945,8 @@
       "base_asset": "BEAT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285997
+      "funding_rate": "6.2e-05",
+      "funding_timestamp_ms": 1791655282251
     },
     {
       "symbol": "BEL_USDT",
@@ -954,8 +954,8 @@
       "base_asset": "BEL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-5.3e-05",
-      "funding_timestamp_ms": 1791365286845
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282232
     },
     {
       "symbol": "BERA_USDT",
@@ -964,7 +964,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286193
+      "funding_timestamp_ms": 1791655282744
     },
     {
       "symbol": "BIANRENSHENG_USDT",
@@ -973,7 +973,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286773
+      "funding_timestamp_ms": 1791655282425
     },
     {
       "symbol": "BICO_USDT",
@@ -982,7 +982,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286359
+      "funding_timestamp_ms": 1791655282644
     },
     {
       "symbol": "BIGTIME_USDT",
@@ -991,7 +991,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286567
+      "funding_timestamp_ms": 1791655282512
     },
     {
       "symbol": "BILL_USDT",
@@ -999,8 +999,8 @@
       "base_asset": "BILL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286445
+      "funding_rate": "-7.4e-05",
+      "funding_timestamp_ms": 1791655282438
     },
     {
       "symbol": "BIO_USDT",
@@ -1008,8 +1008,8 @@
       "base_asset": "BIO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-5.3e-05",
-      "funding_timestamp_ms": 1791365286192
+      "funding_rate": "3.6e-05",
+      "funding_timestamp_ms": 1791655282691
     },
     {
       "symbol": "BIRB_USDT",
@@ -1018,7 +1018,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286997
+      "funding_timestamp_ms": 1791655283515
     },
     {
       "symbol": "BLEND_USDT",
@@ -1027,7 +1027,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287257
+      "funding_timestamp_ms": 1791655283437
     },
     {
       "symbol": "BLESS_USDT",
@@ -1036,7 +1036,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286191
+      "funding_timestamp_ms": 1791655282525
     },
     {
       "symbol": "BLUAI_USDT",
@@ -1045,7 +1045,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286747
+      "funding_timestamp_ms": 1791655283091
     },
     {
       "symbol": "BLUR_USDT",
@@ -1053,8 +1053,8 @@
       "base_asset": "BLUR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3.4e-05",
-      "funding_timestamp_ms": 1791365286769
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282821
     },
     {
       "symbol": "BMT_USDT",
@@ -1063,7 +1063,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286702
+      "funding_timestamp_ms": 1791655282831
     },
     {
       "symbol": "BNB_USD1",
@@ -1071,8 +1071,8 @@
       "base_asset": "BNB",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "2.2e-05",
-      "funding_timestamp_ms": 1791365287719
+      "funding_rate": "0.000113",
+      "funding_timestamp_ms": 1791655284054
     },
     {
       "symbol": "BNB_USDC",
@@ -1080,8 +1080,8 @@
       "base_asset": "BNB",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0",
-      "funding_timestamp_ms": 1791365286952
+      "funding_rate": "0.00014",
+      "funding_timestamp_ms": 1791655283419
     },
     {
       "symbol": "BNB_USDT",
@@ -1090,7 +1090,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0",
-      "funding_timestamp_ms": 1791365285863
+      "funding_timestamp_ms": 1791655282146
     },
     {
       "symbol": "BNT_USDT",
@@ -1098,8 +1098,8 @@
       "base_asset": "BNT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-2.2e-05",
-      "funding_timestamp_ms": 1791365286711
+      "funding_rate": "8.9e-05",
+      "funding_timestamp_ms": 1791655283121
     },
     {
       "symbol": "BOBA_USDT",
@@ -1107,8 +1107,8 @@
       "base_asset": "BOBA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-4.3e-05",
-      "funding_timestamp_ms": 1791365287093
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282984
     },
     {
       "symbol": "BOME_USDT",
@@ -1116,8 +1116,8 @@
       "base_asset": "BOME",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "1.4e-05",
-      "funding_timestamp_ms": 1791365286067
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282350
     },
     {
       "symbol": "BONER_USDT",
@@ -1125,8 +1125,8 @@
       "base_asset": "BONER",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000115",
-      "funding_timestamp_ms": 1791365286050
+      "funding_rate": "0.000126",
+      "funding_timestamp_ms": 1791655282290
     },
     {
       "symbol": "BP_USDT",
@@ -1135,7 +1135,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286066
+      "funding_timestamp_ms": 1791655282302
     },
     {
       "symbol": "BRETT_USDT",
@@ -1144,7 +1144,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286271
+      "funding_timestamp_ms": 1791655282731
     },
     {
       "symbol": "BREV_USDT",
@@ -1153,7 +1153,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286458
+      "funding_timestamp_ms": 1791655282511
     },
     {
       "symbol": "BRL_USDT",
@@ -1161,8 +1161,8 @@
       "base_asset": "BRL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.0002",
-      "funding_timestamp_ms": 1791365286675
+      "funding_rate": "-1.1e-05",
+      "funding_timestamp_ms": 1791655283081
     },
     {
       "symbol": "BROCCOLIF3B_USDT",
@@ -1171,7 +1171,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286873
+      "funding_timestamp_ms": 1791655283043
     },
     {
       "symbol": "BROCCOLI_USDT",
@@ -1180,7 +1180,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286566
+      "funding_timestamp_ms": 1791655282798
     },
     {
       "symbol": "BR_USDT",
@@ -1188,8 +1188,8 @@
       "base_asset": "BR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.002567",
-      "funding_timestamp_ms": 1791365285821
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282121
     },
     {
       "symbol": "BSB_USDT",
@@ -1197,8 +1197,8 @@
       "base_asset": "BSB",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286431
+      "funding_rate": "0.000234",
+      "funding_timestamp_ms": 1791655282399
     },
     {
       "symbol": "BSV_USDT",
@@ -1207,7 +1207,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286406
+      "funding_timestamp_ms": 1791655282823
     },
     {
       "symbol": "BTC_USD",
@@ -1215,8 +1215,8 @@
       "base_asset": "BTC",
       "quote_asset": "USD",
       "settle_asset": "BTC",
-      "funding_rate": "-4.2e-05",
-      "funding_timestamp_ms": 1791365286052
+      "funding_rate": "6.3e-05",
+      "funding_timestamp_ms": 1791655282385
     },
     {
       "symbol": "BTC_USD1",
@@ -1224,8 +1224,8 @@
       "base_asset": "BTC",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "-0.000144",
-      "funding_timestamp_ms": 1791365286934
+      "funding_rate": "6.9e-05",
+      "funding_timestamp_ms": 1791655283328
     },
     {
       "symbol": "BTC_USDC",
@@ -1233,8 +1233,8 @@
       "base_asset": "BTC",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-6.7e-05",
-      "funding_timestamp_ms": 1791365285981
+      "funding_rate": "1.1e-05",
+      "funding_timestamp_ms": 1791655282275
     },
     {
       "symbol": "BTC_USDT",
@@ -1242,8 +1242,8 @@
       "base_asset": "BTC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-5.4e-05",
-      "funding_timestamp_ms": 1791365285808
+      "funding_rate": "9e-06",
+      "funding_timestamp_ms": 1791655282051
     },
     {
       "symbol": "BTR_USDT",
@@ -1251,8 +1251,8 @@
       "base_asset": "BTR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000224",
-      "funding_timestamp_ms": 1791365286178
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282583
     },
     {
       "symbol": "BTW_USDT",
@@ -1260,8 +1260,8 @@
       "base_asset": "BTW",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285914
+      "funding_rate": "0.000127",
+      "funding_timestamp_ms": 1791655282105
     },
     {
       "symbol": "BULLA_USDT",
@@ -1269,8 +1269,8 @@
       "base_asset": "BULLA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.00011",
-      "funding_timestamp_ms": 1791365285982
+      "funding_rate": "0.000247",
+      "funding_timestamp_ms": 1791655282363
     },
     {
       "symbol": "B_USDT",
@@ -1279,7 +1279,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286445
+      "funding_timestamp_ms": 1791655282533
     },
     {
       "symbol": "C98_USDT",
@@ -1287,8 +1287,8 @@
       "base_asset": "C98",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365285897
+      "funding_rate": "6.1e-05",
+      "funding_timestamp_ms": 1791655282123
     },
     {
       "symbol": "CAD_USDT",
@@ -1296,8 +1296,8 @@
       "base_asset": "CAD",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "7.8e-05",
-      "funding_timestamp_ms": 1791365287353
+      "funding_rate": "0.000105",
+      "funding_timestamp_ms": 1791655283564
     },
     {
       "symbol": "CAKE_USDT",
@@ -1305,8 +1305,8 @@
       "base_asset": "CAKE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-1.6e-05",
-      "funding_timestamp_ms": 1791365286070
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282403
     },
     {
       "symbol": "CAP_USDT",
@@ -1314,8 +1314,8 @@
       "base_asset": "CAP",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285863
+      "funding_rate": "0.00033",
+      "funding_timestamp_ms": 1791655282090
     },
     {
       "symbol": "CARV_USDT",
@@ -1324,7 +1324,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286253
+      "funding_timestamp_ms": 1791655282996
     },
     {
       "symbol": "CATE_USDT",
@@ -1332,8 +1332,8 @@
       "base_asset": "CATE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000139",
-      "funding_timestamp_ms": 1791365286116
+      "funding_rate": "0.000117",
+      "funding_timestamp_ms": 1791655282342
     },
     {
       "symbol": "CATI_USDT",
@@ -1342,7 +1342,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286692
+      "funding_timestamp_ms": 1791655283043
     },
     {
       "symbol": "CAT_USDT",
@@ -1350,8 +1350,8 @@
       "base_asset": "CAT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "1.2e-05",
-      "funding_timestamp_ms": 1791365286835
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283316
     },
     {
       "symbol": "CC_USDT",
@@ -1359,8 +1359,8 @@
       "base_asset": "CC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3.6e-05",
-      "funding_timestamp_ms": 1791365286131
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282458
     },
     {
       "symbol": "CELO_USDT",
@@ -1368,8 +1368,8 @@
       "base_asset": "CELO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "1.7e-05",
-      "funding_timestamp_ms": 1791365286519
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282685
     },
     {
       "symbol": "CELR_USDT",
@@ -1378,7 +1378,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286405
+      "funding_timestamp_ms": 1791655282761
     },
     {
       "symbol": "CETUS_USDT",
@@ -1387,7 +1387,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286608
+      "funding_timestamp_ms": 1791655282499
     },
     {
       "symbol": "CFG_USDT",
@@ -1396,7 +1396,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286595
+      "funding_timestamp_ms": 1791655282705
     },
     {
       "symbol": "CFX_USDT",
@@ -1404,8 +1404,8 @@
       "base_asset": "CFX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "8.3e-05",
-      "funding_timestamp_ms": 1791365286244
+      "funding_rate": "-4e-06",
+      "funding_timestamp_ms": 1791655282109
     },
     {
       "symbol": "CGPT_USDT",
@@ -1414,7 +1414,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286555
+      "funding_timestamp_ms": 1791655282822
     },
     {
       "symbol": "CHEEMS_USDT",
@@ -1423,7 +1423,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287075
+      "funding_timestamp_ms": 1791655283213
     },
     {
       "symbol": "CHF_USDT",
@@ -1431,8 +1431,8 @@
       "base_asset": "CHF",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4e-06",
-      "funding_timestamp_ms": 1791365287517
+      "funding_rate": "-4.8e-05",
+      "funding_timestamp_ms": 1791655284037
     },
     {
       "symbol": "CHILLGUY_USDT",
@@ -1441,7 +1441,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286532
+      "funding_timestamp_ms": 1791655282903
     },
     {
       "symbol": "CHIP_USDT",
@@ -1449,8 +1449,8 @@
       "base_asset": "CHIP",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000111",
-      "funding_timestamp_ms": 1791365286050
+      "funding_rate": "4.1e-05",
+      "funding_timestamp_ms": 1791655282200
     },
     {
       "symbol": "CHR_USDT",
@@ -1458,8 +1458,8 @@
       "base_asset": "CHR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "7.3e-05",
-      "funding_timestamp_ms": 1791365286554
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282286
     },
     {
       "symbol": "CHZ_USDT",
@@ -1467,8 +1467,8 @@
       "base_asset": "CHZ",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-4.8e-05",
-      "funding_timestamp_ms": 1791365286121
+      "funding_rate": "-6.7e-05",
+      "funding_timestamp_ms": 1791655282425
     },
     {
       "symbol": "CKB_USDT",
@@ -1476,8 +1476,8 @@
       "base_asset": "CKB",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000285",
-      "funding_timestamp_ms": 1791365286657
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282380
     },
     {
       "symbol": "CLANKER_USDT",
@@ -1486,7 +1486,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286636
+      "funding_timestamp_ms": 1791655282848
     },
     {
       "symbol": "CLO_USDT",
@@ -1494,8 +1494,8 @@
       "base_asset": "CLO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000171",
-      "funding_timestamp_ms": 1791365285949
+      "funding_rate": "0.00037",
+      "funding_timestamp_ms": 1791655282527
     },
     {
       "symbol": "CNPY_USDT",
@@ -1504,7 +1504,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286634
+      "funding_timestamp_ms": 1791655282853
     },
     {
       "symbol": "COAI_USDT",
@@ -1513,7 +1513,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286118
+      "funding_timestamp_ms": 1791655282377
     },
     {
       "symbol": "COLLECT_USDT",
@@ -1521,8 +1521,8 @@
       "base_asset": "COLLECT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000223",
-      "funding_timestamp_ms": 1791365286147
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282774
     },
     {
       "symbol": "COMP_USDT",
@@ -1530,8 +1530,8 @@
       "base_asset": "COMP",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-9.8e-05",
-      "funding_timestamp_ms": 1791365286232
+      "funding_rate": "8.9e-05",
+      "funding_timestamp_ms": 1791655282282
     },
     {
       "symbol": "COOKIE_USDT",
@@ -1540,7 +1540,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286675
+      "funding_timestamp_ms": 1791655283023
     },
     {
       "symbol": "COPPER_USDT",
@@ -1548,8 +1548,8 @@
       "base_asset": "COPPER",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000269",
-      "funding_timestamp_ms": 1791365286362
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1791655282657
     },
     {
       "symbol": "CORE_USDT",
@@ -1557,8 +1557,8 @@
       "base_asset": "CORE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-9.4e-05",
-      "funding_timestamp_ms": 1791365286099
+      "funding_rate": "0.000151",
+      "funding_timestamp_ms": 1791655282436
     },
     {
       "symbol": "COTI_USDT",
@@ -1566,8 +1566,8 @@
       "base_asset": "COTI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "3e-05",
-      "funding_timestamp_ms": 1791365286027
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282498
     },
     {
       "symbol": "COW_USDT",
@@ -1576,7 +1576,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286793
+      "funding_timestamp_ms": 1791655283216
     },
     {
       "symbol": "CP_USDT",
@@ -1585,7 +1585,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286582
+      "funding_timestamp_ms": 1791655283070
     },
     {
       "symbol": "CROSS_USDT",
@@ -1594,7 +1594,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286642
+      "funding_timestamp_ms": 1791655282871
     },
     {
       "symbol": "CRO_USDT",
@@ -1603,7 +1603,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286108
+      "funding_timestamp_ms": 1791655282543
     },
     {
       "symbol": "CRV_USDC",
@@ -1612,7 +1612,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365287459
+      "funding_timestamp_ms": 1791655283739
     },
     {
       "symbol": "CRV_USDT",
@@ -1620,8 +1620,8 @@
       "base_asset": "CRV",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3e-06",
-      "funding_timestamp_ms": 1791365286009
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282246
     },
     {
       "symbol": "CTC_USDT",
@@ -1630,7 +1630,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287049
+      "funding_timestamp_ms": 1791655283400
     },
     {
       "symbol": "CTK_USDT",
@@ -1639,7 +1639,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287020
+      "funding_timestamp_ms": 1791655282463
     },
     {
       "symbol": "CTR_USDT",
@@ -1647,8 +1647,8 @@
       "base_asset": "CTR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287005
+      "funding_rate": "0.000432",
+      "funding_timestamp_ms": 1791655283013
     },
     {
       "symbol": "CTSI_USDT",
@@ -1656,8 +1656,8 @@
       "base_asset": "CTSI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.002767",
-      "funding_timestamp_ms": 1791365286330
+      "funding_rate": "-0.001",
+      "funding_timestamp_ms": 1791655282240
     },
     {
       "symbol": "CT_USDT",
@@ -1665,8 +1665,8 @@
       "base_asset": "CT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000567",
-      "funding_timestamp_ms": 1791365285934
+      "funding_rate": "-0.000158",
+      "funding_timestamp_ms": 1791655282202
     },
     {
       "symbol": "CVC_USDT",
@@ -1674,8 +1674,8 @@
       "base_asset": "CVC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286867
+      "funding_rate": "5e-06",
+      "funding_timestamp_ms": 1791655282812
     },
     {
       "symbol": "CVX_USDT",
@@ -1684,7 +1684,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286565
+      "funding_timestamp_ms": 1791655282668
     },
     {
       "symbol": "CYBER_USDT",
@@ -1692,8 +1692,8 @@
       "base_asset": "CYBER",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "7e-06",
-      "funding_timestamp_ms": 1791365286258
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282419
     },
     {
       "symbol": "CYS_USDT",
@@ -1702,7 +1702,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286333
+      "funding_timestamp_ms": 1791655282738
     },
     {
       "symbol": "C_USDT",
@@ -1711,7 +1711,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286605
+      "funding_timestamp_ms": 1791655282872
     },
     {
       "symbol": "DASH_USDT",
@@ -1719,8 +1719,8 @@
       "base_asset": "DASH",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3.5e-05",
-      "funding_timestamp_ms": 1791365285889
+      "funding_rate": "8.8e-05",
+      "funding_timestamp_ms": 1791655282185
     },
     {
       "symbol": "DATA_USDT",
@@ -1729,7 +1729,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287126
+      "funding_timestamp_ms": 1791655283312
     },
     {
       "symbol": "DBR_USDT",
@@ -1738,7 +1738,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286886
+      "funding_timestamp_ms": 1791655283358
     },
     {
       "symbol": "DEEP_USDT",
@@ -1747,7 +1747,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286309
+      "funding_timestamp_ms": 1791655282744
     },
     {
       "symbol": "DEXE_USDT",
@@ -1756,7 +1756,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286374
+      "funding_timestamp_ms": 1791655282554
     },
     {
       "symbol": "DGAI_USDT",
@@ -1765,7 +1765,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286816
+      "funding_timestamp_ms": 1791655283067
     },
     {
       "symbol": "DIA_USDT",
@@ -1774,7 +1774,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286098
+      "funding_timestamp_ms": 1791655282744
     },
     {
       "symbol": "DODO_USDT",
@@ -1782,8 +1782,8 @@
       "base_asset": "DODO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286417
+      "funding_rate": "0.000103",
+      "funding_timestamp_ms": 1791655282462
     },
     {
       "symbol": "DOGE_USD",
@@ -1791,8 +1791,8 @@
       "base_asset": "DOGE",
       "quote_asset": "USD",
       "settle_asset": "DOGE",
-      "funding_rate": "1.5e-05",
-      "funding_timestamp_ms": 1791365286472
+      "funding_rate": "5.3e-05",
+      "funding_timestamp_ms": 1791655282877
     },
     {
       "symbol": "DOGE_USD1",
@@ -1800,8 +1800,8 @@
       "base_asset": "DOGE",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "-1.6e-05",
-      "funding_timestamp_ms": 1791365287853
+      "funding_rate": "9.6e-05",
+      "funding_timestamp_ms": 1791655284077
     },
     {
       "symbol": "DOGE_USDC",
@@ -1809,8 +1809,8 @@
       "base_asset": "DOGE",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "5.9e-05",
-      "funding_timestamp_ms": 1791365286735
+      "funding_rate": "5.3e-05",
+      "funding_timestamp_ms": 1791655283218
     },
     {
       "symbol": "DOGE_USDT",
@@ -1818,8 +1818,8 @@
       "base_asset": "DOGE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-4.2e-05",
-      "funding_timestamp_ms": 1791365285828
+      "funding_rate": "-2.8e-05",
+      "funding_timestamp_ms": 1791655282091
     },
     {
       "symbol": "DOGS_USDT",
@@ -1828,7 +1828,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286402
+      "funding_timestamp_ms": 1791655282719
     },
     {
       "symbol": "DOLO_USDT",
@@ -1837,7 +1837,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287098
+      "funding_timestamp_ms": 1791655283201
     },
     {
       "symbol": "DOOD_USDT",
@@ -1846,7 +1846,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286888
+      "funding_timestamp_ms": 1791655283320
     },
     {
       "symbol": "DOS_USDT",
@@ -1854,8 +1854,8 @@
       "base_asset": "DOS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286530
+      "funding_rate": "0.000316",
+      "funding_timestamp_ms": 1791655282470
     },
     {
       "symbol": "DOT_USD1",
@@ -1863,8 +1863,8 @@
       "base_asset": "DOT",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "-0.000372",
-      "funding_timestamp_ms": 1791365287859
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655284080
     },
     {
       "symbol": "DOT_USDC",
@@ -1873,7 +1873,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365287353
+      "funding_timestamp_ms": 1791655283149
     },
     {
       "symbol": "DOT_USDT",
@@ -1881,8 +1881,8 @@
       "base_asset": "DOT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000372",
-      "funding_timestamp_ms": 1791365285862
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282090
     },
     {
       "symbol": "DRIFT_USDT",
@@ -1891,7 +1891,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286473
+      "funding_timestamp_ms": 1791655282741
     },
     {
       "symbol": "DUSK_USDT",
@@ -1899,8 +1899,8 @@
       "base_asset": "DUSK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "3.1e-05",
-      "funding_timestamp_ms": 1791365286421
+      "funding_rate": "2.5e-05",
+      "funding_timestamp_ms": 1791655282388
     },
     {
       "symbol": "DYDX_USDT",
@@ -1908,8 +1908,8 @@
       "base_asset": "DYDX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.6e-05",
-      "funding_timestamp_ms": 1791365286184
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282474
     },
     {
       "symbol": "DYM_USDT",
@@ -1918,7 +1918,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286303
+      "funding_timestamp_ms": 1791655282648
     },
     {
       "symbol": "EDEN_USDT",
@@ -1927,7 +1927,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286286
+      "funding_timestamp_ms": 1791655282853
     },
     {
       "symbol": "EDGE_USDT",
@@ -1935,8 +1935,8 @@
       "base_asset": "EDGE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286542
+      "funding_rate": "9.6e-05",
+      "funding_timestamp_ms": 1791655282541
     },
     {
       "symbol": "EDU_USDT",
@@ -1945,7 +1945,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365285924
+      "funding_timestamp_ms": 1791655282358
     },
     {
       "symbol": "EGLD_USDT",
@@ -1953,8 +1953,8 @@
       "base_asset": "EGLD",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000103",
-      "funding_timestamp_ms": 1791365286197
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282504
     },
     {
       "symbol": "EIGEN_USDT",
@@ -1962,8 +1962,8 @@
       "base_asset": "EIGEN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "2.2e-05",
-      "funding_timestamp_ms": 1791365285996
+      "funding_rate": "4.7e-05",
+      "funding_timestamp_ms": 1791655282251
     },
     {
       "symbol": "ELSA_USDT",
@@ -1972,7 +1972,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286747
+      "funding_timestamp_ms": 1791655283288
     },
     {
       "symbol": "ENA_USD1",
@@ -1981,7 +1981,7 @@
       "quote_asset": "USD1",
       "settle_asset": "USD1",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287858
+      "funding_timestamp_ms": 1791655283920
     },
     {
       "symbol": "ENA_USDC",
@@ -1989,8 +1989,8 @@
       "base_asset": "ENA",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286529
+      "funding_rate": "4.4e-05",
+      "funding_timestamp_ms": 1791655282832
     },
     {
       "symbol": "ENA_USDT",
@@ -1999,7 +1999,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285837
+      "funding_timestamp_ms": 1791655282093
     },
     {
       "symbol": "ENJ_USDT",
@@ -2008,7 +2008,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286085
+      "funding_timestamp_ms": 1791655282350
     },
     {
       "symbol": "ENSO_USDT",
@@ -2017,7 +2017,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286600
+      "funding_timestamp_ms": 1791655282686
     },
     {
       "symbol": "ENS_USDT",
@@ -2025,8 +2025,8 @@
       "base_asset": "ENS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-2.4e-05",
-      "funding_timestamp_ms": 1791365286317
+      "funding_rate": "3.8e-05",
+      "funding_timestamp_ms": 1791655282581
     },
     {
       "symbol": "EPIC_USDT",
@@ -2035,7 +2035,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286614
+      "funding_timestamp_ms": 1791655282948
     },
     {
       "symbol": "ERA_USDT",
@@ -2043,8 +2043,8 @@
       "base_asset": "ERA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-5.3e-05",
-      "funding_timestamp_ms": 1791365286590
+      "funding_rate": "-0.006074",
+      "funding_timestamp_ms": 1791655282079
     },
     {
       "symbol": "ESPORTS_USDT",
@@ -2052,8 +2052,8 @@
       "base_asset": "ESPORTS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286379
+      "funding_rate": "0.000818",
+      "funding_timestamp_ms": 1791655282513
     },
     {
       "symbol": "ESP_USDT",
@@ -2062,7 +2062,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286258
+      "funding_timestamp_ms": 1791655282850
     },
     {
       "symbol": "ETC_USDC",
@@ -2070,8 +2070,8 @@
       "base_asset": "ETC",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365287757
+      "funding_rate": "-0.002847",
+      "funding_timestamp_ms": 1791655283221
     },
     {
       "symbol": "ETC_USDT",
@@ -2079,8 +2079,8 @@
       "base_asset": "ETC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-9.2e-05",
-      "funding_timestamp_ms": 1791365286066
+      "funding_rate": "-1.5e-05",
+      "funding_timestamp_ms": 1791655282372
     },
     {
       "symbol": "ETHFI_USDT",
@@ -2088,8 +2088,8 @@
       "base_asset": "ETHFI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285918
+      "funding_rate": "-8e-06",
+      "funding_timestamp_ms": 1791655282211
     },
     {
       "symbol": "ETHW_USDT",
@@ -2098,7 +2098,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286553
+      "funding_timestamp_ms": 1791655282780
     },
     {
       "symbol": "ETH_USD",
@@ -2106,8 +2106,8 @@
       "base_asset": "ETH",
       "quote_asset": "USD",
       "settle_asset": "ETH",
-      "funding_rate": "-0.000189",
-      "funding_timestamp_ms": 1791365286154
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282521
     },
     {
       "symbol": "ETH_USD1",
@@ -2115,8 +2115,8 @@
       "base_asset": "ETH",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "-0.000126",
-      "funding_timestamp_ms": 1791365287255
+      "funding_rate": "-0.000103",
+      "funding_timestamp_ms": 1791655284053
     },
     {
       "symbol": "ETH_USDC",
@@ -2124,8 +2124,8 @@
       "base_asset": "ETH",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-9.7e-05",
-      "funding_timestamp_ms": 1791365286167
+      "funding_rate": "5.5e-05",
+      "funding_timestamp_ms": 1791655282621
     },
     {
       "symbol": "ETH_USDT",
@@ -2133,8 +2133,8 @@
       "base_asset": "ETH",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000112",
-      "funding_timestamp_ms": 1791365285807
+      "funding_rate": "7e-06",
+      "funding_timestamp_ms": 1791655282051
     },
     {
       "symbol": "EUL_USDT",
@@ -2143,7 +2143,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286664
+      "funding_timestamp_ms": 1791655282906
     },
     {
       "symbol": "EUR_USDT",
@@ -2151,8 +2151,8 @@
       "base_asset": "EUR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "3.6e-05",
-      "funding_timestamp_ms": 1791365286386
+      "funding_rate": "2.7e-05",
+      "funding_timestamp_ms": 1791655282970
     },
     {
       "symbol": "EVAA_USDT",
@@ -2160,8 +2160,8 @@
       "base_asset": "EVAA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "9.4e-05",
-      "funding_timestamp_ms": 1791365286244
+      "funding_rate": "0.000119",
+      "funding_timestamp_ms": 1791655282624
     },
     {
       "symbol": "FARTCOIN_USDC",
@@ -2169,8 +2169,8 @@
       "base_asset": "FARTCOIN",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.000914",
-      "funding_timestamp_ms": 1791365286737
+      "funding_rate": "-0.000739",
+      "funding_timestamp_ms": 1791655282919
     },
     {
       "symbol": "FARTCOIN_USDT",
@@ -2179,7 +2179,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285893
+      "funding_timestamp_ms": 1791655282172
     },
     {
       "symbol": "FET_USDT",
@@ -2187,8 +2187,8 @@
       "base_asset": "FET",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "9e-06",
-      "funding_timestamp_ms": 1791365285852
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282107
     },
     {
       "symbol": "FF_USDT",
@@ -2197,7 +2197,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286499
+      "funding_timestamp_ms": 1791655282918
     },
     {
       "symbol": "FHE_USDT",
@@ -2205,8 +2205,8 @@
       "base_asset": "FHE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286378
+      "funding_rate": "5.9e-05",
+      "funding_timestamp_ms": 1791655282707
     },
     {
       "symbol": "FIDA_USDT",
@@ -2214,8 +2214,8 @@
       "base_asset": "FIDA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.7e-05",
-      "funding_timestamp_ms": 1791365286669
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282717
     },
     {
       "symbol": "FIGHT_USDT",
@@ -2223,8 +2223,8 @@
       "base_asset": "FIGHT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286230
+      "funding_rate": "0.000104",
+      "funding_timestamp_ms": 1791655282782
     },
     {
       "symbol": "FILECOIN_USDT",
@@ -2232,8 +2232,8 @@
       "base_asset": "FILECOIN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5.6e-05",
-      "funding_timestamp_ms": 1791365285876
+      "funding_rate": "3.1e-05",
+      "funding_timestamp_ms": 1791655282122
     },
     {
       "symbol": "FIL_USDC",
@@ -2241,8 +2241,8 @@
       "base_asset": "FIL",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365287515
+      "funding_rate": "2.1e-05",
+      "funding_timestamp_ms": 1791655283497
     },
     {
       "symbol": "FLOCK_USDT",
@@ -2250,8 +2250,8 @@
       "base_asset": "FLOCK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "3.1e-05",
-      "funding_timestamp_ms": 1791365286609
+      "funding_rate": "-7.6e-05",
+      "funding_timestamp_ms": 1791655282998
     },
     {
       "symbol": "FLOKI_USDT",
@@ -2259,8 +2259,8 @@
       "base_asset": "FLOKI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000127",
-      "funding_timestamp_ms": 1791365285973
+      "funding_rate": "8.5e-05",
+      "funding_timestamp_ms": 1791655282218
     },
     {
       "symbol": "FLOW_USDT",
@@ -2269,7 +2269,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286118
+      "funding_timestamp_ms": 1791655282548
     },
     {
       "symbol": "FLR_USDT",
@@ -2278,7 +2278,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286871
+      "funding_timestamp_ms": 1791655282844
     },
     {
       "symbol": "FLUID_USDT",
@@ -2287,7 +2287,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286078
+      "funding_timestamp_ms": 1791655282678
     },
     {
       "symbol": "FLUX_USDT",
@@ -2296,7 +2296,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286024
+      "funding_timestamp_ms": 1791655282550
     },
     {
       "symbol": "FOGO_USDT",
@@ -2305,7 +2305,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286317
+      "funding_timestamp_ms": 1791655282840
     },
     {
       "symbol": "FOLKS_USDT",
@@ -2314,7 +2314,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286655
+      "funding_timestamp_ms": 1791655282272
     },
     {
       "symbol": "FONE_USDT",
@@ -2322,8 +2322,8 @@
       "base_asset": "FONE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000137",
-      "funding_timestamp_ms": 1791365285996
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1791655282352
     },
     {
       "symbol": "FORM_USDT",
@@ -2332,7 +2332,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286419
+      "funding_timestamp_ms": 1791655282678
     },
     {
       "symbol": "FRAX_USDT",
@@ -2341,7 +2341,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286474
+      "funding_timestamp_ms": 1791655282332
     },
     {
       "symbol": "F_USDT",
@@ -2350,7 +2350,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286698
+      "funding_timestamp_ms": 1791655282960
     },
     {
       "symbol": "GALA_USDT",
@@ -2358,8 +2358,8 @@
       "base_asset": "GALA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-8.5e-05",
-      "funding_timestamp_ms": 1791365285955
+      "funding_rate": "9.2e-05",
+      "funding_timestamp_ms": 1791655282164
     },
     {
       "symbol": "GAS_USDT",
@@ -2367,8 +2367,8 @@
       "base_asset": "GAS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-1e-05",
-      "funding_timestamp_ms": 1791365286915
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282699
     },
     {
       "symbol": "GBP_USDT",
@@ -2376,8 +2376,8 @@
       "base_asset": "GBP",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "8.8e-05",
-      "funding_timestamp_ms": 1791365286824
+      "funding_rate": "6.9e-05",
+      "funding_timestamp_ms": 1791655283254
     },
     {
       "symbol": "GENIUS_USDT",
@@ -2386,7 +2386,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286391
+      "funding_timestamp_ms": 1791655282750
     },
     {
       "symbol": "GIGGLE_USDT",
@@ -2394,8 +2394,8 @@
       "base_asset": "GIGGLE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000119",
-      "funding_timestamp_ms": 1791365286122
+      "funding_rate": "0.000137",
+      "funding_timestamp_ms": 1791655282596
     },
     {
       "symbol": "GLM_USDT",
@@ -2404,7 +2404,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286501
+      "funding_timestamp_ms": 1791655282857
     },
     {
       "symbol": "GMT_USDT",
@@ -2413,7 +2413,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286459
+      "funding_timestamp_ms": 1791655282150
     },
     {
       "symbol": "GMX_USDT",
@@ -2421,8 +2421,8 @@
       "base_asset": "GMX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286315
+      "funding_rate": "-6e-06",
+      "funding_timestamp_ms": 1791655282696
     },
     {
       "symbol": "GOAT_USDT",
@@ -2431,7 +2431,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286487
+      "funding_timestamp_ms": 1791655282769
     },
     {
       "symbol": "GPS_USDT",
@@ -2440,7 +2440,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286685
+      "funding_timestamp_ms": 1791655282849
     },
     {
       "symbol": "GRAM_USD1",
@@ -2449,7 +2449,7 @@
       "quote_asset": "USD1",
       "settle_asset": "USD1",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287852
+      "funding_timestamp_ms": 1791655284216
     },
     {
       "symbol": "GRAM_USDC",
@@ -2458,7 +2458,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287602
+      "funding_timestamp_ms": 1791655283519
     },
     {
       "symbol": "GRAM_USDT",
@@ -2467,7 +2467,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285946
+      "funding_timestamp_ms": 1791655282188
     },
     {
       "symbol": "GRASS_USDT",
@@ -2476,7 +2476,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285931
+      "funding_timestamp_ms": 1791655282245
     },
     {
       "symbol": "GRIFFAIN_USDT",
@@ -2484,8 +2484,8 @@
       "base_asset": "GRIFFAIN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "9.7e-05",
-      "funding_timestamp_ms": 1791365285879
+      "funding_rate": "8.8e-05",
+      "funding_timestamp_ms": 1791655282146
     },
     {
       "symbol": "GRT_USDT",
@@ -2493,8 +2493,8 @@
       "base_asset": "GRT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "1.6e-05",
-      "funding_timestamp_ms": 1791365286089
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282414
     },
     {
       "symbol": "GRVT_USDT",
@@ -2503,7 +2503,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286552
+      "funding_timestamp_ms": 1791655282776
     },
     {
       "symbol": "GUA_USDT",
@@ -2511,8 +2511,8 @@
       "base_asset": "GUA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286796
+      "funding_rate": "0.000151",
+      "funding_timestamp_ms": 1791655282902
     },
     {
       "symbol": "GUN_USDT",
@@ -2521,7 +2521,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286581
+      "funding_timestamp_ms": 1791655282809
     },
     {
       "symbol": "GWEI_USDT",
@@ -2530,7 +2530,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286464
+      "funding_timestamp_ms": 1791655282591
     },
     {
       "symbol": "G_USDT",
@@ -2538,8 +2538,8 @@
       "base_asset": "G",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.9e-05",
-      "funding_timestamp_ms": 1791365286486
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282922
     },
     {
       "symbol": "HAEDAL_USDT",
@@ -2548,7 +2548,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286785
+      "funding_timestamp_ms": 1791655283276
     },
     {
       "symbol": "HAJIMI_USDT",
@@ -2556,8 +2556,8 @@
       "base_asset": "HAJIMI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286526
+      "funding_rate": "0.000211",
+      "funding_timestamp_ms": 1791655283282
     },
     {
       "symbol": "HANA_USDT",
@@ -2566,7 +2566,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286592
+      "funding_timestamp_ms": 1791655282917
     },
     {
       "symbol": "HBAR_USDC",
@@ -2575,7 +2575,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286939
+      "funding_timestamp_ms": 1791655283359
     },
     {
       "symbol": "HBAR_USDT",
@@ -2583,8 +2583,8 @@
       "base_asset": "HBAR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365285865
+      "funding_rate": "7e-05",
+      "funding_timestamp_ms": 1791655282132
     },
     {
       "symbol": "HEI_USDT",
@@ -2593,7 +2593,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286362
+      "funding_timestamp_ms": 1791655282813
     },
     {
       "symbol": "HEMI_USDT",
@@ -2601,8 +2601,8 @@
       "base_asset": "HEMI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "3e-06",
-      "funding_timestamp_ms": 1791365286055
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282525
     },
     {
       "symbol": "HIVE_USDT",
@@ -2610,8 +2610,8 @@
       "base_asset": "HIVE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-1.7e-05",
-      "funding_timestamp_ms": 1791365287228
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283231
     },
     {
       "symbol": "HMSTR_USDT",
@@ -2620,7 +2620,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286459
+      "funding_timestamp_ms": 1791655282744
     },
     {
       "symbol": "HNT_USDT",
@@ -2629,7 +2629,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286084
+      "funding_timestamp_ms": 1791655282400
     },
     {
       "symbol": "HOLO_USDT",
@@ -2638,7 +2638,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286697
+      "funding_timestamp_ms": 1791655282795
     },
     {
       "symbol": "HOME_USDT",
@@ -2646,8 +2646,8 @@
       "base_asset": "HOME",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000107",
-      "funding_timestamp_ms": 1791365286329
+      "funding_rate": "0.00011",
+      "funding_timestamp_ms": 1791655282799
     },
     {
       "symbol": "HOT_USDT",
@@ -2656,7 +2656,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286637
+      "funding_timestamp_ms": 1791655282783
     },
     {
       "symbol": "HUMA_USDT",
@@ -2665,7 +2665,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286221
+      "funding_timestamp_ms": 1791655282462
     },
     {
       "symbol": "HYPER_USDT",
@@ -2674,7 +2674,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286840
+      "funding_timestamp_ms": 1791655282858
     },
     {
       "symbol": "HYPE_USD1",
@@ -2682,8 +2682,8 @@
       "base_asset": "HYPE",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "4.6e-05",
-      "funding_timestamp_ms": 1791365287764
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283910
     },
     {
       "symbol": "HYPE_USDC",
@@ -2691,8 +2691,8 @@
       "base_asset": "HYPE",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "4.6e-05",
-      "funding_timestamp_ms": 1791365286824
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283010
     },
     {
       "symbol": "HYPE_USDT",
@@ -2700,8 +2700,8 @@
       "base_asset": "HYPE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.6e-05",
-      "funding_timestamp_ms": 1791365285834
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282079
     },
     {
       "symbol": "H_USDC",
@@ -2710,7 +2710,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287672
+      "funding_timestamp_ms": 1791655283367
     },
     {
       "symbol": "H_USDT",
@@ -2719,7 +2719,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286355
+      "funding_timestamp_ms": 1791655282369
     },
     {
       "symbol": "ICNT_USDT",
@@ -2728,7 +2728,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286648
+      "funding_timestamp_ms": 1791655282375
     },
     {
       "symbol": "ICP_USDC",
@@ -2736,8 +2736,8 @@
       "base_asset": "ICP",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-7.5e-05",
-      "funding_timestamp_ms": 1791365287108
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655283569
     },
     {
       "symbol": "ICP_USDT",
@@ -2745,8 +2745,8 @@
       "base_asset": "ICP",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-7.5e-05",
-      "funding_timestamp_ms": 1791365285879
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282136
     },
     {
       "symbol": "IDOL_USDT",
@@ -2755,7 +2755,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286983
+      "funding_timestamp_ms": 1791655283276
     },
     {
       "symbol": "ID_USDT",
@@ -2764,7 +2764,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286540
+      "funding_timestamp_ms": 1791655282864
     },
     {
       "symbol": "ILV_USDT",
@@ -2772,8 +2772,8 @@
       "base_asset": "ILV",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "7e-06",
-      "funding_timestamp_ms": 1791365286302
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282595
     },
     {
       "symbol": "IMX_USDT",
@@ -2781,8 +2781,8 @@
       "base_asset": "IMX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.8e-05",
-      "funding_timestamp_ms": 1791365286074
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282196
     },
     {
       "symbol": "INIT_USDT",
@@ -2791,7 +2791,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286288
+      "funding_timestamp_ms": 1791655282582
     },
     {
       "symbol": "INJ_USDC",
@@ -2799,8 +2799,8 @@
       "base_asset": "INJ",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-5.1e-05",
-      "funding_timestamp_ms": 1791365286892
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655283153
     },
     {
       "symbol": "INJ_USDT",
@@ -2808,8 +2808,8 @@
       "base_asset": "INJ",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "8.6e-05",
-      "funding_timestamp_ms": 1791365285849
+      "funding_rate": "0.000287",
+      "funding_timestamp_ms": 1791655282106
     },
     {
       "symbol": "INX_USDT",
@@ -2817,8 +2817,8 @@
       "base_asset": "INX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286368
+      "funding_rate": "0.000255",
+      "funding_timestamp_ms": 1791655282681
     },
     {
       "symbol": "IN_USDT",
@@ -2827,7 +2827,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286445
+      "funding_timestamp_ms": 1791655282891
     },
     {
       "symbol": "IOST_USDT",
@@ -2835,8 +2835,8 @@
       "base_asset": "IOST",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-5.4e-05",
-      "funding_timestamp_ms": 1791365286418
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282703
     },
     {
       "symbol": "IOTA_USDT",
@@ -2845,7 +2845,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286146
+      "funding_timestamp_ms": 1791655282639
     },
     {
       "symbol": "IOTX_USDT",
@@ -2854,7 +2854,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286365
+      "funding_timestamp_ms": 1791655282754
     },
     {
       "symbol": "IO_USDT",
@@ -2862,8 +2862,8 @@
       "base_asset": "IO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000196",
-      "funding_timestamp_ms": 1791365286203
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282450
     },
     {
       "symbol": "IRYS_USDT",
@@ -2871,8 +2871,8 @@
       "base_asset": "IRYS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287020
+      "funding_rate": "0.000212",
+      "funding_timestamp_ms": 1791655283284
     },
     {
       "symbol": "JASMY_USDT",
@@ -2880,8 +2880,8 @@
       "base_asset": "JASMY",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "2.7e-05",
-      "funding_timestamp_ms": 1791365285991
+      "funding_rate": "-4e-05",
+      "funding_timestamp_ms": 1791655282242
     },
     {
       "symbol": "JCT_USDT",
@@ -2889,8 +2889,8 @@
       "base_asset": "JCT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286787
+      "funding_rate": "0.000292",
+      "funding_timestamp_ms": 1791655282092
     },
     {
       "symbol": "JELLYJELLY_USDT",
@@ -2899,7 +2899,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286314
+      "funding_timestamp_ms": 1791655282927
     },
     {
       "symbol": "JOE_USDT",
@@ -2907,8 +2907,8 @@
       "base_asset": "JOE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000158",
-      "funding_timestamp_ms": 1791365286740
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282876
     },
     {
       "symbol": "JPY_USDT",
@@ -2917,7 +2917,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365286900
+      "funding_timestamp_ms": 1791655283167
     },
     {
       "symbol": "JST_USDT",
@@ -2925,8 +2925,8 @@
       "base_asset": "JST",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-4e-06",
-      "funding_timestamp_ms": 1791365286211
+      "funding_rate": "1.4e-05",
+      "funding_timestamp_ms": 1791655282389
     },
     {
       "symbol": "JTO_USDT",
@@ -2934,8 +2934,8 @@
       "base_asset": "JTO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3.6e-05",
-      "funding_timestamp_ms": 1791365285944
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282224
     },
     {
       "symbol": "JUP_USDT",
@@ -2943,8 +2943,8 @@
       "base_asset": "JUP",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-5e-05",
-      "funding_timestamp_ms": 1791365285909
+      "funding_rate": "-0.000101",
+      "funding_timestamp_ms": 1791655282136
     },
     {
       "symbol": "KAIA_USDT",
@@ -2952,8 +2952,8 @@
       "base_asset": "KAIA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "1.1e-05",
-      "funding_timestamp_ms": 1791365286515
+      "funding_rate": "-0.000457",
+      "funding_timestamp_ms": 1791655282051
     },
     {
       "symbol": "KAITO_USDC",
@@ -2962,7 +2962,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287589
+      "funding_timestamp_ms": 1791655283890
     },
     {
       "symbol": "KAITO_USDT",
@@ -2970,8 +2970,8 @@
       "base_asset": "KAITO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-5e-06",
-      "funding_timestamp_ms": 1791365286207
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282401
     },
     {
       "symbol": "KAS_USDT",
@@ -2980,7 +2980,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286020
+      "funding_timestamp_ms": 1791655282344
     },
     {
       "symbol": "KAT_USDT",
@@ -2989,7 +2989,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286356
+      "funding_timestamp_ms": 1791655282863
     },
     {
       "symbol": "KAVA_USDT",
@@ -2998,7 +2998,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286374
+      "funding_timestamp_ms": 1791655282863
     },
     {
       "symbol": "KERNEL_USDT",
@@ -3007,7 +3007,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286952
+      "funding_timestamp_ms": 1791655283366
     },
     {
       "symbol": "KGEN_USDT",
@@ -3016,7 +3016,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286297
+      "funding_timestamp_ms": 1791655282877
     },
     {
       "symbol": "KII_USDT",
@@ -3024,8 +3024,8 @@
       "base_asset": "KII",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000384",
-      "funding_timestamp_ms": 1791365287071
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282985
     },
     {
       "symbol": "KIMISTOCK_USDT",
@@ -3034,7 +3034,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286708
+      "funding_timestamp_ms": 1791655283157
     },
     {
       "symbol": "KITE_USDT",
@@ -3043,7 +3043,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286394
+      "funding_timestamp_ms": 1791655282477
     },
     {
       "symbol": "KMNO_USDT",
@@ -3051,8 +3051,8 @@
       "base_asset": "KMNO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "1e-06",
-      "funding_timestamp_ms": 1791365286674
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282686
     },
     {
       "symbol": "KNC_USDT",
@@ -3061,7 +3061,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286444
+      "funding_timestamp_ms": 1791655282682
     },
     {
       "symbol": "KOMA_USDT",
@@ -3069,8 +3069,8 @@
       "base_asset": "KOMA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286310
+      "funding_rate": "0.00039",
+      "funding_timestamp_ms": 1791655282917
     },
     {
       "symbol": "KSM_USDT",
@@ -3078,8 +3078,8 @@
       "base_asset": "KSM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "7.7e-05",
-      "funding_timestamp_ms": 1791365286418
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282633
     },
     {
       "symbol": "LAB_USDT",
@@ -3087,8 +3087,8 @@
       "base_asset": "LAB",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000121",
-      "funding_timestamp_ms": 1791365285946
+      "funding_rate": "5.1e-05",
+      "funding_timestamp_ms": 1791655282182
     },
     {
       "symbol": "LAYER_USDT",
@@ -3097,7 +3097,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286873
+      "funding_timestamp_ms": 1791655283095
     },
     {
       "symbol": "LA_USDT",
@@ -3105,8 +3105,8 @@
       "base_asset": "LA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000135",
-      "funding_timestamp_ms": 1791365286168
+      "funding_rate": "4.9e-05",
+      "funding_timestamp_ms": 1791655282598
     },
     {
       "symbol": "LDO_USDT",
@@ -3114,8 +3114,8 @@
       "base_asset": "LDO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-1.9e-05",
-      "funding_timestamp_ms": 1791365285927
+      "funding_rate": "-5e-06",
+      "funding_timestamp_ms": 1791655282181
     },
     {
       "symbol": "LIGHT_USDT",
@@ -3123,8 +3123,8 @@
       "base_asset": "LIGHT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286291
+      "funding_rate": "0.000164",
+      "funding_timestamp_ms": 1791655282450
     },
     {
       "symbol": "LINEA_USDT",
@@ -3132,8 +3132,8 @@
       "base_asset": "LINEA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000108",
-      "funding_timestamp_ms": 1791365286389
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282585
     },
     {
       "symbol": "LINK_USD",
@@ -3142,7 +3142,7 @@
       "quote_asset": "USD",
       "settle_asset": "LINK",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286848
+      "funding_timestamp_ms": 1791655282996
     },
     {
       "symbol": "LINK_USD1",
@@ -3150,8 +3150,8 @@
       "base_asset": "LINK",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "9.1e-05",
-      "funding_timestamp_ms": 1791365287855
+      "funding_rate": "4.4e-05",
+      "funding_timestamp_ms": 1791655283916
     },
     {
       "symbol": "LINK_USDC",
@@ -3159,8 +3159,8 @@
       "base_asset": "LINK",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286899
+      "funding_rate": "4e-05",
+      "funding_timestamp_ms": 1791655283363
     },
     {
       "symbol": "LINK_USDT",
@@ -3168,8 +3168,8 @@
       "base_asset": "LINK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "9.1e-05",
-      "funding_timestamp_ms": 1791365285845
+      "funding_rate": "4.4e-05",
+      "funding_timestamp_ms": 1791655282084
     },
     {
       "symbol": "LISTA_USDT",
@@ -3178,7 +3178,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286781
+      "funding_timestamp_ms": 1791655282921
     },
     {
       "symbol": "LIT_USDT",
@@ -3187,7 +3187,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285940
+      "funding_timestamp_ms": 1791655282197
     },
     {
       "symbol": "LONGXIA_USDT",
@@ -3196,7 +3196,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285824
+      "funding_timestamp_ms": 1791655282134
     },
     {
       "symbol": "LPT_USDT",
@@ -3204,8 +3204,8 @@
       "base_asset": "LPT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000148",
-      "funding_timestamp_ms": 1791365286113
+      "funding_rate": "-0.000111",
+      "funding_timestamp_ms": 1791655282174
     },
     {
       "symbol": "LQTY_USDT",
@@ -3213,8 +3213,8 @@
       "base_asset": "LQTY",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.1e-05",
-      "funding_timestamp_ms": 1791365286249
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282995
     },
     {
       "symbol": "LRC_USDT",
@@ -3222,8 +3222,8 @@
       "base_asset": "LRC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286758
+      "funding_rate": "-0.001696",
+      "funding_timestamp_ms": 1791655282658
     },
     {
       "symbol": "LSK_USDT",
@@ -3232,7 +3232,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285963
+      "funding_timestamp_ms": 1791655282320
     },
     {
       "symbol": "LTC_USD",
@@ -3241,7 +3241,7 @@
       "quote_asset": "USD",
       "settle_asset": "LTC",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286857
+      "funding_timestamp_ms": 1791655283208
     },
     {
       "symbol": "LTC_USD1",
@@ -3249,8 +3249,8 @@
       "base_asset": "LTC",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "8.2e-05",
-      "funding_timestamp_ms": 1791365287839
+      "funding_rate": "6.7e-05",
+      "funding_timestamp_ms": 1791655283917
     },
     {
       "symbol": "LTC_USDC",
@@ -3258,8 +3258,8 @@
       "base_asset": "LTC",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "9e-05",
-      "funding_timestamp_ms": 1791365287347
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655283365
     },
     {
       "symbol": "LTC_USDT",
@@ -3267,8 +3267,8 @@
       "base_asset": "LTC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "8.2e-05",
-      "funding_timestamp_ms": 1791365285850
+      "funding_rate": "6.7e-05",
+      "funding_timestamp_ms": 1791655282132
     },
     {
       "symbol": "LUMIA_USDT",
@@ -3277,7 +3277,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286332
+      "funding_timestamp_ms": 1791655282065
     },
     {
       "symbol": "LUNANEW_USDT",
@@ -3286,7 +3286,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286244
+      "funding_timestamp_ms": 1791655282595
     },
     {
       "symbol": "LUNC_USDT",
@@ -3294,8 +3294,8 @@
       "base_asset": "LUNC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.001048",
-      "funding_timestamp_ms": 1791365286056
+      "funding_rate": "-0.00258",
+      "funding_timestamp_ms": 1791655282399
     },
     {
       "symbol": "LYN_USDT",
@@ -3303,8 +3303,8 @@
       "base_asset": "LYN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000402",
-      "funding_timestamp_ms": 1791365285902
+      "funding_rate": "0.000217",
+      "funding_timestamp_ms": 1791655282284
     },
     {
       "symbol": "MAGIC_USDT",
@@ -3312,8 +3312,8 @@
       "base_asset": "MAGIC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285992
+      "funding_rate": "-0.003005",
+      "funding_timestamp_ms": 1791655282051
     },
     {
       "symbol": "MAGMA_USDT",
@@ -3322,7 +3322,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286083
+      "funding_timestamp_ms": 1791655282433
     },
     {
       "symbol": "MANA_USDT",
@@ -3330,8 +3330,8 @@
       "base_asset": "MANA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000116",
-      "funding_timestamp_ms": 1791365286013
+      "funding_rate": "6.9e-05",
+      "funding_timestamp_ms": 1791655282328
     },
     {
       "symbol": "MANTA_USDT",
@@ -3340,7 +3340,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286352
+      "funding_timestamp_ms": 1791655282382
     },
     {
       "symbol": "MANTRA_USDT",
@@ -3349,7 +3349,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286538
+      "funding_timestamp_ms": 1791655282543
     },
     {
       "symbol": "MARSCOIN_USDT",
@@ -3357,8 +3357,8 @@
       "base_asset": "MARSCOIN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286003
+      "funding_rate": "4.3e-05",
+      "funding_timestamp_ms": 1791655282344
     },
     {
       "symbol": "MASK_USDT",
@@ -3367,7 +3367,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286478
+      "funding_timestamp_ms": 1791655282769
     },
     {
       "symbol": "MAVIA_USDT",
@@ -3376,7 +3376,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286916
+      "funding_timestamp_ms": 1791655282845
     },
     {
       "symbol": "MAV_USDT",
@@ -3384,8 +3384,8 @@
       "base_asset": "MAV",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286631
+      "funding_rate": "5.8e-05",
+      "funding_timestamp_ms": 1791655282298
     },
     {
       "symbol": "MEGA_USDT",
@@ -3394,7 +3394,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286403
+      "funding_timestamp_ms": 1791655282807
     },
     {
       "symbol": "MELANIA_USDT",
@@ -3403,7 +3403,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286347
+      "funding_timestamp_ms": 1791655282849
     },
     {
       "symbol": "MEMEROBINHOOD_USDT",
@@ -3412,7 +3412,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365286119
+      "funding_timestamp_ms": 1791655282298
     },
     {
       "symbol": "MEME_USDT",
@@ -3421,7 +3421,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286218
+      "funding_timestamp_ms": 1791655282437
     },
     {
       "symbol": "MERL_USDT",
@@ -3430,7 +3430,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286459
+      "funding_timestamp_ms": 1791655282581
     },
     {
       "symbol": "METIS_USDT",
@@ -3439,7 +3439,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286500
+      "funding_timestamp_ms": 1791655282864
     },
     {
       "symbol": "MET_USDT",
@@ -3447,8 +3447,8 @@
       "base_asset": "MET",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-7.6e-05",
-      "funding_timestamp_ms": 1791365285968
+      "funding_rate": "-0.000398",
+      "funding_timestamp_ms": 1791655282147
     },
     {
       "symbol": "MEW_USDT",
@@ -3457,7 +3457,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286659
+      "funding_timestamp_ms": 1791655282498
     },
     {
       "symbol": "ME_USDT",
@@ -3465,8 +3465,8 @@
       "base_asset": "ME",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-7.8e-05",
-      "funding_timestamp_ms": 1791365286781
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282870
     },
     {
       "symbol": "MINA_USDT",
@@ -3474,8 +3474,8 @@
       "base_asset": "MINA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.002858",
-      "funding_timestamp_ms": 1791365285872
+      "funding_rate": "-0.001134",
+      "funding_timestamp_ms": 1791655282111
     },
     {
       "symbol": "MIRA_USDT",
@@ -3484,7 +3484,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286051
+      "funding_timestamp_ms": 1791655282862
     },
     {
       "symbol": "MITO_USDT",
@@ -3493,7 +3493,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286491
+      "funding_timestamp_ms": 1791655282838
     },
     {
       "symbol": "MMT_USDT",
@@ -3502,7 +3502,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286732
+      "funding_timestamp_ms": 1791655282640
     },
     {
       "symbol": "MNT_USDT",
@@ -3510,8 +3510,8 @@
       "base_asset": "MNT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3e-05",
-      "funding_timestamp_ms": 1791365286007
+      "funding_rate": "6.9e-05",
+      "funding_timestamp_ms": 1791655282455
     },
     {
       "symbol": "MOCA_USDT",
@@ -3520,7 +3520,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286568
+      "funding_timestamp_ms": 1791655283352
     },
     {
       "symbol": "MONAD_USDT",
@@ -3528,8 +3528,8 @@
       "base_asset": "MONAD",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285977
+      "funding_rate": "-3.5e-05",
+      "funding_timestamp_ms": 1791655282367
     },
     {
       "symbol": "MOODENG_USDT",
@@ -3538,7 +3538,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286330
+      "funding_timestamp_ms": 1791655282476
     },
     {
       "symbol": "MORPHO_USDT",
@@ -3546,8 +3546,8 @@
       "base_asset": "MORPHO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "3e-05",
-      "funding_timestamp_ms": 1791365286219
+      "funding_rate": "4.6e-05",
+      "funding_timestamp_ms": 1791655282620
     },
     {
       "symbol": "MOVE_USDT",
@@ -3555,8 +3555,8 @@
       "base_asset": "MOVE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000397",
-      "funding_timestamp_ms": 1791365286433
+      "funding_rate": "-6.7e-05",
+      "funding_timestamp_ms": 1791655282786
     },
     {
       "symbol": "MOVR_USDT",
@@ -3564,8 +3564,8 @@
       "base_asset": "MOVR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "2e-06",
-      "funding_timestamp_ms": 1791365285888
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282198
     },
     {
       "symbol": "MTL_USDT",
@@ -3574,7 +3574,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286911
+      "funding_timestamp_ms": 1791655283113
     },
     {
       "symbol": "MUBARAK_USDT",
@@ -3583,7 +3583,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285942
+      "funding_timestamp_ms": 1791655282213
     },
     {
       "symbol": "MYX_USDT",
@@ -3592,7 +3592,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286135
+      "funding_timestamp_ms": 1791655282389
     },
     {
       "symbol": "M_USDT",
@@ -3601,7 +3601,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286557
+      "funding_timestamp_ms": 1791655282815
     },
     {
       "symbol": "NAORIS_USDT",
@@ -3610,7 +3610,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286620
+      "funding_timestamp_ms": 1791655282932
     },
     {
       "symbol": "NEAR_USD1",
@@ -3618,8 +3618,8 @@
       "base_asset": "NEAR",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365287843
+      "funding_rate": "-0.000128",
+      "funding_timestamp_ms": 1791655284213
     },
     {
       "symbol": "NEAR_USDC",
@@ -3627,8 +3627,8 @@
       "base_asset": "NEAR",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "9.3e-05",
-      "funding_timestamp_ms": 1791365286712
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282707
     },
     {
       "symbol": "NEAR_USDT",
@@ -3636,8 +3636,8 @@
       "base_asset": "NEAR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.2e-05",
-      "funding_timestamp_ms": 1791365285822
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282064
     },
     {
       "symbol": "NEIROCTO_USDT",
@@ -3645,8 +3645,8 @@
       "base_asset": "NEIROCTO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-1.7e-05",
-      "funding_timestamp_ms": 1791365286392
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282704
     },
     {
       "symbol": "NEO_USDT",
@@ -3654,8 +3654,8 @@
       "base_asset": "NEO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "3e-05",
-      "funding_timestamp_ms": 1791365286282
+      "funding_rate": "1.2e-05",
+      "funding_timestamp_ms": 1791655282287
     },
     {
       "symbol": "NES_USDT",
@@ -3664,7 +3664,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286526
+      "funding_timestamp_ms": 1791655283138
     },
     {
       "symbol": "NEWT_USDT",
@@ -3673,7 +3673,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286933
+      "funding_timestamp_ms": 1791655282727
     },
     {
       "symbol": "NEX_USDT",
@@ -3682,7 +3682,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286811
+      "funding_timestamp_ms": 1791655282958
     },
     {
       "symbol": "NIGHT_USDT",
@@ -3690,8 +3690,8 @@
       "base_asset": "NIGHT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000109",
-      "funding_timestamp_ms": 1791365285939
+      "funding_rate": "0.000112",
+      "funding_timestamp_ms": 1791655282173
     },
     {
       "symbol": "NIL_USDT",
@@ -3700,7 +3700,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285916
+      "funding_timestamp_ms": 1791655282292
     },
     {
       "symbol": "NIULAI_USDT",
@@ -3709,7 +3709,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286264
+      "funding_timestamp_ms": 1791655282423
     },
     {
       "symbol": "NMR_USDT",
@@ -3717,8 +3717,8 @@
       "base_asset": "NMR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.005182",
-      "funding_timestamp_ms": 1791365285807
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282269
     },
     {
       "symbol": "NOM_USDT",
@@ -3727,7 +3727,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286138
+      "funding_timestamp_ms": 1791655282809
     },
     {
       "symbol": "NOT_USDC",
@@ -3736,7 +3736,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287806
+      "funding_timestamp_ms": 1791655283891
     },
     {
       "symbol": "NOT_USDT",
@@ -3745,7 +3745,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286346
+      "funding_timestamp_ms": 1791655282569
     },
     {
       "symbol": "NPC_USDT",
@@ -3753,8 +3753,8 @@
       "base_asset": "NPC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365286182
+      "funding_rate": "-0.0002",
+      "funding_timestamp_ms": 1791655282670
     },
     {
       "symbol": "NXPC_USDT",
@@ -3763,7 +3763,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287041
+      "funding_timestamp_ms": 1791655282877
     },
     {
       "symbol": "OFC_USDT",
@@ -3772,7 +3772,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286607
+      "funding_timestamp_ms": 1791655283110
     },
     {
       "symbol": "OGN_USDT",
@@ -3780,8 +3780,8 @@
       "base_asset": "OGN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000731",
-      "funding_timestamp_ms": 1791365286147
+      "funding_rate": "-9.7e-05",
+      "funding_timestamp_ms": 1791655282084
     },
     {
       "symbol": "OG_USDT",
@@ -3789,8 +3789,8 @@
       "base_asset": "OG",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-7.3e-05",
-      "funding_timestamp_ms": 1791365286607
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283027
     },
     {
       "symbol": "OKB_USDT",
@@ -3799,7 +3799,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286046
+      "funding_timestamp_ms": 1791655282984
     },
     {
       "symbol": "OL_USDT",
@@ -3808,7 +3808,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287096
+      "funding_timestamp_ms": 1791655283419
     },
     {
       "symbol": "ONDO_USDC",
@@ -3816,8 +3816,8 @@
       "base_asset": "ONDO",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286821
+      "funding_rate": "-0.001002",
+      "funding_timestamp_ms": 1791655282956
     },
     {
       "symbol": "ONDO_USDT",
@@ -3825,8 +3825,8 @@
       "base_asset": "ONDO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285837
+      "funding_rate": "3.2e-05",
+      "funding_timestamp_ms": 1791655282080
     },
     {
       "symbol": "ONE_USDT",
@@ -3834,8 +3834,8 @@
       "base_asset": "ONE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000553",
-      "funding_timestamp_ms": 1791365285973
+      "funding_rate": "-0.000313",
+      "funding_timestamp_ms": 1791655282258
     },
     {
       "symbol": "ONG_USDT",
@@ -3844,7 +3844,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286632
+      "funding_timestamp_ms": 1791655282525
     },
     {
       "symbol": "ONT_USDT",
@@ -3852,8 +3852,8 @@
       "base_asset": "ONT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286392
+      "funding_rate": "3.7e-05",
+      "funding_timestamp_ms": 1791655282497
     },
     {
       "symbol": "ON_USDT",
@@ -3862,7 +3862,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286205
+      "funding_timestamp_ms": 1791655282367
     },
     {
       "symbol": "OPENAI_USDT",
@@ -3871,7 +3871,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286162
+      "funding_timestamp_ms": 1791655282692
     },
     {
       "symbol": "OPENLEDGER_USDT",
@@ -3880,7 +3880,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286405
+      "funding_timestamp_ms": 1791655282768
     },
     {
       "symbol": "OPG_USDT",
@@ -3889,7 +3889,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286498
+      "funding_timestamp_ms": 1791655282517
     },
     {
       "symbol": "OPN_USDT",
@@ -3898,7 +3898,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286402
+      "funding_timestamp_ms": 1791655282532
     },
     {
       "symbol": "OP_USDC",
@@ -3906,8 +3906,8 @@
       "base_asset": "OP",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365287354
+      "funding_rate": "-0.000903",
+      "funding_timestamp_ms": 1791655283029
     },
     {
       "symbol": "OP_USDT",
@@ -3915,8 +3915,8 @@
       "base_asset": "OP",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000213",
-      "funding_timestamp_ms": 1791365285912
+      "funding_rate": "7.6e-05",
+      "funding_timestamp_ms": 1791655282079
     },
     {
       "symbol": "ORCA_USDT",
@@ -3924,8 +3924,8 @@
       "base_asset": "ORCA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.001553",
-      "funding_timestamp_ms": 1791365285822
+      "funding_rate": "-0.000141",
+      "funding_timestamp_ms": 1791655282162
     },
     {
       "symbol": "ORDER_USDT",
@@ -3934,7 +3934,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287032
+      "funding_timestamp_ms": 1791655283076
     },
     {
       "symbol": "ORDI_USDC",
@@ -3942,8 +3942,8 @@
       "base_asset": "ORDI",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287586
+      "funding_rate": "3.5e-05",
+      "funding_timestamp_ms": 1791655284035
     },
     {
       "symbol": "ORDI_USDT",
@@ -3951,8 +3951,8 @@
       "base_asset": "ORDI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000108",
-      "funding_timestamp_ms": 1791365285985
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282306
     },
     {
       "symbol": "OTC_USDT",
@@ -3960,8 +3960,8 @@
       "base_asset": "OTC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000145",
-      "funding_timestamp_ms": 1791365285962
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1791655282313
     },
     {
       "symbol": "OURASTOCK_USDT",
@@ -3970,7 +3970,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286819
+      "funding_timestamp_ms": 1791655283041
     },
     {
       "symbol": "O_USDT",
@@ -3978,8 +3978,8 @@
       "base_asset": "O",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5.4e-05",
-      "funding_timestamp_ms": 1791365286676
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282421
     },
     {
       "symbol": "PARTI_USDT",
@@ -3988,7 +3988,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285960
+      "funding_timestamp_ms": 1791655282608
     },
     {
       "symbol": "PAXG_USDC",
@@ -3997,7 +3997,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287812
+      "funding_timestamp_ms": 1791655283898
     },
     {
       "symbol": "PAXG_USDT",
@@ -4006,7 +4006,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286257
+      "funding_timestamp_ms": 1791655282568
     },
     {
       "symbol": "PEAQ_USDT",
@@ -4014,8 +4014,8 @@
       "base_asset": "PEAQ",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000578",
-      "funding_timestamp_ms": 1791365286309
+      "funding_rate": "-0.000519",
+      "funding_timestamp_ms": 1791655282450
     },
     {
       "symbol": "PENDLE_USDC",
@@ -4023,8 +4023,8 @@
       "base_asset": "PENDLE",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-1.3e-05",
-      "funding_timestamp_ms": 1791365287407
+      "funding_rate": "-5e-06",
+      "funding_timestamp_ms": 1791655283753
     },
     {
       "symbol": "PENDLE_USDT",
@@ -4032,8 +4032,8 @@
       "base_asset": "PENDLE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-1.3e-05",
-      "funding_timestamp_ms": 1791365285968
+      "funding_rate": "-5e-06",
+      "funding_timestamp_ms": 1791655282314
     },
     {
       "symbol": "PENGU_USDC",
@@ -4042,7 +4042,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287241
+      "funding_timestamp_ms": 1791655283279
     },
     {
       "symbol": "PENGU_USDT",
@@ -4050,8 +4050,8 @@
       "base_asset": "PENGU",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.2e-05",
-      "funding_timestamp_ms": 1791365285901
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282176
     },
     {
       "symbol": "PEOPLE_USDT",
@@ -4059,8 +4059,8 @@
       "base_asset": "PEOPLE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-9.1e-05",
-      "funding_timestamp_ms": 1791365286284
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282673
     },
     {
       "symbol": "PEPE_USD1",
@@ -4068,8 +4068,8 @@
       "base_asset": "PEPE",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "-0.000128",
-      "funding_timestamp_ms": 1791365287890
+      "funding_rate": "6.4e-05",
+      "funding_timestamp_ms": 1791655284197
     },
     {
       "symbol": "PEPE_USDC",
@@ -4077,8 +4077,8 @@
       "base_asset": "PEPE",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-8.1e-05",
-      "funding_timestamp_ms": 1791365286949
+      "funding_rate": "5.4e-05",
+      "funding_timestamp_ms": 1791655283634
     },
     {
       "symbol": "PEPE_USDT",
@@ -4086,8 +4086,8 @@
       "base_asset": "PEPE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000219",
-      "funding_timestamp_ms": 1791365285847
+      "funding_rate": "-0.00011",
+      "funding_timestamp_ms": 1791655282096
     },
     {
       "symbol": "PHAROS_USDT",
@@ -4096,7 +4096,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286827
+      "funding_timestamp_ms": 1791655283297
     },
     {
       "symbol": "PHA_USDT",
@@ -4104,8 +4104,8 @@
       "base_asset": "PHA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286087
+      "funding_rate": "3.4e-05",
+      "funding_timestamp_ms": 1791655282272
     },
     {
       "symbol": "PIEVERSE_USDT",
@@ -4113,8 +4113,8 @@
       "base_asset": "PIEVERSE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5.9e-05",
-      "funding_timestamp_ms": 1791365286632
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282835
     },
     {
       "symbol": "PIPPIN_USDT",
@@ -4123,7 +4123,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286245
+      "funding_timestamp_ms": 1791655282529
     },
     {
       "symbol": "PIXEL_USDT",
@@ -4132,7 +4132,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286405
+      "funding_timestamp_ms": 1791655282080
     },
     {
       "symbol": "PI_USDT",
@@ -4141,7 +4141,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285972
+      "funding_timestamp_ms": 1791655282315
     },
     {
       "symbol": "PLAY_USDT",
@@ -4150,7 +4150,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286596
+      "funding_timestamp_ms": 1791655282774
     },
     {
       "symbol": "PLUME_USDT",
@@ -4159,7 +4159,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286154
+      "funding_timestamp_ms": 1791655282342
     },
     {
       "symbol": "PNUT_USDT",
@@ -4167,8 +4167,8 @@
       "base_asset": "PNUT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-6.3e-05",
-      "funding_timestamp_ms": 1791365286431
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282660
     },
     {
       "symbol": "POLYMARKETSTOCK_USDT",
@@ -4177,7 +4177,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0",
-      "funding_timestamp_ms": 1791365286683
+      "funding_timestamp_ms": 1791655283040
     },
     {
       "symbol": "POLYX_USDT",
@@ -4185,8 +4185,8 @@
       "base_asset": "POLYX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-5e-05",
-      "funding_timestamp_ms": 1791365286792
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283144
     },
     {
       "symbol": "POL_USDC",
@@ -4195,7 +4195,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365287236
+      "funding_timestamp_ms": 1791655284040
     },
     {
       "symbol": "POL_USDT",
@@ -4203,8 +4203,8 @@
       "base_asset": "POL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-6.8e-05",
-      "funding_timestamp_ms": 1791365285985
+      "funding_rate": "2.8e-05",
+      "funding_timestamp_ms": 1791655282251
     },
     {
       "symbol": "PONS_USDT",
@@ -4212,8 +4212,8 @@
       "base_asset": "PONS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285890
+      "funding_rate": "0.000109",
+      "funding_timestamp_ms": 1791655282184
     },
     {
       "symbol": "POPCAT_USDT",
@@ -4222,7 +4222,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286191
+      "funding_timestamp_ms": 1791655282540
     },
     {
       "symbol": "PORTAL_USDT",
@@ -4231,7 +4231,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286343
+      "funding_timestamp_ms": 1791655282686
     },
     {
       "symbol": "POWER_USDT",
@@ -4239,8 +4239,8 @@
       "base_asset": "POWER",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "9.6e-05",
-      "funding_timestamp_ms": 1791365286146
+      "funding_rate": "7.6e-05",
+      "funding_timestamp_ms": 1791655282576
     },
     {
       "symbol": "POWR_USDT",
@@ -4249,7 +4249,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287051
+      "funding_timestamp_ms": 1791655282996
     },
     {
       "symbol": "PRL_USDT",
@@ -4257,8 +4257,8 @@
       "base_asset": "PRL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000207",
-      "funding_timestamp_ms": 1791365286445
+      "funding_rate": "7.1e-05",
+      "funding_timestamp_ms": 1791655282884
     },
     {
       "symbol": "PROM_USDT",
@@ -4266,8 +4266,8 @@
       "base_asset": "PROM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285932
+      "funding_rate": "-0.000123",
+      "funding_timestamp_ms": 1791655282401
     },
     {
       "symbol": "PROVE_USDT",
@@ -4276,7 +4276,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286746
+      "funding_timestamp_ms": 1791655283173
     },
     {
       "symbol": "PTB_USDT",
@@ -4285,7 +4285,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286473
+      "funding_timestamp_ms": 1791655282850
     },
     {
       "symbol": "PUFFER_USDT",
@@ -4293,8 +4293,8 @@
       "base_asset": "PUFFER",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-5.9e-05",
-      "funding_timestamp_ms": 1791365286859
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655283418
     },
     {
       "symbol": "PUMPFUN_USDC",
@@ -4302,8 +4302,8 @@
       "base_asset": "PUMPFUN",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286955
+      "funding_rate": "4.5e-05",
+      "funding_timestamp_ms": 1791655283089
     },
     {
       "symbol": "PUMPFUN_USDT",
@@ -4311,8 +4311,8 @@
       "base_asset": "PUMPFUN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285846
+      "funding_rate": "4.5e-05",
+      "funding_timestamp_ms": 1791655282097
     },
     {
       "symbol": "PUNDIX_USDT",
@@ -4321,7 +4321,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286948
+      "funding_timestamp_ms": 1791655283113
     },
     {
       "symbol": "PYTH_USDT",
@@ -4329,8 +4329,8 @@
       "base_asset": "PYTH",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000145",
-      "funding_timestamp_ms": 1791365286065
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282151
     },
     {
       "symbol": "QNT_USDT",
@@ -4338,8 +4338,8 @@
       "base_asset": "QNT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.00048",
-      "funding_timestamp_ms": 1791365285823
+      "funding_rate": "-7.2e-05",
+      "funding_timestamp_ms": 1791655282077
     },
     {
       "symbol": "QTUM_USDT",
@@ -4347,8 +4347,8 @@
       "base_asset": "QTUM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "1.4e-05",
-      "funding_timestamp_ms": 1791365286506
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282383
     },
     {
       "symbol": "Q_USDT",
@@ -4356,8 +4356,8 @@
       "base_asset": "Q",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286713
+      "funding_rate": "0.000212",
+      "funding_timestamp_ms": 1791655282263
     },
     {
       "symbol": "RARE_USDT",
@@ -4366,7 +4366,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286095
+      "funding_timestamp_ms": 1791655282620
     },
     {
       "symbol": "RAVE_USDT",
@@ -4374,8 +4374,8 @@
       "base_asset": "RAVE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286270
+      "funding_rate": "0.000257",
+      "funding_timestamp_ms": 1791655282713
     },
     {
       "symbol": "RAY_USDT",
@@ -4383,8 +4383,8 @@
       "base_asset": "RAY",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.001303",
-      "funding_timestamp_ms": 1791365285892
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282185
     },
     {
       "symbol": "RECALL_USDT",
@@ -4393,7 +4393,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286431
+      "funding_timestamp_ms": 1791655282835
     },
     {
       "symbol": "RED_USDT",
@@ -4401,8 +4401,8 @@
       "base_asset": "RED",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000141",
-      "funding_timestamp_ms": 1791365286542
+      "funding_rate": "-9.2e-05",
+      "funding_timestamp_ms": 1791655282930
     },
     {
       "symbol": "RENDER_USDT",
@@ -4411,7 +4411,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285875
+      "funding_timestamp_ms": 1791655282171
     },
     {
       "symbol": "RESOLV_USDT",
@@ -4420,7 +4420,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285978
+      "funding_timestamp_ms": 1791655282609
     },
     {
       "symbol": "REZ_USDT",
@@ -4429,7 +4429,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286207
+      "funding_timestamp_ms": 1791655282785
     },
     {
       "symbol": "RE_USDT",
@@ -4437,8 +4437,8 @@
       "base_asset": "RE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286364
+      "funding_rate": "3.5e-05",
+      "funding_timestamp_ms": 1791655282753
     },
     {
       "symbol": "RHEA_USDT",
@@ -4446,8 +4446,8 @@
       "base_asset": "RHEA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365286138
+      "funding_rate": "-0.0002",
+      "funding_timestamp_ms": 1791655282117
     },
     {
       "symbol": "RIF_USDT",
@@ -4455,8 +4455,8 @@
       "base_asset": "RIF",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-06",
-      "funding_timestamp_ms": 1791365286720
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282895
     },
     {
       "symbol": "RIVER_USDT",
@@ -4465,7 +4465,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286071
+      "funding_timestamp_ms": 1791655282315
     },
     {
       "symbol": "RLC_USDT",
@@ -4473,8 +4473,8 @@
       "base_asset": "RLC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000196",
-      "funding_timestamp_ms": 1791365285807
+      "funding_rate": "-0.004873",
+      "funding_timestamp_ms": 1791655282051
     },
     {
       "symbol": "RLS_USDT",
@@ -4483,7 +4483,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286853
+      "funding_timestamp_ms": 1791655282972
     },
     {
       "symbol": "ROBO_USDT",
@@ -4492,7 +4492,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286039
+      "funding_timestamp_ms": 1791655282439
     },
     {
       "symbol": "RON_USDT",
@@ -4501,7 +4501,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286720
+      "funding_timestamp_ms": 1791655282450
     },
     {
       "symbol": "ROSE_USDT",
@@ -4510,7 +4510,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286178
+      "funding_timestamp_ms": 1791655282265
     },
     {
       "symbol": "RPL_USDT",
@@ -4519,7 +4519,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286684
+      "funding_timestamp_ms": 1791655282618
     },
     {
       "symbol": "RSR_USDT",
@@ -4527,8 +4527,8 @@
       "base_asset": "RSR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5.3e-05",
-      "funding_timestamp_ms": 1791365286230
+      "funding_rate": "8.8e-05",
+      "funding_timestamp_ms": 1791655282732
     },
     {
       "symbol": "RUNE_USDT",
@@ -4536,8 +4536,8 @@
       "base_asset": "RUNE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-2.9e-05",
-      "funding_timestamp_ms": 1791365286135
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282473
     },
     {
       "symbol": "RVN_USDT",
@@ -4545,8 +4545,8 @@
       "base_asset": "RVN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000384",
-      "funding_timestamp_ms": 1791365286108
+      "funding_rate": "-9.3e-05",
+      "funding_timestamp_ms": 1791655282608
     },
     {
       "symbol": "SAFE_USDT",
@@ -4555,7 +4555,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286732
+      "funding_timestamp_ms": 1791655282476
     },
     {
       "symbol": "SAGA_USDT",
@@ -4564,7 +4564,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285993
+      "funding_timestamp_ms": 1791655282330
     },
     {
       "symbol": "SAHARA_USDT",
@@ -4573,7 +4573,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286375
+      "funding_timestamp_ms": 1791655282913
     },
     {
       "symbol": "SAND_USDT",
@@ -4581,8 +4581,8 @@
       "base_asset": "SAND",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.001642",
-      "funding_timestamp_ms": 1791365285837
+      "funding_rate": "-0.001478",
+      "funding_timestamp_ms": 1791655282147
     },
     {
       "symbol": "SANTOS_USDT",
@@ -4591,7 +4591,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286938
+      "funding_timestamp_ms": 1791655283067
     },
     {
       "symbol": "SAPIEN_USDT",
@@ -4600,7 +4600,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286805
+      "funding_timestamp_ms": 1791655283088
     },
     {
       "symbol": "SATS_USDT",
@@ -4608,8 +4608,8 @@
       "base_asset": "SATS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000273",
-      "funding_timestamp_ms": 1791365286498
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282718
     },
     {
       "symbol": "SCR_USDT",
@@ -4617,8 +4617,8 @@
       "base_asset": "SCR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.8e-05",
-      "funding_timestamp_ms": 1791365286235
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282828
     },
     {
       "symbol": "SEI_USDC",
@@ -4626,8 +4626,8 @@
       "base_asset": "SEI",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "2.1e-05",
-      "funding_timestamp_ms": 1791365287520
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655283638
     },
     {
       "symbol": "SEI_USDT",
@@ -4635,8 +4635,8 @@
       "base_asset": "SEI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "2.1e-05",
-      "funding_timestamp_ms": 1791365285937
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282160
     },
     {
       "symbol": "SENT_USDT",
@@ -4645,7 +4645,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286272
+      "funding_timestamp_ms": 1791655282254
     },
     {
       "symbol": "SFP_USDT",
@@ -4654,7 +4654,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286815
+      "funding_timestamp_ms": 1791655283143
     },
     {
       "symbol": "SHELL_USDT",
@@ -4663,7 +4663,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286578
+      "funding_timestamp_ms": 1791655282889
     },
     {
       "symbol": "SHIB_USDC",
@@ -4671,8 +4671,8 @@
       "base_asset": "SHIB",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-3.1e-05",
-      "funding_timestamp_ms": 1791365287515
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655283738
     },
     {
       "symbol": "SHIB_USDT",
@@ -4680,8 +4680,8 @@
       "base_asset": "SHIB",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000217",
-      "funding_timestamp_ms": 1791365285920
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282171
     },
     {
       "symbol": "SHROOM_USDT",
@@ -4689,8 +4689,8 @@
       "base_asset": "SHROOM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000117",
-      "funding_timestamp_ms": 1791365286080
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1791655282431
     },
     {
       "symbol": "SIGN_USDT",
@@ -4699,7 +4699,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287033
+      "funding_timestamp_ms": 1791655283152
     },
     {
       "symbol": "SILVER_USD1",
@@ -4707,8 +4707,8 @@
       "base_asset": "SILVER",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "0.000133",
-      "funding_timestamp_ms": 1791365287765
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1791655283772
     },
     {
       "symbol": "SILVER_USDC",
@@ -4716,8 +4716,8 @@
       "base_asset": "SILVER",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.000133",
-      "funding_timestamp_ms": 1791365287158
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1791655283325
     },
     {
       "symbol": "SILVER_USDT",
@@ -4725,8 +4725,8 @@
       "base_asset": "SILVER",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000133",
-      "funding_timestamp_ms": 1791365285849
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1791655282119
     },
     {
       "symbol": "SIREN_USDT",
@@ -4735,7 +4735,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286121
+      "funding_timestamp_ms": 1791655282632
     },
     {
       "symbol": "SI_USDT",
@@ -4744,7 +4744,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365285892
+      "funding_timestamp_ms": 1791655282111
     },
     {
       "symbol": "SKL_USDT",
@@ -4752,8 +4752,8 @@
       "base_asset": "SKL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286444
+      "funding_rate": "1.6e-05",
+      "funding_timestamp_ms": 1791655282269
     },
     {
       "symbol": "SKR_USDT",
@@ -4762,7 +4762,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286618
+      "funding_timestamp_ms": 1791655282768
     },
     {
       "symbol": "SKYAI_USDT",
@@ -4771,7 +4771,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286257
+      "funding_timestamp_ms": 1791655282382
     },
     {
       "symbol": "SKY_USDT",
@@ -4780,7 +4780,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286106
+      "funding_timestamp_ms": 1791655282531
     },
     {
       "symbol": "SLP_USDT",
@@ -4789,7 +4789,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286482
+      "funding_timestamp_ms": 1791655282820
     },
     {
       "symbol": "SLX_USDT",
@@ -4798,7 +4798,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286667
+      "funding_timestamp_ms": 1791655283024
     },
     {
       "symbol": "SNT_USDT",
@@ -4806,8 +4806,8 @@
       "base_asset": "SNT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.1e-05",
-      "funding_timestamp_ms": 1791365287096
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283095
     },
     {
       "symbol": "SNX_USDT",
@@ -4815,8 +4815,8 @@
       "base_asset": "SNX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-7.3e-05",
-      "funding_timestamp_ms": 1791365286234
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282425
     },
     {
       "symbol": "SOCK_USDT",
@@ -4825,7 +4825,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365286173
+      "funding_timestamp_ms": 1791655282432
     },
     {
       "symbol": "SOLV_USDT",
@@ -4834,7 +4834,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286552
+      "funding_timestamp_ms": 1791655282909
     },
     {
       "symbol": "SOL_USD",
@@ -4842,8 +4842,8 @@
       "base_asset": "SOL",
       "quote_asset": "USD",
       "settle_asset": "SOL",
-      "funding_rate": "3e-05",
-      "funding_timestamp_ms": 1791365286282
+      "funding_rate": "9.2e-05",
+      "funding_timestamp_ms": 1791655282561
     },
     {
       "symbol": "SOL_USD1",
@@ -4851,8 +4851,8 @@
       "base_asset": "SOL",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "-0.000127",
-      "funding_timestamp_ms": 1791365287715
+      "funding_rate": "-0.000139",
+      "funding_timestamp_ms": 1791655283767
     },
     {
       "symbol": "SOL_USDC",
@@ -4860,8 +4860,8 @@
       "base_asset": "SOL",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-6e-06",
-      "funding_timestamp_ms": 1791365286405
+      "funding_rate": "6.7e-05",
+      "funding_timestamp_ms": 1791655282652
     },
     {
       "symbol": "SOL_USDT",
@@ -4869,8 +4869,8 @@
       "base_asset": "SOL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000125",
-      "funding_timestamp_ms": 1791365285820
+      "funding_rate": "2.3e-05",
+      "funding_timestamp_ms": 1791655282065
     },
     {
       "symbol": "SOMI_USDT",
@@ -4879,7 +4879,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286558
+      "funding_timestamp_ms": 1791655282837
     },
     {
       "symbol": "SONIC_USDT",
@@ -4888,7 +4888,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286699
+      "funding_timestamp_ms": 1791655282940
     },
     {
       "symbol": "SOONNETWORK_USDT",
@@ -4896,8 +4896,8 @@
       "base_asset": "SOONNETWORK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000121",
-      "funding_timestamp_ms": 1791365286285
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282421
     },
     {
       "symbol": "SOPH_USDT",
@@ -4906,7 +4906,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286619
+      "funding_timestamp_ms": 1791655283024
     },
     {
       "symbol": "SPACE_USDT",
@@ -4915,7 +4915,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286633
+      "funding_timestamp_ms": 1791655283105
     },
     {
       "symbol": "SPELL_USDT",
@@ -4924,7 +4924,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286578
+      "funding_timestamp_ms": 1791655282973
     },
     {
       "symbol": "SPK_USDT",
@@ -4932,8 +4932,8 @@
       "base_asset": "SPK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286490
+      "funding_rate": "3.7e-05",
+      "funding_timestamp_ms": 1791655283129
     },
     {
       "symbol": "SPORTFUN_USDT",
@@ -4941,8 +4941,8 @@
       "base_asset": "SPORTFUN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000162",
-      "funding_timestamp_ms": 1791365286622
+      "funding_rate": "9.4e-05",
+      "funding_timestamp_ms": 1791655283036
     },
     {
       "symbol": "SPX_USDC",
@@ -4951,7 +4951,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287598
+      "funding_timestamp_ms": 1791655283892
     },
     {
       "symbol": "SPX_USDT",
@@ -4960,7 +4960,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286100
+      "funding_timestamp_ms": 1791655282438
     },
     {
       "symbol": "SQD_USDT",
@@ -4969,7 +4969,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286589
+      "funding_timestamp_ms": 1791655282665
     },
     {
       "symbol": "SSV_USDT",
@@ -4977,8 +4977,8 @@
       "base_asset": "SSV",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5.4e-05",
-      "funding_timestamp_ms": 1791365286781
+      "funding_rate": "7.6e-05",
+      "funding_timestamp_ms": 1791655283115
     },
     {
       "symbol": "STABLE_USDT",
@@ -4986,8 +4986,8 @@
       "base_asset": "STABLE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000101",
-      "funding_timestamp_ms": 1791365286725
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282540
     },
     {
       "symbol": "STANDARD_USDT",
@@ -4996,7 +4996,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365286483
+      "funding_timestamp_ms": 1791655282646
     },
     {
       "symbol": "STAR_USDT",
@@ -5005,7 +5005,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286302
+      "funding_timestamp_ms": 1791655282943
     },
     {
       "symbol": "STBL_USDT",
@@ -5014,7 +5014,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286268
+      "funding_timestamp_ms": 1791655282932
     },
     {
       "symbol": "STEEM_USDT",
@@ -5022,8 +5022,8 @@
       "base_asset": "STEEM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "2.2e-05",
-      "funding_timestamp_ms": 1791365286758
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283311
     },
     {
       "symbol": "STORJ_USDT",
@@ -5031,8 +5031,8 @@
       "base_asset": "STORJ",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286179
+      "funding_rate": "0.000565",
+      "funding_timestamp_ms": 1791655282819
     },
     {
       "symbol": "STO_USDT",
@@ -5041,7 +5041,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286840
+      "funding_timestamp_ms": 1791655283100
     },
     {
       "symbol": "STRK_USDC",
@@ -5050,7 +5050,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286782
+      "funding_timestamp_ms": 1791655282388
     },
     {
       "symbol": "STRK_USDT",
@@ -5058,8 +5058,8 @@
       "base_asset": "STRK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-2.5e-05",
-      "funding_timestamp_ms": 1791365286040
+      "funding_rate": "-2.2e-05",
+      "funding_timestamp_ms": 1791655282070
     },
     {
       "symbol": "STX_USDT",
@@ -5067,8 +5067,8 @@
       "base_asset": "STX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-6e-05",
-      "funding_timestamp_ms": 1791365285927
+      "funding_rate": "4e-05",
+      "funding_timestamp_ms": 1791655282202
     },
     {
       "symbol": "SUI_USD",
@@ -5077,7 +5077,7 @@
       "quote_asset": "USD",
       "settle_asset": "SUI",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286661
+      "funding_timestamp_ms": 1791655282905
     },
     {
       "symbol": "SUI_USD1",
@@ -5085,8 +5085,8 @@
       "base_asset": "SUI",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "9e-06",
-      "funding_timestamp_ms": 1791365287838
+      "funding_rate": "-0.000127",
+      "funding_timestamp_ms": 1791655283905
     },
     {
       "symbol": "SUI_USDC",
@@ -5094,8 +5094,8 @@
       "base_asset": "SUI",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "6.7e-05",
-      "funding_timestamp_ms": 1791365286708
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282942
     },
     {
       "symbol": "SUI_USDT",
@@ -5103,8 +5103,8 @@
       "base_asset": "SUI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.3e-05",
-      "funding_timestamp_ms": 1791365285822
+      "funding_rate": "4.4e-05",
+      "funding_timestamp_ms": 1791655282066
     },
     {
       "symbol": "SUN_USDT",
@@ -5112,8 +5112,8 @@
       "base_asset": "SUN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000274",
-      "funding_timestamp_ms": 1791365286734
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283061
     },
     {
       "symbol": "SUPER_USDT",
@@ -5122,7 +5122,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286417
+      "funding_timestamp_ms": 1791655282611
     },
     {
       "symbol": "SUSHI_USDT",
@@ -5130,8 +5130,8 @@
       "base_asset": "SUSHI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286103
+      "funding_rate": "4.3e-05",
+      "funding_timestamp_ms": 1791655282731
     },
     {
       "symbol": "SWARMS_USDT",
@@ -5139,8 +5139,8 @@
       "base_asset": "SWARMS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286502
+      "funding_rate": "0.000301",
+      "funding_timestamp_ms": 1791655282886
     },
     {
       "symbol": "SWARM_USDT",
@@ -5148,8 +5148,8 @@
       "base_asset": "SWARM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000125",
-      "funding_timestamp_ms": 1791365286255
+      "funding_rate": "0.000132",
+      "funding_timestamp_ms": 1791655282784
     },
     {
       "symbol": "SXT_USDT",
@@ -5158,7 +5158,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286805
+      "funding_timestamp_ms": 1791655282971
     },
     {
       "symbol": "SYN_USDT",
@@ -5167,7 +5167,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286009
+      "funding_timestamp_ms": 1791655282475
     },
     {
       "symbol": "SYRUP_USDT",
@@ -5176,7 +5176,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286287
+      "funding_timestamp_ms": 1791655282660
     },
     {
       "symbol": "S_USDT",
@@ -5184,8 +5184,8 @@
       "base_asset": "S",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-2.7e-05",
-      "funding_timestamp_ms": 1791365286043
+      "funding_rate": "1.2e-05",
+      "funding_timestamp_ms": 1791655282226
     },
     {
       "symbol": "TAC_USDT",
@@ -5194,7 +5194,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286620
+      "funding_timestamp_ms": 1791655282930
     },
     {
       "symbol": "TAG_USDT",
@@ -5203,7 +5203,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286875
+      "funding_timestamp_ms": 1791655283125
     },
     {
       "symbol": "TAIKO_USDT",
@@ -5212,7 +5212,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287019
+      "funding_timestamp_ms": 1791655283275
     },
     {
       "symbol": "TAKE_USDT",
@@ -5220,8 +5220,8 @@
       "base_asset": "TAKE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000208",
-      "funding_timestamp_ms": 1791365286219
+      "funding_rate": "0.000139",
+      "funding_timestamp_ms": 1791655282800
     },
     {
       "symbol": "TAO_USD1",
@@ -5230,7 +5230,7 @@
       "quote_asset": "USD1",
       "settle_asset": "USD1",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287819
+      "funding_timestamp_ms": 1791655284075
     },
     {
       "symbol": "TAO_USDC",
@@ -5239,7 +5239,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286934
+      "funding_timestamp_ms": 1791655282972
     },
     {
       "symbol": "TAO_USDT",
@@ -5248,7 +5248,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285834
+      "funding_timestamp_ms": 1791655282079
     },
     {
       "symbol": "TA_USDT",
@@ -5257,7 +5257,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286794
+      "funding_timestamp_ms": 1791655282850
     },
     {
       "symbol": "TFUEL_USDT",
@@ -5265,8 +5265,8 @@
       "base_asset": "TFUEL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000137",
-      "funding_timestamp_ms": 1791365286847
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1791655283074
     },
     {
       "symbol": "THETA_USDT",
@@ -5274,8 +5274,8 @@
       "base_asset": "THETA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-6.3e-05",
-      "funding_timestamp_ms": 1791365286134
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282421
     },
     {
       "symbol": "THE_USDT",
@@ -5284,7 +5284,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286769
+      "funding_timestamp_ms": 1791655282903
     },
     {
       "symbol": "TIA_USDC",
@@ -5293,7 +5293,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286974
+      "funding_timestamp_ms": 1791655282961
     },
     {
       "symbol": "TIA_USDT",
@@ -5301,8 +5301,8 @@
       "base_asset": "TIA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "2.6e-05",
-      "funding_timestamp_ms": 1791365285906
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282121
     },
     {
       "symbol": "TLM_USDT",
@@ -5311,7 +5311,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286336
+      "funding_timestamp_ms": 1791655282793
     },
     {
       "symbol": "TMX_USDT",
@@ -5320,7 +5320,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286096
+      "funding_timestamp_ms": 1791655282323
     },
     {
       "symbol": "TNSR_USDT",
@@ -5329,7 +5329,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286512
+      "funding_timestamp_ms": 1791655282611
     },
     {
       "symbol": "TOSHI_USDT",
@@ -5338,7 +5338,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286433
+      "funding_timestamp_ms": 1791655282946
     },
     {
       "symbol": "TOWNS_USDT",
@@ -5347,7 +5347,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286379
+      "funding_timestamp_ms": 1791655282787
     },
     {
       "symbol": "TRADOOR_USDT",
@@ -5356,7 +5356,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286662
+      "funding_timestamp_ms": 1791655283051
     },
     {
       "symbol": "TRB_USDT",
@@ -5365,7 +5365,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285890
+      "funding_timestamp_ms": 1791655282359
     },
     {
       "symbol": "TREE_USDT",
@@ -5374,7 +5374,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286942
+      "funding_timestamp_ms": 1791655282931
     },
     {
       "symbol": "TRIA_USDT",
@@ -5382,8 +5382,8 @@
       "base_asset": "TRIA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000113",
-      "funding_timestamp_ms": 1791365286459
+      "funding_rate": "0.000117",
+      "funding_timestamp_ms": 1791655282933
     },
     {
       "symbol": "TRUMPOFFICIAL_USDT",
@@ -5391,8 +5391,8 @@
       "base_asset": "TRUMPOFFICIAL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000194",
-      "funding_timestamp_ms": 1791365285914
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282227
     },
     {
       "symbol": "TRUMP_USDC",
@@ -5400,8 +5400,8 @@
       "base_asset": "TRUMP",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-0.000439",
-      "funding_timestamp_ms": 1791365287708
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283879
     },
     {
       "symbol": "TRUST_USDT",
@@ -5410,7 +5410,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286878
+      "funding_timestamp_ms": 1791655282879
     },
     {
       "symbol": "TRUTH_USDT",
@@ -5418,8 +5418,8 @@
       "base_asset": "TRUTH",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286391
+      "funding_rate": "0.000429",
+      "funding_timestamp_ms": 1791655282958
     },
     {
       "symbol": "TRX_USD1",
@@ -5427,8 +5427,8 @@
       "base_asset": "TRX",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "-0.000314",
-      "funding_timestamp_ms": 1791365287891
+      "funding_rate": "-0.00028",
+      "funding_timestamp_ms": 1791655284209
     },
     {
       "symbol": "TRX_USDC",
@@ -5436,8 +5436,8 @@
       "base_asset": "TRX",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-4.6e-05",
-      "funding_timestamp_ms": 1791365287811
+      "funding_rate": "5.4e-05",
+      "funding_timestamp_ms": 1791655283241
     },
     {
       "symbol": "TRX_USDT",
@@ -5445,8 +5445,8 @@
       "base_asset": "TRX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000314",
-      "funding_timestamp_ms": 1791365285994
+      "funding_rate": "-0.00028",
+      "funding_timestamp_ms": 1791655282213
     },
     {
       "symbol": "TRY_USDT",
@@ -5455,7 +5455,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "-0.0002",
-      "funding_timestamp_ms": 1791365287032
+      "funding_timestamp_ms": 1791655283166
     },
     {
       "symbol": "TST_USDT",
@@ -5463,8 +5463,8 @@
       "base_asset": "TST",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286231
+      "funding_rate": "7.9e-05",
+      "funding_timestamp_ms": 1791655282671
     },
     {
       "symbol": "TURBO_USDT",
@@ -5473,7 +5473,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286296
+      "funding_timestamp_ms": 1791655282541
     },
     {
       "symbol": "TURTLE_USDT",
@@ -5482,7 +5482,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286826
+      "funding_timestamp_ms": 1791655282746
     },
     {
       "symbol": "TUT_USDT",
@@ -5491,7 +5491,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286125
+      "funding_timestamp_ms": 1791655282556
     },
     {
       "symbol": "TWT_USDT",
@@ -5500,7 +5500,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286323
+      "funding_timestamp_ms": 1791655282835
     },
     {
       "symbol": "T_USDT",
@@ -5508,8 +5508,8 @@
       "base_asset": "T",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-7.7e-05",
-      "funding_timestamp_ms": 1791365286769
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283015
     },
     {
       "symbol": "UAI_USDT",
@@ -5518,7 +5518,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286069
+      "funding_timestamp_ms": 1791655282255
     },
     {
       "symbol": "UBIK_USDT",
@@ -5526,8 +5526,8 @@
       "base_asset": "UBIK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365285903
+      "funding_rate": "-0.000147",
+      "funding_timestamp_ms": 1791655282209
     },
     {
       "symbol": "UB_USDT",
@@ -5536,7 +5536,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286379
+      "funding_timestamp_ms": 1791655282840
     },
     {
       "symbol": "UMA_USDT",
@@ -5544,8 +5544,8 @@
       "base_asset": "UMA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000289",
-      "funding_timestamp_ms": 1791365285985
+      "funding_rate": "-2.9e-05",
+      "funding_timestamp_ms": 1791655282510
     },
     {
       "symbol": "UNI_USDC",
@@ -5553,8 +5553,8 @@
       "base_asset": "UNI",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286928
+      "funding_rate": "4.5e-05",
+      "funding_timestamp_ms": 1791655283320
     },
     {
       "symbol": "UNI_USDT",
@@ -5562,8 +5562,8 @@
       "base_asset": "UNI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "7.8e-05",
-      "funding_timestamp_ms": 1791365285849
+      "funding_rate": "7e-06",
+      "funding_timestamp_ms": 1791655282118
     },
     {
       "symbol": "UP_USDT",
@@ -5572,7 +5572,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286295
+      "funding_timestamp_ms": 1791655282714
     },
     {
       "symbol": "USDC_USDT",
@@ -5580,8 +5580,8 @@
       "base_asset": "USDC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-2.5e-05",
-      "funding_timestamp_ms": 1791365286710
+      "funding_rate": "-4.7e-05",
+      "funding_timestamp_ms": 1791655282907
     },
     {
       "symbol": "USELESS_USDT",
@@ -5590,7 +5590,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286022
+      "funding_timestamp_ms": 1791655282152
     },
     {
       "symbol": "USTC_USDT",
@@ -5599,7 +5599,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286582
+      "funding_timestamp_ms": 1791655282917
     },
     {
       "symbol": "USUAL_USDT",
@@ -5608,7 +5608,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286632
+      "funding_timestamp_ms": 1791655282612
     },
     {
       "symbol": "US_USDT",
@@ -5617,7 +5617,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285861
+      "funding_timestamp_ms": 1791655282051
     },
     {
       "symbol": "VANA_USDT",
@@ -5625,8 +5625,8 @@
       "base_asset": "VANA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000111",
-      "funding_timestamp_ms": 1791365286837
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282947
     },
     {
       "symbol": "VELODROME_USDT",
@@ -5635,7 +5635,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286917
+      "funding_timestamp_ms": 1791655282371
     },
     {
       "symbol": "VELO_USDT",
@@ -5643,8 +5643,8 @@
       "base_asset": "VELO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "7e-06",
-      "funding_timestamp_ms": 1791365286419
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282908
     },
     {
       "symbol": "VELVET_USDT",
@@ -5652,8 +5652,8 @@
       "base_asset": "VELVET",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "6.2e-05",
-      "funding_timestamp_ms": 1791365285914
+      "funding_rate": "0.000103",
+      "funding_timestamp_ms": 1791655282176
     },
     {
       "symbol": "VET_USDT",
@@ -5661,8 +5661,8 @@
       "base_asset": "VET",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-7.5e-05",
-      "funding_timestamp_ms": 1791365286040
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282376
     },
     {
       "symbol": "VIRTUAL_USDC",
@@ -5670,8 +5670,8 @@
       "base_asset": "VIRTUAL",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-2.4e-05",
-      "funding_timestamp_ms": 1791365286986
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283245
     },
     {
       "symbol": "VIRTUAL_USDT",
@@ -5679,8 +5679,8 @@
       "base_asset": "VIRTUAL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-2.4e-05",
-      "funding_timestamp_ms": 1791365285902
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282187
     },
     {
       "symbol": "VTHO_USDT",
@@ -5688,8 +5688,8 @@
       "base_asset": "VTHO",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000514",
-      "funding_timestamp_ms": 1791365286053
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282498
     },
     {
       "symbol": "VVV_USDT",
@@ -5697,8 +5697,8 @@
       "base_asset": "VVV",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286006
+      "funding_rate": "-3e-06",
+      "funding_timestamp_ms": 1791655282212
     },
     {
       "symbol": "WAL_USDT",
@@ -5706,8 +5706,8 @@
       "base_asset": "WAL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286570
+      "funding_rate": "-0.000136",
+      "funding_timestamp_ms": 1791655282190
     },
     {
       "symbol": "WAVES_USDT",
@@ -5716,7 +5716,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286719
+      "funding_timestamp_ms": 1791655283065
     },
     {
       "symbol": "WAXP_USDT",
@@ -5725,7 +5725,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286935
+      "funding_timestamp_ms": 1791655283269
     },
     {
       "symbol": "WCT_USDT",
@@ -5733,8 +5733,8 @@
       "base_asset": "WCT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-9.1e-05",
-      "funding_timestamp_ms": 1791365286647
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282569
     },
     {
       "symbol": "WET_USDT",
@@ -5743,7 +5743,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287130
+      "funding_timestamp_ms": 1791655283504
     },
     {
       "symbol": "WIF_USDC",
@@ -5751,8 +5751,8 @@
       "base_asset": "WIF",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-1.3e-05",
-      "funding_timestamp_ms": 1791365287594
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655283752
     },
     {
       "symbol": "WIF_USDT",
@@ -5760,8 +5760,8 @@
       "base_asset": "WIF",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "7e-06",
-      "funding_timestamp_ms": 1791365285964
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282254
     },
     {
       "symbol": "WLD_USDC",
@@ -5769,8 +5769,8 @@
       "base_asset": "WLD",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-5e-06",
-      "funding_timestamp_ms": 1791365286972
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655283100
     },
     {
       "symbol": "WLD_USDT",
@@ -5778,8 +5778,8 @@
       "base_asset": "WLD",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3.3e-05",
-      "funding_timestamp_ms": 1791365285836
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282067
     },
     {
       "symbol": "WLFI_USD1",
@@ -5788,7 +5788,7 @@
       "quote_asset": "USD1",
       "settle_asset": "USD1",
       "funding_rate": "0.0002",
-      "funding_timestamp_ms": 1791365287856
+      "funding_timestamp_ms": 1791655284212
     },
     {
       "symbol": "WLFI_USDC",
@@ -5797,7 +5797,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287523
+      "funding_timestamp_ms": 1791655283323
     },
     {
       "symbol": "WLFI_USDT",
@@ -5806,7 +5806,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286056
+      "funding_timestamp_ms": 1791655282202
     },
     {
       "symbol": "WOO_USDT",
@@ -5815,7 +5815,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286349
+      "funding_timestamp_ms": 1791655282529
     },
     {
       "symbol": "WOTAMALAILE_USDT",
@@ -5823,8 +5823,8 @@
       "base_asset": "WOTAMALAILE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286575
+      "funding_rate": "0.000161",
+      "funding_timestamp_ms": 1791655283180
     },
     {
       "symbol": "W_USDT",
@@ -5832,8 +5832,8 @@
       "base_asset": "W",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286296
+      "funding_rate": "3.9e-05",
+      "funding_timestamp_ms": 1791655282188
     },
     {
       "symbol": "XAI_USDT",
@@ -5842,7 +5842,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286172
+      "funding_timestamp_ms": 1791655282162
     },
     {
       "symbol": "XAN_USDT",
@@ -5851,7 +5851,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286606
+      "funding_timestamp_ms": 1791655282899
     },
     {
       "symbol": "XAUT_USD1",
@@ -5860,7 +5860,7 @@
       "quote_asset": "USD1",
       "settle_asset": "USD1",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287761
+      "funding_timestamp_ms": 1791655283908
     },
     {
       "symbol": "XAUT_USDC",
@@ -5869,7 +5869,7 @@
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365287053
+      "funding_timestamp_ms": 1791655283502
     },
     {
       "symbol": "XAUT_USDT",
@@ -5878,7 +5878,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285861
+      "funding_timestamp_ms": 1791655282159
     },
     {
       "symbol": "XAU_USDC",
@@ -5886,8 +5886,8 @@
       "base_asset": "XAU",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.000114",
-      "funding_timestamp_ms": 1791365286733
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1791655283110
     },
     {
       "symbol": "XAU_USDT",
@@ -5895,8 +5895,8 @@
       "base_asset": "XAU",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000114",
-      "funding_timestamp_ms": 1791365285807
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1791655282051
     },
     {
       "symbol": "XCN_USDT",
@@ -5904,8 +5904,8 @@
       "base_asset": "XCN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.001196",
-      "funding_timestamp_ms": 1791365286685
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282933
     },
     {
       "symbol": "XDC_USDT",
@@ -5914,7 +5914,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286220
+      "funding_timestamp_ms": 1791655282554
     },
     {
       "symbol": "XDP_USDT",
@@ -5922,8 +5922,8 @@
       "base_asset": "XDP",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286205
+      "funding_rate": "-0.000853",
+      "funding_timestamp_ms": 1791655282210
     },
     {
       "symbol": "XEC_USDT",
@@ -5932,7 +5932,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286564
+      "funding_timestamp_ms": 1791655282973
     },
     {
       "symbol": "XLM_USDC",
@@ -5940,8 +5940,8 @@
       "base_asset": "XLM",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286980
+      "funding_rate": "-0.000678",
+      "funding_timestamp_ms": 1791655283423
     },
     {
       "symbol": "XLM_USDT",
@@ -5949,8 +5949,8 @@
       "base_asset": "XLM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4e-05",
-      "funding_timestamp_ms": 1791365285884
+      "funding_rate": "7.1e-05",
+      "funding_timestamp_ms": 1791655282158
     },
     {
       "symbol": "XMR_USDT",
@@ -5959,7 +5959,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365285959
+      "funding_timestamp_ms": 1791655282171
     },
     {
       "symbol": "XNY_USDT",
@@ -5967,8 +5967,8 @@
       "base_asset": "XNY",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-8.5e-05",
-      "funding_timestamp_ms": 1791365286708
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282782
     },
     {
       "symbol": "XPD_USDT",
@@ -5976,8 +5976,8 @@
       "base_asset": "XPD",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000274",
-      "funding_timestamp_ms": 1791365286470
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1791655283129
     },
     {
       "symbol": "XPIN_USDT",
@@ -5986,7 +5986,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286686
+      "funding_timestamp_ms": 1791655282905
     },
     {
       "symbol": "XPL_USDT",
@@ -5994,8 +5994,8 @@
       "base_asset": "XPL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285904
+      "funding_rate": "3.3e-05",
+      "funding_timestamp_ms": 1791655282163
     },
     {
       "symbol": "XPT_USDT",
@@ -6003,8 +6003,8 @@
       "base_asset": "XPT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.000321",
-      "funding_timestamp_ms": 1791365286513
+      "funding_rate": "0",
+      "funding_timestamp_ms": 1791655282919
     },
     {
       "symbol": "XRP_USD",
@@ -6012,8 +6012,8 @@
       "base_asset": "XRP",
       "quote_asset": "USD",
       "settle_asset": "XRP",
-      "funding_rate": "-3e-06",
-      "funding_timestamp_ms": 1791365286163
+      "funding_rate": "8.4e-05",
+      "funding_timestamp_ms": 1791655282470
     },
     {
       "symbol": "XRP_USD1",
@@ -6021,8 +6021,8 @@
       "base_asset": "XRP",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "-2.7e-05",
-      "funding_timestamp_ms": 1791365287814
+      "funding_rate": "-1e-06",
+      "funding_timestamp_ms": 1791655284054
     },
     {
       "symbol": "XRP_USDC",
@@ -6030,8 +6030,8 @@
       "base_asset": "XRP",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "-2.4e-05",
-      "funding_timestamp_ms": 1791365286348
+      "funding_rate": "7e-05",
+      "funding_timestamp_ms": 1791655282733
     },
     {
       "symbol": "XRP_USDT",
@@ -6039,8 +6039,8 @@
       "base_asset": "XRP",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-4.5e-05",
-      "funding_timestamp_ms": 1791365285821
+      "funding_rate": "8e-06",
+      "funding_timestamp_ms": 1791655282066
     },
     {
       "symbol": "XTZ_USDT",
@@ -6048,8 +6048,8 @@
       "base_asset": "XTZ",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-1.4e-05",
-      "funding_timestamp_ms": 1791365286418
+      "funding_rate": "6e-06",
+      "funding_timestamp_ms": 1791655282824
     },
     {
       "symbol": "XVG_USDT",
@@ -6058,7 +6058,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286500
+      "funding_timestamp_ms": 1791655282758
     },
     {
       "symbol": "XVS_USDT",
@@ -6066,8 +6066,8 @@
       "base_asset": "XVS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "7.1e-05",
-      "funding_timestamp_ms": 1791365286671
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655283197
     },
     {
       "symbol": "YB_USDT",
@@ -6076,7 +6076,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286774
+      "funding_timestamp_ms": 1791655282511
     },
     {
       "symbol": "YFI_USDT",
@@ -6084,8 +6084,8 @@
       "base_asset": "YFI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "6.7e-05",
-      "funding_timestamp_ms": 1791365286392
+      "funding_rate": "0.0001",
+      "funding_timestamp_ms": 1791655282593
     },
     {
       "symbol": "YGG_USDT",
@@ -6094,7 +6094,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286330
+      "funding_timestamp_ms": 1791655282354
     },
     {
       "symbol": "YMTCSTOCK_USDT",
@@ -6102,8 +6102,8 @@
       "base_asset": "YMTCSTOCK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000142",
-      "funding_timestamp_ms": 1791365287499
+      "funding_rate": "-0.000139",
+      "funding_timestamp_ms": 1791655283622
     },
     {
       "symbol": "ZAMA_USDT",
@@ -6111,8 +6111,8 @@
       "base_asset": "ZAMA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286191
+      "funding_rate": "3.6e-05",
+      "funding_timestamp_ms": 1791655282624
     },
     {
       "symbol": "ZBCN_USDT",
@@ -6121,7 +6121,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286585
+      "funding_timestamp_ms": 1791655282699
     },
     {
       "symbol": "ZBT_USDT",
@@ -6130,7 +6130,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286484
+      "funding_timestamp_ms": 1791655283203
     },
     {
       "symbol": "ZCAT_USDT",
@@ -6138,8 +6138,8 @@
       "base_asset": "ZCAT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.00012",
-      "funding_timestamp_ms": 1791365285863
+      "funding_rate": "-0.000121",
+      "funding_timestamp_ms": 1791655282275
     },
     {
       "symbol": "ZEC_USD1",
@@ -6147,8 +6147,8 @@
       "base_asset": "ZEC",
       "quote_asset": "USD1",
       "settle_asset": "USD1",
-      "funding_rate": "2.8e-05",
-      "funding_timestamp_ms": 1791365287318
+      "funding_rate": "2.4e-05",
+      "funding_timestamp_ms": 1791655283910
     },
     {
       "symbol": "ZEC_USDC",
@@ -6156,8 +6156,8 @@
       "base_asset": "ZEC",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
-      "funding_rate": "1.6e-05",
-      "funding_timestamp_ms": 1791365286570
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282796
     },
     {
       "symbol": "ZEC_USDT",
@@ -6165,8 +6165,8 @@
       "base_asset": "ZEC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "2.8e-05",
-      "funding_timestamp_ms": 1791365285820
+      "funding_rate": "2.4e-05",
+      "funding_timestamp_ms": 1791655282066
     },
     {
       "symbol": "ZEN_USDT",
@@ -6174,8 +6174,8 @@
       "base_asset": "ZEN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "0.0001",
-      "funding_timestamp_ms": 1791365286059
+      "funding_rate": "8.8e-05",
+      "funding_timestamp_ms": 1791655282384
     },
     {
       "symbol": "ZEREBRO_USDT",
@@ -6184,7 +6184,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286770
+      "funding_timestamp_ms": 1791655283022
     },
     {
       "symbol": "ZEST_USDT",
@@ -6193,7 +6193,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286865
+      "funding_timestamp_ms": 1791655283229
     },
     {
       "symbol": "ZETA_USDT",
@@ -6202,7 +6202,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286595
+      "funding_timestamp_ms": 1791655282807
     },
     {
       "symbol": "ZIG_USDT",
@@ -6210,8 +6210,8 @@
       "base_asset": "ZIG",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-0.000131",
-      "funding_timestamp_ms": 1791365286366
+      "funding_rate": "0.0002",
+      "funding_timestamp_ms": 1791655282673
     },
     {
       "symbol": "ZIL_USDT",
@@ -6219,8 +6219,8 @@
       "base_asset": "ZIL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "-3e-05",
-      "funding_timestamp_ms": 1791365286223
+      "funding_rate": "-1.3e-05",
+      "funding_timestamp_ms": 1791655282693
     },
     {
       "symbol": "ZKC_USDT",
@@ -6229,7 +6229,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285994
+      "funding_timestamp_ms": 1791655282621
     },
     {
       "symbol": "ZKP_USDT",
@@ -6238,7 +6238,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286447
+      "funding_timestamp_ms": 1791655283012
     },
     {
       "symbol": "ZKSYNC_USDT",
@@ -6246,8 +6246,8 @@
       "base_asset": "ZKSYNC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "funding_rate": "4.6e-05",
-      "funding_timestamp_ms": 1791365286209
+      "funding_rate": "5e-05",
+      "funding_timestamp_ms": 1791655282177
     },
     {
       "symbol": "ZORA_USDT",
@@ -6256,7 +6256,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286503
+      "funding_timestamp_ms": 1791655282890
     },
     {
       "symbol": "ZRO_USDT",
@@ -6265,7 +6265,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365285866
+      "funding_timestamp_ms": 1791655282142
     },
     {
       "symbol": "ZRX_USDT",
@@ -6274,7 +6274,7 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "funding_rate": "5e-05",
-      "funding_timestamp_ms": 1791365286593
+      "funding_timestamp_ms": 1791655282300
     }
   ],
   "collection_status": "ok"
