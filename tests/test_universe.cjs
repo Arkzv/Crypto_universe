@@ -26,8 +26,11 @@ async function page(data,responses={}){
   const requests=[];
   function element(){
     const listeners=new Map();
+    const attributes=new Map();
     return {innerHTML:'',textContent:'',value:'',checked:false,style:{},children:[],
       classList:{toggle(){},remove(){}},querySelectorAll(){return [];},
+      setAttribute(name,value){attributes.set(name,value);},
+      getAttribute(name){return attributes.get(name);},
       addEventListener(type,callback){
         if(!listeners.has(type))listeners.set(type,[]);
         listeners.get(type).push(callback);
@@ -37,9 +40,19 @@ async function page(data,responses={}){
       },
       appendChild(child){this.children.push(child);},insertAdjacentHTML(where,text){this.innerHTML+=text;}};
   }
+  const headers=new Map([...html.matchAll(/<th data-col="([^"]+)">/g)].map(([,col])=>{
+    const header=element();
+    const arrow=element();
+    header.dataset={col};
+    header.querySelector=selector=>selector==='.arrow'?arrow:null;
+    return [col,header];
+  }));
   const document={
     getElementById(id){if(!nodes.has(id))nodes.set(id,element());return nodes.get(id);},
-    querySelectorAll(){return [];},addEventListener(){},createElement:element,
+    querySelectorAll(selector){
+      if(selector==='th')return [...headers.values()];
+      return [];
+    },addEventListener(){},createElement:element,
   };
   const context=vm.createContext({document,URL,AbortController,setTimeout,clearTimeout,
     window:{location:{href:'https://example.test/Crypto_universe/universe.html'}},
@@ -56,7 +69,7 @@ async function page(data,responses={}){
   vm.runInContext(script,context);
   // Allow the initial fetch, JSON parsing, and parallel futures requests to settle.
   await new Promise(resolve=>setImmediate(resolve));
-  return {context,nodes,requests,evaluate:code=>vm.runInContext(code,context)};
+  return {context,nodes,headers,requests,evaluate:code=>vm.runInContext(code,context)};
 }
 
 test('shows active venues even at zero volume; exact quotes and multipliers stay separate',async()=>{
@@ -380,4 +393,121 @@ test('table omits the spot exchanges column while retaining futures and spot tra
   assert.equal((firstRow.match(/<td[ >]/g)||[]).length,8);
   assert.match(html,/<th data-col="futures">Futures exchanges<\/th>/);
   assert.match(firstRow,/www.bitget.com\/spot\/BTCUSDT/);
+});
+
+function volumeSortPage(){
+  return page({exchanges:['bybit','binance','bitget'],pairs:[
+    {...spot('BTC','USDT',[
+      {...venue('bybit',100),usdt_volume:100},
+      {...venue('binance',900),usdt_volume:900},
+    ]),total_usdt_volume:1000},
+    {...spot('ETH','USDT',[
+      {...venue('bybit',300),usdt_volume:300},
+      {...venue('binance',200),usdt_volume:200},
+    ]),total_usdt_volume:500},
+    {...spot('SOL','BTC',[
+      {...venue('bybit',0.01),quote_currency:'BTC',usdt_volume:200},
+    ]),total_usdt_volume:200},
+    spot('ZERO','USDT',[{...venue('bybit'),usdt_volume:0}]),
+    {...spot('MISSING','USDT',[
+      {...venue('bybit',9900),usdt_volume:null},
+    ]),total_usdt_volume:null},
+    {...spot('UNKNOWN','USDT',[venue('bybit',8000)]),total_usdt_volume:null},
+    {...spot('OTHER','USDT',[
+      {...venue('binance',2000),usdt_volume:2000},
+    ]),total_usdt_volume:2000},
+  ]},{
+    'fut_universe_binance.json':futures('binance',[contract('BTC','USDT')]),
+    'fut_universe_bitget.json':futures('bitget',[]),
+    'fut_universe_bybit.json':futures('bybit',[]),
+  });
+}
+
+function selectVolumeExchange(result,exchange){
+  const select=result.nodes.get('usdtVolumeExchange');
+  select.value=exchange;
+  select.dispatchEvent({type:'change'});
+}
+
+function displayedUsdtVolumes(result){
+  return Object.fromEntries([...result.nodes.get('tbody').innerHTML.matchAll(/<tr>(.*?)<\/tr>/g)].map(([,row])=>{
+    const cells=[...row.matchAll(/<td[^>]*>(.*?)<\/td>/g)].map(([,value])=>value);
+    return [cells[1],cells[5]];
+  }));
+}
+
+test('Bybit volume selection sorts highest first and displays venue USDT values, including converted quotes',async()=>{
+  const result=await volumeSortPage();
+  assert.deepEqual(shownPairs(result).slice(0,5),['OTHER/USDT','BTC/USDT','ETH/USDT','SOL/BTC','ZERO/USDT']);
+  assert.equal(result.headers.get('usdt').getAttribute('aria-sort'),'descending');
+  assert.deepEqual(result.nodes.get('usdtVolumeExchange').children.map(o=>[o.value,o.textContent]),[
+    ['binance','Binance'],['bitget','Bitget'],['bybit','Bybit'],
+  ]);
+
+  selectVolumeExchange(result,'bybit');
+  assert.deepEqual(shownPairs(result).slice(0,4),['ETH/USDT','SOL/BTC','BTC/USDT','ZERO/USDT']);
+  assert.equal(shownPairs(result).length,7);
+  assert.equal(result.nodes.get('usdtVolumeLabel').textContent,'USDT Volume (Bybit)');
+  assert.deepEqual(displayedUsdtVolumes(result),{
+    'ETH/USDT':'300.00','SOL/BTC':'200.00','BTC/USDT':'100.00','ZERO/USDT':'0',
+    'OTHER/USDT':'—','MISSING/USDT':'—','UNKNOWN/USDT':'—',
+  });
+  assert.equal(result.headers.get('usdt').querySelector('.arrow').textContent.trim(),'▼');
+});
+
+test('USDT header toggles direction while zero stays numeric and unavailable volumes stay last',async()=>{
+  const result=await volumeSortPage();
+  selectVolumeExchange(result,'bybit');
+  const header=result.headers.get('usdt');
+  header.dispatchEvent({type:'click'});
+  assert.deepEqual(shownPairs(result).slice(0,4),['ZERO/USDT','BTC/USDT','SOL/BTC','ETH/USDT']);
+  assert.deepEqual(new Set(shownPairs(result).slice(4)),new Set(['OTHER/USDT','MISSING/USDT','UNKNOWN/USDT']));
+  assert.equal(header.getAttribute('aria-sort'),'ascending');
+  assert.equal(header.querySelector('.arrow').textContent.trim(),'▲');
+  assert.equal(displayedUsdtVolumes(result)['MISSING/USDT'],'—');
+  header.dispatchEvent({type:'click'});
+  assert.deepEqual(shownPairs(result).slice(0,4),['ETH/USDT','SOL/BTC','BTC/USDT','ZERO/USDT']);
+  assert.equal(header.getAttribute('aria-sort'),'descending');
+});
+
+test('changing the volume exchange activates volume sorting and all exchanges restores aggregate values',async()=>{
+  const result=await volumeSortPage();
+  result.headers.get('pair').dispatchEvent({type:'click'});
+  assert.equal(result.headers.get('pair').getAttribute('aria-sort'),'ascending');
+  selectVolumeExchange(result,'binance');
+  assert.deepEqual(shownPairs(result).slice(0,3),['OTHER/USDT','BTC/USDT','ETH/USDT']);
+  assert.equal(result.nodes.get('usdtVolumeLabel').textContent,'USDT Volume (Binance)');
+  assert.equal(displayedUsdtVolumes(result)['ETH/USDT'],'200.00');
+  assert.equal(result.headers.get('pair').querySelector('.arrow').textContent,'');
+  assert.equal(result.headers.get('pair').getAttribute('aria-sort'),'none');
+  assert.equal(result.headers.get('usdt').getAttribute('aria-sort'),'descending');
+  result.headers.get('usdt').dispatchEvent({type:'click'});
+  selectVolumeExchange(result,'');
+  assert.deepEqual(shownPairs(result).slice(0,5),['OTHER/USDT','BTC/USDT','ETH/USDT','SOL/BTC','ZERO/USDT']);
+  assert.equal(result.nodes.get('usdtVolumeLabel').textContent,'USDT Volume (total)');
+  assert.equal(displayedUsdtVolumes(result)['ETH/USDT'],'500.00');
+  assert.equal(result.headers.get('usdt').getAttribute('aria-sort'),'descending');
+  result.headers.get('usdt').dispatchEvent({type:'click'});
+  assert.deepEqual(shownPairs(result).slice(0,5),['ZERO/USDT','SOL/BTC','ETH/USDT','BTC/USDT','OTHER/USDT']);
+  // An in-scope exchange without any spot listings must not hide the other pairs.
+  selectVolumeExchange(result,'bitget');
+  assert.equal(shownPairs(result).length,7);
+  assert.ok(Object.values(displayedUsdtVolumes(result)).every(value=>value==='—'));
+});
+
+test('exchange volume sorting composes with spot and futures filters and survives filter reset',async()=>{
+  const result=await volumeSortPage();
+  selectExchange(result,'include','bybit');
+  selectExchange(result,'excludeFutures','binance');
+  result.nodes.get('quoteFilter').value='USDT';
+  result.nodes.get('quoteFilter').dispatchEvent({type:'change'});
+  selectVolumeExchange(result,'bybit');
+  assert.deepEqual(shownPairs(result),['ETH/USDT','ZERO/USDT','MISSING/USDT','UNKNOWN/USDT']);
+  result.nodes.get('resetExchangeFilters').dispatchEvent({type:'click'});
+  assert.deepEqual(shownPairs(result).slice(0,3),['ETH/USDT','BTC/USDT','ZERO/USDT']);
+  assert.equal(shownPairs(result).length,6);
+  assert.equal(result.nodes.get('quoteFilter').value,'USDT');
+  assert.equal(result.nodes.get('usdtVolumeExchange').value,'bybit');
+  assert.equal(result.nodes.get('usdtVolumeLabel').textContent,'USDT Volume (Bybit)');
+  assert.equal(displayedUsdtVolumes(result)['BTC/USDT'],'100.00');
 });

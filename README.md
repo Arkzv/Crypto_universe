@@ -45,6 +45,7 @@ See [Bitget's volume field definitions](https://www.bitget.com/docs/catalog/mark
     - Spot venues in the volume distribution and a futures exchange list for each pair, including zero-volume markets
     - Spot exchange filters: include pairs listed on any or all selected exchanges, and exclude pairs listed on any excluded exchange
     - Futures exchange filter: exclude spot pairs with active futures on any selected exchange
+    - USDT volume sorting by the total across all exchanges or by a specific exchange
 - Crypto withdrawal fees
 - Historical exchange and trading pair specific traded volume
 
@@ -64,6 +65,14 @@ coverage indicator.
 
 **Reset exchange filters** clears all three groups and restores **any**, while keeping
 the pair search, quote, and primary exchange filters.
+
+Use **Sort USDT volume** to choose **All exchanges (total)** or an exchange such
+as **Bybit**. The USDT Volume column displays that source's volume and sorts
+highest first; click its header to toggle ascending/descending order. This uses
+each venue's USDT-converted volume, including for non-USDT quotes. Pairs without
+a listing or a known USDT volume on that exchange show **—** and sort last in
+either direction; known zero volume remains **0**. The selection works with all
+existing filters and is preserved by **Reset exchange filters**.
 
 Run `python -m crypto_universe` to refresh spot data, futures inventories, and
 withdrawal fees. The collector saves `output/fut_universe_<exchange>.json` for
