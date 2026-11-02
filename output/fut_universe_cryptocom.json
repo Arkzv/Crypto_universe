@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "cryptocom",
-  "generated_at": "2026-10-13T07:54:15+00:00",
+  "generated_at": "2026-11-02T11:02:37+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -11,10 +11,10 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 419,
-    "active_futures_pair_count": 419,
-    "tradable_futures_pair_count": 419,
-    "skipped_instrument_rows": 566,
+    "futures_pair_count": 420,
+    "active_futures_pair_count": 420,
+    "tradable_futures_pair_count": 420,
+    "skipped_instrument_rows": 563,
     "duplicate_symbol_rows": 0
   },
   "pairs": [
@@ -113,6 +113,21 @@
       "symbol": "ACHUSD-PERP",
       "pair": "ACH/USD",
       "base_asset": "ACH",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "PERPETUAL_SWAP",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
+      "symbol": "ACNUSD-PERP",
+      "pair": "ACN/USD",
+      "base_asset": "ACN",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
@@ -875,21 +890,6 @@
     },
     {
       "exchange": "cryptocom",
-      "symbol": "BLURUSD-PERP",
-      "pair": "BLUR/USD",
-      "base_asset": "BLUR",
-      "quote_asset": "USD",
-      "settle_asset": null,
-      "contract_type": "PERPETUAL_SWAP",
-      "market": "derivatives",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "cryptocom",
       "symbol": "BMNRUSD-PERP",
       "pair": "BMNR/USD",
       "base_asset": "BMNR",
@@ -1010,21 +1010,6 @@
     },
     {
       "exchange": "cryptocom",
-      "symbol": "BTCUSD-261030",
-      "pair": "BTC/USD",
-      "base_asset": "BTC",
-      "quote_asset": "USD",
-      "settle_asset": null,
-      "contract_type": "FUTURE",
-      "market": "derivatives",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "cryptocom",
       "symbol": "BTCUSD-261127",
       "pair": "BTC/USD",
       "base_asset": "BTC",
@@ -1041,6 +1026,21 @@
     {
       "exchange": "cryptocom",
       "symbol": "BTCUSD-261225",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "FUTURE",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
+      "symbol": "BTCUSD-270129",
       "pair": "BTC/USD",
       "base_asset": "BTC",
       "quote_asset": "USD",
@@ -1088,6 +1088,21 @@
       "symbol": "BTCUSD-PERP",
       "pair": "BTC/USD",
       "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "PERPETUAL_SWAP",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
+      "symbol": "BWETUSD-PERP",
+      "pair": "BWET/USD",
+      "base_asset": "BWET",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
@@ -1700,21 +1715,6 @@
     },
     {
       "exchange": "cryptocom",
-      "symbol": "DEGENUSD-PERP",
-      "pair": "DEGEN/USD",
-      "base_asset": "DEGEN",
-      "quote_asset": "USD",
-      "settle_asset": null,
-      "contract_type": "PERPETUAL_SWAP",
-      "market": "derivatives",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "cryptocom",
       "symbol": "DELLUSD-PERP",
       "pair": "DELL/USD",
       "base_asset": "DELL",
@@ -1985,21 +1985,6 @@
     },
     {
       "exchange": "cryptocom",
-      "symbol": "ETHUSD-261030",
-      "pair": "ETH/USD",
-      "base_asset": "ETH",
-      "quote_asset": "USD",
-      "settle_asset": null,
-      "contract_type": "FUTURE",
-      "market": "derivatives",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "cryptocom",
       "symbol": "ETHUSD-261127",
       "pair": "ETH/USD",
       "base_asset": "ETH",
@@ -2016,6 +2001,21 @@
     {
       "exchange": "cryptocom",
       "symbol": "ETHUSD-261225",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "FUTURE",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
+      "symbol": "ETHUSD-270129",
       "pair": "ETH/USD",
       "base_asset": "ETH",
       "quote_asset": "USD",
@@ -2300,9 +2300,9 @@
     },
     {
       "exchange": "cryptocom",
-      "symbol": "FWOGUSD-PERP",
-      "pair": "FWOG/USD",
-      "base_asset": "FWOG",
+      "symbol": "GALAUSD-PERP",
+      "pair": "GALA/USD",
+      "base_asset": "GALA",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
@@ -2315,9 +2315,9 @@
     },
     {
       "exchange": "cryptocom",
-      "symbol": "GALAUSD-PERP",
-      "pair": "GALA/USD",
-      "base_asset": "GALA",
+      "symbol": "GDXUSD-PERP",
+      "pair": "GDX/USD",
+      "base_asset": "GDX",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
@@ -2753,36 +2753,6 @@
       "symbol": "ICPUSD-PERP",
       "pair": "ICP/USD",
       "base_asset": "ICP",
-      "quote_asset": "USD",
-      "settle_asset": null,
-      "contract_type": "PERPETUAL_SWAP",
-      "market": "derivatives",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "cryptocom",
-      "symbol": "IKAUSD-PERP",
-      "pair": "IKA/USD",
-      "base_asset": "IKA",
-      "quote_asset": "USD",
-      "settle_asset": null,
-      "contract_type": "PERPETUAL_SWAP",
-      "market": "derivatives",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "cryptocom",
-      "symbol": "IMUUSD-PERP",
-      "pair": "IMU/USD",
-      "base_asset": "IMU",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
@@ -3395,6 +3365,21 @@
     },
     {
       "exchange": "cryptocom",
+      "symbol": "MCDUSD-PERP",
+      "pair": "MCD/USD",
+      "base_asset": "MCD",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "PERPETUAL_SWAP",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
       "symbol": "MDBUSD-PERP",
       "pair": "MDB/USD",
       "base_asset": "MDB",
@@ -3590,6 +3575,21 @@
     },
     {
       "exchange": "cryptocom",
+      "symbol": "MRKUSD-PERP",
+      "pair": "MRK/USD",
+      "base_asset": "MRK",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "PERPETUAL_SWAP",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
       "symbol": "MRNAUSD-PERP",
       "pair": "MRNA/USD",
       "base_asset": "MRNA",
@@ -3638,6 +3638,21 @@
       "symbol": "MSTRUSD-PERP",
       "pair": "MSTR/USD",
       "base_asset": "MSTR",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "PERPETUAL_SWAP",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
+      "symbol": "MSTUUSD-PERP",
+      "pair": "MSTU/USD",
+      "base_asset": "MSTU",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
@@ -3743,6 +3758,21 @@
       "symbol": "NFLXUSD-PERP",
       "pair": "NFLX/USD",
       "base_asset": "NFLX",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "PERPETUAL_SWAP",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
+      "symbol": "NKEUSD-PERP",
+      "pair": "NKE/USD",
+      "base_asset": "NKE",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
@@ -4235,21 +4265,6 @@
     },
     {
       "exchange": "cryptocom",
-      "symbol": "PONKEUSD-PERP",
-      "pair": "PONKE/USD",
-      "base_asset": "PONKE",
-      "quote_asset": "USD",
-      "settle_asset": null,
-      "contract_type": "PERPETUAL_SWAP",
-      "market": "derivatives",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "cryptocom",
       "symbol": "PONSUSD-PERP",
       "pair": "PONS/USD",
       "base_asset": "PONS",
@@ -4298,21 +4313,6 @@
       "symbol": "PRLUSD-PERP",
       "pair": "PRL/USD",
       "base_asset": "PRL",
-      "quote_asset": "USD",
-      "settle_asset": null,
-      "contract_type": "PERPETUAL_SWAP",
-      "market": "derivatives",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "cryptocom",
-      "symbol": "PROMPTUSD-PERP",
-      "pair": "PROMPT/USD",
-      "base_asset": "PROMPT",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
@@ -4718,6 +4718,21 @@
       "symbol": "SAPIENUSD-PERP",
       "pair": "SAPIEN/USD",
       "base_asset": "SAPIEN",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "PERPETUAL_SWAP",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
+      "symbol": "SECZUSD-PERP",
+      "pair": "SECZ/USD",
+      "base_asset": "SECZ",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",

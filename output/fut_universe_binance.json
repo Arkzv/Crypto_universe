@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "binance",
-  "generated_at": "2026-10-13T07:54:15+00:00",
+  "generated_at": "2026-11-02T11:02:38+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -12,9 +12,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 957,
-    "active_futures_pair_count": 823,
-    "tradable_futures_pair_count": 823,
+    "futures_pair_count": 972,
+    "active_futures_pair_count": 834,
+    "tradable_futures_pair_count": 834,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -462,6 +462,21 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "ABBVUSDT",
+      "pair": "ABBV/USDT",
+      "base_asset": "ABBV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
       "market": "linear",
       "flags": {
         "status": "TRADING",
@@ -1074,6 +1089,21 @@
       "symbol": "AMDUSDT",
       "pair": "AMD/USDT",
       "base_asset": "AMD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "AMGNUSDT",
+      "pair": "AMGN/USDT",
+      "base_asset": "AMGN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "TRADIFI_PERPETUAL",
@@ -1797,6 +1827,21 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "BACUSDT",
+      "pair": "BAC/USDT",
+      "base_asset": "BAC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
       "market": "linear",
       "flags": {
         "status": "TRADING",
@@ -3072,6 +3117,21 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "CEGUSDT",
+      "pair": "CEG/USDT",
+      "base_asset": "CEG",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
       "market": "linear",
       "flags": {
         "status": "TRADING",
@@ -4491,6 +4551,21 @@
     },
     {
       "exchange": "binance",
+      "symbol": "EIDOUSDT",
+      "pair": "EIDO/USDT",
+      "base_asset": "EIDO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
       "symbol": "EIGENUSDT",
       "pair": "EIGEN/USDT",
       "base_asset": "EIGEN",
@@ -4604,9 +4679,9 @@
       "contract_type": "PERPETUAL",
       "market": "linear",
       "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
+        "status": "SETTLING",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
@@ -4622,6 +4697,21 @@
         "status": "SETTLING",
         "is_active": false,
         "is_tradable": false
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "EQTUSDT",
+      "pair": "EQT/USDT",
+      "base_asset": "EQT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
       }
     },
     {
@@ -4974,6 +5064,21 @@
       "symbol": "EWZUSDT",
       "pair": "EWZ/USDT",
       "base_asset": "EWZ",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "EWZSUSDT",
+      "pair": "EWZS/USDT",
+      "base_asset": "EWZS",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "TRADIFI_PERPETUAL",
@@ -6339,6 +6444,21 @@
       "symbol": "HYUNDAIUSDT",
       "pair": "HYUNDAI/USDT",
       "base_asset": "HYUNDAI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "IBKRUSDT",
+      "pair": "IBKR/USDT",
+      "base_asset": "IBKR",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "TRADIFI_PERPETUAL",
@@ -7851,6 +7971,21 @@
     },
     {
       "exchange": "binance",
+      "symbol": "MDTUSDT",
+      "pair": "MDT/USDT",
+      "base_asset": "MDT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
       "symbol": "MEUSDT",
       "pair": "ME/USDT",
       "base_asset": "ME",
@@ -7902,6 +8037,21 @@
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "MELIUSDT",
+      "pair": "MELI/USDT",
+      "base_asset": "MELI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
       "market": "linear",
       "flags": {
         "status": "TRADING",
@@ -8084,9 +8234,9 @@
       "contract_type": "PERPETUAL",
       "market": "linear",
       "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
+        "status": "SETTLING",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
@@ -9336,6 +9486,21 @@
     },
     {
       "exchange": "binance",
+      "symbol": "OXYUSDT",
+      "pair": "OXY/USDT",
+      "base_asset": "OXY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
       "symbol": "PANWUSDT",
       "pair": "PANW/USDT",
       "base_asset": "PANW",
@@ -9512,6 +9677,21 @@
         "status": "SETTLING",
         "is_active": false,
         "is_tradable": false
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "PFEUSDT",
+      "pair": "PFE/USDT",
+      "base_asset": "PFE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
       }
     },
     {
@@ -9831,6 +10011,21 @@
     },
     {
       "exchange": "binance",
+      "symbol": "PREDICTUSDT",
+      "pair": "PREDICT/USDT",
+      "base_asset": "PREDICT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
       "symbol": "PRLUSDT",
       "pair": "PRL/USDT",
       "base_asset": "PRL",
@@ -9899,9 +10094,9 @@
       "contract_type": "PERPETUAL",
       "market": "linear",
       "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
+        "status": "SETTLING",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
@@ -11121,6 +11316,21 @@
     },
     {
       "exchange": "binance",
+      "symbol": "SMRUSDT",
+      "pair": "SMR/USDT",
+      "base_asset": "SMR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
       "symbol": "SNDKUSDT",
       "pair": "SNDK/USDT",
       "base_asset": "SNDK",
@@ -11657,6 +11867,21 @@
         "status": "SETTLING",
         "is_active": false,
         "is_tradable": false
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "STMUSDT",
+      "pair": "STM/USDT",
+      "base_asset": "STM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "TRADIFI_PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
       }
     },
     {
@@ -13079,9 +13304,9 @@
       "contract_type": "PERPETUAL",
       "market": "linear",
       "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
+        "status": "SETTLING",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
