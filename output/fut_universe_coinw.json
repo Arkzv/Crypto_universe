@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "coinw",
-  "generated_at": "2026-11-02T11:02:37+00:00",
+  "generated_at": "2026-11-11T09:49:19+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -11,9 +11,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 372,
-    "active_futures_pair_count": 372,
-    "tradable_futures_pair_count": 372,
+    "futures_pair_count": 373,
+    "active_futures_pair_count": 373,
+    "tradable_futures_pair_count": 373,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -2108,6 +2108,21 @@
       "symbol": "HOOD",
       "pair": "HOOD/USDT",
       "base_asset": "HOOD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "perpetual",
+      "flags": {
+        "status": "ONLINE",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinw",
+      "symbol": "HUMA",
+      "pair": "HUMA/USDT",
+      "base_asset": "HUMA",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",

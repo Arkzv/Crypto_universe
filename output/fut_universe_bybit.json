@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "bybit",
-  "generated_at": "2026-11-02T11:02:37+00:00",
+  "generated_at": "2026-11-11T09:49:19+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -12,9 +12,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 949,
-    "active_futures_pair_count": 949,
-    "tradable_futures_pair_count": 949,
+    "futures_pair_count": 956,
+    "active_futures_pair_count": 956,
+    "tradable_futures_pair_count": 956,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -804,6 +804,21 @@
       "symbol": "AIXBTUSDT",
       "pair": "AIXBT/USDT",
       "base_asset": "AIXBT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARPERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "AKAMUSDT",
+      "pair": "AKAM/USDT",
+      "base_asset": "AKAM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "LINEARPERPETUAL",
@@ -2631,21 +2646,6 @@
     },
     {
       "exchange": "bybit",
-      "symbol": "BTCUSDT-06NOV26",
-      "pair": "BTC/USDT",
-      "base_asset": "BTC",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "LINEARFUTURES",
-      "market": "linear",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "bybit",
       "symbol": "BTCUSDT-13NOV26",
       "pair": "BTC/USDT",
       "base_asset": "BTC",
@@ -2737,6 +2737,21 @@
     {
       "exchange": "bybit",
       "symbol": "BTCUSDT-27NOV26",
+      "pair": "BTC/USDT",
+      "base_asset": "BTC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARFUTURES",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "BTCUSDT-29JAN27",
       "pair": "BTC/USDT",
       "base_asset": "BTC",
       "quote_asset": "USDT",
@@ -2994,6 +3009,21 @@
       "symbol": "CCUSDT",
       "pair": "CC/USDT",
       "base_asset": "CC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARPERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "CEGUSDT",
+      "pair": "CEG/USDT",
+      "base_asset": "CEG",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "LINEARPERPETUAL",
@@ -4041,21 +4071,6 @@
     },
     {
       "exchange": "bybit",
-      "symbol": "DOGEUSDT-06NOV26",
-      "pair": "DOGE/USDT",
-      "base_asset": "DOGE",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "LINEARFUTURES",
-      "market": "linear",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "bybit",
       "symbol": "DOGEUSDT-13NOV26",
       "pair": "DOGE/USDT",
       "base_asset": "DOGE",
@@ -4072,6 +4087,21 @@
     {
       "exchange": "bybit",
       "symbol": "DOGEUSDT-20NOV26",
+      "pair": "DOGE/USDT",
+      "base_asset": "DOGE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARFUTURES",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "DOGEUSDT-25DEC26",
       "pair": "DOGE/USDT",
       "base_asset": "DOGE",
       "quote_asset": "USDT",
@@ -4224,6 +4254,21 @@
       "symbol": "DRVUSDT",
       "pair": "DRV/USDT",
       "base_asset": "DRV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARPERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "DUOLUSDT",
+      "pair": "DUOL/USDT",
+      "base_asset": "DUOL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "LINEARPERPETUAL",
@@ -4671,21 +4716,6 @@
     },
     {
       "exchange": "bybit",
-      "symbol": "ETHUSDT-06NOV26",
-      "pair": "ETH/USDT",
-      "base_asset": "ETH",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "LINEARFUTURES",
-      "market": "linear",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "bybit",
       "symbol": "ETHUSDT-13NOV26",
       "pair": "ETH/USDT",
       "base_asset": "ETH",
@@ -4777,6 +4807,21 @@
     {
       "exchange": "bybit",
       "symbol": "ETHUSDT-27NOV26",
+      "pair": "ETH/USDT",
+      "base_asset": "ETH",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARFUTURES",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "ETHUSDT-29JAN27",
       "pair": "ETH/USDT",
       "base_asset": "ETH",
       "quote_asset": "USDT",
@@ -5106,6 +5151,21 @@
     },
     {
       "exchange": "bybit",
+      "symbol": "FISVUSDT",
+      "pair": "FISV/USDT",
+      "base_asset": "FISV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARPERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
       "symbol": "FLEXUSDT",
       "pair": "FLEX/USDT",
       "base_asset": "FLEX",
@@ -5214,6 +5274,21 @@
       "symbol": "FLYUSDT",
       "pair": "FLY/USDT",
       "base_asset": "FLY",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARPERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "FNUSDT",
+      "pair": "FN/USDT",
+      "base_asset": "FN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "LINEARPERPETUAL",
@@ -6141,21 +6216,6 @@
     },
     {
       "exchange": "bybit",
-      "symbol": "HYPEUSDT-06NOV26",
-      "pair": "HYPE/USDT",
-      "base_asset": "HYPE",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "LINEARFUTURES",
-      "market": "linear",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "bybit",
       "symbol": "HYPEUSDT-13NOV26",
       "pair": "HYPE/USDT",
       "base_asset": "HYPE",
@@ -6172,6 +6232,21 @@
     {
       "exchange": "bybit",
       "symbol": "HYPEUSDT-20NOV26",
+      "pair": "HYPE/USDT",
+      "base_asset": "HYPE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARFUTURES",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "HYPEUSDT-25DEC26",
       "pair": "HYPE/USDT",
       "base_asset": "HYPE",
       "quote_asset": "USDT",
@@ -8046,21 +8121,6 @@
     },
     {
       "exchange": "bybit",
-      "symbol": "MNTUSDT-06NOV26",
-      "pair": "MNT/USDT",
-      "base_asset": "MNT",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "LINEARFUTURES",
-      "market": "linear",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "bybit",
       "symbol": "MNTUSDT-13NOV26",
       "pair": "MNT/USDT",
       "base_asset": "MNT",
@@ -8077,6 +8137,21 @@
     {
       "exchange": "bybit",
       "symbol": "MNTUSDT-20NOV26",
+      "pair": "MNT/USDT",
+      "base_asset": "MNT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARFUTURES",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "MNTUSDT-25DEC26",
       "pair": "MNT/USDT",
       "base_asset": "MNT",
       "quote_asset": "USDT",
@@ -9444,6 +9519,21 @@
       "symbol": "PEPUSDT",
       "pair": "PEP/USDT",
       "base_asset": "PEP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARPERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "PFEUSDT",
+      "pair": "PFE/USDT",
+      "base_asset": "PFE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "LINEARPERPETUAL",
@@ -11136,21 +11226,6 @@
     },
     {
       "exchange": "bybit",
-      "symbol": "SOLUSDT-06NOV26",
-      "pair": "SOL/USDT",
-      "base_asset": "SOL",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "LINEARFUTURES",
-      "market": "linear",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "bybit",
       "symbol": "SOLUSDT-13NOV26",
       "pair": "SOL/USDT",
       "base_asset": "SOL",
@@ -11167,6 +11242,21 @@
     {
       "exchange": "bybit",
       "symbol": "SOLUSDT-20NOV26",
+      "pair": "SOL/USDT",
+      "base_asset": "SOL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARFUTURES",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "SOLUSDT-25DEC26",
       "pair": "SOL/USDT",
       "base_asset": "SOL",
       "quote_asset": "USDT",
@@ -12681,6 +12771,21 @@
     },
     {
       "exchange": "bybit",
+      "symbol": "USDBRLUSDT",
+      "pair": "USDBRL/USDT",
+      "base_asset": "USDBRL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARPERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
       "symbol": "USDCUSDT",
       "pair": "USDC/USDT",
       "base_asset": "USDC",
@@ -13326,21 +13431,6 @@
     },
     {
       "exchange": "bybit",
-      "symbol": "XAUTUSDT-06NOV26",
-      "pair": "XAUT/USDT",
-      "base_asset": "XAUT",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "LINEARFUTURES",
-      "market": "linear",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "bybit",
       "symbol": "XAUTUSDT-13NOV26",
       "pair": "XAUT/USDT",
       "base_asset": "XAUT",
@@ -13357,6 +13447,21 @@
     {
       "exchange": "bybit",
       "symbol": "XAUTUSDT-20NOV26",
+      "pair": "XAUT/USDT",
+      "base_asset": "XAUT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARFUTURES",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "XAUTUSDT-25DEC26",
       "pair": "XAUT/USDT",
       "base_asset": "XAUT",
       "quote_asset": "USDT",
@@ -13776,21 +13881,6 @@
     },
     {
       "exchange": "bybit",
-      "symbol": "XRPUSDT-06NOV26",
-      "pair": "XRP/USDT",
-      "base_asset": "XRP",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "LINEARFUTURES",
-      "market": "linear",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "bybit",
       "symbol": "XRPUSDT-13NOV26",
       "pair": "XRP/USDT",
       "base_asset": "XRP",
@@ -13807,6 +13897,21 @@
     {
       "exchange": "bybit",
       "symbol": "XRPUSDT-20NOV26",
+      "pair": "XRP/USDT",
+      "base_asset": "XRP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARFUTURES",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "XRPUSDT-25DEC26",
       "pair": "XRP/USDT",
       "base_asset": "XRP",
       "quote_asset": "USDT",

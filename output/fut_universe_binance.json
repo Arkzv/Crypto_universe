@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "binance",
-  "generated_at": "2026-11-02T11:02:38+00:00",
+  "generated_at": "2026-11-11T09:49:20+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -12,7 +12,7 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 972,
+    "futures_pair_count": 974,
     "active_futures_pair_count": 834,
     "tradable_futures_pair_count": 834,
     "skipped_instrument_rows": 0,
@@ -6411,6 +6411,21 @@
     },
     {
       "exchange": "binance",
+      "symbol": "HYPEUSDC",
+      "pair": "HYPE/USDC",
+      "base_asset": "HYPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "PENDING_TRADING",
+        "is_active": false,
+        "is_tradable": false
+      }
+    },
+    {
+      "exchange": "binance",
       "symbol": "HYPEUSDT",
       "pair": "HYPE/USDT",
       "base_asset": "HYPE",
@@ -12737,6 +12752,21 @@
         "status": "TRADING",
         "is_active": true,
         "is_tradable": true
+      }
+    },
+    {
+      "exchange": "binance",
+      "symbol": "TRXUSDC",
+      "pair": "TRX/USDC",
+      "base_asset": "TRX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "PENDING_TRADING",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
