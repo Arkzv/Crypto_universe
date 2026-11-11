@@ -2,25 +2,3216 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "coinbase",
-  "generated_at": "2026-11-11T09:49:20+00:00",
-  "collection_status": "error",
+  "generated_at": "2026-11-11T10:01:37+00:00",
+  "collection_status": "ok",
   "source": {
     "instrument_urls": [
-      "https://api.international.coinbase.com/api/v1/instruments"
+      "https://drb.coinbase.com/api/v2/public/get_instruments?currency=any&kind=future&expired=false"
     ]
   },
-  "errors": [
-    {
-      "url": "https://api.international.coinbase.com/api/v1/instruments",
-      "message": "HTTP Error 502: Bad Gateway"
-    }
-  ],
+  "errors": [],
   "summary": {
-    "futures_pair_count": 0,
-    "active_futures_pair_count": 0,
-    "tradable_futures_pair_count": 0,
+    "futures_pair_count": 213,
+    "active_futures_pair_count": 213,
+    "tradable_futures_pair_count": 213,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
-  "pairs": []
+  "pairs": [
+    {
+      "exchange": "coinbase",
+      "symbol": "1000BONK_USDC-PERPETUAL",
+      "pair": "1000BONK/USDC",
+      "base_asset": "1000BONK",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "1000MOG_USDC-PERPETUAL",
+      "pair": "1000MOG/USDC",
+      "base_asset": "1000MOG",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "1000PEPE_USDC-PERPETUAL",
+      "pair": "1000PEPE/USDC",
+      "base_asset": "1000PEPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "1000SHIB_USDC-PERPETUAL",
+      "pair": "1000SHIB/USDC",
+      "base_asset": "1000SHIB",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AAPL_USDC-PERPETUAL",
+      "pair": "AAPL/USDC",
+      "base_asset": "AAPL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AAVE_USDC-PERPETUAL",
+      "pair": "AAVE/USDC",
+      "base_asset": "AAVE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ADA_USDC-PERPETUAL",
+      "pair": "ADA/USDC",
+      "base_asset": "ADA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AERO_USDC-PERPETUAL",
+      "pair": "AERO/USDC",
+      "base_asset": "AERO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ALGO_USDC-PERPETUAL",
+      "pair": "ALGO/USDC",
+      "base_asset": "ALGO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ALT_USDC-PERPETUAL",
+      "pair": "ALT/USDC",
+      "base_asset": "ALT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AMD_USDC-PERPETUAL",
+      "pair": "AMD/USDC",
+      "base_asset": "AMD",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AMZN_USDC-PERPETUAL",
+      "pair": "AMZN/USDC",
+      "base_asset": "AMZN",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ANTH_USDC-PERPETUAL",
+      "pair": "ANTH/USDC",
+      "base_asset": "ANTH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "APE_USDC-PERPETUAL",
+      "pair": "APE/USDC",
+      "base_asset": "APE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "APT_USDC-PERPETUAL",
+      "pair": "APT/USDC",
+      "base_asset": "APT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ARB_USDC-PERPETUAL",
+      "pair": "ARB/USDC",
+      "base_asset": "ARB",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ARM_USDC-PERPETUAL",
+      "pair": "ARM/USDC",
+      "base_asset": "ARM",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ASTER_USDC-PERPETUAL",
+      "pair": "ASTER/USDC",
+      "base_asset": "ASTER",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ATOM_USDC-PERPETUAL",
+      "pair": "ATOM/USDC",
+      "base_asset": "ATOM",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AVAX_USDC-12NOV26",
+      "pair": "AVAX/USDC",
+      "base_asset": "AVAX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AVAX_USDC-13NOV26",
+      "pair": "AVAX/USDC",
+      "base_asset": "AVAX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AVAX_USDC-20NOV26",
+      "pair": "AVAX/USDC",
+      "base_asset": "AVAX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AVAX_USDC-25DEC26",
+      "pair": "AVAX/USDC",
+      "base_asset": "AVAX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AVAX_USDC-26MAR27",
+      "pair": "AVAX/USDC",
+      "base_asset": "AVAX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AVAX_USDC-27NOV26",
+      "pair": "AVAX/USDC",
+      "base_asset": "AVAX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AVAX_USDC-PERPETUAL",
+      "pair": "AVAX/USDC",
+      "base_asset": "AVAX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AVGO_USDC-PERPETUAL",
+      "pair": "AVGO/USDC",
+      "base_asset": "AVGO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AVNT_USDC-PERPETUAL",
+      "pair": "AVNT/USDC",
+      "base_asset": "AVNT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BASED1_USDC-PERPETUAL",
+      "pair": "BASED1/USDC",
+      "base_asset": "BASED1",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BCH_USDC-PERPETUAL",
+      "pair": "BCH/USDC",
+      "base_asset": "BCH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BE_USDC-PERPETUAL",
+      "pair": "BE/USDC",
+      "base_asset": "BE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BERA_USDC-PERPETUAL",
+      "pair": "BERA/USDC",
+      "base_asset": "BERA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BILL_USDC-PERPETUAL",
+      "pair": "BILL/USDC",
+      "base_asset": "BILL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BNB_USDC-PERPETUAL",
+      "pair": "BNB/USDC",
+      "base_asset": "BNB",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BOME_USDC-PERPETUAL",
+      "pair": "BOME/USDC",
+      "base_asset": "BOME",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BRENTOIL_USDC-PERPETUAL",
+      "pair": "BRENTOIL/USDC",
+      "base_asset": "BRENTOIL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-12NOV26",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-13NOV26",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-14NOV26",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-15NOV26",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-20NOV26",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-24SEP27",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-25DEC26",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-25JUN27",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-26MAR27",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-27NOV26",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-29JAN27",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC-PERPETUAL",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC_USDC-12NOV26",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC_USDC-13NOV26",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC_USDC-14NOV26",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC_USDC-15NOV26",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC_USDC-20NOV26",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC_USDC-25DEC26",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC_USDC-26MAR27",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC_USDC-27NOV26",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTC_USDC-PERPETUAL",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTCDVOL_USDC-25NOV26",
+      "pair": "BTCDVOL/USDC",
+      "base_asset": "BTCDVOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "CASHCAT_USDC-PERPETUAL",
+      "pair": "CASHCAT/USDC",
+      "base_asset": "CASHCAT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "CBRS_USDC-PERPETUAL",
+      "pair": "CBRS/USDC",
+      "base_asset": "CBRS",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "CFX_USDC-PERPETUAL",
+      "pair": "CFX/USDC",
+      "base_asset": "CFX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "CHIP_USDC-PERPETUAL",
+      "pair": "CHIP/USDC",
+      "base_asset": "CHIP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "COIN50_USDC-PERPETUAL",
+      "pair": "COIN50/USDC",
+      "base_asset": "COIN50",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "COMP_USDC-PERPETUAL",
+      "pair": "COMP/USDC",
+      "base_asset": "COMP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "CRCL_USDC-PERPETUAL",
+      "pair": "CRCL/USDC",
+      "base_asset": "CRCL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "CRV_USDC-PERPETUAL",
+      "pair": "CRV/USDC",
+      "base_asset": "CRV",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "CRWV_USDC-PERPETUAL",
+      "pair": "CRWV/USDC",
+      "base_asset": "CRWV",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "DASH_USDC-PERPETUAL",
+      "pair": "DASH/USDC",
+      "base_asset": "DASH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "DELL_USDC-PERPETUAL",
+      "pair": "DELL/USDC",
+      "base_asset": "DELL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "DOGE_USDC-PERPETUAL",
+      "pair": "DOGE/USDC",
+      "base_asset": "DOGE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "DOT_USDC-PERPETUAL",
+      "pair": "DOT/USDC",
+      "base_asset": "DOT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "DRAM_USDC-PERPETUAL",
+      "pair": "DRAM/USDC",
+      "base_asset": "DRAM",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "DYDX_USDC-PERPETUAL",
+      "pair": "DYDX/USDC",
+      "base_asset": "DYDX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "EDGEX_USDC-PERPETUAL",
+      "pair": "EDGEX/USDC",
+      "base_asset": "EDGEX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "EIGEN_USDC-PERPETUAL",
+      "pair": "EIGEN/USDC",
+      "base_asset": "EIGEN",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ENA_USDC-PERPETUAL",
+      "pair": "ENA/USDC",
+      "base_asset": "ENA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETC_USDC-PERPETUAL",
+      "pair": "ETC/USDC",
+      "base_asset": "ETC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-12NOV26",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-13NOV26",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-14NOV26",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-15NOV26",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-20NOV26",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-24SEP27",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-25DEC26",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-25JUN27",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-26MAR27",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-27NOV26",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-29JAN27",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH-PERPETUAL",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH_USDC-12NOV26",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH_USDC-13NOV26",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH_USDC-14NOV26",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH_USDC-15NOV26",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH_USDC-20NOV26",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH_USDC-25DEC26",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH_USDC-26MAR27",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH_USDC-27NOV26",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH_USDC-PERPETUAL",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETHFI_USDC-PERPETUAL",
+      "pair": "ETHFI/USDC",
+      "base_asset": "ETHFI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "EURC_USDC-PERPETUAL",
+      "pair": "EURC/USDC",
+      "base_asset": "EURC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "EWY_USDC-PERPETUAL",
+      "pair": "EWY/USDC",
+      "base_asset": "EWY",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "FARTCOIN_USDC-PERPETUAL",
+      "pair": "FARTCOIN/USDC",
+      "base_asset": "FARTCOIN",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "FET_USDC-PERPETUAL",
+      "pair": "FET/USDC",
+      "base_asset": "FET",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "FIL_USDC-PERPETUAL",
+      "pair": "FIL/USDC",
+      "base_asset": "FIL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "GOLD_USDC-PERPETUAL",
+      "pair": "GOLD/USDC",
+      "base_asset": "GOLD",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "GOOGL_USDC-PERPETUAL",
+      "pair": "GOOGL/USDC",
+      "base_asset": "GOOGL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "HBAR_USDC-PERPETUAL",
+      "pair": "HBAR/USDC",
+      "base_asset": "HBAR",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "HOOD_USDC-PERPETUAL",
+      "pair": "HOOD/USDC",
+      "base_asset": "HOOD",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "HYPE_USDC-12NOV26",
+      "pair": "HYPE/USDC",
+      "base_asset": "HYPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "HYPE_USDC-13NOV26",
+      "pair": "HYPE/USDC",
+      "base_asset": "HYPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "HYPE_USDC-20NOV26",
+      "pair": "HYPE/USDC",
+      "base_asset": "HYPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "HYPE_USDC-25DEC26",
+      "pair": "HYPE/USDC",
+      "base_asset": "HYPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "HYPE_USDC-26MAR27",
+      "pair": "HYPE/USDC",
+      "base_asset": "HYPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "HYPE_USDC-27NOV26",
+      "pair": "HYPE/USDC",
+      "base_asset": "HYPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "HYPE_USDC-PERPETUAL",
+      "pair": "HYPE/USDC",
+      "base_asset": "HYPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ICP_USDC-PERPETUAL",
+      "pair": "ICP/USDC",
+      "base_asset": "ICP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "INJ_USDC-PERPETUAL",
+      "pair": "INJ/USDC",
+      "base_asset": "INJ",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "INTC_USDC-PERPETUAL",
+      "pair": "INTC/USDC",
+      "base_asset": "INTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "INX_USDC-PERPETUAL",
+      "pair": "INX/USDC",
+      "base_asset": "INX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "JASMY_USDC-PERPETUAL",
+      "pair": "JASMY/USDC",
+      "base_asset": "JASMY",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "JTO_USDC-PERPETUAL",
+      "pair": "JTO/USDC",
+      "base_asset": "JTO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "JUP_USDC-PERPETUAL",
+      "pair": "JUP/USDC",
+      "base_asset": "JUP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "KORU_USDC-PERPETUAL",
+      "pair": "KORU/USDC",
+      "base_asset": "KORU",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "LDO_USDC-PERPETUAL",
+      "pair": "LDO/USDC",
+      "base_asset": "LDO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "LINK_USDC-PERPETUAL",
+      "pair": "LINK/USDC",
+      "base_asset": "LINK",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "LIT_USDC-PERPETUAL",
+      "pair": "LIT/USDC",
+      "base_asset": "LIT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "LITE_USDC-PERPETUAL",
+      "pair": "LITE/USDC",
+      "base_asset": "LITE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "LTC_USDC-PERPETUAL",
+      "pair": "LTC/USDC",
+      "base_asset": "LTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "MEGA_USDC-PERPETUAL",
+      "pair": "MEGA/USDC",
+      "base_asset": "MEGA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "MERL_USDC-PERPETUAL",
+      "pair": "MERL/USDC",
+      "base_asset": "MERL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "META_USDC-PERPETUAL",
+      "pair": "META/USDC",
+      "base_asset": "META",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "MON_USDC-PERPETUAL",
+      "pair": "MON/USDC",
+      "base_asset": "MON",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "MORPHO_USDC-PERPETUAL",
+      "pair": "MORPHO/USDC",
+      "base_asset": "MORPHO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "MRVL_USDC-PERPETUAL",
+      "pair": "MRVL/USDC",
+      "base_asset": "MRVL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "MSFT_USDC-PERPETUAL",
+      "pair": "MSFT/USDC",
+      "base_asset": "MSFT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "MSTR_USDC-PERPETUAL",
+      "pair": "MSTR/USDC",
+      "base_asset": "MSTR",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "MU_USDC-PERPETUAL",
+      "pair": "MU/USDC",
+      "base_asset": "MU",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "NBIS_USDC-PERPETUAL",
+      "pair": "NBIS/USDC",
+      "base_asset": "NBIS",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "NEAR_USDC-PERPETUAL",
+      "pair": "NEAR/USDC",
+      "base_asset": "NEAR",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "NIGHT_USDC-PERPETUAL",
+      "pair": "NIGHT/USDC",
+      "base_asset": "NIGHT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "NVDA_USDC-PERPETUAL",
+      "pair": "NVDA/USDC",
+      "base_asset": "NVDA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ONDO_USDC-PERPETUAL",
+      "pair": "ONDO/USDC",
+      "base_asset": "ONDO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "OP_USDC-PERPETUAL",
+      "pair": "OP/USDC",
+      "base_asset": "OP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "OPENAI_USDC-PERPETUAL",
+      "pair": "OPENAI/USDC",
+      "base_asset": "OPENAI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "OPG_USDC-PERPETUAL",
+      "pair": "OPG/USDC",
+      "base_asset": "OPG",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "OPN_USDC-PERPETUAL",
+      "pair": "OPN/USDC",
+      "base_asset": "OPN",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ORCL_USDC-PERPETUAL",
+      "pair": "ORCL/USDC",
+      "base_asset": "ORCL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "PAXG_USDC-PERPETUAL",
+      "pair": "PAXG/USDC",
+      "base_asset": "PAXG",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "PENDLE_USDC-PERPETUAL",
+      "pair": "PENDLE/USDC",
+      "base_asset": "PENDLE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "PENGU_USDC-PERPETUAL",
+      "pair": "PENGU/USDC",
+      "base_asset": "PENGU",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "PLTR_USDC-PERPETUAL",
+      "pair": "PLTR/USDC",
+      "base_asset": "PLTR",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "PNUT_USDC-PERPETUAL",
+      "pair": "PNUT/USDC",
+      "base_asset": "PNUT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "POL_USDC-PERPETUAL",
+      "pair": "POL/USDC",
+      "base_asset": "POL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "PONS_USDC-PERPETUAL",
+      "pair": "PONS/USDC",
+      "base_asset": "PONS",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "PRL_USDC-PERPETUAL",
+      "pair": "PRL/USDC",
+      "base_asset": "PRL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "PUMP_USDC-PERPETUAL",
+      "pair": "PUMP/USDC",
+      "base_asset": "PUMP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "PYTH_USDC-PERPETUAL",
+      "pair": "PYTH/USDC",
+      "base_asset": "PYTH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "QQQ_USDC-PERPETUAL",
+      "pair": "QQQ/USDC",
+      "base_asset": "QQQ",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "RENDER_USDC-PERPETUAL",
+      "pair": "RENDER/USDC",
+      "base_asset": "RENDER",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "RESOLV_USDC-PERPETUAL",
+      "pair": "RESOLV/USDC",
+      "base_asset": "RESOLV",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ROBO_USDC-PERPETUAL",
+      "pair": "ROBO/USDC",
+      "base_asset": "ROBO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "RUNE_USDC-PERPETUAL",
+      "pair": "RUNE/USDC",
+      "base_asset": "RUNE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "S_USDC-PERPETUAL",
+      "pair": "S/USDC",
+      "base_asset": "S",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SAGA_USDC-PERPETUAL",
+      "pair": "SAGA/USDC",
+      "base_asset": "SAGA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SEI_USDC-PERPETUAL",
+      "pair": "SEI/USDC",
+      "base_asset": "SEI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SILVER_USDC-PERPETUAL",
+      "pair": "SILVER/USDC",
+      "base_asset": "SILVER",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SKHY_USDC-PERPETUAL",
+      "pair": "SKHY/USDC",
+      "base_asset": "SKHY",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SNDK_USDC-PERPETUAL",
+      "pair": "SNDK/USDC",
+      "base_asset": "SNDK",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SNXX_USDC-PERPETUAL",
+      "pair": "SNXX/USDC",
+      "base_asset": "SNXX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SOL_USDC-12NOV26",
+      "pair": "SOL/USDC",
+      "base_asset": "SOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SOL_USDC-13NOV26",
+      "pair": "SOL/USDC",
+      "base_asset": "SOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SOL_USDC-20NOV26",
+      "pair": "SOL/USDC",
+      "base_asset": "SOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SOL_USDC-25DEC26",
+      "pair": "SOL/USDC",
+      "base_asset": "SOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SOL_USDC-26MAR27",
+      "pair": "SOL/USDC",
+      "base_asset": "SOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SOL_USDC-27NOV26",
+      "pair": "SOL/USDC",
+      "base_asset": "SOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SOL_USDC-PERPETUAL",
+      "pair": "SOL/USDC",
+      "base_asset": "SOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SOXL_USDC-PERPETUAL",
+      "pair": "SOXL/USDC",
+      "base_asset": "SOXL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SOXS_USDC-PERPETUAL",
+      "pair": "SOXS/USDC",
+      "base_asset": "SOXS",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SPCX_USDC-PERPETUAL",
+      "pair": "SPCX/USDC",
+      "base_asset": "SPCX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SPY_USDC-PERPETUAL",
+      "pair": "SPY/USDC",
+      "base_asset": "SPY",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "STRK_USDC-PERPETUAL",
+      "pair": "STRK/USDC",
+      "base_asset": "STRK",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SUI_USDC-PERPETUAL",
+      "pair": "SUI/USDC",
+      "base_asset": "SUI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TAO_USDC-PERPETUAL",
+      "pair": "TAO/USDC",
+      "base_asset": "TAO",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TIA_USDC-PERPETUAL",
+      "pair": "TIA/USDC",
+      "base_asset": "TIA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TOWNS_USDC-PERPETUAL",
+      "pair": "TOWNS/USDC",
+      "base_asset": "TOWNS",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TRUMP_USDC-PERPETUAL",
+      "pair": "TRUMP/USDC",
+      "base_asset": "TRUMP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TRX_USDC-12NOV26",
+      "pair": "TRX/USDC",
+      "base_asset": "TRX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TRX_USDC-13NOV26",
+      "pair": "TRX/USDC",
+      "base_asset": "TRX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TRX_USDC-20NOV26",
+      "pair": "TRX/USDC",
+      "base_asset": "TRX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TRX_USDC-25DEC26",
+      "pair": "TRX/USDC",
+      "base_asset": "TRX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TRX_USDC-26MAR27",
+      "pair": "TRX/USDC",
+      "base_asset": "TRX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TRX_USDC-27NOV26",
+      "pair": "TRX/USDC",
+      "base_asset": "TRX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TRX_USDC-PERPETUAL",
+      "pair": "TRX/USDC",
+      "base_asset": "TRX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TSLA_USDC-PERPETUAL",
+      "pair": "TSLA/USDC",
+      "base_asset": "TSLA",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TSM_USDC-PERPETUAL",
+      "pair": "TSM/USDC",
+      "base_asset": "TSM",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "UNI_USDC-PERPETUAL",
+      "pair": "UNI/USDC",
+      "base_asset": "UNI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "VIRTUAL_USDC-PERPETUAL",
+      "pair": "VIRTUAL/USDC",
+      "base_asset": "VIRTUAL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "VVV_USDC-PERPETUAL",
+      "pair": "VVV/USDC",
+      "base_asset": "VVV",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "W_USDC-PERPETUAL",
+      "pair": "W/USDC",
+      "base_asset": "W",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "WIF_USDC-PERPETUAL",
+      "pair": "WIF/USDC",
+      "base_asset": "WIF",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "WLD_USDC-PERPETUAL",
+      "pair": "WLD/USDC",
+      "base_asset": "WLD",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "WLFI_USDC-PERPETUAL",
+      "pair": "WLFI/USDC",
+      "base_asset": "WLFI",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "WTIOIL_USDC-PERPETUAL",
+      "pair": "WTIOIL/USDC",
+      "base_asset": "WTIOIL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "XLM_USDC-PERPETUAL",
+      "pair": "XLM/USDC",
+      "base_asset": "XLM",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "XPL_USDC-PERPETUAL",
+      "pair": "XPL/USDC",
+      "base_asset": "XPL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "XRP_USDC-12NOV26",
+      "pair": "XRP/USDC",
+      "base_asset": "XRP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "XRP_USDC-13NOV26",
+      "pair": "XRP/USDC",
+      "base_asset": "XRP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "XRP_USDC-20NOV26",
+      "pair": "XRP/USDC",
+      "base_asset": "XRP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "XRP_USDC-25DEC26",
+      "pair": "XRP/USDC",
+      "base_asset": "XRP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "XRP_USDC-26MAR27",
+      "pair": "XRP/USDC",
+      "base_asset": "XRP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "XRP_USDC-27NOV26",
+      "pair": "XRP/USDC",
+      "base_asset": "XRP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "XRP_USDC-PERPETUAL",
+      "pair": "XRP/USDC",
+      "base_asset": "XRP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ZEC_USDC-PERPETUAL",
+      "pair": "ZEC/USDC",
+      "base_asset": "ZEC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    }
+  ]
 }

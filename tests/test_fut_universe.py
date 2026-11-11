@@ -19,7 +19,7 @@ class ContractStatusTests(unittest.TestCase):
             ("binance", "inverse", {"symbol": "BTCUSD_PERP", "baseAsset": "BTC", "quoteAsset": "USD"}, "contractStatus", "TRADING", "DELIVERED"),
             ("bitget", "USDT-FUTURES", {"symbol": "BTCUSDT", "baseCoin": "BTC", "quoteCoin": "USDT"}, "symbolStatus", "normal", "limit_open"),
             ("bybit", "linear", {"symbol": "BTCUSDT", "baseCoin": "BTC", "quoteCoin": "USDT"}, "status", "Trading", "PreLaunch"),
-            ("coinbase", "international", {"symbol": "BTC-PERP", "type": "PERP", "base_asset_name": "BTC", "quote_asset_name": "USDC"}, "trading_state", "TRADING", "HALT"),
+            ("coinbase", "global", {"instrument_name": "BTC_USDC-PERPETUAL", "kind": "future", "base_currency": "BTC", "quote_currency": "USDC", "state": "open", "expiration_timestamp": 32503708800000}, "is_active", True, False),
             ("coinw", "perpetual", {"name": "BTC", "base": "btc", "quote": "usdt"}, "status", "online", "preOffline"),
             ("cryptocom", "derivatives", {"symbol": "BTCUSD-PERP", "base_ccy": "BTC", "quote_ccy": "USD", "inst_type": "PERPETUAL_SWAP"}, "tradable", True, False),
             ("gate", "futures/usdt", {"name": "BTC_USDT", "in_delisting": False}, "status", "trading", "prelaunch"),
@@ -37,7 +37,9 @@ class ContractStatusTests(unittest.TestCase):
 
     def test_spot_and_options_are_not_futures(self):
         for exchange, row in [
-            ("coinbase", {"type": "SPOT"}),
+            ("coinbase", {"kind": "spot"}),
+            ("coinbase", {"kind": "option"}),
+            ("coinbase", {"kind": "future_combo"}),
             ("cryptocom", {"inst_type": "CCY_PAIR"}),
             ("cryptocom", {"inst_type": "VANILLA_OPTION"}),
         ]:
@@ -58,6 +60,54 @@ class ContractStatusTests(unittest.TestCase):
             "instId": "BTC-USD-270326", "uly": "BTC-USD", "state": "live", "settleCcy": "BTC",
         })
         self.assertEqual(okx["pair"], "BTC/USD")
+
+    def test_okx_usd_product_suffixes_do_not_become_quote_currencies(self):
+        for family, quote, settle in (("BTC-USD_UM", "USD", "USD"),
+                                      ("BTC-USD_UM_XPERP", "USD", "USD"),
+                                      ("BTC-USD", "USD", "BTC"),
+                                      ("BTC-USDC", "USDC", "USDC")):
+            with self.subTest(family=family):
+                symbol = f"{family}-270326"
+                pair = futures.normalize_contract("okx", "FUTURES", {
+                    "instId": symbol, "instFamily": family, "uly": "BTC-USD",
+                    "instType": "FUTURES", "state": "live", "settleCcy": settle,
+                })
+                self.assertEqual((pair["pair"], pair["symbol"], pair["settle_asset"]),
+                                 (f"BTC/{quote}", symbol, settle))
+
+    def test_coinbase_global_contracts_preserve_quotes_settlement_and_native_symbols(self):
+        examples = [
+            ("BTC_USDC-PERPETUAL", "BTC", "USDC", "USDC", "perpetual", "PERPETUAL"),
+            ("BTC-PERPETUAL", "BTC", "USD", "BTC", "perpetual", "PERPETUAL"),
+            ("BTC-26MAR27", "BTC", "USD", "BTC", "month", "FUTURES"),
+            ("1000BONK_USDC-PERPETUAL", "1000BONK", "USDC", "USDC", "perpetual", "PERPETUAL"),
+        ]
+        for symbol, base, quote, settle, period, kind in examples:
+            with self.subTest(symbol=symbol):
+                pair = futures.normalize_contract("coinbase", "global", {
+                    "instrument_name": symbol, "kind": "future", "base_currency": base,
+                    "quote_currency": quote, "settlement_currency": settle,
+                    "settlement_period": period, "state": "open", "is_active": True,
+                    "expiration_timestamp": 32503708800000,
+                })
+                self.assertEqual((pair["pair"], pair["symbol"], pair["settle_asset"], pair["contract_type"]),
+                                 (f"{base}/{quote}", symbol, settle, kind))
+                self.assertTrue(pair["flags"]["is_active"])
+
+    def test_coinbase_closed_expired_and_unknown_contracts_are_inactive(self):
+        row = {"instrument_name": "BTC_USDC-PERPETUAL", "kind": "future",
+               "base_currency": "BTC", "quote_currency": "USDC", "state": "open",
+               "is_active": True, "expiration_timestamp": 32503708800000}
+        for overrides in ({"state": "closed"}, {"state": "unexpected"}, {"is_active": False},
+                          {"is_active": None}, {"is_active": "false"},
+                          {"expiration_timestamp": 1}, {"expiration_timestamp": None}):
+            with self.subTest(overrides=overrides):
+                pair = futures.normalize_contract("coinbase", "global", {**row, **overrides})
+                self.assertFalse(pair["flags"]["is_active"])
+                self.assertFalse(pair["flags"]["is_tradable"])
+        # is_active is required by the API; the optional book state need not be present.
+        row.pop("state")
+        self.assertTrue(futures.normalize_contract("coinbase", "global", row)["flags"]["is_active"])
 
     def test_prelisting_delisting_and_expiry_are_not_active(self):
         bybit = futures.normalize_contract("bybit", "linear", {
@@ -108,6 +158,38 @@ class ContractStatusTests(unittest.TestCase):
 
 
 class FuturesCollectionTests(unittest.IsolatedAsyncioTestCase):
+    async def test_coinbase_collects_current_gateway_instruments(self):
+        row = {"instrument_name": "BTC_USDC-PERPETUAL", "kind": "future",
+               "base_currency": "BTC", "quote_currency": "USDC", "settlement_currency": "USDC",
+               "settlement_period": "perpetual", "state": "open", "is_active": True,
+               "expiration_timestamp": 32503708800000}
+        fetch = AsyncMock(return_value={"jsonrpc": "2.0", "result": [row, {"kind": "option"}]})
+        with patch.object(futures, "fetch_json", fetch):
+            payload = await futures.fetch_exchange_universe("coinbase", 1)
+        url = "https://drb.coinbase.com/api/v2/public/get_instruments?currency=any&kind=future&expired=false"
+        fetch.assert_awaited_once_with(url, 1)
+        self.assertEqual(payload["source"]["instrument_urls"], [url])
+        self.assertEqual(payload["collection_status"], "ok")
+        self.assertEqual(payload["summary"]["active_futures_pair_count"], 1)
+        self.assertEqual(payload["summary"]["skipped_instrument_rows"], 1)
+        self.assertEqual(payload["pairs"][0]["pair"], "BTC/USDC")
+
+    async def test_coinbase_rpc_errors_and_malformed_results_are_not_empty_successes(self):
+        responses = [
+            {"jsonrpc": "2.0", "error": {"code": 10028, "message": "too_many_requests"}},
+            {"jsonrpc": "2.0", "error": {"code": 10028}, "result": []},
+            {"result": []},
+            {"jsonrpc": "2.0", "result": {}},
+        ]
+        for response in responses:
+            with self.subTest(response=response), patch.object(futures, "fetch_json", AsyncMock(return_value=response)):
+                payload = await futures.fetch_exchange_universe("coinbase", 1)
+            self.assertEqual(payload["collection_status"], "error")
+            self.assertTrue(payload["errors"])
+        with patch.object(futures, "fetch_json", AsyncMock(return_value={"jsonrpc": "2.0", "result": []})):
+            payload = await futures.fetch_exchange_universe("coinbase", 1)
+        self.assertEqual(payload["collection_status"], "ok")
+
     async def test_cursor_pagination_includes_later_pages_and_encodes_cursor(self):
         fetch = AsyncMock(side_effect=[
             {"retCode": 0, "result": {"list": [{"symbol": "ONE"}], "nextPageCursor": "next&last=ONE"}},

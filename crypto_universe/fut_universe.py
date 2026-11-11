@@ -56,7 +56,8 @@ ENDPOINTS: dict[str, tuple[Endpoint, ...]] = {
         for category in ("linear", "inverse")
     ),
     "coinbase": (
-        Endpoint("international", "https://api.international.coinbase.com/api/v1/instruments"),
+        Endpoint("global", "https://drb.coinbase.com/api/v2/public/get_instruments"
+                 "?currency=any&kind=future&expired=false", ("result",), "jsonrpc", "2.0"),
     ),
     "coinw": (
         Endpoint("perpetual", "https://api.coinw.com/v1/perpum/instruments", ("data",), "code"),
@@ -96,6 +97,8 @@ EXCHANGES = tuple(sorted({*ENDPOINTS, "bitfinex", "mexc", *UNSUPPORTED_EXCHANGES
 
 
 def extract_rows(payload: Any, endpoint: Endpoint) -> list[dict[str, Any]]:
+    if isinstance(payload, dict) and payload.get("error") is not None:
+        raise ValueError(f"unsuccessful API response for {endpoint.market}: {payload['error']}")
     if endpoint.code_field:
         if not isinstance(payload, dict) or str(payload.get(endpoint.code_field)) != endpoint.success_code:
             raise ValueError(f"unsuccessful API response for {endpoint.market}")
@@ -170,11 +173,16 @@ def normalize_contract(exchange: str, market: str, row: dict[str, Any]) -> dict[
         contract_type, status = row.get("contractType"), row.get("status")
         active = normalize_text(status) == "TRADING" and not coerce_bool(row.get("isPreListing"), False)
     elif exchange == "coinbase":
-        if normalize_text(row.get("type")) != "PERP":
+        # International derivatives moved to Coinbase's Deribit gateway in October 2026.
+        if normalize_text(row.get("kind")) != "FUTURE":
             return None
-        base, quote = row.get("base_asset_name"), row.get("quote_asset_name")
-        settle, contract_type, status = quote, row.get("type"), row.get("trading_state")
-        active = normalize_text(status) == "TRADING"
+        symbol = row.get("instrument_name")
+        base, quote, settle = row.get("base_currency"), row.get("quote_currency"), row.get("settlement_currency")
+        contract_type = "PERPETUAL" if normalize_text(row.get("settlement_period")) == "PERPETUAL" else "FUTURES"
+        status = row.get("state")
+        active = row.get("is_active") is True
+        active = active and (status is None or normalize_text(status) == "OPEN")
+        active = active and (int_or_none(row.get("expiration_timestamp")) or 0) > time.time() * 1000
     elif exchange == "coinw":
         symbol, base, quote = row.get("name"), row.get("base"), row.get("quote")
         settle, contract_type, status = quote, "PERPETUAL", row.get("status")
@@ -228,6 +236,9 @@ def normalize_contract(exchange: str, market: str, row: dict[str, Any]) -> dict[
         if len(parts) != 2:
             raise ValueError("missing OKX instrument family")
         base, quote = parts
+        # USD-margined and X-Perp family suffixes are product labels, not currencies.
+        if quote in {"USD_UM", "USD_UM_XPERP"}:
+            quote = "USD"
         settle, contract_type, status = row.get("settleCcy"), row.get("instType"), row.get("state")
         active = normalize_text(status) == "LIVE"
     else:
