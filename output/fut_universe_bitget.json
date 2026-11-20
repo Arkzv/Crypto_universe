@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "bitget",
-  "generated_at": "2026-11-20T11:42:55+00:00",
+  "generated_at": "2026-11-20T12:30:11+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -13,9 +13,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 940,
-    "active_futures_pair_count": 940,
-    "tradable_futures_pair_count": 940,
+    "futures_pair_count": 942,
+    "active_futures_pair_count": 942,
+    "tradable_futures_pair_count": 942,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -790,6 +790,21 @@
       "symbol": "AMDUSDT",
       "pair": "AMD/USDT",
       "base_asset": "AMD",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "USDT-FUTURES",
+      "flags": {
+        "status": "NORMAL",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitget",
+      "symbol": "AMDLUSDT",
+      "pair": "AMDL/USDT",
+      "base_asset": "AMDL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
@@ -6430,6 +6445,21 @@
       "symbol": "JMKEUSDT",
       "pair": "JMKE/USDT",
       "base_asset": "JMKE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "USDT-FUTURES",
+      "flags": {
+        "status": "NORMAL",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bitget",
+      "symbol": "JNJUSDT",
+      "pair": "JNJ/USDT",
+      "base_asset": "JNJ",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
