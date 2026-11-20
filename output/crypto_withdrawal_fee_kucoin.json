@@ -2,14 +2,14 @@
   "schema_version": 1,
   "data_type": "withdrawal_fees",
   "exchange": "kucoin",
-  "generated_at": "2026-11-20T09:16:34+00:00",
+  "generated_at": "2026-11-20T11:02:11+00:00",
   "source": {
     "currencies_url": "https://api.kucoin.com/api/v3/currencies"
   },
   "summary": {
-    "total_currency_rows": 2287,
-    "currencies_with_chains": 2190,
-    "total_chains": 2508,
+    "total_currency_rows": 2288,
+    "currencies_with_chains": 2191,
+    "total_chains": 2509,
     "skipped_rows": 97
   },
   "currencies": [
@@ -1919,6 +1919,22 @@
           "is_withdraw_enabled": false,
           "is_deposit_enabled": false,
           "contract_address": "0xa117000000f279d81a1d3cc75430faa017fa5a2e"
+        }
+      ]
+    },
+    {
+      "currency": "ANTX",
+      "name": "ANTX",
+      "full_name": "ANTX",
+      "chains": [
+        {
+          "chain_name": "SOL",
+          "withdrawal_min_fee": "0",
+          "withdraw_fee_rate": "0",
+          "withdrawal_min_size": "0",
+          "is_withdraw_enabled": false,
+          "is_deposit_enabled": true,
+          "contract_address": "XsYzw7XHj8K2WHeoeNQVyevMmzjzXfcJ8tQ4FmdN1DL"
         }
       ]
     },
@@ -5284,7 +5300,7 @@
           "withdrawal_min_fee": "0.00002",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.00004",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": false,
           "contract_address": null
         },
@@ -19962,7 +19978,7 @@
           "withdrawal_min_fee": "0.002",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.004",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "fDxs5y12E7x7jBwCKBXGqt71uJmCWsAQ3Srkte6ondo"
         }
@@ -21298,7 +21314,7 @@
           "withdrawal_min_fee": "0.002",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.004",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "Fz9edBpaURPPzpKVRR1A8PENYDEgHqwx5D5th28ondo"
         }
@@ -21995,8 +22011,8 @@
           "withdrawal_min_fee": "600",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "1200",
-          "is_withdraw_enabled": false,
-          "is_deposit_enabled": false,
+          "is_withdraw_enabled": true,
+          "is_deposit_enabled": true,
           "contract_address": "unibi"
         }
       ]
@@ -26272,7 +26288,7 @@
           "withdrawal_min_fee": "0.001",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.002",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "HrYNm6jTQ71LoFphjVKBTdAE4uja7WsmLG8VxB8ondo"
         }
@@ -29854,7 +29870,7 @@
           "withdrawal_min_fee": "0.0015",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.003",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "k18WJUULWheRkSpSquYGdNNmtuE2Vbw1hpuUi92ondo"
         }
@@ -32639,7 +32655,7 @@
           "withdrawal_min_fee": "0.003",
           "withdraw_fee_rate": "0",
           "withdrawal_min_size": "0.006",
-          "is_withdraw_enabled": false,
+          "is_withdraw_enabled": true,
           "is_deposit_enabled": true,
           "contract_address": "KeGv7bsfR4MheC1CkmnAVceoApjrkvBhHYjWb67ondo"
         }

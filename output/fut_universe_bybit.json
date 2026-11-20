@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "bybit",
-  "generated_at": "2026-11-20T09:16:34+00:00",
+  "generated_at": "2026-11-20T11:02:11+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -12,9 +12,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 962,
-    "active_futures_pair_count": 962,
-    "tradable_futures_pair_count": 962,
+    "futures_pair_count": 965,
+    "active_futures_pair_count": 965,
+    "tradable_futures_pair_count": 965,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -954,6 +954,21 @@
       "symbol": "AMCUSDT",
       "pair": "AMC/USDT",
       "base_asset": "AMC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARPERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "AMDLUSDT",
+      "pair": "AMDL/USDT",
+      "base_asset": "AMDL",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "LINEARPERPETUAL",
@@ -7296,6 +7311,21 @@
     },
     {
       "exchange": "bybit",
+      "symbol": "LIUSDT",
+      "pair": "LI/USDT",
+      "base_asset": "LI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARPERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
       "symbol": "LIGHTUSDT",
       "pair": "LIGHT/USDT",
       "base_asset": "LIGHT",
@@ -8784,6 +8814,21 @@
       "symbol": "NILUSDT",
       "pair": "NIL/USDT",
       "base_asset": "NIL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "LINEARPERPETUAL",
+      "market": "linear",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "bybit",
+      "symbol": "NIOSTOCKUSDT",
+      "pair": "NIOSTOCK/USDT",
+      "base_asset": "NIOSTOCK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "LINEARPERPETUAL",
