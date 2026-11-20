@@ -61,11 +61,14 @@ def generated_at_utc() -> str:
     return datetime.now(tz=UTC).replace(microsecond=0).isoformat()
 
 
-async def fetch_json(url: str, timeout_seconds: float, *, extra_headers: dict[str, str] | None = None) -> Any:
-    return await asyncio.to_thread(fetch_json_sync, url, timeout_seconds, extra_headers=extra_headers)
+async def fetch_json(url: str, timeout_seconds: float, *, extra_headers: dict[str, str] | None = None,
+                     response_headers: dict[str, str] | None = None) -> Any:
+    return await asyncio.to_thread(fetch_json_sync, url, timeout_seconds, extra_headers=extra_headers,
+                                   response_headers=response_headers)
 
 
-def fetch_json_sync(url: str, timeout_seconds: float, *, extra_headers: dict[str, str] | None = None) -> Any:
+def fetch_json_sync(url: str, timeout_seconds: float, *, extra_headers: dict[str, str] | None = None,
+                    response_headers: dict[str, str] | None = None) -> Any:
     headers = {
         "Accept": "application/json",
         "User-Agent": "crypto-universe/0.1.0",
@@ -74,6 +77,8 @@ def fetch_json_sync(url: str, timeout_seconds: float, *, extra_headers: dict[str
         headers.update(extra_headers)
     request = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(request, timeout=timeout_seconds) as response:
+        if response_headers is not None:
+            response_headers.update((name.lower(), value) for name, value in response.headers.items())
         return json.load(response)
 
 

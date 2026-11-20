@@ -33,6 +33,7 @@ from .withdrawal_fee_kucoin import fetch_withdrawal_fees as fetch_kucoin_withdra
 from .withdrawal_fee_kucoin import print_summary as print_kucoin_fee_summary
 from .fut_universe import fetch_requested_exchanges as fetch_futures_universes
 from .fut_universe import write_universes as write_futures_universes
+from .pancakeswap_pools import add_rate_argument, collect_pools, save_pools
 from .spot_universe_mexc import fetch_exchange_universe as fetch_mexc_universe
 from .withdrawal_fee_mexc import fetch_withdrawal_fees as fetch_mexc_withdrawal_fees
 from .withdrawal_fee_mexc import print_summary as print_mexc_fee_summary
@@ -90,6 +91,7 @@ def parse_args() -> argparse.Namespace:
         "--no-push", action="store_true",
         help="Write snapshots locally without the automatic git commit and push",
     )
+    add_rate_argument(parser)
     return parser.parse_args()
 
 
@@ -564,9 +566,13 @@ async def async_main() -> int:
     report_path = write_volume_report(combined, out_dir)
     print_summary(combined, output_target)
     print(f"Volume report: {report_path}")
+    pools = await collect_pools(combined_output_payload, fee_payloads, args.timeout_seconds,
+                                args.pancakeswap_requests_per_minute)
+    save_pools(pools, out_dir, args.indent)
     if not args.no_push:
         auto_commit(combined["generated_at"])
-    return int(any(p["collection_status"] in {"partial", "error"} for p in futures_payloads))
+    return int(pools["collection_status"] != "ok"
+               or any(p["collection_status"] in {"partial", "error"} for p in futures_payloads))
 
 
 def auto_commit(generated_at: str) -> None:

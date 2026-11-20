@@ -248,8 +248,10 @@ class FuturesCollectionTests(unittest.IsolatedAsyncioTestCase):
             with self.subTest(no_push=no_push), tempfile.TemporaryDirectory() as temp:
                 out = Path(temp)
                 args = argparse.Namespace(exchanges=["binance"], timeout_seconds=1, indent=2,
-                                          output=str(out / "spot_universe_combined.json"), no_push=no_push)
+                                          output=str(out / "spot_universe_combined.json"), no_push=no_push,
+                                          pancakeswap_requests_per_minute=10)
                 def publish(generated_at):
+                    self.assertTrue((out / "pancakeswap_pools.json").is_file())
                     self.assertTrue((out / "fut_universe_binance.json").exists())
                     self.assertTrue((out / "spot_universe_combined.json").exists())
                 with (
@@ -258,11 +260,16 @@ class FuturesCollectionTests(unittest.IsolatedAsyncioTestCase):
                     patch.object(spot_universe, "today_output_dir", return_value=out),
                     patch.object(spot_universe, "fetch_requested_exchanges", AsyncMock(return_value=[spot])),
                     patch.object(spot_universe, "fetch_futures_universes", AsyncMock(return_value=[future])) as fetch,
+                    patch.object(spot_universe, "collect_pools", AsyncMock(return_value={
+                        "pools": {}, "errors": [], "collection_status": "ok",
+                    })) as pool_fetch,
                     patch.object(spot_universe, "auto_commit", side_effect=publish) as commit,
                 ):
                     self.assertEqual(await spot_universe.async_main(), 0)
                 fetch.assert_awaited_once_with(["binance"], 1)
                 self.assertEqual(commit.call_count, int(not no_push))
+                pool_fetch.assert_awaited_once()
+                self.assertTrue((out / "pancakeswap_pools.json").is_file())
                 self.assertFalse((out / "fut_universe_mexc.json").exists())
                 self.assertEqual(json.loads((out / "fut_universe_binance.json").read_text())["collection_status"], "ok")
 

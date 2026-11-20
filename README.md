@@ -85,4 +85,43 @@ without committing or pushing. This command also accepts `--exchanges` and
 `--output-dir`. Collection failures are saved explicitly and return a nonzero
 exit status; the explorer marks the affected coverage as incomplete.
 
+### PancakeSwap pools
+
+Each spot row shows the active PancakeSwap pools for its base asset across all
+counter-assets. Expand the cell for each pool's chain, token pair, pool type,
+swap fee, liquidity, 24-hour volume, and pool link. Pools qualify when the
+Explorer reports strictly positive 24-hour turnover. The total counts each
+chain and pool ID once and converts reported USD turnover to USDT at 1:1.
+If Solana reports turnover only in its quote token, the collector uses the
+spot snapshot's USDT rate for the verified quote mint, treating wrapped SOL as
+SOL. With no suitable rate, the pool keeps its quote-token volume and the
+USDT total covers only priced pools. Infinity pools can charge dynamic fees.
+A missing fee is shown as unknown.
+
+The daily refresh writes and publishes [the pool snapshot](output/pancakeswap_pools.json)
+alongside spot and futures. Run `python -m crypto_universe.pancakeswap_pools`
+for a standalone local refresh using the saved spot universe and withdrawal
+metadata. `--output-dir` selects a directory for both inputs and the snapshot.
+Both commands accept `--pancakeswap-requests-per-minute` (1–50, default 50).
+The collector sends Explorer requests serially, including retries, and respects
+server cooldowns from `Retry-After` and rate-limit reset headers. It stops after
+repeated throttling or a requested wait over two minutes. Incomplete collections
+retain confirmed pools, record the errors, and return a nonzero exit status.
+
+The collector follows descending-volume cursor pages across BNB Chain, Ethereum,
+Base, Arbitrum One, ZKsync Era, opBNB, Linea, Monad, Robinhood, and Arc until
+it reaches zero turnover or exhausts the listing. It reads the Solana Explorer's
+numbered concentrated-liquidity pool pages separately. The browser reads the
+snapshot once. [PancakeSwap pool explorer](https://pancakeswap.finance/liquidity/pools)
+and [Explorer API reference](https://github.com/pancakeswap/pancakeswap-ai/blob/main/packages/plugins/pancakeswap-driver/skills/liquidity-planner/references/data-providers.md#pancakeswap-explorer-api).
+
+Asset matching uses chain and contract address. Bybit, KuCoin, and MEXC supply
+addresses in their withdrawal snapshots, and Bitget supplies them through its
+public coin metadata. An exchange supplies evidence only for bases it lists.
+Known native tokens also match their canonical wrapped contracts, including
+BNB/WBNB and SOL/WSOL. A completed lookup with zero pools means zero on the
+checked networks in that snapshot. Unresolved or conflicting addresses,
+unsupported networks, and incomplete or failed lookups have separate statuses.
+[Bitget coin metadata](https://www.bitget.com/docs/catalog/market/market-data).
+
 Checks: `python -m unittest discover -s tests` and `node --test tests/test_universe.cjs`.

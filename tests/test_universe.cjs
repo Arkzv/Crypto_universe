@@ -130,7 +130,7 @@ test('mismatched payloads are rejected and only in-scope files are requested',as
   const result=await page(data,{'fut_universe_bybit.json':futures('mexc',[contract('BTC','USDT')])});
   assert.equal(result.evaluate('allRows[0]._futuresExchanges.length'),0);
   assert.match(result.evaluate('allRows[0]._futuresHTML'),/Unknown/);
-  assert.deepEqual(result.requests,['spot_universe_combined.json','fut_universe_bybit.json']);
+  assert.deepEqual(result.requests,['spot_universe_combined.json','fut_universe_bybit.json','pancakeswap_pools.json']);
 });
 
 test('futures availability survives filtering and futures exchange count sorting',async()=>{
@@ -171,7 +171,7 @@ test('Bitfinex is listed at zero volume and links use native asset codes',async(
     ]),
     'fut_universe_bybit.json':futures('bybit',[]),
   });
-  assert.deepEqual(result.requests,['spot_universe_combined.json','fut_universe_bitfinex.json','fut_universe_bybit.json']);
+  assert.deepEqual(result.requests,['spot_universe_combined.json','fut_universe_bitfinex.json','fut_universe_bybit.json','pancakeswap_pools.json']);
   assert.match(result.evaluate('allRows[0]._distHTML'),/>Bitfinex<\/a>/);
   assert.equal(result.evaluate('allRows[0]._futuresHTML'),'Bitfinex');
   assert.equal(result.evaluate('allRows[3]._futuresHTML'),'—');
@@ -265,7 +265,7 @@ test('empty inclusion is unrestricted in both modes and multiple exclusions reje
   assert.deepEqual(shownPairs(result),['SOL/USDT','BTC/USD']);
   selectExchange(result,'exclude','bitget');
   assert.deepEqual(shownPairs(result),[]);
-  assert.match(result.nodes.get('tbody').innerHTML,/colspan="8".*No pairs match these filters/);
+  assert.match(result.nodes.get('tbody').innerHTML,/colspan="9".*No pairs match these filters/);
   result.nodes.get('resetExchangeFilters').dispatchEvent({type:'click'});
   assert.equal(shownPairs(result).length,7);
   assert.equal(result.nodes.get('exchangeFilterSummary').textContent,'All spot pairs · No exclusions');
@@ -388,9 +388,9 @@ test('exchange filters compose with search, quote, primary exchange, and sorting
 test('table omits the spot exchanges column while retaining futures and spot trading links',async()=>{
   const result=await exchangeFilterPage();
   assert.doesNotMatch(html,/<th[^>]*>Spot exchanges<\/th>/);
-  assert.equal((html.match(/<th data-col=/g)||[]).length,8);
+  assert.equal((html.match(/<th data-col=/g)||[]).length,9);
   const firstRow=result.nodes.get('tbody').innerHTML.match(/<tr>(.*?)<\/tr>/)[1];
-  assert.equal((firstRow.match(/<td[ >]/g)||[]).length,8);
+  assert.equal((firstRow.match(/<td[ >]/g)||[]).length,9);
   assert.match(html,/<th data-col="futures">Futures exchanges<\/th>/);
   assert.match(firstRow,/www.bitget.com\/spot\/BTCUSDT/);
 });
@@ -510,4 +510,96 @@ test('exchange volume sorting composes with spot and futures filters and survive
   assert.equal(result.nodes.get('usdtVolumeExchange').value,'bybit');
   assert.equal(result.nodes.get('usdtVolumeLabel').textContent,'USDT Volume (Bybit)');
   assert.equal(displayedUsdtVolumes(result)['BTC/USDT'],'100.00');
+});
+
+const spotDate='2026-11-11T09:49:42Z';
+function poolSnapshot(assets,pools={},collection_status='ok'){
+  return {schema_version:1,spot_generated_at:spotDate,generated_at:'2026-11-20T09:00:00Z',
+    collection_status,assets,pools};
+}
+function poolsPage(bases,snapshot){
+  return page({generated_at:spotDate,exchanges:[],pairs:bases.map(([base,quote])=>spot(base,quote,[]))},
+    {'pancakeswap_pools.json':snapshot});
+}
+function openPoolList(result,base){
+  const list={childElementCount:0};
+  const details={dataset:{base},open:true,matches:()=>true,querySelector:()=>list};
+  result.nodes.get('tbody').dispatchEvent({type:'toggle',target:details});
+  return list.innerHTML;
+}
+
+test('base pools share volume across quotes, skip zero, deduplicate pool IDs and expand safely',async()=>{
+  const fixed={chain:'BNB Chain',token0:'0G',token1:'USDT',pool_type:'V3',fee_percent:0.05,
+    volume_24h_usdt:1000,tvl_usd:3200,url:'https://pancakeswap.finance/info/v3/pairs/0xabc'};
+  const dynamic={...fixed,token1:'<WBNB>',pool_type:'Infinity CL',fee_percent:0,dynamic_fee:true,
+    volume_24h_usdt:500,url:'javascript:alert(1)'};
+  const result=await poolsPage([['0G','TRY'],['0G','USDT'],['XYZ','ETH']],poolSnapshot({
+    '0G':{status:'ok',pool_ids:['a','a','b','c']},XYZ:{status:'ok',pool_ids:[]},
+  },{a:fixed,b:dynamic,c:{...fixed,volume_24h_usdt:0}}));
+  const rows=result.nodes.get('tbody').innerHTML;
+  assert.equal((rows.match(/2 pools · 24h volume ≈ 1.5K USDT/g)||[]).length,2);
+  assert.match(rows,/No active pools on checked networks/);
+  assert.doesNotMatch(rows,/Infinity CL/);
+  const details=openPoolList(result,'0G');
+  assert.equal((details.match(/<li>/g)||[]).length,2);
+  assert.ok(details.indexOf('0.05% fee')<details.indexOf('Dynamic fee'));
+  assert.match(details,/0G \/ &lt;WBNB&gt;/);
+  assert.match(details,/href="https:\/\/pancakeswap.finance\//);
+  assert.doesNotMatch(details,/javascript:|<WBNB>/);
+});
+
+test('unknown and partial pool coverage stay distinct from a successful empty lookup',async()=>{
+  const result=await poolsPage([['A','USD'],['B','USD'],['C','USD'],['D','USD'],['E','USD'],['F','USD']],poolSnapshot({
+    A:{status:'ok',pool_ids:[]},B:{status:'error',pool_ids:[]},C:{status:'unresolved',pool_ids:[]},
+    D:{status:'partial',pool_ids:['active','broken']},E:{status:'ambiguous',pool_ids:[]},
+  },{active:{volume_24h_usdt:12}},'partial'));
+  const content=result.nodes.get('tbody').innerHTML;
+  for(const label of ['Lookup failed','Address unresolved','Conflicting addresses','Base outside snapshot',
+    'No active pools on checked networks','1 pool · 24h volume ≈ 12.00 USDT','Incomplete lookup']){
+    assert.ok(content.includes(label),label);
+  }
+  assert.match(result.nodes.get('poolCoverage').textContent,/Coverage incomplete/);
+  const header=result.headers.get('pools');
+  header.dispatchEvent({type:'click'});
+  assert.deepEqual(shownPairs(result).slice(0,2),['D/USD','A/USD']);
+  header.dispatchEvent({type:'click'});
+  assert.deepEqual(shownPairs(result).slice(0,2),['A/USD','D/USD']);
+});
+
+test('missing, mismatched and malformed pool files leave the spot table usable',async()=>{
+  for(const [snapshot,message] of [
+    [undefined,'Snapshot unavailable'],[{...poolSnapshot({}),spot_generated_at:'other'},'snapshots differ'],
+    [{schema_version:2},'Invalid pool snapshot'],
+  ]){
+    const result=await poolsPage([['ETH','USD']],snapshot);
+    assert.equal(result.nodes.get('tableWrap').style.display,'block');
+    assert.ok(result.nodes.get('tbody').innerHTML.includes(message));
+    assert.doesNotMatch(result.nodes.get('tbody').innerHTML,/No active pools/);
+  }
+});
+
+test('spot search remains usable while the pool snapshot loads',async()=>{
+  let finish;
+  const pending=new Promise(resolve=>{finish=resolve;});
+  const result=await poolsPage([['A','USD'],['B','USD']],pending);
+  assert.equal(result.nodes.get('tableWrap').style.display,'block');
+  assert.match(result.nodes.get('tbody').innerHTML,/Loading pools/);
+  result.nodes.get('search').value='A/USD';
+  result.nodes.get('search').dispatchEvent({type:'input'});
+  finish(poolSnapshot({A:{status:'ok',pool_ids:['p']}},{p:{volume_24h_usdt:200}}));
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.deepEqual(shownPairs(result),['A/USD']);
+  assert.match(result.nodes.get('tbody').innerHTML,/1 pool · 24h volume ≈ 200.00 USDT/);
+});
+
+test('positive unpriced turnover appears in quote units and the summary identifies incomplete USDT totals',async()=>{
+  const pool={chain:'Solana',pool_type:'V3',token0:'X',token1:'Y',volume_24h_quote:0.00003945,
+    volume_quote_symbol:'Y',volume_24h_usdt:null,url:'https://pancakeswap.finance/'};
+  const result=await poolsPage([['X','USD'],['Y','USD']],poolSnapshot({
+    X:{status:'ok',pool_ids:['p','priced']},Y:{status:'ok',pool_ids:['p']},
+  },{p:pool,priced:{...pool,volume_24h_usdt:100}}));
+  const rows=result.nodes.get('tbody').innerHTML;
+  assert.match(rows,/2 pools · 24h volume ≈ 100.00 USDT \+ 1 unpriced/);
+  assert.match(rows,/1 pool · 24h USDT volume unavailable/);
+  assert.match(openPoolList(result,'Y'),/24h 0.000039[45] Y/);
 });

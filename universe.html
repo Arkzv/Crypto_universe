@@ -54,6 +54,12 @@ table{border-collapse:collapse;width:100%}
 th,td{text-align:left;padding:5px 10px;border-bottom:1px solid #23262f;white-space:nowrap}
 td:last-child{white-space:normal}
 td.exchange-list{white-space:normal;min-width:170px;max-width:260px;line-height:1.6}
+.pool-cell{font-variant-numeric:tabular-nums;font-size:13px}
+.pool-details summary{cursor:pointer}
+.pool-details summary:hover,.pool-details summary:focus-visible{color:#a9caff}
+.pool-list{max-height:16rem;max-width:27rem;overflow:auto;white-space:normal;overflow-wrap:anywhere;list-style:none;margin:6px 0;padding:0}
+.pool-list li{padding:5px 4px;border-top:1px solid #333}
+.pool-list small{display:block;color:#b4b9c6}
 .unknown{color:#ffd37a}
 th{position:sticky;top:0;background:#1e2028;cursor:pointer;user-select:none;color:#aaa;font-weight:600;font-size:13px}
 th:hover{color:#e8e8e8}
@@ -119,6 +125,7 @@ td.empty-state{text-align:center;color:#aaa;padding:24px;white-space:normal}
 <div class="legend"><span class="transfer-badge deposit">D</span> deposit restricted <span class="transfer-badge withdraw">W</span> withdrawal restricted for the pair's base asset</div>
 <div class="legend">Exchange filters and availability use active markets at the snapshot time, including zero-volume pairs. Futures include perpetual and dated contracts for the same base/quote pair.</div>
 <div class="coverage" id="futuresCoverage" role="status">Loading futures availability&hellip;</div>
+<div class="coverage" id="poolCoverage" role="status">Loading PancakeSwap pools&hellip;</div>
 <div id="loading">Loading data&hellip;</div>
 <div class="wrap" id="tableWrap" style="display:none">
 <table>
@@ -130,6 +137,7 @@ td.empty-state{text-align:center;color:#aaa;padding:24px;white-space:normal}
   <th data-col="volume">Total Volume</th>
   <th data-col="usdt"><span id="usdtVolumeLabel">USDT Volume (total)</span></th>
   <th data-col="futures">Futures exchanges</th>
+  <th data-col="pools">PancakeSwap pools (base)</th>
   <th data-col="dist">Volume Distribution</th>
 </tr></thead>
 <tbody id="tbody"></tbody>
@@ -148,6 +156,8 @@ const excludedExchanges=new Set();
 const excludedFuturesExchanges=new Set();
 let exchangeMatchMode='any';
 let futuresIncomplete=false;
+let poolAssets=new Map();
+let poolSnapshotIssue;
 const HTML_ESCAPES={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
 const EXCHANGE_LABELS={
   binance:'Binance',
@@ -330,6 +340,96 @@ function futuresExchangesHTML(row){
   return names+unknown;
 }
 
+function poolVolumeText(volume){
+  return volume>0&&volume<0.0001?volume.toPrecision(3):fmtVol(volume);
+}
+
+function indexPoolAssets(snapshot){
+  const index=new Map();
+  for(const [base,asset] of Object.entries(snapshot.assets)){
+    let status=asset?.status;
+    if(!['ok','unresolved','ambiguous','partial','error','unsupported'].includes(status)||!Array.isArray(asset.pool_ids)){
+      index.set(base,{status:'error',pools:[],total:null});
+      continue;
+    }
+    const pools=[];
+    let subtotal=0;
+    let unpriced=0;
+    for(const id of new Set(asset.pool_ids)){
+      const pool=Object.hasOwn(snapshot.pools,id)?snapshot.pools[id]:null;
+      const volume=pool?.volume_24h_usdt;
+      if(Number.isFinite(volume)&&volume>0)subtotal+=volume;
+      else if(Number.isFinite(pool?.volume_24h_quote)&&pool.volume_24h_quote>0)unpriced++;
+      else{
+        if(volume!==0)status='partial';
+        continue;
+      }
+      pools.push(pool);
+    }
+    pools.sort((a,b)=>(b.volume_24h_usdt||0)-(a.volume_24h_usdt||0));
+    const hasTotal=subtotal>0||(pools.length===0&&status==='ok');
+    const networks=Array.isArray(asset.checked_networks)?asset.checked_networks.join(', '):'';
+    index.set(base,{status,pools,total:hasTotal?subtotal:null,unpriced,networks});
+  }
+  return index;
+}
+
+const POOL_STATUS_LABELS={
+  ok:'No active pools on checked networks',unresolved:'Address unresolved',ambiguous:'Conflicting addresses',
+  unsupported:'Network outside coverage',partial:'Incomplete lookup',error:'Lookup failed'
+};
+
+function poolCellHTML(base){
+  const asset=poolAssets.get(base);
+  if(!asset){
+    const message=poolSnapshotIssue===undefined?'Loading pools…':poolSnapshotIssue||'Base outside snapshot';
+    return '<span class="unknown">'+escapeHtml(message)+'</span>';
+  }
+  const {status,pools,total,unpriced,networks}=asset;
+  const hint=networks?' title="Checked networks: '+escapeHtml(networks)+'"':'';
+  if(!pools.length){
+    return '<span'+(status==='ok'?'':' class="unknown"')+hint+'>'+POOL_STATUS_LABELS[status]+'</span>';
+  }
+  const issue=status==='ok'?'':' · <span class="unknown">'+POOL_STATUS_LABELS[status]+'</span>';
+  let volumeLabel='24h USDT volume unavailable';
+  if(total!==null){
+    volumeLabel='24h volume ≈ '+poolVolumeText(total)+' USDT';
+    if(unpriced)volumeLabel+=' + '+unpriced+' unpriced';
+  }
+  return '<details class="pool-details" data-base="'+escapeHtml(base)+'"><summary'+hint+'>'+pools.length
+    +(pools.length===1?' pool':' pools')+' · '+volumeLabel+issue
+    +'</summary><ul class="pool-list" aria-label="Active pools by 24-hour volume"></ul></details>';
+}
+
+function poolDetailsHTML(pools){
+  return pools.map(pool=>{
+    const pair=escapeHtml(pool.token0)+' / '+escapeHtml(pool.token1);
+    let link='';
+    try{
+      const url=new URL(pool.url);
+      if(url.protocol==='https:')link=url.href;
+    }catch{}
+    const name=link?'<a href="'+escapeHtml(link)+'" target="_blank" rel="noopener noreferrer">'+pair+'</a>':pair;
+    let fee='Fee unknown';
+    if(pool.dynamic_fee)fee='Dynamic fee';
+    else if(Number.isFinite(pool.fee_percent))fee=Number(pool.fee_percent.toPrecision(8))+'% fee';
+    const tvl=Number.isFinite(pool.tvl_usd)?' · TVL $'+poolVolumeText(pool.tvl_usd):'';
+    const volume=pool.volume_24h_usdt>0?'≈ '+poolVolumeText(pool.volume_24h_usdt)+' USDT'
+      :poolVolumeText(pool.volume_24h_quote)+' '+escapeHtml(pool.volume_quote_symbol);
+    return '<li>'+name+' · '+escapeHtml(pool.chain)+'<small>'+escapeHtml(pool.pool_type)+' · '+fee
+      +' · 24h '+volume+tvl+'</small></li>';
+  }).join('');
+}
+
+// A widely traded base can have thousands of pools and appear under several quotes.
+// Populate only the disclosure the reader opens.
+document.getElementById('tbody').addEventListener('toggle',event=>{
+  const details=event.target;
+  if(!details.open||!details.matches('details.pool-details'))return;
+  const list=details.querySelector('ul');
+  if(!list.childElementCount)list.innerHTML=poolDetailsHTML(poolAssets.get(details.dataset.base).pools);
+},true);
+
 function renderBatch(){
   const tbody=document.getElementById('tbody');
   const end=Math.min(rendered+BATCH,filtered.length);
@@ -340,7 +440,7 @@ function renderBatch(){
     const uv=usdt!=null?fmtVol(usdt):'—';
     const tv=r.display_total_volume!=null?r.display_total_volume:r.total_quote_volume;
     const tc=r.display_currency||r.quote_asset;
-    html+='<tr><td>'+r._idx+'</td><td>'+escapeHtml(r.pair)+'</td><td>'+escapeHtml(r.base_asset)+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(tv)+' '+escapeHtml(tc)+'</td><td>'+uv+'</td><td class="exchange-list">'+r._futuresHTML+'</td><td>'+r._distHTML+'</td></tr>';
+    html+='<tr><td>'+r._idx+'</td><td>'+escapeHtml(r.pair)+'</td><td>'+escapeHtml(r.base_asset)+'</td><td>'+r.venue_count+'</td><td>'+fmtVol(tv)+' '+escapeHtml(tc)+'</td><td>'+uv+'</td><td class="exchange-list">'+r._futuresHTML+'</td><td class="pool-cell">'+poolCellHTML(r.base_asset)+'</td><td>'+r._distHTML+'</td></tr>';
   }
   tbody.insertAdjacentHTML('beforeend',html);
   rendered=end;
@@ -354,7 +454,7 @@ function renderTable(){
   filtered.forEach((r,i)=>r._idx=i+1);
   document.getElementById('stats').innerHTML='Showing <b>'+filtered.length+'</b> of <b>'+allRows.length+'</b> pairs';
   if(!filtered.length){
-    tbody.innerHTML='<tr><td colspan="8" class="empty-state">No pairs match these filters.</td></tr>';
+    tbody.innerHTML='<tr><td colspan="9" class="empty-state">No pairs match these filters.</td></tr>';
     return;
   }
   renderBatch();
@@ -390,9 +490,9 @@ function doSort(){
     if(col==='pair'||col==='base')va=a[col==='base'?'base_asset':'pair'],vb=b[col==='base'?'base_asset':'pair'];
     else if(col==='venues')va=a.venue_count,vb=b.venue_count;
     else if(col==='volume')va=a.total_quote_volume,vb=b.total_quote_volume;
-    else if(col==='usdt'){
-      va=usdtVolumeValue(a);
-      vb=usdtVolumeValue(b);
+    else if(col==='usdt'||col==='pools'){
+      va=col==='usdt'?usdtVolumeValue(a):poolAssets.get(a.base_asset)?.total;
+      vb=col==='usdt'?usdtVolumeValue(b):poolAssets.get(b.base_asset)?.total;
       // Keep unavailable volumes after known values, including zero, in either direction.
       if(va==null)return vb==null?0:1;
       if(vb==null)return -1;
@@ -414,7 +514,7 @@ document.querySelectorAll('th').forEach(th=>{
   th.addEventListener('click',()=>{
     const col=th.dataset.col;
     if(col==='idx'||col==='dist')return;
-    if(sortCol===col)sortAsc=!sortAsc;else{sortCol=col;sortAsc=true;}
+    if(sortCol===col)sortAsc=!sortAsc;else{sortCol=col;sortAsc=col!=='pools';}
     doSort();
   });
   th.insertAdjacentHTML('beforeend','<span class="arrow"></span>');
@@ -516,6 +616,39 @@ function outputJsonUrl(filename){
   return url.toString();
 }
 
+async function loadPoolAssets(spotDate){
+  const coverage=document.getElementById('poolCoverage');
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),15000);
+  try{
+    const response=await fetch(outputJsonUrl('pancakeswap_pools.json'),{cache:'no-store',signal:controller.signal});
+    if(!response.ok)throw new Error('Snapshot unavailable (HTTP '+response.status+')');
+    const snapshot=await response.json();
+    if(snapshot?.schema_version!==1||!['ok','partial','error'].includes(snapshot.collection_status)
+      ||!snapshot.assets||typeof snapshot.assets!=='object'||Array.isArray(snapshot.assets)
+      ||!snapshot.pools||typeof snapshot.pools!=='object'||Array.isArray(snapshot.pools)){
+      throw new Error('Invalid pool snapshot');
+    }
+    if(!spotDate||snapshot.spot_generated_at!==spotDate)throw new Error('Pool and spot snapshots differ');
+    poolAssets=indexPoolAssets(snapshot);
+    poolSnapshotIssue=snapshot.collection_status==='error'?'Lookup failed':'';
+    coverage.textContent='PancakeSwap · '+snapshot.generated_at+' · Only pools with positive 24h volume · USD ≈ USDT';
+    if(snapshot.collection_status!=='ok'){
+      coverage.textContent+=' · '+(snapshot.collection_status==='error'?'Collection failed':'Coverage incomplete');
+      coverage.classList.toggle('incomplete',true);
+    }
+    const notes=Array.isArray(snapshot.networks)?['Networks in scope: '+snapshot.networks.join(', ')]:[];
+    coverage.title=notes.concat(snapshot.errors||[]).join('\n');
+  }catch(error){
+    poolAssets.clear();
+    poolSnapshotIssue=error.name==='AbortError'?'Pool snapshot timed out':error.message||'Snapshot unavailable';
+    coverage.textContent='PancakeSwap · '+poolSnapshotIssue;
+    coverage.classList.toggle('incomplete',true);
+  }finally{
+    clearTimeout(timer);
+  }
+}
+
 async function loadFuturesPayload(exchange){
   const controller=new AbortController();
   const timer=setTimeout(()=>controller.abort(),15000);
@@ -562,7 +695,9 @@ async function loadUniverse(){
   const data=await response.json();
   const exchanges=new Set(data.exchanges||data.pairs.flatMap(r=>r.venues.map(v=>v.exchange)));
   const sortedExchanges=sortedExchangeIds(exchanges);
-  const futuresPayloads=await Promise.all(sortedExchanges.map(loadFuturesPayload));
+  const futuresRequest=Promise.all(sortedExchanges.map(loadFuturesPayload));
+  const poolRequest=loadPoolAssets(data.generated_at);
+  const futuresPayloads=await futuresRequest;
   showFuturesCoverage(futuresPayloads);
   const futuresIndex=activeFuturesIndex(futuresPayloads);
   const quotes=new Set();
@@ -586,11 +721,16 @@ async function loadUniverse(){
   document.getElementById('loading').style.display='none';
   document.getElementById('tableWrap').style.display='block';
   applyFilters();
+  if(poolSnapshotIssue===undefined){
+    await poolRequest;
+    doSort();
+  }
 }
 
 loadUniverse().catch(error=>{
   document.getElementById('loading').textContent='Unable to load universe data: '+error.message;
   document.getElementById('futuresCoverage').textContent='';
+  document.getElementById('poolCoverage').textContent='';
 });
 </script>
 </body>

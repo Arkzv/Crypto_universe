@@ -181,8 +181,10 @@ class BitfinexCollectionTests(unittest.IsolatedAsyncioTestCase):
             with self.subTest(no_push=no_push), tempfile.TemporaryDirectory() as temp:
                 out = Path(temp)
                 args = argparse.Namespace(exchanges=[" Bitfinex ", "bitfinex"], timeout_seconds=1, indent=2,
-                                          output=str(out / "spot_universe_combined.json"), no_push=no_push)
+                                          output=str(out / "spot_universe_combined.json"), no_push=no_push,
+                                          pancakeswap_requests_per_minute=10)
                 def publish(_generated_at):
+                    self.assertTrue((out / "pancakeswap_pools.json").is_file())
                     self.assertTrue((out / "spot_universe_bitfinex.json").is_file())
                     future = json.loads((out / "fut_universe_bitfinex.json").read_text())
                     self.assertEqual(future["collection_status"], "ok")
@@ -195,10 +197,15 @@ class BitfinexCollectionTests(unittest.IsolatedAsyncioTestCase):
                     patch.object(spot_universe, "parse_args", return_value=args),
                     patch.object(spot_universe, "clean_output_dir"),
                     patch.object(spot_universe, "today_output_dir", return_value=out),
+                    patch.object(spot_universe, "collect_pools", AsyncMock(return_value={
+                        "pools": {}, "errors": [], "collection_status": "ok",
+                    })) as pool_fetch,
                     patch.object(spot_universe, "auto_commit", side_effect=publish) as commit,
                 ):
                     self.assertEqual(await spot_universe.async_main(), 0)
                 self.assertEqual(commit.call_count, int(not no_push))
+                pool_fetch.assert_awaited_once()
+                self.assertTrue((out / "pancakeswap_pools.json").is_file())
                 publish(None)
                 self.assertTrue((out / "README.md").is_file())
                 self.assertFalse((out / "fut_universe_mexc.json").exists())
