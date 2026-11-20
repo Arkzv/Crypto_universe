@@ -1,10 +1,12 @@
+import asyncio
 import json
 import tempfile
 import unittest
 from datetime import UTC, datetime, timedelta
 from email.utils import format_datetime
+from io import BytesIO
 from pathlib import Path
-from unittest.mock import AsyncMock, patch
+from unittest.mock import AsyncMock, Mock, patch
 from urllib.error import HTTPError
 
 from crypto_universe import pancakeswap_pools as pcs
@@ -168,6 +170,40 @@ class CollectorTests(unittest.IsolatedAsyncioTestCase):
 
 
 class RateLimitTests(unittest.IsolatedAsyncioTestCase):
+    async def test_worker_queue_time_does_not_shorten_the_interval_between_requests(self):
+        now = 0
+        starts = []
+        yield_to_loop = asyncio.sleep
+
+        async def dispatch(function, *args, **kwargs):
+            nonlocal now
+            await yield_to_loop(0)
+            if not starts:
+                now += 6.25  # Time spent waiting for the first worker.
+            return function(*args, **kwargs)
+
+        async def sleep(delay):
+            nonlocal now
+            now += delay
+            await yield_to_loop(0)
+
+        def urlopen(request, timeout):
+            starts.append(now)
+            response = BytesIO(b'{}')
+            response.headers = {}
+            return response
+
+        with (
+            patch.object(pcs, "time") as clock,
+            patch.object(pcs.asyncio, "sleep", side_effect=sleep),
+            patch.object(pcs.asyncio, "to_thread", side_effect=dispatch),
+            patch("urllib.request.urlopen", side_effect=urlopen),
+        ):
+            clock.monotonic.side_effect = lambda: now
+            api = pcs.Explorer(10, 50)
+            await asyncio.gather(api.get(pcs.EVM_URL), api.get(pcs.SOL_URL))
+        self.assertEqual(starts, [6.25, 7.45])
+
     async def test_shared_rate_limit_retry_and_pacing_including_success_headers(self):
         clock = 0
         starts = []
@@ -177,7 +213,7 @@ class RateLimitTests(unittest.IsolatedAsyncioTestCase):
             nonlocal clock
             clock += delay
 
-        async def fetch(url, timeout, *, response_headers):
+        def fetch(url, timeout, *, response_headers):
             nonlocal calls
             calls += 1
             starts.append(clock)
@@ -187,8 +223,9 @@ class RateLimitTests(unittest.IsolatedAsyncioTestCase):
                 response_headers.update({"ratelimit-remaining": "0", "ratelimit-reset": "10"})
             return {}
 
-        with (patch.object(pcs.time, "monotonic", side_effect=lambda: clock),
-              patch.object(pcs.asyncio, "sleep", side_effect=sleep), patch.object(pcs, "fetch_json", side_effect=fetch)):
+        with (patch.object(pcs, "time") as fake_time, patch.object(pcs.asyncio, "sleep", side_effect=sleep),
+              patch.object(pcs, "fetch_json_sync", side_effect=fetch)):
+            fake_time.monotonic.side_effect = lambda: clock
             api = pcs.Explorer(10, 20)
             await api.get(pcs.EVM_URL)
             await api.get(pcs.SOL_URL)
@@ -198,21 +235,21 @@ class RateLimitTests(unittest.IsolatedAsyncioTestCase):
         self.assertGreater(pcs.retry_after(format_datetime(later, usegmt=True)), 28)
 
     async def test_long_retry_after_stops_all_further_requests(self):
-        fetch = AsyncMock(side_effect=HTTPError("test", 429, "", {"Retry-After": "360"}, None))
-        with patch.object(pcs, "fetch_json", fetch):
+        fetch = Mock(side_effect=HTTPError("test", 429, "", {"Retry-After": "360"}, None))
+        with patch.object(pcs, "fetch_json_sync", fetch):
             api = pcs.Explorer(10)
             for url in [pcs.EVM_URL, pcs.SOL_URL]:
                 with self.assertRaisesRegex(RuntimeError, "deferred"):
                     await api.get(url)
-        fetch.assert_awaited_once()
+        fetch.assert_called_once()
 
     async def test_429_reset_without_retry_after(self):
         for header, value in [("RateLimit-Reset", "22"), ("X-RateLimit-Reset", "1900000022")]:
             with self.subTest(header=header):
-                fetch = AsyncMock(side_effect=[HTTPError("test", 429, "", {header: value}, None), {}])
-                with (patch.object(pcs, "fetch_json", fetch),
-                      patch.object(pcs.time, "time", return_value=1900000000),
-                      patch.object(pcs.time, "monotonic", return_value=0),
+                fetch = Mock(side_effect=[HTTPError("test", 429, "", {header: value}, None), {}])
+                with (patch.object(pcs, "fetch_json_sync", fetch), patch.object(pcs, "time") as clock,
                       patch.object(pcs.asyncio, "sleep", new_callable=AsyncMock) as sleep):
+                    clock.time.return_value = 1900000000
+                    clock.monotonic.return_value = 0
                     await pcs.Explorer(10).get(pcs.EVM_URL)
                 self.assertEqual(sleep.await_args.args[0], 22)

@@ -16,7 +16,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 
-from .common import fetch_json, generated_at_utc, today_output_dir
+from .common import fetch_json, fetch_json_sync, generated_at_utc, today_output_dir
 
 EVM_URL = "https://explorer.pancakeswap.com/api/cached/pools/list"
 SOL_URL = "https://sol-explorer.pancakeswap.com/api/cached/v1/pools/info/list"
@@ -100,16 +100,25 @@ class Explorer:
         self.interval = 60 / requests_per_minute
         self.next_request = 0.0
         self.stopped = None
+        self._lock = asyncio.Lock()
+
+    def _fetch_page(self, url, headers):
+        # Executor queue time must not count towards the interval between sends.
+        self.next_request = time.monotonic() + self.interval
+        return fetch_json_sync(url, self.timeout, response_headers=headers)
 
     async def get(self, url):
+        async with self._lock:
+            return await self._get_with_retries(url)
+
+    async def _get_with_retries(self, url):
         if self.stopped:
             raise RuntimeError(self.stopped)
         for attempt in range(3):
             await asyncio.sleep(max(0, self.next_request - time.monotonic()))
-            self.next_request = time.monotonic() + self.interval
             try:
                 headers = {}
-                page = await fetch_json(url, self.timeout, response_headers=headers)
+                page = await asyncio.to_thread(self._fetch_page, url, headers)
                 delay = cooldown(headers)
                 if delay > 120:
                     self.stopped = "PancakeSwap requested a cooldown longer than two minutes"

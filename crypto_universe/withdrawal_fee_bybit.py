@@ -1,13 +1,15 @@
 from __future__ import annotations
 
+import asyncio
 import hashlib
 import hmac
+import logging
 import os
 import time
 from typing import Any
 
 from .common import (
-    fetch_json,
+    fetch_json_sync,
     generated_at_utc,
     string_or_none,
 )
@@ -16,6 +18,8 @@ EXCHANGE = "bybit"
 COIN_INFO_URL = "https://api.bybit.com/v5/asset/coin/query-info"
 ENV_VAR = "CRYPTO_UNIVERSE_BYBIT_RO"
 RECV_WINDOW = "5000"
+TIMESTAMP_ERROR = 10002
+logger = logging.getLogger(__name__)
 
 
 def _get_api_key() -> tuple[str, str] | None:
@@ -50,6 +54,22 @@ def _bybit_auth_headers(api_key: str, api_secret: str) -> dict[str, str]:
     }
 
 
+def _fetch_coin_info(api_key: str, api_secret: str, timeout_seconds: float, queued_at: float) -> Any:
+    worker_wait_ms = (time.monotonic() - queued_at) * 1000
+    for attempt in (1, 2):
+        # Each GET gets a fresh signature after the HTTP worker is available.
+        headers = _bybit_auth_headers(api_key, api_secret)
+        started = time.monotonic()
+        payload = fetch_json_sync(COIN_INFO_URL, timeout_seconds, extra_headers=headers)
+        if not isinstance(payload, dict) or payload.get("retCode") != TIMESTAMP_ERROR:
+            break
+        logger.warning(
+            "Bybit coin-info retCode=10002 (attempt %d/2, initial worker wait %.0f ms, HTTP duration %.0f ms)",
+            attempt, worker_wait_ms, (time.monotonic() - started) * 1000,
+        )
+    return payload
+
+
 async def fetch_withdrawal_fees(timeout_seconds: float = 20.0) -> dict[str, Any] | None:
     creds = _get_api_key()
     if creds is None:
@@ -60,9 +80,7 @@ async def fetch_withdrawal_fees(timeout_seconds: float = 20.0) -> dict[str, Any]
         )
         return None
 
-    api_key, api_secret = creds
-    headers = _bybit_auth_headers(api_key, api_secret)
-    raw = await fetch_json(COIN_INFO_URL, timeout_seconds, extra_headers=headers)
+    raw = await asyncio.to_thread(_fetch_coin_info, *creds, timeout_seconds, time.monotonic())
 
     rows = extract_coin_rows(raw)
 

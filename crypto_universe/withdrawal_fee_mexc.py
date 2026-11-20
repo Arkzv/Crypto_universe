@@ -1,15 +1,17 @@
 from __future__ import annotations
 
+import asyncio
 import hashlib
 import hmac
 import json
+import logging
 import os
 import time
 from typing import Any
 from urllib.error import HTTPError
 
 from .common import (
-    fetch_json,
+    fetch_json_sync,
     generated_at_utc,
     string_or_none,
 )
@@ -18,6 +20,8 @@ EXCHANGE = "mexc"
 COIN_CONFIG_URL = "https://api.mexc.com/api/v3/capital/config/getall"
 ENV_VAR = "CRYPTO_UNIVERSE_MEXC_RO"
 INVALID_ACCESS_KEY_CODE = 10072
+TIMESTAMP_ERROR = 700003
+logger = logging.getLogger(__name__)
 
 
 def _get_api_key() -> tuple[str, str] | None:
@@ -49,6 +53,42 @@ def _mexc_signed_url(api_key: str, api_secret: str) -> tuple[str, dict[str, str]
     return url, headers
 
 
+def _request_coin_config(api_key: str, api_secret: str, timeout_seconds: float) -> Any:
+    url, headers = _mexc_signed_url(api_key, api_secret)
+    try:
+        return fetch_json_sync(url, timeout_seconds, extra_headers=headers)
+    except HTTPError as exc:
+        # MEXC can return its API error code inside an HTTP error response.
+        with exc:
+            try:
+                payload = json.load(exc)
+            except (json.JSONDecodeError, UnicodeDecodeError):
+                raise exc from None
+        code = payload.get("code") if isinstance(payload, dict) else None
+        if code == INVALID_ACCESS_KEY_CODE:
+            raise RuntimeError(
+                "MEXC API key is invalid or expired. Create a new key with "
+                f"SPOT_WITHDRAW_READ permission and update {ENV_VAR}."
+            ) from exc
+        if code == TIMESTAMP_ERROR:
+            return payload
+        raise
+
+
+def _fetch_coin_config(api_key: str, api_secret: str, timeout_seconds: float, queued_at: float) -> Any:
+    worker_wait_ms = (time.monotonic() - queued_at) * 1000
+    for attempt in (1, 2):
+        started = time.monotonic()
+        payload = _request_coin_config(api_key, api_secret, timeout_seconds)
+        if not isinstance(payload, dict) or payload.get("code") != TIMESTAMP_ERROR:
+            break
+        logger.warning(
+            "MEXC coin config code=700003 (attempt %d/2, initial worker wait %.0f ms, HTTP duration %.0f ms)",
+            attempt, worker_wait_ms, (time.monotonic() - started) * 1000,
+        )
+    return payload
+
+
 async def fetch_withdrawal_fees(timeout_seconds: float = 20.0) -> dict[str, Any] | None:
     creds = _get_api_key()
     if creds is None:
@@ -59,25 +99,7 @@ async def fetch_withdrawal_fees(timeout_seconds: float = 20.0) -> dict[str, Any]
         )
         return None
 
-    api_key, api_secret = creds
-    url, headers = _mexc_signed_url(api_key, api_secret)
-    try:
-        raw = await fetch_json(url, timeout_seconds, extra_headers=headers)
-    except HTTPError as exc:
-        try:
-            error_payload = json.loads(exc.read())
-        except (json.JSONDecodeError, UnicodeDecodeError):
-            raise
-
-        if (
-            isinstance(error_payload, dict)
-            and error_payload.get("code") == INVALID_ACCESS_KEY_CODE
-        ):
-            raise RuntimeError(
-                "MEXC API key is invalid or expired. Create a new key with "
-                f"SPOT_WITHDRAW_READ permission and update {ENV_VAR}."
-            ) from exc
-        raise
+    raw = await asyncio.to_thread(_fetch_coin_config, *creds, timeout_seconds, time.monotonic())
 
     rows = extract_coin_rows(raw)
 
