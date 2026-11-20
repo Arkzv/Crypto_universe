@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "kucoin",
-  "generated_at": "2026-11-11T09:49:19+00:00",
+  "generated_at": "2026-11-20T09:16:35+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -11,9 +11,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 722,
-    "active_futures_pair_count": 716,
-    "tradable_futures_pair_count": 716,
+    "futures_pair_count": 729,
+    "active_futures_pair_count": 724,
+    "tradable_futures_pair_count": 724,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -740,17 +740,17 @@
     },
     {
       "exchange": "kucoin",
-      "symbol": "ANTHROPICUSDTM",
-      "pair": "ANTHROPIC/USDT",
-      "base_asset": "ANTHROPIC",
+      "symbol": "ANTUSDTM",
+      "pair": "ANT/USDT",
+      "base_asset": "ANT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
       "market": "futures",
       "flags": {
         "status": "OPEN",
-        "is_active": false,
-        "is_tradable": false
+        "is_active": true,
+        "is_tradable": true
       }
     },
     {
@@ -2845,7 +2845,7 @@
       "base_asset": "CTC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "contract_type": "PERPETUAL",
+      "contract_type": "FUTURES",
       "market": "futures",
       "flags": {
         "status": "OPEN",
@@ -3023,6 +3023,21 @@
       "symbol": "DISUSDTM",
       "pair": "DIS/USDT",
       "base_asset": "DIS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "futures",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "kucoin",
+      "symbol": "DJTUSDTM",
+      "pair": "DJT/USDT",
+      "base_asset": "DJT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
@@ -3218,6 +3233,21 @@
       "symbol": "DYMUSDTM",
       "pair": "DYM/USDT",
       "base_asset": "DYM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "futures",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "kucoin",
+      "symbol": "EBAYUSDTM",
+      "pair": "EBAY/USDT",
+      "base_asset": "EBAY",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
@@ -3515,21 +3545,6 @@
     },
     {
       "exchange": "kucoin",
-      "symbol": "ETHBTCUSDTM",
-      "pair": "ETHBTC/USDT",
-      "base_asset": "ETHBTC",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "PERPETUAL",
-      "market": "futures",
-      "flags": {
-        "status": "OPEN",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "kucoin",
       "symbol": "ETHFIUSDTM",
       "pair": "ETHFI/USDT",
       "base_asset": "ETHFI",
@@ -3713,6 +3728,21 @@
       "symbol": "FILUSDTM",
       "pair": "FIL/USDT",
       "base_asset": "FIL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "futures",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "kucoin",
+      "symbol": "FLEXUSDTM",
+      "pair": "FLEX/USDT",
+      "base_asset": "FLEX",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
@@ -6305,6 +6335,21 @@
     },
     {
       "exchange": "kucoin",
+      "symbol": "NAVERUSDTM",
+      "pair": "NAVER/USDT",
+      "base_asset": "NAVER",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "futures",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "kucoin",
       "symbol": "NBISUSDTM",
       "pair": "NBIS/USDT",
       "base_asset": "NBIS",
@@ -7795,7 +7840,7 @@
       "base_asset": "RGTI",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "contract_type": "PERPETUAL",
+      "contract_type": "FUTURES",
       "market": "futures",
       "flags": {
         "status": "OPEN",
@@ -7913,6 +7958,21 @@
       "symbol": "RSRUSDTM",
       "pair": "RSR/USDT",
       "base_asset": "RSR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "futures",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "kucoin",
+      "symbol": "RUMUSDTM",
+      "pair": "RUM/USDT",
+      "base_asset": "RUM",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",
@@ -8645,6 +8705,21 @@
     },
     {
       "exchange": "kucoin",
+      "symbol": "SOXXUSDTM",
+      "pair": "SOXX/USDT",
+      "base_asset": "SOXX",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "futures",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "kucoin",
       "symbol": "SPACEUSDTM",
       "pair": "SPACE/USDT",
       "base_asset": "SPACE",
@@ -8710,7 +8785,7 @@
       "base_asset": "SPORTFUN",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "contract_type": "PERPETUAL",
+      "contract_type": "FUTURES",
       "market": "futures",
       "flags": {
         "status": "OPEN",
@@ -9575,6 +9650,21 @@
     },
     {
       "exchange": "kucoin",
+      "symbol": "TWSTUSDTM",
+      "pair": "TWST/USDT",
+      "base_asset": "TWST",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "futures",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "kucoin",
       "symbol": "TWTUSDTM",
       "pair": "TWT/USDT",
       "base_asset": "TWT",
@@ -10195,7 +10285,7 @@
       "base_asset": "WOTAMALAILE",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
-      "contract_type": "PERPETUAL",
+      "contract_type": "FUTURES",
       "market": "futures",
       "flags": {
         "status": "OPEN",
@@ -10613,6 +10703,21 @@
       "symbol": "ZBTUSDTM",
       "pair": "ZBT/USDT",
       "base_asset": "ZBT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "PERPETUAL",
+      "market": "futures",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "kucoin",
+      "symbol": "ZCSHUSDTM",
+      "pair": "ZCSH/USDT",
+      "base_asset": "ZCSH",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "PERPETUAL",

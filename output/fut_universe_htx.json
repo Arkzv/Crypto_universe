@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "htx",
-  "generated_at": "2026-11-11T09:49:20+00:00",
+  "generated_at": "2026-11-20T09:16:35+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -13,9 +13,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 429,
-    "active_futures_pair_count": 426,
-    "tradable_futures_pair_count": 426,
+    "futures_pair_count": 443,
+    "active_futures_pair_count": 439,
+    "tradable_futures_pair_count": 439,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -367,9 +367,9 @@
     },
     {
       "exchange": "htx",
-      "symbol": "ANTHROPIC-USDT",
-      "pair": "ANTHROPIC/USDT",
-      "base_asset": "ANTHROPIC",
+      "symbol": "ANT-USDT",
+      "pair": "ANT/USDT",
+      "base_asset": "ANT",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "SWAP",
@@ -378,6 +378,21 @@
         "status": "1",
         "is_active": true,
         "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
+      "symbol": "ANTHROPIC-USDT",
+      "pair": "ANTHROPIC/USDT",
+      "base_asset": "ANTHROPIC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "3",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
@@ -475,6 +490,21 @@
       "symbol": "ARM-USDT",
       "pair": "ARM/USDT",
       "base_asset": "ARM",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
+      "symbol": "ARTY-USDT",
+      "pair": "ARTY/USDT",
+      "base_asset": "ARTY",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "SWAP",
@@ -862,21 +892,6 @@
     },
     {
       "exchange": "htx",
-      "symbol": "BOME-USDT",
-      "pair": "BOME/USDT",
-      "base_asset": "BOME",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "SWAP",
-      "market": "linear",
-      "flags": {
-        "status": "3",
-        "is_active": false,
-        "is_tradable": false
-      }
-    },
-    {
-      "exchange": "htx",
       "symbol": "BONK-USDT",
       "pair": "BONK/USDT",
       "base_asset": "BONK",
@@ -982,7 +997,7 @@
     },
     {
       "exchange": "htx",
-      "symbol": "BTC261113",
+      "symbol": "BTC261127",
       "pair": "BTC/USD",
       "base_asset": "BTC",
       "quote_asset": "USD",
@@ -997,7 +1012,7 @@
     },
     {
       "exchange": "htx",
-      "symbol": "BTC261120",
+      "symbol": "BTC261204",
       "pair": "BTC/USD",
       "base_asset": "BTC",
       "quote_asset": "USD",
@@ -1117,21 +1132,6 @@
     },
     {
       "exchange": "htx",
-      "symbol": "CASHCAT-USDT",
-      "pair": "CASHCAT/USDT",
-      "base_asset": "CASHCAT",
-      "quote_asset": "USDT",
-      "settle_asset": "USDT",
-      "contract_type": "SWAP",
-      "market": "linear",
-      "flags": {
-        "status": "3",
-        "is_active": false,
-        "is_tradable": false
-      }
-    },
-    {
-      "exchange": "htx",
       "symbol": "CATSTOCK-USDT",
       "pair": "CATSTOCK/USDT",
       "base_asset": "CATSTOCK",
@@ -1150,6 +1150,21 @@
       "symbol": "CBRS-USDT",
       "pair": "CBRS/USDT",
       "base_asset": "CBRS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
+      "symbol": "CCJ-USDT",
+      "pair": "CCJ/USDT",
+      "base_asset": "CCJ",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "SWAP",
@@ -1597,6 +1612,21 @@
     },
     {
       "exchange": "htx",
+      "symbol": "DHR-USDT",
+      "pair": "DHR/USDT",
+      "base_asset": "DHR",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
       "symbol": "DIS-USDT",
       "pair": "DIS/USDT",
       "base_asset": "DIS",
@@ -1717,6 +1747,21 @@
     },
     {
       "exchange": "htx",
+      "symbol": "DUOL-USDT",
+      "pair": "DUOL/USDT",
+      "base_asset": "DUOL",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
       "symbol": "EBAY-USDT",
       "pair": "EBAY/USDT",
       "base_asset": "EBAY",
@@ -1807,7 +1852,7 @@
     },
     {
       "exchange": "htx",
-      "symbol": "ETH261113",
+      "symbol": "ETH261127",
       "pair": "ETH/USD",
       "base_asset": "ETH",
       "quote_asset": "USD",
@@ -1822,7 +1867,7 @@
     },
     {
       "exchange": "htx",
-      "symbol": "ETH261120",
+      "symbol": "ETH261204",
       "pair": "ETH/USD",
       "base_asset": "ETH",
       "quote_asset": "USD",
@@ -1870,6 +1915,21 @@
       "symbol": "ETHFI-USDT",
       "pair": "ETHFI/USDT",
       "base_asset": "ETHFI",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
+      "symbol": "ETNSTOCK-USDT",
+      "pair": "ETNSTOCK/USDT",
+      "base_asset": "ETNSTOCK",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "SWAP",
@@ -2032,6 +2092,21 @@
     },
     {
       "exchange": "htx",
+      "symbol": "FISV-USDT",
+      "pair": "FISV/USDT",
+      "base_asset": "FISV",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
       "symbol": "FLEX-USDT",
       "pair": "FLEX/USDT",
       "base_asset": "FLEX",
@@ -2077,9 +2152,39 @@
     },
     {
       "exchange": "htx",
+      "symbol": "FN-USDT",
+      "pair": "FN/USDT",
+      "base_asset": "FN",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
       "symbol": "FOXA-USDT",
       "pair": "FOXA/USDT",
       "base_asset": "FOXA",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
+      "symbol": "FRHC-USDT",
+      "pair": "FRHC/USDT",
+      "base_asset": "FRHC",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "SWAP",
@@ -2452,6 +2557,21 @@
     },
     {
       "exchange": "htx",
+      "symbol": "HLT-USDT",
+      "pair": "HLT/USDT",
+      "base_asset": "HLT",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
       "symbol": "HOODX-USDT",
       "pair": "HOODX/USDT",
       "base_asset": "HOODX",
@@ -2575,6 +2695,21 @@
       "symbol": "ICP-USDT",
       "pair": "ICP/USDT",
       "base_asset": "ICP",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
+      "symbol": "IGV-USDT",
+      "pair": "IGV/USDT",
+      "base_asset": "IGV",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "SWAP",
@@ -2875,6 +3010,21 @@
       "symbol": "KLAC-USDT",
       "pair": "KLAC/USDT",
       "base_asset": "KLAC",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
+      "symbol": "KMB-USDT",
+      "pair": "KMB/USDT",
+      "base_asset": "KMB",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "SWAP",
@@ -3217,6 +3367,21 @@
     },
     {
       "exchange": "htx",
+      "symbol": "MAGS-USDT",
+      "pair": "MAGS/USDT",
+      "base_asset": "MAGS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
       "symbol": "MAR-USDT",
       "pair": "MAR/USDT",
       "base_asset": "MAR",
@@ -3472,6 +3637,21 @@
     },
     {
       "exchange": "htx",
+      "symbol": "MS-USDT",
+      "pair": "MS/USDT",
+      "base_asset": "MS",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
       "symbol": "MSCI-USDT",
       "pair": "MSCI/USDT",
       "base_asset": "MSCI",
@@ -3570,9 +3750,9 @@
       "contract_type": "SWAP",
       "market": "linear",
       "flags": {
-        "status": "1",
-        "is_active": true,
-        "is_tradable": true
+        "status": "3",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
@@ -4440,9 +4620,9 @@
       "contract_type": "SWAP",
       "market": "linear",
       "flags": {
-        "status": "1",
-        "is_active": true,
-        "is_tradable": true
+        "status": "3",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
@@ -5362,6 +5542,21 @@
     },
     {
       "exchange": "htx",
+      "symbol": "TMO-USDT",
+      "pair": "TMO/USDT",
+      "base_asset": "TMO",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
       "symbol": "TQQQ-USDT",
       "pair": "TQQQ/USDT",
       "base_asset": "TQQQ",
@@ -5407,7 +5602,7 @@
     },
     {
       "exchange": "htx",
-      "symbol": "TRX261113",
+      "symbol": "TRX261127",
       "pair": "TRX/USD",
       "base_asset": "TRX",
       "quote_asset": "USD",
@@ -5422,7 +5617,7 @@
     },
     {
       "exchange": "htx",
-      "symbol": "TRX261120",
+      "symbol": "TRX261204",
       "pair": "TRX/USD",
       "base_asset": "TRX",
       "quote_asset": "USD",
@@ -6115,6 +6310,21 @@
       "symbol": "XLE-USDT",
       "pair": "XLE/USDT",
       "base_asset": "XLE",
+      "quote_asset": "USDT",
+      "settle_asset": "USDT",
+      "contract_type": "SWAP",
+      "market": "linear",
+      "flags": {
+        "status": "1",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "htx",
+      "symbol": "XLF-USDT",
+      "pair": "XLF/USDT",
+      "base_asset": "XLF",
       "quote_asset": "USDT",
       "settle_asset": "USDT",
       "contract_type": "SWAP",

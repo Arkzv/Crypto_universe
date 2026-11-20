@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "coinbase",
-  "generated_at": "2026-11-11T10:01:37+00:00",
+  "generated_at": "2026-11-20T09:16:34+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -11,9 +11,9 @@
   },
   "errors": [],
   "summary": {
-    "futures_pair_count": 213,
-    "active_futures_pair_count": 213,
-    "tradable_futures_pair_count": 213,
+    "futures_pair_count": 226,
+    "active_futures_pair_count": 225,
+    "tradable_futures_pair_count": 225,
     "skipped_instrument_rows": 0,
     "duplicate_symbol_rows": 0
   },
@@ -68,6 +68,21 @@
       "symbol": "1000SHIB_USDC-PERPETUAL",
       "pair": "1000SHIB/USDC",
       "base_asset": "1000SHIB",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AAOI_USDC-PERPETUAL",
+      "pair": "AAOI/USDC",
+      "base_asset": "AAOI",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "contract_type": "PERPETUAL",
@@ -200,9 +215,9 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "ANTH_USDC-PERPETUAL",
-      "pair": "ANTH/USDC",
-      "base_asset": "ANTH",
+      "symbol": "ANT_USDC-PERPETUAL",
+      "pair": "ANT/USDC",
+      "base_asset": "ANT",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "contract_type": "PERPETUAL",
@@ -211,6 +226,21 @@
         "status": "OPEN",
         "is_active": true,
         "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ANTH_USDC-PERPETUAL",
+      "pair": "ANTH/USDC",
+      "base_asset": "ANTH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "INACTIVE",
+        "is_active": false,
+        "is_tradable": false
       }
     },
     {
@@ -305,7 +335,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "AVAX_USDC-12NOV26",
+      "symbol": "AVAX_USDC-21NOV26",
       "pair": "AVAX/USDC",
       "base_asset": "AVAX",
       "quote_asset": "USDC",
@@ -320,22 +350,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "AVAX_USDC-13NOV26",
-      "pair": "AVAX/USDC",
-      "base_asset": "AVAX",
-      "quote_asset": "USDC",
-      "settle_asset": "USDC",
-      "contract_type": "FUTURES",
-      "market": "global",
-      "flags": {
-        "status": "OPEN",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "coinbase",
-      "symbol": "AVAX_USDC-20NOV26",
+      "symbol": "AVAX_USDC-22NOV26",
       "pair": "AVAX/USDC",
       "base_asset": "AVAX",
       "quote_asset": "USDC",
@@ -381,6 +396,21 @@
     {
       "exchange": "coinbase",
       "symbol": "AVAX_USDC-27NOV26",
+      "pair": "AVAX/USDC",
+      "base_asset": "AVAX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "AVAX_USDC-4DEC26",
       "pair": "AVAX/USDC",
       "base_asset": "AVAX",
       "quote_asset": "USDC",
@@ -515,6 +545,21 @@
     },
     {
       "exchange": "coinbase",
+      "symbol": "BMNR_USDC-PERPETUAL",
+      "pair": "BMNR/USDC",
+      "base_asset": "BMNR",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
       "symbol": "BNB_USDC-PERPETUAL",
       "pair": "BNB/USDC",
       "base_asset": "BNB",
@@ -560,7 +605,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "BTC-12NOV26",
+      "symbol": "BTC-11DEC26",
       "pair": "BTC/USD",
       "base_asset": "BTC",
       "quote_asset": "USD",
@@ -575,7 +620,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "BTC-13NOV26",
+      "symbol": "BTC-21NOV26",
       "pair": "BTC/USD",
       "base_asset": "BTC",
       "quote_asset": "USD",
@@ -590,7 +635,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "BTC-14NOV26",
+      "symbol": "BTC-22NOV26",
       "pair": "BTC/USD",
       "base_asset": "BTC",
       "quote_asset": "USD",
@@ -605,7 +650,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "BTC-15NOV26",
+      "symbol": "BTC-23NOV26",
       "pair": "BTC/USD",
       "base_asset": "BTC",
       "quote_asset": "USD",
@@ -620,7 +665,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "BTC-20NOV26",
+      "symbol": "BTC-24NOV26",
       "pair": "BTC/USD",
       "base_asset": "BTC",
       "quote_asset": "USD",
@@ -725,6 +770,21 @@
     },
     {
       "exchange": "coinbase",
+      "symbol": "BTC-4DEC26",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": "BTC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
       "symbol": "BTC-PERPETUAL",
       "pair": "BTC/USD",
       "base_asset": "BTC",
@@ -740,7 +800,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "BTC_USDC-12NOV26",
+      "symbol": "BTC_USDC-21NOV26",
       "pair": "BTC/USDC",
       "base_asset": "BTC",
       "quote_asset": "USDC",
@@ -755,7 +815,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "BTC_USDC-13NOV26",
+      "symbol": "BTC_USDC-22NOV26",
       "pair": "BTC/USDC",
       "base_asset": "BTC",
       "quote_asset": "USDC",
@@ -770,7 +830,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "BTC_USDC-14NOV26",
+      "symbol": "BTC_USDC-23NOV26",
       "pair": "BTC/USDC",
       "base_asset": "BTC",
       "quote_asset": "USDC",
@@ -785,22 +845,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "BTC_USDC-15NOV26",
-      "pair": "BTC/USDC",
-      "base_asset": "BTC",
-      "quote_asset": "USDC",
-      "settle_asset": "USDC",
-      "contract_type": "FUTURES",
-      "market": "global",
-      "flags": {
-        "status": "OPEN",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "coinbase",
-      "symbol": "BTC_USDC-20NOV26",
+      "symbol": "BTC_USDC-24NOV26",
       "pair": "BTC/USDC",
       "base_asset": "BTC",
       "quote_asset": "USDC",
@@ -860,6 +905,21 @@
     },
     {
       "exchange": "coinbase",
+      "symbol": "BTC_USDC-4DEC26",
+      "pair": "BTC/USDC",
+      "base_asset": "BTC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
       "symbol": "BTC_USDC-PERPETUAL",
       "pair": "BTC/USDC",
       "base_asset": "BTC",
@@ -876,6 +936,21 @@
     {
       "exchange": "coinbase",
       "symbol": "BTCDVOL_USDC-25NOV26",
+      "pair": "BTCDVOL/USDC",
+      "base_asset": "BTCDVOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "BTCDVOL_USDC-30DEC26",
       "pair": "BTCDVOL/USDC",
       "base_asset": "BTCDVOL",
       "quote_asset": "USDC",
@@ -1175,7 +1250,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "ETH-12NOV26",
+      "symbol": "ETH-11DEC26",
       "pair": "ETH/USD",
       "base_asset": "ETH",
       "quote_asset": "USD",
@@ -1190,7 +1265,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "ETH-13NOV26",
+      "symbol": "ETH-21NOV26",
       "pair": "ETH/USD",
       "base_asset": "ETH",
       "quote_asset": "USD",
@@ -1205,7 +1280,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "ETH-14NOV26",
+      "symbol": "ETH-22NOV26",
       "pair": "ETH/USD",
       "base_asset": "ETH",
       "quote_asset": "USD",
@@ -1220,7 +1295,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "ETH-15NOV26",
+      "symbol": "ETH-23NOV26",
       "pair": "ETH/USD",
       "base_asset": "ETH",
       "quote_asset": "USD",
@@ -1235,7 +1310,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "ETH-20NOV26",
+      "symbol": "ETH-24NOV26",
       "pair": "ETH/USD",
       "base_asset": "ETH",
       "quote_asset": "USD",
@@ -1340,6 +1415,21 @@
     },
     {
       "exchange": "coinbase",
+      "symbol": "ETH-4DEC26",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": "ETH",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
       "symbol": "ETH-PERPETUAL",
       "pair": "ETH/USD",
       "base_asset": "ETH",
@@ -1355,7 +1445,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "ETH_USDC-12NOV26",
+      "symbol": "ETH_USDC-21NOV26",
       "pair": "ETH/USDC",
       "base_asset": "ETH",
       "quote_asset": "USDC",
@@ -1370,7 +1460,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "ETH_USDC-13NOV26",
+      "symbol": "ETH_USDC-22NOV26",
       "pair": "ETH/USDC",
       "base_asset": "ETH",
       "quote_asset": "USDC",
@@ -1385,7 +1475,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "ETH_USDC-14NOV26",
+      "symbol": "ETH_USDC-23NOV26",
       "pair": "ETH/USDC",
       "base_asset": "ETH",
       "quote_asset": "USDC",
@@ -1400,22 +1490,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "ETH_USDC-15NOV26",
-      "pair": "ETH/USDC",
-      "base_asset": "ETH",
-      "quote_asset": "USDC",
-      "settle_asset": "USDC",
-      "contract_type": "FUTURES",
-      "market": "global",
-      "flags": {
-        "status": "OPEN",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "coinbase",
-      "symbol": "ETH_USDC-20NOV26",
+      "symbol": "ETH_USDC-24NOV26",
       "pair": "ETH/USDC",
       "base_asset": "ETH",
       "quote_asset": "USDC",
@@ -1461,6 +1536,21 @@
     {
       "exchange": "coinbase",
       "symbol": "ETH_USDC-27NOV26",
+      "pair": "ETH/USDC",
+      "base_asset": "ETH",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ETH_USDC-4DEC26",
       "pair": "ETH/USDC",
       "base_asset": "ETH",
       "quote_asset": "USDC",
@@ -1610,6 +1700,36 @@
     },
     {
       "exchange": "coinbase",
+      "symbol": "GRAM_USDC-PERPETUAL",
+      "pair": "GRAM/USDC",
+      "base_asset": "GRAM",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "GRASS_USDC-PERPETUAL",
+      "pair": "GRASS/USDC",
+      "base_asset": "GRASS",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
       "symbol": "HBAR_USDC-PERPETUAL",
       "pair": "HBAR/USDC",
       "base_asset": "HBAR",
@@ -1640,7 +1760,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "HYPE_USDC-12NOV26",
+      "symbol": "HYPE_USDC-21NOV26",
       "pair": "HYPE/USDC",
       "base_asset": "HYPE",
       "quote_asset": "USDC",
@@ -1655,22 +1775,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "HYPE_USDC-13NOV26",
-      "pair": "HYPE/USDC",
-      "base_asset": "HYPE",
-      "quote_asset": "USDC",
-      "settle_asset": "USDC",
-      "contract_type": "FUTURES",
-      "market": "global",
-      "flags": {
-        "status": "OPEN",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "coinbase",
-      "symbol": "HYPE_USDC-20NOV26",
+      "symbol": "HYPE_USDC-22NOV26",
       "pair": "HYPE/USDC",
       "base_asset": "HYPE",
       "quote_asset": "USDC",
@@ -1716,6 +1821,21 @@
     {
       "exchange": "coinbase",
       "symbol": "HYPE_USDC-27NOV26",
+      "pair": "HYPE/USDC",
+      "base_asset": "HYPE",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "HYPE_USDC-4DEC26",
       "pair": "HYPE/USDC",
       "base_asset": "HYPE",
       "quote_asset": "USDC",
@@ -2240,6 +2360,21 @@
     },
     {
       "exchange": "coinbase",
+      "symbol": "PEARL_USDC-PERPETUAL",
+      "pair": "PEARL/USDC",
+      "base_asset": "PEARL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
       "symbol": "PENDLE_USDC-PERPETUAL",
       "pair": "PENDLE/USDC",
       "base_asset": "PENDLE",
@@ -2375,6 +2510,21 @@
     },
     {
       "exchange": "coinbase",
+      "symbol": "QNT_USDC-PERPETUAL",
+      "pair": "QNT/USDC",
+      "base_asset": "QNT",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
       "symbol": "QQQ_USDC-PERPETUAL",
       "pair": "QQQ/USDC",
       "base_asset": "QQQ",
@@ -2408,6 +2558,21 @@
       "symbol": "RESOLV_USDC-PERPETUAL",
       "pair": "RESOLV/USDC",
       "base_asset": "RESOLV",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "RKLB_USDC-PERPETUAL",
+      "pair": "RKLB/USDC",
+      "base_asset": "RKLB",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "contract_type": "PERPETUAL",
@@ -2555,7 +2720,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "SOL_USDC-12NOV26",
+      "symbol": "SOL_USDC-21NOV26",
       "pair": "SOL/USDC",
       "base_asset": "SOL",
       "quote_asset": "USDC",
@@ -2570,22 +2735,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "SOL_USDC-13NOV26",
-      "pair": "SOL/USDC",
-      "base_asset": "SOL",
-      "quote_asset": "USDC",
-      "settle_asset": "USDC",
-      "contract_type": "FUTURES",
-      "market": "global",
-      "flags": {
-        "status": "OPEN",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "coinbase",
-      "symbol": "SOL_USDC-20NOV26",
+      "symbol": "SOL_USDC-22NOV26",
       "pair": "SOL/USDC",
       "base_asset": "SOL",
       "quote_asset": "USDC",
@@ -2631,6 +2781,21 @@
     {
       "exchange": "coinbase",
       "symbol": "SOL_USDC-27NOV26",
+      "pair": "SOL/USDC",
+      "base_asset": "SOL",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "SOL_USDC-4DEC26",
       "pair": "SOL/USDC",
       "base_asset": "SOL",
       "quote_asset": "USDC",
@@ -2810,7 +2975,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "TRX_USDC-12NOV26",
+      "symbol": "TRX_USDC-21NOV26",
       "pair": "TRX/USDC",
       "base_asset": "TRX",
       "quote_asset": "USDC",
@@ -2825,22 +2990,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "TRX_USDC-13NOV26",
-      "pair": "TRX/USDC",
-      "base_asset": "TRX",
-      "quote_asset": "USDC",
-      "settle_asset": "USDC",
-      "contract_type": "FUTURES",
-      "market": "global",
-      "flags": {
-        "status": "OPEN",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "coinbase",
-      "symbol": "TRX_USDC-20NOV26",
+      "symbol": "TRX_USDC-22NOV26",
       "pair": "TRX/USDC",
       "base_asset": "TRX",
       "quote_asset": "USDC",
@@ -2886,6 +3036,21 @@
     {
       "exchange": "coinbase",
       "symbol": "TRX_USDC-27NOV26",
+      "pair": "TRX/USDC",
+      "base_asset": "TRX",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "TRX_USDC-4DEC26",
       "pair": "TRX/USDC",
       "base_asset": "TRX",
       "quote_asset": "USDC",
@@ -3005,6 +3170,21 @@
     },
     {
       "exchange": "coinbase",
+      "symbol": "WDC_USDC-PERPETUAL",
+      "pair": "WDC/USDC",
+      "base_asset": "WDC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
       "symbol": "WIF_USDC-PERPETUAL",
       "pair": "WIF/USDC",
       "base_asset": "WIF",
@@ -3095,7 +3275,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "XRP_USDC-12NOV26",
+      "symbol": "XRP_USDC-21NOV26",
       "pair": "XRP/USDC",
       "base_asset": "XRP",
       "quote_asset": "USDC",
@@ -3110,22 +3290,7 @@
     },
     {
       "exchange": "coinbase",
-      "symbol": "XRP_USDC-13NOV26",
-      "pair": "XRP/USDC",
-      "base_asset": "XRP",
-      "quote_asset": "USDC",
-      "settle_asset": "USDC",
-      "contract_type": "FUTURES",
-      "market": "global",
-      "flags": {
-        "status": "OPEN",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "coinbase",
-      "symbol": "XRP_USDC-20NOV26",
+      "symbol": "XRP_USDC-22NOV26",
       "pair": "XRP/USDC",
       "base_asset": "XRP",
       "quote_asset": "USDC",
@@ -3185,6 +3350,21 @@
     },
     {
       "exchange": "coinbase",
+      "symbol": "XRP_USDC-4DEC26",
+      "pair": "XRP/USDC",
+      "base_asset": "XRP",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "FUTURES",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
       "symbol": "XRP_USDC-PERPETUAL",
       "pair": "XRP/USDC",
       "base_asset": "XRP",
@@ -3203,6 +3383,21 @@
       "symbol": "ZEC_USDC-PERPETUAL",
       "pair": "ZEC/USDC",
       "base_asset": "ZEC",
+      "quote_asset": "USDC",
+      "settle_asset": "USDC",
+      "contract_type": "PERPETUAL",
+      "market": "global",
+      "flags": {
+        "status": "OPEN",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "coinbase",
+      "symbol": "ZRO_USDC-PERPETUAL",
+      "pair": "ZRO/USDC",
+      "base_asset": "ZRO",
       "quote_asset": "USDC",
       "settle_asset": "USDC",
       "contract_type": "PERPETUAL",

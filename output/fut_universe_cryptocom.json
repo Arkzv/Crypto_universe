@@ -2,7 +2,7 @@
   "schema_version": 1,
   "universe_type": "futures",
   "exchange": "cryptocom",
-  "generated_at": "2026-11-11T09:49:19+00:00",
+  "generated_at": "2026-11-20T09:16:34+00:00",
   "collection_status": "ok",
   "source": {
     "instrument_urls": [
@@ -14,7 +14,7 @@
     "futures_pair_count": 424,
     "active_futures_pair_count": 424,
     "tradable_futures_pair_count": 424,
-    "skipped_instrument_rows": 545,
+    "skipped_instrument_rows": 542,
     "duplicate_symbol_rows": 0
   },
   "pairs": [
@@ -380,9 +380,9 @@
     },
     {
       "exchange": "cryptocom",
-      "symbol": "ANTHROPICIPOUSD-PERP",
-      "pair": "ANTHROPICIPO/USD",
-      "base_asset": "ANTHROPICIPO",
+      "symbol": "ANTHROPICUSD-PERP",
+      "pair": "ANTHROPIC/USD",
+      "base_asset": "ANTHROPIC",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
@@ -1070,6 +1070,21 @@
     },
     {
       "exchange": "cryptocom",
+      "symbol": "BTCUSD-270226",
+      "pair": "BTC/USD",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "FUTURE",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
       "symbol": "BTCUSD-270326",
       "pair": "BTC/USD",
       "base_asset": "BTC",
@@ -1433,21 +1448,6 @@
       "symbol": "COMPUSD-PERP",
       "pair": "COMP/USD",
       "base_asset": "COMP",
-      "quote_asset": "USD",
-      "settle_asset": null,
-      "contract_type": "PERPETUAL_SWAP",
-      "market": "derivatives",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "cryptocom",
-      "symbol": "COSTUSD-PERP",
-      "pair": "COST/USD",
-      "base_asset": "COST",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
@@ -2061,6 +2061,21 @@
     {
       "exchange": "cryptocom",
       "symbol": "ETHUSD-270129",
+      "pair": "ETH/USD",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "settle_asset": null,
+      "contract_type": "FUTURE",
+      "market": "derivatives",
+      "flags": {
+        "status": "TRADING",
+        "is_active": true,
+        "is_tradable": true
+      }
+    },
+    {
+      "exchange": "cryptocom",
+      "symbol": "ETHUSD-270226",
       "pair": "ETH/USD",
       "base_asset": "ETH",
       "quote_asset": "USD",
@@ -5018,21 +5033,6 @@
       "symbol": "SMHUSD-PERP",
       "pair": "SMH/USD",
       "base_asset": "SMH",
-      "quote_asset": "USD",
-      "settle_asset": null,
-      "contract_type": "PERPETUAL_SWAP",
-      "market": "derivatives",
-      "flags": {
-        "status": "TRADING",
-        "is_active": true,
-        "is_tradable": true
-      }
-    },
-    {
-      "exchange": "cryptocom",
-      "symbol": "SNDKUSD-PERP",
-      "pair": "SNDK/USD",
-      "base_asset": "SNDK",
       "quote_asset": "USD",
       "settle_asset": null,
       "contract_type": "PERPETUAL_SWAP",
